@@ -1,0 +1,84 @@
+body {
+    background-color: #476B76;
+    margin: 0px;
+}
+
+header {
+    color: #EFB071;
+    background-color: #313D41;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    position: fixed;
+    top: 0px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu h1 {
+    padding-left: 50px;
+    margin: 0;
+}
+
+.header-menu span {
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+
+}
+
+.header-menu span a {
+    text-decoration: none;
+    color: #EFB071;
+}
+
+.about-text {
+    width: 50%;
+}
+
+
+
+.Career {
+    padding-left: 20px;
+    border-left: 4px solid #313D41;
+    margin-left: 5px;
+}
+
+.Career h3 {
+    color: #EFB071;
+}
+
+.about {
+    border: 3px solid black;
+    margin: 80px 5px 5px 5px;
+    background-image: url("Icons&pictures/slide_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+
+.all-Social-Medial-Icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.social-MediaIcon {
+    margin: 0 20px;
+}
+
+.head-shot {
+    display: inline;
+    width: 0.4em;
+    height: 1em;
+}
