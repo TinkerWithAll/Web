@@ -4,77 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zachary Baillod</title>
+    <title>Terminal - Zachary Baillod</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+            font-family: monospace;
+            margin: 0;
+            font-size: larger;
+        }
 
-    <link rel="stylesheet" href="Main.css">
+        p {
+            margin: 5px 0;
+            white-space: pre;
+        }
+
+        .blue-text {
+            color: #00aaff;
+        }
+
+        .prompt {
+            color: #D41919;
+            display: none;
+        }
+
+        .cursor {
+            display: none;
+        }
+
+        .type_text {
+            display: none;
+        }
+
+        .answer {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header-menu" id="page-top">
-        <h1>Zachary Baillod</h1>
-        <span>
-            <a href="#page-top">Home</a>
-            <a href="Career.html">Career</a>
-            <a href="Projects.html">Projects</a>
-            <a href="#page-bottom">Contact</a>
-        </span>
-    </header>
+    <p id="line_1"><span id="cursor_1" class="prompt">~/$ </span><span class="type_text">whoami</span><span
+            class="cursor">█</span></p>
+    <p id="line_2" class="answer">Zachary Baillod</p>
+    <p id="line_3"><span id="cursor_2" class="prompt">~/$ </span><span class="type_text">pwd</span><span
+            class="cursor">█</span></p>
+    <p id="line_4" class="answer">My Website</p>
+    <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text">ls</span><span
+            class="cursor">█</span></p>
+    <p id="line_6" class="answer"><a>About_Me </a><a>Contact </a><a>Projects</a></p>
 
-    <section class="about">
-        <p class="text">
-            <span class="title">Who am I?</span><br>
-            My name is Zachary Baillod,<br><br>
-            and I am a cybersecurity enthusiast and Junior Analyst passionate about solving problems with creative
-            and
-            effective solutions. With a background in technical roles and a knack for automation, I thrive on
-            challenges
-            that allow me to learn and innovate. <br><br>
+    <script>
+        function blinkCursor(text_ID) {
+            return new Promise((resolve) => {
+                let cursor = document.querySelector(`#${text_ID} .cursor`);
+                cursor.style.display = "inline";
 
-            Based in Montreal, I am pursuing a dynamic career in the cybersecurity domain. My journey includes
-            experiences ranging from fraud detection and red team operations to test the security controls.
-            Whether identifying malicious activity in Azure Sentinel or automating workflows to save valuable time,
-            I
-            bring curiosity, precision, and adaptability to every task.<br><br>
+                let count = 0;
+                let interval = setInterval(() => {
+                    if (count >= 6) {
+                        clearInterval(interval);
+                        cursor.style.display = "none";
+                        resolve();
+                    } else {
+                        cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
+                        count++;
+                    }
+                }, 300);
+            });
+        }
 
-            In my spare time, I often get carried away exploring and understanding vulnerabilities in the systems I
-            interact with daily. This relentless curiosity drives me to uncover potential weaknesses and deepen my
-            understanding of how to secure them.<br><br>
+        function typeEffect(text_ID) {
+            return new Promise(async (resolve) => {
+                let textElement = document.querySelector(`#${text_ID} .type_text`);
+                if (!textElement) return resolve();
+                let text = textElement.textContent.trim();
+                textElement.textContent = ""; // Clear text before typing
+                textElement.style.display = "inline"; // Show text element only when typing starts
 
-            With aspirations to achieve certifications like the CompTIA Security+ and OSCP, I am eager to grow,
-            share my
-            knowledge, and contribute to a team driven by curiosity and a commitment to security excellence.
-        </p>
-        <img class="head-shot" src="Icons&pictures/Profile pic.jpg" alt="head-shot">
-    </section>
+                let i = 0;
+                let promptElement = document.querySelector(`#${text_ID} .prompt`);
+                if (promptElement) {
+                    promptElement.style.display = "inline";
+                }
 
-    <div>This Webpage and other linked to it are still a WIP. </div>
+                await blinkCursor(text_ID);
 
-    <footer id="page-bottom">
-        <ul class="all-Social-Medial-Icons">
-            <li class="social-MediaIcon linkedin">
-                <a href="https://www.linkedin.com/in/zachary-baillod-a03a651a6/">
-                    <img src="Icons&pictures/linkedin.svg" alt="LinkedIn" width="40" height="40">
-                </a>
-            </li>
-            <li class="social-MediaIcon facebook">
-                <a href="https://www.facebook.com">
-                    <img src="Icons&pictures/facebook.svg" alt="Facebook" width="40" height="40">
-                </a>
-            </li>
-            <li class="social-MediaIcon x">
-                <a href="https://www.x.com">
-                    <img src="Icons&pictures/x.svg" alt="X" width="40" height="40">
-                </a>
-            </li>
-            <li class="social-MediaIcon instagram">
-                <a href="https://www.instagram.com">
-                    <img src="Icons&pictures/instagram.svg" alt="Instagram" width="40" height="40">
-                </a>
-            </li>
+                setTimeout(() => {
+                    function type() {
+                        if (i < text.length) {
+                            textElement.textContent += text[i];
+                            i++;
+                            setTimeout(type, Math.random() * (500 - 100) + 100);
+                        } else {
+                            let nextLine = document.getElementById(text_ID).nextElementSibling;
+                            if (nextLine && nextLine.classList.contains("answer")) {
+                                nextLine.style.display = "block";
+                            }
+                            resolve();
+                        }
+                    }
+                    type();
+                }, 500);
+            });
+        }
 
-        </ul>
-    </footer>
+        async function runCommands() {
+            await typeEffect("line_1");
+            await typeEffect("line_3");
+            await typeEffect("line_5");
+        }
 
+        runCommands();
+    </script>
 </body>
 
 </html>
