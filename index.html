@@ -11,7 +11,7 @@
             color: white;
             font-family: monospace;
             margin: 0;
-            font-size: larger;
+            font-size: 35px;
         }
 
         p {
@@ -46,6 +46,10 @@
         .answer {
             display: none;
         }
+
+        .answer_tree {
+            display: none;
+        }
     </style>
 </head>
 
@@ -59,9 +63,41 @@
     <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
     <p id="line_6" class="answer"><a class="dir">About_Me </a><a class="dir">Contact </a><a class="dir">Projects</a></p>
+    <p id="line_7"><span id="cursor_4" class="prompt">~/$ </span><span class="type_text"></span><span
+            class="cursor">█</span></p>
+    <p id="line_8" class="answer">.</p>
+    <p id="line_9" class="answer_tree">├── About_Me</p>
+    <p id="line_10" class="answer_tree">│   ├── Education</p>
+    <p id="line_11" class="answer_tree">│   │   └── ACS_Cybersecurity_from_CDI_College</p>
+    <p id="line_12" class="answer_tree">│   ├── Employer</p>
+    <p id="line_13" class="answer_tree">│   │   └── Canadian_Tire_Corporation</p>
+    <p id="line_14" class="answer_tree">│   ├── Job_Title</p>
+    <p id="line_15" class="answer_tree">│   │   └── Cybersecurity_Specialist</p>
+    <p id="line_16" class="answer_tree">│   ├── Location</p>
+    <p id="line_17" class="answer_tree">│   │   └── Canada</p>
+    <p id="line_18" class="answer_tree">│   └── Top_Skills</p>
+    <p id="line_19" class="answer_tree">│   ├── TBD1</p>
+    <p id="line_20" class="answer_tree">│   ├── TBD2</p>
+    <p id="line_21" class="answer_tree">│   ├── TBD3</p>
+    <p id="line_22" class="answer_tree">│   ├── TBD4</p>
+    <p id="line_23" class="answer_tree">│   └── TBD5</p>
+    <p id="line_24" class="answer_tree">├── Contact</p>
+    <p id="line_25" class="answer_tree">│   ├── Email</p>
+    <p id="line_26" class="answer_tree">│   │   └── zachary.b.contact.facility955@passmail.com</p>
+    <p id="line_27" class="answer_tree">│   ├── LinkedIn</p>
+    <p id="line_28" class="answer_tree">│   │   └── https://www.linkedin.com/in/zachary-baillod-a03a651a6/</p>
+    <p id="line_29" class="answer_tree">│   ├── Phone</p>
+    <p id="line_30" class="answer_tree">│   │   └── REDACTED</p>
+    <p id="line_31" class="answer_tree">│   └── Website</p>
+    <p id="line_32" class="answer_tree">│   └── https://tinkerwithall.github.io/Web/</p>
+    <p id="line_33" class="answer_tree">└── Projects</p>
+    <p id="line_34" class="answer_tree"> ├── Python</p>
+    <p id="line_35" class="answer_tree"> │   └── WIP</p>
+    <p id="line_36" class="answer_tree"> └── RaspberryPi</p>
+    <p id="line_37" class="answer_tree"> └── WIP</p>
 
     <script>
-        const commands = ["whoami", "pwd", "ls"];
+        const commands = ["whoami", "pwd", "ls", "tree"];
 
         async function typeEffect(text_ID, command) {
             let textElement = document.querySelector(`#${text_ID} .type_text`);
@@ -89,10 +125,15 @@
             await typeEffect("line_1", commands[0]);
             await typeEffect("line_3", commands[1]);
             await typeEffect("line_5", commands[2]);
+            await typeEffect("line_7", commands[3]);
+
+            // Show all answer_tree elements after typeEffect on line_7 is done
+            document.querySelectorAll(".answer_tree").forEach(el => el.style.display = "block");
         }
 
         runCommands();
     </script>
+
 </body>
 
 </html>
