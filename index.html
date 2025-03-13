@@ -19,7 +19,7 @@
             white-space: pre;
         }
 
-        .blue-text {
+        .dir {
             color: #00aaff;
         }
 
@@ -30,6 +30,13 @@
 
         .cursor {
             display: none;
+            animation: blink 0.5s step-end infinite alternate;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
 
         .type_text {
@@ -43,75 +50,45 @@
 </head>
 
 <body>
-    <p id="line_1"><span id="cursor_1" class="prompt">~/$ </span><span class="type_text">whoami</span><span
+    <p id="line_1"><span id="cursor_1" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
     <p id="line_2" class="answer">Zachary Baillod</p>
-    <p id="line_3"><span id="cursor_2" class="prompt">~/$ </span><span class="type_text">pwd</span><span
+    <p id="line_3"><span id="cursor_2" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
     <p id="line_4" class="answer">My Website</p>
-    <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text">ls</span><span
+    <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
-    <p id="line_6" class="answer"><a>About_Me </a><a>Contact </a><a>Projects</a></p>
+    <p id="line_6" class="answer"><a class="dir">About_Me </a><a class="dir">Contact </a><a class="dir">Projects</a></p>
 
     <script>
-        function blinkCursor(text_ID) {
-            return new Promise((resolve) => {
-                let cursor = document.querySelector(`#${text_ID} .cursor`);
-                cursor.style.display = "inline";
+        const commands = ["whoami", "pwd", "ls"];
 
-                let count = 0;
-                let interval = setInterval(() => {
-                    if (count >= 6) {
-                        clearInterval(interval);
-                        cursor.style.display = "none";
-                        resolve();
-                    } else {
-                        cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
-                        count++;
-                    }
-                }, 300);
-            });
-        }
+        async function typeEffect(text_ID, command) {
+            let textElement = document.querySelector(`#${text_ID} .type_text`);
+            let cursor = document.querySelector(`#${text_ID} .cursor`);
+            let promptElement = document.querySelector(`#${text_ID} .prompt`);
 
-        function typeEffect(text_ID) {
-            return new Promise(async (resolve) => {
-                let textElement = document.querySelector(`#${text_ID} .type_text`);
-                if (!textElement) return resolve();
-                let text = textElement.textContent.trim();
-                textElement.textContent = ""; // Clear text before typing
-                textElement.style.display = "inline"; // Show text element only when typing starts
+            textElement.textContent = ""; // Clear text before typing
+            textElement.style.display = "inline";
+            cursor.style.display = "inline";
+            if (promptElement) promptElement.style.display = "inline";
 
-                let i = 0;
-                let promptElement = document.querySelector(`#${text_ID} .prompt`);
-                if (promptElement) {
-                    promptElement.style.display = "inline";
-                }
+            for (let i = 0; i < command.length; i++) {
+                textElement.textContent += command[i];
+                await new Promise(resolve => setTimeout(resolve, Math.random() * (500 - 100) + 100));
+            }
 
-                await blinkCursor(text_ID);
-
-                setTimeout(() => {
-                    function type() {
-                        if (i < text.length) {
-                            textElement.textContent += text[i];
-                            i++;
-                            setTimeout(type, Math.random() * (500 - 100) + 100);
-                        } else {
-                            let nextLine = document.getElementById(text_ID).nextElementSibling;
-                            if (nextLine && nextLine.classList.contains("answer")) {
-                                nextLine.style.display = "block";
-                            }
-                            resolve();
-                        }
-                    }
-                    type();
-                }, 500);
-            });
+            cursor.style.display = "none"; // Hide cursor after typing
+            let nextLine = document.getElementById(text_ID).nextElementSibling;
+            if (nextLine && nextLine.classList.contains("answer")) {
+                nextLine.style.display = "block";
+            }
         }
 
         async function runCommands() {
-            await typeEffect("line_1");
-            await typeEffect("line_3");
-            await typeEffect("line_5");
+            await typeEffect("line_1", commands[0]);
+            await typeEffect("line_3", commands[1]);
+            await typeEffect("line_5", commands[2]);
         }
 
         runCommands();
