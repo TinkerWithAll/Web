@@ -12,7 +12,13 @@
             font-family: monospace;
             margin: 0;
             font-size: 35px;
+            border: 2px solid gray;
+            padding: 0px;
+            box-sizing: border-box;
+            position: relative;
         }
+
+
 
         p {
             margin: 5px 0;
@@ -21,6 +27,11 @@
 
         .dir {
             color: #00aaff;
+            text-decoration: none;
+        }
+
+        .dir:hover {
+            text-decoration: underline;
         }
 
         .prompt {
@@ -50,10 +61,41 @@
         .answer_tree {
             display: none;
         }
+
+        .trunk {
+            font-size: 37px;
+            color: #00aaff;
+        }
+
+        #id_0 .top {
+            color: white;
+            /* Ensures text is visible */
+            text-align: center;
+            /* Centers text horizontally */
+            font-size: 20px;
+            /* Adjust as needed */
+            font-weight: bold;
+            padding: 0px;
+            white-space: nowrap;
+            /* Ensures it stays on one line */
+            width: fit-content;
+            /* Only takes up the necessary space */
+            margin: 0px;
+            /* Centers the block horizontally */
+            border-radius: 5px;
+            /* Optional rounded corners */
+        }
+
+        .top {
+            background-color: #D41919;
+            margin: 0px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
+    <p id="line_0" class="top">Zachary Baillod @ My Website:~/"</p>
     <p id="line_1"><span id="cursor_1" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
     <p id="line_2" class="answer">Zachary Baillod</p>
@@ -62,39 +104,42 @@
     <p id="line_4" class="answer">My Website</p>
     <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
-    <p id="line_6" class="answer"><a class="dir">About_Me </a><a class="dir">Contact </a><a class="dir">Projects</a></p>
+    <p id="line_6" class="answer"><a class="dir" href="#line_9">About Me</a>  <a class="dir"
+            href="#line_25">Projects</a>  <a class="dir" href="#line_31">Contact</a></p>
     <p id="line_7"><span id="cursor_4" class="prompt">~/$ </span><span class="type_text"></span><span
             class="cursor">█</span></p>
     <p id="line_8" class="answer">.</p>
-    <p id="line_9" class="answer_tree">├── About_Me</p>
+    <p id="line_9" class="answer_tree">├── <span class="trunk">About Me</span></p>
     <p id="line_10" class="answer_tree">│   ├── Education</p>
-    <p id="line_11" class="answer_tree">│   │   └── ACS_Cybersecurity_from_CDI_College</p>
+    <p id="line_11" class="answer_tree">│   │   └── ACS in Cybersecurity from CDI College</p>
     <p id="line_12" class="answer_tree">│   ├── Employer</p>
-    <p id="line_13" class="answer_tree">│   │   └── Canadian_Tire_Corporation</p>
+    <p id="line_13" class="answer_tree">│   │   └── Canadian Tire Corporation</p>
     <p id="line_14" class="answer_tree">│   ├── Job_Title</p>
-    <p id="line_15" class="answer_tree">│   │   └── Cybersecurity_Specialist</p>
+    <p id="line_15" class="answer_tree">│   │   └── Cybersecurity Specialist</p>
     <p id="line_16" class="answer_tree">│   ├── Location</p>
     <p id="line_17" class="answer_tree">│   │   └── Canada</p>
-    <p id="line_18" class="answer_tree">│   └── Top_Skills</p>
+    <p id="line_18" class="answer_tree">│   └── Top Skills</p>
     <p id="line_19" class="answer_tree">│   ├── TBD1</p>
     <p id="line_20" class="answer_tree">│   ├── TBD2</p>
     <p id="line_21" class="answer_tree">│   ├── TBD3</p>
     <p id="line_22" class="answer_tree">│   ├── TBD4</p>
     <p id="line_23" class="answer_tree">│   └── TBD5</p>
-    <p id="line_24" class="answer_tree">├── Contact</p>
-    <p id="line_25" class="answer_tree">│   ├── Email</p>
-    <p id="line_26" class="answer_tree">│   │   └── zachary.b.contact.facility955@passmail.com</p>
-    <p id="line_27" class="answer_tree">│   ├── LinkedIn</p>
-    <p id="line_28" class="answer_tree">│   │   └── https://www.linkedin.com/in/zachary-baillod-a03a651a6/</p>
-    <p id="line_29" class="answer_tree">│   ├── Phone</p>
-    <p id="line_30" class="answer_tree">│   │   └── REDACTED</p>
-    <p id="line_31" class="answer_tree">│   └── Website</p>
-    <p id="line_32" class="answer_tree">│   └── https://tinkerwithall.github.io/Web/</p>
-    <p id="line_33" class="answer_tree">└── Projects</p>
-    <p id="line_34" class="answer_tree"> ├── Python</p>
-    <p id="line_35" class="answer_tree"> │   └── WIP</p>
-    <p id="line_36" class="answer_tree"> └── RaspberryPi</p>
-    <p id="line_37" class="answer_tree"> └── WIP</p>
+    <p id="line_24" class="answer_tree">│</p>
+    <p id="line_25" class="answer_tree">├── <span class="trunk">Projects</span></p>
+    <p id="line_26" class="answer_tree">│   ├── Python</p>
+    <p id="line_27" class="answer_tree">│       └── WIP</p>
+    <p id="line_28" class="answer_tree">├── RaspberryPi</p>
+    <p id="line_29" class="answer_tree">│   └── WIP</p>
+    <p id="line_30" class="answer_tree">│</p>
+    <p id="line_31" class="answer_tree">└── <span class="trunk">Contact</span></p>
+    <p id="line_32" class="answer_tree">    ├── Email</p>
+    <p id="line_33" class="answer_tree">    │   └── zachary.b.contact.facility955@passmail.com</p>
+    <p id="line_34" class="answer_tree">    ├── LinkedIn</p>
+    <p id="line_35" class="answer_tree">    │   └── https://www.linkedin.com/in/zachary-baillod-a03a651a6/</p>
+    <p id="line_36" class="answer_tree">    ├── Phone</p>
+    <p id="line_37" class="answer_tree">    │   └── REDACTED</p>
+    <p id="line_38" class="answer_tree">    └── Website</p>
+    <p id="line_39" class="answer_tree">        └── https://tinkerwithall.github.io/Web/</p>
 
     <script>
         const commands = ["whoami", "pwd", "ls", "tree"];
