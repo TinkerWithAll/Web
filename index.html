@@ -1,184 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal - Zachary Baillod</title>
-    <style>
-        body {
-            background-color: #212121;
-            color: white;
-            font-family: monospace;
-            margin: 0;
-            font-size: 35px;
-            border: 2px solid gray;
-            padding: 0px;
-            box-sizing: border-box;
-            position: relative;
-        }
-
-
-
-        p {
-            margin: 5px 0;
-            white-space: pre;
-        }
-
-        .dir {
-            color: #00aaff;
-            text-decoration: none;
-        }
-
-        .dir:hover {
-            text-decoration: underline;
-        }
-
-        .prompt {
-            color: #D41919;
-            display: none;
-        }
-
-        .cursor {
-            display: none;
-            animation: blink 0.5s step-end infinite alternate;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        .type_text {
-            display: none;
-        }
-
-        .answer {
-            display: none;
-        }
-
-        .answer_tree {
-            display: none;
-        }
-
-        .trunk {
-            font-size: 37px;
-            color: #00aaff;
-        }
-
-        #id_0 .top {
-            color: white;
-            /* Ensures text is visible */
-            text-align: center;
-            /* Centers text horizontally */
-            font-size: 20px;
-            /* Adjust as needed */
-            font-weight: bold;
-            padding: 0px;
-            white-space: nowrap;
-            /* Ensures it stays on one line */
-            width: fit-content;
-            /* Only takes up the necessary space */
-            margin: 0px;
-            /* Centers the block horizontally */
-            border-radius: 5px;
-            /* Optional rounded corners */
-        }
-
-        .top {
-            background-color: #D41919;
-            margin: 0px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Baillod | Cybersecurity Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <p id="line_0" class="top">Zachary Baillod @ Playground:~/"</p>
-    <p id="line_1"><span id="cursor_1" class="prompt">~/$ </span><span class="type_text"></span><span
-            class="cursor">█</span></p>
-    <p id="line_2" class="answer">Zachary Baillod</p>
-    <p id="line_3"><span id="cursor_2" class="prompt">~/$ </span><span class="type_text"></span><span
-            class="cursor">█</span></p>
-    <p id="line_4" class="answer">My Website</p>
-    <p id="line_5"><span id="cursor_3" class="prompt">~/$ </span><span class="type_text"></span><span
-            class="cursor">█</span></p>
-    <p id="line_6" class="answer"><a class="dir" href="#line_9">About Me</a>  <a class="dir"
-            href="#line_25">Projects</a>  <a class="dir" href="#line_31">Contact</a></p>
-    <p id="line_7"><span id="cursor_4" class="prompt">~/$ </span><span class="type_text"></span><span
-            class="cursor">█</span></p>
-    <p id="line_8" class="answer">.</p>
-    <p id="line_9" class="answer_tree">├── <span class="trunk">About Me</span></p>
-    <p id="line_10" class="answer_tree">│   ├── Education</p>
-    <p id="line_11" class="answer_tree">│   │   └── ACS in Cybersecurity from CDI College</p>
-    <p id="line_12" class="answer_tree">│   ├── Employer</p>
-    <p id="line_13" class="answer_tree">│   │   └── Canadian Tire Corporation</p>
-    <p id="line_14" class="answer_tree">│   ├── Job_Title</p>
-    <p id="line_15" class="answer_tree">│   │   └── Cybersecurity Specialist</p>
-    <p id="line_16" class="answer_tree">│   ├── Location</p>
-    <p id="line_17" class="answer_tree">│   │   └── Canada</p>
-    <p id="line_18" class="answer_tree">│   └── Top Skills</p>
-    <p id="line_19" class="answer_tree">│   ├── TBD1</p>
-    <p id="line_20" class="answer_tree">│   ├── TBD2</p>
-    <p id="line_21" class="answer_tree">│   ├── TBD3</p>
-    <p id="line_22" class="answer_tree">│   ├── TBD4</p>
-    <p id="line_23" class="answer_tree">│   └── TBD5</p>
-    <p id="line_24" class="answer_tree">│</p>
-    <p id="line_25" class="answer_tree">├── <span class="trunk">Projects</span></p>
-    <p id="line_26" class="answer_tree">│   ├── Python</p>
-    <p id="line_27" class="answer_tree">│       └── WIP</p>
-    <p id="line_28" class="answer_tree">├── RaspberryPi</p>
-    <p id="line_29" class="answer_tree">│   └── WIP</p>
-    <p id="line_30" class="answer_tree">│</p>
-    <p id="line_31" class="answer_tree">└── <span class="trunk">Contact</span></p>
-    <p id="line_32" class="answer_tree">    ├── Email</p>
-    <p id="line_33" class="answer_tree">    │   └── zachary.b.contact.facility955@passmail.com</p>
-    <p id="line_34" class="answer_tree">    ├── LinkedIn</p>
-    <p id="line_35" class="answer_tree">    │   └── https://www.linkedin.com/in/zachary-baillod-a03a651a6/</p>
-    <p id="line_36" class="answer_tree">    ├── Phone</p>
-    <p id="line_37" class="answer_tree">    │   └── REDACTED</p>
-    <p id="line_38" class="answer_tree">    └── Website</p>
-    <p id="line_39" class="answer_tree">        └── https://tinkerwithall.github.io/Web/</p>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">ZB</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script>
-        const commands = ["whoami", "pwd", "ls", "tree"];
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm no security guru — I'm a nerd who loves to learn all that is security and many different subjects. 
+      My goal is to put what I learn to good use and make a difference in the security landscape of people 
+      around me — especially the not-so-tech-savvy majority of the community.
+    </p>
+  </section>
 
-        async function typeEffect(text_ID, command) {
-            let textElement = document.querySelector(`#${text_ID} .type_text`);
-            let cursor = document.querySelector(`#${text_ID} .cursor`);
-            let promptElement = document.querySelector(`#${text_ID} .prompt`);
+  <!-- BACKGROUND -->
+  <section id="background" class="section">
+    <h2>Professional Background</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3>Job Role 1 <span>(Year – Year)</span></h3>
+        <p>Description of role 1.</p>
+      </div>
+      <div class="job">
+        <h3>Job Role 2 <span>(Year – Year)</span></h3>
+        <p>Description of role 2.</p>
+      </div>
+      <div class="job">
+        <h3>Job Role 3 <span>(Year – Year)</span></h3>
+        <p>Description of role 3.</p>
+      </div>
+    </div>
+  </section>
 
-            textElement.textContent = ""; // Clear text before typing
-            textElement.style.display = "inline";
-            cursor.style.display = "inline";
-            if (promptElement) promptElement.style.display = "inline";
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="section">
+    <h2>Achievements & Aspirations</h2>
+    <div class="achievements">
+      <h3>Acquired</h3>
+      <ul>
+        <li class="completed">🎓 Complete a college education in cybersecurity</li>
+        <li class="completed">💼 Get first cybersecurity specific role</li>
+        <li class="completed">🤝 Spend a year alongside a professional team in the field</li>
+      </ul>
+      <h3>Aspiration</h3>
+      <ul>
+        <li class="locked">🔒 Obtain CompTIA Security+ cert</li>
+        <li class="locked">🔒 Certified Ethical Hacker (CEH)</li>
+        <li class="locked">🔒 Certified Information Systems Security Professional (CISSP)</li>
+        <li class="locked">🔒 Create a tool for non-tech-savvy users to browse securely</li>
+      </ul>
+    </div>
+  </section>
 
-            for (let i = 0; i < command.length; i++) {
-                textElement.textContent += command[i];
-                await new Promise(resolve => setTimeout(resolve, Math.random() * (500 - 100) + 100));
-            }
+  <!-- BLOG -->
+  <section id="blog" class="section">
+    <h2>Blog & Projects</h2>
+    <div id="blog-container" class="blog-container">
+      <!-- Blog posts injected by JS -->
+    </div>
+  </section>
 
-            cursor.style.display = "none"; // Hide cursor after typing
-            let nextLine = document.getElementById(text_ID).nextElementSibling;
-            if (nextLine && nextLine.classList.contains("answer")) {
-                nextLine.style.display = "block";
-            }
-        }
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p class="note">
+      Your email is safe — this form won’t reveal my personal address.
+    </p>
+  </section>
 
-        async function runCommands() {
-            await typeEffect("line_1", commands[0]);
-            await typeEffect("line_3", commands[1]);
-            await typeEffect("line_5", commands[2]);
-            await typeEffect("line_7", commands[3]);
-
-            // Show all answer_tree elements after typeEffect on line_7 is done
-            document.querySelectorAll(".answer_tree").forEach(el => el.style.display = "block");
-        }
-
-        runCommands();
-    </script>
-
+  <footer>
+    <p>© 2025 Zachary Baillod</p>
+  </footer>
 </body>
-
 </html>
