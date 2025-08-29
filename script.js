@@ -1,19 +1,18 @@
 // BLOG POSTS
 const blogPosts = [
   {
-    title: "First Project",
-    date: "2025-08-01",
-    desc: "Built a security scanning tool to analyze small business networks.",
-    content: "Full write-up coming soon with code snippets and lessons learned.",
+    title: "Pi Router",
+    date: "2025-08-29",
+    desc: "Configure OpenWrt on your Raspbery Pi 5 to add a security layer to your network.",
+    content: "Soon i will post a walkthrough of how i configured my own router using openwrt on a pi so that you can secure your network too!",
     image: "https://via.placeholder.com/400x200"
   },
-  {
-    title: "Thoughts on Cybersecurity",
-    date: "2025-07-15",
-    desc: "My take on where the industry is heading.",
-    content: "We are seeing an increase in AI-driven threats, and defensive measures must evolve...",
-    image: "https://via.placeholder.com/400x200"
-  }
+{
+  "title": "Process of Getting My Security + Cert",
+  "date": "2025-08-15",
+  "desc": "A look into my journey of studying for and earning the CompTIA Security+ certification, and how it shaped my cybersecurity career.",
+  "content": "Preparing for my Security+ certification was both challenging and rewarding. It gave me a structured way to deepen my understanding of core security concepts, from risk management and network security to identity, access, and cryptography. While I was already working in vulnerability management, studying for this certification pushed me to strengthen my fundamentals and think about security in a broader context. The process involved countless study hours, labs, and practice exams, but ultimately it gave me the confidence to approach my work with a stronger foundation and a mindset of continuous learning."
+}
 ];
 
 const blogContainer = document.getElementById("blog-container");
