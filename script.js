@@ -1,45 +1,3 @@
-// BACKGROUND JOBS
-const jobs = [
-  {
-    title: "Cybersecurity Specialist",
-    company: "Canadian Tire",
-    years: "2023 – Present",
-    shortDesc: "Overseeing vulnerability management and penetration testing.",
-    longDesc: "As part of the Vulnerability Management team, I handle scanning, penetration testing coordination, risk assessment, and ensure remediation efforts are communicated effectively to stakeholders across multiple business units."
-  },
-  {
-    title: "IT Support Specialist",
-    company: "Tech Solutions Inc.",
-    years: "2021 – 2023",
-    shortDesc: "Provided IT support to end-users and managed security tools.",
-    longDesc: "Worked with endpoint protection tools, handled incident response for small-scale security events, supported Active Directory and M365 administration, and trained employees on cybersecurity best practices."
-  },
-  {
-    title: "Intern – Cybersecurity Analyst",
-    company: "XYZ Corp",
-    years: "2020 – 2021",
-    shortDesc: "Assisted with security monitoring and reporting.",
-    longDesc: "Helped monitor SIEM logs, performed initial triage of alerts, documented findings, and supported the senior analysts in developing runbooks for incident handling."
-  }
-];
-
-const backgroundContainer = document.getElementById("background-container");
-
-jobs.forEach(job => {
-  const div = document.createElement("div");
-  div.className = "job-card";
-  div.innerHTML = `
-    <h3>${job.title}</h3>
-    <small>${job.company} | ${job.years}</small>
-    <p><strong>${job.shortDesc}</strong></p>
-    <p class="details">${job.longDesc}</p>
-  `;
-  div.addEventListener("click", () => {
-    div.classList.toggle("expanded");
-  });
-  backgroundContainer.appendChild(div);
-});
-
 const blogPosts = [
   {
     title: "Pi Router",
@@ -72,4 +30,16 @@ blogPosts.forEach(post => {
     div.classList.toggle("expanded");
   });
   blogContainer.appendChild(div);
+});
+
+// CONTACT FORM
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData.entries());
+
+  // TODO: Connect to EmailJS or Formspree to handle sending securely
+  alert("Form submitted! (Backend integration needed to actually send email)");
+  e.target.reset();
 });
