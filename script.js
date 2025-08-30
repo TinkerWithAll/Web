@@ -1,3 +1,41 @@
+// PROFESSIONAL BACKGROUND
+const jobs = [
+  {
+    title: "Cybersecurity Specialist - Vulnerability Management",
+    years: "2023 – Present",
+    summary: "Overseeing assessments of security posture through vulnerability scanning & penetration testing.",
+    description: "Responsible for managing vulnerability scanning, penetration testing, and ensuring effective communication and remediation of findings across teams."
+  },
+  {
+    title: "IT Security Analyst",
+    years: "2021 – 2023",
+    summary: "Supported endpoint protection and identity management across enterprise systems.",
+    description: "Implemented endpoint security tools, monitored SIEM alerts, and supported identity access management processes while working closely with senior engineers."
+  },
+  {
+    title: "Technical Support Specialist",
+    years: "2018 – 2021",
+    summary: "Provided frontline IT support while developing a passion for security.",
+    description: "Resolved end-user technical issues, assisted in patch management processes, and initiated security awareness activities within the IT team."
+  }
+];
+
+const backgroundContainer = document.getElementById("background-container");
+
+jobs.forEach(job => {
+  const div = document.createElement("div");
+  div.className = "card";
+  div.innerHTML = `
+    <h3>${job.title} <span>(${job.years})</span></h3>
+    <p><strong>${job.summary}</strong></p>
+    <p class="full">${job.description}</p>
+  `;
+  div.addEventListener("click", () => {
+    div.classList.toggle("expanded");
+  });
+  backgroundContainer.appendChild(div);
+});
+
 // BLOG POSTS
 const blogPosts = [
   {
@@ -19,28 +57,16 @@ const blogContainer = document.getElementById("blog-container");
 
 blogPosts.forEach(post => {
   const div = document.createElement("div");
-  div.className = "blog-post";
+  div.className = "card";
   div.innerHTML = `
     <img src="${post.image}" alt="${post.title}" style="max-width:100%; border-radius:5px;"/>
     <h3>${post.title}</h3>
     <small>${post.date}</small>
     <p><strong>${post.desc}</strong></p>
-    <p>${post.content}</p>
+    <p class="full">${post.content}</p>
   `;
   div.addEventListener("click", () => {
     div.classList.toggle("expanded");
   });
   blogContainer.appendChild(div);
-});
-
-// CONTACT FORM
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData.entries());
-
-  // TODO: Connect to EmailJS or Formspree to handle sending securely
-  alert("Form submitted! (Backend integration needed to actually send email)");
-  e.target.reset();
 });
