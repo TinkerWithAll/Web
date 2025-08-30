@@ -136,3 +136,23 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%) contrast(90%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+  filter: invert(0%) sepia(100%) saturate(5000%) hue-rotate(200deg) brightness(90%) contrast(100%);
+}
+
