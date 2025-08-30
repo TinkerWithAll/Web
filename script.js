@@ -1,18 +1,18 @@
 // BLOG POSTS
 const blogPosts = [
   {
-    title: "First Project",
-    date: "2025-08-01",
-    desc: "Built a security scanning tool to analyze small business networks.",
-    content: "Full write-up coming soon with code snippets and lessons learned.",
-    image: "https://via.placeholder.com/400x200"
+    title: "Making a router with OpenWrt and a Pi 5",
+    date: "2025-08-10",
+    desc: "Built a travel size router that allows me to connect to another network through WiFi and create a segment of that network for all of my devices giving me more control on the traffic and an extra layer of security.",
+    content: "Sorry about that, I have not yet completed my write-up of the step by step i went through for this project.",
+    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/PiRouter.jpg"
   },
   {
-    title: "Thoughts on Cybersecurity",
-    date: "2025-07-15",
-    desc: "My take on where the industry is heading.",
-    content: "We are seeing an increase in AI-driven threats, and defensive measures must evolve...",
-    image: "https://via.placeholder.com/400x200"
+    title: "CompTIA Security + prep",
+    date: "2025-08-29",
+    desc: "Time to get that first cert! I'll take you through my plan of action to get stated on the path of getting my security + Certification",
+    content: "I know this is a pretty bassic certification for many Security experts but I find exams and cert nerve racking and i want to make sure that i will be ready and have my plan layed out before embarking on this journey. more to come i am currently working on this project and will update this page very soon.",
+    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/CompTIA%20Sec%2B.jpg"
   }
 ];
 
