@@ -1,22 +1,25 @@
-// PROFESSIONAL BACKGROUND
+// BACKGROUND JOBS
 const jobs = [
   {
-    title: "Cybersecurity Specialist - Vulnerability Management",
+    title: "Cybersecurity Specialist",
+    company: "Canadian Tire",
     years: "2023 – Present",
-    summary: "Overseeing assessments of security posture through vulnerability scanning & penetration testing.",
-    description: "Responsible for managing vulnerability scanning, penetration testing, and ensuring effective communication and remediation of findings across teams."
+    shortDesc: "Overseeing vulnerability management and penetration testing.",
+    longDesc: "As part of the Vulnerability Management team, I handle scanning, penetration testing coordination, risk assessment, and ensure remediation efforts are communicated effectively to stakeholders across multiple business units."
   },
   {
-    title: "IT Security Analyst",
+    title: "IT Support Specialist",
+    company: "Tech Solutions Inc.",
     years: "2021 – 2023",
-    summary: "Supported endpoint protection and identity management across enterprise systems.",
-    description: "Implemented endpoint security tools, monitored SIEM alerts, and supported identity access management processes while working closely with senior engineers."
+    shortDesc: "Provided IT support to end-users and managed security tools.",
+    longDesc: "Worked with endpoint protection tools, handled incident response for small-scale security events, supported Active Directory and M365 administration, and trained employees on cybersecurity best practices."
   },
   {
-    title: "Technical Support Specialist",
-    years: "2018 – 2021",
-    summary: "Provided frontline IT support while developing a passion for security.",
-    description: "Resolved end-user technical issues, assisted in patch management processes, and initiated security awareness activities within the IT team."
+    title: "Intern – Cybersecurity Analyst",
+    company: "XYZ Corp",
+    years: "2020 – 2021",
+    shortDesc: "Assisted with security monitoring and reporting.",
+    longDesc: "Helped monitor SIEM logs, performed initial triage of alerts, documented findings, and supported the senior analysts in developing runbooks for incident handling."
   }
 ];
 
@@ -24,11 +27,12 @@ const backgroundContainer = document.getElementById("background-container");
 
 jobs.forEach(job => {
   const div = document.createElement("div");
-  div.className = "card";
+  div.className = "job-card";
   div.innerHTML = `
-    <h3>${job.title} <span>(${job.years})</span></h3>
-    <p><strong>${job.summary}</strong></p>
-    <p class="full">${job.description}</p>
+    <h3>${job.title}</h3>
+    <small>${job.company} | ${job.years}</small>
+    <p><strong>${job.shortDesc}</strong></p>
+    <p class="details">${job.longDesc}</p>
   `;
   div.addEventListener("click", () => {
     div.classList.toggle("expanded");
@@ -36,7 +40,6 @@ jobs.forEach(job => {
   backgroundContainer.appendChild(div);
 });
 
-// BLOG POSTS
 const blogPosts = [
   {
     title: "Pi Router",
@@ -57,13 +60,13 @@ const blogContainer = document.getElementById("blog-container");
 
 blogPosts.forEach(post => {
   const div = document.createElement("div");
-  div.className = "card";
+  div.className = "blog-post";
   div.innerHTML = `
     <img src="${post.image}" alt="${post.title}" style="max-width:100%; border-radius:5px;"/>
     <h3>${post.title}</h3>
     <small>${post.date}</small>
     <p><strong>${post.desc}</strong></p>
-    <p class="full">${post.content}</p>
+    <p>${post.content}</p>
   `;
   div.addEventListener("click", () => {
     div.classList.toggle("expanded");
