@@ -58,40 +58,9 @@ h2 {
   padding-bottom: .3rem;
 }
 
-/* BACKGROUND & BLOG shared style */
-.background-container,
-.blog-container {
-  display: grid;
-  gap: 1rem;
-}
-
-.job-card,
-.blog-post {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: .5rem;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-
-.job-card:hover,
-.blog-post:hover {
-  transform: scale(1.02);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.job-card.expanded p.details,
-.blog-post.expanded p:last-of-type {
-  display: block;
-}
-
-.job-card p.details {
-  display: none;
-}
-
-.blog-post p {
-  display: none;
+/* BACKGROUND */
+.timeline .job {
+  margin-bottom: 1.5rem;
 }
 
 /* CERTS */
@@ -107,6 +76,57 @@ h2 {
 .locked {
   color: gray;
   opacity: 0.6;
+}
+
+/* BLOG */
+.blog-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.blog-post {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post.expanded p {
+  display: block;
+}
+
+.blog-post p {
+  display: none;
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  padding: .8rem;
+  font-size: 1rem;
+}
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
 }
 
 /* FOOTER */
