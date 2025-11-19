@@ -1,0 +1,41 @@
+name: Daily Security Feed Scraper
+
+on:
+  # Schedule to run daily at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+  # Allows you to run this workflow manually from the Actions tab for testing
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Scraper Script
+        run: python scraper.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          # Add generated CSVs, the updated terms list (if new CVEs found), and the index.html
+          git add results_*.csv terms.txt index.html
+          # Only commit if there are changes to avoid empty commit errors
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated: Update security feed results" && git push)
