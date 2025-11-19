@@ -5,14 +5,14 @@ const blogPosts = [
     date: "2025-08-10",
     desc: "Built a travel size router that allows me to connect to another network through WiFi and create a segment of that network for all of my devices giving me more control on the traffic and an extra layer of security.",
     content: "Sorry about that, I have not yet completed my write-up of the step by step i went through for this project.",
-    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/PiRouter.jpg"
+    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/PiRouter.jpg?raw=true"
   },
   {
     title: "CompTIA Security + prep",
     date: "2025-08-29",
     desc: "Time to get that first cert! I'll take you through my plan of action to get stated on the path of getting my security + Certification",
     content: "I know this is a pretty bassic certification for many Security experts but I find exams and cert nerve racking and i want to make sure that i will be ready and have my plan layed out before embarking on this journey. more to come i am currently working on this project and will update this page very soon.",
-    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/CompTIA%20Sec%2B.jpg"
+    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/CompTIA%20Sec%2B.jpg?raw=true"
   },
   {
     title: "Automated Security Intelligence Feed",
@@ -36,7 +36,10 @@ blogPosts.forEach(post => {
     <p>${post.content}</p>
   `;
   div.addEventListener("click", (e) => {
-    div.classList.toggle("expanded");
+    // Prevent the card from collapsing if the user clicks the specific link
+    if(e.target.tagName !== 'A') {
+        div.classList.toggle("expanded");
+    }
   });
   blogContainer.appendChild(div);
 });
