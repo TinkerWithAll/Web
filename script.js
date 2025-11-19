@@ -13,6 +13,13 @@ const blogPosts = [
     desc: "Time to get that first cert! I'll take you through my plan of action to get stated on the path of getting my security + Certification",
     content: "I know this is a pretty bassic certification for many Security experts but I find exams and cert nerve racking and i want to make sure that i will be ready and have my plan layed out before embarking on this journey. more to come i am currently working on this project and will update this page very soon.",
     image: "https://github.com/TinkerWithAll/Web/blob/main/reference/CompTIA%20Sec%2B.jpg"
+  },
+  {
+    title: "Automated Security Intelligence Feed",
+    date: "2025-11-18",
+    desc: "Keeping up with vulnerabilities is a daily task. I automated the process using Python and GitHub Actions to scrape, filter, and archive security news.",
+    content: "I built a custom scraper that runs every night on GitHub's servers. It pulls data from CISA and various RSS feeds, filters them against my custom watchlist of terms and CVEs, and creates a rolling 30-day history. <br><br><strong><a href='https://tinkerwithall.github.io/Web/feed.html' target='_blank' style='color: #0056b3; text-decoration: underline;'>Click here to view the Live Security Feed results.</a></strong>",
+    image: "https://github.com/TinkerWithAll/Web/blob/main/reference/feed_preview.jpg?raw=true" 
   }
 ];
 
@@ -28,7 +35,7 @@ blogPosts.forEach(post => {
     <p><strong>${post.desc}</strong></p>
     <p>${post.content}</p>
   `;
-  div.addEventListener("click", () => {
+  div.addEventListener("click", (e) => {
     div.classList.toggle("expanded");
   });
   blogContainer.appendChild(div);
