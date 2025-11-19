@@ -28,9 +28,22 @@
     "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-18th-of-november-2025/",
     "date": "2025-11-19",
     "terms": [
-      "IOC"
+      "IOC",
+      "CVE-2025-13223",
+      "cve-2025-13223"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "CVE-2025-13223",
+        "text": "The exploit in question that today's Chromium browser fix is related to: CVE-2025-13223 (CVSS score: 8.8). Update!",
+        "url": "https://x.com/DarkWebInformer/status/1990831533565821379?s=20"
+      },
+      {
+        "term": "CVE-2025-13223",
+        "text": "The exploit in question that today's Chromium browser fix is related to: CVE-2025-13223 (CVSS score: 8.8). Update!",
+        "url": "https://x.com/DarkWebInformer/status/1990831533565821379?s=20"
+      }
+    ]
   },
   {
     "title": "Anthropic AI-powered cyberattack causes a stir",
@@ -212,6 +225,173 @@
     "inline_links": []
   },
   {
+    "title": "U.S. CISA adds a Google Chromium V8\u00a0flaw to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/184856/hacking/u-s-cisa-adds-a-google-chromium-v8-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2025-13223",
+      "cve-2025-13223"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-13223",
+        "text": "CVE-2025-13223",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-13223"
+      }
+    ]
+  },
+  {
+    "title": "U.S. CISA adds a new Fortinet FortiWeb\u00a0flaw to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/184832/hacking/u-s-cisa-adds-a-new-fortinet-fortiweb-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2025-58034",
+      "CVE-2025-64446",
+      "cve-2025-58034",
+      "cve-2025-64446"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://securityaffairs.com/184806/hacking/new-fortiweb-zero-day-cve-2025-58034-under-attack-patched-by-fortinet.html"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://securityaffairs.com/184652/hacking/u-s-cisa-adds-fortinet-fortiweb-flaw-to-its-known-exploited-vulnerabilities-catalog-2.html"
+      }
+    ]
+  },
+  {
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2025/11/19/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2025-13223",
+      "cve-2025-13223"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-13223",
+        "text": "CVE-2025-13223",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-13223"
+      }
+    ]
+  },
+  {
+    "title": "Fortinet Issues Fixes as FortiWeb Takeover Flaw Sees Active Attacks",
+    "link": "https://hackread.com/fortinet-fixes-fortiweb-takeover-flaw-active-attacks/",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2025-64446"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The nexus of risk and intelligence: How vulnerability-informed hunting uncovers what everything else misses",
+    "link": "https://www.csoonline.com/article/4092087/the-nexus-of-risk-and-intelligence-how-vulnerability-informed-hunting-uncovers-what-everything-else-misses.html",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2020-1472",
+      "CVE-2021-34473",
+      "CVE-2021-44228",
+      "CVE-2023-0386"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Alerts on Fortinet FortiWeb Vulnerability Exploited in Real-World Attacks",
+    "link": "https://gbhackers.com/cisa-alerts-on-fortinet-fortiweb-vulnerability/",
+    "date": "2025-11-19",
+    "terms": [
+      "CVE-2025-58034"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Single Click on CAPTCHA Triggers Destructive Akira Ransomware Attack on Malicious Website",
+    "link": "https://gbhackers.com/akira-ransomware-attack/",
+    "date": "2025-11-19",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": [
+      {
+        "term": "akira",
+        "text": "Single Click on CAPTCHA Triggers Destructive Akira Ransomware Attack on Malicious Website",
+        "url": "https://gbhackers.com/akira-ransomware-attack/"
+      }
+    ]
+  },
+  {
+    "title": "Fake CAPTCHA Triggers 42-Day Akira Ransomware Attack",
+    "link": "https://www.esecurityplanet.com/threats/fake-captcha-triggers-42-day-akira-ransomware-attack/",
+    "date": "2025-11-19",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": [
+      {
+        "term": "akira",
+        "text": "Akira ransomware",
+        "url": "https://www.checkpoint.com/cyber-hub/threat-prevention/ransomware/akira-ransomware/"
+      },
+      {
+        "term": "akira",
+        "text": "Fake CAPTCHA Triggers 42-Day Akira Ransomware Attack",
+        "url": "https://www.esecurityplanet.com/threats/fake-captcha-triggers-42-day-akira-ransomware-attack/"
+      },
+      {
+        "term": "akira",
+        "text": "Fake CAPTCHA Triggers 42-Day Akira Ransomware Attack",
+        "url": "https://www.esecurityplanet.com/threats/fake-captcha-triggers-42-day-akira-ransomware-attack/"
+      }
+    ]
+  },
+  {
+    "title": "How\u00a0to\u00a0Solve\u00a0Alert\u00a0Overload\u00a0in\u00a0Your SOC",
+    "link": "https://cybersecuritynews.com/how-to-solve-alert-overload-in-your-soc/",
+    "date": "2025-11-19",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Actively Exploiting 7-Zip RCE Vulnerability in the Wild",
+    "link": "https://cybersecuritynews.com/7-zip-rce-vulnerability-exploited/",
+    "date": "2025-11-19",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Sysmon \u2013 Go-to Tool for IT Admins, Security Pros, and Threat Hunters Coming to Windows",
+    "link": "https://cybersecuritynews.com/sysmon-tool-windows/",
+    "date": "2025-11-19",
+    "terms": [
+      "WSUS"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Massive Hacking Operation WrtHug Compromises Thousands of ASUS Routers Worldwide",
+    "link": "https://cybersecuritynews.com/wrthug-asus-routers/",
+    "date": "2025-11-19",
+    "terms": [
+      "IOC",
+      "CVE-2023-39780"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Google fixed the seventh Chrome zero-day in 2025",
     "link": "https://securityaffairs.com/184764/hacking/google-fixed-the-seventh-chrome-zero-day-in-2025.html",
     "date": "2025-11-18",
@@ -221,6 +401,7 @@
       "CVE-2025-5419",
       "CVE-2025-6554",
       "CVE-2025-6558",
+      "CVE-2025-13223",
       "cve-2025-10585",
       "cve-2025-6558",
       "cve-2025-5419",
@@ -277,9 +458,16 @@
     "date": "2025-11-18",
     "terms": [
       "Zero Day",
+      "CVE-2025-13223",
+      "cve-2025-13223",
       "zero day"
     ],
     "inline_links": [
+      {
+        "term": "CVE-2025-13223",
+        "text": "CVE-2025-13223",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-13223"
+      },
       {
         "term": "Zero Day",
         "text": "zero days",
@@ -492,10 +680,17 @@
       "Zero Day",
       "CVE-2025-10585",
       "CVE-2025-5419",
+      "CVE-2025-13223",
+      "cve-2025-13223",
       "cve-2025-5419",
       "cve-2025-10585"
     ],
     "inline_links": [
+      {
+        "term": "CVE-2025-13223",
+        "text": "CVE-2025-13223",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13223"
+      },
       {
         "term": "CVE-2025-5419",
         "text": "CVE-2025-5419",
@@ -609,6 +804,24 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034"
       }
     ]
+  },
+  {
+    "title": "Google Issues Security Fix for Actively Exploited Chrome V8 Zero-Day Vulnerability",
+    "link": "https://thehackernews.com/2025/11/google-issues-security-fix-for-actively.html",
+    "date": "2025-11-18",
+    "terms": [
+      "CVE-2025-13223"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Fixes Seventh Actively Exploited Chrome Zero-Day of 2025",
+    "link": "https://cyberinsider.com/google-fixes-seventh-actively-exploited-chrome-zero-day-of-2025/",
+    "date": "2025-11-18",
+    "terms": [
+      "CVE-2025-13223"
+    ],
+    "inline_links": []
   },
   {
     "title": "North Korean threat actors use JSON sites to deliver malware via trojanized code",
