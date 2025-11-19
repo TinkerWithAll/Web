@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const termFilter = document.getElementById("termFilter");
   const downloadBtn = document.getElementById("downloadBtn");
   const noResultsMsg = document.getElementById("noResults");
+  const lastUpdatedSpan = document.getElementById("last-updated");
+
+  // 0. Fetch Metadata (Last Updated Time)
+  fetch("meta.json")
+    .then(response => response.json())
+    .then(data => {
+      if (lastUpdatedSpan) {
+        lastUpdatedSpan.textContent = data.last_updated;
+      }
+    })
+    .catch(err => console.log("Metadata not found yet (run scraper first)"));
+
+  // ... rest of your existing code (fetch feed_history.json etc) ...
 
   let feedData = [];
 
