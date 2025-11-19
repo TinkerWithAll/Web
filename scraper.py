@@ -2,7 +2,7 @@
 """
 scraper.py
 Parses security news, maintains a rolling 30-day history in JSON,
-and generates CSV reports.
+generates CSV reports, and updates a metadata timestamp.
 """
 
 import feedparser
@@ -25,6 +25,7 @@ socket.setdefaulttimeout(300)
 
 # Configuration
 HISTORY_FILE = "feed_history.json"
+META_FILE = "meta.json"  # New metadata file
 MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=30)
 USE_CISA_CVES = True
 
@@ -80,7 +81,6 @@ def parse_feeds(feed_urls, search_terms):
         for e in d.entries:
             link = e.get("link", "")
             
-            # Date Parsing
             published_dt = None
             try:
                 dt_tuple = e.get("published_parsed") or e.get("updated_parsed")
@@ -90,7 +90,6 @@ def parse_feeds(feed_urls, search_terms):
             if not published_dt or published_dt < MIN_PUBLISHED_DATE:
                 continue
 
-            # Content Matching
             title = e.get("title", "")
             summary = e.get("summary", "")
             content = e.get("content", [{"value": ""}])[0]["value"]
@@ -116,7 +115,6 @@ def parse_feeds(feed_urls, search_terms):
     return entries
 
 def update_history_file(new_entries):
-    """Merges new entries with history, removes duplicates, and cleans old data."""
     history = []
     if os.path.exists(HISTORY_FILE):
         try:
@@ -124,17 +122,11 @@ def update_history_file(new_entries):
                 history = json.load(f)
         except: pass
 
-    # Create a dict for deduping based on Link URL
     history_dict = {item['link']: item for item in history}
-    
-    # Add/Update with new entries
     for entry in new_entries:
         history_dict[entry['link']] = entry
 
-    # Convert back to list and sort by date (newest first)
     full_list = sorted(history_dict.values(), key=lambda x: x['date'], reverse=True)
-
-    # Filter out entries older than 30 days
     cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     clean_list = [x for x in full_list if x['date'] >= cutoff]
 
@@ -151,6 +143,16 @@ def save_csv(records, filename):
             inline = " | ".join([f"{x['text']}->{x['url']}" for x in r['inline_links']])
             w.writerow([r['date'], r['title'], r['link'], ", ".join(r['terms']), inline])
 
+def save_metadata():
+    """Saves the current timestamp to a separate JSON file."""
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    try:
+        with open(META_FILE, "w", encoding="utf-8") as f:
+            json.dump({"last_updated": timestamp}, f)
+        print(f"Updated {META_FILE} with timestamp: {timestamp}", file=sys.stderr)
+    except Exception as e:
+        print(f"Error saving metadata: {e}", file=sys.stderr)
+
 def main():
     if USE_CISA_CVES: update_terms_with_cisa_cves()
     
@@ -161,12 +163,13 @@ def main():
     print("Scanning feeds...", file=sys.stderr)
     new_matches = parse_feeds(feeds, terms)
     
-    # Update history and get the full 30-day list
     full_history = update_history_file(new_matches)
     
-    # Generate daily CSV for record keeping
     timestamp = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
     save_csv(new_matches, f"results_{timestamp}.csv")
+    
+    # NEW: Save the update time
+    save_metadata()
     
     print(f"Done. History updated with {len(full_history)} total entries.")
 
