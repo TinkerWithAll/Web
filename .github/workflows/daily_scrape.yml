@@ -1,10 +1,10 @@
 name: Daily Security Feed Scraper
 
 on:
-  # Schedule to run daily at 00:00 UTC
+  # Runs at 00:00 UTC every day
   schedule:
     - cron: '0 0 * * *'
-  # Allows you to run this workflow manually from the Actions tab for testing
+  # Allows you to click "Run workflow" manually
   workflow_dispatch:
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          # Add generated CSVs, the updated terms list (if new CVEs found), and the index.html
-          git add results_*.csv terms.txt index.html
-          # Only commit if there are changes to avoid empty commit errors
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated: Update security feed results" && git push)
+          # Add the CSVs, the history JSON, and the terms (if updated)
+          git add results_*.csv feed_history.json terms.txt
+          # Check if there are changes before committing to prevent errors
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated: Update security feed" && git push)
