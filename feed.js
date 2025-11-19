@@ -1,27 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.querySelector("#feedTable tbody");
   const searchInput = document.getElementById("searchInput");
-  const termFilter = document.getElementById("termFilter");
+  // RENAMED: We use termInput instead of termFilter
+  const termInput = document.getElementById("termInput"); 
+  
   const downloadBtn = document.getElementById("downloadBtn");
   const noResultsMsg = document.getElementById("noResults");
   const lastUpdatedSpan = document.getElementById("last-updated");
+  
+  // NEW: Selectors for the new download buttons
+  const downloadTermsBtn = document.getElementById("downloadTermsBtn");
+  const downloadFeedsBtn = document.getElementById("downloadFeedsBtn");
 
-  // 0. Fetch Metadata (Last Updated Time)
+  let feedData = [];
+
+  // --- Utility Function for Downloading .txt files ---
+  function downloadTextFile(filename) {
+    fetch(filename)
+        .then(response => {
+            if (!response.ok) throw new Error(`Could not find ${filename}`);
+            return response.text();
+        })
+        .then(text => {
+            const blob = new Blob([text], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            window.URL.revokeObjectURL(url);
+            alert(`Downloading ${filename} started.`);
+        })
+        .catch(err => {
+            console.error(err);
+            alert(`Error: ${filename} could not be downloaded. Check if the file exists.`);
+        });
+  }
+
+  // --- 0. Fetch Metadata (Last Updated Time) ---
   fetch("meta.json")
     .then(response => response.json())
     .then(data => {
-      // THIS MUST MATCH THE ID IN feed.html
       if (lastUpdatedSpan) {
-        lastUpdatedSpan.textContent = data.last_updated; 
+        lastUpdatedSpan.textContent = data.last_updated;
       }
     })
     .catch(err => console.log("Metadata fetch failed", err));
 
-  // ... rest of your existing code (fetch feed_history.json etc) ...
 
-  let feedData = [];
-
-  // 1. Fetch Data
+  // --- 1. Fetch Data ---
   fetch("feed_history.json")
     .then(response => {
       if (!response.ok) throw new Error("History file not found");
@@ -29,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       feedData = data;
-      populateFilterDropdown(data);
+      // Removed call to populateFilterDropdown
       renderTable(data);
     })
     .catch(err => {
@@ -37,23 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tableBody.innerHTML = `<tr><td colspan="3" style="text-align:center">No data available or error loading feed.</td></tr>`;
     });
 
-  // 2. Populate Dropdown with unique terms found in data
-  function populateFilterDropdown(data) {
-    const allTerms = new Set();
-    data.forEach(item => {
-      item.terms.forEach(term => allTerms.add(term));
-    });
-    
-    const sortedTerms = Array.from(allTerms).sort();
-    sortedTerms.forEach(term => {
-      const option = document.createElement("option");
-      option.value = term;
-      option.textContent = term;
-      termFilter.appendChild(option);
-    });
-  }
 
-  // 3. Render Table
+  // --- 3. Render Table (No change) ---
   function renderTable(data) {
     tableBody.innerHTML = "";
     
@@ -67,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     data.forEach(item => {
       const row = document.createElement("tr");
       
-      // Create Terms tags
       const termsHtml = item.terms
         .map(t => `<span class="term-tag">${t}</span>`)
         .join(" ");
@@ -83,41 +94,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. Filter Logic
+  // --- 4. Filter Logic (Updated) ---
   function filterData() {
     const searchText = searchInput.value.toLowerCase();
-    const selectedTerm = termFilter.value;
+    
+    // NEW LOGIC: Parse comma-separated terms from input field
+    const termSearchList = termInput.value
+      .toLowerCase()
+      .split(',')
+      .map(term => term.trim())
+      .filter(term => term.length > 0);
 
     const filtered = feedData.filter(item => {
-      // Check text search
+      // 1. Check article title/summary search
       const textMatch = item.title.toLowerCase().includes(searchText) || 
                         (item.summary && item.summary.toLowerCase().includes(searchText));
       
-      // Check dropdown term
-      const termMatch = selectedTerm === "all" || item.terms.includes(selectedTerm);
-
+      // 2. Check comma-separated terms
+      let termMatch = true;
+      if (termSearchList.length > 0) {
+        // Must match AT LEAST ONE term in the comma-separated list
+        // Note: item.terms holds the terms that matched in the original scrape
+        termMatch = termSearchList.some(searchTerm => 
+          item.terms.some(articleTerm => articleTerm.toLowerCase().includes(searchTerm))
+        );
+      }
+      
       return textMatch && termMatch;
     });
 
     renderTable(filtered);
-    return filtered; // Return for CSV downloader
+    return filtered;
   }
 
+  // --- Event Listeners ---
   searchInput.addEventListener("input", filterData);
-  termFilter.addEventListener("change", filterData);
+  // Using 'input' listener for immediate feedback on typing
+  termInput.addEventListener("input", filterData); 
 
-  // 5. Download CSV Logic
+  // --- 5. Download CSV Logic (No change) ---
   downloadBtn.addEventListener("click", () => {
-    const currentData = filterData(); // Get currently visible data
+    const currentData = filterData(); 
     if (currentData.length === 0) return alert("No data to download");
 
     const csvContent = [];
-    // Header
     csvContent.push("Date,Title,Link,Terms");
 
-    // Rows
     currentData.forEach(item => {
-      // Escape quotes for CSV validity
       const title = `"${item.title.replace(/"/g, '""')}"`;
       const terms = `"${item.terms.join(", ")}"`;
       csvContent.push(`${item.date},${title},${item.link},${terms}`);
@@ -127,8 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `security_feed_${new Date().toISOString().slice(0,10)}.csv`;
+    a.download = `security_feed_filtered_${new Date().toISOString().slice(0,10)}.csv`;
     a.click();
     window.URL.revokeObjectURL(url);
   });
+  
+  // --- NEW: Download TXT Listeners ---
+  downloadTermsBtn.addEventListener("click", () => downloadTextFile("terms.txt"));
+  downloadFeedsBtn.addEventListener("click", () => downloadTextFile("feeds.txt"));
 });
