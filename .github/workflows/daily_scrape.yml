@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          # Add the CSVs, the history JSON, and the terms (if updated)
-          git add results_*.csv feed_history.json terms.txt
+          # Add CSVs, history, terms, AND meta.json
+          git add results_*.csv feed_history.json terms.txt meta.json
           # Check if there are changes before committing to prevent errors
           git diff --quiet && git diff --staged --quiet || (git commit -m "Automated: Update security feed" && git push)
