@@ -155,4 +155,71 @@ footer {
   transform: scale(1.2);
   filter: invert(0%) sepia(100%) saturate(5000%) hue-rotate(200deg) brightness(90%) contrast(100%);
 }
+/* --- FEED PAGE STYLES --- */
 
+.feed-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feed-controls input, 
+.feed-controls select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.feed-controls button {
+  background: #0056b3;
+  color: white;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.feed-controls button:hover {
+  background: #004494;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#feedTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+#feedTable th, 
+#feedTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+#feedTable th {
+  background: #f8f8f8;
+  font-weight: bold;
+}
+
+#feedTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+.term-tag {
+  display: inline-block;
+  background: #eef2f5;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin: 2px;
+  border: 1px solid #ddd;
+}
