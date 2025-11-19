@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Feed | Zachary Baillod</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="feed.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">ZB</h1>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#background">Background</a></li>
+        <li><a href="index.html#certs">Certifications</a></li>
+        <li><a href="feed.html" class="active">Security Feed</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Security Feed (Last 30 Days)</h2>
+    <p>Automated scraping of security news matching specific threat vectors and CVEs.</p>
+
+    <div class="feed-controls">
+      <input type="text" id="searchInput" placeholder="Search title or summary..." />
+      
+      <select id="termFilter">
+        <option value="all">All Terms</option>
+        </select>
+
+      <button id="downloadBtn">Download CSV</button>
+    </div>
+
+    <div class="table-container">
+      <table id="feedTable">
+        <thead>
+          <tr>
+            <th style="width: 120px;">Date</th>
+            <th>Article</th>
+            <th>Matched Terms</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+      <p id="noResults" style="display:none; text-align:center; padding:1rem;">No matches found.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Zachary Baillod</p>
+  </footer>
+</body>
+</html>
