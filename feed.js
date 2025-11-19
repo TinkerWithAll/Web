@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("meta.json")
     .then(response => response.json())
     .then(data => {
+      // THIS MUST MATCH THE ID IN feed.html
       if (lastUpdatedSpan) {
-        lastUpdatedSpan.textContent = data.last_updated;
+        lastUpdatedSpan.textContent = data.last_updated; 
       }
     })
-    .catch(err => console.log("Metadata not found yet (run scraper first)"));
+    .catch(err => console.log("Metadata fetch failed", err));
 
   // ... rest of your existing code (fetch feed_history.json etc) ...
 
