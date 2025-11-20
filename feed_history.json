@@ -9,6 +9,130 @@
     "inline_links": []
   },
   {
+    "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+    "link": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+    "date": "2025-11-20",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "7-Zip RCE Vulnerability Actively Exploited by Hackers",
+    "link": "https://gbhackers.com/7-zip-rce-vulnerability-actively-exploited-by-hackers/",
+    "date": "2025-11-20",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Europe Strengthens Cyber Defense as ENISA Becomes CVE Root",
+    "link": "https://thecyberexpress.com/enisa-cve-root-eu-root-management/",
+    "date": "2025-11-20",
+    "terms": [
+      "CVE-2025-20352"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Lessons from Oracle E-Business Suite Hack That Allegedly Compromises Nearly 30 Organizations Worldwide",
+    "link": "https://cybersecuritynews.com/oracle-e-business-suite-hack/",
+    "date": "2025-11-20",
+    "terms": [
+      "IOC",
+      "CVE-2025-61882",
+      "CVE-2025-61884",
+      "cve-2025-61882",
+      "cve-2025-61884"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-rce-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-rce-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-rce-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-rce-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-61884",
+        "text": "CVE-2025-61884",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-rce-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/entrust-oracle-0-day-ebs-hack/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/nhs-oracle-ebs-hack/"
+      }
+    ]
+  },
+  {
+    "title": "Threat Actors Allegedly Selling Microsoft Office 0-Day RCE Vulnerability on Hacking Forums",
+    "link": "https://cybersecuritynews.com/microsoft-office-0-day-rce-claim/",
+    "date": "2025-11-20",
+    "terms": [
+      "CVE-2023-36884",
+      "cve-2023-36884"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2023-36884",
+        "text": "CVE-2023-36884",
+        "url": "https://cybersecuritynews.com/windows-zero-days-firefox-romcom-group/"
+      }
+    ]
+  },
+  {
+    "title": "Critical N-able N-central Vulnerabilities Allow attacker to interact with legacy APIs and read sensitive files",
+    "link": "https://cybersecuritynews.com/critical-n-able-n-central-vulnerabilities/",
+    "date": "2025-11-20",
+    "terms": [
+      "CVE-2025-8875",
+      "CVE-2025-8876",
+      "cve-2025-8875",
+      "cve-2025-8876"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-8875",
+        "text": "CVE-2025-8875",
+        "url": "https://cybersecuritynews.com/1000-exposed-n-able-n-central-rmm-servers/"
+      },
+      {
+        "term": "CVE-2025-8876",
+        "text": "CVE-2025-8876",
+        "url": "https://cybersecuritynews.com/1000-exposed-n-able-n-central-rmm-servers/"
+      }
+    ]
+  },
+  {
+    "title": "Russian hackers target IVF clinics across UK used by thousands of couples",
+    "link": "https://databreaches.net/2025/11/20/russian-hackers-target-ivf-clinics-across-uk-used-by-thousands-of-couples/?pk_campaign=feed&pk_kwd=russian-hackers-target-ivf-clinics-across-uk-used-by-thousands-of-couples",
+    "date": "2025-11-20",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Fortinet Warns of New FortiWeb CVE-2025-58034 Vulnerability Exploited in the Wild",
     "link": "https://thehackernews.com/2025/11/fortinet-warns-of-new-fortiweb-cve-2025.html",
     "date": "2025-11-19",
@@ -752,6 +876,15 @@
     ]
   },
   {
+    "title": "Marine Foods Express LTD By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-19",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Google fixed the seventh Chrome zero-day in 2025",
     "link": "https://securityaffairs.com/184764/hacking/google-fixed-the-seventh-chrome-zero-day-in-2025.html",
     "date": "2025-11-18",
@@ -1180,15 +1313,6 @@
     "date": "2025-11-18",
     "terms": [
       "CVE-2025-13223"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Spark Innovation By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-18",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
