@@ -41,6 +41,7 @@
     "date": "2025-11-20",
     "terms": [
       "IOC",
+      "CLOP",
       "CVE-2025-61882",
       "CVE-2025-61884",
       "cve-2025-61882",
@@ -126,6 +127,15 @@
   {
     "title": "Russian hackers target IVF clinics across UK used by thousands of couples",
     "link": "https://databreaches.net/2025/11/20/russian-hackers-target-ivf-clinics-across-uk-used-by-thousands-of-couples/?pk_campaign=feed&pk_kwd=russian-hackers-target-ivf-clinics-across-uk-used-by-thousands-of-couples",
+    "date": "2025-11-20",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "IGT By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
     "date": "2025-11-20",
     "terms": [
       "qilin"
@@ -243,6 +253,7 @@
       "scattered spider",
       "akira",
       "qilin",
+      "CLOP",
       "CVE-2024-40766",
       "CVE-2025-49704",
       "CVE-2025-49706",
@@ -530,7 +541,6 @@
     "date": "2025-11-19",
     "terms": [
       "critical Vulnerability",
-      "cve-2025-61932",
       "CVE-2024-40890",
       "CVE-2024-40891",
       "CVE-2024-55591",
@@ -607,7 +617,8 @@
       "cve-2025-61882",
       "cve-2025-59230",
       "cve-2025-24990",
-      "cve-2025-61884"
+      "cve-2025-61884",
+      "cve-2025-61932"
     ],
     "inline_links": [
       {
@@ -811,11 +822,6 @@
         "url": "https://app.flashpoint.io/vuln/vulnerabilities/422968"
       },
       {
-        "term": "cve-2025-61932",
-        "text": "CVE-2025-61932",
-        "url": "https://app.flashpoint.io/vuln/vulnerabilities/424186"
-      },
-      {
         "term": "CVE-2025-61932",
         "text": "CVE-2025-61932",
         "url": "https://app.flashpoint.io/vuln/vulnerabilities/424186"
@@ -823,7 +829,7 @@
     ]
   },
   {
-    "title": "Cardinal Services By akira",
+    "title": "The InterTech Group By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2025-11-19",
     "terms": [
@@ -832,7 +838,7 @@
     "inline_links": []
   },
   {
-    "title": "TFC Poultry By sinobi",
+    "title": "CHANGEPOND By sinobi",
     "link": "https://www.ransomlook.io//group/sinobi",
     "date": "2025-11-19",
     "terms": [
@@ -876,11 +882,11 @@
     ]
   },
   {
-    "title": "Marine Foods Express LTD By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
+    "title": "NCH.COM By clop",
+    "link": "https://www.ransomlook.io//group/clop",
     "date": "2025-11-19",
     "terms": [
-      "qilin"
+      "CLOP"
     ],
     "inline_links": []
   },
@@ -1086,7 +1092,6 @@
     "link": "https://cyble.com/blog/patch-tuesday-971-cves-critical-microsoft-flaws/",
     "date": "2025-11-18",
     "terms": [
-      "cve-2025-61932",
       "CVE-2025-11371",
       "CVE-2025-12480",
       "CVE-2025-20333",
@@ -1105,7 +1110,8 @@
       "cve-2025-20333",
       "cve-2025-20362",
       "cve-2025-11371",
-      "cve-2025-6554"
+      "cve-2025-6554",
+      "cve-2025-61932"
     ],
     "inline_links": [
       {
@@ -1152,11 +1158,6 @@
         "term": "CVE-2025-6554",
         "text": "CVE-2025-6554",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6554"
-      },
-      {
-        "term": "cve-2025-61932",
-        "text": "CVE-2025-61932",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61932"
       },
       {
         "term": "CVE-2025-61932",
@@ -1368,6 +1369,7 @@
     "terms": [
       "Canada",
       "qilin",
+      "CL0P",
       "CVE-2025-12480",
       "CVE-2025-20337",
       "CVE-2025-5777",
@@ -1626,10 +1628,13 @@
     "date": "2025-11-14",
     "terms": [
       "critical Vulnerability",
+      "CL0P",
+      "CLOP",
       "CVE-2025-12480",
       "CVE-2025-61884",
       "cve-2025-12480",
-      "cve-2025-61884"
+      "cve-2025-61884",
+      "cl0p"
     ],
     "inline_links": [
       {
@@ -1641,6 +1646,11 @@
         "term": "CVE-2025-61884",
         "text": "CVE-2025-61884",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61884"
+      },
+      {
+        "term": "CL0P",
+        "text": "Cl0p",
+        "url": "https://www.sentinelone.com/anthology/clop/"
       }
     ]
   },
@@ -1682,7 +1692,8 @@
     "date": "2025-11-14",
     "terms": [
       "akira",
-      "qilin"
+      "qilin",
+      "CLOP"
     ],
     "inline_links": []
   },
@@ -1801,6 +1812,7 @@
       "akira",
       "qilin",
       "sinobi",
+      "CL0P",
       "CVE-2021-43226",
       "CVE-2025-10035",
       "CVE-2025-61882"
@@ -1821,6 +1833,15 @@
         "url": "https://socradar.io/apt-profile-who-is-lazarus-group/"
       }
     ]
+  },
+  {
+    "title": "How a fake AI sidebar can steal your data | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/ai-sidebar-spoofing-atlas-comet/54769/",
+    "date": "2025-11-13",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
   },
   {
     "title": "'CitrixBleed 2' Wreaks Havoc as Zero-Day Bug",
@@ -2111,6 +2132,15 @@
     "inline_links": []
   },
   {
+    "title": "Washington Post confirms data breach linked to Oracle hacks",
+    "link": "https://techcrunch.com/2025/11/07/washington-post-confirms-data-breach-linked-to-oracle-hacks/",
+    "date": "2025-11-07",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "SonicWall Firewall Backups Stolen by Nation-State Actor",
     "link": "https://www.darkreading.com/cyberattacks-data-breaches/sonicwall-firewall-backups-nation-state-actor",
     "date": "2025-11-06",
@@ -2124,7 +2154,6 @@
     "link": "https://www.darkreading.com/application-security/bronze-butler-apt-exploits-zero-day-vuln-root-japan",
     "date": "2025-11-06",
     "terms": [
-      "cve-2025-61932",
       "CVE-2025-61932"
     ],
     "inline_links": []
@@ -2167,7 +2196,8 @@
     "date": "2025-11-04",
     "terms": [
       "akira",
-      "qilin"
+      "qilin",
+      "CL0P"
     ],
     "inline_links": []
   },
@@ -2210,6 +2240,7 @@
     "terms": [
       "akira",
       "Everest",
+      "CL0P",
       "WSUS",
       "CVE-2025-59287",
       "CVE-2025-61882"
@@ -2422,7 +2453,6 @@
     "terms": [
       "Canada",
       "lazarus",
-      "cve-2025-33073",
       "CVE-2025-33073",
       "CVE-2025-54236",
       "CVE-2025-59287"
@@ -2533,15 +2563,10 @@
     "link": "https://www.cisa.gov/news-events/alerts/2025/10/22/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "2025-10-22",
     "terms": [
-      "cve-2025-61932",
-      "CVE-2025-61932"
+      "CVE-2025-61932",
+      "cve-2025-61932"
     ],
     "inline_links": [
-      {
-        "term": "cve-2025-61932",
-        "text": "CVE-2025-61932",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-61932"
-      },
       {
         "term": "CVE-2025-61932",
         "text": "CVE-2025-61932",
