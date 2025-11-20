@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.querySelector("#feedTable tbody");
   const searchInput = document.getElementById("searchInput");
-  // RENAMED: We use termInput instead of termFilter
   const termInput = document.getElementById("termInput"); 
+  const termToggleBtn = document.getElementById("termToggleBtn"); // NEW
   
   const downloadBtn = document.getElementById("downloadBtn");
   const noResultsMsg = document.getElementById("noResults");
   const lastUpdatedSpan = document.getElementById("last-updated");
   
-  // NEW: Selectors for the new download buttons
   const downloadTermsBtn = document.getElementById("downloadTermsBtn");
   const downloadFeedsBtn = document.getElementById("downloadFeedsBtn");
 
   let feedData = [];
+  let searchModeIsAND = true; // Tracks the state: true = AND, false = OR
 
   // --- Utility Function for Downloading .txt files ---
   function downloadTextFile(filename) {
@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       feedData = data;
-      // Removed call to populateFilterDropdown
       renderTable(data);
     })
     .catch(err => {
@@ -94,11 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- 4. Filter Logic (Updated) ---
+  // --- 4. Filter Logic (UPDATED for AND/OR) ---
   function filterData() {
     const searchText = searchInput.value.toLowerCase();
     
-    // NEW LOGIC: Parse comma-separated terms from input field
+    // Parse comma-separated terms from input field
     const termSearchList = termInput.value
       .toLowerCase()
       .split(',')
@@ -110,14 +109,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const textMatch = item.title.toLowerCase().includes(searchText) || 
                         (item.summary && item.summary.toLowerCase().includes(searchText));
       
-      // 2. Check comma-separated terms
+      // 2. Check comma-separated terms against the article's matched terms
       let termMatch = true;
       if (termSearchList.length > 0) {
-        // Must match AT LEAST ONE term in the comma-separated list
-        // Note: item.terms holds the terms that matched in the original scrape
-        termMatch = termSearchList.some(searchTerm => 
-          item.terms.some(articleTerm => articleTerm.toLowerCase().includes(searchTerm))
-        );
+        // Core logic split based on searchModeIsAND state
+        if (searchModeIsAND) {
+            // AND logic: ALL search terms must be present in the article's terms
+            termMatch = termSearchList.every(searchTerm => 
+                item.terms.some(articleTerm => articleTerm.toLowerCase().includes(searchTerm))
+            );
+        } else {
+            // OR logic: ANY search term must be present in the article's terms
+            termMatch = termSearchList.some(searchTerm => 
+                item.terms.some(articleTerm => articleTerm.toLowerCase().includes(searchTerm))
+            );
+        }
       }
       
       return textMatch && termMatch;
@@ -126,11 +132,25 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTable(filtered);
     return filtered;
   }
-
+  
   // --- Event Listeners ---
   searchInput.addEventListener("input", filterData);
-  // Using 'input' listener for immediate feedback on typing
   termInput.addEventListener("input", filterData); 
+
+  // NEW: Toggle listener for AND/OR button
+  termToggleBtn.addEventListener("click", () => {
+    searchModeIsAND = !searchModeIsAND; // Toggle state
+    if (searchModeIsAND) {
+      termToggleBtn.textContent = "Search: AND";
+      termToggleBtn.classList.add("toggle-and");
+      termToggleBtn.classList.remove("toggle-or");
+    } else {
+      termToggleBtn.textContent = "Search: OR";
+      termToggleBtn.classList.add("toggle-or");
+      termToggleBtn.classList.remove("toggle-and");
+    }
+    filterData(); // Rerun filter immediately with new mode
+  });
 
   // --- 5. Download CSV Logic (No change) ---
   downloadBtn.addEventListener("click", () => {
@@ -155,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.URL.revokeObjectURL(url);
   });
   
-  // --- NEW: Download TXT Listeners ---
+  // --- Download TXT Listeners ---
   downloadTermsBtn.addEventListener("click", () => downloadTextFile("terms.txt"));
   downloadFeedsBtn.addEventListener("click", () => downloadTextFile("feeds.txt"));
 });
