@@ -1,11 +1,15 @@
 name: Daily Security Feed Scraper
 
 on:
-  # Runs at 00:00 UTC every day
-  schedule:
-    - cron: '0 0 * * *'
-  # Allows you to click "Run workflow" manually
+  push:
+    branches:
+      - main
   workflow_dispatch:
+  # -------------------------------------------------------------------
+  # Runs at 13:30 UTC every day (08:30 AM EST / 09:30 AM EDT)
+  # -------------------------------------------------------------------
+  schedule:
+    - cron: '30 12 * * *'
 
 permissions:
   contents: write
