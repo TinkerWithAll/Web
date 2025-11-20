@@ -165,23 +165,22 @@ footer {
 }
 
 .feed-controls input, 
-.feed-controls select {
+.feed-controls select { /* Note: select is now optional, but kept for legacy styles */
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  flex: 1;
-  min-width: 200px;
+  /* Allows inputs to take up space dynamically */
+  flex: 1; 
+  min-width: 180px;
 }
 
+/* Make buttons consistent */
 .feed-controls button {
   background: #0056b3;
   color: white;
   border-radius: 4px;
+  padding: 0.6rem; /* Match input padding */
   min-width: 120px;
-}
-
-.feed-controls button:hover {
-  background: #004494;
 }
 
 .table-container {
