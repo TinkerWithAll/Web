@@ -28,14 +28,17 @@
     <p>Automated scraping of security news matching specific threat vectors and CVEs.</p>
 
     <div class="feed-controls">
-  <input type="text" id="searchInput" placeholder="Search title or summary..." />
+      <input type="text" id="searchInput" placeholder="Search title or summary..." />
   
-  <input type="text" id="termInput" placeholder="Filter terms (e.g., CVE-2024-1234, Cisco, Windows)..." />
+      <div style="display: flex; gap: 0.5rem; flex: 1; min-width: 180px;">
+        <input type="text" id="termInput" placeholder="Filter terms (e.g., CVE-2024-1234, Cisco, Windows)..." style="flex-grow: 1;" />
+        <button id="termToggleBtn" class="toggle-and" title="Toggle between matching ALL terms (AND) or ANY term (OR).">Search: AND</button>
+      </div>
 
-  <button id="downloadBtn">Download Filtered CSV</button>
-  <button id="downloadTermsBtn" title="Download the list of security terms used for filtering.">Download terms.txt</button>
-  <button id="downloadFeedsBtn" title="Download the list of RSS feeds being scraped.">Download feeds.txt</button>
-</div>
+      <button id="downloadBtn">Download Filtered CSV</button>
+      <button id="downloadTermsBtn" title="Download the list of security terms used for filtering.">Download terms.txt</button>
+      <button id="downloadFeedsBtn" title="Download the list of RSS feeds being scraped.">Download feeds.txt</button>
+    </div>
 
     <div class="table-container">
       <table id="feedTable">
