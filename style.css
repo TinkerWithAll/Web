@@ -222,3 +222,35 @@ footer {
   margin: 2px;
   border: 1px solid #ddd;
 }
+/* --- New Styles for AND/OR Toggle Button --- */
+
+/* Style for the term input group to handle the button */
+.feed-controls > div {
+    display: flex;
+    gap: 0.5rem;
+    flex: 1; 
+    min-width: 180px;
+}
+
+#termToggleBtn {
+    /* Style consistency */
+    background: #4a90e2; /* Default blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    min-width: 80px; /* Ensure button doesn't shrink too much */
+}
+
+/* Style for the 'AND' mode (e.g., green/blue) */
+#termToggleBtn.toggle-and {
+    background-color: #2196F3; /* Bright Blue */
+}
+
+/* Style for the 'OR' mode (e.g., orange/red) */
+#termToggleBtn.toggle-or {
+    background-color: #f44336; /* Red for broader results */
+}
