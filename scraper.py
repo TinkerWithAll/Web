@@ -11,12 +11,14 @@ import csv
 import sys
 import io
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import socket
 import requests
 import os
 import ssl
 import glob
+import json
+from zoneinfo import ZoneInfo
 
 # Fix for encoding and SSL
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -144,8 +146,15 @@ def save_csv(records, filename):
             w.writerow([r['date'], r['title'], r['link'], ", ".join(r['terms']), inline])
 
 def save_metadata():
-    """Saves the current timestamp to a separate JSON file."""
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    """Saves the current timestamp to a separate JSON file in Eastern Time."""
+    # Define the Eastern Time Zone using America/New_York
+    eastern_tz = ZoneInfo("America/New_York")
+    # Get the current time in UTC
+    now_utc = datetime.now(timezone.utc)
+    # Convert UTC time to Eastern Time
+    now_eastern = now_utc.astimezone(eastern_tz)
+    # Format the time string, using %Z to automatically display EST or EDT
+    timestamp = now_eastern.strftime("%Y-%m-%d %H:%M %Z")
     try:
         with open(META_FILE, "w", encoding="utf-8") as f:
             json.dump({"last_updated": timestamp}, f)
