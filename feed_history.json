@@ -392,6 +392,331 @@
     "inline_links": []
   },
   {
+    "title": "Flashpoint Weekly Vulnerability Insights and Prioritization Report",
+    "link": "https://flashpoint.io/blog/flashpoint-weekly-vulnerability-insights-prioritization/",
+    "date": "2025-11-19",
+    "terms": [
+      "critical Vulnerability",
+      "cve-2025-61932",
+      "CVE-2024-40890",
+      "CVE-2024-40891",
+      "CVE-2024-55591",
+      "CVE-2025-0108",
+      "CVE-2025-10035",
+      "CVE-2025-20333",
+      "CVE-2025-22224",
+      "CVE-2025-22457",
+      "CVE-2025-23006",
+      "CVE-2025-24085",
+      "CVE-2025-24201",
+      "CVE-2025-24472",
+      "CVE-2025-24990",
+      "CVE-2025-25181",
+      "CVE-2025-27363",
+      "CVE-2025-2746",
+      "CVE-2025-2783",
+      "CVE-2025-31201",
+      "CVE-2025-31324",
+      "CVE-2025-32433",
+      "CVE-2025-3248",
+      "CVE-2025-33053",
+      "CVE-2025-41244",
+      "CVE-2025-42599",
+      "CVE-2025-43200",
+      "CVE-2025-43300",
+      "CVE-2025-53770",
+      "CVE-2025-5419",
+      "CVE-2025-54309",
+      "CVE-2025-57819",
+      "CVE-2025-59230",
+      "CVE-2025-61882",
+      "CVE-2025-61884",
+      "CVE-2025-61932",
+      "CVE-2025-64446",
+      "CVE-2025-6543",
+      "CVE-2025-6558",
+      "CVE-2025-7775",
+      "CVE-2025-8876",
+      "cve-2025-64446",
+      "cve-2024-55591",
+      "cve-2025-23006",
+      "cve-2025-24085",
+      "cve-2024-40890",
+      "cve-2024-40891",
+      "cve-2025-25181",
+      "cve-2025-0108",
+      "cve-2025-24472",
+      "cve-2025-22224",
+      "cve-2025-24201",
+      "cve-2025-27363",
+      "cve-2025-2746",
+      "cve-2025-2783",
+      "cve-2025-22457",
+      "cve-2025-3248",
+      "cve-2025-32433",
+      "cve-2025-31201",
+      "cve-2025-31324",
+      "cve-2025-42599",
+      "cve-2025-5419",
+      "cve-2025-33053",
+      "cve-2025-43200",
+      "cve-2025-6543",
+      "cve-2025-6558",
+      "cve-2025-54309",
+      "cve-2025-53770",
+      "cve-2025-8876",
+      "cve-2025-43300",
+      "cve-2025-7775",
+      "cve-2025-57819",
+      "cve-2025-10035",
+      "cve-2025-20333",
+      "cve-2025-41244",
+      "cve-2025-61882",
+      "cve-2025-59230",
+      "cve-2025-24990",
+      "cve-2025-61884"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/427044"
+      },
+      {
+        "term": "CVE-2024-55591",
+        "text": "CVE-2024-55591",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/387268"
+      },
+      {
+        "term": "CVE-2025-23006",
+        "text": "CVE-2025-23006",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/388931"
+      },
+      {
+        "term": "CVE-2025-24085",
+        "text": "CVE-2025-24085",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/389331"
+      },
+      {
+        "term": "CVE-2024-40890",
+        "text": "CVE-2024-40890",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/389567"
+      },
+      {
+        "term": "CVE-2024-40891",
+        "text": "CVE-2024-40891",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/389561"
+      },
+      {
+        "term": "CVE-2025-25181",
+        "text": "CVE-2025-25181",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/390273"
+      },
+      {
+        "term": "CVE-2024-40890",
+        "text": "CVE-2024-40890",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/390663"
+      },
+      {
+        "term": "CVE-2024-40891",
+        "text": "CVE-2024-40891",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/390819"
+      },
+      {
+        "term": "CVE-2025-0108",
+        "text": "CVE-2025-0108",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/391412"
+      },
+      {
+        "term": "CVE-2025-24472",
+        "text": "CVE-2025-24472",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/391163"
+      },
+      {
+        "term": "CVE-2025-22224",
+        "text": "CVE-2025-22224",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/393505"
+      },
+      {
+        "term": "CVE-2025-24201",
+        "text": "CVE-2025-24201",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/394375"
+      },
+      {
+        "term": "CVE-2025-27363",
+        "text": "CVE-2025-27363",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/394630"
+      },
+      {
+        "term": "CVE-2025-2746",
+        "text": "CVE-2025-2746",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/395138"
+      },
+      {
+        "term": "CVE-2025-2783",
+        "text": "CVE-2025-2783",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/395060"
+      },
+      {
+        "term": "CVE-2025-22457",
+        "text": "CVE-2025-22457",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/397614"
+      },
+      {
+        "term": "CVE-2025-3248",
+        "text": "CVE-2025-3248",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/398847"
+      },
+      {
+        "term": "CVE-2025-32433",
+        "text": "CVE-2025-32433",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/400177"
+      },
+      {
+        "term": "CVE-2025-31201",
+        "text": "CVE-2025-31201",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/399976"
+      },
+      {
+        "term": "CVE-2025-31324",
+        "text": "CVE-2025-31324",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/401512"
+      },
+      {
+        "term": "CVE-2025-42599",
+        "text": "CVE-2025-42599",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/400344"
+      },
+      {
+        "term": "CVE-2025-5419",
+        "text": "CVE-2025-5419",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/406274"
+      },
+      {
+        "term": "CVE-2025-33053",
+        "text": "CVE-2025-33053",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/407581"
+      },
+      {
+        "term": "CVE-2025-43200",
+        "text": "CVE-2025-43200",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/407778"
+      },
+      {
+        "term": "CVE-2025-6543",
+        "text": "CVE-2025-6543",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/409209"
+      },
+      {
+        "term": "CVE-2025-6558",
+        "text": "CVE-2025-6558",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/411784"
+      },
+      {
+        "term": "CVE-2025-54309",
+        "text": "CVE-2025-54309",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/412353"
+      },
+      {
+        "term": "CVE-2025-53770",
+        "text": "CVE-2025-53770",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/412291"
+      },
+      {
+        "term": "CVE-2025-8876",
+        "text": "CVE-2025-8876",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/415036"
+      },
+      {
+        "term": "CVE-2025-43300",
+        "text": "CVE-2025-43300",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/416051"
+      },
+      {
+        "term": "CVE-2025-7775",
+        "text": "CVE-2025-7775",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/416576"
+      },
+      {
+        "term": "CVE-2025-57819",
+        "text": "CVE-2025-57819",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/416936"
+      },
+      {
+        "term": "CVE-2025-10035",
+        "text": "CVE-2025-10035",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/419950"
+      },
+      {
+        "term": "CVE-2025-20333",
+        "text": "CVE-2025-20333",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/420800"
+      },
+      {
+        "term": "CVE-2025-41244",
+        "text": "CVE-2025-41244",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/421209"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/421926"
+      },
+      {
+        "term": "CVE-2025-59230",
+        "text": "CVE-2025-59230",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/423097"
+      },
+      {
+        "term": "CVE-2025-24990",
+        "text": "CVE-2025-24990",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/423096"
+      },
+      {
+        "term": "CVE-2025-61884",
+        "text": "CVE-2025-61884",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/422968"
+      },
+      {
+        "term": "cve-2025-61932",
+        "text": "CVE-2025-61932",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/424186"
+      },
+      {
+        "term": "CVE-2025-61932",
+        "text": "CVE-2025-61932",
+        "url": "https://app.flashpoint.io/vuln/vulnerabilities/424186"
+      }
+    ]
+  },
+  {
+    "title": "Cardinal Services By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-11-19",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "TFC Poultry By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2025-11-19",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Report released on PowerSchool cyber attack",
+    "link": "https://databreaches.net/2025/11/19/report-released-on-powerschool-cyber-attack/?pk_campaign=feed&pk_kwd=report-released-on-powerschool-cyber-attack",
+    "date": "2025-11-19",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Google fixed the seventh Chrome zero-day in 2025",
     "link": "https://securityaffairs.com/184764/hacking/google-fixed-the-seventh-chrome-zero-day-in-2025.html",
     "date": "2025-11-18",
@@ -824,6 +1149,15 @@
     "inline_links": []
   },
   {
+    "title": "Spark Innovation By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-18",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "North Korean threat actors use JSON sites to deliver malware via trojanized code",
     "link": "https://securityaffairs.com/184726/cyber-warfare-2/north-korean-threat-actors-use-json-sites-to-deliver-malware-via-trojanized-code.html",
     "date": "2025-11-17",
@@ -978,6 +1312,24 @@
     ]
   },
   {
+    "title": "DDoSia Targets Denmark: A Clear Look at the Threat",
+    "link": "https://socradar.io/ddosia-targets-denmark-a-clear-look-at-the-threat/",
+    "date": "2025-11-17",
+    "terms": [
+      "Mark\u2019s"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Eurofiber Data Claims, BMW Employee Leak, and FortiWeb Exploit Surface Online",
+    "link": "https://socradar.io/eurofiber-data-bmw-employee-leak-fortiweb-exploit/",
+    "date": "2025-11-17",
+    "terms": [
+      "CVE-2025-64446"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Microsoft Patch Tuesday, November 2025 Edition",
     "link": "https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition/",
     "date": "2025-11-16",
@@ -1046,6 +1398,15 @@
     "date": "2025-11-15",
     "terms": [
       "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Honeypot: FortiWeb CVE-2025-64446 Exploits, (Sat, Nov 15th)",
+    "link": "https://isc.sans.edu/diary/rss/32486",
+    "date": "2025-11-15",
+    "terms": [
+      "CVE-2025-64446"
     ],
     "inline_links": []
   },
@@ -1184,6 +1545,16 @@
     "inline_links": []
   },
   {
+    "title": "FortiWeb Path Traversal Exploit Actively Targeted: What You Need to Know",
+    "link": "https://socradar.io/fortiweb-path-traversal-exploit-actively-targeted/",
+    "date": "2025-11-14",
+    "terms": [
+      "IOC",
+      "CVE-2025-64446"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Flags Critical WatchGuard Fireware Flaw Exposing 54,000 Fireboxes to No-Login Attacks",
     "link": "https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html",
     "date": "2025-11-13",
@@ -1266,6 +1637,21 @@
       "CVE-2025-61882"
     ],
     "inline_links": []
+  },
+  {
+    "title": "The Deepfake Threat: Chollima APT Group Uses AI Filters to Infiltrate Crypto and Web3 Companies",
+    "link": "https://socradar.io/deepfake-threat-chollima-apt-group-uses-ai-crypto/",
+    "date": "2025-11-13",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": [
+      {
+        "term": "lazarus",
+        "text": "SOCRadar\u2019s Lazarus Group profile",
+        "url": "https://socradar.io/apt-profile-who-is-lazarus-group/"
+      }
+    ]
   },
   {
     "title": "'CitrixBleed 2' Wreaks Havoc as Zero-Day Bug",
@@ -1367,6 +1753,15 @@
     "inline_links": []
   },
   {
+    "title": "November 2025 Patch Tuesday: Microsoft Fixes 63 Vulnerabilities, Including Windows Kernel Zero-Day (CVE-2025-62215)",
+    "link": "https://socradar.io/november-2025-patch-tuesday-microsoft-cve-2025-62215/",
+    "date": "2025-11-12",
+    "terms": [
+      "CVE-2025-62215"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Samsung zero-day lets attackers take over your phone",
     "link": "https://www.malwarebytes.com/blog/news/2025/11/patch-now-samsung-zero-day-lets-attackers-take-over-your-phone",
     "date": "2025-11-11",
@@ -1409,6 +1804,19 @@
         "url": "https://github.com/mubix/Find-WSUS"
       }
     ]
+  },
+  {
+    "title": "CVE-2025-21042: Samsung Galaxy Zero-Day Exploited in LANDFALL Spyware Campaign",
+    "link": "https://socradar.io/cve-2025-21042-samsung-galaxy-0day-landfall-spyware/",
+    "date": "2025-11-11",
+    "terms": [
+      "IOC",
+      "CVE-2025-21042",
+      "CVE-2025-21043",
+      "CVE-2025-43300",
+      "CVE-2025-55177"
+    ],
+    "inline_links": []
   },
   {
     "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
@@ -1549,6 +1957,15 @@
     "terms": [
       "cve-2025-61932",
       "CVE-2025-61932"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "LockBit 5.0 Analysis: Technical Deep Dive into the RaaS Giant\u2019s Latest Upgrade",
+    "link": "https://flashpoint.io/blog/lockbit-5-0-analysis-technical-deep-dive-into-the-raas-giants-latest-upgrade/",
+    "date": "2025-11-06",
+    "terms": [
+      "IOC"
     ],
     "inline_links": []
   },
@@ -1798,6 +2215,21 @@
     ]
   },
   {
+    "title": "The Evolution of Data Extortion TTPs: From Exploiting Code to Exploiting People",
+    "link": "https://flashpoint.io/blog/data-extortion-ttps-exploiting-code-people/",
+    "date": "2025-10-28",
+    "terms": [
+      "scattered spider"
+    ],
+    "inline_links": [
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://flashpoint.io/blog/scattered-spider-threat-profile/"
+      }
+    ]
+  },
+  {
     "title": "Mem3nt0 mori \u2013 The Hacking Team is back!",
     "link": "https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/",
     "date": "2025-10-27",
@@ -1910,6 +2342,15 @@
     "inline_links": []
   },
   {
+    "title": "Gotta fly: Lazarus targets the UAV sector",
+    "link": "https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector/",
+    "date": "2025-10-23",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Canada Fines Cybercrime Friendly Cryptomus $176M",
     "link": "https://krebsonsecurity.com/2025/10/canada-fines-cybercrime-friendly-cryptomus-176m/",
     "date": "2025-10-22",
@@ -1954,68 +2395,6 @@
     "date": "2025-10-21",
     "terms": [
       "apt27"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-    "date": "2025-10-20",
-    "terms": [
-      "cve-2025-33073",
-      "CVE-2022-48503",
-      "CVE-2025-2746",
-      "CVE-2025-2747",
-      "CVE-2025-33073",
-      "CVE-2025-61884",
-      "cve-2022-48503",
-      "cve-2025-2746",
-      "cve-2025-2747",
-      "cve-2025-61884"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2022-48503",
-        "text": "CVE-2022-48503",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2022-48503"
-      },
-      {
-        "term": "CVE-2025-2746",
-        "text": "CVE-2025-2746",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-2746"
-      },
-      {
-        "term": "CVE-2025-2747",
-        "text": "CVE-2025-2747",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-2747"
-      },
-      {
-        "term": "cve-2025-33073",
-        "text": "CVE-2025-33073",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-33073"
-      },
-      {
-        "term": "CVE-2025-33073",
-        "text": "CVE-2025-33073",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-33073"
-      },
-      {
-        "term": "CVE-2025-61884",
-        "text": "CVE-2025-61884",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-61884"
-      }
-    ]
-  },
-  {
-    "title": "20th October \u2013 Threat Intelligence Report",
-    "link": "https://research.checkpoint.com/2025/20th-october-threat-intelligence-report/",
-    "date": "2025-10-20",
-    "terms": [
-      "CVE-2025-24990",
-      "CVE-2025-47827",
-      "CVE-2025-59230",
-      "CVE-2025-59287",
-      "CVE-2025-61882"
     ],
     "inline_links": []
   }
