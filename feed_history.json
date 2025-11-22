@@ -1,5 +1,143 @@
 [
   {
+    "title": "CISA Warns of Actively Exploited Critical Oracle Identity Manager Zero-Day Vulnerability",
+    "link": "https://thehackernews.com/2025/11/cisa-warns-of-actively-exploited.html",
+    "date": "2025-11-22",
+    "terms": [
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds an Oracle Fusion Middleware\u00a0flaw to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/184935/security/u-s-cisa-adds-an-oracle-fusion-middleware-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2025-11-22",
+    "terms": [
+      "Easily Exploitable",
+      "CVE-2025-61757",
+      "cve-2025-61757"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-61757"
+      }
+    ]
+  },
+  {
+    "title": "CrowdStrike fired insider for sharing internal info with hacking group",
+    "link": "https://www.csoonline.com/article/4094780/crowdstrike-fired-insider-for-sharing-internal-info-with-hacking-group.html",
+    "date": "2025-11-22",
+    "terms": [
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce-ecosystem breach involving customer engagement vendor Gainsight",
+        "url": "https://www.csoonline.com/article/4094506/oauth-token-compromise-hits-salesforce-ecosystem-again-gainsight-impacted.html"
+      }
+    ]
+  },
+  {
+    "title": "CrowdStrike Insider leak exposed, No breach reported",
+    "link": "https://cybersafe.news/crowdstrike-insider-leak-exposed-no-breach-reported/",
+    "date": "2025-11-22",
+    "terms": [
+      "scattered spider",
+      "qilin",
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Oracle Identity Manager Zero-Day exploited",
+    "link": "https://cybersafe.news/oracle-identity-manager-zero-day-exploited/",
+    "date": "2025-11-22",
+    "terms": [
+      "Easily Exploitable",
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ShinyHunters Claims Data Theft from 200+ Companies via Salesforce Gainsight Breach",
+    "link": "https://cybersecuritynews.com/shinyhunters-salesforce-gainsight-breach/",
+    "date": "2025-11-22",
+    "terms": [
+      "IOC",
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://help.salesforce.com/s/articleView?id=005229029&type=1"
+      },
+      {
+        "term": "Salesforce",
+        "text": "ShinyHunters Claims Data Theft from 200+ Companies via Salesforce Gainsight Breach",
+        "url": "https://cybersecuritynews.com/shinyhunters-salesforce-gainsight-breach/"
+      },
+      {
+        "term": "Salesforce",
+        "text": "ShinyHunters Claims Data Theft from 200+ Companies via Salesforce Gainsight Breach",
+        "url": "https://cybersecuritynews.com/shinyhunters-salesforce-gainsight-breach/"
+      }
+    ]
+  },
+  {
+    "title": "Metasploit Adds Exploit Module for Recently Disclosed FortiWeb 0-Day Vulnerabilities",
+    "link": "https://cybersecuritynews.com/metasploit-module-fortiweb-0-day/",
+    "date": "2025-11-22",
+    "terms": [
+      "CVE-2025-58034",
+      "CVE-2025-64446",
+      "cve-2025-64446",
+      "cve-2025-58034"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://cybersecuritynews.com/fortiweb-waf-flaw-exploited-in-the-wild/"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034,",
+        "url": "https://cybersecuritynews.com/fortiweb-0-day-code-execution-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://cybersecuritynews.com/fortiweb-0-day-code-execution-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://cybersecuritynews.com/fortiweb-0-day-code-execution-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://cybersecuritynews.com/fortiweb-waf-vulnerability-exploited-in-the-wild/"
+      }
+    ]
+  },
+  {
+    "title": "CrowdStrike Fires Insider for Sharing Internal System Details with Hackers",
+    "link": "https://cybersecuritynews.com/crowdstrike-fires-insider/",
+    "date": "2025-11-22",
+    "terms": [
+      "scattered spider",
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "PATLITE By sinobi",
     "link": "https://www.ransomlook.io//group/sinobi",
     "date": "2025-11-21",
@@ -3460,6 +3598,18 @@
     "inline_links": []
   },
   {
+    "title": "What Security Teams Need to Know as PHP and IoT Exploits Surge",
+    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+    "date": "2025-10-30",
+    "terms": [
+      "CVE-2017-9841",
+      "CVE-2021-3129",
+      "CVE-2022-2294",
+      "CVE-2022-22947"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "One IP address, many users: detecting CGNAT to reduce collateral effects",
     "link": "https://blog.cloudflare.com/detecting-cgn-to-reduce-collateral-damage/",
     "date": "2025-10-29",
@@ -3652,15 +3802,6 @@
     "terms": [
       "WSUS",
       "Broadcom"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Oracle Critical Patch Update, October 2025 Security Update Review",
-    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-    "date": "2025-10-23",
-    "terms": [
-      "CVE-2025-61757"
     ],
     "inline_links": []
   },
