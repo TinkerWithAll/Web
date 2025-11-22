@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastUpdatedSpan = document.getElementById("last-updated");
   
   const downloadTermsBtn = document.getElementById("downloadTermsBtn");
-  const downloadFeedsBtn = document.getElementById("downloadFeedsBtn");
+  const cacheBuster = `?v=${new Date().getTime()}`;
 
   let feedData = [];
   let searchModeIsAND = true; // Tracks the state: true = AND, false = OR
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- 0. Fetch Metadata (Last Updated Time) ---
-  fetch("meta.json")
+  fetch("meta.json" + cacheBuster)
     .then(response => response.json())
     .then(data => {
       if (lastUpdatedSpan) {
