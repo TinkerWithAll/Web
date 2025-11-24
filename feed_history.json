@@ -1,5 +1,142 @@
 [
   {
+    "title": "Homestead Museum By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2025-11-24",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ShadowPad Malware Actively Exploits WSUS Vulnerability for Full System Access",
+    "link": "https://thehackernews.com/2025/11/shadowpad-malware-actively-exploits.html",
+    "date": "2025-11-24",
+    "terms": [
+      "WSUS",
+      "CVE-2025-59287"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Mazda Says No Data Leakage or Operational Impact From Oracle Hack",
+    "link": "https://www.securityweek.com/mazda-says-no-data-leakage-or-operational-impact-from-oracle-hack/",
+    "date": "2025-11-24",
+    "terms": [
+      "CL0P"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Scattered Spider alleged members deny TfL charges",
+    "link": "https://securityaffairs.com/185000/hacking/scattered-spider-alleged-members-deny-tfl-charges.html",
+    "date": "2025-11-24",
+    "terms": [
+      "scattered spider"
+    ],
+    "inline_links": [
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://securityaffairs.com/tag/scattered-spider"
+      }
+    ]
+  },
+  {
+    "title": "24th November \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2025/24th-november-threat-intelligence-report/",
+    "date": "2025-11-24",
+    "terms": [
+      "akira",
+      "Salesforce",
+      "CVE-2025-58034",
+      "CVE-2025-13223"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How Cyble is Empowering European Enterprises with AI-Powered Threat Intelligence",
+    "link": "https://cyble.com/blog/europe-2025-cyber-threat-landscape-analysis/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Oracle OIM zero\u2011day: Pre\u2011auth RCE forces rapid patching across enterprises",
+    "link": "https://www.csoonline.com/article/4095150/oracle-oim-zero%e2%80%91day-pre%e2%80%91auth-rce-forces-rapid-patching-across-enterprises.html",
+    "date": "2025-11-24",
+    "terms": [
+      "Easily Exploitable",
+      "CVE-2025-61757",
+      "cve-2025-61757"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      }
+    ]
+  },
+  {
+    "title": "Salesforce Confirms Wider Impact in Ongoing Gainsight Security Incident",
+    "link": "https://thecyberexpress.com/salesforce-expands-investigation/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce confirmed on November 21",
+        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce confirmed on November 21",
+        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
+      }
+    ]
+  },
+  {
+    "title": "CrowdStrike Terminates \u2018Suspicious Insider\u2019 Linked to Scattered Lapsus$ Hunters",
+    "link": "https://thecyberexpress.com/crowdstrike-suspicious-insider-incident/",
+    "date": "2025-11-24",
+    "terms": [
+      "scattered spider",
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
+      },
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://cyble.com/threat-actor-profiles/scattered-spider/"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
+      },
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://cyble.com/threat-actor-profiles/scattered-spider/"
+      }
+    ]
+  },
+  {
     "title": "Critical Vulnerability in Azure Bastion Let Attackers Bypass Authentication and Escalate privileges",
     "link": "https://cybersecuritynews.com/azure-bastion-vulnerability/",
     "date": "2025-11-23",
@@ -28,6 +165,52 @@
       "Everest"
     ],
     "inline_links": []
+  },
+  {
+    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 72",
+    "link": "https://securityaffairs.com/184979/breaking-news/security-affairs-malware-newsletter-round-72.html",
+    "date": "2025-11-23",
+    "terms": [
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Threat actors have reportedly launched yet another campaign involving an application connected to Salesforce",
+        "url": "https://databreaches.net/2025/11/20/threat-actors-have-reportedly-launched-yet-another-campaign-involving-an-application-connected-to-salesforce/"
+      }
+    ]
+  },
+  {
+    "title": "Security Affairs newsletter Round 551 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+    "link": "https://securityaffairs.com/184975/breaking-news/security-affairs-newsletter-round-551-by-pierluigi-paganini-international-edition.html",
+    "date": "2025-11-23",
+    "terms": [
+      "Salesforce",
+      "CVE-2025-58034",
+      "CVE-2025-61757",
+      "salesforce",
+      "cve-2025-58034",
+      "cve-2025-61757"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce alerts users to potential data exposure via Gainsight OAuth apps",
+        "url": "https://securityaffairs.com/184896/hacking/salesforce-alerts-users-to-potential-data-exposure-via-gainsight-oauth-apps.html"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "New FortiWeb zero-day CVE-2025-58034 under attack patched by Fortinet",
+        "url": "https://securityaffairs.com/184806/hacking/new-fortiweb-zero-day-cve-2025-58034-under-attack-patched-by-fortinet.html"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "Oracle Identity Manager Exploit Observation from September (CVE-2025-61757)",
+        "url": "https://isc.sans.edu/forums/diary/Oracle+Identity+Manager+Exploit+Observation+from+September+CVE202561757/32506/"
+      }
+    ]
   },
   {
     "title": "CISA Warns of Actively Exploited Critical Oracle Identity Manager Zero-Day Vulnerability",
@@ -203,13 +386,46 @@
     "inline_links": []
   },
   {
-    "title": "PATLITE By sinobi",
-    "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2025-11-21",
+    "title": "Kajima Europe By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-22",
     "terms": [
-      "sinobi"
+      "qilin"
     ],
     "inline_links": []
+  },
+  {
+    "title": "What You Need To Know About Gainsight Breach",
+    "link": "https://socradar.io/what-you-need-to-know-about-gainsight-breach/",
+    "date": "2025-11-22",
+    "terms": [
+      "IOC",
+      "scattered spider",
+      "Salesforce",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://status.salesforce.com/generalmessages/20000233"
+      },
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://socradar.io/dark-web-profile-scattered-spider/"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://help.salesforce.com/s/articleView?id=005229029&type=1"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce-Related Data Breach Affecting Multiple Companies",
+        "url": "https://socradar.io/salesforce-data-breach-affecting-multiple-companies/"
+      }
+    ]
   },
   {
     "title": "Salesforce Flags Unauthorized Data Access via Gainsight-Linked OAuth Activity",
@@ -472,15 +688,6 @@
         "url": "https://cybersecuritynews.com/oracle-breach-clop-ransomware/"
       }
     ]
-  },
-  {
-    "title": "XOX Mobile By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-21",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
   },
   {
     "title": "First Fruits Farms By akira",
@@ -3785,88 +3992,6 @@
       "CVE-2025-33073",
       "CVE-2025-54236",
       "CVE-2025-59287"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft Releases Out-of-Band Security Update to Mitigate Windows Server Update Service Vulnerability, CVE-2025-59287",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/10/24/microsoft-releases-out-band-security-update-mitigate-windows-server-update-service-vulnerability-cve",
-    "date": "2025-10-24",
-    "terms": [
-      "WSUS",
-      "CVE-2025-59287",
-      "cve-2025-59287",
-      "wsus"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-59287",
-        "text": "CVE-2025-59287",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-59287"
-      },
-      {
-        "term": "WSUS",
-        "text": "Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287"
-      },
-      {
-        "term": "CVE-2025-59287",
-        "text": "Exploitation of Windows Server Update Services Remote Code Execution Vulnerability (CVE-2025-59287)",
-        "url": "https://www.huntress.com/blog/exploitation-of-windows-server-update-services-remote-code-execution-vulnerability"
-      },
-      {
-        "term": "WSUS",
-        "text": "Microsoft WSUS Remote Code Execution (CVE-2025-59287) Actively Exploited in the Wild",
-        "url": "https://unit42.paloaltonetworks.com/microsoft-cve-2025-59287/"
-      },
-      {
-        "term": "CVE-2025-59287",
-        "text": "Microsoft WSUS Remote Code Execution (CVE-2025-59287) Actively Exploited in the Wild",
-        "url": "https://unit42.paloaltonetworks.com/microsoft-cve-2025-59287/"
-      },
-      {
-        "term": "WSUS",
-        "text": "CVE-2025-59287 - Security Update Guide - Microsoft - Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287"
-      },
-      {
-        "term": "CVE-2025-59287",
-        "text": "CVE-2025-59287 - Security Update Guide - Microsoft - Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287"
-      }
-    ]
-  },
-  {
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/10/24/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "date": "2025-10-24",
-    "terms": [
-      "WSUS",
-      "CVE-2025-54236",
-      "CVE-2025-59287",
-      "cve-2025-54236",
-      "cve-2025-59287"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-54236",
-        "text": "CVE-2025-54236",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-54236"
-      },
-      {
-        "term": "CVE-2025-59287",
-        "text": "CVE-2025-59287",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-59287"
-      }
-    ]
-  },
-  {
-    "title": "Boost Performance and Security with Updated Drivers",
-    "link": "https://blog.comodo.com/pc-security/how-to-update-computer-drivers/",
-    "date": "2025-10-24",
-    "terms": [
-      "WSUS",
-      "Broadcom"
     ],
     "inline_links": []
   }
