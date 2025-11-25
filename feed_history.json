@@ -1,5 +1,153 @@
 [
   {
+    "title": "Canon Says Subsidiary Impacted by Oracle EBS Hack",
+    "link": "https://www.securityweek.com/canon-says-subsidiary-impacted-by-oracle-ebs-hack/",
+    "date": "2025-11-25",
+    "terms": [
+      "CL0P"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA: Spyware and RATs used to target WhatsApp and Signal Users",
+    "link": "https://securityaffairs.com/185047/malware/cisa-spyware-and-rats-used-to-target-whatsapp-and-signal-users.html",
+    "date": "2025-11-25",
+    "terms": [
+      "CVE-2025-21042",
+      "CVE-2025-43300",
+      "CVE-2025-55177",
+      "cve-2025-43300",
+      "cve-2025-55177",
+      "cve-2025-21042"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-43300",
+        "text": "CVE-2025-43300",
+        "url": "https://securityaffairs.com/182135/hacking/samsung-fixed-actively-exploited-zero-day.html"
+      },
+      {
+        "term": "CVE-2025-55177",
+        "text": "CVE-2025-55177",
+        "url": "https://securityaffairs.com/181714/intelligence/new-zero-click-exploit-allegedly-used-to-hack-whatsapp-users.html"
+      },
+      {
+        "term": "CVE-2025-21042",
+        "text": "CVE-2025-21042",
+        "url": "https://securityaffairs.com/184452/hacking/u-s-cisa-adds-samsung-mobile-devices-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+      }
+    ]
+  },
+  {
+    "title": "RelayNFC: The New NFC Relay Malware Targeting Brazil",
+    "link": "https://cyble.com/blog/relaynfc-nfc-relay-malware-targeting-brazil/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Russian and North Korean Hackers Forge Global Cyberattack Alliance",
+    "link": "https://gbhackers.com/global-cyberattack-alliance/",
+    "date": "2025-11-25",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "\u26a1 Weekly Recap: Fortinet Exploit, Chrome 0-Day, BadIIS Malware, Record DDoS, SaaS Breach & More",
+    "link": "https://thecyberpost.com/news/hackers/%e2%9a%a1-weekly-recap-fortinet-exploit-chrome-0-day-badiis-malware-record-ddos-saas-breach-more/",
+    "date": "2025-11-25",
+    "terms": [
+      "Salesforce",
+      "CVE-2025-58034",
+      "CVE-2025-64446",
+      "CVE-2025-13223",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Salesforce",
+        "text": "Salesforce Warns of Unauthorized Data Access via Gainsight-Linked Apps",
+        "url": "https://thehackernews.com/2025/11/salesforce-flags-unauthorized-data.html"
+      }
+    ]
+  },
+  {
+    "title": "6 Best SIEM Tools & Software",
+    "link": "https://www.esecurityplanet.com/products/siem-tools/",
+    "date": "2025-11-25",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Exploiting Black Friday Shopping Hype \u2013 2+ Million Attacks Recorded",
+    "link": "https://cybersecuritynews.com/threat-actors-exploiting-black-friday-shopping-hype/",
+    "date": "2025-11-25",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
+    "link": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC",
+      "CLOP",
+      "CVE-2025-61882",
+      "cve-2025-61882",
+      "clop"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://cybersecuritynews.com/oracle-e-business-suite-hack/"
+      },
+      {
+        "term": "CLOP",
+        "text": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
+        "url": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/"
+      },
+      {
+        "term": "CLOP",
+        "text": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
+        "url": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/"
+      }
+    ]
+  },
+  {
+    "title": "NVIDIA\u2019s Isaac-GROOT Robotics Platform Vulnerability Let Attackers Inject Malicious Codes",
+    "link": "https://cybersecuritynews.com/nvidias-isaac-groot-robotics-platform-vulnerability/",
+    "date": "2025-11-25",
+    "terms": [
+      "Zero Day",
+      "zero day"
+    ],
+    "inline_links": [
+      {
+        "term": "Zero Day",
+        "text": "Zero Day",
+        "url": "https://cybersecuritynews.com/hackers-leverage-hexstrike-ai-tool/"
+      }
+    ]
+  },
+  {
+    "title": "vDefend DFW 1-2-3-4: Deploy Zero Trust Micro-segmentation in a Few Weeks to Rapidly Secure VCF Workloads",
+    "link": "https://blogs.vmware.com/security/2025/11/vdefend-dfw-1-2-3-4-vcf.html",
+    "date": "2025-11-25",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Homestead Museum By sinobi",
     "link": "https://www.ransomlook.io//group/sinobi",
     "date": "2025-11-24",
@@ -137,6 +285,278 @@
     ]
   },
   {
+    "title": "Akehurst Landscape Service By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-11-24",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "\u26a1 Weekly Recap: Fortinet Exploit, Chrome 0-Day, BadIIS Malware, Record DDoS, SaaS Breach & More",
+    "link": "https://thehackernews.com/2025/11/weekly-recap-fortinet-exploit-chrome-0.html",
+    "date": "2025-11-24",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical Flaw in Oracle Identity Manager Under Exploitation",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/critical-flaw-oracle-identity-manager-under-exploitation",
+    "date": "2025-11-24",
+    "terms": [
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Confirms Exploitation of Recent Oracle Identity Manager Vulnerability",
+    "link": "https://www.securityweek.com/cisa-confirms-exploitation-of-recent-oracle-identity-manager-vulnerability/",
+    "date": "2025-11-24",
+    "terms": [
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Harvard reports vishing breach exposing alumni and donor contact data",
+    "link": "https://securityaffairs.com/185034/security/harvard-reports-vishing-breach-exposing-alumni-and-donor-contact-data.html",
+    "date": "2025-11-24",
+    "terms": [
+      "CL0P",
+      "CLOP",
+      "cl0p",
+      "clop"
+    ],
+    "inline_links": [
+      {
+        "term": "CL0P",
+        "text": "Cl0p ransomware group",
+        "url": "https://securityaffairs.com/183282/cyber-crime/clop-ransomware-group-claims-the-hack-of-harvard-university.html"
+      },
+      {
+        "term": "CLOP",
+        "text": "Clop Ransomware",
+        "url": "https://securityaffairs.com/tag/clop-ransomware"
+      }
+    ]
+  },
+  {
+    "title": "Attackers deliver ShadowPad via newly patched WSUS RCE bug",
+    "link": "https://securityaffairs.com/185007/malware/attackers-deliver-shadowpad-via-newly-patched-wsus-rce-bug.html",
+    "date": "2025-11-24",
+    "terms": [
+      "WSUS",
+      "CVE-2025-59287",
+      "cve-2025-59287"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-59287",
+        "text": "CVE-2025-59287",
+        "url": "https://securityaffairs.com/183830/security/cve-2025-59287-microsoft-fixes-critical-wsus-flaw-under-active-attack.html"
+      },
+      {
+        "term": "CVE-2025-59287",
+        "text": "CVE-2025-59287",
+        "url": "https://securityaffairs.com/183815/security/u-s-cisa-adds-microsoft-wsus-and-adobe-commerce-and-magento-open-source-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
+      }
+    ]
+  },
+  {
+    "title": "Managed Defense Reimagined: Introducing Wayfinder Threat Detection and Response",
+    "link": "https://www.sentinelone.com/blog/managed-defense-reimagined-introducing-wayfinder-threat-detection-and-response/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "hunting"
+    ],
+    "inline_links": [
+      {
+        "term": "hunting",
+        "text": "Wayfinder Threat Hunting",
+        "url": "https://www.sentinelone.com/global-services/threat-hunting/"
+      }
+    ]
+  },
+  {
+    "title": "Critical Flaw in Oracle Identity Manager Under Active Exploitation",
+    "link": "https://www.hipaajournal.com/critical-flaw-oracle-identity-manager-nov-2025/",
+    "date": "2025-11-24",
+    "terms": [
+      "critical Vulnerability",
+      "Easily Exploitable",
+      "CVE-2021-35587",
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
+    "link": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/",
+    "date": "2025-11-24",
+    "terms": [
+      "critical Vulnerability",
+      "Zero Day",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
+        "url": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/"
+      },
+      {
+        "term": "critical Vulnerability",
+        "text": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
+        "url": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/"
+      }
+    ]
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - 24th of November 2025",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-24th-of-november-2025/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "qilin",
+      "Everest",
+      "everest"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
+        "url": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/"
+      },
+      {
+        "term": "Everest",
+        "text": "Air Miles Espa\u00f1a has been claimed a victim to Everest Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993042374499463534?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
+        "url": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/"
+      },
+      {
+        "term": "Everest",
+        "text": "Air Miles Espa\u00f1a has been claimed a victim to Everest Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993042374499463534?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Threat Attack Daily - 24th of November 2025",
+    "link": "https://darkwebinformer.com/threat-attack-daily-24th-of-november-2025/",
+    "date": "2025-11-24",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update for the 24th of November 2025",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-24th-of-november-2025/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
+    "link": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/",
+    "date": "2025-11-24",
+    "terms": [
+      "Canada",
+      "IOC",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Alleged Data Breach of Nasajon Systems",
+    "link": "https://darkwebinformer.com/alleged-data-breach-of-nasajon-systems/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What keeps CISOs awake at night \u2014 and why Zurich might hold the cure",
+    "link": "https://www.csoonline.com/article/4094608/what-keeps-cisos-awake-at-night-and-why-zurich-might-hold-the-cure.html",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Android Users at Risk as RadzaRat Trojan Evades Detection",
+    "link": "https://www.esecurityplanet.com/threats/android-users-at-risk-as-radzarat-trojan-evades-detection/",
+    "date": "2025-11-24",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Oracle Identity Manager Vulnerability to KEV Database",
+    "link": "https://thecyberexpress.com/cisa-kev-oracle-identity-manager-vulnerability/",
+    "date": "2025-11-24",
+    "terms": [
+      "Easily Exploitable",
+      "CL0P",
+      "CVE-2021-35587",
+      "CVE-2025-61757",
+      "cve-2025-61757"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      }
+    ]
+  },
+  {
+    "title": "Amazon Is Using Specialized AI Agents for Deep Bug Hunting",
+    "link": "https://www.wired.com/story/amazon-autonomous-threat-analysis/",
+    "date": "2025-11-24",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CVE-2025-61757: Oracle Identity Manager Auth Bypass Flaw Added to CISA\u2019s KEV",
+    "link": "https://socradar.io/cve-2025-61757-oracle-identity-manager/",
+    "date": "2025-11-24",
+    "terms": [
+      "IOC",
+      "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Critical Vulnerability in Azure Bastion Let Attackers Bypass Authentication and Escalate privileges",
     "link": "https://cybersecuritynews.com/azure-bastion-vulnerability/",
     "date": "2025-11-23",
@@ -158,7 +578,7 @@
     ]
   },
   {
-    "title": "SIAD - Database Leaked By everest",
+    "title": "Streebo - Database Leaked By everest",
     "link": "https://www.ransomlook.io//group/everest",
     "date": "2025-11-23",
     "terms": [
@@ -211,6 +631,15 @@
         "url": "https://isc.sans.edu/forums/diary/Oracle+Identity+Manager+Exploit+Observation+from+September+CVE202561757/32506/"
       }
     ]
+  },
+  {
+    "title": "Nissan Capital By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-23",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
   },
   {
     "title": "CISA Warns of Actively Exploited Critical Oracle Identity Manager Zero-Day Vulnerability",
@@ -382,15 +811,6 @@
     "terms": [
       "CVE-2025-58034",
       "CVE-2025-64446"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Kajima Europe By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-22",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -688,15 +1108,6 @@
         "url": "https://cybersecuritynews.com/oracle-breach-clop-ransomware/"
       }
     ]
-  },
-  {
-    "title": "First Fruits Farms By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-11-21",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
   },
   {
     "title": "HYPERTHERM.COM By clop",
@@ -3513,6 +3924,22 @@
     "inline_links": []
   },
   {
+    "title": "Microsoft Patch Tuesday, November 2025 Security Update Review",
+    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+    "date": "2025-11-11",
+    "terms": [
+      "CVE-2025-62215",
+      "cve-2025-62215"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62215",
+        "text": "CVE-2025-62215: Windows Kernel Elevation of Privilege Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62215"
+      }
+    ]
+  },
+  {
     "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
     "link": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
     "date": "2025-11-10",
@@ -3866,18 +4293,6 @@
     "date": "2025-10-30",
     "terms": [
       "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "What Security Teams Need to Know as PHP and IoT Exploits Surge",
-    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-    "date": "2025-10-30",
-    "terms": [
-      "CVE-2017-9841",
-      "CVE-2021-3129",
-      "CVE-2022-2294",
-      "CVE-2022-22947"
     ],
     "inline_links": []
   },
