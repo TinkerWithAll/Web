@@ -1,5 +1,138 @@
 [
   {
+    "title": "Gainsight Cyber-Attack Affect More Salesforce Customers",
+    "link": "https://www.infosecurity-magazine.com/news/gainsight-cyberattack-more/",
+    "date": "2025-11-26",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Old tech, new vulnerabilities: NTLM abuse, ongoing exploitation in 2025",
+    "link": "https://securelist.com/ntlm-abuse-in-2025/118132/",
+    "date": "2025-11-26",
+    "terms": [
+      "CLOP",
+      "CVE-2023-38831",
+      "CVE-2024-43451",
+      "CVE-2025-24054",
+      "CVE-2025-33073",
+      "cve-2025-24054",
+      "cve-2025-33073"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-24054",
+        "text": "CVE-2025-24054",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2025-24054"
+      },
+      {
+        "term": "CVE-2025-33073",
+        "text": "CVE-2025-33073",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-33073"
+      }
+    ]
+  },
+  {
+    "title": "The Week in Vulnerabilities: Cyble Urges Fortinet, Microsoft Fixes",
+    "link": "https://cyble.com/blog/week-in-vulnerabilities-it-ics-critical-cves-2025/",
+    "date": "2025-11-26",
+    "terms": [
+      "CVE-2025-21042",
+      "CVE-2025-58034",
+      "CVE-2025-62215",
+      "CVE-2025-64446",
+      "cve-2025-62215",
+      "cve-2025-64446",
+      "cve-2025-58034",
+      "cve-2025-21042"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62215",
+        "text": "CVE-2025-62215",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62215"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64446"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034"
+      },
+      {
+        "term": "CVE-2025-21042",
+        "text": "CVE-2025-21042",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21042"
+      }
+    ]
+  },
+  {
+    "title": "ToddyCat APT evolves to target Outlook archives and Microsoft 365 tokens",
+    "link": "https://www.csoonline.com/article/4096650/toddycat-apt-evolves-to-target-outlook-archives-and-microsoft-365-tokens.html",
+    "date": "2025-11-26",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Alliances between ransomware groups tied to recent surge in cybercrime",
+    "link": "https://www.csoonline.com/article/4096263/alliances-between-ransomware-groups-tied-to-recent-surge-in-cybercrime.html",
+    "date": "2025-11-26",
+    "terms": [
+      "Zero Day",
+      "akira",
+      "qilin",
+      "sinobi"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "aligned itself with other prominent ransomware-as-a-service (RaaS) groups DragonForce and Qilin.",
+        "url": "https://www.csoonline.com/article/4070290/lockbit-dragonforce-and-qilin-form-a-cartel-to-dictate-ransomware-market-conditions.html"
+      },
+      {
+        "term": "qilin",
+        "text": "Qilin",
+        "url": "https://www.csoonline.com/article/4079316/cross-platform-ransomware-qilin-weaponizes-linux-binaries-against-windows-hosts.html"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Exploit NTLM Authentication Flaws to Target Windows Systems",
+    "link": "https://cybersecuritynews.com/hackers-exploit-ntlm-authentication-flaws-to-target-windows-systems/",
+    "date": "2025-11-26",
+    "terms": [
+      "CVE-2024-43451",
+      "CVE-2025-24054",
+      "CVE-2025-33073"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Sell Lifetime Access to WormGPT and KawaiiGPT for Just $220",
+    "link": "https://cybersecuritynews.com/hackers-sell-lifetime-access-to-wormgpt-and-kawaiigpt/",
+    "date": "2025-11-26",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Emond Publishing By dragonforce",
+    "link": "https://www.ransomlook.io//group/dragonforce",
+    "date": "2025-11-26",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Canon Says Subsidiary Impacted by Oracle EBS Hack",
     "link": "https://www.securityweek.com/canon-says-subsidiary-impacted-by-oracle-ebs-hack/",
     "date": "2025-11-25",
@@ -148,11 +281,193 @@
     "inline_links": []
   },
   {
-    "title": "Homestead Museum By sinobi",
+    "title": "Kids & Company By sinobi",
     "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2025-11-24",
+    "date": "2025-11-25",
     "terms": [
       "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Rochester Philharmonic Orchestra By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-11-25",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Iberia Airlines By everest",
+    "link": "https://www.ransomlook.io//group/everest",
+    "date": "2025-11-25",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Lake Superior State University By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-25",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Morphisec warns StealC V2 malware spread through weaponized blender files",
+    "link": "https://securityaffairs.com/185052/cyber-crime/stealc-v2-malware-spread-through-weaponized-blender-files.html",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - 25th of November 2025",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-25th-of-november-2025/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "Everest",
+      "everest"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
+        "url": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware Claims 2 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1993350472317780201?s=20"
+      },
+      {
+        "term": "Everest",
+        "text": "Iberia Airlines has been claimed a victim to Everest Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993361406939271506?s=20"
+      },
+      {
+        "term": "akira",
+        "text": "Rochester Philharmonic Orchestra has been claimed a victim by Akira Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993431111205376344?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
+        "url": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware Claims 2 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1993350472317780201?s=20"
+      },
+      {
+        "term": "Everest",
+        "text": "Iberia Airlines has been claimed a victim to Everest Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993361406939271506?s=20"
+      },
+      {
+        "term": "akira",
+        "text": "Rochester Philharmonic Orchestra has been claimed a victim by Akira Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1993431111205376344?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Threat Attack Daily - 25th of November 2025",
+    "link": "https://darkwebinformer.com/threat-attack-daily-25th-of-november-2025/",
+    "date": "2025-11-25",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update for the 25th of November 2025",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-25th-of-november-2025/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
+    "link": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Everest ransomware claims breach at Spain\u2019s national airline Iberia with 596 GB data theft",
+    "link": "https://hackread.com/everest-ransomware-spai-airline-iberia-breach/",
+    "date": "2025-11-25",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Salt Security Launches Salt MCP Finder Technology",
+    "link": "https://www.itsecurityguru.org/2025/11/25/salt-security-launches-salt-mcp-finder-technology/?utm_source=rss&utm_medium=rss&utm_campaign=salt-security-launches-salt-mcp-finder-technology",
+    "date": "2025-11-25",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Rare APT Collaboration Emerges Between Russia and North Korea",
+    "link": "https://www.esecurityplanet.com/threats/news-russia-north-korea-apt-collab/",
+    "date": "2025-11-25",
+    "terms": [
+      "hunting",
+      "lazarus"
+    ],
+    "inline_links": [
+      {
+        "term": "lazarus",
+        "text": "Lazarus",
+        "url": "https://www.esecurityplanet.com/news/deceptive-development-north-korea/"
+      }
+    ]
+  },
+  {
+    "title": "Shai Hulud\u2019s \u201cThe Second Coming\u201d: New npm Campaign Hits Zapier, ENS, Postman",
+    "link": "https://socradar.io/shai-hulud-the-second-coming-npm-campaign/",
+    "date": "2025-11-25",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Dark Web Profile: Berserk Bear",
+    "link": "https://socradar.io/dark-web-profile-berserk-bear/",
+    "date": "2025-11-25",
+    "terms": [
+      "CVE-2011-0611",
+      "CVE-2018-0171",
+      "CVE-2020-1472"
     ],
     "inline_links": []
   },
@@ -283,15 +598,6 @@
         "url": "https://cyble.com/threat-actor-profiles/scattered-spider/"
       }
     ]
-  },
-  {
-    "title": "Akehurst Landscape Service By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-11-24",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
   },
   {
     "title": "\u26a1 Weekly Recap: Fortinet Exploit, Chrome 0-Day, BadIIS Malware, Record DDoS, SaaS Breach & More",
@@ -578,15 +884,6 @@
     ]
   },
   {
-    "title": "Streebo - Database Leaked By everest",
-    "link": "https://www.ransomlook.io//group/everest",
-    "date": "2025-11-23",
-    "terms": [
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 72",
     "link": "https://securityaffairs.com/184979/breaking-news/security-affairs-malware-newsletter-round-72.html",
     "date": "2025-11-23",
@@ -631,15 +928,6 @@
         "url": "https://isc.sans.edu/forums/diary/Oracle+Identity+Manager+Exploit+Observation+from+September+CVE202561757/32506/"
       }
     ]
-  },
-  {
-    "title": "Nissan Capital By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-23",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
   },
   {
     "title": "CISA Warns of Actively Exploited Critical Oracle Identity Manager Zero-Day Vulnerability",
@@ -3524,14 +3812,21 @@
     "link": "https://www.cisa.gov/news-events/alerts/2025/11/14/fortinet-releases-security-advisory-relative-path-traversal-vulnerability-affecting-fortiweb",
     "date": "2025-11-14",
     "terms": [
+      "CVE-2025-58034",
       "CVE-2025-64446",
-      "cve-2025-64446"
+      "cve-2025-64446",
+      "cve-2025-58034"
     ],
     "inline_links": [
       {
         "term": "CVE-2025-64446",
         "text": "CVE-2025-64446",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-64446"
+      },
+      {
+        "term": "CVE-2025-58034",
+        "text": "CVE-2025-58034",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-58034"
       }
     ]
   },
