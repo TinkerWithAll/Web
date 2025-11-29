@@ -1,5 +1,30 @@
 [
   {
+    "title": "CISA Warns of OpenPLC ScadaBR cross-site scripting vulnerability Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/cisa-openplc-scadabr-vulnerability/",
+    "date": "2025-11-29",
+    "terms": [
+      "CVE-2021-26829",
+      "cve-2021-26829"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-26829",
+        "text": "CVE-2021-26829",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "title": "New Albiriox Malware Attacking Android Users to Take Complete Control of their Device",
+    "link": "https://cybersecuritynews.com/albiriox-malware-attacking-android-users/",
+    "date": "2025-11-29",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "In Other News: HashJack AI Browser Attack, Charming Kitten Leak, Hacker Unmasked",
     "link": "https://www.securityweek.com/in-other-news-hashjack-ai-browser-attack-charming-kitten-leak-hacker-unmasked/",
     "date": "2025-11-28",
@@ -159,6 +184,101 @@
       "hunting"
     ],
     "inline_links": []
+  },
+  {
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2025/11/28/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "date": "2025-11-28",
+    "terms": [
+      "CVE-2021-26829",
+      "cve-2021-26829"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-26829",
+        "text": "CVE-2021-26829",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-26829"
+      }
+    ]
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - 28th of November 2025",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-28th-of-november-2025/",
+    "date": "2025-11-28",
+    "terms": [
+      "IOC",
+      "qilin",
+      "CVE-2021-26829",
+      "cve-2021-26829"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-26829",
+        "text": "CVE-2021-26829: OpenPLC ScadaBR Cross-site Scripting Vulnerability",
+        "url": "https://x.com/DarkWebInformer/status/1994505049892868473?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Qilin Ransomware Claims 4 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1994511337322414292?s=20"
+      },
+      {
+        "term": "CVE-2021-26829",
+        "text": "CVE-2021-26829: OpenPLC ScadaBR Cross-site Scripting Vulnerability",
+        "url": "https://x.com/DarkWebInformer/status/1994505049892868473?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Qilin Ransomware Claims 4 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1994511337322414292?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Threat Attack Daily - 28th of November 2025",
+    "link": "https://darkwebinformer.com/threat-attack-daily-28th-of-november-2025/",
+    "date": "2025-11-28",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update for the 28th of November 2025",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-28th-of-november-2025/",
+    "date": "2025-11-28",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
+    "link": "https://gbhackers.com/gainsight-verifies-token-breach/",
+    "date": "2025-11-28",
+    "terms": [
+      "IOC",
+      "Salesforce",
+      "ioc",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "IOC",
+        "text": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
+        "url": "https://gbhackers.com/gainsight-verifies-token-breach/"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
+        "url": "https://gbhackers.com/gainsight-verifies-token-breach/"
+      }
+    ]
   },
   {
     "title": "SonicWall ransomware attacks offer an M&A lesson for CSOs",
@@ -346,6 +466,24 @@
       "hunting",
       "CVE-2012-1823",
       "CVE-2019-16759"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Kelly Wearstler Gallery By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-11-27",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The American School Foundation By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-27",
+    "terms": [
+      "qilin"
     ],
     "inline_links": []
   },
@@ -637,15 +775,6 @@
     "inline_links": []
   },
   {
-    "title": "Bergeson By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-11-26",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Alleged SeAH, Under Armour, SecureTeen, and Cloudeka Data Exposures Detected",
     "link": "https://socradar.io/seah-under-armour-secureteen-cloudek-data-breach/",
     "date": "2025-11-26",
@@ -685,15 +814,6 @@
     "date": "2025-11-26",
     "terms": [
       "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "St. Johns River Water Management District By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-26",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -5214,24 +5334,6 @@
     "date": "2025-10-30",
     "terms": [
       "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "One IP address, many users: detecting CGNAT to reduce collateral effects",
-    "link": "https://blog.cloudflare.com/detecting-cgn-to-reduce-collateral-damage/",
-    "date": "2025-10-29",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Weekly Report: New Hacking Techniques and Critical CVEs 22 Oct \u2013 28 Oct, 2025",
-    "link": "https://firecompass.com/weekly-report-new-hacking-techniques-and-critical-cves-22-oct-28-oct/",
-    "date": "2025-10-29",
-    "terms": [
-      "WSUS"
     ],
     "inline_links": []
   }
