@@ -35,17 +35,37 @@ jobs:
       - name: Run Scraper Script
         run: python scraper.py
 
+      # -------------------------------------------------------------------
+      # NEW STEP: Cache Bust feed.html
+      # This forces the browser to fetch the latest feed.js every time.
+      # -------------------------------------------------------------------
+      - name: Cache Bust HTML for GitHub Pages
+        run: |
+          # Generate a unique timestamp
+          TIMESTAMP=$(date +%Y%m%d%H%M%S)
+          
+          # Use 'sed' to replace the existing feed.js link with the cache-busting link
+          # This command ensures 'feed.js' is always fetched as a new file.
+          sed -i "s|feed.js\" defer></script>|feed.js?v=${TIMESTAMP}\" defer></script>|" feed.html
+          
+          # Add the modified HTML file to the staging area
+          git add feed.html
+
+      # -------------------------------------------------------------------
+      # MODIFIED STEP: Commit and Push Changes
+      # This step commits feed.html along with the data files.
+      # -------------------------------------------------------------------
       - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # Stage the files we want to keep
+          # Stage the files updated by scraper.py (feed.html was staged above)
           git add results_*.csv feed_history.json terms.txt meta.json
           
-          # Only commit if there are changes
+          # Check for staged changes (This check now passes if feed.html was modified)
           if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Automated: Update security feed"
+            git commit -m "Automated: Update security feed and cache buster"
             
             # FIX: Pull the latest changes from the remote branch to avoid conflicts
             git pull --rebase origin main
