@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   # -------------------------------------------------------------------
-  # Runs at 13:30 UTC every day (08:30 AM EDT)
+  # Runs at 12:30 UTC every day (08:30 AM EDT)
   # -------------------------------------------------------------------
   schedule:
     - cron: '30 12 * * *'
@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        # Fetch entire history is crucial for rebase operations
+        with:
+          fetch-depth: 0 
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -36,42 +39,67 @@ jobs:
         run: python scraper.py
 
       # -------------------------------------------------------------------
-      # NEW STEP: Cache Bust feed.html
-      # This forces the browser to fetch the latest feed.js every time.
+      # NEW STEP 1: Cache Bust feed.html
+      # This step modifies feed.html to force a fresh download of feed.js.
       # -------------------------------------------------------------------
       - name: Cache Bust HTML for GitHub Pages
         run: |
           # Generate a unique timestamp
           TIMESTAMP=$(date +%Y%m%d%H%M%S)
           
-          # Use 'sed' to replace the existing feed.js link with the cache-busting link
-          # This command ensures 'feed.js' is always fetched as a new file.
-          sed -i "s|feed.js\" defer></script>|feed.js?v=${TIMESTAMP}\" defer></script>|" feed.html
+          # Inject the unique timestamp as a cache-buster into the feed.js link
+          # NOTE: The use of single quotes around the sed script prevents bash from interpreting 
+          # variables prematurely, while double quotes around the TIMESTAMP allow it to be injected.
+          sed -i 's|feed.js\" defer></script>|feed.js?v='"${TIMESTAMP}"'\" defer></script>|' feed.html
           
-          # Add the modified HTML file to the staging area
+          # Stage feed.html (modified by the action)
           git add feed.html
 
       # -------------------------------------------------------------------
-      # MODIFIED STEP: Commit and Push Changes
-      # This step commits feed.html along with the data files.
+      # MODIFIED STEP 2: Commit and Push Changes (With Conflict Resolution)
+      # This logic auto-resolves conflicts by prioritizing the Action's changes.
       # -------------------------------------------------------------------
-      - name: Commit and Push Changes
+      - name: Commit and Push Changes (Conflict Fix)
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # Stage the files updated by scraper.py (feed.html was staged above)
+          # Stage the remaining generated files from scraper.py
           git add results_*.csv feed_history.json terms.txt meta.json
           
-          # Check for staged changes (This check now passes if feed.html was modified)
+          # Check for staged changes (Now includes feed.html and data files)
           if ! git diff --quiet || ! git diff --staged --quiet; then
+            
+            # 1. Create the automated commit
             git commit -m "Automated: Update security feed and cache buster"
             
-            # FIX: Pull the latest changes from the remote branch to avoid conflicts
-            git pull --rebase origin main
+            # 2. Attempt Rebase/Pull
+            # If the rebase fails due to conflicts, execute the resolution logic
+            if ! git pull --rebase origin main; then
+              echo "Conflict detected during rebase. Resolving by taking Action's changes..."
+              
+              # --- Auto-Resolution Logic ---
+              # Files that MUST take the action's (local) version during rebase
+              # 'git checkout --theirs' during rebase/pull means taking the commit currently being applied
+              CONFLICT_FILES="feed.html meta.json feed_history.json"
+              
+              for file in $CONFLICT_FILES; do
+                git checkout --theirs "$file"
+                git add "$file"
+              done
+              
+              # Continue the rebase
+              if ! git rebase --continue; then
+                echo "Failed to continue rebase. Aborting and failing the job."
+                git rebase --abort
+                exit 1 # Fail the job
+              fi
+              echo "Rebase successfully completed after auto-resolving conflicts."
+            fi
             
-            # Now push
+            # 3. Push the final result
             git push
+            
           else
             echo "No changes to commit"
           fi
