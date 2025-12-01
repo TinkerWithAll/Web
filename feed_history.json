@@ -1,5 +1,112 @@
 [
   {
+    "title": "CISA Warns of ScadaBR Vulnerability After Hacktivist ICS Attack",
+    "link": "https://www.securityweek.com/cisa-warns-of-scadabr-vulnerability-after-hacktivist-ics-attack/",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2021-26829"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds an OpenPLC ScadaBR\u00a0flaw to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/185185/security/u-s-cisa-adds-an-openplc-scadabr-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2021-26829",
+      "cve-2021-26829"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-26829",
+        "text": "CVE-2021-26829",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-26829"
+      },
+      {
+        "term": "CVE-2021-26829",
+        "text": "exploited CVE-2021-26829",
+        "url": "https://www.forescout.com/blog/anatomy-of-a-hacktivist-attack-russian-aligned-group-targets-otics/"
+      }
+    ]
+  },
+  {
+    "title": "1st December \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2025/1st-december-threat-intelligence-report/",
+    "date": "2025-12-01",
+    "terms": [
+      "CL0P",
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PoC Released for Outlook \u201cMonikerLink\u201d RCE Flaw Allowing Remote Code Execution",
+    "link": "https://gbhackers.com/poc-released-for-outlook-monikerlink-rce-flaw/",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2024-21413"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Linux Kernel 6.18 Launches With Big Architectural Upgrades and Bcachefs Removal",
+    "link": "https://thecyberexpress.com/linux-kernel-6-18-release/",
+    "date": "2025-12-01",
+    "terms": [
+      "IOC",
+      "CVE-2024-1086"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Mystery OAST With Exploit for 200 CVEs Leveraging Google Cloud to Launch Attacks",
+    "link": "https://cybersecuritynews.com/mystery-oast-with-exploit-for-200-cves/",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2025-4428"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PoC Exploit Released for Critical Outlook 0-Click Remote Code Execution Vulnerability",
+    "link": "https://cybersecuritynews.com/outlook-remote-code-execution-vulnerability-2/",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2024-21413",
+      "cve-2024-21413"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-21413",
+        "text": "CVE-2024-21413",
+        "url": "https://cybersecuritynews.com/critical-microsoft-outlook-vulnerability-actively-exploited-in-cyber-attacks/"
+      },
+      {
+        "term": "CVE-2024-21413",
+        "text": "CVE-2024-21413",
+        "url": "https://cybersecuritynews.com/outlook-zero-click-rce-technical-details/"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Allegedly Claim Breach of Mercedes-Benz USA Legal and Customer Data",
+    "link": "https://cybersecuritynews.com/mercedes-benz-breach-claim/",
+    "date": "2025-12-01",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Curtis Investment Group, Inc. By genesis",
+    "link": "https://www.ransomlook.io//group/genesis",
+    "date": "2025-12-01",
+    "terms": [
+      "genesis"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Adds Actively Exploited XSS Bug CVE-2021-26829 in OpenPLC ScadaBR to KEV",
     "link": "https://thehackernews.com/2025/11/cisa-adds-actively-exploited-xss-bug.html",
     "date": "2025-11-30",
@@ -23,6 +130,81 @@
         "url": "https://www.helpnetsecurity.com/2025/11/30/week-in-review-fake-windows-update-fuels-malware-salesforce-details-gainsight-breach/"
       }
     ]
+  },
+  {
+    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 73",
+    "link": "https://securityaffairs.com/185181/uncategorized/security-affairs-malware-newsletter-round-73.html",
+    "date": "2025-11-30",
+    "terms": [
+      "WSUS",
+      "CVE-2025-59287",
+      "wsus",
+      "cve-2025-59287"
+    ],
+    "inline_links": [
+      {
+        "term": "WSUS",
+        "text": "Analysis of ShadowPad Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)",
+        "url": "https://asec.ahnlab.com/en/91166/"
+      },
+      {
+        "term": "CVE-2025-59287",
+        "text": "Analysis of ShadowPad Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)",
+        "url": "https://asec.ahnlab.com/en/91166/"
+      }
+    ]
+  },
+  {
+    "title": "Security Affairs newsletter Round 552 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+    "link": "https://securityaffairs.com/185178/breaking-news/security-affairs-newsletter-round-552-by-pierluigi-paganini-international-edition.html",
+    "date": "2025-11-30",
+    "terms": [
+      "scattered spider",
+      "WSUS",
+      "CVE-2025-59287",
+      "wsus",
+      "cve-2025-59287"
+    ],
+    "inline_links": [
+      {
+        "term": "WSUS",
+        "text": "Attackers deliver ShadowPad via newly patched WSUS RCE bug",
+        "url": "https://securityaffairs.com/185007/malware/attackers-deliver-shadowpad-via-newly-patched-wsus-rce-bug.html"
+      },
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider alleged members deny TfL charges",
+        "url": "https://securityaffairs.com/185000/hacking/scattered-spider-alleged-members-deny-tfl-charges.html"
+      },
+      {
+        "term": "WSUS",
+        "text": "Analysis of ShadowPad Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)",
+        "url": "https://asec.ahnlab.com/en/91166/"
+      },
+      {
+        "term": "CVE-2025-59287",
+        "text": "Analysis of ShadowPad Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)",
+        "url": "https://asec.ahnlab.com/en/91166/"
+      }
+    ]
+  },
+  {
+    "title": "Alleged ExeVision Inc Data Breach and Source Code Exposure",
+    "link": "https://darkwebinformer.com/alleged-exevision-inc-data-breach-and-source-code-exposure/",
+    "date": "2025-11-30",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Quttera Launches \u201cEvidence-as-Code\u201d API to Automate Security Compliance for SOC 2 and PCI DSS v4.0",
+    "link": "https://hackread.com/quttera-evidence-as-code-api-soc-pci-dss/",
+    "date": "2025-11-30",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
   },
   {
     "title": "CISA Warns of OpenPLC ScadaBR cross-site scripting vulnerability Exploited in Attacks",
@@ -324,6 +506,24 @@
     "inline_links": []
   },
   {
+    "title": "Panini Kabob Grill By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-11-28",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Kleber and Associates By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-28",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "SonicWall ransomware attacks offer an M&A lesson for CSOs",
     "link": "https://www.csoonline.com/article/4097078/sonicwall-ransomware-attacks-offer-an-ma-lesson-for-csos.html",
     "date": "2025-11-27",
@@ -509,24 +709,6 @@
       "hunting",
       "CVE-2012-1823",
       "CVE-2019-16759"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Mechanical Systems By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-11-27",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Comansco By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-27",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -5317,34 +5499,5 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9242"
       }
     ]
-  },
-  {
-    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 44",
-    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-44-7/",
-    "date": "2025-10-31",
-    "terms": [
-      "Canada",
-      "Canadian"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Canada, Philippines take \u2018next step\u2019 with joint forces pact amid China concerns",
-    "link": "https://www.scmp.com/week-asia/politics/article/3331029/canada-philippines-deepen-military-ties-new-joint-forces-pact-amid-china-concerns?utm_source=rss_feed",
-    "date": "2025-10-31",
-    "terms": [
-      "Canada",
-      "Canadian"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SBOM 102: How to Operationalize SBOM Data Into Real-Time Vulnerability Management",
-    "link": "https://flashpoint.io/blog/sbom-operationalize-vulnerability-management/",
-    "date": "2025-10-31",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
   }
 ]
