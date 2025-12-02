@@ -1,5 +1,60 @@
 [
   {
+    "title": "Key questions CISOs must ask before adopting AI-enabled cyber solutions",
+    "link": "https://www.csoonline.com/article/4094763/key-questions-cisos-must-ask-before-adopting-ai-enabled-cyber-solutions.html",
+    "date": "2025-12-02",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI Codex CLI Flaw Allows Attackers to Run Arbitrary Commands",
+    "link": "https://gbhackers.com/openai-codex-cli-flaw/",
+    "date": "2025-12-02",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical SQL Injection Flaw Exposes Sensitive Data in Devolutions Server",
+    "link": "https://thecyberexpress.com/devolutions-server-sql-injection-flaw/",
+    "date": "2025-12-02",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Qualcomm Issues Critical Security Alert Over Secure Boot Vulnerability",
+    "link": "https://thecyberexpress.com/qualcomm-2025-security-alert/",
+    "date": "2025-12-02",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Sonesta International Hotels Implements Industry-Leading Cloud Security Through AccuKnox Collaboration",
+    "link": "https://cybersecuritynews.com/sonesta-international-hotels-implements-industry-leading-cloud-security/",
+    "date": "2025-12-02",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Patches Android 0-Day Vulnerabilities Exploited in the Wild",
+    "link": "https://cybersecuritynews.com/android-0-day-vulnerabilities-patch/",
+    "date": "2025-12-02",
+    "terms": [
+      "critical Vulnerability",
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Warns of ScadaBR Vulnerability After Hacktivist ICS Attack",
     "link": "https://www.securityweek.com/cisa-warns-of-scadabr-vulnerability-after-hacktivist-ics-attack/",
     "date": "2025-12-01",
@@ -207,6 +262,123 @@
     "inline_links": []
   },
   {
+    "title": "New Android malware lets criminals control your phone and drain your bank account",
+    "link": "https://www.malwarebytes.com/blog/news/2025/12/new-android-malware-lets-criminals-control-your-phone-and-drain-your-bank-account",
+    "date": "2025-12-01",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - 1st of December 2025",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-1st-of-december-2025/",
+    "date": "2025-12-01",
+    "terms": [
+      "IOC",
+      "qilin"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "Qilin Ransomware Claims 3 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1995566390108193241?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Qilin Ransomware Claims 3 Victims",
+        "url": "https://x.com/DarkWebInformer/status/1995566390108193241?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Threat Attack Daily - 1st of December 2025",
+    "link": "https://darkwebinformer.com/threat-attack-daily-1st-of-december-2025/",
+    "date": "2025-12-01",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "genesis",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update for the 1st of December 2025",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-1st-of-december-2025/",
+    "date": "2025-12-01",
+    "terms": [
+      "IOC",
+      "akira",
+      "genesis",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Hidden Calendar Threat Putting 4 Million Apple Devices at Risk",
+    "link": "https://www.esecurityplanet.com/threats/the-hidden-calendar-threat-putting-4-million-apple-devices-at-risk/",
+    "date": "2025-12-01",
+    "terms": [
+      "akira",
+      "CVE-2025-27915",
+      "cve-2025-27915"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-27915",
+        "text": "CVE-2025-27915",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-27915"
+      }
+    ]
+  },
+  {
+    "title": "CVE-2025-61757: Imperva Customers Protected Against Critical Oracle Identity Manager Authentication Bypass Leading to Remote Code Execution",
+    "link": "https://www.imperva.com/blog/cve-2025-61757-imperva-customers-protected-against-critical-oracle-identity-manager-authentication-bypass-leading-to-remote-code-execution/",
+    "date": "2025-12-01",
+    "terms": [
+      "CVE-2025-61757",
+      "cve-2025-61757"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757: Imperva Customers Protected Against Critical Oracle Identity Manager Authentication Bypass Leading to Remote Code Execution",
+        "url": "https://www.imperva.com/blog/cve-2025-61757-imperva-customers-protected-against-critical-oracle-identity-manager-authentication-bypass-leading-to-remote-code-execution/"
+      },
+      {
+        "term": "CVE-2025-61757",
+        "text": "CVE-2025-61757: Imperva Customers Protected Against Critical Oracle Identity Manager Authentication Bypass Leading to Remote Code Execution",
+        "url": "https://www.imperva.com/blog/cve-2025-61757-imperva-customers-protected-against-critical-oracle-identity-manager-authentication-bypass-leading-to-remote-code-execution/"
+      }
+    ]
+  },
+  {
+    "title": "&#x5b;Guest Diary&#x5d; Hunting for SharePoint In-Memory ToolShell Payloads, (Tue, Dec 2nd)",
+    "link": "https://isc.sans.edu/diary/rss/32524",
+    "date": "2025-12-01",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Adds Actively Exploited XSS Bug CVE-2021-26829 in OpenPLC ScadaBR to KEV",
     "link": "https://thehackernews.com/2025/11/cisa-adds-actively-exploited-xss-bug.html",
     "date": "2025-11-30",
@@ -307,6 +479,15 @@
     "inline_links": []
   },
   {
+    "title": "Battaglioli By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-11-30",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Warns of OpenPLC ScadaBR cross-site scripting vulnerability Exploited in Attacks",
     "link": "https://cybersecuritynews.com/cisa-openplc-scadabr-vulnerability/",
     "date": "2025-11-29",
@@ -337,15 +518,6 @@
     "date": "2025-11-29",
     "terms": [
       "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Bomchil By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-29",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
