@@ -4,9 +4,17 @@
     "link": "https://www.csoonline.com/article/4094763/key-questions-cisos-must-ask-before-adopting-ai-enabled-cyber-solutions.html",
     "date": "2025-12-02",
     "terms": [
-      "hunting"
+      "hunting",
+      "Phish",
+      "phish"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "creating clever phishing lures",
+        "url": "https://www.csoonline.com/article/3850783/11-ways-cybercriminals-are-making-phishing-more-potent-than-ever.html"
+      }
+    ]
   },
   {
     "title": "OpenAI Codex CLI Flaw Allows Attackers to Run Arbitrary Commands",
@@ -55,6 +63,126 @@
     "inline_links": []
   },
   {
+    "title": "Researchers Capture Lazarus APT's Remote-Worker Scheme Live on Camera",
+    "link": "https://thehackernews.com/2025/12/researchers-capture-lazarus-apts-remote.html",
+    "date": "2025-12-02",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Vulnerability in OpenAI Coding Agent Could Facilitate Attacks on Developers",
+    "link": "https://www.securityweek.com/vulnerability-in-openai-coding-agent-could-facilitate-attacks-on-developers/",
+    "date": "2025-12-02",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "Vulnerability in OpenAI Coding Agent Could Facilitate Attacks on Developers",
+        "url": "https://www.securityweek.com/vulnerability-in-openai-coding-agent-could-facilitate-attacks-on-developers/"
+      }
+    ]
+  },
+  {
+    "title": "Whispering poetry at AI can make it break its own rules",
+    "link": "https://www.malwarebytes.com/blog/news/2025/12/whispering-poetry-at-ai-can-make-it-break-its-own-rules",
+    "date": "2025-12-02",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Europol Takes Down Illegal Crypto Mixing Laundering Service Used by Ransomware Actors",
+    "link": "https://www.hipaajournal.com/cryptomixer-laundering-service-takedown/",
+    "date": "2025-12-02",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "10 Step Guide to Choosing HIPAA Training for Employees",
+    "link": "https://www.hipaajournal.com/choosing-hipaa-training-for-your-employees/",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CSO 30 Awards 2025: Celebrating Excellence, Innovation and Leadership in Cybersecurity",
+    "link": "https://www.csoonline.com/article/1251209/uk-cso-30-awards.html",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Vaillant-CISO: \u201cStarten statt Warten\u201d",
+    "link": "https://www.csoonline.com/article/4098347/vaillant-ciso-starten-statt-warten.html",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ukrainian Hackers Target Russian Aerospace and Defense Sectors",
+    "link": "https://gbhackers.com/ukrainian-hackers-2/",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Evilginx Attack Techniques Allow Hackers to Defeat MFA Through SSO Phishing",
+    "link": "https://gbhackers.com/evilginx-attack/",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Evilginx Attack Techniques Allow Hackers to Defeat MFA Through SSO Phishing",
+        "url": "https://gbhackers.com/evilginx-attack/"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Leverages Telegram, WinSCP, Google Chrome, and Microsoft Teams to Deploy ValleyRat",
+    "link": "https://cybersecuritynews.com/hackers-deploy-valleyrat/",
+    "date": "2025-12-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Flashpoint\u2019s Top 5 Predictions for the 2026 Threat Landscape",
+    "link": "https://flashpoint.io/blog/flashpoints-top-5-predictions-for-the-2026-threat-landscape/",
+    "date": "2025-12-02",
+    "terms": [
+      "scattered spider",
+      "Phish"
+    ],
+    "inline_links": [
+      {
+        "term": "scattered spider",
+        "text": "Scattered Spider",
+        "url": "https://flashpoint.io/blog/scattered-spider-threat-profile/"
+      }
+    ]
+  },
+  {
     "title": "CISA Warns of ScadaBR Vulnerability After Hacktivist ICS Attack",
     "link": "https://www.securityweek.com/cisa-warns-of-scadabr-vulnerability-after-hacktivist-ics-attack/",
     "date": "2025-12-01",
@@ -90,7 +218,9 @@
     "date": "2025-12-01",
     "terms": [
       "CL0P",
-      "CLOP"
+      "CLOP",
+      "OpenAI",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -167,7 +297,8 @@
     "date": "2025-12-01",
     "terms": [
       "Everest",
-      "CLOP"
+      "CLOP",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -199,7 +330,7 @@
     "inline_links": []
   },
   {
-    "title": "MD Manouel InsuranceAgency By akira",
+    "title": "Goldenrod By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2025-12-01",
     "terms": [
@@ -239,7 +370,8 @@
     "link": "https://www.csoonline.com/article/4094706/what-are-zero-day-attacks-and-why-do-they-work.html",
     "date": "2025-12-01",
     "terms": [
-      "Zero Day"
+      "Zero Day",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -322,6 +454,7 @@
     "date": "2025-12-01",
     "terms": [
       "akira",
+      "Phish",
       "CVE-2025-27915",
       "cve-2025-27915"
     ],
@@ -379,6 +512,118 @@
     "inline_links": []
   },
   {
+    "title": "Virtualware Solutions By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-01",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CVE-2025-61260 \u2014 OpenAI Codex CLI: Command Injection via Project-Local Configuration",
+    "link": "https://research.checkpoint.com/2025/openai-codex-cli-command-injection-vulnerability/",
+    "date": "2025-12-01",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "CVE-2025-61260 \u2014 OpenAI Codex CLI: Command Injection via Project-Local Configuration",
+        "url": "https://research.checkpoint.com/2025/openai-codex-cli-command-injection-vulnerability/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "CVE-2025-61260 \u2014 OpenAI Codex CLI: Command Injection via Project-Local Configuration",
+        "url": "https://research.checkpoint.com/2025/openai-codex-cli-command-injection-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "A week in security (November 24 &#8211; November 30)",
+    "link": "https://www.malwarebytes.com/blog/news/2025/12/a-week-in-security-november-24-november-30",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Matrix Push C2 abuses browser notifications to deliver phishing and malware",
+        "url": "https://www.malwarebytes.com/blog/news/2025/11/matrix-push-c2-abuses-browser-notifications-to-deliver-phishing-and-malware"
+      }
+    ]
+  },
+  {
+    "title": "Cryptocurrencies\u2019 Central Role in Healthcare Ransomware Attacks",
+    "link": "https://www.hipaajournal.com/cryptocurrencies-central-role-healthcare-ransomware-attacks/",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Kevin Lancaster Joins the usecure Board to Accelerate North American Channel Growth",
+    "link": "https://www.csoonline.com/article/4098348/kevin-lancaster-joins-the-usecure-board-to-accelerate-north-american-channel-growth.html",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Man Sentenced After Running Fake Airport and In-Flight Wi-Fi Networks",
+    "link": "https://www.esecurityplanet.com/threats/man-sentenced-after-running-fake-airport-and-in-flight-wi-fi-networks/",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Shai-hulud 2.0 Turns npm Installs Into a Full Cloud Compromise Path",
+    "link": "https://www.esecurityplanet.com/threats/shai-hulud-2-0-turns-npm-installs-into-a-full-cloud-compromise-path/",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Coupang Breach Exposes Data of Nearly 34 Million Customers",
+    "link": "https://www.esecurityplanet.com/threats/coupang-breach-exposes-data-of-nearly-34-million-customers/",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "South Korea\u2019s Coupang Hit by Massive Data Breach Affecting Nearly 34 Million Customers",
+    "link": "https://thecyberexpress.com/coupang-data-breach/",
+    "date": "2025-12-01",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
     "title": "CISA Adds Actively Exploited XSS Bug CVE-2021-26829 in OpenPLC ScadaBR to KEV",
     "link": "https://thehackernews.com/2025/11/cisa-adds-actively-exploited-xss-bug.html",
     "date": "2025-11-30",
@@ -433,11 +678,19 @@
     "terms": [
       "scattered spider",
       "WSUS",
+      "OpenAI",
+      "Phish",
       "CVE-2025-59287",
+      "openai",
       "wsus",
       "cve-2025-59287"
     ],
     "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI data may have been exposed after a cyberattack on analytics firm Mixpanel",
+        "url": "https://securityaffairs.com/185121/data-breach/openai-data-may-have-been-exposed-after-a-cyberattack-on-analytics-firm-mixpanel.html"
+      },
       {
         "term": "WSUS",
         "text": "Attackers deliver ShadowPad via newly patched WSUS RCE bug",
@@ -457,6 +710,11 @@
         "term": "CVE-2025-59287",
         "text": "Analysis of ShadowPad Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)",
         "url": "https://asec.ahnlab.com/en/91166/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI User Data Exposed in Mixpanel Hack",
+        "url": "https://www.securityweek.com/openai-user-data-exposed-in-mixpanel-hack/"
       }
     ]
   },
@@ -475,15 +733,6 @@
     "date": "2025-11-30",
     "terms": [
       "CLOP"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Battaglioli By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-11-30",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -580,6 +829,7 @@
     "link": "https://thecyberpost.com/news/hackers/threatsday-bulletin-ai-malware-voice-bot-flaws-crypto-laundering-iot-attacks-and-20-more-stories/",
     "date": "2025-11-28",
     "terms": [
+      "Phish",
       "CVE-2020-25506",
       "CVE-2024-43451",
       "CVE-2025-24054",
@@ -678,7 +928,8 @@
     "link": "https://socradar.io/ai-powered-gtg-1002-campaign/",
     "date": "2025-11-28",
     "terms": [
-      "hunting"
+      "hunting",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -791,9 +1042,43 @@
     "link": "https://socradar.io/dark-web-market-b1acks-stash/",
     "date": "2025-11-28",
     "terms": [
-      "Canada"
+      "Canada",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing operations",
+        "url": "https://socradar.io/top-10-phishing-attacks-of-2024-lessons-learned/"
+      }
+    ]
+  },
+  {
+    "title": "Tomiris wreaks Havoc: New tools and techniques of the APT group",
+    "link": "https://securelist.com/tomiris-new-tools/118143/",
+    "date": "2025-11-28",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
+  },
+  {
+    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 48",
+    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-48-7/",
+    "date": "2025-11-28",
+    "terms": [
+      "OpenAI",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/phishing-scams/"
+      }
+    ]
   },
   {
     "title": "SonicWall ransomware attacks offer an M&A lesson for CSOs",
@@ -938,7 +1223,8 @@
     "link": "https://www.itsecurityguru.org/2025/11/27/cyberattack-on-multiple-london-councils-exposes-fragility-of-shared-public-sector-systems/?utm_source=rss&utm_medium=rss&utm_campaign=cyberattack-on-multiple-london-councils-exposes-fragility-of-shared-public-sector-systems",
     "date": "2025-11-27",
     "terms": [
-      "critical Vulnerability"
+      "critical Vulnerability",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -985,6 +1271,59 @@
     "inline_links": []
   },
   {
+    "title": "Millions at risk after nationwide CodeRED alert system outage and data breach",
+    "link": "https://www.malwarebytes.com/blog/news/2025/11/millions-at-risk-after-nationwide-codered-alert-system-outage-and-data-breach",
+    "date": "2025-11-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Holiday shoppers targeted as Amazon and FBI warn of surge in account takeover attacks",
+    "link": "https://www.malwarebytes.com/blog/news/2025/11/holiday-shoppers-targeted-as-amazon-and-fbi-warn-of-surge-in-account-takeover-attacks",
+    "date": "2025-11-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What your firewall sees that your EDR doesn\u2019t",
+    "link": "https://www.itsecurityguru.org/2025/11/27/what-your-firewall-sees-that-your-edr-doesnt/?utm_source=rss&utm_medium=rss&utm_campaign=what-your-firewall-sees-that-your-edr-doesnt",
+    "date": "2025-11-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How your dashcam can be hacked, and how to protect yourself from the attack | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/dashcam-hack-botnet-on-the-wheels/54839/",
+    "date": "2025-11-27",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI Notifies Users of Mixpanel Security Incident",
+    "link": "https://socradar.io/openai-notifies-users-mixpanel-security-incident/",
+    "date": "2025-11-27",
+    "terms": [
+      "OpenAI",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/phishing-links-in-browsers-identifying-red-flags-and-staying-safe/"
+      }
+    ]
+  },
+  {
     "title": "Gainsight Cyber-Attack Affects More Salesforce Customers",
     "link": "https://www.infosecurity-magazine.com/news/gainsight-cyberattack-more/",
     "date": "2025-11-26",
@@ -999,6 +1338,7 @@
     "date": "2025-11-26",
     "terms": [
       "CLOP",
+      "Phish",
       "CVE-2023-38831",
       "CVE-2024-43451",
       "CVE-2025-24054",
@@ -1133,7 +1473,8 @@
     "terms": [
       "scattered spider",
       "qilin",
-      "Salesforce"
+      "Salesforce",
+      "Phish"
     ],
     "inline_links": [
       {
@@ -1256,6 +1597,7 @@
     "date": "2025-11-26",
     "terms": [
       "Canadian",
+      "Phish",
       "CVE-2022-41040",
       "CVE-2022-41082",
       "CVE-2023-23397"
@@ -1301,7 +1643,8 @@
     "link": "https://socradar.io/dark-web-profile-bytetobreach/",
     "date": "2025-11-26",
     "terms": [
-      "IOC"
+      "IOC",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -1338,6 +1681,51 @@
         "url": "https://socradar.io/dark-web-profile-everest-ransomware/"
       }
     ]
+  },
+  {
+    "title": "FBI Reports $262M in ATO Fraud as Researchers Cite Growing AI Phishing and Holiday Scams",
+    "link": "https://thehackernews.com/2025/11/fbi-reports-262m-in-ato-fraud-as.html",
+    "date": "2025-11-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Black Friday 2025: Smarter, Faster and AI-Powered Scams Drive a Surge in Cyber Threats",
+    "link": "https://www.itsecurityguru.org/2025/11/26/black-friday-2025-smarter-faster-and-ai-powered-scams-drive-a-surge-in-cyber-threats/?utm_source=rss&utm_medium=rss&utm_campaign=black-friday-2025-smarter-faster-and-ai-powered-scams-drive-a-surge-in-cyber-threats",
+    "date": "2025-11-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How CTEM Helps Cyber Teams to Become More Proactive",
+    "link": "https://www.itsecurityguru.org/2025/11/26/how-ctem-helps-cyber-teams-to-become-more-proactive/?utm_source=rss&utm_medium=rss&utm_campaign=how-ctem-helps-cyber-teams-to-become-more-proactive",
+    "date": "2025-11-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Xillen Stealer Evolves With AI-Like Evasion and Broader Targeting",
+    "link": "https://www.esecurityplanet.com/threats/xillen-stealer-evolves-with-ai-like-evasion-and-broader-targeting/",
+    "date": "2025-11-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Paris, The Thinker, and why your WAF should block XSS by default",
+    "link": "https://www.imperva.com/blog/paris-the-thinker-and-why-your-waf-should-block-xss-by-default/",
+    "date": "2025-11-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
   },
   {
     "title": "Canon Says Subsidiary Impacted by Oracle EBS Hack",
@@ -1383,9 +1771,17 @@
     "link": "https://cyble.com/blog/relaynfc-nfc-relay-malware-targeting-brazil/",
     "date": "2025-11-25",
     "terms": [
-      "IOC"
+      "IOC",
+      "Phish",
+      "phish"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
   },
   {
     "title": "Russian and North Korean Hackers Forge Global Cyberattack Alliance",
@@ -1402,12 +1798,19 @@
     "date": "2025-11-25",
     "terms": [
       "Salesforce",
+      "Phish",
       "CVE-2025-58034",
       "CVE-2025-64446",
       "CVE-2025-13223",
+      "phish",
       "salesforce"
     ],
     "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Matrix Push C2 Uses Browser Extensions to Take Users to Phishing Pages",
+        "url": "https://thehackernews.com/2025/11/matrix-push-c2-uses-browser.html"
+      },
       {
         "term": "Salesforce",
         "text": "Salesforce Warns of Unauthorized Data Access via Gainsight-Linked Apps",
@@ -1636,11 +2039,19 @@
     "link": "https://socradar.io/dark-web-profile-berserk-bear/",
     "date": "2025-11-25",
     "terms": [
+      "Phish",
       "CVE-2011-0611",
       "CVE-2018-0171",
-      "CVE-2020-1472"
+      "CVE-2020-1472",
+      "phish"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/phishing-links-in-browsers-identifying-red-flags-and-staying-safe/"
+      }
+    ]
   },
   {
     "title": "Shai Hulud\u2019s \u201cThe Second Coming\u201d: New npm Campaign Hits Zapier, ENS, Postman",
@@ -1659,6 +2070,33 @@
       "CVE-2011-0611",
       "CVE-2018-0171",
       "CVE-2020-1472"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "JackFix Uses Fake Windows Update Pop-Ups on Adult Sites to Deliver Multiple Stealers",
+    "link": "https://thehackernews.com/2025/11/jackfix-uses-fake-windows-update-pop.html",
+    "date": "2025-11-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Advanced Security Isn't Stopping Ancient Phishing Tactics",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/advanced-security-phishing-tactics",
+    "date": "2025-11-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "French Football Federation Hit by Breach via Compromised Admin Account",
+    "link": "https://www.esecurityplanet.com/threats/news-french-football-federation-data-breach/",
+    "date": "2025-11-25",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
   },
@@ -1703,6 +2141,7 @@
     "terms": [
       "akira",
       "Salesforce",
+      "Phish",
       "CVE-2025-58034",
       "CVE-2025-13223"
     ],
@@ -2064,6 +2503,54 @@
     "inline_links": []
   },
   {
+    "title": "\u200b\u200bSpyware Allows Cyber Threat Actors to Target Users of Messaging Applications\u200b",
+    "link": "https://www.cisa.gov/news-events/alerts/2025/11/24/spyware-allows-cyber-threat-actors-target-users-messaging-applications",
+    "date": "2025-11-24",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html",
+        "url": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html"
+      },
+      {
+        "term": "Phish",
+        "text": "ClayRat Campaign Uses Telegram and Phishing Sites to Distribute Android Spyware.",
+        "url": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html"
+      }
+    ]
+  },
+  {
+    "title": "To buy or not to buy: How cybercriminals capitalize on Black Friday",
+    "link": "https://securelist.com/black-friday-threat-report-2025/118083/",
+    "date": "2025-11-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Black Friday scammers offer fake gifts from big-name brands to empty bank accounts",
+    "link": "https://www.malwarebytes.com/blog/scams/2025/11/black-friday-scammers-offer-fake-gifts-from-big-name-brands-to-empty-bank-accounts",
+    "date": "2025-11-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Matrix Push C2 abuses browser notifications to deliver phishing and malware",
+    "link": "https://www.malwarebytes.com/blog/news/2025/11/matrix-push-c2-abuses-browser-notifications-to-deliver-phishing-and-malware",
+    "date": "2025-11-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Critical Vulnerability in Azure Bastion Let Attackers Bypass Authentication and Escalate privileges",
     "link": "https://cybersecuritynews.com/azure-bastion-vulnerability/",
     "date": "2025-11-23",
@@ -2179,7 +2666,8 @@
     "terms": [
       "scattered spider",
       "qilin",
-      "Salesforce"
+      "Salesforce",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -2368,6 +2856,15 @@
         "url": "https://socradar.io/salesforce-data-breach-affecting-multiple-companies/"
       }
     ]
+  },
+  {
+    "title": "Matrix Push C2 Uses Browser Notifications for Fileless, Cross-Platform Phishing Attacks",
+    "link": "https://thehackernews.com/2025/11/matrix-push-c2-uses-browser.html",
+    "date": "2025-11-22",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
   },
   {
     "title": "Salesforce Flags Unauthorized Data Access via Gainsight-Linked OAuth Activity",
@@ -3065,6 +3562,65 @@
     "inline_links": []
   },
   {
+    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 47",
+    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-7/",
+    "date": "2025-11-21",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/phishing-scams/"
+      }
+    ]
+  },
+  {
+    "title": "AI teddy bear for kids responds with sexual content and advice about weapons",
+    "link": "https://www.malwarebytes.com/blog/news/2025/11/ai-teddy-bear-for-kids-responds-with-sexual-content-and-advice-about-weapons",
+    "date": "2025-11-21",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fake calendar invites are spreading. Here\u2019s how to remove them and prevent more",
+    "link": "https://www.malwarebytes.com/blog/news/2025/11/fake-calendar-invites-are-spreading-heres-how-to-remove-them-and-prevent-more",
+    "date": "2025-11-21",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.malwarebytes.com/phishing"
+      }
+    ]
+  },
+  {
+    "title": "Syncro + Lovable: RAT delivery via AI-generated websites | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/syncro-remote-admin-tool-on-ai-generated-fake-websites/54808/",
+    "date": "2025-11-21",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Use of CSS stuffing as an obfuscation technique&#x3f;, (Fri, Nov 21st)",
+    "link": "https://isc.sans.edu/diary/rss/32510",
+    "date": "2025-11-21",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Hackers Attacking Palo Alto Networks\u2019 GlobalProtect VPN Portals with 2.3 Million Attacks",
     "link": "https://cybersecuritynews.com/palo-alto-vpn-under-attack/",
     "date": "2025-11-20",
@@ -3078,7 +3634,8 @@
     "link": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
     "date": "2025-11-20",
     "terms": [
-      "IOC"
+      "IOC",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -3609,6 +4166,42 @@
     "date": "2025-11-20",
     "terms": [
       "CVE-2025-61757"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "'Matrix Push' C2 Tool Hijacks Browser Notifications",
+    "link": "https://www.darkreading.com/threat-intelligence/matrix-push-c2-tool-hijacks-browser-notifications-phishing",
+    "date": "2025-11-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Same Old Security Problems: Cyber Training Still Fails Miserably",
+    "link": "https://www.darkreading.com/cybersecurity-operations/security-problems-cyber-training-fails-miserably",
+    "date": "2025-11-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "WhatsApp 'Eternidade' Trojan Self-Propagates Through Brazil",
+    "link": "https://www.darkreading.com/threat-intelligence/whatsapp-eternidade-trojan-self-propagates-brazil",
+    "date": "2025-11-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Smashing Security podcast #444: We\u2019re sorry. Wait, did a company actually say that?",
+    "link": "https://grahamcluley.com/smashing-security-podcast-444/",
+    "date": "2025-11-20",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
   },
@@ -4335,6 +4928,40 @@
     ]
   },
   {
+    "title": "CISA Releases Guide to Mitigate Risks from Bulletproof Hosting Providers",
+    "link": "https://www.cisa.gov/news-events/alerts/2025/11/19/cisa-releases-guide-mitigate-risks-bulletproof-hosting-providers",
+    "date": "2025-11-19",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Our CIO on Why Security Must Be Built Into AI from Day One",
+    "link": "https://www.paloaltonetworks.com/blog/2025/11/cio-why-security-must-be-built-into-ai/",
+    "date": "2025-11-19",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hacking Black Friday: using LLMs to save on the \u201csale of the year\u201d | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/black-friday-ai-assistance/54798/",
+    "date": "2025-11-19",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "How phishers and scammers use AI",
+        "url": "https://www.kaspersky.com/blog/ai-phishing-and-scams/54445/"
+      }
+    ]
+  },
+  {
     "title": "Google fixed the seventh Chrome zero-day in 2025",
     "link": "https://securityaffairs.com/184764/hacking/google-fixed-the-seventh-chrome-zero-day-in-2025.html",
     "date": "2025-11-18",
@@ -4664,6 +5291,8 @@
     "terms": [
       "Canada",
       "akira",
+      "OpenAI",
+      "Phish",
       "CVE-2025-64446",
       "cve-2025-64446"
     ],
@@ -4772,6 +5401,33 @@
     "inline_links": []
   },
   {
+    "title": "Dutch Police seize 250 servers used for Bulletproof Hosting",
+    "link": "https://cybersafe.news/dutch-police-seize-250-servers-used-for-bulletproof-hosting/",
+    "date": "2025-11-18",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Prisma AIRS Integrates Microsoft Foundry for Comprehensive AI Security",
+    "link": "https://www.paloaltonetworks.com/blog/2025/11/prisma-airs-integrates-azure-ai-foundry/",
+    "date": "2025-11-18",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How to securely vet browser extensions across your organization",
+    "link": "https://www.kaspersky.com/blog/chrome-extension-security-validation/54795/",
+    "date": "2025-11-18",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "North Korean threat actors use JSON sites to deliver malware via trojanized code",
     "link": "https://securityaffairs.com/184726/cyber-warfare-2/north-korean-threat-actors-use-json-sites-to-deliver-malware-via-trojanized-code.html",
     "date": "2025-11-17",
@@ -4814,6 +5470,7 @@
       "Canada",
       "qilin",
       "CL0P",
+      "Phish",
       "CVE-2025-12480",
       "CVE-2025-20337",
       "CVE-2025-5777",
@@ -4943,6 +5600,36 @@
       "CVE-2025-64446"
     ],
     "inline_links": []
+  },
+  {
+    "title": "LG Source Code and Credentials allegedly leaked by hacker",
+    "link": "https://cybersafe.news/lg-source-code-and-credentials-allegedly-leaked-by-hacker/",
+    "date": "2025-11-17",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Flashpoint\u2019s 2025 Holiday Threat Assessment",
+    "link": "https://flashpoint.io/blog/flashpoint-2025-threats-holiday-season/",
+    "date": "2025-11-17",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "3. Phishing and Social Engineering",
+        "url": "https://flashpoint.io/blog/feed/#phishing-and-social-engineering"
+      },
+      {
+        "term": "Phish",
+        "text": "Phishing",
+        "url": "https://flashpoint.io/intelligence-101/phishing/"
+      }
+    ]
   },
   {
     "title": "Microsoft Patch Tuesday, November 2025 Edition",
@@ -5144,7 +5831,8 @@
     "terms": [
       "akira",
       "qilin",
-      "CLOP"
+      "CLOP",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -5290,7 +5978,18 @@
     "link": "https://www.kaspersky.com/blog/ai-sidebar-spoofing-atlas-comet/54769/",
     "date": "2025-11-13",
     "terms": [
-      "CLOP"
+      "CLOP",
+      "OpenAI",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Sues to Disrupt Chinese SMS Phishing Triad",
+    "link": "https://krebsonsecurity.com/2025/11/google-sues-to-disrupt-chinese-sms-phishing-triad/",
+    "date": "2025-11-13",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
   },
@@ -5401,6 +6100,24 @@
     "date": "2025-11-12",
     "terms": [
       "CVE-2025-62215"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Android Trojan \u2018Fantasy Hub\u2019 Malware Service Turns Telegram Into a Hub for Hackers",
+    "link": "https://thecyberpost.com/news/hackers/android-trojan-fantasy-hub-malware-service-turns-telegram-into-a-hub-for-hackers/",
+    "date": "2025-11-12",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "This Is the Platform Google Claims Is Behind a 'Staggering\u2019 Scam Text Operation",
+    "link": "https://www.wired.com/story/lighthouse-google-lawsuit-scam-text-messages/",
+    "date": "2025-11-12",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
   },
@@ -5560,9 +6277,17 @@
     "link": "https://cyble.com/blog/multi-brand-phishing-campaign-harvests-credentials/",
     "date": "2025-11-10",
     "terms": [
-      "IOC"
+      "IOC",
+      "Phish",
+      "phish"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Multi-Brand themed Phishing Campaign Harvests Credentials via Telegram Bot API",
+        "url": "https://cyble.com/blog/multi-brand-phishing-campaign-harvests-credentials/"
+      }
+    ]
   },
   {
     "title": "Drilling Down on Uncle Sam\u2019s Proposed TP-Link Ban",
@@ -5610,6 +6335,22 @@
     "inline_links": []
   },
   {
+    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 45",
+    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-7/",
+    "date": "2025-11-07",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/phishing-scams/"
+      }
+    ]
+  },
+  {
     "title": "SonicWall Firewall Backups Stolen by Nation-State Actor",
     "link": "https://www.darkreading.com/cyberattacks-data-breaches/sonicwall-firewall-backups-nation-state-actor",
     "date": "2025-11-06",
@@ -5637,11 +6378,30 @@
     "inline_links": []
   },
   {
+    "title": "Cloudflare Scrubs Aisuru Botnet from Top Domains List",
+    "link": "https://krebsonsecurity.com/2025/11/cloudflare-scrubs-aisuru-botnet-from-top-domains-list/",
+    "date": "2025-11-06",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "AI Security Realized: Innovation Highlights from OneCon25",
     "link": "https://www.sentinelone.com/blog/ai-security-realized-innovation-highlights-from-onecon25/",
     "date": "2025-11-05",
     "terms": [
       "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "AI Security: Defining and Defending Cybersecurity\u2019s Next Frontier",
+    "link": "https://www.sentinelone.com/blog/ai-security-defining-and-defending-cybersecuritys-next-frontier/",
+    "date": "2025-11-05",
+    "terms": [
+      "OpenAI",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -5707,7 +6467,8 @@
     "link": "https://research.checkpoint.com/2025/generative-ai-for-reverse-engineering/",
     "date": "2025-11-03",
     "terms": [
-      "IOC"
+      "IOC",
+      "OpenAI"
     ],
     "inline_links": []
   },
@@ -5721,6 +6482,8 @@
       "CL0P",
       "WSUS",
       "Salesforce",
+      "OpenAI",
+      "Phish",
       "CVE-2025-59287",
       "CVE-2025-61882"
     ],
@@ -5771,5 +6534,14 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9242"
       }
     ]
+  },
+  {
+    "title": "Alleged Jabber Zeus Coder \u2018MrICQ\u2019 in U.S. Custody",
+    "link": "https://krebsonsecurity.com/2025/11/alleged-jabber-zeus-coder-mricq-in-u-s-custody/",
+    "date": "2025-11-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
   }
 ]
