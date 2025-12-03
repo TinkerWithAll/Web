@@ -3,6 +3,7 @@
 scraper.py
 Parses security news, maintains a rolling 30-day history in JSON,
 generates CSV reports, and updates a metadata timestamp.
+Now also updates the footer of a 'feeds.html' file.
 """
 
 import feedparser
@@ -17,7 +18,6 @@ import requests
 import os
 import ssl
 import glob
-import json
 from zoneinfo import ZoneInfo
 
 # Fix for encoding and SSL
@@ -28,6 +28,7 @@ socket.setdefaulttimeout(300)
 # Configuration
 HISTORY_FILE = "feed_history.json"
 META_FILE = "meta.json"  # New metadata file
+HTML_FILE = "feeds.html" # NEW: HTML file to update
 MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=30)
 USE_CISA_CVES = True
 
@@ -162,6 +163,52 @@ def save_metadata():
     except Exception as e:
         print(f"Error saving metadata: {e}", file=sys.stderr)
 
+def update_footer_html(html_file=HTML_FILE):
+    """
+    Reads the HTML file, toggles the content of the footer <p> tag, and saves it.
+    """
+    try:
+        with open(html_file, "r", encoding="utf-8") as f:
+            soup = BeautifulSoup(f, 'html.parser')
+
+        footer = soup.find('footer')
+        if not footer:
+            print(f"Warning: Footer tag not found in {html_file}.", file=sys.stderr)
+            return
+
+        p_tag = footer.find('p')
+        if not p_tag:
+            print(f"Warning: <p> tag not found within <footer> in {html_file}.", file=sys.stderr)
+            return
+        
+        # Define the two states
+        state_one = "2025 Zachary Baillod " # With trailing space
+        state_two = "2025 Zachary Baillod"  # Without trailing space
+
+        # Determine the current state and toggle
+        current_text = p_tag.text.strip()
+        
+        # Check against both states (with and without stripping, just in case)
+        if p_tag.text == state_one or current_text == state_one.strip():
+            new_text = state_two
+            print(f"Toggling footer from '{state_one.strip()}' to '{state_two}'", file=sys.stderr)
+        else:
+            new_text = state_one
+            print(f"Toggling footer from '{state_two}' to '{state_one.strip()}'", file=sys.stderr)
+
+        # Update the text content of the <p> tag
+        p_tag.string = new_text
+
+        # Write the modified HTML back to the file
+        with open(html_file, "w", encoding="utf-8") as f:
+            f.write(str(soup))
+            
+    except FileNotFoundError:
+        print(f"Error: HTML file '{html_file}' not found. Skipping footer update.", file=sys.stderr)
+    except Exception as e:
+        print(f"Error updating HTML footer: {e}", file=sys.stderr)
+
+
 def main():
     if USE_CISA_CVES: update_terms_with_cisa_cves()
     
@@ -179,6 +226,9 @@ def main():
     
     # NEW: Save the update time
     save_metadata()
+    
+    # NEW: Update the HTML footer
+    update_footer_html()
     
     print(f"Done. History updated with {len(full_history)} total entries.")
 
