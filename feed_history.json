@@ -1,5 +1,362 @@
 [
   {
+    "title": "Warning: WinRAR Vulnerability CVE-2025-6218 Under Active Attack by Multiple Threat Groups",
+    "link": "https://thehackernews.com/2025/12/warning-winrar-vulnerability-cve-2025.html",
+    "date": "2025-12-10",
+    "terms": [
+      "CVE-2025-6218"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds Microsoft Windows and WinRAR flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/185523/security/u-s-cisa-adds-microsoft-windows-and-winrar-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2025-12-10",
+    "terms": [
+      "CVE-2025-6218",
+      "CVE-2025-62221",
+      "cve-2025-6218",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-6218",
+        "text": "CVE-2025-6218",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-6218"
+      },
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-62221"
+      },
+      {
+        "term": "CVE-2025-6218",
+        "text": "CVE-2025-6218",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-6218"
+      },
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-62221"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Patch Tuesday security updates for December 2025 fixed an actively exploited zero-day",
+    "link": "https://securityaffairs.com/185515/breaking-news/microsoft-patch-tuesday-security-updates-for-december-2025-fixed-an-actively-exploited-zero-day.html",
+    "date": "2025-12-10",
+    "terms": [
+      "CVE-2025-62221",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2025-62221"
+      }
+    ]
+  },
+  {
+    "title": "Google Fixes Zero Click Gemini Enterprise Flaw That Exposed Corporate Data",
+    "link": "https://www.infosecurity-magazine.com/news/google-fixes-gemini-enterprise-flaw/",
+    "date": "2025-12-10",
+    "terms": [
+      "Zero Click"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "GhostFrame phishing kit fuels widespread attacks against millions",
+    "link": "https://www.malwarebytes.com/blog/news/2025/12/ghostframe-phishing-kit-fuels-widespread-attacks-against-millions",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "KI-Browser gef\u00e4hrden Unternehmen",
+    "link": "https://www.csoonline.com/article/4103972/ki-browser-gefahrden-unternehmen.html",
+    "date": "2025-12-10",
+    "terms": [
+      "OpenAI",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Polymorphic AI malware exists \u2014 but it\u2019s not what you think",
+    "link": "https://www.csoonline.com/article/4101491/polymorphic-ai-malware-exists-but-its-not-what-you-think.html",
+    "date": "2025-12-10",
+    "terms": [
+      "hunting",
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Phishing campaigns are cleaner",
+        "url": "https://www.csoonline.com/article/4060817/ai-powered-phishing-scams-now-use-fake-captcha-pages-to-evade-detection.html"
+      }
+    ]
+  },
+  {
+    "title": "Tools, um MCP-Server abzusichern",
+    "link": "https://www.csoonline.com/article/4093704/tools-um-mcp-server-abzusichern.html",
+    "date": "2025-12-10",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "December Patch Tuesday: Windows Cloud Files Mini Filter Driver hole already being exploited",
+    "link": "https://www.csoonline.com/article/4103681/december-patch-tuesday-windows-cloud-files-mini-filter-driver-hole-already-being-exploited.html",
+    "date": "2025-12-10",
+    "terms": [
+      "hunting",
+      "Zero Day",
+      "Phish",
+      "CVE-2025-62221",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-62221"
+      }
+    ]
+  },
+  {
+    "title": "Gemini Zero-Click Flaw Let Attackers Access Gmail, Calendar, and Google Docs",
+    "link": "https://gbhackers.com/gemini-zero-click-flaw/",
+    "date": "2025-12-10",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PeerBlight Linux Malware Abuses React2Shell for Proxy Tunneling",
+    "link": "https://gbhackers.com/peerblight-linux/",
+    "date": "2025-12-10",
+    "terms": [
+      "React2shell",
+      "react",
+      "CVE-2025-55182",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "PeerBlight Linux Malware Abuses React2Shell for Proxy Tunneling",
+        "url": "https://gbhackers.com/peerblight-linux/"
+      },
+      {
+        "term": "react",
+        "text": "PeerBlight Linux Malware Abuses React2Shell for Proxy Tunneling",
+        "url": "https://gbhackers.com/peerblight-linux/"
+      }
+    ]
+  },
+  {
+    "title": "Russian State-Supported Hacktivist Groups Targeted in Dual DOJ Indictments",
+    "link": "https://thecyberexpress.com/us-actions-against-carr-and-noname05716/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Australia\u2019s Social Media Ban for Kids: Protection, Overreach or the Start of a Global Shift?",
+    "link": "https://thecyberexpress.com/australia-ban-on-social-media-ban-for-kids/",
+    "date": "2025-12-10",
+    "terms": [
+      "Canada",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Rise in Device-Driven Cybercrime and Expanding Ransomware Threats Put India on Alert",
+    "link": "https://thecyberexpress.com/cybercrime-in-india-ncrb-report-2023-2025/",
+    "date": "2025-12-10",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "RSF Cyberattack Linked to Russian FSB Foiled by Staff Vigilance",
+    "link": "https://thecyberexpress.com/rsf-cyberattack-fsb-linked-phishing/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Coupang CEO Resigns After Massive Data Breach Exposes Millions of Users",
+    "link": "https://thecyberexpress.com/coupang-ceo-resigns-amid-data-leak/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "\u20ac750 Payout Proposed for 90,000 Victims as HSE Acknowledges Cyberattack Damage",
+    "link": "https://thecyberexpress.com/hse-cyberattack-compensation/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Endpoint Protection Security for Stronger Defense Across Devices and Networks",
+    "link": "https://blog.comodo.com/endpoint-security/endpoint-protection-security/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Weaponize ChatGPT and Grok Conversations to Deploy AMOS Stealer",
+    "link": "https://cybersecuritynews.com/chatgpt-and-grok-conversations-weaponized/",
+    "date": "2025-12-10",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Outlook Vulnerability Let Attackers Execute Malicious Code Remotely",
+    "link": "https://cybersecuritynews.com/microsoft-outlook-vulnerability/",
+    "date": "2025-12-10",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "North Korean Hackers Exploit React2Shell Vulnerability in the Wild to Deploy EtherRAT",
+    "link": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/",
+    "date": "2025-12-10",
+    "terms": [
+      "lazarus",
+      "React2shell",
+      "react",
+      "CVE-2025-55182",
+      "cve-2025-55182",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-55182",
+        "text": "CVE-2025-55182",
+        "url": "https://cybersecuritynews.com/react-and-next-js-rce-vulnerability/"
+      },
+      {
+        "term": "React2shell",
+        "text": "North Korean Hackers Exploit React2Shell Vulnerability in the Wild to Deploy EtherRAT",
+        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
+      },
+      {
+        "term": "react",
+        "text": "North Korean Hackers Exploit React2Shell Vulnerability in the Wild to Deploy EtherRAT",
+        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
+      },
+      {
+        "term": "React2shell",
+        "text": "North Korean Hackers Exploit React2Shell Vulnerability in the Wild to Deploy EtherRAT",
+        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
+      },
+      {
+        "term": "react",
+        "text": "North Korean Hackers Exploit React2Shell Vulnerability in the Wild to Deploy EtherRAT",
+        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "CISA Warns of WinRAR 0-Day RCE Vulnerability Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/winrar-0-day-rce-vulnerability-exploited/",
+    "date": "2025-12-10",
+    "terms": [
+      "CVE-2025-6218",
+      "cve-2025-6218"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-6218",
+        "text": "CVE-2025-6218",
+        "url": "https://cybersecuritynews.com/winrar-0-day-vulnerabilities/"
+      },
+      {
+        "term": "CVE-2025-6218",
+        "text": "CVE-2025-6218",
+        "url": "https://cybersecuritynews.com/apt-c-08-hackers-exploiting-winrar-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Gemini Zero-Click Vulnerability Let Attackers Access Gmail, Calendar, and Docs",
+    "link": "https://cybersecuritynews.com/gemini-zero-click-vulnerability/",
+    "date": "2025-12-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Windows Cloud Files Mini Filter Driver 0-Day Vulnerability Exploited in the Wild",
+    "link": "https://cybersecuritynews.com/windows-cloud-files-mini-filter-driver-0-day/",
+    "date": "2025-12-10",
+    "terms": [
+      "CVE-2025-62221",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://cybersecuritynews.com/microsoft-december-2025-patch-tuesday/"
+      }
+    ]
+  },
+  {
     "title": "STAC6565 Targets Canada in 80% of Attacks as Gold Blade Deploys QWCrypt Ransomware",
     "link": "https://thehackernews.com/2025/12/stac6565-targets-canada-in-80-of.html",
     "date": "2025-12-09",
@@ -294,7 +651,7 @@
     "inline_links": []
   },
   {
-    "title": "The AMOS infostealer is piggybacking ChatGPT's chat-sharing feature | Kaspersky official blog",
+    "title": "The AMOS infostealer is piggybacking ChatGPT\u2019s chat-sharing feature | Kaspersky official blog",
     "link": "https://www.kaspersky.com/blog/share-chatgpt-chat-clickfix-macos-amos-infostealer/54928/",
     "date": "2025-12-09",
     "terms": [
@@ -309,6 +666,348 @@
         "url": "https://www.kaspersky.com/blog/ai-phishing-and-scams/54445/"
       }
     ]
+  },
+  {
+    "title": "Serratelli Hat By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-09",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Clean Air By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2025-12-09",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "GearGrid By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-12-09",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Exploitation of Critical Vulnerability in React Server Components (Updated December 9)",
+    "link": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/",
+    "date": "2025-12-09",
+    "terms": [
+      "critical Vulnerability",
+      "react",
+      "CVE-2025-55182",
+      "CVE-2025-66478",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "Exploitation of Critical Vulnerability in React Server Components (Updated December 9)",
+        "url": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
+      },
+      {
+        "term": "react",
+        "text": "Exploitation of Critical Vulnerability in React Server Components (Updated December 9)",
+        "url": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
+      }
+    ]
+  },
+  {
+    "title": "Abacus Employment Services. By genesis",
+    "link": "https://www.ransomlook.io//group/genesis",
+    "date": "2025-12-09",
+    "terms": [
+      "genesis"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "North Korea-linked Actors Exploit React2Shell to Deploy New EtherRAT Malware",
+    "link": "https://thehackernews.com/2025/12/north-korea-linked-actors-exploit.html",
+    "date": "2025-12-09",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Patch Tuesday, December 2025 Edition",
+    "link": "https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/",
+    "date": "2025-12-09",
+    "terms": [
+      "CVE-2025-62221",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62221"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Fixes Exploited Zero Day in Light Patch Tuesday",
+    "link": "https://www.darkreading.com/application-security/microsoft-fixes-exploited-zero-day-light-patch-tuesday",
+    "date": "2025-12-09",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Gemini Enterprise No-Click Flaw Exposes Sensitive Data",
+    "link": "https://www.darkreading.com/remote-workforce/gemini-enterprise-exposes-sensitive-data",
+    "date": "2025-12-09",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "While Google and OpenAI battle for model dominance, Anthropic is quietly winning the enterprise AI race",
+    "link": "https://www.zdnet.com/article/anthropic-openai-enterprise-market-share-2025/",
+    "date": "2025-12-09",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ivanti warns customers of new EPM flaw enabling remote code execution",
+    "link": "https://securityaffairs.com/185508/hacking/ivanti-warns-customers-of-new-epm-flaw-enabling-remote-code-execution.html",
+    "date": "2025-12-09",
+    "terms": [
+      "CVE-2024-13159",
+      "CVE-2024-13160",
+      "CVE-2024-13161",
+      "cve-2024-13159",
+      "cve-2024-13160",
+      "cve-2024-13161"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-13159",
+        "text": "CVE-2024-13159",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-13159"
+      },
+      {
+        "term": "CVE-2024-13160",
+        "text": "CVE-2024-13160",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-13160"
+      },
+      {
+        "term": "CVE-2024-13161",
+        "text": "CVE-2024-13161",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-13161"
+      }
+    ]
+  },
+  {
+    "title": "React2Shell Exploit Campaigns Tied to North Korean Cyber Intrusion Tactics",
+    "link": "https://www.infosecurity-magazine.com/news/react2shell-exploit-campaigns/",
+    "date": "2025-12-09",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2025/12/09/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "date": "2025-12-09",
+    "terms": [
+      "CVE-2025-6218",
+      "CVE-2025-62221",
+      "cve-2025-6218",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-6218",
+        "text": "CVE-2025-6218",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-6218"
+      },
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-62221"
+      }
+    ]
+  },
+  {
+    "title": "Cybersecurity 2026 | The Year Ahead in AI, Adversaries, and Global Change",
+    "link": "https://www.sentinelone.com/blog/cybersecurity-2026-the-year-ahead-in-ai-adversaries-and-global-change/",
+    "date": "2025-12-09",
+    "terms": [
+      "IOC",
+      "CL0P",
+      "Salesforce",
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer for the 9th of December 2025",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-for-the-9th-of-december-2025/",
+    "date": "2025-12-09",
+    "terms": [
+      "IOC",
+      "genesis",
+      "sinobi"
+    ],
+    "inline_links": [
+      {
+        "term": "genesis",
+        "text": "\ud83c\uddfa\ud83c\uddf8 Dill Dill Carr Stonbraker & Hutchings P.C. has been claimed a victim to GENESIS Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1998449639691780573?s=20"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware claims 2 victims",
+        "url": "https://x.com/DarkWebInformer/status/1998487080310018477?s=20"
+      },
+      {
+        "term": "genesis",
+        "text": "\ud83c\uddfa\ud83c\uddf8 Dill Dill Carr Stonbraker & Hutchings P.C. has been claimed a victim to GENESIS Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/1998449639691780573?s=20"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware claims 2 victims",
+        "url": "https://x.com/DarkWebInformer/status/1998487080310018477?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Threat Attack Update for the 9th of December 2025",
+    "link": "https://darkwebinformer.com/threat-attack-daily-9th-of-december-2025/",
+    "date": "2025-12-09",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "genesis",
+      "qilin",
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update for the 9th of December 2025",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-9th-of-december-2025/",
+    "date": "2025-12-09",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "genesis",
+      "qilin",
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Spiderman Phishing Kit Targets European Banks with Real-Time Credential Theft",
+    "link": "https://hackread.com/spiderman-phishing-kit-european-banks-credential-theft/",
+    "date": "2025-12-09",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Gemini for Chrome gets a second AI agent to watch over it",
+    "link": "https://www.csoonline.com/article/4103346/gemini-for-chrome-gets-a-second-ai-agent-to-watch-over-it-2.html",
+    "date": "2025-12-09",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI has called",
+        "url": "https://openai.com/index/prompt-injections/"
+      }
+    ]
+  },
+  {
+    "title": "New \u2018Spiderman\u2019 phishing kit targets European bank customers",
+    "link": "https://cyberinsider.com/new-spiderman-phishing-kit-targets-european-bank-customers/",
+    "date": "2025-12-09",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "New \u2018Spiderman\u2019 phishing kit targets European bank customers",
+        "url": "https://cyberinsider.com/new-spiderman-phishing-kit-targets-european-bank-customers/"
+      }
+    ]
+  },
+  {
+    "title": "FortiOS, FortiWeb, and FortiProxy Vulnerability Lets Attackers Bypass FortiCloud SSO Authentication",
+    "link": "https://cybersecuritynews.com/critical-fortinet-vulnerability/",
+    "date": "2025-12-09",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "November 2025: Breaches at Coupang, Balancer, Gainsight, Eurofiber & More",
+    "link": "https://socradar.io/blog/major-cyber-attacks-november-2025/",
+    "date": "2025-12-09",
+    "terms": [
+      "hunting",
+      "qilin",
+      "Salesforce",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "Qilin",
+        "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
+      },
+      {
+        "term": "qilin",
+        "text": "Dark Web Profile: Qilin (Agenda) Ransomware",
+        "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing attempts",
+        "url": "https://socradar.io/blog/top-10-phishing-attacks-of-2024-lessons-learned/"
+      },
+      {
+        "term": "qilin",
+        "text": "Qilin",
+        "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
+      }
+    ]
+  },
+  {
+    "title": "Municipality of North Perth (Canada) By worldleaks",
+    "link": "https://www.ransomlook.io//group/worldleaks",
+    "date": "2025-12-09",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
   },
   {
     "title": "Exploitation of React2Shell Surges",
@@ -624,24 +1323,6 @@
     "inline_links": []
   },
   {
-    "title": "Canno Design By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-12-08",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SLA.DK By sinobi",
-    "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2025-12-08",
-    "terms": [
-      "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Air\u202fMiles Espa\u00f1a, S.A - Database Leaked By everest",
     "link": "https://www.ransomlook.io//group/everest",
     "date": "2025-12-08",
@@ -649,39 +1330,6 @@
       "Everest"
     ],
     "inline_links": []
-  },
-  {
-    "title": "Nickman, DHK Architects, Profondia, Talbot & Associates, Fishbowl Solutions. By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-12-08",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Exploitation of Critical Vulnerability in React Server Components (Updated December 8)",
-    "link": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/",
-    "date": "2025-12-08",
-    "terms": [
-      "critical Vulnerability",
-      "react",
-      "CVE-2025-55182",
-      "CVE-2025-66478",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Exploitation of Critical Vulnerability in React Server Components (Updated December 8)",
-        "url": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
-      },
-      {
-        "term": "react",
-        "text": "Exploitation of Critical Vulnerability in React Server Components (Updated December 8)",
-        "url": "https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/"
-      }
-    ]
   },
   {
     "title": "Exploitation Activity Ramps Up Against React2Shell",
@@ -1878,6 +2526,11 @@
     ],
     "inline_links": [
       {
+        "term": "react",
+        "text": "React Blog: Critical Security Vulnerability in React Server Components",
+        "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components"
+      },
+      {
         "term": "CVE-2025-55182",
         "text": "CVE-2025-55182",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-55182"
@@ -2418,6 +3071,17 @@
         "url": "https://socradar.io/blog/top-10-phishing-attacks-of-2024-lessons-learned/"
       }
     ]
+  },
+  {
+    "title": "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against US and Global Critical Infrastructure",
+    "link": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-343a",
+    "date": "2025-12-05",
+    "terms": [
+      "Canadian",
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
   },
   {
     "title": "ThreatsDay Bulletin: Wi-Fi Hack, npm Worm, DeFi Theft, Phishing Blasts\u2014 and 15 More Stories",
@@ -3426,7 +4090,8 @@
       "CVE-2025-49704",
       "CVE-2025-49706",
       "CVE-2025-53770",
-      "CVE-2025-8088"
+      "CVE-2025-8088",
+      "CVE-2025-6218"
     ],
     "inline_links": []
   },
@@ -3440,9 +4105,7 @@
       "qilin",
       "sinobi",
       "Everest",
-      "CL0P",
-      "React2shell",
-      "react"
+      "CL0P"
     ],
     "inline_links": []
   },
@@ -4881,15 +5544,6 @@
     "inline_links": []
   },
   {
-    "title": "Curtis Investment Group, Inc. By genesis",
-    "link": "https://www.ransomlook.io//group/genesis",
-    "date": "2025-12-01",
-    "terms": [
-      "genesis"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "South Africa Aligns Local Realities with Global Cybersecurity Standards",
     "link": "https://cyble.com/blog/south-africa-culture-driven-cybersecurity-strategy/",
     "date": "2025-12-01",
@@ -6094,8 +6748,6 @@
     "link": "https://cyble.com/blog/week-in-vulnerabilities-it-ics-critical-cves-2025/",
     "date": "2025-11-26",
     "terms": [
-      "React2shell",
-      "react",
       "CVE-2025-21042",
       "CVE-2025-58034",
       "CVE-2025-62215",
@@ -10873,15 +11525,6 @@
     "date": "2025-11-10",
     "terms": [
       "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Drilling Down on Uncle Sam\u2019s Proposed TP-Link Ban",
-    "link": "https://krebsonsecurity.com/2025/11/drilling-down-on-uncle-sams-proposed-tp-link-ban/",
-    "date": "2025-11-09",
-    "terms": [
-      "KQL"
     ],
     "inline_links": []
   }
