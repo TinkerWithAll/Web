@@ -1,5 +1,31 @@
 [
   {
+    "title": "Experts found an unsecured 16TB database containing 4.3B professional records",
+    "link": "https://securityaffairs.com/185661/data-breach/experts-found-an-unsecured-16tb-database-containing-4-3b-professional-records.html",
+    "date": "2025-12-14",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "7 Best Security Awareness Training Platforms For MSPs\u00a0in 2026",
+    "link": "https://cybersecuritynews.com/best-security-awareness-training-platforms/",
+    "date": "2025-12-14",
+    "terms": [
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "BullPhish ID",
+        "url": "https://www.idagent.com/products/security-awareness-training/msp/"
+      }
+    ]
+  },
+  {
     "title": "CISA Adds Actively Exploited Sierra Wireless Router Flaw Enabling RCE Attacks",
     "link": "https://thehackernews.com/2025/12/cisa-adds-actively-exploited-sierra.html",
     "date": "2025-12-13",
@@ -263,6 +289,74 @@
       "CVE-2025-14174"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Researchers and Developers Targeted in AI-Driven GitHub Supply Chain Attack",
+    "link": "https://gbhackers.com/researchers-targeted-in-ai-driven-github-supply-chain-attack/",
+    "date": "2025-12-13",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Apple Confirms Zero-Day Exploitation in Targeted Attacks on iPhone Users",
+    "link": "https://gbhackers.com/apple-confirms-zero-day-exploitation/",
+    "date": "2025-12-13",
+    "terms": [
+      "CVE-2025-14174"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Warns Multiple Hacker Groups Are Exploiting React2Shell to Spread Malware",
+    "link": "https://cybersecuritynews.com/google-warns-exploiting-react2shell-to-spread-malware/",
+    "date": "2025-12-13",
+    "terms": [
+      "IOC",
+      "React2shell",
+      "react",
+      "CVE-2025-55182",
+      "cve-2025-55182",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "react",
+        "text": "React Server Components",
+        "url": "https://cybersecuritynews.com/poc-exploit-react-next-js/"
+      },
+      {
+        "term": "CVE-2025-55182",
+        "text": "CVE-2025-55182",
+        "url": "https://cybersecuritynews.com/react2shell-cve-2025-55182-attacks-rsc-enabled-services/"
+      },
+      {
+        "term": "react",
+        "text": "React and Next.js",
+        "url": "https://cybersecuritynews.com/scanner-tool-reactjs-and-next-js/"
+      },
+      {
+        "term": "React2shell",
+        "text": "Google Warns Multiple Hacker Groups Are Exploiting React2Shell to Spread Malware",
+        "url": "https://cybersecuritynews.com/google-warns-exploiting-react2shell-to-spread-malware/"
+      },
+      {
+        "term": "react",
+        "text": "Google Warns Multiple Hacker Groups Are Exploiting React2Shell to Spread Malware",
+        "url": "https://cybersecuritynews.com/google-warns-exploiting-react2shell-to-spread-malware/"
+      },
+      {
+        "term": "React2shell",
+        "text": "Google Warns Multiple Hacker Groups Are Exploiting React2Shell to Spread Malware",
+        "url": "https://cybersecuritynews.com/google-warns-exploiting-react2shell-to-spread-malware/"
+      },
+      {
+        "term": "react",
+        "text": "Google Warns Multiple Hacker Groups Are Exploiting React2Shell to Spread Malware",
+        "url": "https://cybersecuritynews.com/google-warns-exploiting-react2shell-to-spread-malware/"
+      }
+    ]
   },
   {
     "title": "New React RSC Vulnerabilities Enable DoS and Source Code Exposure",
@@ -765,6 +859,42 @@
         "url": "https://cybersecuritynews.com/ai-tools-direct-users-phishing-sites/"
       }
     ]
+  },
+  {
+    "title": "The Parkes Companies By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-12",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Warrior Crane Service By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2025-12-12",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Display Remote Desktop Multiple Monitors for Better Productivity and Secure Access",
+    "link": "https://blog.comodo.com/pc-security/display-remote-desktop-multiple-monitors/",
+    "date": "2025-12-12",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "RMM Platform for Smarter Automation",
+    "link": "https://blog.comodo.com/it-security/rmm-platform/",
+    "date": "2025-12-12",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
   },
   {
     "title": "Wide Range of Malware Delivered in React2Shell Attacks",
@@ -1723,24 +1853,6 @@
     "date": "2025-12-11",
     "terms": [
       "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "GROUPE ETMB By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-12-11",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ABECO   Zumtech Drucklufttechnik AG M\u00fcliweg By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2025-12-11",
-    "terms": [
-      "akira"
     ],
     "inline_links": []
   },
@@ -12677,136 +12789,6 @@
     "date": "2025-11-14",
     "terms": [
       "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Flags Critical WatchGuard Fireware Flaw Exposing 54,000 Fireboxes to No-Login Attacks",
-    "link": "https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html",
-    "date": "2025-11-13",
-    "terms": [
-      "CVE-2025-9242"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA and Partners Release Advisory Update on Akira Ransomware",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/11/13/cisa-and-partners-release-advisory-update-akira-ransomware",
-    "date": "2025-11-13",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": [
-      {
-        "term": "akira",
-        "text": "#StopRansomware: Akira Ransomware",
-        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-109a"
-      }
-    ]
-  },
-  {
-    "title": "The State of Ransomware \u2013 Q3 2025",
-    "link": "https://research.checkpoint.com/2025/the-state-of-ransomware-q3-2025/",
-    "date": "2025-11-13",
-    "terms": [
-      "Canadian",
-      "akira",
-      "qilin",
-      "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "We opened a fake invoice and fell down a retro XWorm-shaped wormhole",
-    "link": "https://www.malwarebytes.com/blog/threats/2025/11/we-opened-a-fake-invoice-and-fell-down-a-retro-xworm-shaped-wormhole",
-    "date": "2025-11-13",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Threat Attack Daily - 13th of November 2025",
-    "link": "https://darkwebinformer.com/threat-attack-daily-13th-of-november-2025/",
-    "date": "2025-11-13",
-    "terms": [
-      "Canada",
-      "akira",
-      "qilin",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 13th of November 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-13th-of-november-2025/",
-    "date": "2025-11-13",
-    "terms": [
-      "akira",
-      "qilin",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "October 2025 Attacks Soar 30% as New Groups Redefine the Cyber Battlefield",
-    "link": "https://cyble.com/blog/ransomware-attacks-surge-october-2025/",
-    "date": "2025-11-13",
-    "terms": [
-      "Canada",
-      "IOC",
-      "critical Vulnerability",
-      "akira",
-      "qilin",
-      "sinobi",
-      "CL0P",
-      "CVE-2021-43226",
-      "CVE-2025-10035",
-      "CVE-2025-61882"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The Deepfake Threat: Chollima APT Group Uses AI Filters to Infiltrate Crypto and Web3 Companies",
-    "link": "https://socradar.io/deepfake-threat-chollima-apt-group-uses-ai-crypto/",
-    "date": "2025-11-13",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "SOCRadar\u2019s Lazarus Group profile",
-        "url": "https://socradar.io/apt-profile-who-is-lazarus-group/"
-      }
-    ]
-  },
-  {
-    "title": "How a fake AI sidebar can steal your data | Kaspersky official blog",
-    "link": "https://www.kaspersky.com/blog/ai-sidebar-spoofing-atlas-comet/54769/",
-    "date": "2025-11-13",
-    "terms": [
-      "CLOP",
-      "OpenAI",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Google Sues to Disrupt Chinese SMS Phishing Triad",
-    "link": "https://krebsonsecurity.com/2025/11/google-sues-to-disrupt-chinese-sms-phishing-triad/",
-    "date": "2025-11-13",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Clean Your iPhone from Infections and Malware",
-    "link": "https://blog.comodo.com/mobile-security/how-to-clean-virus-from-iphone/",
-    "date": "2025-11-13",
-    "terms": [
-      "Phish"
     ],
     "inline_links": []
   }
