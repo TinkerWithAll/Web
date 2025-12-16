@@ -93,9 +93,9 @@
       "Phish",
       "React2shell",
       "react",
-      "CVE-2025-55182",
       "CVE-2025-6218",
       "CVE-2025-62221",
+      "CVE-2025-55182",
       "cve-2025-6218",
       "cve-2025-55182",
       "cve-2025-62221",
@@ -167,13 +167,13 @@
       "Lockbit",
       "React2shell",
       "react",
-      "CVE-2025-55182",
       "CVE-2020-5741",
       "CVE-2025-59230",
       "CVE-2025-6218",
       "CVE-2025-62221",
       "CVE-2025-14174",
       "CVE-2025-43529",
+      "CVE-2025-55182",
       "react2shell",
       "cve-2025-14174",
       "cve-2025-43529",
@@ -230,6 +230,7 @@
     "terms": [
       "Phish",
       "react",
+      "sonicwall",
       "phish"
     ],
     "inline_links": [
@@ -386,6 +387,157 @@
     "date": "2025-12-16",
     "terms": [
       "OpenAI",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Android threats in 2025: When your phone becomes the main attack surface",
+    "link": "https://www.malwarebytes.com/blog/mobile/2025/12/android-threats-in-2025-when-your-phone-becomes-the-main-attack-surface",
+    "date": "2025-12-16",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "JumpCloud Remote Assist Flaw Lets Users Gain Full Control of Company Devices",
+    "link": "https://hackread.com/jumpcloud-remote-assist-flaw-full-devices-control/",
+    "date": "2025-12-16",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Urban VPN beim Diebstahl privater KI-Chats erwischt",
+    "link": "https://www.csoonline.com/article/4107076/urban-vpn-beim-diebstahl-privater-ki-chats-erwischt.html",
+    "date": "2025-12-16",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Finds Server Takeovers Linked to React2Shell Exploitation",
+    "link": "https://www.esecurityplanet.com/threats/google-finds-server-takeovers-linked-to-react2shell-exploitation/",
+    "date": "2025-12-16",
+    "terms": [
+      "hunting",
+      "critical Vulnerability",
+      "React2shell",
+      "react",
+      "CVE-2025-55182",
+      "cve-2025-55182",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-55182",
+        "text": "CVE-2025-55182",
+        "url": "https://www.esecurityplanet.com/threats/react2shell-rce-flaws-put-react-and-next-js-apps-at-severe-risk/"
+      },
+      {
+        "term": "hunting",
+        "text": "hunting",
+        "url": "https://www.esecurityplanet.com/threats/threat-hunting/"
+      },
+      {
+        "term": "React2shell",
+        "text": "Google Finds Server Takeovers Linked to React2Shell Exploitation",
+        "url": "https://www.esecurityplanet.com/threats/google-finds-server-takeovers-linked-to-react2shell-exploitation/"
+      },
+      {
+        "term": "react",
+        "text": "Google Finds Server Takeovers Linked to React2Shell Exploitation",
+        "url": "https://www.esecurityplanet.com/threats/google-finds-server-takeovers-linked-to-react2shell-exploitation/"
+      },
+      {
+        "term": "React2shell",
+        "text": "Google Finds Server Takeovers Linked to React2Shell Exploitation",
+        "url": "https://www.esecurityplanet.com/threats/google-finds-server-takeovers-linked-to-react2shell-exploitation/"
+      },
+      {
+        "term": "react",
+        "text": "Google Finds Server Takeovers Linked to React2Shell Exploitation",
+        "url": "https://www.esecurityplanet.com/threats/google-finds-server-takeovers-linked-to-react2shell-exploitation/"
+      }
+    ]
+  },
+  {
+    "title": "Endpoint Security for Mac That Delivers Stronger Protection and Modern Enterprise Safety",
+    "link": "https://blog.comodo.com/endpoint-security/endpoint-security-for-mac/",
+    "date": "2025-12-16",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top 3 SOC Bottlenecks and How to Solve Them",
+    "link": "https://cybersecuritynews.com/top-3-soc-bottlenecks/",
+    "date": "2025-12-16",
+    "terms": [
+      "IOC",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Warns of Apple WebKit Vulnerability 0-Day Vulnerability Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/cisa-warns-of-apple-webkit-0-day-vulnerability/",
+    "date": "2025-12-16",
+    "terms": [
+      "CVE-2025-43529",
+      "cve-2025-43529"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-43529",
+        "text": "CVE-2025-43529",
+        "url": "https://cybersecuritynews.com/apple-0-day-vulnerabilities-exploited-2/"
+      }
+    ]
+  },
+  {
+    "title": "Fortinet FortiWeb Vulnerability (CVE-2025-64446) Exploited in the Wild for Full Admin Takeover",
+    "link": "https://cybersecuritynews.com/fortinet-fortiweb-vulnerability-exploited/",
+    "date": "2025-12-16",
+    "terms": [
+      "CVE-2022-40684",
+      "CVE-2025-64446",
+      "cve-2025-64446"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://cybersecuritynews.com/fortiweb-waf-flaw-exploited-in-the-wild/"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://cybersecuritynews.com/fortiweb-waf-vulnerability-exploited-in-the-wild/"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "Fortinet FortiWeb Vulnerability (CVE-2025-64446) Exploited in the Wild for Full Admin Takeover",
+        "url": "https://cybersecuritynews.com/fortinet-fortiweb-vulnerability-exploited/"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "Fortinet FortiWeb Vulnerability (CVE-2025-64446) Exploited in the Wild for Full Admin Takeover",
+        "url": "https://cybersecuritynews.com/fortinet-fortiweb-vulnerability-exploited/"
+      }
+    ]
+  },
+  {
+    "title": "NoName057(16) Hackers Using DDoSia DDoS Tool to Attack Organizations in NATO",
+    "link": "https://cybersecuritynews.com/noname05716-hackers-using-ddosia-ddos-tool/",
+    "date": "2025-12-16",
+    "terms": [
       "Phish"
     ],
     "inline_links": []
@@ -998,7 +1150,6 @@
     "terms": [
       "React2shell",
       "react",
-      "CVE-2025-66478",
       "react2shell"
     ],
     "inline_links": [
@@ -1082,6 +1233,15 @@
     "inline_links": []
   },
   {
+    "title": "STIC By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-15",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Experts found an unsecured 16TB database containing 4.3B professional records",
     "link": "https://securityaffairs.com/185661/data-breach/experts-found-an-unsecured-16tb-database-containing-4-3b-professional-records.html",
     "date": "2025-12-14",
@@ -1157,12 +1317,10 @@
       "React2shell",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "react2shell",
       "clop",
       "cl0p",
       "cve-2025-55182",
-      "cve-2025-66478",
       "phish"
     ],
     "inline_links": [
@@ -1237,11 +1395,6 @@
         "url": "https://slcyber.io/research-center/high-fidelity-detection-mechanism-for-rsc-next-js-rce-cve-2025-55182-cve-2025-66478/"
       },
       {
-        "term": "CVE-2025-66478",
-        "text": "High Fidelity Detection Mechanism for RSC/Next.js RCE (CVE-2025-55182 & CVE-2025-66478)",
-        "url": "https://slcyber.io/research-center/high-fidelity-detection-mechanism-for-rsc-next-js-rce-cve-2025-55182-cve-2025-66478/"
-      },
-      {
         "term": "Phish",
         "text": "Threat Spotlight: Introducing GhostFrame, a new super stealthy phishing kit",
         "url": "https://blog.barracuda.com/2025/12/04/threat-spotlight-ghostframe-phishing-kit"
@@ -1257,15 +1410,6 @@
         "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks"
       }
     ]
-  },
-  {
-    "title": "Kier & Wright By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-12-14",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
   },
   {
     "title": "CISA Adds Actively Exploited Sierra Wireless Router Flaw Enabling RCE Attacks",
@@ -1388,9 +1532,10 @@
       "Lockbit",
       "React2shell",
       "react",
-      "CVE-2025-55182",
+      "sonicwall",
       "CVE-2025-48572",
       "CVE-2025-48633",
+      "CVE-2025-55182",
       "cve-2025-55182",
       "cve-2025-48572",
       "cve-2025-48633"
@@ -1450,6 +1595,7 @@
       "Phish",
       "React2shell",
       "react",
+      "sonicwall",
       "CVE-2025-55182",
       "react2shell"
     ],
@@ -1855,7 +2001,6 @@
       "critical Vulnerability",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "critical vulnerability"
     ],
     "inline_links": [
@@ -2528,7 +2673,6 @@
       "critical Vulnerability",
       "React2shell",
       "react",
-      "CVE-2025-55182",
       "CVE-2024-40890",
       "CVE-2024-40891",
       "CVE-2024-55591",
@@ -2568,6 +2712,7 @@
       "CVE-2025-6558",
       "CVE-2025-7775",
       "CVE-2025-8876",
+      "CVE-2025-55182",
       "cve-2025-55182",
       "cve-2024-55591",
       "cve-2025-23006",
@@ -3761,7 +3906,6 @@
     "date": "2025-12-09",
     "terms": [
       "react",
-      "CVE-2025-55182",
       "CVE-2025-58034",
       "CVE-2025-64446",
       "CVE-2025-13223",
@@ -3769,6 +3913,7 @@
       "CVE-2025-48572",
       "CVE-2025-48633",
       "CVE-2021-26828",
+      "CVE-2025-55182",
       "cve-2025-55182",
       "cve-2021-26829",
       "cve-2021-26828",
@@ -4357,9 +4502,10 @@
       "OpenAI",
       "React2shell",
       "react",
-      "CVE-2025-55182",
+      "sonicwall",
       "CVE-2025-49704",
-      "CVE-2025-49706"
+      "CVE-2025-49706",
+      "CVE-2025-55182"
     ],
     "inline_links": []
   },
@@ -4791,7 +4937,6 @@
       "React2shell",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "react2shell",
       "cve-2025-55182"
     ],
@@ -6035,10 +6180,8 @@
       "React2shell",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "react2shell",
-      "cve-2025-55182",
-      "cve-2025-66478"
+      "cve-2025-55182"
     ],
     "inline_links": [
       {
@@ -6075,11 +6218,6 @@
         "term": "CVE-2025-55182",
         "text": "CVE-2025-55182",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
-      },
-      {
-        "term": "CVE-2025-66478",
-        "text": "CVE-2025-66478",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66478"
       }
     ]
   },
@@ -6198,10 +6336,8 @@
       "React2shell",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "react2shell",
-      "cve-2025-55182",
-      "cve-2025-66478"
+      "cve-2025-55182"
     ],
     "inline_links": [
       {
@@ -6240,19 +6376,9 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
       },
       {
-        "term": "CVE-2025-66478",
-        "text": "CVE-2025-66478",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66478"
-      },
-      {
         "term": "CVE-2025-55182",
         "text": "CVE-2025-55182",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
-      },
-      {
-        "term": "CVE-2025-66478",
-        "text": "CVE-2025-66478",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66478"
       },
       {
         "term": "react",
@@ -7100,10 +7226,8 @@
       "React2shell",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "react2shell",
-      "cve-2025-55182",
-      "cve-2025-66478"
+      "cve-2025-55182"
     ],
     "inline_links": [
       {
@@ -7120,11 +7244,6 @@
         "term": "CVE-2025-55182",
         "text": "CVE-2025-55182",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-55182"
-      },
-      {
-        "term": "CVE-2025-66478",
-        "text": "CVE-2025-66478",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-66478"
       },
       {
         "term": "react",
@@ -7156,9 +7275,7 @@
       "CLOP",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "critical vulnerability",
-      "cve-2025-66478",
       "cve-2025-55182"
     ],
     "inline_links": [
@@ -7166,11 +7283,6 @@
         "term": "critical Vulnerability",
         "text": "elimination of the critical vulnerability",
         "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components"
-      },
-      {
-        "term": "CVE-2025-66478",
-        "text": "CVE-2025-66478",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-66478"
       },
       {
         "term": "CVE-2025-55182",
@@ -7192,7 +7304,6 @@
       "critical Vulnerability",
       "react",
       "CVE-2025-55182",
-      "CVE-2025-66478",
       "cve-2025-55182",
       "critical vulnerability"
     ],
@@ -7260,8 +7371,7 @@
     "terms": [
       "React2shell",
       "react",
-      "CVE-2025-55182",
-      "CVE-2025-66478"
+      "CVE-2025-55182"
     ],
     "inline_links": []
   },
@@ -7298,6 +7408,15 @@
         "url": "https://socradar.io/blog/top-10-phishing-attacks-of-2024-lessons-learned/"
       }
     ]
+  },
+  {
+    "title": "A Hidden Pattern Within Months of Credential-Based Attacks Against Palo Alto GlobalProtect",
+    "link": "https://www.greynoise.io/blog/hidden-pattern-credential-based-attacks-palo-alto-sonicwall",
+    "date": "2025-12-04",
+    "terms": [
+      "sonicwall"
+    ],
+    "inline_links": []
   },
   {
     "title": "Basra Transports By dragonforce",
