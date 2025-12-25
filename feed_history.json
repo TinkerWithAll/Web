@@ -1,5 +1,92 @@
 [
   {
+    "title": "Fortinet Warns of Active Exploitation of FortiOS SSL VPN 2FA Bypass Vulnerability",
+    "link": "https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html",
+    "date": "2025-12-25",
+    "terms": [
+      "CVE-2020-12812"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Flags Actively Exploited Digiever NVR Vulnerability Allowing Remote Code Execution",
+    "link": "https://thehackernews.com/2025/12/cisa-flags-actively-exploited-digiever.html",
+    "date": "2025-12-25",
+    "terms": [
+      "CVE-2023-52163"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat landscape for industrial automation systems in Q3 2025",
+    "link": "https://securelist.com/industrial-threat-report-q3-2025/118602/",
+    "date": "2025-12-25",
+    "terms": [
+      "Phish",
+      "CVE-2017-11882"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Attacks are Evolving: 3 Ways to Protect Your Business in 2026",
+    "link": "https://thecyberpost.com/news/hackers/attacks-are-evolving-3-ways-to-protect-your-business-in-2026/",
+    "date": "2025-12-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "100+ Cybersecurity Predictions 2026 for Industry Experts as the AI Adapted in the Wild",
+    "link": "https://cybersecuritynews.com/cybersecurity-predictions-2026/",
+    "date": "2025-12-25",
+    "terms": [
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cybersecuritynews.com/phishing-attack/"
+      }
+    ]
+  },
+  {
+    "title": "Net-SNMP Vulnerability Enables Buffer Overflow and the Daemon to Crash",
+    "link": "https://cybersecuritynews.com/net-snmp-vulnerability/",
+    "date": "2025-12-25",
+    "terms": [
+      "critical Vulnerability",
+      "Zero Day",
+      "zero day"
+    ],
+    "inline_links": [
+      {
+        "term": "Zero Day",
+        "text": "Zero Day",
+        "url": "https://cybersecuritynews.com/windows-lnk-vulnerability-abused-by-hackers/"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Exploiting Three-Year-Old FortiGate Vulnerability to Bypass 2FA on Firewalls",
+    "link": "https://cybersecuritynews.com/fortigate-firewall-vulnerability/",
+    "date": "2025-12-25",
+    "terms": [
+      "CVE-2020-12812",
+      "cve-2020-12812"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2020-12812",
+        "text": "CVE-2020-12812",
+        "url": "https://cybersecuritynews.com/top-30-most-targeted-vulnerabilities/"
+      }
+    ]
+  },
+  {
     "title": "Steel Dynamics By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2025-12-24",
@@ -325,6 +412,43 @@
         "url": "https://cybersecuritynews.com/pcpcat-hacked-next-js-servers/"
       }
     ]
+  },
+  {
+    "title": "ELC Electroconsult SpA - Database Leaked By everest",
+    "link": "https://www.ransomlook.io//group/everest",
+    "date": "2025-12-24",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "FBI seized \u2018web3adspanels.org\u2019 hosting stolen logins",
+    "link": "https://securityaffairs.com/186094/cyber-crime/fbi-seized-web3adspanels-org-hosting-stolen-logins.html",
+    "date": "2025-12-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Net-SNMP Vulnerability Triggers Buffer Overflow, Crashing the Daemon",
+    "link": "https://gbhackers.com/net-snmp-vulnerability-triggers-buffer-overflow/",
+    "date": "2025-12-24",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Agencies Across Africa Arrest 574, Recover $3 Million in Cybercrime Crackdown",
+    "link": "https://thecyberexpress.com/africa-574-arrested-in-cybercrime-crackdown/",
+    "date": "2025-12-24",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
   },
   {
     "title": "Feds Seize Password Database Used in Massive Bank Account Takeover Scheme",
@@ -729,20 +853,11 @@
     "inline_links": []
   },
   {
-    "title": "F\u00fcrth By qilin",
+    "title": "daispa.it By qilin",
     "link": "https://www.ransomlook.io//group/qilin",
     "date": "2025-12-23",
     "terms": [
       "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Accela By everest",
-    "link": "https://www.ransomlook.io//group/everest",
-    "date": "2025-12-23",
-    "terms": [
-      "Everest"
     ],
     "inline_links": []
   },
@@ -8298,6 +8413,22 @@
     "inline_links": []
   },
   {
+    "title": "Microsoft and Adobe Patch Tuesday,\u00a0December\u00a02025 Security Update Review",
+    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+    "date": "2025-12-09",
+    "terms": [
+      "CVE-2025-62221",
+      "cve-2025-62221"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-62221",
+        "text": "CVE-2025-62221: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-62221"
+      }
+    ]
+  },
+  {
     "title": "Exploitation of React2Shell Surges",
     "link": "https://www.securityweek.com/exploitation-of-react2shell-surges/",
     "date": "2025-12-08",
@@ -14426,467 +14557,6 @@
     "title": "2026 Predictions for Autonomous AI",
     "link": "https://www.paloaltonetworks.com/blog/2025/11/2026-predictions-for-autonomous-ai/",
     "date": "2025-11-25",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ShadowPad Malware Actively Exploits WSUS Vulnerability for Full System Access",
-    "link": "https://thehackernews.com/2025/11/shadowpad-malware-actively-exploits.html",
-    "date": "2025-11-24",
-    "terms": [
-      "WSUS",
-      "CVE-2025-59287"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Mazda Says No Data Leakage or Operational Impact From Oracle Hack",
-    "link": "https://www.securityweek.com/mazda-says-no-data-leakage-or-operational-impact-from-oracle-hack/",
-    "date": "2025-11-24",
-    "terms": [
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Scattered Spider alleged members deny TfL charges",
-    "link": "https://securityaffairs.com/185000/hacking/scattered-spider-alleged-members-deny-tfl-charges.html",
-    "date": "2025-11-24",
-    "terms": [
-      "scattered spider"
-    ],
-    "inline_links": [
-      {
-        "term": "scattered spider",
-        "text": "Scattered Spider",
-        "url": "https://securityaffairs.com/tag/scattered-spider"
-      }
-    ]
-  },
-  {
-    "title": "24th November \u2013 Threat Intelligence Report",
-    "link": "https://research.checkpoint.com/2025/24th-november-threat-intelligence-report/",
-    "date": "2025-11-24",
-    "terms": [
-      "akira",
-      "Salesforce",
-      "Phish",
-      "CVE-2025-58034",
-      "CVE-2025-13223"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "How Cyble is Empowering European Enterprises with AI-Powered Threat Intelligence",
-    "link": "https://cyble.com/blog/europe-2025-cyber-threat-landscape-analysis/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "Lockbit",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Oracle OIM zero\u2011day: Pre\u2011auth RCE forces rapid patching across enterprises",
-    "link": "https://www.csoonline.com/article/4095150/oracle-oim-zero%e2%80%91day-pre%e2%80%91auth-rce-forces-rapid-patching-across-enterprises.html",
-    "date": "2025-11-24",
-    "terms": [
-      "Easily Exploitable",
-      "CVE-2025-61757",
-      "cve-2025-61757"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-61757",
-        "text": "CVE-2025-61757",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
-      }
-    ]
-  },
-  {
-    "title": "Salesforce Confirms Wider Impact in Ongoing Gainsight Security Incident",
-    "link": "https://thecyberexpress.com/salesforce-expands-investigation/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "Salesforce",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "Salesforce confirmed on November 21",
-        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Salesforce confirmed on November 21",
-        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
-      }
-    ]
-  },
-  {
-    "title": "CrowdStrike Terminates \u2018Suspicious Insider\u2019 Linked to Scattered Lapsus$ Hunters",
-    "link": "https://thecyberexpress.com/crowdstrike-suspicious-insider-incident/",
-    "date": "2025-11-24",
-    "terms": [
-      "scattered spider",
-      "Salesforce",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
-      },
-      {
-        "term": "scattered spider",
-        "text": "Scattered Spider",
-        "url": "https://cyble.com/threat-actor-profiles/scattered-spider/"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/salesforce-warns-that-customer-data-may-have-been-accessed-through-gainsight-app/"
-      },
-      {
-        "term": "scattered spider",
-        "text": "Scattered Spider",
-        "url": "https://cyble.com/threat-actor-profiles/scattered-spider/"
-      }
-    ]
-  },
-  {
-    "title": "\u26a1 Weekly Recap: Fortinet Exploit, Chrome 0-Day, BadIIS Malware, Record DDoS, SaaS Breach & More",
-    "link": "https://thehackernews.com/2025/11/weekly-recap-fortinet-exploit-chrome-0.html",
-    "date": "2025-11-24",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Flaw in Oracle Identity Manager Under Exploitation",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/critical-flaw-oracle-identity-manager-under-exploitation",
-    "date": "2025-11-24",
-    "terms": [
-      "CVE-2025-61757"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Confirms Exploitation of Recent Oracle Identity Manager Vulnerability",
-    "link": "https://www.securityweek.com/cisa-confirms-exploitation-of-recent-oracle-identity-manager-vulnerability/",
-    "date": "2025-11-24",
-    "terms": [
-      "CVE-2025-61757"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Harvard reports vishing breach exposing alumni and donor contact data",
-    "link": "https://securityaffairs.com/185034/security/harvard-reports-vishing-breach-exposing-alumni-and-donor-contact-data.html",
-    "date": "2025-11-24",
-    "terms": [
-      "CL0P",
-      "CLOP",
-      "cl0p",
-      "clop"
-    ],
-    "inline_links": [
-      {
-        "term": "CL0P",
-        "text": "Cl0p ransomware group",
-        "url": "https://securityaffairs.com/183282/cyber-crime/clop-ransomware-group-claims-the-hack-of-harvard-university.html"
-      },
-      {
-        "term": "CLOP",
-        "text": "Clop Ransomware",
-        "url": "https://securityaffairs.com/tag/clop-ransomware"
-      }
-    ]
-  },
-  {
-    "title": "Attackers deliver ShadowPad via newly patched WSUS RCE bug",
-    "link": "https://securityaffairs.com/185007/malware/attackers-deliver-shadowpad-via-newly-patched-wsus-rce-bug.html",
-    "date": "2025-11-24",
-    "terms": [
-      "WSUS",
-      "CVE-2025-59287",
-      "cve-2025-59287"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-59287",
-        "text": "CVE-2025-59287",
-        "url": "https://securityaffairs.com/183830/security/cve-2025-59287-microsoft-fixes-critical-wsus-flaw-under-active-attack.html"
-      },
-      {
-        "term": "CVE-2025-59287",
-        "text": "CVE-2025-59287",
-        "url": "https://securityaffairs.com/183815/security/u-s-cisa-adds-microsoft-wsus-and-adobe-commerce-and-magento-open-source-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
-      }
-    ]
-  },
-  {
-    "title": "Managed Defense Reimagined: Introducing Wayfinder Threat Detection and Response",
-    "link": "https://www.sentinelone.com/blog/managed-defense-reimagined-introducing-wayfinder-threat-detection-and-response/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "hunting"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "Wayfinder Threat Hunting",
-        "url": "https://www.sentinelone.com/global-services/threat-hunting/"
-      }
-    ]
-  },
-  {
-    "title": "Critical Flaw in Oracle Identity Manager Under Active Exploitation",
-    "link": "https://www.hipaajournal.com/critical-flaw-oracle-identity-manager-nov-2025/",
-    "date": "2025-11-24",
-    "terms": [
-      "critical Vulnerability",
-      "Easily Exploitable",
-      "CVE-2021-35587",
-      "CVE-2025-61757"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
-    "link": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/",
-    "date": "2025-11-24",
-    "terms": [
-      "critical Vulnerability",
-      "Zero Day",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
-        "url": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/"
-      },
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability Identified in Emerson Appleton UPSMON-PRO",
-        "url": "https://www.hipaajournal.com/critical-vulnerability-emerson-appleton-upsmon-pro/"
-      }
-    ]
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - 24th of November 2025",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-24th-of-november-2025/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "qilin",
-      "Everest",
-      "everest"
-    ],
-    "inline_links": [
-      {
-        "term": "qilin",
-        "text": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
-        "url": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/"
-      },
-      {
-        "term": "Everest",
-        "text": "Air Miles Espa\u00f1a has been claimed a victim to Everest Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993042374499463534?s=20"
-      },
-      {
-        "term": "qilin",
-        "text": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
-        "url": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/"
-      },
-      {
-        "term": "Everest",
-        "text": "Air Miles Espa\u00f1a has been claimed a victim to Everest Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993042374499463534?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Daily - 24th of November 2025",
-    "link": "https://darkwebinformer.com/threat-attack-daily-24th-of-november-2025/",
-    "date": "2025-11-24",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 24th of November 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-24th-of-november-2025/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "NovAtel Falls Victim to Qilin Ransomware, Claiming 35TB of Stolen Data",
-    "link": "https://darkwebinformer.com/novatel-falls-victim-to-qilin-ransomware-claiming-35tb-of-stolen-data/",
-    "date": "2025-11-24",
-    "terms": [
-      "Canada",
-      "IOC",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged Data Breach of Nasajon Systems",
-    "link": "https://darkwebinformer.com/alleged-data-breach-of-nasajon-systems/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "What keeps CISOs awake at night \u2014 and why Zurich might hold the cure",
-    "link": "https://www.csoonline.com/article/4094608/what-keeps-cisos-awake-at-night-and-why-zurich-might-hold-the-cure.html",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Android Users at Risk as RadzaRat Trojan Evades Detection",
-    "link": "https://www.esecurityplanet.com/threats/android-users-at-risk-as-radzarat-trojan-evades-detection/",
-    "date": "2025-11-24",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Adds Oracle Identity Manager Vulnerability to KEV Database",
-    "link": "https://thecyberexpress.com/cisa-kev-oracle-identity-manager-vulnerability/",
-    "date": "2025-11-24",
-    "terms": [
-      "Easily Exploitable",
-      "CL0P",
-      "CVE-2021-35587",
-      "CVE-2025-61757",
-      "cve-2025-61757"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-61757",
-        "text": "CVE-2025-61757",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
-      },
-      {
-        "term": "CVE-2025-61757",
-        "text": "CVE-2025-61757",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
-      }
-    ]
-  },
-  {
-    "title": "Amazon Is Using Specialized AI Agents for Deep Bug Hunting",
-    "link": "https://www.wired.com/story/amazon-autonomous-threat-analysis/",
-    "date": "2025-11-24",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CVE-2025-61757: Oracle Identity Manager Auth Bypass Flaw Added to CISA\u2019s KEV",
-    "link": "https://socradar.io/cve-2025-61757-oracle-identity-manager/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "CVE-2025-61757"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CVE-2025-61757: Oracle Identity Manager Auth Bypass Flaw Added to CISA\u2019s KEV",
-    "link": "https://socradar.io/blog/cve-2025-61757-oracle-identity-manager/",
-    "date": "2025-11-24",
-    "terms": [
-      "IOC",
-      "CVE-2025-61757"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "\u200b\u200bSpyware Allows Cyber Threat Actors to Target Users of Messaging Applications\u200b",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/11/24/spyware-allows-cyber-threat-actors-target-users-messaging-applications",
-    "date": "2025-11-24",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html",
-        "url": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html"
-      },
-      {
-        "term": "Phish",
-        "text": "ClayRat Campaign Uses Telegram and Phishing Sites to Distribute Android Spyware.",
-        "url": "https://securityaffairs.com/183169/malware/clayrat-campaign-uses-telegram-and-phishing-sites-to-distribute-android-spyware.html"
-      }
-    ]
-  },
-  {
-    "title": "To buy or not to buy: How cybercriminals capitalize on Black Friday",
-    "link": "https://securelist.com/black-friday-threat-report-2025/118083/",
-    "date": "2025-11-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Black Friday scammers offer fake gifts from big-name brands to empty bank accounts",
-    "link": "https://www.malwarebytes.com/blog/scams/2025/11/black-friday-scammers-offer-fake-gifts-from-big-name-brands-to-empty-bank-accounts",
-    "date": "2025-11-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Matrix Push C2 abuses browser notifications to deliver phishing and malware",
-    "link": "https://www.malwarebytes.com/blog/news/2025/11/matrix-push-c2-abuses-browser-notifications-to-deliver-phishing-and-malware",
-    "date": "2025-11-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Zero-Day Zero: The AI Attack That Just Ended the Era of the Forgiving Internet",
-    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-    "date": "2025-11-24",
     "terms": [
       "react"
     ],
