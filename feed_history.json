@@ -1,5 +1,43 @@
 [
   {
+    "title": "ThreatsDay Bulletin: Stealth Loaders, AI Chatbot Flaws AI Exploits, Docker Hack, and 15 More Stories",
+    "link": "https://thecyberpost.com/news/hackers/threatsday-bulletin-stealth-loaders-ai-chatbot-flaws-ai-exploits-docker-hack-and-15-more-stories/",
+    "date": "2025-12-26",
+    "terms": [
+      "Phish",
+      "CVE-2017-11882",
+      "CVE-2018-6065",
+      "CVE-2025-59230",
+      "cve-2017-11882"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2017-11882",
+        "text": "CVE-2017-11882",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2017-11882"
+      }
+    ]
+  },
+  {
+    "title": "TrustWallet Chrome Extension Hacked \u2013 Users Reporting Millions in Losses",
+    "link": "https://cybersecuritynews.com/trustwallet-chrome-extension-hacked/",
+    "date": "2025-12-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical Langchain Vulnerability Let attackers Exfiltrate Sensitive Secrets from AI systems",
+    "link": "https://cybersecuritynews.com/langchain-vulnerability/",
+    "date": "2025-12-26",
+    "terms": [
+      "IOC",
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Fortinet Warns of Active Exploitation of FortiOS SSL VPN 2FA Bypass Vulnerability",
     "link": "https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html",
     "date": "2025-12-25",
@@ -83,6 +121,155 @@
         "term": "CVE-2020-12812",
         "text": "CVE-2020-12812",
         "url": "https://cybersecuritynews.com/top-30-most-targeted-vulnerabilities/"
+      }
+    ]
+  },
+  {
+    "title": "Five-year-old Fortinet FortiOS SSL VPN vulnerability actively exploited",
+    "link": "https://securityaffairs.com/186117/security/five-year-old-fortinet-fortios-ssl-vpn-flaw-actively-exploited.html",
+    "date": "2025-12-25",
+    "terms": [
+      "CVE-2018-13379",
+      "CVE-2019-5591",
+      "CVE-2020-12812",
+      "cve-2020-12812",
+      "cve-2018-13379",
+      "cve-2019-5591"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2020-12812",
+        "text": "CVE-2020-12812",
+        "url": "https://securityaffairs.com/tag/cve-2020-12812"
+      },
+      {
+        "term": "CVE-2018-13379",
+        "text": "CVE-2018-13379",
+        "url": "https://securityaffairs.co/wordpress/124683/apt/iran-linked-apt-groups.html"
+      },
+      {
+        "term": "CVE-2019-5591",
+        "text": "CVE-2019-5591",
+        "url": "https://securityaffairs.co/wordpress/120644/hacking/top-routinely-flaws-exploited.html"
+      },
+      {
+        "term": "CVE-2020-12812",
+        "text": "CVE-2020-12812",
+        "url": "https://securityaffairs.co/wordpress/116274/hacking/fortinet-fortios-attack.html"
+      }
+    ]
+  },
+  {
+    "title": "Chrysler falls victim to Everest Ransomware",
+    "link": "https://darkwebinformer.com/chrysler-falls-victim-to-everest-ransomware/",
+    "date": "2025-12-25",
+    "terms": [
+      "Everest",
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Unpatched FortiGate Security Flaw Allows Attackers to Bypass 2FA Controls",
+    "link": "https://gbhackers.com/unpatched-fortigate-security-flaw/",
+    "date": "2025-12-25",
+    "terms": [
+      "CVE-2020-12812"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top 10 CVEs of 2025: High-Impact Vulnerabilities & Exploitation Trends",
+    "link": "https://socradar.io/blog/top-10-cves-of-2025-vulnerabilities-trends/",
+    "date": "2025-12-25",
+    "terms": [
+      "CL0P",
+      "React2shell",
+      "react",
+      "CVE-2023-36563",
+      "CVE-2023-41763",
+      "CVE-2023-44487",
+      "CVE-2025-0282",
+      "CVE-2025-10035",
+      "CVE-2025-53690",
+      "CVE-2025-53770",
+      "CVE-2025-5777",
+      "CVE-2025-61882",
+      "CVE-2025-61884",
+      "CVE-2025-64446",
+      "CVE-2025-55182",
+      "react2shell",
+      "cve-2025-64446",
+      "cve-2025-61882",
+      "cl0p",
+      "cve-2025-61884",
+      "cve-2025-10035",
+      "cve-2025-53690",
+      "cve-2023-44487",
+      "cve-2025-53770",
+      "cve-2025-5777",
+      "cve-2025-0282"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "React2Shell",
+        "url": "https://socradar.io/blog/react2shell-rce-flaw-react-nextjs/"
+      },
+      {
+        "term": "react",
+        "text": "React2Shell",
+        "url": "https://socradar.io/blog/react2shell-rce-flaw-react-nextjs/"
+      },
+      {
+        "term": "CVE-2025-64446",
+        "text": "CVE-2025-64446",
+        "url": "https://socradar.io/fortiweb-path-traversal-exploit-actively-targeted/"
+      },
+      {
+        "term": "CVE-2025-61882",
+        "text": "CVE-2025-61882",
+        "url": "https://socradar.io/cve-2025-61882-oracle-e-business-suite-exploited/"
+      },
+      {
+        "term": "CL0P",
+        "text": "Cl0p-linked activity",
+        "url": "https://socradar.io/cl0p-oracle-ebs-zeroday-campaign/"
+      },
+      {
+        "term": "CVE-2025-61884",
+        "text": "CVE-2025-61884",
+        "url": "https://socradar.io/cve-2025-61884-oracle-e-business-suite-vulnerability/"
+      },
+      {
+        "term": "CVE-2025-10035",
+        "text": "CVE-2025-10035",
+        "url": "https://socradar.io/cve-2025-10035-goanywhere-mft-flaw-command-injection/"
+      },
+      {
+        "term": "CVE-2025-53690",
+        "text": "CVE-2025-53690",
+        "url": "https://socradar.io/cve-2025-53690-sitecore-deployments-weepsteel-malware/"
+      },
+      {
+        "term": "CVE-2023-44487",
+        "text": "HTTP/2 Rapid Reset vulnerability (CVE-2023-44487)",
+        "url": "https://socradar.io/blog/rapid-reset-ddos-attacks-rise-october-2023-patch-tuesday-has-arrived-cve-2023-36563-cve-2023-41763-cve-2023-44487/"
+      },
+      {
+        "term": "CVE-2025-53770",
+        "text": "ToolShell zero-day (CVE-2025-53770)",
+        "url": "https://socradar.io/toolshell-sharepoint-zero-day-cve-2025-53770/"
+      },
+      {
+        "term": "CVE-2025-5777",
+        "text": "CitrixBleed 2 (CVE-2025-5777)",
+        "url": "https://socradar.io/cve-2025-5777-citrixbleed-2-netscaler-gateway-devices/"
+      },
+      {
+        "term": "CVE-2025-0282",
+        "text": "CVE-2025-0282",
+        "url": "https://socradar.io/nominet-security-breach-ivanti-vpn-cve-2025-0282/"
       }
     ]
   },
@@ -443,6 +630,25 @@
   {
     "title": "Agencies Across Africa Arrest 574, Recover $3 Million in Cybercrime Crackdown",
     "link": "https://thecyberexpress.com/africa-574-arrested-in-cybercrime-crackdown/",
+    "date": "2025-12-24",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Sipl By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-24",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Managed Endpoint Security for Modern IT Environments",
+    "link": "https://blog.comodo.com/endpoint-security/managed-endpoint-security/",
     "date": "2025-12-24",
     "terms": [
       "Phish",
@@ -849,15 +1055,6 @@
     "date": "2025-12-23",
     "terms": [
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "daispa.it By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-12-23",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -14173,390 +14370,6 @@
     "title": "How Thales Protects Online Retail Sites from AI-Driven Bots during Holiday Shopping Season",
     "link": "https://www.imperva.com/blog/how-thales-protects-online-retail-sites-from-ai-driven-bots-during-holiday-shopping-season/",
     "date": "2025-11-26",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Canon Says Subsidiary Impacted by Oracle EBS Hack",
-    "link": "https://www.securityweek.com/canon-says-subsidiary-impacted-by-oracle-ebs-hack/",
-    "date": "2025-11-25",
-    "terms": [
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA: Spyware and RATs used to target WhatsApp and Signal Users",
-    "link": "https://securityaffairs.com/185047/malware/cisa-spyware-and-rats-used-to-target-whatsapp-and-signal-users.html",
-    "date": "2025-11-25",
-    "terms": [
-      "CVE-2025-21042",
-      "CVE-2025-43300",
-      "CVE-2025-55177",
-      "cve-2025-43300",
-      "cve-2025-55177",
-      "cve-2025-21042"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-43300",
-        "text": "CVE-2025-43300",
-        "url": "https://securityaffairs.com/182135/hacking/samsung-fixed-actively-exploited-zero-day.html"
-      },
-      {
-        "term": "CVE-2025-55177",
-        "text": "CVE-2025-55177",
-        "url": "https://securityaffairs.com/181714/intelligence/new-zero-click-exploit-allegedly-used-to-hack-whatsapp-users.html"
-      },
-      {
-        "term": "CVE-2025-21042",
-        "text": "CVE-2025-21042",
-        "url": "https://securityaffairs.com/184452/hacking/u-s-cisa-adds-samsung-mobile-devices-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
-      }
-    ]
-  },
-  {
-    "title": "RelayNFC: The New NFC Relay Malware Targeting Brazil",
-    "link": "https://cyble.com/blog/relaynfc-nfc-relay-malware-targeting-brazil/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC",
-      "Phish",
-      "react",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
-      }
-    ]
-  },
-  {
-    "title": "Russian and North Korean Hackers Forge Global Cyberattack Alliance",
-    "link": "https://gbhackers.com/global-cyberattack-alliance/",
-    "date": "2025-11-25",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "\u26a1 Weekly Recap: Fortinet Exploit, Chrome 0-Day, BadIIS Malware, Record DDoS, SaaS Breach & More",
-    "link": "https://thecyberpost.com/news/hackers/%e2%9a%a1-weekly-recap-fortinet-exploit-chrome-0-day-badiis-malware-record-ddos-saas-breach-more/",
-    "date": "2025-11-25",
-    "terms": [
-      "Salesforce",
-      "Phish",
-      "react",
-      "CVE-2025-58034",
-      "CVE-2025-64446",
-      "CVE-2025-13223",
-      "phish",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Matrix Push C2 Uses Browser Extensions to Take Users to Phishing Pages",
-        "url": "https://thehackernews.com/2025/11/matrix-push-c2-uses-browser.html"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Salesforce Warns of Unauthorized Data Access via Gainsight-Linked Apps",
-        "url": "https://thehackernews.com/2025/11/salesforce-flags-unauthorized-data.html"
-      }
-    ]
-  },
-  {
-    "title": "6 Best SIEM Tools & Software",
-    "link": "https://www.esecurityplanet.com/products/siem-tools/",
-    "date": "2025-11-25",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Threat Actors Exploiting Black Friday Shopping Hype \u2013 2+ Million Attacks Recorded",
-    "link": "https://cybersecuritynews.com/threat-actors-exploiting-black-friday-shopping-hype/",
-    "date": "2025-11-25",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
-    "link": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC",
-      "CLOP",
-      "CVE-2025-61882",
-      "cve-2025-61882",
-      "clop"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-61882",
-        "text": "CVE-2025-61882",
-        "url": "https://cybersecuritynews.com/oracle-e-business-suite-hack/"
-      },
-      {
-        "term": "CLOP",
-        "text": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
-        "url": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/"
-      },
-      {
-        "term": "CLOP",
-        "text": "Canon Allegedly Breached by Clop Ransomware via Oracle E-Business Suite 0-Day Hack",
-        "url": "https://cybersecuritynews.com/canon-breached-clop-ransomware-oracle-ebs-hack/"
-      }
-    ]
-  },
-  {
-    "title": "NVIDIA\u2019s Isaac-GROOT Robotics Platform Vulnerability Let Attackers Inject Malicious Codes",
-    "link": "https://cybersecuritynews.com/nvidias-isaac-groot-robotics-platform-vulnerability/",
-    "date": "2025-11-25",
-    "terms": [
-      "Zero Day",
-      "zero day"
-    ],
-    "inline_links": [
-      {
-        "term": "Zero Day",
-        "text": "Zero Day",
-        "url": "https://cybersecuritynews.com/hackers-leverage-hexstrike-ai-tool/"
-      }
-    ]
-  },
-  {
-    "title": "vDefend DFW 1-2-3-4: Deploy Zero Trust Micro-segmentation in a Few Weeks to Rapidly Secure VCF Workloads",
-    "link": "https://blogs.vmware.com/security/2025/11/vdefend-dfw-1-2-3-4-vcf.html",
-    "date": "2025-11-25",
-    "terms": [
-      "Broadcom"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Morphisec warns StealC V2 malware spread through weaponized blender files",
-    "link": "https://securityaffairs.com/185052/cyber-crime/stealc-v2-malware-spread-through-weaponized-blender-files.html",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - 25th of November 2025",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-25th-of-november-2025/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest",
-      "everest"
-    ],
-    "inline_links": [
-      {
-        "term": "qilin",
-        "text": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
-        "url": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/"
-      },
-      {
-        "term": "sinobi",
-        "text": "Sinobi Ransomware Claims 2 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1993350472317780201?s=20"
-      },
-      {
-        "term": "Everest",
-        "text": "Iberia Airlines has been claimed a victim to Everest Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993361406939271506?s=20"
-      },
-      {
-        "term": "akira",
-        "text": "Rochester Philharmonic Orchestra has been claimed a victim by Akira Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993431111205376344?s=20"
-      },
-      {
-        "term": "qilin",
-        "text": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
-        "url": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/"
-      },
-      {
-        "term": "sinobi",
-        "text": "Sinobi Ransomware Claims 2 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1993350472317780201?s=20"
-      },
-      {
-        "term": "Everest",
-        "text": "Iberia Airlines has been claimed a victim to Everest Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993361406939271506?s=20"
-      },
-      {
-        "term": "akira",
-        "text": "Rochester Philharmonic Orchestra has been claimed a victim by Akira Ransomware",
-        "url": "https://x.com/DarkWebInformer/status/1993431111205376344?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Daily - 25th of November 2025",
-    "link": "https://darkwebinformer.com/threat-attack-daily-25th-of-november-2025/",
-    "date": "2025-11-25",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 25th of November 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-25th-of-november-2025/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Lake Superior State University (LSSU) Has Been Claimed a Victim by Qilin Ransomware",
-    "link": "https://darkwebinformer.com/lake-superior-state-university-lssu-has-been-claimed-a-victim-by-qilin-ransomware/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Everest ransomware claims breach at Spain\u2019s national airline Iberia with 596 GB data theft",
-    "link": "https://hackread.com/everest-ransomware-spai-airline-iberia-breach/",
-    "date": "2025-11-25",
-    "terms": [
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Salt Security Launches Salt MCP Finder Technology",
-    "link": "https://www.itsecurityguru.org/2025/11/25/salt-security-launches-salt-mcp-finder-technology/?utm_source=rss&utm_medium=rss&utm_campaign=salt-security-launches-salt-mcp-finder-technology",
-    "date": "2025-11-25",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Rare APT Collaboration Emerges Between Russia and North Korea",
-    "link": "https://www.esecurityplanet.com/threats/news-russia-north-korea-apt-collab/",
-    "date": "2025-11-25",
-    "terms": [
-      "hunting",
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus",
-        "url": "https://www.esecurityplanet.com/news/deceptive-development-north-korea/"
-      }
-    ]
-  },
-  {
-    "title": "Shai Hulud\u2019s \u201cThe Second Coming\u201d: New npm Campaign Hits Zapier, ENS, Postman",
-    "link": "https://socradar.io/shai-hulud-the-second-coming-npm-campaign/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Profile: Berserk Bear",
-    "link": "https://socradar.io/dark-web-profile-berserk-bear/",
-    "date": "2025-11-25",
-    "terms": [
-      "Phish",
-      "CVE-2011-0611",
-      "CVE-2018-0171",
-      "CVE-2020-1472",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://socradar.io/phishing-links-in-browsers-identifying-red-flags-and-staying-safe/"
-      }
-    ]
-  },
-  {
-    "title": "Shai Hulud\u2019s \u201cThe Second Coming\u201d: New npm Campaign Hits Zapier, ENS, Postman",
-    "link": "https://socradar.io/blog/shai-hulud-the-second-coming-npm-campaign/",
-    "date": "2025-11-25",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Profile: Berserk Bear",
-    "link": "https://socradar.io/blog/dark-web-profile-berserk-bear/",
-    "date": "2025-11-25",
-    "terms": [
-      "CVE-2011-0611",
-      "CVE-2018-0171",
-      "CVE-2020-1472"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "JackFix Uses Fake Windows Update Pop-Ups on Adult Sites to Deliver Multiple Stealers",
-    "link": "https://thehackernews.com/2025/11/jackfix-uses-fake-windows-update-pop.html",
-    "date": "2025-11-25",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Advanced Security Isn't Stopping Ancient Phishing Tactics",
-    "link": "https://www.darkreading.com/cyberattacks-data-breaches/advanced-security-phishing-tactics",
-    "date": "2025-11-25",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "French Football Federation Hit by Breach via Compromised Admin Account",
-    "link": "https://www.esecurityplanet.com/threats/news-french-football-federation-data-breach/",
-    "date": "2025-11-25",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "2026 Predictions for Autonomous AI",
-    "link": "https://www.paloaltonetworks.com/blog/2025/11/2026-predictions-for-autonomous-ai/",
-    "date": "2025-11-25",
     "terms": [
       "react"
     ],
