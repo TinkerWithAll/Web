@@ -1,7 +1,212 @@
 [
   {
+    "title": "27 Malicious npm Packages Used as Phishing Infrastructure to Steal Login Credentials",
+    "link": "https://thehackernews.com/2025/12/27-malicious-npm-packages-used-as.html",
+    "date": "2025-12-29",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet Warns of New Attacks Exploiting Old Vulnerability",
+    "link": "https://www.securityweek.com/fortinet-warns-of-new-attacks-exploiting-old-vulnerability/",
+    "date": "2025-12-29",
+    "terms": [
+      "CVE-2020-12812"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Evasive Panda cyberespionage campaign uses DNS poisoning to install MgBot backdoor",
+    "link": "https://securityaffairs.com/186213/apt/evasive-panda-cyberespionage-campaign-uses-dns-poisoning-to-install-mgbot-backdoor.html",
+    "date": "2025-12-29",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "29th December \u2013 Threat Intelligence Report",
+    "link": "https://research.checkpoint.com/2025/29th-december-threat-intelligence-report/",
+    "date": "2025-12-29",
+    "terms": [
+      "scattered spider",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "HIPAA Violation Fines",
+    "link": "https://www.hipaajournal.com/hipaa-violation-fines/",
+    "date": "2025-12-29",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "React2Shell: Anatomy of a max-severity flaw that sent shockwaves through the web",
+    "link": "https://www.csoonline.com/article/4111888/react2shell-anatomy-of-a-max-severity-flaw-that-sent-shockwaves-through-the-web.html",
+    "date": "2025-12-29",
+    "terms": [
+      "hunting",
+      "critical Vulnerability",
+      "React2shell",
+      "react",
+      "CVE-2025-55182"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The CSO guide to top security conferences",
+    "link": "https://www.csoonline.com/article/559539/the-cso-guide-to-top-security-conferences.html",
+    "date": "2025-12-29",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top 5 real-world AI security threats revealed in 2025",
+    "link": "https://www.csoonline.com/article/4111384/top-5-real-world-ai-security-threats-revealed-in-2025.html",
+    "date": "2025-12-29",
+    "terms": [
+      "Salesforce",
+      "OpenAI",
+      "openai",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "RCE flaw in OpenAI\u2019s Codex CLI",
+        "url": "https://www.csoonline.com/article/4100632/rce-flaw-in-openais-codex-cli-highlights-new-risks-to-dev-environments.html"
+      },
+      {
+        "term": "Salesforce",
+        "text": "ChatGPT, Copilot Studio, Salesforce Einstein",
+        "url": "https://www.csoonline.com/article/4036868/black-hat-researchers-demonstrate-zero-click-prompt-injection-attacks-in-popular-ai-agents.html"
+      }
+    ]
+  },
+  {
+    "title": "Critical MongoDB memory leak flaw \u2018MongoBleed\u2019 exploited in the wild",
+    "link": "https://cyberinsider.com/critical-mongodb-memory-leak-flaw-mongobleed-exploited-in-the-wild/",
+    "date": "2025-12-29",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical \u2018MongoBleed\u2019 Flaw Exploited in the Wild to Leak Database Secrets",
+    "link": "https://thecyberexpress.com/critical-mongobleed-flaw-exploited-in-the-wild/",
+    "date": "2025-12-29",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Shai-Hulud Returns with \u2018Golden Path\u2019 Malware in Latest NPM Supply Chain Attack",
+    "link": "https://thecyberexpress.com/shai-hulud-golden-path-malwar-npm-supply-chain/",
+    "date": "2025-12-29",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Why Peak Shopping Seasons Are Now Peak Cyber Risk Periods",
+    "link": "https://thecyberexpress.com/the-global-commerce-vulnerability-window/",
+    "date": "2025-12-29",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "2025 Changed How I See Cybersecurity in ASEAN\u2014and It Wasn\u2019t About Technology",
+    "link": "https://thecyberexpress.com/cybersecurity-in-asean/",
+    "date": "2025-12-29",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Windows LPE Vulnerabilities via Kernel Drivers and Named Pipes Allows Privilege Escalation",
+    "link": "https://cybersecuritynews.com/windows-lpe-vulnerabilities/",
+    "date": "2025-12-29",
+    "terms": [
+      "IOC",
+      "hunting",
+      "ioc"
+    ],
+    "inline_links": [
+      {
+        "term": "IOC",
+        "text": "IOCTL",
+        "url": "https://cybersecuritynews.com/ghostlocker-tool/"
+      }
+    ]
+  },
+  {
+    "title": "OpenAI Hardened ChatGPT Atlas Against Prompt Injection Attacks",
+    "link": "https://cybersecuritynews.com/openai-hardened-chatgpt-atlas/",
+    "date": "2025-12-29",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Hardened ChatGPT Atlas Against Prompt Injection Attacks",
+        "url": "https://cybersecuritynews.com/openai-hardened-chatgpt-atlas/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Hardened ChatGPT Atlas Against Prompt Injection Attacks",
+        "url": "https://cybersecuritynews.com/openai-hardened-chatgpt-atlas/"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Claim Breach of WIRED Database Containing 2.3 million Subscriber Records",
+    "link": "https://cybersecuritynews.com/wired-database-breach/",
+    "date": "2025-12-29",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Alleged data breach of Mondial Relay & Colis Priv\u00e9",
     "link": "https://darkwebinformer.com/alleged-data-breach-of-mondial-relay-colis-prive/",
+    "date": "2025-12-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cond\u00e9 Nast faces major data breach: 2.3M WIRED records leaked, 40M more at risk",
+    "link": "https://securityaffairs.com/186224/data-breach/conde-nast-faces-major-data-breach-2-3m-wired-records-leaked-40m-more-at-risk.html",
     "date": "2025-12-28",
     "terms": [
       "Phish"
@@ -14,6 +219,35 @@
     "date": "2025-12-27",
     "terms": [
       "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Dom Development By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2025-12-27",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "HIPAA Enforcement by State Attorneys General",
+    "link": "https://www.hipaajournal.com/hipaa-enforcement-by-state-attorneys-general/",
+    "date": "2025-12-27",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Healthcare Data Breach Statistics",
+    "link": "https://www.hipaajournal.com/healthcare-data-breach-statistics/",
+    "date": "2025-12-27",
+    "terms": [
+      "IOC",
+      "Phish"
     ],
     "inline_links": []
   },
@@ -257,15 +491,6 @@
         "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
       }
     ]
-  },
-  {
-    "title": "Hopital La Rabta By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2025-12-26",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
   },
   {
     "title": "Top 5 Surface Web Hacker Forums",
@@ -1447,6 +1672,15 @@
         "url": "https://socradar.io/blog/step-by-step-threat-hunting/"
       }
     ]
+  },
+  {
+    "title": "How Should You Respond To An Accidental HIPAA Violation?",
+    "link": "https://www.hipaajournal.com/accidental-hipaa-violation/",
+    "date": "2025-12-23",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
   },
   {
     "title": "WatchGuard Firebox firewalls under attack (CVE-2025-14733)",
@@ -13554,369 +13788,6 @@
     "date": "2025-11-29",
     "terms": [
       "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "In Other News: HashJack AI Browser Attack, Charming Kitten Leak, Hacker Unmasked",
-    "link": "https://www.securityweek.com/in-other-news-hashjack-ai-browser-attack-charming-kitten-leak-hacker-unmasked/",
-    "date": "2025-11-28",
-    "terms": [
-      "scattered spider"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Mirai variant ShadowV2 tests IoT exploits amid AWS disruption",
-    "link": "https://securityaffairs.com/185135/malware/new-mirai-variant-shadowv2-tests-iot-exploits-amid-aws-disruption.html",
-    "date": "2025-11-28",
-    "terms": [
-      "Canada",
-      "CVE-2020-25506",
-      "cve-2020-25506"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2020-25506",
-        "text": "CVE-2020-25506",
-        "url": "https://securityaffairs.com/115664/uncategorized/mirai-botnet-variant-2.html"
-      }
-    ]
-  },
-  {
-    "title": "Scattered Lapsus$ Hunters target Zendesk users with fake domains",
-    "link": "https://www.csoonline.com/article/4097846/scattered-lapsus-hunters-target-zendesk-users-with-fake-domains.html",
-    "date": "2025-11-28",
-    "terms": [
-      "scattered spider",
-      "Salesforce",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "a major Salesforce campaign",
-        "url": "https://www.csoonline.com/article/4067846/extortion-gang-opens-data-leak-site-to-squeeze-victims-of-its-salesforce-attacks.html"
-      }
-    ]
-  },
-  {
-    "title": "Gainsight Expands Impacted Customer List Following Salesforce Security Alert",
-    "link": "https://thecyberpost.com/news/hackers/gainsight-expands-impacted-customer-list-following-salesforce-security-alert/",
-    "date": "2025-11-28",
-    "terms": [
-      "IOC",
-      "scattered spider",
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ThreatsDay Bulletin: AI Malware, Voice Bot Flaws, Crypto Laundering, IoT Attacks \u2014 and 20 More Stories",
-    "link": "https://thecyberpost.com/news/hackers/threatsday-bulletin-ai-malware-voice-bot-flaws-crypto-laundering-iot-attacks-and-20-more-stories/",
-    "date": "2025-11-28",
-    "terms": [
-      "Phish",
-      "CVE-2020-25506",
-      "CVE-2024-43451",
-      "CVE-2025-24054",
-      "CVE-2025-26633",
-      "CVE-2025-33073",
-      "CVE-2022-37055",
-      "cve-2020-25506",
-      "cve-2022-37055",
-      "cve-2024-43451",
-      "cve-2025-24054",
-      "cve-2025-33073"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2020-25506",
-        "text": "CVE-2020-25506",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-25506"
-      },
-      {
-        "term": "CVE-2022-37055",
-        "text": "CVE-2022-37055",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-37055"
-      },
-      {
-        "term": "CVE-2024-43451",
-        "text": "CVE-2024-43451",
-        "url": "https://thehackernews.com/2025/03/blind-eagle-hacks-colombian.html"
-      },
-      {
-        "term": "CVE-2025-24054",
-        "text": "CVE-2025-24054",
-        "url": "https://thehackernews.com/2025/04/cve-2025-24054-under-active.html"
-      },
-      {
-        "term": "CVE-2025-33073",
-        "text": "CVE-2025-33073",
-        "url": "https://thehackernews.com/2025/10/five-new-exploited-bugs-land-in-cisas.html"
-      }
-    ]
-  },
-  {
-    "title": "Qilin Ransomware hits Korean MSP, leaks 2 TB data",
-    "link": "https://cybersafe.news/qilin-ransomware-hits-korean-msp-leaks-2-tb-data/",
-    "date": "2025-11-28",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": [
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware hits Korean MSP, leaks 2 TB data",
-        "url": "https://cybersafe.news/qilin-ransomware-hits-korean-msp-leaks-2-tb-data/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware hits Korean MSP, leaks 2 TB data",
-        "url": "https://cybersafe.news/qilin-ransomware-hits-korean-msp-leaks-2-tb-data/"
-      }
-    ]
-  },
-  {
-    "title": "Cyberattacks Against the US Intensify as Russian Groups Target Engineering Firm",
-    "link": "https://thecyberexpress.com/cyberattacks-against-the-us/",
-    "date": "2025-11-28",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Registered 18,000 Holiday-Themed Domains Targeting\u00a0\u2018Christmas,\u2019 \u2018Black Friday,\u2019 and \u2018Flash Sale\u2019",
-    "link": "https://cybersecuritynews.com/hackers-registered-18000-holiday-themed-domains/",
-    "date": "2025-11-28",
-    "terms": [
-      "CL0P",
-      "CLOP",
-      "CVE-2025-54236",
-      "CVE-2025-61882"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "London Councils\u2019 IT Systems Impacted by CyberAttack, Including Phone Lines",
-    "link": "https://cybersecuritynews.com/london-councils-it-systems-impacted-by-cyberattack/",
-    "date": "2025-11-28",
-    "terms": [
-      "CLOP",
-      "Broadcom"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Scattered Lapsus$ Hunters Registered 40+ Domains Mimicking Zendesk Environments",
-    "link": "https://cybersecuritynews.com/scattered-lapsus-hunters-registered-40-domains/",
-    "date": "2025-11-28",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "AI-Powered Cyber Espionage: Inside the GTG-1002 Campaign",
-    "link": "https://socradar.io/ai-powered-gtg-1002-campaign/",
-    "date": "2025-11-28",
-    "terms": [
-      "hunting",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/11/28/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "2025-11-28",
-    "terms": [
-      "CVE-2021-26829",
-      "cve-2021-26829"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2021-26829",
-        "text": "CVE-2021-26829",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2021-26829"
-      }
-    ]
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - 28th of November 2025",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-28th-of-november-2025/",
-    "date": "2025-11-28",
-    "terms": [
-      "IOC",
-      "qilin",
-      "CVE-2021-26829",
-      "cve-2021-26829"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2021-26829",
-        "text": "CVE-2021-26829: OpenPLC ScadaBR Cross-site Scripting Vulnerability",
-        "url": "https://x.com/DarkWebInformer/status/1994505049892868473?s=20"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware Claims 4 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1994511337322414292?s=20"
-      },
-      {
-        "term": "CVE-2021-26829",
-        "text": "CVE-2021-26829: OpenPLC ScadaBR Cross-site Scripting Vulnerability",
-        "url": "https://x.com/DarkWebInformer/status/1994505049892868473?s=20"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware Claims 4 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1994511337322414292?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Daily - 28th of November 2025",
-    "link": "https://darkwebinformer.com/threat-attack-daily-28th-of-november-2025/",
-    "date": "2025-11-28",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 28th of November 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-28th-of-november-2025/",
-    "date": "2025-11-28",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
-    "link": "https://gbhackers.com/gainsight-verifies-token-breach/",
-    "date": "2025-11-28",
-    "terms": [
-      "IOC",
-      "Salesforce",
-      "ioc",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "IOC",
-        "text": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
-        "url": "https://gbhackers.com/gainsight-verifies-token-breach/"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Gainsight Verifies Token Breach Linked to Salesforce Advisory, Issues New IOCs",
-        "url": "https://gbhackers.com/gainsight-verifies-token-breach/"
-      }
-    ]
-  },
-  {
-    "title": "This month in security with Tony Anscombe \u2013 November 2025 edition",
-    "link": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-november-2025/",
-    "date": "2025-11-28",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Market: B1ack\u2019s Stash",
-    "link": "https://socradar.io/dark-web-market-b1acks-stash/",
-    "date": "2025-11-28",
-    "terms": [
-      "Canada",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing operations",
-        "url": "https://socradar.io/top-10-phishing-attacks-of-2024-lessons-learned/"
-      }
-    ]
-  },
-  {
-    "title": "Tomiris wreaks Havoc: New tools and techniques of the APT group",
-    "link": "https://securelist.com/tomiris-new-tools/118143/",
-    "date": "2025-11-28",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 48",
-    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-48-7/",
-    "date": "2025-11-28",
-    "terms": [
-      "OpenAI",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/phishing-scams/"
-      }
-    ]
-  },
-  {
-    "title": "Strengthening Your Cyber Defense With Endpoint Security Management",
-    "link": "https://blog.comodo.com/pc-security/endpoint-security-management/",
-    "date": "2025-11-28",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Market: B1ack\u2019s Stash",
-    "link": "https://socradar.io/blog/dark-web-market-b1acks-stash/",
-    "date": "2025-11-28",
-    "terms": [
-      "Canada",
-      "Phish",
-      "react",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing operations",
-        "url": "https://socradar.io/top-10-phishing-attacks-of-2024-lessons-learned/"
-      }
-    ]
-  },
-  {
-    "title": "AI-Powered Cyber Espionage: Inside the GTG-1002 Campaign",
-    "link": "https://socradar.io/blog/ai-powered-gtg-1002-campaign/",
-    "date": "2025-11-28",
-    "terms": [
-      "hunting",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Do Modern iGaming Platforms Offer Better Cyber Protections Than Traditional Apps?",
-    "link": "https://www.itsecurityguru.org/2025/11/28/do-modern-igaming-platforms-offer-better-cyber-protections-than-traditional-apps/?utm_source=rss&utm_medium=rss&utm_campaign=do-modern-igaming-platforms-offer-better-cyber-protections-than-traditional-apps",
-    "date": "2025-11-28",
-    "terms": [
-      "react"
     ],
     "inline_links": []
   }
