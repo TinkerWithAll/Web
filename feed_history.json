@@ -1,5 +1,58 @@
 [
   {
+    "title": "Thousands of ColdFusion exploit attempts spotted during Christmas holiday",
+    "link": "https://securityaffairs.com/186450/uncategorized/thousands-of-coldfusion-exploit-attempts-spotted-during-christmas-holiday.html",
+    "date": "2026-01-03",
+    "terms": [
+      "Canada",
+      "Phish",
+      "CVE-2023-26359",
+      "CVE-2023-29298",
+      "CVE-2023-29300",
+      "CVE-2023-38203",
+      "CVE-2023-38205",
+      "CVE-2024-20767",
+      "cve-2023-26359",
+      "cve-2023-38205",
+      "cve-2023-38203",
+      "cve-2023-29298",
+      "cve-2023-29300",
+      "cve-2024-20767"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2023-26359",
+        "text": "CVE-2023-26359",
+        "url": "https://securityaffairs.com/149754/security/cisa-adds-critical-adobe-coldfusion-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+      },
+      {
+        "term": "CVE-2023-38205",
+        "text": "CVE-2023-38205",
+        "url": "https://securityaffairs.com/148625/hacking/coldfusion-zero-day.html"
+      },
+      {
+        "term": "CVE-2023-38203",
+        "text": "CVE-2023-38203",
+        "url": "https://securityaffairs.com/148625/hacking/coldfusion-zero-day.html"
+      },
+      {
+        "term": "CVE-2023-29298",
+        "text": "CVE-2023-29298",
+        "url": "https://securityaffairs.com/148542/hacking/coldfusion-rce-attacks.html"
+      },
+      {
+        "term": "CVE-2023-29300",
+        "text": "CVE-2023-29300",
+        "url": "https://securityaffairs.com/148542/hacking/coldfusion-rce-attacks.html"
+      },
+      {
+        "term": "CVE-2024-20767",
+        "text": "CVE-2024-20767",
+        "url": "https://securityaffairs.com/172059/security/u-s-cisa-adds-microsoft-windows-kernel-mode-driver-and-adobe-coldfusion-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
+      }
+    ]
+  },
+  {
     "title": "Cybercriminals Abuse Google Cloud Email Feature in Multi-Stage Phishing Campaign",
     "link": "https://thehackernews.com/2026/01/cybercriminals-abuse-google-cloud-email.html",
     "date": "2026-01-02",
@@ -199,6 +252,304 @@
         "url": "https://cybersecuritynews.com/mongobleed-vulnerability-2/"
       }
     ]
+  },
+  {
+    "title": "The Kimwolf Botnet is Stalking Your Local Network",
+    "link": "https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/",
+    "date": "2026-01-02",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Covenant Health data breach after ransomware attack impacted over 478,000 people",
+    "link": "https://securityaffairs.com/186439/data-breach/covenant-health-data-breach-after-ransomware-attack-impacted-over-478000-people.html",
+    "date": "2026-01-02",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "Qilin\u00a0ransomware group",
+        "url": "https://securityaffairs.com/183447/security/qilin-ransomware-announced-new-victims.html"
+      }
+    ]
+  },
+  {
+    "title": "Phishing campaign abuses Google Cloud Application to impersonate legitimate Google emails",
+    "link": "https://securityaffairs.com/186425/cyber-crime/phishing-campaign-abuses-google-cloud-application-to-impersonate-legitimate-google-emails.html",
+    "date": "2026-01-02",
+    "terms": [
+      "Canada",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 1",
+    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-1-7/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/phishing-scams/"
+      }
+    ]
+  },
+  {
+    "title": "Largest Healthcare Data Breaches of 2025",
+    "link": "https://www.hipaajournal.com/largest-healthcare-data-breaches-of-2025/",
+    "date": "2026-01-02",
+    "terms": [
+      "scattered spider",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer  - January 2nd, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-2nd-2026/",
+    "date": "2026-01-02",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Attack Update - January 2nd, 2026",
+    "link": "https://darkwebinformer.com/threat-attack-update-january-2nd-2026/",
+    "date": "2026-01-02",
+    "terms": [
+      "Canada",
+      "IOC",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update - January 2nd, 2026",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-january-2nd-2026/",
+    "date": "2026-01-02",
+    "terms": [
+      "IOC",
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Tasks Feature Exploited in New Sophisticated Phishing Campaign",
+    "link": "https://gbhackers.com/google-tasks-feature-exploited/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Google Tasks Feature Exploited in New Sophisticated Phishing Campaign",
+        "url": "https://gbhackers.com/google-tasks-feature-exploited/"
+      }
+    ]
+  },
+  {
+    "title": "RondoDoX Botnet Abuses React2Shell Vulnerability for Malware Deployment",
+    "link": "https://gbhackers.com/rondodox-botnet-3/",
+    "date": "2026-01-02",
+    "terms": [
+      "React2shell",
+      "react",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "RondoDoX Botnet Abuses React2Shell Vulnerability for Malware Deployment",
+        "url": "https://gbhackers.com/rondodox-botnet-3/"
+      },
+      {
+        "term": "react",
+        "text": "RondoDoX Botnet Abuses React2Shell Vulnerability for Malware Deployment",
+        "url": "https://gbhackers.com/rondodox-botnet-3/"
+      }
+    ]
+  },
+  {
+    "title": "Cardano Users Warned of Possible Phishing Attempt Posing as \u2018Eternl Desktop\u2019 Update",
+    "link": "https://gbhackers.com/eternl-desktop-update/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Cardano Users Warned of Possible Phishing Attempt Posing as \u2018Eternl Desktop\u2019 Update",
+        "url": "https://gbhackers.com/eternl-desktop-update/"
+      }
+    ]
+  },
+  {
+    "title": "Threat Actors Test a Highly Obfuscated, Modified Variant of the Shai Hulud Malware",
+    "link": "https://gbhackers.com/shai-hulud-malware/",
+    "date": "2026-01-02",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "APT36 Uses Malicious Windows Shortcuts to Target Indian Government",
+    "link": "https://www.esecurityplanet.com/threats/apt36-uses-malicious-windows-shortcuts-to-target-indian-government/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "DarkSpectre Malware Hit 8.8M Browsers via Malicious Extensions",
+    "link": "https://www.esecurityplanet.com/threats/darkspectre-malware-hit-8-8m-browsers-via-malicious-extensions/",
+    "date": "2026-01-02",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": [
+      {
+        "term": "hunting",
+        "text": "threat hunting",
+        "url": "https://www.esecurityplanet.com/threats/threat-hunting/"
+      }
+    ]
+  },
+  {
+    "title": "Critical Flaw Puts WHILL Electric Wheelchairs at Risk of Hijacking",
+    "link": "https://www.esecurityplanet.com/threats/critical-flaw-puts-whill-electric-wheelchairs-at-risk-of-hijacking/",
+    "date": "2026-01-02",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Building a Strong Endpoint Security Program for Modern Organizations",
+    "link": "https://blog.comodo.com/endpoint-security/endpoint-security-program/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cloud Based Patch Management for Secure and Scalable IT Operations",
+    "link": "https://blog.comodo.com/pc-security/cloud-based-patch-management/",
+    "date": "2026-01-02",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "10,000+ Fortinet Firewalls Still Exposed to 5-year Old MFA Bypass Vulnerability",
+    "link": "https://cybersecuritynews.com/fortinet-firewalls-exposed/",
+    "date": "2026-01-02",
+    "terms": [
+      "CVE-2020-12812",
+      "cve-2020-12812"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2020-12812",
+        "text": "CVE-2020-12812",
+        "url": "https://cybersecuritynews.com/fortigate-firewall-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Handala Hackers Targeted Israeli Officials by Compromising Telegram Accounts",
+    "link": "https://cybersecuritynews.com/handala-hackers-targeted-israeli-officials/",
+    "date": "2026-01-02",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Abusing Google Tasks Notification for Sophisticated Phishing Attack",
+    "link": "https://cybersecuritynews.com/google-tasks-abused/",
+    "date": "2026-01-02",
+    "terms": [
+      "Salesforce",
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing campaign",
+        "url": "https://cybersecuritynews.com/operation-forumtrol-known-for-exploiting-chrome-0-day/"
+      },
+      {
+        "term": "Phish",
+        "text": "Hackers Abusing Google Tasks Notification for Sophisticated Phishing Attack",
+        "url": "https://cybersecuritynews.com/google-tasks-abused/"
+      },
+      {
+        "term": "Phish",
+        "text": "Hackers Abusing Google Tasks Notification for Sophisticated Phishing Attack",
+        "url": "https://cybersecuritynews.com/google-tasks-abused/"
+      }
+    ]
+  },
+  {
+    "title": "RondoDoX Botnet Weaponizing a Critical React2Shell Vulnerability to Deploy Malware",
+    "link": "https://cybersecuritynews.com/rondodox-botnet-weaponizing-a-critical-react2shell/",
+    "date": "2026-01-02",
+    "terms": [
+      "React2shell",
+      "react",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "RondoDoX Botnet Weaponizing a Critical React2Shell Vulnerability to Deploy Malware",
+        "url": "https://cybersecuritynews.com/rondodox-botnet-weaponizing-a-critical-react2shell/"
+      },
+      {
+        "term": "react",
+        "text": "RondoDoX Botnet Weaponizing a Critical React2Shell Vulnerability to Deploy Malware",
+        "url": "https://cybersecuritynews.com/rondodox-botnet-weaponizing-a-critical-react2shell/"
+      },
+      {
+        "term": "React2shell",
+        "text": "RondoDoX Botnet Weaponizing a Critical React2Shell Vulnerability to Deploy Malware",
+        "url": "https://cybersecuritynews.com/rondodox-botnet-weaponizing-a-critical-react2shell/"
+      },
+      {
+        "term": "react",
+        "text": "RondoDoX Botnet Weaponizing a Critical React2Shell Vulnerability to Deploy Malware",
+        "url": "https://cybersecuritynews.com/rondodox-botnet-weaponizing-a-critical-react2shell/"
+      }
+    ]
+  },
+  {
+    "title": "Healthcare Firm Handing $2,000,000+ To Customers After Data Breach Exposes \u2018Highly Confidential\u2019 Information of 512,000 People",
+    "link": "https://databreaches.net/2026/01/02/healthcare-firm-handing-2000000-to-customers-after-data-breach-exposes-highly-confidential-information-of-512000-people/?pk_campaign=feed&pk_kwd=healthcare-firm-handing-2000000-to-customers-after-data-breach-exposes-highly-confidential-information-of-512000-people",
+    "date": "2026-01-02",
+    "terms": [
+      "Lockbit"
+    ],
+    "inline_links": []
   },
   {
     "title": "RondoDox Botnet Exploits Critical React2Shell Flaw to Hijack IoT Devices and Web Servers",
@@ -866,7 +1217,7 @@
     "inline_links": []
   },
   {
-    "title": "prommgroup.com By lockbit5",
+    "title": "inspired.ee By lockbit5",
     "link": "https://www.ransomlook.io//group/lockbit5",
     "date": "2025-12-30",
     "terms": [
@@ -13508,631 +13859,6 @@
     "date": "2025-12-04",
     "terms": [
       "sonicwall"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Basra Transports By dragonforce",
-    "link": "https://www.ransomlook.io//group/dragonforce",
-    "date": "2025-12-03",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Discover the AI Tools Fueling the Next Cybercrime Wave \u2014 Watch the Webinar",
-    "link": "https://thehackernews.com/2025/12/discover-ai-tools-fueling-next.html",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "India mandates SIM-linked messaging apps to fight rising fraud",
-    "link": "https://securityaffairs.com/185265/laws-and-regulations/india-mandates-sim-linked-messaging-apps-to-fight-rising-fraud.html",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Exploits and vulnerabilities in Q3 2025",
-    "link": "https://securelist.com/vulnerabilities-and-exploits-in-q3-2025/118197/",
-    "date": "2025-12-03",
-    "terms": [
-      "CLOP",
-      "CVE-2017-0199",
-      "CVE-2017-11882",
-      "CVE-2018-0802",
-      "CVE-2019-13272",
-      "CVE-2020-1472",
-      "CVE-2021-1675",
-      "CVE-2021-22555",
-      "CVE-2021-34527",
-      "CVE-2022-0847",
-      "CVE-2023-38831",
-      "CVE-2025-41244",
-      "CVE-2025-49704",
-      "CVE-2025-49706",
-      "CVE-2025-53770",
-      "CVE-2025-8088",
-      "CVE-2025-6218"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware\u00a0and Supply Chain Attacks Neared\u00a0Records\u00a0in November",
-    "link": "https://cyble.com/blog/ransomware-attacks-november-2025/",
-    "date": "2025-12-03",
-    "terms": [
-      "Canada",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest",
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "AI, automation, and integration: The foundation for cyber protection in 2026",
-    "link": "https://www.csoonline.com/article/4099360/ai-automation-and-integration-the-foundation-for-cyber-protection-in-2026.html",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Security-Tools f\u00fcr KI-Infrastrukturen \u2013 ein Kaufratgeber",
-    "link": "https://www.csoonline.com/article/3560109/security-tools-fur-ki-infrastrukturen-ein-kaufratgeber.html",
-    "date": "2025-12-03",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Calendly-Inspired Phishing Attack Aims to Steal Google Workspace Credentials",
-    "link": "https://gbhackers.com/calendly-inspired-phishing/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "New Calendly-Inspired Phishing Attack Aims to Steal Google Workspace Credentials",
-        "url": "https://gbhackers.com/calendly-inspired-phishing/"
-      }
-    ]
-  },
-  {
-    "title": "Longwatch RCE Flaw Allows Attackers to Run Remote Code with Elevated Privileges",
-    "link": "https://gbhackers.com/longwatch-rce-flaw/",
-    "date": "2025-12-03",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Massive Phishing Attack Uses Parking Ticket and Medical Test Themes, Attributed to Storm-0900",
-    "link": "https://gbhackers.com/phishing-attack-2/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Massive Phishing Attack Uses Parking Ticket and Medical Test Themes, Attributed to Storm-0900",
-        "url": "https://gbhackers.com/phishing-attack-2/"
-      }
-    ]
-  },
-  {
-    "title": "Designing a Modern MDM Strategy for Secure and Scalable Device Management",
-    "link": "https://blog.comodo.com/mobile-security/mdm-strategy/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Warns of Android 0-Day Vulnerability Exploited in Attacks",
-    "link": "https://cybersecuritynews.com/android-0-day-vulnerability-exploited/",
-    "date": "2025-12-03",
-    "terms": [
-      "CVE-2025-48572",
-      "CVE-2025-48633",
-      "cve-2025-48572",
-      "cve-2025-48633"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-48572",
-        "text": "CVE-2025-48572",
-        "url": "https://cybersecuritynews.com/android-0-day-vulnerabilities-patch/"
-      },
-      {
-        "term": "CVE-2025-48633",
-        "text": "CVE-2025-48633",
-        "url": "https://cybersecuritynews.com/android-0-day-vulnerabilities-patch/"
-      }
-    ]
-  },
-  {
-    "title": "MuddyWater Attacks Critical Infrastructure With Custom Malware and Improved Tactics",
-    "link": "https://cybersecuritynews.com/muddywater-attacks-critical-infrastructure/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Beware of the New \u2018Executive Award\u2019 Campaign That Uses ClickFix to Deliver Stealerium\u00a0Malware",
-    "link": "https://cybersecuritynews.com/beware-of-the-new-executive-award-campaign/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Elementor Plugin Vulnerability Let Attackers Takeover WordPress Site Admin Control",
-    "link": "https://cybersecuritynews.com/critical-elementor-plugin-vulnerability-let-attackers-takeover-wordpress-site-admin-control/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing content",
-        "url": "https://cybersecuritynews.com/phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Researchers spotted Lazarus\u2019s remote IT workers in action",
-    "link": "https://securityaffairs.com/185271/hacking/researchers-spotted-lazaruss-remote-it-workers-in-action.html",
-    "date": "2025-12-03",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus",
-        "url": "https://securityaffairs.com/tag/lazarus"
-      },
-      {
-        "term": "lazarus",
-        "text": "#Lazarus",
-        "url": "https://twitter.com/hashtag/Lazarus?src=hash&ref_src=twsrc%5Etfw"
-      },
-      {
-        "term": "lazarus",
-        "text": "#Lazarus",
-        "url": "https://twitter.com/hashtag/Lazarus?src=hash&ref_src=twsrc%5Etfw"
-      }
-    ]
-  },
-  {
-    "title": "V3G4 Botnet Evolves: From DDoS to Covert Cryptomining",
-    "link": "https://cyble.com/blog/v3g4-mirai-botnet-evolves/",
-    "date": "2025-12-03",
-    "terms": [
-      "IOC",
-      "hunting",
-      "Phish"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "Threat Hunting",
-        "url": "https://cyble.com/knowledge-hub/what-is-threat-hunting/"
-      }
-    ]
-  },
-  {
-    "title": "Microsoft Patched Windows LNK Vulnerability Abused by Hackers to Hide Malicious Code",
-    "link": "https://cybersecuritynews.com/windows-lnk-vulnerability-abused-by-hackers/",
-    "date": "2025-12-03",
-    "terms": [
-      "Zero Day"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Elementor Plugin Vulnerability Let Attackers Takeover WordPress Site Admin Control",
-    "link": "https://cybersecuritynews.com/critical-elementor-plugin-vulnerability/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "University of Pennsylvania and University of Phoenix disclose data breaches",
-    "link": "https://securityaffairs.com/185279/data-breach/university-of-pennsylvania-and-university-of-phoenix-disclose-data-breaches.html",
-    "date": "2025-12-03",
-    "terms": [
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "French NGO Reporters Without Borders Targeted by Star Blizzard",
-    "link": "https://www.infosecurity-magazine.com/news/star-blizzard-targets-reporters/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Yearn Finance yETH Pool Hit by $9M Exploit",
-    "link": "https://www.infosecurity-magazine.com/news/yearn-finance-yeth-pool-exploit/",
-    "date": "2025-12-03",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2025/12/03/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "2025-12-03",
-    "terms": [
-      "CVE-2021-26828",
-      "cve-2021-26828"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2021-26828",
-        "text": "CVE-2021-26828",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2021-26828"
-      }
-    ]
-  },
-  {
-    "title": "Attackers have a new way to slip past MFA in educational orgs",
-    "link": "https://www.malwarebytes.com/blog/news/2025/12/attackers-have-a-new-way-to-slip-past-your-mfa",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Evilginx is an attacker-in-the-middle phishing toolkit",
-        "url": "https://www.malwarebytes.com/blog/news/2022/01/intercepting-2fa-over-1200-man-in-the-middle-phishing-toolkits-detected"
-      }
-    ]
-  },
-  {
-    "title": "Why HIPAA Business Associates Must Provide HIPAA Training for their Entire Staff",
-    "link": "https://www.hipaajournal.com/hipaa-business-associates-hipaa-training-entire-staff/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Kaiser Permanente Agrees to Pay Up to $47.5 Million to Settle Web Tracker Litigation",
-    "link": "https://www.hipaajournal.com/kaiser-permanente-website-tracker-breach-affects-13-4-million-individuals/",
-    "date": "2025-12-03",
-    "terms": [
-      "CLOP"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Whiteintel.io: Powering a Smarter Approach to Cyber Threat Intelligence",
-    "link": "https://darkwebinformer.com/whiteintel-io-powering-a-smarter-approach-to-cyber-threat-intelligence/",
-    "date": "2025-12-03",
-    "terms": [
-      "IOC",
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "WebSift: An Open-Source OSINT Tool for Web-Based Threat Hunting",
-    "link": "https://darkwebinformer.com/websift-an-open-source-osint-tool-for-web-based-threat-hunting/",
-    "date": "2025-12-03",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The Vault or the Vulnerability? Why Your Password Manager Might Be the New Cyber Risk",
-    "link": "https://www.itsecurityguru.org/2025/12/03/the-vault-or-the-vulnerability-why-your-password-manager-might-be-the-new-cyber-risk/?utm_source=rss&utm_medium=rss&utm_campaign=the-vault-or-the-vulnerability-why-your-password-manager-might-be-the-new-cyber-risk",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Sophisticated phishing attacks",
-        "url": "https://www.itsecurityguru.org/2024/08/12/how-to-spot-phishing-in-the-age-of-ai/"
-      }
-    ]
-  },
-  {
-    "title": "Hybrid 2FA phishing kits are making attacks harder to detect",
-    "link": "https://www.csoonline.com/article/4100393/hybrid-2fa-phishing-kits-are-making-attacks-harder-to-detect.html",
-    "date": "2025-12-03",
-    "terms": [
-      "hunting",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Get poetic in prompts and AI will break its guardrails",
-    "link": "https://www.csoonline.com/article/4100348/get-poetic-in-prompts-and-ai-will-break-its-guardrails-3.html",
-    "date": "2025-12-03",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Issues Alert on Actively Exploited Android Zero-Day Vulnerability",
-    "link": "https://gbhackers.com/android-zero-day/",
-    "date": "2025-12-03",
-    "terms": [
-      "CVE-2025-48572",
-      "CVE-2025-48633"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware and Supply Chain Attacks Increasingly Converge: Cyble",
-    "link": "https://thecyberexpress.com/ransomware-and-supply-chain-attacks-converge/",
-    "date": "2025-12-03",
-    "terms": [
-      "Canada",
-      "akira",
-      "qilin",
-      "CL0P"
-    ],
-    "inline_links": [
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://thecyberexpress.com/akira-ransomware-group-cisa-warning/"
-      },
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://thecyberexpress.com/akira-ransomware-group-cisa-warning/"
-      }
-    ]
-  },
-  {
-    "title": "India\u2019s New SIM-Binding Rule for WhatsApp, Signal, Telegram and Other Messaging Platforms",
-    "link": "https://cybersecuritynews.com/indias-new-sim-binding-rule/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing schemes",
-        "url": "https://cybersecuritynews.com/phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Hackers Can Weaponize Claude Skills to Execute MedusaLocker Ransomware Attack",
-    "link": "https://cybersecuritynews.com/hackers-can-weaponize-claude-skills/",
-    "date": "2025-12-03",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Using Calendly-Themed Phishing Attack to Steal Google Workspace Account",
-    "link": "https://cybersecuritynews.com/hackers-using-calendly-themed-phishing-attack/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Hackers Using Calendly-Themed Phishing Attack to Steal Google Workspace Account",
-        "url": "https://cybersecuritynews.com/hackers-using-calendly-themed-phishing-attack/"
-      },
-      {
-        "term": "Phish",
-        "text": "Hackers Using Calendly-Themed Phishing Attack to Steal Google Workspace Account",
-        "url": "https://cybersecuritynews.com/hackers-using-calendly-themed-phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Storm-0900 Hackers Leveraging Parking Ticket and Medical Test Themes in Massive Phishing Attack",
-    "link": "https://cybersecuritynews.com/storm-0900-hackers-leveraging-parking-ticket/",
-    "date": "2025-12-03",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Storm-0900 Hackers Leveraging Parking Ticket and Medical Test Themes in Massive Phishing Attack",
-        "url": "https://cybersecuritynews.com/storm-0900-hackers-leveraging-parking-ticket/"
-      },
-      {
-        "term": "Phish",
-        "text": "Storm-0900 Hackers Leveraging Parking Ticket and Medical Test Themes in Massive Phishing Attack",
-        "url": "https://cybersecuritynews.com/storm-0900-hackers-leveraging-parking-ticket/"
-      }
-    ]
-  },
-  {
-    "title": "King Addons flaw lets anyone become WordPress admin",
-    "link": "https://securityaffairs.com/185286/hacking/king-addons-flaw-lets-anyone-become-wordpress-admin.html",
-    "date": "2025-12-03",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - 3rd of December 2025",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-3rd-of-december-2025/",
-    "date": "2025-12-03",
-    "terms": [
-      "IOC",
-      "hunting",
-      "akira",
-      "qilin"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "WebSift: An Open-Source OSINT Tool for Web-Based Threat Hunting",
-        "url": "https://darkwebinformer.com/websift-an-open-source-osint-tool-for-web-based-threat-hunting/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware Claims 5 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1996263976607613064?s=20"
-      },
-      {
-        "term": "akira",
-        "text": "Akira Ransomware Claims 8 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1996270642140680262?s=20"
-      },
-      {
-        "term": "hunting",
-        "text": "WebSift: An Open-Source OSINT Tool for Web-Based Threat Hunting",
-        "url": "https://darkwebinformer.com/websift-an-open-source-osint-tool-for-web-based-threat-hunting/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware Claims 5 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1996263976607613064?s=20"
-      },
-      {
-        "term": "akira",
-        "text": "Akira Ransomware Claims 8 Victims",
-        "url": "https://x.com/DarkWebInformer/status/1996270642140680262?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Daily - 3rd of December 2025",
-    "link": "https://darkwebinformer.com/threat-attack-daily-3rd-of-december-2025/",
-    "date": "2025-12-03",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 3rd of December 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-3rd-of-december-2025/",
-    "date": "2025-12-03",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "RCE flaw in OpenAI\u2019s Codex CLI highlights new risks to dev environments",
-    "link": "https://www.csoonline.com/article/4100632/rce-flaw-in-openais-codex-cli-highlights-new-risks-to-dev-environments.html",
-    "date": "2025-12-03",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Stealthy Linux Malware Combines Mirai DDoS Botnet with Cryptominer",
-    "link": "https://thecyberexpress.com/linux-malware-mirai-botnet-cryptominer/",
-    "date": "2025-12-03",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical RSC Bugs in React and Next.js Allow Unauthenticated Remote Code Execution",
-    "link": "https://thehackernews.com/2025/12/critical-rsc-bugs-in-react-and-nextjs.html",
-    "date": "2025-12-03",
-    "terms": [
-      "React2shell",
-      "react",
-      "CVE-2025-55182"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical React Flaw Triggers Calls for Immediate Action",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/critical-react-flaw-triggers-immediate-action",
-    "date": "2025-12-03",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cyber Security vs Help Desk: Which Is Better for Modern IT Environments",
-    "link": "https://blog.comodo.com/cybersecurity/is-cyber-security-better-than-help-desk/",
-    "date": "2025-12-03",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Why RMM for MSP Is Essential in Today\u2019s IT and Cybersecurity Landscape",
-    "link": "https://blog.comodo.com/pc-security/rmm-for-msp/",
-    "date": "2025-12-03",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "\u2019Tis the Season to Be Cyber-Wary: How Thales Protects Against Account Takeover During Peak Shopping Season",
-    "link": "https://www.imperva.com/blog/tis-the-season-to-be-cyber-wary-how-thales-protects-against-account-takeover-during-peak-shopping-season/",
-    "date": "2025-12-03",
-    "terms": [
-      "react"
     ],
     "inline_links": []
   }
