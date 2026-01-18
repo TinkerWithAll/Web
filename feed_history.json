@@ -1,5 +1,30 @@
 [
   {
+    "title": "Microsoft January 2026 Security Update Causes Credential Prompt Failures in Remote Desktop Connections",
+    "link": "https://cybersecuritynews.com/remote-desktop-connections-prompt-failures/",
+    "date": "2026-01-18",
+    "terms": [
+      "WSUS",
+      "wsus"
+    ],
+    "inline_links": [
+      {
+        "term": "WSUS",
+        "text": "Windows Server Update Services (WSUS)",
+        "url": "https://cybersecuritynews.com/microsoft-to-depreciate-windows/"
+      }
+    ]
+  },
+  {
+    "title": "Mandiant Releases Rainbow Tables Enabling NTLMv1 Admin Password Hacking",
+    "link": "https://cybersecuritynews.com/rainbow-tables-enabling-ntlmv1-hack/",
+    "date": "2026-01-18",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "OpenAI to Show Ads in ChatGPT for Logged-In U.S. Adults on Free and Go Plans",
     "link": "https://thehackernews.com/2026/01/openai-to-show-ads-in-chatgpt-for.html",
     "date": "2026-01-17",
@@ -44,6 +69,23 @@
       "Phish"
     ],
     "inline_links": []
+  },
+  {
+    "title": "China-linked APT UAT-8837 targets North American critical infrastructure",
+    "link": "https://securityaffairs.com/186999/breaking-news/china-linked-apt-uat-8837-targets-north-american-critical-infrastructure.html",
+    "date": "2026-01-17",
+    "terms": [
+      "IOC",
+      "CVE-2025-53690",
+      "cve-2025-53690"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-53690",
+        "text": "CVE-2025-53690",
+        "url": "https://securityaffairs.com/181924/breaking-news/u-s-cisa-adds-sitecore-android-and-linux-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
+      }
+    ]
   },
   {
     "title": "Upper Township By genesis",
@@ -511,6 +553,15 @@
     "date": "2026-01-16",
     "terms": [
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Why LinkedIn is a hunting ground for threat actors \u2013 and how to protect yourself",
+    "link": "https://www.welivesecurity.com/en/social-media/linkedin-hunting-ground-threat-actors-how-protect-yourself/",
+    "date": "2026-01-16",
+    "terms": [
+      "hunting"
     ],
     "inline_links": []
   },
@@ -11444,686 +11495,6 @@
     "date": "2025-12-19",
     "terms": [
       "Atmosphere"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The Case for Dynamic AI-SaaS Security as Copilots Scale",
-    "link": "https://thehackernews.com/2025/12/the-case-for-dynamic-ai-saas-security.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Kimsuky Spreads DocSwap Android Malware via QR Phishing Posing as Delivery App",
-    "link": "https://thehackernews.com/2025/12/kimsuky-spreads-docswap-android-malware.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Flags Critical ASUS Live Update Flaw After Evidence of Active Exploitation",
-    "link": "https://thehackernews.com/2025/12/cisa-flags-critical-asus-live-update.html",
-    "date": "2025-12-18",
-    "terms": [
-      "CVE-2025-59374"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SonicWall Patches Exploited SMA 1000 Zero-Day",
-    "link": "https://www.securityweek.com/sonicwall-patches-exploited-sma-1000-zero-day/",
-    "date": "2025-12-18",
-    "terms": [
-      "sonicwall"
-    ],
-    "inline_links": [
-      {
-        "term": "sonicwall",
-        "text": "SonicWall Patches Exploited SMA 1000 Zero-Day",
-        "url": "https://www.securityweek.com/sonicwall-patches-exploited-sma-1000-zero-day/"
-      }
-    ]
-  },
-  {
-    "title": "China-Linked Hackers Exploiting Zero-Day in Cisco Security Gear",
-    "link": "https://www.securityweek.com/china-linked-hackers-exploiting-zero-day-in-cisco-security-gear/",
-    "date": "2025-12-18",
-    "terms": [
-      "CVE-2025-20393"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "U.S. CISA adds Cisco, SonicWall, and ASUS flaws to its Known Exploited Vulnerabilities catalog",
-    "link": "https://securityaffairs.com/185830/security/u-s-cisa-adds-cisco-sonicwall-and-asus-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-    "date": "2025-12-18",
-    "terms": [
-      "sonicwall",
-      "CVE-2025-23006",
-      "CVE-2025-20393",
-      "CVE-2025-40602",
-      "CVE-2025-59374",
-      "cve-2025-20393",
-      "cve-2025-40602",
-      "cve-2025-59374",
-      "cve-2025-23006"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-20393"
-      },
-      {
-        "term": "CVE-2025-40602",
-        "text": "CVE-2025-40602",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-40602"
-      },
-      {
-        "term": "CVE-2025-59374",
-        "text": "CVE-2025-59374",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-59374"
-      },
-      {
-        "term": "CVE-2025-40602",
-        "text": "CVE-2025-40602",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-40602"
-      },
-      {
-        "term": "CVE-2025-23006",
-        "text": "CVE-2025-23006",
-        "url": "https://securityaffairs.com/173387/security/sonicwall-warns-zero-day-sma-1000-series.html"
-      },
-      {
-        "term": "CVE-2025-23006",
-        "text": "CVE-2025-23006",
-        "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2025-0002"
-      }
-    ]
-  },
-  {
-    "title": "GhostPairing campaign abuses WhatsApp device linking to hijack accounts",
-    "link": "https://securityaffairs.com/185814/hacking/ghostpairing-campaign-abuses-whatsapp-device-linking-to-hijack-accounts.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New BeaverTail Malware Variant Linked to Lazarus Group",
-    "link": "https://www.infosecurity-magazine.com/news/beavertail-variant-linked-lazarus/",
-    "date": "2025-12-18",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Major Data Breach Announced by Richmond Behavioral Health Authority",
-    "link": "https://www.hipaajournal.com/richmond-behavioral-health-authority-data-breach/",
-    "date": "2025-12-18",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "D&O liability protection rising for security leaders \u2014 unless you\u2019re a midtier CISO",
-    "link": "https://www.csoonline.com/article/4107332/do-liability-protection-rising-for-security-leaders-unless-youre-a-midtier-ciso.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft warns MSMQ may fail after update, breaking apps",
-    "link": "https://www.csoonline.com/article/4108360/microsoft-warns-msmq-may-fail-after-update-breaking-apps-2.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Canadian"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "\u2018Ink Dragon\u2019 threat group targets IIS servers to build stealthy global network",
-    "link": "https://www.csoonline.com/article/4108158/ink-dragon-threat-group-targets-iis-servers-to-build-stealthy-global-network.html",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "ioc"
-    ],
-    "inline_links": [
-      {
-        "term": "IOC",
-        "text": "group\u2019s indicators of compromise (IoCs)",
-        "url": "https://research.checkpoint.com/2025/ink-dragons-relay-network-and-offensive-operation/"
-      }
-    ]
-  },
-  {
-    "title": "New Reports Reveal WAFs Are Ineffective Against Latest React2Shell Exploit",
-    "link": "https://gbhackers.com/react2shell-exploit/",
-    "date": "2025-12-18",
-    "terms": [
-      "React2shell",
-      "react",
-      "CVE-2025-55182",
-      "react2shell"
-    ],
-    "inline_links": [
-      {
-        "term": "React2shell",
-        "text": "New Reports Reveal WAFs Are Ineffective Against Latest React2Shell Exploit",
-        "url": "https://gbhackers.com/react2shell-exploit/"
-      },
-      {
-        "term": "react",
-        "text": "New Reports Reveal WAFs Are Ineffective Against Latest React2Shell Exploit",
-        "url": "https://gbhackers.com/react2shell-exploit/"
-      }
-    ]
-  },
-  {
-    "title": "Hackers Actively Exploit SonicWall SMA1000 Zero-Day to Escalate Privileges",
-    "link": "https://gbhackers.com/hackers-actively-exploit-sonicwall-sma1000-zero-day/",
-    "date": "2025-12-18",
-    "terms": [
-      "sonicwall",
-      "CVE-2025-40602"
-    ],
-    "inline_links": [
-      {
-        "term": "sonicwall",
-        "text": "Hackers Actively Exploit SonicWall SMA1000 Zero-Day to Escalate Privileges",
-        "url": "https://gbhackers.com/hackers-actively-exploit-sonicwall-sma1000-zero-day/"
-      }
-    ]
-  },
-  {
-    "title": "New ForumTroll Phishing Attacks Target Russian Scholars Using Fake eLibrary Emails",
-    "link": "https://thecyberpost.com/news/hackers/new-forumtroll-phishing-attacks-target-russian-scholars-using-fake-elibrary-emails/",
-    "date": "2025-12-18",
-    "terms": [
-      "unc5221",
-      "Phish",
-      "Lockbit",
-      "CVE-2023-38035",
-      "CVE-2024-21887",
-      "CVE-2025-2783",
-      "CVE-2025-4427",
-      "CVE-2025-4428",
-      "CVE-2025-53770",
-      "cve-2025-53770",
-      "cve-2025-4427",
-      "cve-2025-4428",
-      "cve-2024-21887",
-      "cve-2023-38035"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-53770",
-        "text": "CVE-2025-53770",
-        "url": "https://thehackernews.com/2025/07/critical-microsoft-sharepoint-flaw.html"
-      },
-      {
-        "term": "CVE-2025-4427",
-        "text": "CVE-2025-4427 and CVE-2025-4428",
-        "url": "https://thehackernews.com/2025/09/cisa-warns-of-two-malware-strains.html"
-      },
-      {
-        "term": "CVE-2025-4428",
-        "text": "CVE-2025-4427 and CVE-2025-4428",
-        "url": "https://thehackernews.com/2025/09/cisa-warns-of-two-malware-strains.html"
-      },
-      {
-        "term": "CVE-2024-21887",
-        "text": "CVE-2024-21887",
-        "url": "https://thehackernews.com/2024/01/chinese-hackers-exploit-zero-day-flaws.html"
-      },
-      {
-        "term": "CVE-2023-38035",
-        "text": "CVE-2023-38035",
-        "url": "https://thehackernews.com/2023/08/ivanti-warns-of-critical-zero-day-flaw.html"
-      }
-    ]
-  },
-  {
-    "title": "Chinese hackers exploit Cisco email gateway zero-day to breach govt. systems",
-    "link": "https://cyberinsider.com/chinese-hackers-exploit-cisco-email-gateway-zero-day-to-breach-govt-systems/",
-    "date": "2025-12-18",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cisco Warns of Active Cyberattack Exploiting Critical AsyncOS Vulnerability",
-    "link": "https://thecyberexpress.com/cisco-cve-2025-20393-secure-email-cyberattack/",
-    "date": "2025-12-18",
-    "terms": [
-      "CVE-2025-20393",
-      "cve-2025-20393"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393"
-      },
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393"
-      }
-    ]
-  },
-  {
-    "title": "Askul Restarts Logistics as Ransomware Attack Exposes 740,000 Records",
-    "link": "https://thecyberexpress.com/askul-cyberattack-logistics-resume/",
-    "date": "2025-12-18",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Researchers Uncovered New Lazarus and Kimsuky Infrastructure with Active Tools and Tunnelling Nodes",
-    "link": "https://cybersecuritynews.com/researchers-uncovered-new-lazarus-and-kimsuky/",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus",
-        "url": "https://cybersecuritynews.com/lazarus-hackers-weaponized-6-npm-packages/"
-      },
-      {
-        "term": "lazarus",
-        "text": "Researchers Uncovered New Lazarus and Kimsuky Infrastructure with Active Tools and Tunnelling Nodes",
-        "url": "https://cybersecuritynews.com/researchers-uncovered-new-lazarus-and-kimsuky/"
-      },
-      {
-        "term": "lazarus",
-        "text": "Researchers Uncovered New Lazarus and Kimsuky Infrastructure with Active Tools and Tunnelling Nodes",
-        "url": "https://cybersecuritynews.com/researchers-uncovered-new-lazarus-and-kimsuky/"
-      }
-    ]
-  },
-  {
-    "title": "Critical Apache Commons Text Vulnerability Enables Remote Code Execution Attacks",
-    "link": "https://cybersecuritynews.com/apache-commons-text-vulnerability/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Vulnerability in Popular Node.js Library Exposes Windows Systems to RCE Attacks",
-    "link": "https://cybersecuritynews.com/node-js-library-exposes-windows/",
-    "date": "2025-12-18",
-    "terms": [
-      "critical Vulnerability",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability in Popular Node.js Library Exposes Windows Systems to RCE Attacks",
-        "url": "https://cybersecuritynews.com/node-js-library-exposes-windows/"
-      },
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability in Popular Node.js Library Exposes Windows Systems to RCE Attacks",
-        "url": "https://cybersecuritynews.com/node-js-library-exposes-windows/"
-      }
-    ]
-  },
-  {
-    "title": "BugTrace \u2013 AI-based Penetration Testing Tool to Detect Potential Vulnerabilities",
-    "link": "https://cybersecuritynews.com/bugtrace-ai-penetration-testing-tool/",
-    "date": "2025-12-18",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Threats Actors Registering Fake Shopping Domains to Attack Users in this Holiday Season",
-    "link": "https://cybersecuritynews.com/threats-actors-registering-fake-shopping-domains/",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Exploiting SonicWall SMA1000 0-day Vulnerability to Escalate Privileges",
-    "link": "https://cybersecuritynews.com/sonicwall-sma1000-0-day-vulnerability/",
-    "date": "2025-12-18",
-    "terms": [
-      "akira",
-      "sonicwall",
-      "CVE-2025-23006",
-      "CVE-2025-40602",
-      "cve-2025-23006"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-23006",
-        "text": "CVE-2025-23006",
-        "url": "https://cybersecuritynews.com/sonicwall-0-day-vulnerability-actively-exploited/"
-      },
-      {
-        "term": "sonicwall",
-        "text": "SonicWall firewalls",
-        "url": "https://cybersecuritynews.com/sonicwall-firewall-akira-ransomware/"
-      },
-      {
-        "term": "sonicwall",
-        "text": "Hackers Exploiting SonicWall SMA1000 0-day Vulnerability to Escalate Privileges",
-        "url": "https://cybersecuritynews.com/sonicwall-sma1000-0-day-vulnerability/"
-      },
-      {
-        "term": "sonicwall",
-        "text": "Hackers Exploiting SonicWall SMA1000 0-day Vulnerability to Escalate Privileges",
-        "url": "https://cybersecuritynews.com/sonicwall-sma1000-0-day-vulnerability/"
-      }
-    ]
-  },
-  {
-    "title": "CVE-2025-20393: Cisco AsyncOS Zero-Day Impacts Secure Email Appliances",
-    "link": "https://socradar.io/blog/cve-2025-20393-cisco-asyncos-zero-day-email/",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "Phish",
-      "CVE-2025-20393"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "HPE OneView Flaw Rated CVSS 10.0 Allows Unauthenticated Remote Code Execution",
-    "link": "https://thehackernews.com/2025/12/hpe-oneview-flaw-rated-cvss-100-allows.html",
-    "date": "2025-12-18",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ThreatsDay Bulletin: WhatsApp Hijacks, MCP Leaks, AI Recon, React2Shell Exploit and 15 More Stories",
-    "link": "https://thehackernews.com/2025/12/threatsday-bulletin-whatsapp-hijacks.html",
-    "date": "2025-12-18",
-    "terms": [
-      "React2shell",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SonicWall Edge Access Devices Hit by Zero-Day Attacks",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/sonicwall-edge-devices-zero-day-attacks",
-    "date": "2025-12-18",
-    "terms": [
-      "critical Vulnerability",
-      "sonicwall"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Warns of Exploited Flaw in Asus Update Tool",
-    "link": "https://www.securityweek.com/cisa-warns-of-exploited-flaw-in-asus-update-tool/",
-    "date": "2025-12-18",
-    "terms": [
-      "CVE-2025-59374"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Clipping Scripted Sparrow\u2019s wings: Tracking a global phishing ring",
-    "link": "https://www.helpnetsecurity.com/2025/12/18/tracking-scripted-sparrow-phishing-campaigns/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Clipping Scripted Sparrow\u2019s wings: Tracking a global phishing ring",
-        "url": "https://www.helpnetsecurity.com/2025/12/18/tracking-scripted-sparrow-phishing-campaigns/"
-      }
-    ]
-  },
-  {
-    "title": "Microsoft 365 users targeted in device code phishing attacks",
-    "link": "https://www.helpnetsecurity.com/2025/12/18/microsoft-365-device-code-phishing/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Microsoft 365 users targeted in device code phishing attacks",
-        "url": "https://www.helpnetsecurity.com/2025/12/18/microsoft-365-device-code-phishing/"
-      }
-    ]
-  },
-  {
-    "title": "OAuth Device Code Phishing Campaigns Surge Targets Microsoft 365",
-    "link": "https://www.infosecurity-magazine.com/news/oauth-phishing-campaigns/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Chrome extension slurps up AI chats after users installed it for privacy",
-    "link": "https://www.malwarebytes.com/blog/news/2025/12/chrome-extension-slurps-up-ai-chats-after-users-installed-it-for-privacy",
-    "date": "2025-12-18",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer for the 18th of December 2025",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-for-the-18th-of-december-2025/",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "hunting",
-      "akira",
-      "CVE-2025-20393",
-      "cve-2025-20393"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393: Script to Detect for Cisco Secure Email Gateway and Cisco Secure Email and Web Manager",
-        "url": "https://darkwebinformer.com/cve-2025-20393-script-to-detect-for-cisco-secure-email-gateway-and-cisco-secure-email-and-web-manager/"
-      },
-      {
-        "term": "hunting",
-        "text": "I created a new GitHub repo for tracking daily hunting findings: exposed servers, open ports, and infrastructure linked to threat activity. I will format what I have already added in the coming days.",
-        "url": "https://x.com/DarkWebInformer/status/2001683254605119583?s=20"
-      },
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393: Script to detect for Cisco Secure Email Gateway And Cisco Secure Email and Web Manager",
-        "url": "https://x.com/DarkWebInformer/status/2001746270461813041?s=20"
-      },
-      {
-        "term": "akira",
-        "text": "Akira Ransomware Claims 5 Victims",
-        "url": "https://x.com/DarkWebInformer/status/2001754441842901075?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Update for the 18th of December 2025",
-    "link": "https://darkwebinformer.com/threat-attack-update-for-the-18th-of-december-2025/",
-    "date": "2025-12-18",
-    "terms": [
-      "Canada",
-      "IOC",
-      "sinobi",
-      "Everest",
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update for the 18th of December 2025",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-for-the-18th-of-december-2025/",
-    "date": "2025-12-18",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "CLOP"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CVE-2025-20393: Script to detect for Cisco Secure Email Gateway And Cisco Secure Email and Web Manager",
-    "link": "https://darkwebinformer.com/cve-2025-20393-script-to-detect-for-cisco-secure-email-gateway-and-cisco-secure-email-and-web-manager/",
-    "date": "2025-12-18",
-    "terms": [
-      "IOC",
-      "CVE-2025-20393"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Lazarus Group Embed New BeaverTail Variant in Developer Tools",
-    "link": "https://hackread.com/lazarus-embed-beavertail-variant-developer-tools/",
-    "date": "2025-12-18",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Iranian APT \u2018Prince of Persia\u2019 Resurfaces With New Tools and Targets",
-    "link": "https://hackread.com/iran-apt-prince-of-persia-resurfaces/",
-    "date": "2025-12-18",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Salt Security Unveils its \u201c12 Months of Innovation\u201d",
-    "link": "https://www.itsecurityguru.org/2025/12/18/salt-security-unveils-its-12-months-of-innovation/?utm_source=rss&utm_medium=rss&utm_campaign=salt-security-unveils-its-12-months-of-innovation",
-    "date": "2025-12-18",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "autonomous threat hunting",
-        "url": "https://salt.security/blog/beyond-anomalies-how-autonomous-threat-hunting-uncovers-the-full-attack-story"
-      }
-    ]
-  },
-  {
-    "title": "WhatsApp accounts targeted in \u2018GhostPairing\u2019 attack",
-    "link": "https://www.csoonline.com/article/4108925/whatsapp-accounts-targeted-in-ghostpairing-attack.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The innovative CISO\u2019s bucket list: Human-led transformation at the core",
-    "link": "https://www.csoonline.com/article/4108133/the-innovative-cisos-bucket-list-human-led-transformation-at-the-core.html",
-    "date": "2025-12-18",
-    "terms": [
-      "react",
-      "sonicwall"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Datenbank mit 4,3 Milliarden Datens\u00e4tzen offen im Netz",
-    "link": "https://www.csoonline.com/article/4108632/datenbank-mit-43-milliarden-datensatzen-offen-im-netz.html",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "AI Agent Attacks in Q4 2025 Signal New Risks for 2026",
-    "link": "https://www.esecurityplanet.com/artificial-intelligence/ai-agent-attacks-in-q4-2025-signal-new-risks-for-2026/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "From the Hill: The AI-Cybersecurity Imperative in Financial Services",
-    "link": "https://www.paloaltonetworks.com/blog/2025/12/ai-cybersecurity-in-financial-services/",
-    "date": "2025-12-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CVE-2025-40602: SonicWall SMA1000 Vulnerability Actively Exploited",
-    "link": "https://socradar.io/blog/cve-2025-40602-sonicwall-sma1000/",
-    "date": "2025-12-18",
-    "terms": [
-      "sonicwall",
-      "CVE-2025-23006",
-      "CVE-2025-40602",
-      "cve-2025-23006"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-23006",
-        "text": "CVE-2025-23006",
-        "url": "https://socradar.io/blog/sonicwall-zero-day-and-multiple-qnap-vulnerabilities/"
-      }
-    ]
-  },
-  {
-    "title": "I am not a robot: ClickFix used to deploy StealC and Qilin",
-    "link": "https://sophos-production.contentstackapps.com/en-us/blog/i-am-not-a-robot-clickfix-used-to-deploy-stealc-and-qilin",
-    "date": "2025-12-18",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "I am not a robot: ClickFix used to deploy StealC and Qilin",
-    "link": "https://www.sophos.com/en-us/blog/i-am-not-a-robot-clickfix-used-to-deploy-stealc-and-qilin",
-    "date": "2025-12-18",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   }
