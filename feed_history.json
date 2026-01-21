@@ -290,6 +290,54 @@
     ]
   },
   {
+    "title": "Critical Vulnerability in Advanced Custom Fields: Extended Plugin Puts 100,000 WordPress Sites at Risk",
+    "link": "https://thecyberexpress.com/acf-add-on-vulnerability-wordpress/",
+    "date": "2026-01-21",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Building Stronger Security With Automated Patch Management",
+    "link": "https://blog.comodo.com/pc-security/automated-patch-management/",
+    "date": "2026-01-21",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Strengthening Cyber Defense With Modern Endpoint Security Solutions",
+    "link": "https://blog.comodo.com/endpoint-security/endpoint-security-solutions/",
+    "date": "2026-01-21",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "LastPass Warns of Fake Maintenance Message Tracking Users to Steal Master Passwords",
+    "link": "https://cybersecuritynews.com/lastpass-warns-of-fake-maintenance-message/",
+    "date": "2026-01-21",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing campaign",
+        "url": "https://cybersecuritynews.com/malicious-svgs-in-phishing-campaigns-how-to-detect-hidden-redirects-and-payloads/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://cybersecuritynews.com/hackers-leveraging-compromised-email-server/"
+      }
+    ]
+  },
+  {
     "title": "ChatGPT's cheapest subscription comes to the US: I compared Go to Plus and Pro",
     "link": "https://www.zdnet.com/article/chat-gpt-go/",
     "date": "2026-01-20",
@@ -317,7 +365,7 @@
     "inline_links": []
   },
   {
-    "title": "Linkedin Phishing Campaign Exploits Open-Source Pen Testing Tool to Compromise Business Execs",
+    "title": "LinkedIn Phishing Campaign Exploits Open-Source Pen Testing Tool to Compromise Business Execs",
     "link": "https://www.infosecurity-magazine.com/news/linkedin-phishing-campaign-targets/",
     "date": "2026-01-20",
     "terms": [
@@ -773,6 +821,15 @@
         "url": "https://thecyberexpress.com/cl0p-ransomware-targets-gladinet-centrestack/"
       }
     ]
+  },
+  {
+    "title": "Smarter Inventory Control With AI-Driven Systems",
+    "link": "https://blog.comodo.com/others/ai-inventory-management-software/",
+    "date": "2026-01-20",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
   },
   {
     "title": "QFloors By genesis",
@@ -1240,6 +1297,16 @@
     "date": "2026-01-19",
     "terms": [
       "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Endpoint Security Platform for Stronger Protection and Smarter Cyber Defense",
+    "link": "https://blog.comodo.com/endpoint-security/endpoint-security-platform/",
+    "date": "2026-01-19",
+    "terms": [
+      "Phish",
+      "react"
     ],
     "inline_links": []
   },
@@ -4776,6 +4843,7 @@
       "OpenAI",
       "Phish",
       "sonicwall",
+      "CVE-2002-0367",
       "CVE-2007-0671",
       "CVE-2024-36401",
       "CVE-2002-0367",
@@ -7709,6 +7777,7 @@
       "CL0P",
       "react",
       "sonicwall",
+      "CVE-2002-0367",
       "CVE-2007-0671",
       "CVE-2018-8639",
       "CVE-2019-6693",
