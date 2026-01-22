@@ -312,7 +312,8 @@
     "link": "https://socradar.io/blog/oracle-january-2026-cpu-337-security-patches/",
     "date": "2026-01-22",
     "terms": [
-      "critical Vulnerability"
+      "critical Vulnerability",
+      "CVE-2026-21962"
     ],
     "inline_links": []
   },
@@ -467,20 +468,76 @@
     "inline_links": []
   },
   {
+    "title": "ELKAIR.COM By clop",
+    "link": "https://www.ransomlook.io//group/clop",
+    "date": "2026-01-22",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Spiros Industries By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2026-01-22",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CallOnDoc Telemedicine Platform Allegedly Breached, Exposing 1.14 Million Patient Records Including Medical Conditions",
+    "link": "https://darkwebinformer.com/callondoc-telemedicine-platform-allegedly-breached-exposing-1-14-million-patient-records-including-medical-conditions/",
+    "date": "2026-01-22",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New Osiris Ransomware Using Wide Range of Living off the Land and Dual-use Tools in Attacks",
+    "link": "https://cybersecuritynews.com/new-osiris-ransomware-using-wide-range-of-tools/",
+    "date": "2026-01-22",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Beware of PNB MetLife Payment Gateway that Steals Your Details and Direct to UPI Payments",
+    "link": "https://cybersecuritynews.com/beware-of-pnb-metlife-payment-gateway/",
+    "date": "2026-01-22",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Hijacking Snap Domains to Posion Linux Software Packages for Desktops and Servers",
+    "link": "https://cybersecuritynews.com/hackers-hijacking-snap-domains/",
+    "date": "2026-01-22",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What the Alien Franchise Taught Me About Cybersecurity",
+    "link": "https://www.paloaltonetworks.com/blog/2026/01/alien-franchise-taught-cybersecurity/",
+    "date": "2026-01-22",
+    "terms": [
+      "hunting",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "frandent.it By lockbit5",
     "link": "https://www.ransomlook.io//group/lockbit5",
     "date": "2026-01-21",
     "terms": [
       "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ONYXEQUITIES.COM By clop",
-    "link": "https://www.ransomlook.io//group/clop",
-    "date": "2026-01-21",
-    "terms": [
-      "CLOP"
     ],
     "inline_links": []
   },
@@ -832,15 +889,6 @@
     "inline_links": []
   },
   {
-    "title": "Clipper Petroleum By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2026-01-21",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Phishing Campaign Zeroes in on LastPass Customers",
     "link": "https://www.darkreading.com/application-security/phishing-campaign-zeroes-lastpass-customers",
     "date": "2026-01-21",
@@ -1005,9 +1053,17 @@
     "date": "2026-01-21",
     "terms": [
       "Zero Day",
-      "CVE-2021-35587"
+      "CVE-2026-21962",
+      "CVE-2021-35587",
+      "cve-2026-21962"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "CVE-2026-21962",
+        "text": "CVE-2026-21962",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21962"
+      }
+    ]
   },
   {
     "title": "Researchers Expose LockBit 5.0 Affiliate Panel and New Encryption Variants",
@@ -1043,6 +1099,22 @@
         "term": "Phish",
         "text": "LinkedIn Phishing Abuses DLL Sideloading for Persistent Access",
         "url": "https://www.esecurityplanet.com/threats/linkedin-phishing-abuses-dll-sideloading-for-persistent-access/"
+      }
+    ]
+  },
+  {
+    "title": "Oracle WebLogic Proxy Bug Enables Unauthenticated Remote Compromise",
+    "link": "https://www.esecurityplanet.com/threats/oracle-weblogic-proxy-bug-enables-unauthenticated-remote-compromise/",
+    "date": "2026-01-21",
+    "terms": [
+      "CVE-2026-21962",
+      "cve-2026-21962"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21962",
+        "text": "CVE-2026-21962",
+        "url": "https://www.oracle.com/security-alerts/cpujan2026.html#AppendixFMW"
       }
     ]
   },
