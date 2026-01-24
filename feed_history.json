@@ -1,5 +1,102 @@
 [
   {
+    "title": "Multi-Stage Phishing Campaign Targets Russia with Amnesia RAT and Ransomware",
+    "link": "https://thehackernews.com/2026/01/multi-stage-phishing-campaign-targets.html",
+    "date": "2026-01-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Actively Exploited VMware vCenter Flaw CVE-2024-37079 to KEV Catalog",
+    "link": "https://thehackernews.com/2026/01/cisa-adds-actively-exploited-vmware.html",
+    "date": "2026-01-24",
+    "terms": [
+      "Broadcom",
+      "CVE-2024-37079"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds a flaw in Broadcom VMware vCenter Server to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/187267/security/u-s-cisa-adds-a-flaw-in-broadcom-vmware-vcenter-server-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-01-24",
+    "terms": [
+      "Broadcom",
+      "CVE-2024-38812",
+      "CVE-2024-38813",
+      "CVE-2024-37079",
+      "cve-2024-37079",
+      "cve-2024-38813"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-37079",
+        "text": "CVE-2024-37079",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-37079"
+      },
+      {
+        "term": "CVE-2024-38813",
+        "text": "CVE-2024-38813",
+        "url": "https://securityaffairs.com/171147/security/vmware-vcenter-server-bugs-actively-exploited.html"
+      }
+    ]
+  },
+  {
+    "title": "11-Year-Old critical telnetd flaw found in GNU InetUtils (CVE-2026-24061)",
+    "link": "https://securityaffairs.com/187255/security/11-year-old-critical-telnetd-flaw-found-in-gnu-inetutils-cve-2026-24061.html",
+    "date": "2026-01-24",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Leverage SharePoint Services in Sophisticated AiTM Phishing Campaign",
+    "link": "https://cybersecuritynews.com/sharepoint-services-in-sophisticated-aitm-phishing-campaign/",
+    "date": "2026-01-24",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing campaign",
+        "url": "https://cybersecuritynews.com/potential-wallet-phishing-campaign-targets-cardano-users/"
+      },
+      {
+        "term": "Phish",
+        "text": "Threat Actors Leverage SharePoint Services in Sophisticated AiTM Phishing Campaign",
+        "url": "https://cybersecuritynews.com/sharepoint-services-in-sophisticated-aitm-phishing-campaign/"
+      },
+      {
+        "term": "Phish",
+        "text": "Threat Actors Leverage SharePoint Services in Sophisticated AiTM Phishing Campaign",
+        "url": "https://cybersecuritynews.com/sharepoint-services-in-sophisticated-aitm-phishing-campaign/"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Exploiting telnetd Vulnerability for Root Access \u2013 Public PoC Released",
+    "link": "https://cybersecuritynews.com/telnetd-vulnerability-exploited/",
+    "date": "2026-01-24",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ShinyHunters claim to be behind SSO-account data theft attacks",
+    "link": "https://databreaches.net/2026/01/24/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/?pk_campaign=feed&pk_kwd=shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks",
+    "date": "2026-01-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Phishing Attack Uses Stolen Credentials to Install LogMeIn RMM for Persistent Access",
     "link": "https://thehackernews.com/2026/01/phishing-attack-uses-stolen-credentials.html",
     "date": "2026-01-23",
@@ -393,6 +490,365 @@
     "terms": [
       "OpenAI",
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Aschwanden & Partner By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2026-01-23",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "YCC Parts Mfg By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-01-23",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "West Cary Group By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2026-01-23",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+    "link": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+    "date": "2026-01-23",
+    "terms": [
+      "CVE-2025-68645"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Exploited Zero-Day Flaw in Cisco UC Could Affect Millions",
+    "link": "https://www.darkreading.com/endpoint-security/exploited-zero-day-flaw-cisco-uc-affect-millions",
+    "date": "2026-01-23",
+    "terms": [
+      "CVE-2026-20045"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet warns of active FortiCloud SSO bypass affecting updated devices",
+    "link": "https://securityaffairs.com/187250/security/fortinet-warns-of-active-forticloud-sso-bypass-affecting-updated-devices.html",
+    "date": "2026-01-23",
+    "terms": [
+      "IOC",
+      "hunting",
+      "CVE-2025-59718",
+      "cve-2025-59718"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-59718",
+        "text": "CVE-2025-59718 and CVE-2025-59719",
+        "url": "https://securityaffairs.com/185748/security/hackers-are-exploiting-critical-fortinet-flaws-days-after-patch-release.html"
+      }
+    ]
+  },
+  {
+    "title": "Millions of stolen Under Armour customer emails added to Have I Been Pwned",
+    "link": "https://www.scworld.com/brief/millions-of-stolen-under-armour-customer-emails-added-to-have-i-been-pwned",
+    "date": "2026-01-23",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Actively exploited Cisco Unified Communications zero-day resolved",
+    "link": "https://www.scworld.com/brief/actively-exploited-cisco-unified-communications-zero-day-resolved",
+    "date": "2026-01-23",
+    "terms": [
+      "CVE-2026-20045"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Good, the Bad and the Ugly in Cybersecurity \u2013 Week 4",
+    "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-4-7/",
+    "date": "2026-01-23",
+    "terms": [
+      "hunting",
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Spammers abuse Zendesk to flood inboxes with legitimate-looking emails, but why?",
+    "link": "https://www.malwarebytes.com/blog/news/2026/01/spammers-abuse-zendesk-to-flood-inboxes-with-legitimate-looking-emails-but-why",
+    "date": "2026-01-23",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Numotion Agrees to Pay $4 Million to Settle Litigation Stemming from 2024 Data Breaches",
+    "link": "https://www.hipaajournal.com/numotion-data-breach-settlement/",
+    "date": "2026-01-23",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - January 23rd, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-23rd-2026/",
+    "date": "2026-01-23",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Attack Update - January 23rd, 2026",
+    "link": "https://darkwebinformer.com/threat-attack-update-january-23rd-2026/",
+    "date": "2026-01-23",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi",
+      "CL0P"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware Attack Update - January 23rd, 2026",
+    "link": "https://darkwebinformer.com/ransomware-attack-update-january-23rd-2026/",
+    "date": "2026-01-23",
+    "terms": [
+      "IOC",
+      "akira",
+      "qilin",
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Affirm Buy Now Pay Later Service Allegedly Breached, Exposing 26.7 Million User Records",
+    "link": "https://darkwebinformer.com/affirm-buy-now-pay-later-service-allegedly-breached-exposing-26-7-million-user-records/",
+    "date": "2026-01-23",
+    "terms": [
+      "Canada",
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Five Vulnerabilities to Known Exploited Vulnerabilities Catalog",
+    "link": "https://darkwebinformer.com/cisa-adds-five-vulnerabilities-to-known-exploited-vulnerabilities-catalog/",
+    "date": "2026-01-23",
+    "terms": [
+      "Broadcom",
+      "CVE-2025-31125",
+      "CVE-2025-34026",
+      "CVE-2025-54313",
+      "CVE-2025-68645",
+      "CVE-2024-37079"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet confirms new zero-day attacks against customer devices",
+    "link": "https://www.csoonline.com/article/4121682/fortinet-confirms-new-zero-day-attacks-against-customer-devices.html",
+    "date": "2026-01-23",
+    "terms": [
+      "IOC",
+      "CVE-2025-59718"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The cybercrime industry continues to challenge CISOs in 2026",
+    "link": "https://www.csoonline.com/article/4119555/cybercrime-inc-the-new-industry-challenging-cisos-in-2026.html",
+    "date": "2026-01-23",
+    "terms": [
+      "hunting",
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet Confirms Active Exploitation of FortiCloud SSO Bypass Vulnerability",
+    "link": "https://gbhackers.com/forticloud-sso/",
+    "date": "2026-01-23",
+    "terms": [
+      "CVE-2025-59718"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "TrustAsia Pulls 143 Certificates Following Critical LiteSSL ACME Vulnerability",
+    "link": "https://gbhackers.com/trustasia-pulls-143-certificates-following-critical-litessl-acme-vulnerability/",
+    "date": "2026-01-23",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "MacSync macOS Infostealer Exploits ClickFix-style Attack to Trick Users with Single Terminal Command",
+    "link": "https://gbhackers.com/macsync-macos/",
+    "date": "2026-01-23",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "1Password introduces new built-in phishing protection to fight AI scams",
+    "link": "https://cyberinsider.com/1password-introduces-new-built-in-phishing-protection-to-fight-ai-scams/",
+    "date": "2026-01-23",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "1Password introduces new built-in phishing protection to fight AI scams",
+        "url": "https://cyberinsider.com/1password-introduces-new-built-in-phishing-protection-to-fight-ai-scams/"
+      }
+    ]
+  },
+  {
+    "title": "Critical Vulnerabilities and Phishing Campaigns Dominate Cybersecurity Headlines",
+    "link": "https://www.esecurityplanet.com/weekly-roundup/critical-vulnerabilities-and-phishing-campaigns-dominate-cybersecurity-headlines/",
+    "date": "2026-01-23",
+    "terms": [
+      "critical Vulnerability",
+      "Phish",
+      "react",
+      "CVE-2025-20393",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Phishing kits",
+        "url": "https://www.esecurityplanet.com/threats/flare-research-phishing-kits-now-operate-like-saas-platforms/?email_hash=0d7a7050906b225db2718485ca0f3472"
+      },
+      {
+        "term": "Phish",
+        "text": "Critical Vulnerabilities and Phishing Campaigns Dominate Cybersecurity Headlines",
+        "url": "https://www.esecurityplanet.com/weekly-roundup/critical-vulnerabilities-and-phishing-campaigns-dominate-cybersecurity-headlines/"
+      },
+      {
+        "term": "Phish",
+        "text": "Critical Vulnerabilities and Phishing Campaigns Dominate Cybersecurity Headlines",
+        "url": "https://www.esecurityplanet.com/weekly-roundup/critical-vulnerabilities-and-phishing-campaigns-dominate-cybersecurity-headlines/"
+      }
+    ]
+  },
+  {
+    "title": "CISA Adds Five Enterprise Software Flaws to Known Exploited Vulnerabilities Catalog",
+    "link": "https://thecyberexpress.com/cisa-adds-enterprise-software-flaws-to-kev/",
+    "date": "2026-01-23",
+    "terms": [
+      "Broadcom",
+      "CVE-2025-31125",
+      "CVE-2025-34026",
+      "CVE-2025-54313",
+      "CVE-2025-68645",
+      "CVE-2024-37079",
+      "cve-2025-34026",
+      "cve-2024-37079",
+      "cve-2025-68645",
+      "cve-2025-54313",
+      "cve-2025-31125"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-34026",
+        "text": "CVE-2025-34026",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026"
+      },
+      {
+        "term": "CVE-2024-37079",
+        "text": "CVE-2024-37079",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2024-37079"
+      },
+      {
+        "term": "CVE-2025-68645",
+        "text": "CVE-2025-68645",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645"
+      },
+      {
+        "term": "CVE-2025-54313",
+        "text": "CVE-2025-54313",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313"
+      },
+      {
+        "term": "CVE-2025-31125",
+        "text": "CVE-2025-31125",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2025-31125"
+      },
+      {
+        "term": "CVE-2025-34026",
+        "text": "CVE-2025-34026",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026"
+      },
+      {
+        "term": "CVE-2024-37079",
+        "text": "CVE-2024-37079",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2024-37079"
+      },
+      {
+        "term": "CVE-2025-68645",
+        "text": "CVE-2025-68645",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645"
+      },
+      {
+        "term": "CVE-2025-54313",
+        "text": "CVE-2025-54313",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313"
+      },
+      {
+        "term": "CVE-2025-31125",
+        "text": "CVE-2025-31125",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2025-31125"
+      }
+    ]
+  },
+  {
+    "title": "Fake Captcha Ecosystem Exploits Trusted Web Infrastructure to Deliver Malware",
+    "link": "https://cybersecuritynews.com/fake-captcha-ecosystem-exploits-trusted-web-infrastructure/",
+    "date": "2026-01-23",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "MacSync macOS Infostealer Leverage ClickFix-style Attack to Trick Users Pasting a Single Terminal Command",
+    "link": "https://cybersecuritynews.com/macsync-macos-infostealer-leverage-clickfix-style-attack/",
+    "date": "2026-01-23",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top 10 Best Data Security Companies in 2026",
+    "link": "https://cybersecuritynews.com/best-data-security-companies/",
+    "date": "2026-01-23",
+    "terms": [
+      "hunting",
+      "Salesforce"
     ],
     "inline_links": []
   },
@@ -865,20 +1321,11 @@
     "inline_links": []
   },
   {
-    "title": "ELKAIR.COM By clop",
+    "title": "AERIFY.IO By clop",
     "link": "https://www.ransomlook.io//group/clop",
     "date": "2026-01-22",
     "terms": [
       "CLOP"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Spiros Industries By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2026-01-22",
-    "terms": [
-      "akira"
     ],
     "inline_links": []
   },
@@ -948,11 +1395,11 @@
     "inline_links": []
   },
   {
-    "title": "Copetrol By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
+    "title": "Does your Staff Understand the Role of HIPAA Officers?",
+    "link": "https://www.hipaajournal.com/role-of-hipaa-officers/",
     "date": "2026-01-22",
     "terms": [
-      "qilin"
+      "Phish"
     ],
     "inline_links": []
   },
@@ -1284,15 +1731,6 @@
         "url": "https://cybersecuritynews.com/hackers-leveraging-compromised-email-server/"
       }
     ]
-  },
-  {
-    "title": "MODERNISTIC GARDEN & PET  SUPPLY LTD By sinobi",
-    "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2026-01-21",
-    "terms": [
-      "sinobi"
-    ],
-    "inline_links": []
   },
   {
     "title": "Bolttech By everest",
@@ -8106,6 +8544,33 @@
     ]
   },
   {
+    "title": "The Top Threat Actor Groups Targeting the Financial Sector",
+    "link": "https://flashpoint.io/blog/top-threat-actor-groups-targeting-financial-sector/",
+    "date": "2026-01-06",
+    "terms": [
+      "scattered spider",
+      "lazarus",
+      "akira",
+      "CLOP",
+      "Phish",
+      "Lockbit",
+      "phish",
+      "lockbit"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://flashpoint.io/intelligence-101/phishing/"
+      },
+      {
+        "term": "Lockbit",
+        "text": "LockBit",
+        "url": "https://flashpoint.io/blog/lockbit/"
+      }
+    ]
+  },
+  {
     "title": "5th January \u2013 Threat Intelligence Report",
     "link": "https://research.checkpoint.com/2026/5th-january-threat-intelligence-report/",
     "date": "2026-01-05",
@@ -11668,361 +12133,5 @@
         "url": "https://socradar.io/nominet-security-breach-ivanti-vpn-cve-2025-0282/"
       }
     ]
-  },
-  {
-    "title": "Evasive Panda APT poisons DNS requests to deliver MgBot",
-    "link": "https://securelist.com/evasive-panda-apt/118576/",
-    "date": "2025-12-24",
-    "terms": [
-      "CLOP",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cyber Experts Warn of Increased Consumer Scams This Festive Season",
-    "link": "https://www.itsecurityguru.org/2025/12/24/cyber-experts-warn-of-increased-consumer-scams-this-festive-season/?utm_source=rss&utm_medium=rss&utm_campaign=cyber-experts-warn-of-increased-consumer-scams-this-festive-season",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Webrat turns GitHub PoCs into a malware trap",
-    "link": "https://www.csoonline.com/article/4111531/webrat-turns-github-pocs-into-a-malware-trap.html",
-    "date": "2025-12-24",
-    "terms": [
-      "hunting",
-      "CVE-2025-59230",
-      "cve-2025-59230"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-59230",
-        "text": "CVE-2025-59230",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59230"
-      }
-    ]
-  },
-  {
-    "title": "Implementing NIS2 \u2014 without getting bogged down in red tape",
-    "link": "https://www.csoonline.com/article/4108294/implementing-nis2-without-ending-up-in-a-paper-war.html",
-    "date": "2025-12-24",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Interpol sweep takes down cybercrooks in 19 countries",
-    "link": "https://www.csoonline.com/article/4111324/interpol-sweep-takes-down-cybercrooks-in-19-countries.html",
-    "date": "2025-12-24",
-    "terms": [
-      "Canada",
-      "Canadian",
-      "Phish",
-      "Lockbit",
-      "react",
-      "lockbit"
-    ],
-    "inline_links": [
-      {
-        "term": "Lockbit",
-        "text": "taking down LockBit",
-        "url": "https://www.csoonline.com/article/1308503/lockbit-ransomware-operations-seized-by-law-enforcement-in-operation-cronos.html"
-      }
-    ]
-  },
-  {
-    "title": "Operation PCPcat Exploits Next.js and React, Impacting 59,000+ Servers",
-    "link": "https://gbhackers.com/operation-pcpcat-exploits-next-js-and-react/",
-    "date": "2025-12-24",
-    "terms": [
-      "react"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "Operation PCPcat Exploits Next.js and React, Impacting 59,000+ Servers",
-        "url": "https://gbhackers.com/operation-pcpcat-exploits-next-js-and-react/"
-      }
-    ]
-  },
-  {
-    "title": "INTERPOL Arrests 574 in Africa; Ukrainian Ransomware Affiliate Pleads Guilty",
-    "link": "https://thecyberpost.com/news/hackers/interpol-arrests-574-in-africa-ukrainian-ransomware-affiliate-pleads-guilty/",
-    "date": "2025-12-24",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "NPM registry abused in targeted Microsoft phishing campaign",
-    "link": "https://cyberinsider.com/npm-registry-abused-in-targeted-microsoft-phishing-campaign/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "NPM registry abused in targeted Microsoft phishing campaign",
-        "url": "https://cyberinsider.com/npm-registry-abused-in-targeted-microsoft-phishing-campaign/"
-      }
-    ]
-  },
-  {
-    "title": "59,000 Servers Breached: Operation PCPcat Targets React and Next.js at Internet Scale",
-    "link": "https://thecyberexpress.com/pcpcat-react-servers-nextjs-breach/",
-    "date": "2025-12-24",
-    "terms": [
-      "hunting",
-      "CL0P",
-      "react",
-      "CVE-2025-59287"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "React Servers",
-        "url": "https://thecyberexpress.com/amd-data-breach-on-dark-web/"
-      },
-      {
-        "term": "react",
-        "text": "React Servers",
-        "url": "https://thecyberexpress.com/amd-data-breach-on-dark-web/"
-      }
-    ]
-  },
-  {
-    "title": "The End of Excuses: 10 Cybersecurity Investments Every CISO Must Make by 2026",
-    "link": "https://thecyberexpress.com/2026-10-technologies-cisos-will-invest-in/",
-    "date": "2025-12-24",
-    "terms": [
-      "hunting",
-      "react"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "threat hunting",
-        "url": "https://cyble.com/knowledge-hub/what-is-threat-hunting/"
-      },
-      {
-        "term": "hunting",
-        "text": "threat hunting",
-        "url": "https://cyble.com/knowledge-hub/what-is-threat-hunting/"
-      }
-    ]
-  },
-  {
-    "title": "Indian Vehicle Owners Warned as Browser-Based e-Challan Phishing Gains Momentum",
-    "link": "https://thecyberexpress.com/rto-scam-browser-based-e-challan-phishing/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
-      }
-    ]
-  },
-  {
-    "title": "Spotify Disables Accounts After Open-Source Group Scrapes 86 Million Songs",
-    "link": "https://thecyberexpress.com/spotify-scraping-disables-linked-accounts/",
-    "date": "2025-12-24",
-    "terms": [
-      "genesis"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "U.S. Authorities Seize Domain Linked to $28 Million Bank Account Takeover Fraud",
-    "link": "https://thecyberexpress.com/bank-account-takeover-fraud/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://thecyberexpress.com/targeted-phishing-attacks-hit-swiss-users/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://thecyberexpress.com/targeted-phishing-attacks-hit-swiss-users/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
-      }
-    ]
-  },
-  {
-    "title": "Threat Actors Using Weaponized AV-themed Word and PDF Documents to Attack Israeli Organizations",
-    "link": "https://cybersecuritynews.com/threat-actors-using-weaponized-av-themed-word/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "One Year Of Zero-Click Exploits: What 2025 Taught Us About Modern Malware",
-    "link": "https://cybersecuritynews.com/one-year-of-zero-click-exploits/",
-    "date": "2025-12-24",
-    "terms": [
-      "hunting",
-      "OpenAI",
-      "React2shell",
-      "react",
-      "CVE-2025-21298",
-      "CVE-2025-21042",
-      "CVE-2025-43200",
-      "CVE-2025-43300",
-      "CVE-2025-55177",
-      "CVE-2025-55182",
-      "cve-2025-43300",
-      "cve-2025-55177",
-      "cve-2025-43200",
-      "cve-2025-21042",
-      "cve-2025-21298",
-      "react2shell"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-43300",
-        "text": "CVE-2025-43300",
-        "url": "https://cybersecuritynews.com/whatsapp-0-click-vulnerability-exploited/"
-      },
-      {
-        "term": "CVE-2025-55177",
-        "text": "CVE-2025-55177",
-        "url": "https://cybersecuritynews.com/whatsapp-0-click-vulnerability-exploited/"
-      },
-      {
-        "term": "CVE-2025-43200",
-        "text": "CVE-2025-43200",
-        "url": "https://cybersecuritynews.com/cisa-warns-of-ios-0-click-vulnerability/"
-      },
-      {
-        "term": "CVE-2025-21042",
-        "text": "CVE-2025-21042",
-        "url": "https://cybersecuritynews.com/samsung-0-day-rce-vulnerability-exploited/"
-      },
-      {
-        "term": "CVE-2025-21298",
-        "text": "CVE-2025-21298",
-        "url": "https://cybersecuritynews.com/outlook-zero-click-rce-vulnerability-cve-2025-21298/"
-      },
-      {
-        "term": "React2shell",
-        "text": "React2Shell vul",
-        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
-      },
-      {
-        "term": "react",
-        "text": "React2Shell vul",
-        "url": "https://cybersecuritynews.com/hackers-exploit-react2shell-vulnerability/"
-      }
-    ]
-  },
-  {
-    "title": "Interpol Taken Down 6 Ransomware Variants and Arrested 500+ Suspects",
-    "link": "https://cybersecuritynews.com/interpol-taken-6-ransomware-variants-arrested/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing campaign",
-        "url": "https://cybersecuritynews.com/malicious-svgs-in-phishing-campaigns-how-to-detect-hidden-redirects-and-payloads/"
-      }
-    ]
-  },
-  {
-    "title": "Operation PCPcat Hacked 59,000+ Next.js/React Servers Within 48 Hours",
-    "link": "https://cybersecuritynews.com/pcpcat-hacked-next-js-servers/",
-    "date": "2025-12-24",
-    "terms": [
-      "IOC",
-      "hunting",
-      "React2shell",
-      "react"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "Operation PCPcat Hacked 59,000+ Next.js/React Servers Within 48 Hours",
-        "url": "https://cybersecuritynews.com/pcpcat-hacked-next-js-servers/"
-      },
-      {
-        "term": "react",
-        "text": "Operation PCPcat Hacked 59,000+ Next.js/React Servers Within 48 Hours",
-        "url": "https://cybersecuritynews.com/pcpcat-hacked-next-js-servers/"
-      }
-    ]
-  },
-  {
-    "title": "FBI seized \u2018web3adspanels.org\u2019 hosting stolen logins",
-    "link": "https://securityaffairs.com/186094/cyber-crime/fbi-seized-web3adspanels-org-hosting-stolen-logins.html",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Net-SNMP Vulnerability Triggers Buffer Overflow, Crashing the Daemon",
-    "link": "https://gbhackers.com/net-snmp-vulnerability-triggers-buffer-overflow/",
-    "date": "2025-12-24",
-    "terms": [
-      "Zero Day"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Agencies Across Africa Arrest 574, Recover $3 Million in Cybercrime Crackdown",
-    "link": "https://thecyberexpress.com/africa-574-arrested-in-cybercrime-crackdown/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Managed Endpoint Security for Modern IT Environments",
-    "link": "https://blog.comodo.com/endpoint-security/managed-endpoint-security/",
-    "date": "2025-12-24",
-    "terms": [
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
   }
 ]
