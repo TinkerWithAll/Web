@@ -1,5 +1,78 @@
 [
   {
+    "title": "Security Affairs newsletter Round 560 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+    "link": "https://securityaffairs.com/187290/breaking-news/security-affairs-newsletter-round-560-by-pierluigi-paganini-international-edition.html",
+    "date": "2026-01-25",
+    "terms": [
+      "Zero Day",
+      "Broadcom",
+      "Phish",
+      "CVE-2024-37079",
+      "broadcom",
+      "zero day",
+      "phish",
+      "cve-2024-37079"
+    ],
+    "inline_links": [
+      {
+        "term": "Broadcom",
+        "text": "U.S. CISA adds a flaw in Broadcom VMware vCenter Server to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/187267/security/u-s-cisa-adds-a-flaw-in-broadcom-vmware-vcenter-server-to-its-known-exploited-vulnerabilities-catalog.html"
+      },
+      {
+        "term": "Zero Day",
+        "text": "Cisco fixed actively exploited Unified Communications zero day",
+        "url": "https://securityaffairs.com/187177/security/cisco-fixed-actively-exploited-unified-communications-zero-day.html"
+      },
+      {
+        "term": "Phish",
+        "text": "Resurgence of a multi\u2011stage AiTM phishing and BEC campaign abusing SharePoint",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/"
+      },
+      {
+        "term": "CVE-2024-37079",
+        "text": "CISA Adds Actively Exploited VMware vCenter Flaw CVE-2024-37079 to KEV Catalog",
+        "url": "https://thehackernews.com/2026/01/cisa-adds-actively-exploited-vmware.html"
+      },
+      {
+        "term": "Phish",
+        "text": "New Phishing Campaign Targeting LastPass Customers",
+        "url": "https://blog.lastpass.com/posts/new-phishing-campaign-targeting-lastpass-customers"
+      }
+    ]
+  },
+  {
+    "title": "Multi-Stage Phishing Campaign Targets Russia with Amnesia RAT and Ransomware",
+    "link": "https://thecyberpost.com/news/hackers/multi-stage-phishing-campaign-targets-russia-with-amnesia-rat-and-ransomware/",
+    "date": "2026-01-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
+    "link": "https://cybersecuritynews.com/rn-typo-phishing-attack/",
+    "date": "2026-01-25",
+    "terms": [
+      "IOC",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
+        "url": "https://cybersecuritynews.com/rn-typo-phishing-attack/"
+      },
+      {
+        "term": "Phish",
+        "text": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
+        "url": "https://cybersecuritynews.com/rn-typo-phishing-attack/"
+      }
+    ]
+  },
+  {
     "title": "Multi-Stage Phishing Campaign Targets Russia with Amnesia RAT and Ransomware",
     "link": "https://thehackernews.com/2026/01/multi-stage-phishing-campaign-targets.html",
     "date": "2026-01-24",
@@ -95,6 +168,42 @@
       "Phish"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Osiris ransomware emerges, leveraging BYOVD technique to kill security tools",
+    "link": "https://securityaffairs.com/187279/security/osiris-ransomware-emerges-leveraging-byovd-technique-to-kill-security-tools.html",
+    "date": "2026-01-24",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Researchers Uncover Multi-Stage AiTM Attack Using SharePoint to Bypass Security Controls",
+    "link": "https://gbhackers.com/aitm-attack-using-sharepoint-bypass/",
+    "date": "2026-01-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Warns of Critical VMware vCenter RCE Vulnerability Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/vmware-vcenter-rce-vulnerability/",
+    "date": "2026-01-24",
+    "terms": [
+      "critical Vulnerability",
+      "Broadcom",
+      "CVE-2024-37079",
+      "cve-2024-37079"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-37079",
+        "text": "CVE-2024-37079",
+        "url": "https://cybersecuritynews.com/multiple-vmware-vcenter-server-flaws/"
+      }
+    ]
   },
   {
     "title": "Phishing Attack Uses Stolen Credentials to Install LogMeIn RMM for Persistent Access",
@@ -494,7 +603,7 @@
     "inline_links": []
   },
   {
-    "title": "Aschwanden & Partner By akira",
+    "title": "IGI Global By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-01-23",
     "terms": [
@@ -11895,242 +12004,6 @@
         "term": "CVE-2025-14847",
         "text": "CVE-2025-14847",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-14847"
-      }
-    ]
-  },
-  {
-    "title": "Fortinet Warns of Active Exploitation of FortiOS SSL VPN 2FA Bypass Vulnerability",
-    "link": "https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html",
-    "date": "2025-12-25",
-    "terms": [
-      "CVE-2020-12812"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Flags Actively Exploited Digiever NVR Vulnerability Allowing Remote Code Execution",
-    "link": "https://thehackernews.com/2025/12/cisa-flags-actively-exploited-digiever.html",
-    "date": "2025-12-25",
-    "terms": [
-      "CVE-2023-52163"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Threat landscape for industrial automation systems in Q3 2025",
-    "link": "https://securelist.com/industrial-threat-report-q3-2025/118602/",
-    "date": "2025-12-25",
-    "terms": [
-      "Phish",
-      "CVE-2017-11882"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Attacks are Evolving: 3 Ways to Protect Your Business in 2026",
-    "link": "https://thecyberpost.com/news/hackers/attacks-are-evolving-3-ways-to-protect-your-business-in-2026/",
-    "date": "2025-12-25",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "100+ Cybersecurity Predictions 2026 for Industry Experts as the AI Adapted in the Wild",
-    "link": "https://cybersecuritynews.com/cybersecurity-predictions-2026/",
-    "date": "2025-12-25",
-    "terms": [
-      "Phish",
-      "react",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cybersecuritynews.com/phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Net-SNMP Vulnerability Enables Buffer Overflow and the Daemon to Crash",
-    "link": "https://cybersecuritynews.com/net-snmp-vulnerability/",
-    "date": "2025-12-25",
-    "terms": [
-      "critical Vulnerability",
-      "Zero Day",
-      "zero day"
-    ],
-    "inline_links": [
-      {
-        "term": "Zero Day",
-        "text": "Zero Day",
-        "url": "https://cybersecuritynews.com/windows-lnk-vulnerability-abused-by-hackers/"
-      }
-    ]
-  },
-  {
-    "title": "Hackers Exploiting Three-Year-Old FortiGate Vulnerability to Bypass 2FA on Firewalls",
-    "link": "https://cybersecuritynews.com/fortigate-firewall-vulnerability/",
-    "date": "2025-12-25",
-    "terms": [
-      "CVE-2020-12812",
-      "cve-2020-12812"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2020-12812",
-        "text": "CVE-2020-12812",
-        "url": "https://cybersecuritynews.com/top-30-most-targeted-vulnerabilities/"
-      }
-    ]
-  },
-  {
-    "title": "Five-year-old Fortinet FortiOS SSL VPN vulnerability actively exploited",
-    "link": "https://securityaffairs.com/186117/security/five-year-old-fortinet-fortios-ssl-vpn-flaw-actively-exploited.html",
-    "date": "2025-12-25",
-    "terms": [
-      "CVE-2018-13379",
-      "CVE-2019-5591",
-      "CVE-2020-12812",
-      "cve-2020-12812",
-      "cve-2018-13379",
-      "cve-2019-5591"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2020-12812",
-        "text": "CVE-2020-12812",
-        "url": "https://securityaffairs.com/tag/cve-2020-12812"
-      },
-      {
-        "term": "CVE-2018-13379",
-        "text": "CVE-2018-13379",
-        "url": "https://securityaffairs.co/wordpress/124683/apt/iran-linked-apt-groups.html"
-      },
-      {
-        "term": "CVE-2019-5591",
-        "text": "CVE-2019-5591",
-        "url": "https://securityaffairs.co/wordpress/120644/hacking/top-routinely-flaws-exploited.html"
-      },
-      {
-        "term": "CVE-2020-12812",
-        "text": "CVE-2020-12812",
-        "url": "https://securityaffairs.co/wordpress/116274/hacking/fortinet-fortios-attack.html"
-      }
-    ]
-  },
-  {
-    "title": "Chrysler falls victim to Everest Ransomware",
-    "link": "https://darkwebinformer.com/chrysler-falls-victim-to-everest-ransomware/",
-    "date": "2025-12-25",
-    "terms": [
-      "Everest",
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Unpatched FortiGate Security Flaw Allows Attackers to Bypass 2FA Controls",
-    "link": "https://gbhackers.com/unpatched-fortigate-security-flaw/",
-    "date": "2025-12-25",
-    "terms": [
-      "CVE-2020-12812"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Top 10 CVEs of 2025: High-Impact Vulnerabilities & Exploitation Trends",
-    "link": "https://socradar.io/blog/top-10-cves-of-2025-vulnerabilities-trends/",
-    "date": "2025-12-25",
-    "terms": [
-      "CL0P",
-      "React2shell",
-      "react",
-      "CVE-2023-36563",
-      "CVE-2023-41763",
-      "CVE-2023-44487",
-      "CVE-2025-0282",
-      "CVE-2025-10035",
-      "CVE-2025-53690",
-      "CVE-2025-53770",
-      "CVE-2025-5777",
-      "CVE-2025-61882",
-      "CVE-2025-61884",
-      "CVE-2025-64446",
-      "CVE-2025-55182",
-      "react2shell",
-      "cve-2025-64446",
-      "cve-2025-61882",
-      "cl0p",
-      "cve-2025-61884",
-      "cve-2025-10035",
-      "cve-2025-53690",
-      "cve-2023-44487",
-      "cve-2025-53770",
-      "cve-2025-5777",
-      "cve-2025-0282"
-    ],
-    "inline_links": [
-      {
-        "term": "React2shell",
-        "text": "React2Shell",
-        "url": "https://socradar.io/blog/react2shell-rce-flaw-react-nextjs/"
-      },
-      {
-        "term": "react",
-        "text": "React2Shell",
-        "url": "https://socradar.io/blog/react2shell-rce-flaw-react-nextjs/"
-      },
-      {
-        "term": "CVE-2025-64446",
-        "text": "CVE-2025-64446",
-        "url": "https://socradar.io/fortiweb-path-traversal-exploit-actively-targeted/"
-      },
-      {
-        "term": "CVE-2025-61882",
-        "text": "CVE-2025-61882",
-        "url": "https://socradar.io/cve-2025-61882-oracle-e-business-suite-exploited/"
-      },
-      {
-        "term": "CL0P",
-        "text": "Cl0p-linked activity",
-        "url": "https://socradar.io/cl0p-oracle-ebs-zeroday-campaign/"
-      },
-      {
-        "term": "CVE-2025-61884",
-        "text": "CVE-2025-61884",
-        "url": "https://socradar.io/cve-2025-61884-oracle-e-business-suite-vulnerability/"
-      },
-      {
-        "term": "CVE-2025-10035",
-        "text": "CVE-2025-10035",
-        "url": "https://socradar.io/cve-2025-10035-goanywhere-mft-flaw-command-injection/"
-      },
-      {
-        "term": "CVE-2025-53690",
-        "text": "CVE-2025-53690",
-        "url": "https://socradar.io/cve-2025-53690-sitecore-deployments-weepsteel-malware/"
-      },
-      {
-        "term": "CVE-2023-44487",
-        "text": "HTTP/2 Rapid Reset vulnerability (CVE-2023-44487)",
-        "url": "https://socradar.io/blog/rapid-reset-ddos-attacks-rise-october-2023-patch-tuesday-has-arrived-cve-2023-36563-cve-2023-41763-cve-2023-44487/"
-      },
-      {
-        "term": "CVE-2025-53770",
-        "text": "ToolShell zero-day (CVE-2025-53770)",
-        "url": "https://socradar.io/toolshell-sharepoint-zero-day-cve-2025-53770/"
-      },
-      {
-        "term": "CVE-2025-5777",
-        "text": "CitrixBleed 2 (CVE-2025-5777)",
-        "url": "https://socradar.io/cve-2025-5777-citrixbleed-2-netscaler-gateway-devices/"
-      },
-      {
-        "term": "CVE-2025-0282",
-        "text": "CVE-2025-0282",
-        "url": "https://socradar.io/nominet-security-breach-ivanti-vpn-cve-2025-0282/"
       }
     ]
   }
