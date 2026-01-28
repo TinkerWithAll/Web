@@ -95,8 +95,10 @@
       "CVE-2025-34026",
       "CVE-2024-37079",
       "CVE-2026-21509",
+      "CVE-2026-24858",
       "cve-2024-37079",
       "cve-2026-21509",
+      "cve-2026-24858",
       "cve-2025-34026",
       "cve-2025-12420",
       "cve-2025-43529",
@@ -112,6 +114,11 @@
         "term": "CVE-2026-21509",
         "text": "CVE-2026-21509",
         "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
+      },
+      {
+        "term": "CVE-2026-24858",
+        "text": "CVE-2026-24858",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24858"
       },
       {
         "term": "CVE-2025-34026",
@@ -279,6 +286,70 @@
     "date": "2026-01-28",
     "terms": [
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "HIPAA Training for IT Professionals",
+    "link": "https://www.hipaajournal.com/hipaa-training-for-it-professionals/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Massives Datenleck bedroht rund 150 Millionen Benutzer",
+    "link": "https://www.csoonline.com/article/4123589/massives-datenleck-bedroht-rund-150-millionen-benutzer.html",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cybercriminals Leverage AI-Generated Malicious Job Offers to Spread PureRAT Malware",
+    "link": "https://gbhackers.com/purerat-malware/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical IDIS IP Camera Vulnerability Allows Full Computer Compromise with One-Click Exploit",
+    "link": "https://gbhackers.com/idis-ip-camera-vulnerability/",
+    "date": "2026-01-28",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cybercriminals Exploit Canadians\u2019 Dependence on Digital Services in Widespread Attacks",
+    "link": "https://gbhackers.com/canadians-dependence/",
+    "date": "2026-01-28",
+    "terms": [
+      "Canada",
+      "Canadian",
+      "Phish",
+      "canadian"
+    ],
+    "inline_links": [
+      {
+        "term": "Canadian",
+        "text": "Cybercriminals Exploit Canadians\u2019 Dependence on Digital Services in Widespread Attacks",
+        "url": "https://gbhackers.com/canadians-dependence/"
+      }
+    ]
+  },
+  {
+    "title": "Smarter Security, Smaller Teams: Building Resilience with Limited Resources",
+    "link": "https://www.esecurityplanet.com/security/smarter-security-smaller-teams-building-resilience-with-limited-resources/",
+    "date": "2026-01-28",
+    "terms": [
+      "IOC",
+      "react"
     ],
     "inline_links": []
   },
