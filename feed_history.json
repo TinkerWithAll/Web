@@ -1,5 +1,288 @@
 [
   {
+    "title": "M-B.LAW By clop",
+    "link": "https://www.ransomlook.io//group/clop",
+    "date": "2026-01-28",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "FIAMPACK By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2026-01-28",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Password Reuse in Disguise: An Often-Missed Risky Workaround",
+    "link": "https://thehackernews.com/2026/01/password-reuse-in-disguise-often-missed.html",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Warns of Active Exploitation of WinRAR Vulnerability CVE-2025-8088",
+    "link": "https://thehackernews.com/2026/01/google-warns-of-active-exploitation-of.html",
+    "date": "2026-01-28",
+    "terms": [
+      "CVE-2025-8088"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet Patches CVE-2026-24858 After Active FortiOS SSO Exploitation Detected",
+    "link": "https://thehackernews.com/2026/01/fortinet-patches-cve-2026-24858-after.html",
+    "date": "2026-01-28",
+    "terms": [
+      "CVE-2026-24858"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "APTs, Cybercriminals Widely Exploiting WinRAR Vulnerability",
+    "link": "https://www.securityweek.com/apts-cybercriminals-widely-exploiting-winrar-vulnerability/",
+    "date": "2026-01-28",
+    "terms": [
+      "CVE-2025-8088"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fortinet Patches Exploited FortiCloud SSO Authentication Bypass",
+    "link": "https://www.securityweek.com/fortinet-patches-exploited-forticloud-sso-authentication-bypass/",
+    "date": "2026-01-28",
+    "terms": [
+      "CVE-2026-24858"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Yubico extends hardware passkey deployment options",
+    "link": "https://www.helpnetsecurity.com/2026/01/28/yubikeys-self-service-ordering-feature/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CVE-2026-24858: Fortinet Multiple Products Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "link": "https://darkwebinformer.com/cve-2026-24858-fortinet-multiple-products-authentication-bypass-using-an-alternate-path-or-channel-vulnerability-severity-critical-cvss-9-8-zero-day-yes-cve-published-january-27th-2026/",
+    "date": "2026-01-28",
+    "terms": [
+      "Zero Day",
+      "CVE-2026-24858"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Week in\u00a0Vulnerabilities:\u00a0Cyble\u00a0Urges Oracle, OpenStack Fixes",
+    "link": "https://cyble.com/blog/week-in-vulnerabilities-oracle-openstack/",
+    "date": "2026-01-28",
+    "terms": [
+      "Broadcom",
+      "Salesforce",
+      "ServiceNow",
+      "CVE-2025-12420",
+      "CVE-2025-14174",
+      "CVE-2025-43529",
+      "CVE-2025-34026",
+      "CVE-2024-37079",
+      "CVE-2026-21509",
+      "cve-2024-37079",
+      "cve-2026-21509",
+      "cve-2025-34026",
+      "cve-2025-12420",
+      "cve-2025-43529",
+      "cve-2025-14174"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-37079",
+        "text": "CVE-2024-37079",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2024-37079"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
+      },
+      {
+        "term": "CVE-2025-34026",
+        "text": "CVE-2025-34026",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026"
+      },
+      {
+        "term": "CVE-2025-12420",
+        "text": "CVE-2025-12420",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12420"
+      },
+      {
+        "term": "CVE-2025-43529",
+        "text": "CVE-2025-43529",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43529"
+      },
+      {
+        "term": "CVE-2025-14174",
+        "text": "CVE-2025-14174",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14174"
+      }
+    ]
+  },
+  {
+    "title": "Critical FortiCloud SSO zero\u2011day forces emergency service disablement at Fortinet",
+    "link": "https://www.csoonline.com/article/4123500/critical-forticloud-sso-zero%e2%80%91day-forces-emergency-service-disablement-at-fortinet.html",
+    "date": "2026-01-28",
+    "terms": [
+      "CVE-2025-59718",
+      "CVE-2026-24858",
+      "cve-2026-24858"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-24858",
+        "text": "CVE-2026-24858",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-24858"
+      }
+    ]
+  },
+  {
+    "title": "Diese Unternehmen hat es schon erwischt",
+    "link": "https://www.csoonline.com/article/3577944/diese-unternehmen-hats-schon-erwischt.html",
+    "date": "2026-01-28",
+    "terms": [
+      "Zero Day",
+      "Phish",
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "AI-powered polymorphic attack lures victims to phishing webpages",
+    "link": "https://www.csoonline.com/article/4123217/ai-powered-polymorphic-attacks-lures-victims-to-phishing-webpages.html",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "AHA Releases New Guides to Strengthen Hospital Emergency and Cyber Preparedness",
+    "link": "https://thecyberexpress.com/cyber-preparedness-in-healthcare/",
+    "date": "2026-01-28",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Exploit React2Shell Vulnerability to Deploy Miners and Botnets Worldwide",
+    "link": "https://thecyberexpress.com/cve-2025-55182-react2shell-active-exploitation/",
+    "date": "2026-01-28",
+    "terms": [
+      "critical Vulnerability",
+      "React2shell",
+      "react",
+      "CVE-2025-30066",
+      "CVE-2025-55182",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "React2Shell vulnerability",
+        "url": "https://thecyberexpress.com/react2shell-flaw-exploited-by-chinese-groups/"
+      },
+      {
+        "term": "react",
+        "text": "React2Shell vulnerability",
+        "url": "https://thecyberexpress.com/react2shell-flaw-exploited-by-chinese-groups/"
+      },
+      {
+        "term": "React2shell",
+        "text": "React2Shell vulnerability",
+        "url": "https://thecyberexpress.com/react2shell-flaw-exploited-by-chinese-groups/"
+      },
+      {
+        "term": "react",
+        "text": "React2Shell vulnerability",
+        "url": "https://thecyberexpress.com/react2shell-flaw-exploited-by-chinese-groups/"
+      }
+    ]
+  },
+  {
+    "title": "SoundCloud Data Breach Exposes 29.8 Million Personal users Details",
+    "link": "https://cybersecuritynews.com/soundcloud-breach-exposes-users-details/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cybersecuritynews.com/phishing-attack/"
+      }
+    ]
+  },
+  {
+    "title": "Fortinet Confirms Critical FortiCloud SSO Vulnerability(CVE-2026-24858) Actively Exploited in the Wild",
+    "link": "https://cybersecuritynews.com/fortinet-forticloud-sso-vulnerability/",
+    "date": "2026-01-28",
+    "terms": [
+      "IOC",
+      "hunting",
+      "CVE-2026-24858",
+      "cve-2026-24858"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-24858",
+        "text": "Fortinet Confirms Critical FortiCloud SSO Vulnerability(CVE-2026-24858) Actively Exploited in the Wild",
+        "url": "https://cybersecuritynews.com/fortinet-forticloud-sso-vulnerability/"
+      },
+      {
+        "term": "CVE-2026-24858",
+        "text": "Fortinet Confirms Critical FortiCloud SSO Vulnerability(CVE-2026-24858) Actively Exploited in the Wild",
+        "url": "https://cybersecuritynews.com/fortinet-forticloud-sso-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Nike Investigating Data Breach Following WorldLeaks Ransomware Group Claim",
+    "link": "https://cybersecuritynews.com/nike-investigates-data-breach/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "WhatsApp Denies Lawsuit Claim and Confirms Messages are Device-encrypted and Private",
+    "link": "https://cybersecuritynews.com/whatsapp-denies-lawsuit-claim/",
+    "date": "2026-01-28",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "WhatsApp New Strict Account Settings Option to Protect Your Account from Hackers",
+    "link": "https://cybersecuritynews.com/whatsapp-strict-account-settings/",
+    "date": "2026-01-28",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "IMA Diligence Services (A Division of IMA Financial Group) By genesis",
     "link": "https://www.ransomlook.io//group/genesis",
     "date": "2026-01-27",
@@ -363,6 +646,378 @@
         "term": "Phish",
         "text": "New Deepfake Phishing Attack Via Zoom or Microsoft Teams Call Attacking Bitcoin Users",
         "url": "https://cybersecuritynews.com/new-deepfake-phishing-attack-via-zoom/"
+      }
+    ]
+  },
+  {
+    "title": "'Stanley' Toolkit Turns Chrome Into Undetectable Phishing Vector",
+    "link": "https://www.darkreading.com/remote-workforce/stanley-toolkit-chrome-undetectable-phishing",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Over 100 Organizations Targeted in ShinyHunters Phishing Campaign",
+    "link": "https://www.securityweek.com/over-100-organizations-targeted-in-shinyhunters-phishing-campaign/",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Over 100 Organizations Targeted in ShinyHunters Phishing Campaign",
+        "url": "https://www.securityweek.com/over-100-organizations-targeted-in-shinyhunters-phishing-campaign/"
+      }
+    ]
+  },
+  {
+    "title": "Meet Prism, OpenAI's free research workspace for scientists - how to try it",
+    "link": "https://www.zdnet.com/article/openai-prism-free-science/",
+    "date": "2026-01-27",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Shadowserver finds 6,000+ likely vulnerable SmarterMail servers exposed online",
+    "link": "https://securityaffairs.com/187394/hacking/shadowserver-finds-6000-likely-vulnerable-smartermail-servers-exposed-online.html",
+    "date": "2026-01-27",
+    "terms": [
+      "Canada",
+      "CVE-2026-23760",
+      "cve-2026-23760"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-23760",
+        "text": "CVE-2026-23760",
+        "url": "https://securityaffairs.com/187375/security/u-s-cisa-adds-microsoft-office-gnu-inetutils-smartertools-smartermail-and-linux-kernel-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
+      }
+    ]
+  },
+  {
+    "title": "U.S. CISA adds Microsoft Office, GNU InetUtils,\u00a0SmarterTools SmarterMail, and Linux Kernel flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/187375/security/u-s-cisa-adds-microsoft-office-gnu-inetutils-smartertools-smartermail-and-linux-kernel-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-01-27",
+    "terms": [
+      "critical Vulnerability",
+      "CVE-2018-14634",
+      "CVE-2025-52691",
+      "CVE-2026-21509",
+      "CVE-2026-23760",
+      "CVE-2026-24061",
+      "cve-2018-14634",
+      "cve-2025-52691",
+      "cve-2026-21509",
+      "cve-2026-23760",
+      "cve-2026-24061",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2018-14634",
+        "text": "CVE-2018-14634",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2018-14634"
+      },
+      {
+        "term": "CVE-2025-52691",
+        "text": "CVE-2025-52691",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-52691"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21509"
+      },
+      {
+        "term": "CVE-2026-23760",
+        "text": "CVE-2026-23760",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-23760"
+      },
+      {
+        "term": "CVE-2026-24061",
+        "text": "CVE-2026-24061",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-24061"
+      },
+      {
+        "term": "CVE-2018-14634",
+        "text": "CVE-2018-14634",
+        "url": "https://securityaffairs.com/76591/hacking/mutagen-astronomy-linux-flaw.html"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://securityaffairs.com/187349/hacking/emergency-microsoft-update-fixes-in-the-wild-office-zero-day.html"
+      },
+      {
+        "term": "critical Vulnerability",
+        "text": "critical vulnerability, tracked as CVE-2026-24061 (CVSS score of 9.8)",
+        "url": "https://securityaffairs.com/187255/security/11-year-old-critical-telnetd-flaw-found-in-gnu-inetutils-cve-2026-24061.html"
+      },
+      {
+        "term": "CVE-2026-24061",
+        "text": "critical vulnerability, tracked as CVE-2026-24061 (CVSS score of 9.8)",
+        "url": "https://securityaffairs.com/187255/security/11-year-old-critical-telnetd-flaw-found-in-gnu-inetutils-cve-2026-24061.html"
+      },
+      {
+        "term": "CVE-2025-52691",
+        "text": "CVE-2025-52691",
+        "url": "https://securityaffairs.com/186353/security/singapore-csa-warns-of-maximun-severity-smartermail-rce-flaw.html"
+      },
+      {
+        "term": "CVE-2026-23760",
+        "text": "CVE-2026-23760",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-23760"
+      }
+    ]
+  },
+  {
+    "title": "Widespread GNU InetUtils telnetd compromise likely amid PoC exploit release",
+    "link": "https://www.scworld.com/brief/widespread-gnu-inetutils-telnetd-compromise-likely-amid-poc-exploit-release",
+    "date": "2026-01-27",
+    "terms": [
+      "CVE-2026-24061"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Actively exploited Microsoft Office zero-day fixed",
+    "link": "https://www.scworld.com/brief/actively-exploited-microsoft-office-zero-day-fixed",
+    "date": "2026-01-27",
+    "terms": [
+      "CVE-2026-21509"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Clop ransomware gang purports Hilton breach",
+    "link": "https://www.scworld.com/brief/clop-ransomware-gang-purports-hilton-breach",
+    "date": "2026-01-27",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Watch out for AT&amp;T rewards phishing text that wants your personal details",
+    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/01/watch-out-for-att-rewards-phishing-text-that-wants-your-personal-details",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Mitchell County Dept. Social Services; 360 Dental; GiaCare Announce Data Breaches",
+    "link": "https://www.hipaajournal.com/mitchell-county-social-services-360-dental-giacare-data-breaches/",
+    "date": "2026-01-27",
+    "terms": [
+      "CL0P"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New Zealand E-commerce Store CMS Admin Access Allegedly for Sale with Active Payment Redirect",
+    "link": "https://darkwebinformer.com/new-zealand-e-commerce-store-cms-admin-access-allegedly-for-sale-with-active-payment-redirect/",
+    "date": "2026-01-27",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Unauthorized RDP Access to Spanish Business Services Organization Allegedly for Sale with Domain Admin Privileges",
+    "link": "https://darkwebinformer.com/unauthorized-rdp-access-to-spanish-business-services-organization-allegedly-for-sale-with-domain-admin-privileges/",
+    "date": "2026-01-27",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Office vulnerability (CVE-2026-21509) in active exploitation",
+    "link": "https://www.sophos.com/en-us/blog/microsoft-office-vulnerability-cve-2026-21509-in-active-exploitation",
+    "date": "2026-01-27",
+    "terms": [
+      "CVE-2026-21509"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fighting The Next Evolution of Email Threats With Layered, AI-Driven Security",
+    "link": "https://www.itsecurityguru.org/2026/01/27/fighting-the-next-evolution-of-email-threats-with-layered-ai-driven-security/?utm_source=rss&utm_medium=rss&utm_campaign=fighting-the-next-evolution-of-email-threats-with-layered-ai-driven-security",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fixes released for a serious Microsoft Office zero-day flaw",
+    "link": "https://www.csoonline.com/article/4123146/fixes-released-for-a-serious-microsoft-office-zero-day-flaw-2.html",
+    "date": "2026-01-27",
+    "terms": [
+      "Zero Day",
+      "CVE-2026-21509",
+      "cve-2026-21509"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21509"
+      }
+    ]
+  },
+  {
+    "title": "ShinyHunters Group Targets Over 100 Enterprises, Including Canva, Atlassian, and Epic Games",
+    "link": "https://gbhackers.com/shinyhunters-group/",
+    "date": "2026-01-27",
+    "terms": [
+      "scattered spider",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical vm2 Flaw Lets Attackers Bypass Sandbox and Execute Arbitrary Code in Node.js",
+    "link": "https://gbhackers.com/critical-vm2-flaw-arbitrary-code-in-node-js/",
+    "date": "2026-01-27",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Over 6,000 SmarterMail Servers Exposed to Actively Exploited RCE Vulnerability",
+    "link": "https://gbhackers.com/over-6000-smartermail-servers-exposed/",
+    "date": "2026-01-27",
+    "terms": [
+      "CVE-2026-23760"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Attackers Exploit React2Shell Vulnerability to Target IT Sector Systems",
+    "link": "https://gbhackers.com/react2shell-vulnerability-4/",
+    "date": "2026-01-27",
+    "terms": [
+      "critical Vulnerability",
+      "React2shell",
+      "react",
+      "react2shell"
+    ],
+    "inline_links": [
+      {
+        "term": "React2shell",
+        "text": "Attackers Exploit React2Shell Vulnerability to Target IT Sector Systems",
+        "url": "https://gbhackers.com/react2shell-vulnerability-4/"
+      },
+      {
+        "term": "react",
+        "text": "Attackers Exploit React2Shell Vulnerability to Target IT Sector Systems",
+        "url": "https://gbhackers.com/react2shell-vulnerability-4/"
+      }
+    ]
+  },
+  {
+    "title": "New Deepfake Phishing Attack Targets Bitcoin Users via Zoom and Teams",
+    "link": "https://gbhackers.com/deepfake-phishing/",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "New Deepfake Phishing Attack Targets Bitcoin Users via Zoom and Teams",
+        "url": "https://gbhackers.com/deepfake-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "The AI Fix #85: ChatGPT gets ads, pets get AI therapists, and everyone\u2019s wrong about LLMs",
+    "link": "https://grahamcluley.com/the-ai-fix-85/",
+    "date": "2026-01-27",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Nike Investigates Alleged Data Breach Tied to World Leaks",
+    "link": "https://www.esecurityplanet.com/threats/nike-investigates-alleged-data-breach-tied-to-world-leaks/",
+    "date": "2026-01-27",
+    "terms": [
+      "Canada",
+      "Phish",
+      "sonicwall"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Shadow AI and the Growing Risk to Enterprise Security",
+    "link": "https://www.esecurityplanet.com/threats/shadow-ai-and-the-growing-risk-to-enterprise-security/",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Living Off the Web: How Fake Captcha Turned Trust Into a Malware Delivery Channel",
+    "link": "https://www.esecurityplanet.com/threats/living-off-the-web-how-fake-captcha-turned-trust-into-a-malware-delivery-channel/",
+    "date": "2026-01-27",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fake apps, NFC skimming attacks, and other Android issues in 2026 | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/growing-2026-android-threats-and-protection/55191/",
+    "date": "2026-01-27",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Stolen Credentials Aren\u2019t the Real Problem \u2013 Turn Identity Alerts Into Real Defense",
+    "link": "https://socradar.io/blog/identity-alerts-stolen-credentials-defense/",
+    "date": "2026-01-27",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top Impersonation Tactics Used in Social Engineering and Phishing",
+    "link": "https://socradar.io/blog/impersonation-tactics-social-engineering-phishing/",
+    "date": "2026-01-27",
+    "terms": [
+      "scattered spider",
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/glossary/phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/blog/different-kinds-of-impersonating-phishing-and-domain-squatting/"
       }
     ]
   },
@@ -942,15 +1597,6 @@
     ]
   },
   {
-    "title": "KAZMILAW.COM By clop",
-    "link": "https://www.ransomlook.io//group/clop",
-    "date": "2026-01-25",
-    "terms": [
-      "CLOP"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Nike is investigating a possible data breach, after WorldLeaks claims",
     "link": "https://securityaffairs.com/187303/data-breach/nike-is-investigating-a-possible-data-breach-after-worldleaks-claims.html",
     "date": "2026-01-25",
@@ -1520,15 +2166,6 @@
     "date": "2026-01-23",
     "terms": [
       "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "West Cary Group By sinobi",
-    "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2026-01-23",
-    "terms": [
-      "sinobi"
     ],
     "inline_links": []
   },
@@ -12666,49 +13303,6 @@
     "date": "2025-12-29",
     "terms": [
       "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged data breach of Mondial Relay & Colis Priv\u00e9",
-    "link": "https://darkwebinformer.com/alleged-data-breach-of-mondial-relay-colis-prive/",
-    "date": "2025-12-28",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cond\u00e9 Nast faces major data breach: 2.3M WIRED records leaked, 40M more at risk",
-    "link": "https://securityaffairs.com/186224/data-breach/conde-nast-faces-major-data-breach-2-3m-wired-records-leaked-40m-more-at-risk.html",
-    "date": "2025-12-28",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Security Affairs newsletter Round 556 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/186200/breaking-news/security-affairs-newsletter-round-556-by-pierluigi-paganini-international-edition.html",
-    "date": "2025-12-28",
-    "terms": [
-      "CVE-2025-14847",
-      "cve-2025-14847"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-14847",
-        "text": "High-severity MongoDB flaw CVE-2025-14847 could lead to server takeover",
-        "url": "https://securityaffairs.com/186107/security/high-severity-mongodb-flaw-cve-2025-14847-could-lead-to-server-takeover.html"
-      }
-    ]
-  },
-  {
-    "title": "CVE-2025-14847: MongoDB Unauthenticated Memory Leak Exploit (MongoBleed)",
-    "link": "https://darkwebinformer.com/cve-2025-14847-mongodb-unauthenticated-memory-leak-exploit-mongobleed/",
-    "date": "2025-12-28",
-    "terms": [
-      "CVE-2025-14847"
     ],
     "inline_links": []
   }
