@@ -1,5 +1,33 @@
 [
   {
+    "title": "Week in review: Notepad++ supply chain attack details and targets, Patch Tuesday forecast",
+    "link": "https://www.helpnetsecurity.com/2026/02/08/week-in-review-notepad-supply-chain-attack-details-and-targets-patch-tuesday-forecast/",
+    "date": "2026-02-08",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "DKnife toolkit abuses routers to spy and deliver malware since 2019",
+    "link": "https://securityaffairs.com/187716/malware/dknife-toolkit-abuses-routers-to-spy-and-deliver-malware-since-2019.html",
+    "date": "2026-02-08",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "LocalGPT \u2013 A Secure Local Device Focused AI Assistant Built in Rust",
+    "link": "https://cybersecuritynews.com/localgpt/",
+    "date": "2026-02-08",
+    "terms": [
+      "OpenAI",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "A******* By genesis",
     "link": "https://www.ransomlook.io//group/genesis",
     "date": "2026-02-07",
@@ -9,7 +37,7 @@
     "inline_links": []
   },
   {
-    "title": "LABINF.IT By clop",
+    "title": "CONWEST.COM By clop",
     "link": "https://www.ransomlook.io//group/clop",
     "date": "2026-02-07",
     "terms": [
@@ -102,6 +130,40 @@
         "url": "https://cybersecuritynews.com/threat-actors-advancing-email-phishing-attacks/"
       }
     ]
+  },
+  {
+    "title": "AMR PEMCO By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-07",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Italian university La Sapienza still offline to mitigate recent cyber attack",
+    "link": "https://securityaffairs.com/187702/cyber-crime/italian-university-la-sapienza-still-offline-to-mitigate-recent-cyber-attack.html",
+    "date": "2026-02-07",
+    "terms": [
+      "Lockbit",
+      "lockbit"
+    ],
+    "inline_links": [
+      {
+        "term": "Lockbit",
+        "text": "LockBit v2.0",
+        "url": "https://securityaffairs.com/136056/data-breach/lockbit-3-0-builder-leak.html"
+      }
+    ]
+  },
+  {
+    "title": "groupepiche.ca By safepay",
+    "link": "https://www.ransomlook.io//group/safepay",
+    "date": "2026-02-07",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": []
   },
   {
     "title": "Ransomware attackers are exploiting critical SmarterMail vulnerability (CVE-2026-24423)",
@@ -1195,15 +1257,6 @@
     "date": "2026-02-05",
     "terms": [
       "akira"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Conpet S.A. (COTE.RO) By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-05",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -13267,570 +13320,5 @@
         "url": "https://cybersecuritynews.com/scattered-spider-hackers-aviation/"
       }
     ]
-  },
-  {
-    "title": "OpenAI Launches ChatGPT Health with Isolated, Encrypted Health Data Controls",
-    "link": "https://thehackernews.com/2026/01/openai-launches-chatgpt-health-with.html",
-    "date": "2026-01-08",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Flags Microsoft Office and HPE OneView Bugs as Actively Exploited",
-    "link": "https://thehackernews.com/2026/01/cisa-flags-microsoft-office-and-hpe.html",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2009-0556"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Vulnerability Exposes n8n Instances to Takeover Attacks",
-    "link": "https://www.securityweek.com/critical-vulnerability-exposes-n8n-instances-to-takeover-attacks/",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability Exposes n8n Instances to Takeover Attacks",
-        "url": "https://www.securityweek.com/critical-vulnerability-exposes-n8n-instances-to-takeover-attacks/"
-      }
-    ]
-  },
-  {
-    "title": "Cybercriminals are scaling phishing attacks with ready-made kits",
-    "link": "https://www.helpnetsecurity.com/2026/01/08/barracuda-phishing-kit-techniques/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Cybercriminals are scaling phishing attacks with ready-made kits",
-        "url": "https://www.helpnetsecurity.com/2026/01/08/barracuda-phishing-kit-techniques/"
-      }
-    ]
-  },
-  {
-    "title": "U.S. CISA adds HPE OneView\u00a0and Microsoft Office PowerPoint flaws to its Known Exploited Vulnerabilities catalog",
-    "link": "https://securityaffairs.com/186672/security/u-s-cisa-adds-hpe-oneview-and-microsoft-office-powerpoint-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2009-0556",
-      "CVE-2025-37164",
-      "cve-2009-0556",
-      "cve-2025-37164"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2009-0556",
-        "text": "CVE-2009-0556",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2009-0556"
-      },
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-37164"
-      },
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164"
-      }
-    ]
-  },
-  {
-    "title": "Fake WinRAR downloads hide malware behind a real installer",
-    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/01/fake-winrar-downloads-hide-malware-behind-a-real-installer",
-    "date": "2026-01-08",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "FREE WEBINAR: a Second Webinar Here",
-    "link": "https://www.hipaajournal.com/free-compliance-webinar/",
-    "date": "2026-01-08",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "October 2025 Healthcare Data Breach Report",
-    "link": "https://www.hipaajournal.com/october-2025-healthcare-data-breach-report/",
-    "date": "2026-01-08",
-    "terms": [
-      "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Initial Access\u00a0Sales Accelerated Across\u00a0Australia and New Zealand\u00a0in 2025",
-    "link": "https://cyble.com/blog/australia-new-zealand-initial-access-threats/",
-    "date": "2026-01-08",
-    "terms": [
-      "scattered spider",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing attempts",
-        "url": "https://cyble.com/knowledge-hub/protect-australian-businesses-phishing-2025/"
-      }
-    ]
-  },
-  {
-    "title": "Top cyber threats to your AI systems and infrastructure",
-    "link": "https://www.csoonline.com/article/4110008/top-cyber-threats-to-your-ai-systems-and-infrastructure.html",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Holes in Veeam Backup suite allow remote code execution, creation of malicious backup config files",
-    "link": "https://www.csoonline.com/article/4114165/holes-in-veeam-backup-suite-allow-remote-code-execution-creation-of-malicious-backup-config-files-2.html",
-    "date": "2026-01-08",
-    "terms": [
-      "Canadian"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cybercriminals Exploit VMware ESXi Vulnerabilities Using Zero-Day Toolset",
-    "link": "https://gbhackers.com/cybercriminals-exploit-vmware-esxi-vulnerabilities/",
-    "date": "2026-01-08",
-    "terms": [
-      "sonicwall"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New n8n Vulnerability (CVE-2026-21858) Allows Unauthenticated File Access and RCE",
-    "link": "https://thecyberexpress.com/cve-2026-21858-n8n-webhook-vulnerability/",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2025-31161"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Australian Insurer Prosura Confirms Cyber Incident, Takes Online Services Offline Amid Investigation",
-    "link": "https://thecyberexpress.com/prosura-cyberattack-explained/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical Vulnerability Patched in jsPDF",
-    "link": "https://www.securityweek.com/critical-vulnerability-patched-in-jspdf/",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Critical Vulnerability Patched in jsPDF",
-        "url": "https://www.securityweek.com/critical-vulnerability-patched-in-jspdf/"
-      }
-    ]
-  },
-  {
-    "title": "Strengthening Digital Defense With Advanced Endpoint Security",
-    "link": "https://blog.comodo.com/endpoint-security/advanced-endpoint-security/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft Unveils a New Tool to Migrate from Slack to Microsoft Teams",
-    "link": "https://cybersecuritynews.com/microsoft-tool-migrate-slack-to-teams/",
-    "date": "2026-01-08",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New OAuth-Based Attack Let Hackers Bypass Microsoft Entra Authentication Flows to Steal Keys",
-    "link": "https://cybersecuritynews.com/new-oauth-based-attack/",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Adds HP Enterprise OneView Code Injection Vulnerability to KEV Following Active Exploitation",
-    "link": "https://cybersecuritynews.com/hp-enterprise-oneview-code-injection-vulnerability/",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2025-37164",
-      "cve-2025-37164"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://cybersecuritynews.com/hpe-oneview-software-vulnerability/"
-      }
-    ]
-  },
-  {
-    "title": "Cisco ISE Vulnerability Let Remote attacker Access Sensitive Data \u2013 Public PoC Available",
-    "link": "https://cybersecuritynews.com/cisco-ise-vulnerability-sensitive-data/",
-    "date": "2026-01-08",
-    "terms": [
-      "Zero Day"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Warns of Microsoft PowerPoint Code Injection Vulnerability Exploited in Attacks",
-    "link": "https://cybersecuritynews.com/microsoft-powerpoint-code-injection-vulnerability/",
-    "date": "2026-01-08",
-    "terms": [
-      "Salesforce",
-      "CVE-2009-0556"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Who Benefited from the Aisuru and Kimwolf Botnets?",
-    "link": "https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/",
-    "date": "2026-01-08",
-    "terms": [
-      "Canada",
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Maximum Severity HPE OneView Flaw Exploited in the Wild",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/maximum-severity-hpe-oneview-flaw-exploited",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2025-37164"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Recently fixed HPE OneView flaw is being exploited (CVE-2025-37164)",
-    "link": "https://www.helpnetsecurity.com/2026/01/08/hpe-oneview-cve-2025-37164-exploited/",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2025-37164",
-      "cve-2025-37164"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-37164",
-        "text": "Recently fixed HPE OneView flaw is being exploited (CVE-2025-37164)",
-        "url": "https://www.helpnetsecurity.com/2026/01/08/hpe-oneview-cve-2025-37164-exploited/"
-      }
-    ]
-  },
-  {
-    "title": "Astaroth banking Trojan spreads in Brazil via WhatsApp worm",
-    "link": "https://securityaffairs.com/186685/malware/astaroth-banking-trojan-spreads-in-brazil-via-whatsapp-worm.html",
-    "date": "2026-01-08",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Public PoC prompts Cisco patch for ISE, ISE-PIC vulnerability",
-    "link": "https://securityaffairs.com/186682/security/public-poc-prompts-cisco-patch-for-ise-ise-pic-vulnerability.html",
-    "date": "2026-01-08",
-    "terms": [
-      "Zero Day"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Phishing Attacks Exploit Misconfigured Email Routing Settings to Target Microsoft 365 Users",
-    "link": "https://www.infosecurity-magazine.com/news/phishing-exploits-misconfigured/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA warns of active attacks on HPE OneView and legacy PowerPoint",
-    "link": "https://www.malwarebytes.com/blog/news/2026/01/cisa-warns-of-active-attacks-on-hpe-oneview-and-legacy-powerpoint",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability",
-      "CVE-2009-0556",
-      "CVE-2025-37164",
-      "cve-2025-37164",
-      "cve-2009-0556"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-37164"
-      },
-      {
-        "term": "CVE-2009-0556",
-        "text": "CVE-2009-0556",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2009-0556"
-      }
-    ]
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer  - January 8th, 2026",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-8th-2026/",
-    "date": "2026-01-08",
-    "terms": [
-      "IOC",
-      "qilin"
-    ],
-    "inline_links": [
-      {
-        "term": "qilin",
-        "text": "Qilin Ransomware claims 6 victims",
-        "url": "https://x.com/DarkWebInformer/status/2009297826757370112?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Update - January 8th, 2026",
-    "link": "https://darkwebinformer.com/threat-attack-update-january-8th-2026/",
-    "date": "2026-01-08",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "qilin",
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update - January 8th, 2026",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-january-8th-2026/",
-    "date": "2026-01-08",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "CLOP",
-      "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "OneURL: An open-source alternative to Linktree. Create a profile page to share all your important links in one place",
-    "link": "https://darkwebinformer.com/oneurl-an-open-source-alternative-to-linktree-create-a-profile-page-to-share-all-your-important-links-in-one-place/",
-    "date": "2026-01-08",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "n8n Users Urged to Patch CVSS 10.0 Full System Takeover Vulnerability",
-    "link": "https://hackread.com/n8n-users-patch-full-system-takeover-vulnerability/",
-    "date": "2026-01-08",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The 2 faces of AI: How emerging models empower and endanger cybersecurity",
-    "link": "https://www.csoonline.com/article/4113987/the-2-faces-of-ai-how-emerging-models-empower-and-endanger-cybersecurity.html",
-    "date": "2026-01-08",
-    "terms": [
-      "hunting",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Phishing-Angreifer setzen vermehrt auf E-Mail-Routing-L\u00fccken",
-    "link": "https://www.csoonline.com/article/4114453/phishing-angreifer-setzen-vermehrt-auf-e-mail-routing-lucken.html",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New DocuSign-Themed Phishing Scam Delivers Stealth Malware to Windows Devices",
-    "link": "https://gbhackers.com/new-docusign-themed-phishing-scam-delivers-stealth-malware/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "New DocuSign-Themed Phishing Scam Delivers Stealth Malware to Windows Devices",
-        "url": "https://gbhackers.com/new-docusign-themed-phishing-scam-delivers-stealth-malware/"
-      }
-    ]
-  },
-  {
-    "title": "React2Shell Vulnerability Hit by 8.1 Million Attack Attempts",
-    "link": "https://gbhackers.com/react2shell-vulnerability-3/",
-    "date": "2026-01-08",
-    "terms": [
-      "React2shell",
-      "react",
-      "CVE-2025-55182",
-      "react2shell"
-    ],
-    "inline_links": [
-      {
-        "term": "React2shell",
-        "text": "React2Shell Vulnerability Hit by 8.1 Million Attack Attempts",
-        "url": "https://gbhackers.com/react2shell-vulnerability-3/"
-      },
-      {
-        "term": "react",
-        "text": "React2Shell Vulnerability Hit by 8.1 Million Attack Attempts",
-        "url": "https://gbhackers.com/react2shell-vulnerability-3/"
-      }
-    ]
-  },
-  {
-    "title": "OpenAI launches ChatGPT Health with promises of strong data privacy",
-    "link": "https://cyberinsider.com/openai-launches-chatgpt-health-with-promises-of-strong-data-privacy/",
-    "date": "2026-01-08",
-    "terms": [
-      "OpenAI",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "OpenAI",
-        "text": "OpenAI launches ChatGPT Health with promises of strong data privacy",
-        "url": "https://cyberinsider.com/openai-launches-chatgpt-health-with-promises-of-strong-data-privacy/"
-      }
-    ]
-  },
-  {
-    "title": "GenDigital Research Exposes AuraStealer Infostealer Tactics",
-    "link": "https://www.esecurityplanet.com/threats/gendigital-research-exposes-aurastealer-infostealer-tactics/",
-    "date": "2026-01-08",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "threat hunting",
-        "url": "https://www.esecurityplanet.com/threats/threat-hunting/"
-      }
-    ]
-  },
-  {
-    "title": "50,000 Servers Exposed as GoBruteforcer Scales Brute-Force Attacks",
-    "link": "https://www.esecurityplanet.com/threats/50000-servers-exposed-as-gobruteforcer-scales-brute-force-attacks/",
-    "date": "2026-01-08",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISA Warns of Attacks on PowerPoint and HPE Vulnerabilities",
-    "link": "https://thecyberexpress.com/cisa-warns-powerpoint-and-hpe-vulnerabilities/",
-    "date": "2026-01-08",
-    "terms": [
-      "CVE-2002-0367",
-      "CVE-2009-0556",
-      "CVE-2025-37164",
-      "cve-2025-37164",
-      "cve-2009-0556"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164"
-      },
-      {
-        "term": "CVE-2009-0556",
-        "text": "CVE-2009-0556",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0556"
-      },
-      {
-        "term": "CVE-2025-37164",
-        "text": "CVE-2025-37164",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164"
-      },
-      {
-        "term": "CVE-2009-0556",
-        "text": "CVE-2009-0556",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0556"
-      }
-    ]
-  },
-  {
-    "title": "End of The Year 2025 Cyber Analysis",
-    "link": "https://socradar.io/blog/end-of-the-year-2025/",
-    "date": "2026-01-08",
-    "terms": [
-      "Canada",
-      "akira",
-      "qilin",
-      "CL0P",
-      "CLOP",
-      "Phish",
-      "cl0p"
-    ],
-    "inline_links": [
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://socradar.io/blog/dark-web-profile-akira-ransomware/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin",
-        "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
-      },
-      {
-        "term": "CL0P",
-        "text": "Cl0p",
-        "url": "https://socradar.io/blog/dark-web-threat-profile-clop-ransomware/"
-      }
-    ]
-  },
-  {
-    "title": "Top 10 Agentic SOC Platforms To Watch In 2026",
-    "link": "https://socradar.io/blog/top-10-agentic-soc-platforms-2026/",
-    "date": "2026-01-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
   }
 ]
