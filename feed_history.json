@@ -1,5 +1,753 @@
 [
   {
+    "title": "Castles Technology UK & Ireland By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-11",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Patch Tuesday: 6 exploited zero-days fixed in February 2026",
+    "link": "https://www.helpnetsecurity.com/2026/02/11/february-2026-patch-tuesday/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21513",
+      "CVE-2026-21514"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Trellix SecondSight identifies subtle indicators of an active breach",
+    "link": "https://www.helpnetsecurity.com/2026/02/11/trellix-secondsight-threat-hunting-service/",
+    "date": "2026-02-11",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "SSHStalker botnet targets Linux servers with legacy exploits and SSH scanning",
+    "link": "https://securityaffairs.com/187833/malware/sshstalker-botnet-targets-linux-servers-with-legacy-exploits-and-ssh-scanning.html",
+    "date": "2026-02-11",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds Microsoft Office and Microsoft Windows flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/187855/security/u-s-cisa-adds-microsoft-office-and-microsoft-windows-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21533"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21533"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Fixes Six Zero Day Vulnerability in February Patch Tuesday",
+    "link": "https://www.infosecurity-magazine.com/news/microsoft-six-zero-day-feb-2026/",
+    "date": "2026-02-11",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Spam and phishing in 2025",
+    "link": "https://securelist.com/spam-and-phishing-report-2025/118785/",
+    "date": "2026-02-11",
+    "terms": [
+      "hunting",
+      "CLOP",
+      "OpenAI",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Hoax.HTML.Phish",
+        "url": "https://threats.kaspersky.com/en/threat/Hoax.HTML.Phish/"
+      }
+    ]
+  },
+  {
+    "title": "February 2026 Patch Tuesday includes six actively exploited zero-days",
+    "link": "https://www.malwarebytes.com/blog/news/2026/02/february-2026-patch-tuesday-includes-six-actively-exploited-zero-days",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21533"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21533"
+      }
+    ]
+  },
+  {
+    "title": "Malwarebytes earns PCMag Best Tech Brand spot, scores 100% with MRG\u00a0Effitas",
+    "link": "https://www.malwarebytes.com/blog/product/2026/02/malwarebytes-earns-pcmag-best-tech-brand-spot-scores-100-with-mrg-effitas",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "83,000 Clients Affected by Cyberattack on Ohio Counseling Center",
+    "link": "https://www.hipaajournal.com/ohio-counseling-center-cyberattack/",
+    "date": "2026-02-11",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The US False Claims Act Becomes a Cybersecurity Enforcement Engine",
+    "link": "https://cyble.com/blog/false-claims-act-cybersecurity-enforcement/",
+    "date": "2026-02-11",
+    "terms": [
+      "affirm"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "North Korean actors blend ClickFix with new macOS backdoors in Crypto campaign",
+    "link": "https://www.csoonline.com/article/4130724/north-korean-actors-blend-clickfix-with-new-macos-backdoors-in-crypto-campaign.html",
+    "date": "2026-02-11",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The hard part of purple teaming starts after detection",
+    "link": "https://www.csoonline.com/article/4129713/the-hard-part-of-purple-teaming-starts-after-detection.html",
+    "date": "2026-02-11",
+    "terms": [
+      "indicator of compromise",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISOs must separate signal from noise as CVE volume soars",
+    "link": "https://www.csoonline.com/article/4130453/cisos-must-separate-signal-from-noise-as-cve-volume-soars.html",
+    "date": "2026-02-11",
+    "terms": [
+      "hunting",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Vorget\u00e4uschte PDFs bergen neue Gefahren",
+    "link": "https://www.csoonline.com/article/4129917/vorgetauschte-pdfs-bergen-neue-gefahren.html",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Der Kaufratgeber f\u00fcr Breach & Attack Simulation Tools",
+    "link": "https://www.csoonline.com/article/3494368/der-kaufratgeber-fur-breach-attack-simulation-tools.html",
+    "date": "2026-02-11",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "February 2026 Patch Tuesday: Six new and actively exploited Microsoft vulnerabilities addressed",
+    "link": "https://www.csoonline.com/article/4130446/february-2026-patch-tuesday-six-new-and-actively-exploited-microsoft-vulnerabilities-addressed.html",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21533",
+      "cve-2026-21525"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21525"
+      }
+    ]
+  },
+  {
+    "title": "MSHTML Framework Zero-Day Opens Door to Network-Based Security Bypass",
+    "link": "https://gbhackers.com/mshtml-framework-zero-day/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21513"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Office Word 0-Day Vulnerability Enables Attackers to Bypass Security Feature",
+    "link": "https://gbhackers.com/microsoft-office-word-0-day-vulnerability/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21514"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Desktop Window Manager Zero-Day Enables Privilege Escalation",
+    "link": "https://gbhackers.com/desktop-window-manager-zero-day-enables-privilege-escalation/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21519"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Windows Shell Zero-Day Vulnerability Allows Attackers to Bypass Authentication",
+    "link": "https://gbhackers.com/windows-shell-zero-day-vulnerability/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21510"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Warlock Ransomware Breaches SmarterTools Through Unpatched SmarterMail Server",
+    "link": "https://thecyberpost.com/news/hackers/warlock-ransomware-breaches-smartertools-through-unpatched-smartermail-server/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2025-52691",
+      "CVE-2026-23760",
+      "CVE-2026-24423",
+      "cve-2025-52691",
+      "cve-2026-23760",
+      "cve-2026-24423"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-52691",
+        "text": "CVE-2025-52691",
+        "url": "https://thehackernews.com/2025/12/csa-issues-alert-on-critical.html"
+      },
+      {
+        "term": "CVE-2026-23760",
+        "text": "CVE-2026-23760",
+        "url": "https://thehackernews.com/2026/01/smartermail-auth-bypass-exploited-in.html"
+      },
+      {
+        "term": "CVE-2026-24423",
+        "text": "CVE-2026-24423",
+        "url": "https://thehackernews.com/2026/01/smartermail-fixes-critical.html"
+      }
+    ]
+  },
+  {
+    "title": "Reynolds Ransomware Embeds BYOVD Driver to Disable EDR Security Tools",
+    "link": "https://thecyberpost.com/news/hackers/reynolds-ransomware-embeds-byovd-driver-to-disable-edr-security-tools/",
+    "date": "2026-02-11",
+    "terms": [
+      "akira",
+      "qilin",
+      "sinobi",
+      "Broadcom",
+      "Phish",
+      "Lockbit",
+      "phish",
+      "lockbit"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "high-volume phishing campaign",
+        "url": "https://www.forcepoint.com/blog/x-labs/phorpiex-global-group-ransomware-lnk-phishing"
+      },
+      {
+        "term": "Lockbit",
+        "text": "LockBit 5.0",
+        "url": "https://thehackernews.com/2025/10/lockbit-qilin-and-dragonforce-join.html"
+      }
+    ]
+  },
+  {
+    "title": "Dutch Govt hit by Ivanti EPMM breach",
+    "link": "https://cybersafe.news/dutch-govt-hit-by-ivanti-epmm-breach/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "India Rolls Out AI-on-Wheels to Bridge the Digital Divide",
+    "link": "https://thecyberexpress.com/yuva-ai-for-all-india-expands-ai-literacy/",
+    "date": "2026-02-11",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Patch Tuesday February Update Flags Exchange and Azure Vulnerabilities as High-Priority Risks",
+    "link": "https://thecyberexpress.com/microsoft-patch-tuesday-february-2026/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2023-28461",
+      "CVE-2026-21509",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21533",
+      "cve-2026-21509"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21509"
+      },
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21509"
+      }
+    ]
+  },
+  {
+    "title": "MSHTML Framework 0-Day Vulnerability Let Attackers Security Feature over Network",
+    "link": "https://cybersecuritynews.com/mshtml-framework-0-day-vulnerability/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21513",
+      "cve-2026-21513"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21513",
+        "text": "Microsoft confirmed that CVE-2026-21513",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21513"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Office Word 0-day Vulnerability Actively Exploited in the Wild",
+    "link": "https://cybersecuritynews.com/microsoft-office-word-0-day-vulnerability/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21514",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://cybersecuritynews.com/beware-of-phishing-emails-as-spam-filter/"
+      }
+    ]
+  },
+  {
+    "title": "Desktop Window Manager 0-Day Vulnerability Allows Attacker to Elevate Privileges",
+    "link": "https://cybersecuritynews.com/desktop-window-manager-0-day/",
+    "date": "2026-02-11",
+    "terms": [
+      "CVE-2026-21519"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Releases Critical Windows 11 Cumulative Updates for Versions 25H2, 24H2, and 23H2",
+    "link": "https://cybersecuritynews.com/windows-11-cumulative-updates/",
+    "date": "2026-02-11",
+    "terms": [
+      "WSUS",
+      "Phish",
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Six Microsoft 0-Day Vulnerabilities to KEV Catalog Following Active Exploitation",
+    "link": "https://cybersecuritynews.com/microsoft-0-day-vulnerabilities/",
+    "date": "2026-02-11",
+    "terms": [
+      "IOC",
+      "WSUS",
+      "Phish",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21533"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://cybersecuritynews.com/windows-shell-security-feature-0-day/"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://cybersecuritynews.com/mshtml-framework-0-day-vulnerability/"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://cybersecuritynews.com/microsoft-office-word-0-day-vulnerability/"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://cybersecuritynews.com/desktop-window-manager-0-day/"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://cybersecuritynews.com/windows-rrasman-0-day-vulnerability/"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533:",
+        "url": "https://cybersecuritynews.com/windows-remote-desktop-services-0-day-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Windows Remote Access Connection Manager 0-Day Vulnerability Let Attackers Trigger DoS Attack",
+    "link": "https://cybersecuritynews.com/windows-rrasman-0-day-vulnerability/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21525"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "January 2026: Instagram, BreachForums, SoundCloud Leaks, Trust Wallet Backdoor",
+    "link": "https://socradar.io/blog/major-cyber-attacks-january-2026/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing kits",
+        "url": "https://socradar.io/blog/what-is-a-phishing-kit/"
+      }
+    ]
+  },
+  {
+    "title": "February 2026 Patch Tuesday: Six Active Zero-Days & 53 Other Flaws Addressed",
+    "link": "https://socradar.io/blog/february-2026-patch-tuesday-zero-day/",
+    "date": "2026-02-11",
+    "terms": [
+      "Phish",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Strategic Case for MSSP Partnership",
+    "link": "https://socradar.io/blog/the-strategic-case-for-mssp-partnership/",
+    "date": "2026-02-11",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "ANSTECHINC.COM By clop",
     "link": "https://www.ransomlook.io//group/clop",
     "date": "2026-02-10",
@@ -382,6 +1130,300 @@
     "inline_links": []
   },
   {
+    "title": "Patch Tuesday, February 2026 Edition",
+    "link": "https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2026-21509",
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21533",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21509"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21509",
+        "text": "CVE-2026-21509",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-21509"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Patch Tuesday security updates for February 2026 fix six actively exploited zero-days",
+    "link": "https://securityaffairs.com/187848/uncategorized/microsoft-patch-tuesday-security-updates-for-february-2026-fix-six-actively-exploited-zero-days.html",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21513",
+      "cve-2026-21514",
+      "cve-2026-21519",
+      "cve-2026-21525",
+      "cve-2026-21533"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21513"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21533"
+      }
+    ]
+  },
+  {
+    "title": "ZeroDayRAT spyware grants attackers total access to mobile devices",
+    "link": "https://securityaffairs.com/187820/malware/zerodayrat-spyware-grants-attackers-total-access-to-mobile-devices.html",
+    "date": "2026-02-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Phorpiex Phishing Delivers Low-Noise Global Group Ransomware",
+    "link": "https://www.infosecurity-magazine.com/news/phorpiex-phishing-global-group/",
+    "date": "2026-02-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ransomware encryption to regain traction amid weakening data exfiltration tactics",
+    "link": "https://www.scworld.com/brief/ransomware-encryption-to-regain-traction-amid-weakening-data-exfiltration-tactics",
+    "date": "2026-02-10",
+    "terms": [
+      "CLOP"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "SolarWinds WHD vulnerabilities under attack",
+    "link": "https://www.scworld.com/brief/solarwinds-whd-vulnerabilities-under-attack",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2025-40551"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How safe are kids using social media? We did the groundwork",
+    "link": "https://www.malwarebytes.com/blog/family-and-parenting/2026/02/how-safe-are-kids-using-social-media-we-did-the-groundwork",
+    "date": "2026-02-10",
+    "terms": [
+      "Canada",
+      "canada"
+    ],
+    "inline_links": [
+      {
+        "term": "Canada",
+        "text": "Canada",
+        "url": "https://www.theglobeandmail.com/politics/article-plan-to-ban-children-under-14-from-using-social-media-being-drawn-up/"
+      }
+    ]
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - February 10th, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-february-10th-2026/",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC",
+      "sinobi",
+      "CL0P",
+      "cl0p"
+    ],
+    "inline_links": [
+      {
+        "term": "CL0P",
+        "text": "Cl0p Ransomware Claims 21 Victims",
+        "url": "https://x.com/DarkWebInformer/status/2021290815964725684?s=20"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware Claims 4 Victims",
+        "url": "https://x.com/DarkWebInformer/status/2021318933425381377?s=20"
+      }
+    ]
+  },
+  {
+    "title": "XML Signature Wrapping Vulnerability in SAP NetWeaver ABAP Enables Identity Tampering and Unauthorized Access (CVE-2026-23687)",
+    "link": "https://darkwebinformer.com/xml-signature-wrapping-vulnerability-in-sap-netweaver-abap-allegedly-enables-identity-tampering-and-unauthorized-access-cve-2026-23687/",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical Pre-Auth RCE Vulnerability in BeyondTrust Remote Support & PRA Exposes Thousands of Instances (CVE-2026-1731)",
+    "link": "https://darkwebinformer.com/critical-pre-auth-rce-vulnerability-in-beyondtrust-remote-support-pra-allegedly-exposes-thousands-of-instances-cve-2026-1731/",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC",
+      "silk typhoon",
+      "CVE-2024-12356",
+      "CVE-2024-12686"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Argentine Contact Center Platform Neotel Allegedly Breached, 773K Customer and Call Records Leaked",
+    "link": "https://darkwebinformer.com/argentine-contact-center-platform-neotel-allegedly-breached-773k-customer-and-call-records-leaked/",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Safer Internet Day 2026 \u2013 Addressing the Age of Artificial Intelligence",
+    "link": "https://www.itsecurityguru.org/2026/02/10/safer-internet-day-2026-addressing-the-age-of-artificial-intelligence/?utm_source=rss&utm_medium=rss&utm_campaign=safer-internet-day-2026-addressing-the-age-of-artificial-intelligence",
+    "date": "2026-02-10",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "BeyondTrust fixes critical RCE flaw in remote access tools",
+    "link": "https://www.csoonline.com/article/4130415/beyondtrust-fixes-critical-rce-flaw-in-remote-access-tools.html",
+    "date": "2026-02-10",
+    "terms": [
+      "critical Vulnerability",
+      "silk typhoon",
+      "CVE-2024-12356",
+      "CVE-2024-12686"
+    ],
+    "inline_links": [
+      {
+        "term": "silk typhoon",
+        "text": "hacker group Silk Typhoon exploited two zero-day vulnerabilities",
+        "url": "https://www.csoonline.com/article/3803543/cisa-warns-second-beyondtrust-vulnerability-also-exploited-in-the-wild.html"
+      }
+    ]
+  },
+  {
+    "title": "SolarWinds WHD zero-days from January are under attack",
+    "link": "https://www.csoonline.com/article/4130151/solarwinds-whd-zero-days-from-january-are-under-attack.html",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2025-40551",
+      "cve-2025-40551"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-40551",
+        "text": "CVE-2025-40551",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-40551"
+      }
+    ]
+  },
+  {
+    "title": "Cyberangriff auf EU-Kommission",
+    "link": "https://www.csoonline.com/article/4130077/cyberangriff-auf-eu-kommission.html",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2026-1281"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New OpenClaw AI agent found unsafe for use | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/openclaw-vulnerabilities-exposed/55263/",
+    "date": "2026-02-10",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CVE-2026-1731: RCE Risk in BeyondTrust RS and PRA",
+    "link": "https://socradar.io/blog/cve-2026-1731-rce-beyondtrust-rs-pra/",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Active Ivanti Exploitation Traced to Single Bulletproof IP\u2014Published IOC Lists Point Elsewhere",
+    "link": "https://www.greynoise.io/blog/active-ivanti-exploitation",
+    "date": "2026-02-10",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Bloody Wolf Targets Uzbekistan, Russia Using NetSupport RAT in Spear-Phishing Campaign",
     "link": "https://thehackernews.com/2026/02/bloody-wolf-targets-uzbekistan-russia.html",
     "date": "2026-02-09",
@@ -715,15 +1757,6 @@
     "date": "2026-02-09",
     "terms": [
       "CVE-2026-21509"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Augusta Housing Authority By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-09",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -2252,6 +3285,15 @@
     "date": "2026-02-05",
     "terms": [
       "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Power of Glean and Prisma AIRS Integration",
+    "link": "https://www.paloaltonetworks.com/blog/2026/02/power-of-glean-and-prisma-airs-integration/",
+    "date": "2026-02-05",
+    "terms": [
+      "Phish"
     ],
     "inline_links": []
   },
@@ -4074,6 +5116,71 @@
       "CVE-2025-55182"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Mutagen Astronomy: From Discovery to CISA Recognition\u2014A Seven-Year Journey",
+    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+    "date": "2026-02-02",
+    "terms": [
+      "react",
+      "affirm",
+      "CVE-2017-1000253",
+      "CVE-2019-10149",
+      "CVE-2020-7247",
+      "CVE-2021-3156",
+      "CVE-2021-4034",
+      "CVE-2023-4911",
+      "CVE-2018-14634",
+      "cve-2018-14634",
+      "cve-2017-1000253",
+      "cve-2019-10149",
+      "cve-2020-7247",
+      "cve-2021-3156",
+      "cve-2021-4034",
+      "cve-2023-4911"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2018-14634",
+        "text": "the Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2018-14634 to its Known Exploited Vulnerabilities (KEV) catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/01/26/cisa-adds-five-known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "term": "CVE-2017-1000253",
+        "text": "Linux PIE/stack corruption (CVE-2017-1000253)",
+        "url": "https://threatprotect.qualys.com/2017/09/26/linux-piestack-corruption-cve-20171000253/"
+      },
+      {
+        "term": "CVE-2018-14634",
+        "text": "Mutagen Astronomy (CVE-2018-14634)",
+        "url": "https://www.qualys.com/2018/09/25/cve-2018-14634/mutagen-astronomy-integer-overflow-linux-create_elf_tables-cve-2018-14634.txt"
+      },
+      {
+        "term": "CVE-2019-10149",
+        "text": "The Return of the WIZard (CVE-2019-10149)",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2019/06/14/exim-mta-vulnerability-the-return-of-the-wizard-cve-2019-10149"
+      },
+      {
+        "term": "CVE-2020-7247",
+        "text": "OpenSMTPD (CVE-2020-7247)",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2020/01/29/openbsd-opensmtpd-remote-code-execution-vulnerability-cve-2020-7247"
+      },
+      {
+        "term": "CVE-2021-3156",
+        "text": "Baron Samedit (CVE-2021-3156)",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit"
+      },
+      {
+        "term": "CVE-2021-4034",
+        "text": "PwnKit (CVE-2021-4034)",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034"
+      },
+      {
+        "term": "CVE-2023-4911",
+        "text": "Looney Tunables (CVE-2023-4911)",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/03/cve-2023-4911-looney-tunables-local-privilege-escalation-in-the-glibcs-ld-so"
+      }
+    ]
   },
   {
     "title": "Moltbook AI Vulnerability Exposes Email Addresses, Login Tokens, and API Keys",
@@ -12686,22 +13793,6 @@
     "inline_links": []
   },
   {
-    "title": "Microsoft and Adobe Patch Tuesday,\u00a0January\u00a02026 Security Update Review",
-    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-    "date": "2026-01-13",
-    "terms": [
-      "CVE-2026-20805",
-      "cve-2026-20805"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-20805",
-        "text": "CVE-2026-20805: Desktop Window Manager Information Disclosure Vulnerability",
-        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-20805"
-      }
-    ]
-  },
-  {
     "title": "Daily Dose of Dark Web Informer - January 13th, 2026",
     "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-13th-2026/",
     "date": "2026-01-13",
@@ -13406,93 +14497,5 @@
         "url": "https://socradar.io/blog/dark-web-threat-profile-clop-ransomware/"
       }
     ]
-  },
-  {
-    "title": "Security Affairs newsletter Round 558 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/186776/breaking-news/security-affairs-newsletter-round-558-by-pierluigi-paganini-international-edition.html",
-    "date": "2026-01-11",
-    "terms": [
-      "OpenAI",
-      "Phish",
-      "phish",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Misconfigured email routing enables internal-spoofed phishing",
-        "url": "https://securityaffairs.com/186638/hacking/misconfigured-email-routing-enables-internal-spoofed-phishing.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Phishing actors exploit complex routing and misconfigurations to spoof domains",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/01/06/phishing-actors-exploit-complex-routing-and-misconfigurations-to-spoof-domains/"
-      },
-      {
-        "term": "Phish",
-        "text": "North Korean Kimsuky Actors Leverage Malicious QR Codes in Spearphishing Campaigns Targeting U.S. Entities",
-        "url": "https://www.ic3.gov/CSA/2026/260108.pdf"
-      },
-      {
-        "term": "OpenAI",
-        "text": "OpenAI Launches ChatGPT Health with Isolated, Encrypted Health Data Controls",
-        "url": "https://thehackernews.com/2026/01/openai-launches-chatgpt-health-with.html"
-      }
-    ]
-  },
-  {
-    "title": "Advanced Malware Delivery System Bypassing Windows SmartScreen, MOTW, and Defender Available for Sale",
-    "link": "https://darkwebinformer.com/advanced-malware-delivery-system-bypassing-windows-smartscreen-motw-and-defender-available-for-sale/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged Sale of French B2B Business Dataset with 100K-200K Records",
-    "link": "https://darkwebinformer.com/alleged-sale-of-french-b2b-business-dataset-with-100k-200k-records/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged Data Breach of MediaMarkt Switzerland Exposing 3.7 Million Customer Records",
-    "link": "https://darkwebinformer.com/alleged-data-breach-of-mediamarkt-switzerland-exposing-3-7-million-customer-records/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged Sale of Unauthorized Access to WEX Corporate Payment System SOAP API Keys",
-    "link": "https://darkwebinformer.com/alleged-sale-of-unauthorized-access-to-wex-corporate-payment-system-soap-api-keys/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged Data Breach of French Retail Chain BLACKSTORE Exposing 102K Customer Records",
-    "link": "https://darkwebinformer.com/alleged-data-breach-of-french-retail-chain-blackstore-exposing-102k-customer-records/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alleged PayPal Credential Leak: 104K Email and Password Combinations Exposed",
-    "link": "https://darkwebinformer.com/alleged-paypal-credential-leak-104k-email-and-password-combinations-exposed/",
-    "date": "2026-01-11",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
   }
 ]
