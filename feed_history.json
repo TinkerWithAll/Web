@@ -1,5 +1,300 @@
 [
   {
+    "title": "CISA Flags Four Security Flaws Under Active Exploitation in Latest KEV Update",
+    "link": "https://thehackernews.com/2026/02/cisa-flags-four-security-flaws-under.html",
+    "date": "2026-02-18",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CYBERSPAN brings AI-driven, agentless network detection to MSSP environments",
+    "link": "https://www.helpnetsecurity.com/2026/02/18/intelligenesis-cyberspan/",
+    "date": "2026-02-18",
+    "terms": [
+      "genesis"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "China-linked APT weaponized Dell RecoverPoint zero-day since 2024",
+    "link": "https://securityaffairs.com/188176/apt/china-linked-apt-weaponized-dell-recoverpoint-zero-day-since-2024.html",
+    "date": "2026-02-18",
+    "terms": [
+      "IOC",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds Google Chromium CSS, Microsoft Windows, TeamT5 ThreatSonar Anti-Ransomware, and Zimbra flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/188163/uncategorized/u-s-cisa-adds-google-chromium-css-microsoft-windows-teamt5-threatsonar-anti-ransomware-and-zimbra-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-18",
+    "terms": [
+      "CVE-2008-0015",
+      "CVE-2020-7796",
+      "CVE-2024-7694",
+      "CVE-2026-2441",
+      "cve-2008-0015",
+      "cve-2020-7796",
+      "cve-2024-7694",
+      "cve-2026-2441"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2008-0015",
+        "text": "CVE-2008-0015",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2008-0015"
+      },
+      {
+        "term": "CVE-2020-7796",
+        "text": "CVE-2020-7796",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2020-7796"
+      },
+      {
+        "term": "CVE-2024-7694",
+        "text": "CVE-2024-7694",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-7694"
+      },
+      {
+        "term": "CVE-2026-2441",
+        "text": "CVE-2026-2441",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-2441"
+      },
+      {
+        "term": "CVE-2026-2441",
+        "text": "CVE-2026-2441",
+        "url": "https://securityaffairs.com/188029/security/google-fixes-first-actively-exploited-chrome-zero-day-of-2026.html"
+      },
+      {
+        "term": "CVE-2024-7694",
+        "text": "CVE-2024-7694",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-7694"
+      },
+      {
+        "term": "CVE-2020-7796",
+        "text": "CVE-2020-7796",
+        "url": "https://securityaffairs.com/175344/hacking/coordinated-surge-exploitation-attempts-ssrf-vulnerabilities.html"
+      },
+      {
+        "term": "CVE-2020-7796",
+        "text": "CVE-2020-7796",
+        "url": "https://securityaffairs.com/175344/hacking/coordinated-surge-exploitation-attempts-ssrf-vulnerabilities.html"
+      }
+    ]
+  },
+  {
+    "title": "Job scam uses fake Google Forms site to harvest Google logins",
+    "link": "https://www.malwarebytes.com/blog/scams/2026/02/job-scam-uses-fake-google-forms-site-to-harvest-google-logins",
+    "date": "2026-02-18",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Scammers use fake \u201cGemini\u201d AI chatbot to sell fake \u201cGoogle Coin\u201d",
+    "link": "https://www.malwarebytes.com/blog/ai/2026/02/scammers-use-fake-gemini-ai-chatbot-to-sell-fake-google-coin",
+    "date": "2026-02-18",
+    "terms": [
+      "IOC",
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Flaws in four popular VS Code extensions left 128 million installs open to attack",
+    "link": "https://www.csoonline.com/article/4133800/flaws-in-four-popular-vs-code-extensions-left-128-million-installs-open-to-attack.html",
+    "date": "2026-02-18",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "A new approach for GenAI risk protection",
+    "link": "https://www.csoonline.com/article/4133243/a-new-approach-for-genai-risk-protection.html",
+    "date": "2026-02-18",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "13 Fragen gegen Drittanbieterrisiken",
+    "link": "https://www.csoonline.com/article/4130820/13-fragen-gegen-drittanbieterrisiken.html",
+    "date": "2026-02-18",
+    "terms": [
+      "hunting",
+      "Salesforce",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical Ivanti EPMM Zero-Day Vulnerabilities Exploited in the Wild, Targeting Corporate Networks",
+    "link": "https://gbhackers.com/ivanti-epmm-zero-day/",
+    "date": "2026-02-18",
+    "terms": [
+      "CVE-2026-1281"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New SysUpdate Variant Malware Discovered, Decryption Tool for Linux C2 Traffic Released",
+    "link": "https://gbhackers.com/sysupdate-variant-malware/",
+    "date": "2026-02-18",
+    "terms": [
+      "apt27",
+      "iron tiger"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Flags Actively Exploited Windows Video ActiveX Control RCE in KEV List",
+    "link": "https://gbhackers.com/cisa-flags-windows-video-activex-control/",
+    "date": "2026-02-18",
+    "terms": [
+      "critical Vulnerability",
+      "CVE-2008-0015"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI\u2019s New Enterprise Security Mode Locks Down ChatGPT Against Prompt Injection",
+    "link": "https://thecyberexpress.com/openai-new-lockdown-mode/",
+    "date": "2026-02-18",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Launches Trusted Access for Cyber to Expand AI-Driven Defense While Managing Risk",
+        "url": "https://thecyberexpress.com/trusted-access-for-cyber-openai/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Launches Trusted Access for Cyber to Expand AI-Driven Defense While Managing Risk",
+        "url": "https://thecyberexpress.com/trusted-access-for-cyber-openai/"
+      }
+    ]
+  },
+  {
+    "title": "Attackers Deploy Dormant Backdoors in Ivanti EPMM to Bypass Patching of Latest 0-Days",
+    "link": "https://thecyberexpress.com/attackers-deploy-backdoors-in-ivanti-epmm/",
+    "date": "2026-02-18",
+    "terms": [
+      "Canada",
+      "CVE-2026-1281"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Zero-Day in Dell RecoverPoint Exploited by Chinese Hacker Group",
+    "link": "https://thecyberexpress.com/cve-2026-22769-dell-recoverpoint/",
+    "date": "2026-02-18",
+    "terms": [
+      "hunting",
+      "react",
+      "CVE-2023-28461",
+      "CVE-2024-37079"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "MetaMask Users Targeted with Phishing Emails Containing Forged Security Report to Evade Detection",
+    "link": "https://cybersecuritynews.com/metamask-users-targeted-with-phishing-emails/",
+    "date": "2026-02-18",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing page",
+        "url": "https://cybersecuritynews.com/spiderman-phishing-kit-bank-login/"
+      },
+      {
+        "term": "Phish",
+        "text": "MetaMask Users Targeted with Phishing Emails Containing Forged Security Report to Evade Detection",
+        "url": "https://cybersecuritynews.com/metamask-users-targeted-with-phishing-emails/"
+      },
+      {
+        "term": "Phish",
+        "text": "MetaMask Users Targeted with Phishing Emails Containing Forged Security Report to Evade Detection",
+        "url": "https://cybersecuritynews.com/metamask-users-targeted-with-phishing-emails/"
+      }
+    ]
+  },
+  {
+    "title": "CISA Adds Windows Video ActiveX Control RCE Flaw to KEV Catalog Following Active Exploitation",
+    "link": "https://cybersecuritynews.com/windows-video-activex-control-rce-flaw-exploited/",
+    "date": "2026-02-18",
+    "terms": [
+      "CLOP",
+      "CVE-2008-0015"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New Phishing Campaign Targets Booking.com Partners and Customers in Multi-Stage Financial Fraud Scheme",
+    "link": "https://cybersecuritynews.com/new-phishing-campaign-targets-booking-com-partners-and-customers/",
+    "date": "2026-02-18",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing kits",
+        "url": "https://cybersecuritynews.com/aitm-phishing-kits-bypassing-mfa/"
+      },
+      {
+        "term": "Phish",
+        "text": "New Phishing Campaign Targets Booking.com Partners and Customers in Multi-Stage Financial Fraud Scheme",
+        "url": "https://cybersecuritynews.com/new-phishing-campaign-targets-booking-com-partners-and-customers/"
+      },
+      {
+        "term": "Phish",
+        "text": "New Phishing Campaign Targets Booking.com Partners and Customers in Multi-Stage Financial Fraud Scheme",
+        "url": "https://cybersecuritynews.com/new-phishing-campaign-targets-booking-com-partners-and-customers/"
+      }
+    ]
+  },
+  {
+    "title": "CISA Warns of Google Chromium 0-Day Vulnerability Actively Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/google-chromium-0-day-vulnerability/",
+    "date": "2026-02-18",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft VS Code Extension with 11M Downloads Expose Developers to One-Click XSS Attacks",
+    "link": "https://cybersecuritynews.com/microsoft-vs-code-extension-11m-downloads/",
+    "date": "2026-02-18",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New \u2018Foxveil\u2019 Malware Loader Leverages Cloudflare, Netlify, and Discord to Evade Detection",
+    "link": "https://cybersecuritynews.com/new-foxveil-malware-loader/",
+    "date": "2026-02-18",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Atlas Air: MUSE INSECURE By everest",
     "link": "https://www.ransomlook.io//group/everest",
     "date": "2026-02-17",
@@ -96,9 +391,17 @@
     "terms": [
       "Canadian",
       "hunting",
-      "Zero Day"
+      "Zero Day",
+      "CVE-2026-2441",
+      "cve-2026-2441"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "CVE-2026-2441",
+        "text": "CVE-2026-2441",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441"
+      }
+    ]
   },
   {
     "title": "Canada Goose data breach exposes 582,000 customer emails and data",
@@ -311,6 +614,219 @@
         "term": "Phish",
         "text": "QR Codes Used to Spread Phishing Attacks and Malicious Apps Across Mobile Devices",
         "url": "https://cybersecuritynews.com/qr-codes-used-to-spread-phishing-attacks/"
+      }
+    ]
+  },
+  {
+    "title": "Castle Group By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-17",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ChatGPT's new Lockdown Mode can stop prompt injection - here's how it works",
+    "link": "https://www.zdnet.com/article/how-chatgpt-lockdown-mode-protects-prompt-injection-attacks/",
+    "date": "2026-02-17",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "SmartLoader hackers clone Oura MCP project to spread StealC malware",
+    "link": "https://securityaffairs.com/188135/ai/smartloader-hackers-clone-oura-mcp-project-to-spread-stealc-malware.html",
+    "date": "2026-02-17",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/02/17/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "date": "2026-02-17",
+    "terms": [
+      "CVE-2008-0015",
+      "CVE-2020-7796",
+      "CVE-2024-7694",
+      "CVE-2026-2441",
+      "cve-2008-0015",
+      "cve-2020-7796",
+      "cve-2024-7694",
+      "cve-2026-2441"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2008-0015",
+        "text": "CVE-2008-0015",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2008-0015"
+      },
+      {
+        "term": "CVE-2020-7796",
+        "text": "CVE-2020-7796",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2020-7796"
+      },
+      {
+        "term": "CVE-2024-7694",
+        "text": "CVE-2024-7694",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2024-7694"
+      },
+      {
+        "term": "CVE-2026-2441",
+        "text": "CVE-2026-2441",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-2441"
+      }
+    ]
+  },
+  {
+    "title": "Critical Vulnerabilities in Ivanti EPMM Exploited",
+    "link": "https://unit42.paloaltonetworks.com/ivanti-cve-2026-1281-cve-2026-1340/",
+    "date": "2026-02-17",
+    "terms": [
+      "CVE-2026-1281"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Shadow Agents: How SentinelOne Secures the AI Tools That Act Like Users",
+    "link": "https://www.sentinelone.com/blog/how-sentinelone-secures-the-ai-tools-that-act-like-users/",
+    "date": "2026-02-17",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Update Chrome now: Zero-day bug allows code execution via malicious webpages",
+    "link": "https://www.malwarebytes.com/blog/news/2026/02/update-chrome-now-zero-day-bug-allows-code-execution-via-malicious-webpages",
+    "date": "2026-02-17",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - February 17th, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-february-17th-2026/",
+    "date": "2026-02-17",
+    "terms": [
+      "IOC",
+      "genesis"
+    ],
+    "inline_links": [
+      {
+        "term": "genesis",
+        "text": "Genesis Ransomware has listed six new alleged victims",
+        "url": "https://x.com/DarkWebInformer/status/2023889208096813095?s=20"
+      }
+    ]
+  },
+  {
+    "title": "Cyber attacks enabled by basic failings, Palo Alto analysis finds",
+    "link": "https://www.csoonline.com/article/4133342/cyber-attacks-enabled-by-basic-failings-palo-alto-analysis-finds.html",
+    "date": "2026-02-17",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Japan\u2019s Washington Hotel Reports Ransomware Attack",
+    "link": "https://www.esecurityplanet.com/threats/japans-washington-hotel-reports-ransomware-attack/",
+    "date": "2026-02-17",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "A New Denial-of-Service Vector in React Server Components",
+    "link": "https://www.imperva.com/blog/a-new-denial-of-service-vector-in-react-server-components/",
+    "date": "2026-02-17",
+    "terms": [
+      "react"
+    ],
+    "inline_links": [
+      {
+        "term": "react",
+        "text": "A New Denial-of-Service Vector in React Server Components",
+        "url": "https://www.imperva.com/blog/a-new-denial-of-service-vector-in-react-server-components/"
+      },
+      {
+        "term": "react",
+        "text": "A New Denial-of-Service Vector in React Server Components",
+        "url": "https://www.imperva.com/blog/a-new-denial-of-service-vector-in-react-server-components/"
+      }
+    ]
+  },
+  {
+    "title": "Dark Web Profile: Sinobi Ransomware",
+    "link": "https://socradar.io/blog/dark-web-profile-sinobi-ransomware/",
+    "date": "2026-02-17",
+    "terms": [
+      "Canada",
+      "IOC",
+      "akira",
+      "sinobi",
+      "Phish",
+      "sonicwall",
+      "CVE-2024-40766",
+      "CVE-2024-53704",
+      "cve-2024-40766",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "sonicwall",
+        "text": "SonicWall SSL VPN authentication",
+        "url": "https://socradar.io/blog/ivanti-zero-day-in-connect-secure-sonicwall-ssl-vpn/"
+      },
+      {
+        "term": "CVE-2024-40766",
+        "text": "CVE-2024-40766",
+        "url": "https://socradar.io/blog/akira-ransomware-targets-sonicwall-vulnerability-cve-2024-40766-immediate-patching-required/"
+      },
+      {
+        "term": "Phish",
+        "text": "Phishing",
+        "url": "https://socradar.io/glossary/phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Public Elasticsearch Instances Expose 43M+ Records Including Credentials, Credit Cards, and Customer Data",
+    "link": "https://socradar.io/blog/elasticsearch-instances-43m-records-data/",
+    "date": "2026-02-17",
+    "terms": [
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Spear-phishing",
+        "url": "https://socradar.io/blog/how-to-identify-spear-phishing-attacks/"
+      }
+    ]
+  },
+  {
+    "title": "What U.S. CISOs Should Track in Early 2026?",
+    "link": "https://socradar.io/blog/what-us-cisos-should-track-in-early-2026/",
+    "date": "2026-02-17",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/glossary/phishing/"
       }
     ]
   },
@@ -596,15 +1112,6 @@
     ]
   },
   {
-    "title": "Casartigiani By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-16",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Dior, Louis Vuitton, Tiffany Fined $25 Million in South Korea After Data Breaches",
     "link": "https://www.securityweek.com/dior-louis-vuitton-tiffany-fined-25-million-in-south-korea-after-data-breaches/",
     "date": "2026-02-16",
@@ -761,7 +1268,8 @@
     "link": "https://socradar.io/blog/cve-2026-2441-chrome-0-day-sandbox-code-execution/",
     "date": "2026-02-16",
     "terms": [
-      "react"
+      "react",
+      "CVE-2026-2441"
     ],
     "inline_links": []
   },
@@ -782,6 +1290,63 @@
         "url": "https://socradar.io/glossary/phishing/"
       }
     ]
+  },
+  {
+    "title": "New Chrome Zero-Day (CVE-2026-2441) Under Active Attack \u2014 Patch Released",
+    "link": "https://thehackernews.com/2026/02/new-chrome-zero-day-cve-2026-2441-under.html",
+    "date": "2026-02-16",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google Chrome Zero-Day Exploited in the Wild: Use-After-Free in CSS Enables Remote Code Execution (CVE-2026-2441)",
+    "link": "https://darkwebinformer.com/google-chrome-zero-day-exploited-in-the-wild-use-after-free-in-css-enables-remote-code-execution-cve-2026-2441/",
+    "date": "2026-02-16",
+    "terms": [
+      "CVE-2026-2441",
+      "cve-2026-2441"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-2441",
+        "text": "NVD \u2014 CVE-2026-2441",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441"
+      },
+      {
+        "term": "CVE-2026-2441",
+        "text": "The Cyber Express \u2014 Chrome RCE Flaw CVE-2026-2441 Exploited in Wild",
+        "url": "https://thecyberexpress.com/cve-2026-2441-google-chrome/"
+      }
+    ]
+  },
+  {
+    "title": "Google Fixes First Chrome Zero-Day of 2026",
+    "link": "https://cybersafe.news/google-fixes-first-chrome-zero-day-of-2026/",
+    "date": "2026-02-16",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Google releases emergency Chrome update to fix zero-day flaw in CSS engine",
+    "link": "https://cyberinsider.com/google-releases-emergency-chrome-update-to-fix-zero-day-flaw-in-css-engine/",
+    "date": "2026-02-16",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Political DDoS Pivots to Japan: Weekly DDoS Threat Intelligence Analysis",
+    "link": "https://socradar.io/blog/japan-under-ddos-16-feb26/",
+    "date": "2026-02-16",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
   },
   {
     "title": "Windows 11 KB5077181 Security Update Causing Some Devices to Restart in an Infinite Loop",
@@ -14297,116 +14862,6 @@
     "terms": [
       "Phish",
       "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft January 2026 Security Update Causes Credential Prompt Failures in Remote Desktop Connections",
-    "link": "https://cybersecuritynews.com/remote-desktop-connections-prompt-failures/",
-    "date": "2026-01-18",
-    "terms": [
-      "WSUS",
-      "wsus"
-    ],
-    "inline_links": [
-      {
-        "term": "WSUS",
-        "text": "Windows Server Update Services (WSUS)",
-        "url": "https://cybersecuritynews.com/microsoft-to-depreciate-windows/"
-      }
-    ]
-  },
-  {
-    "title": "Mandiant Releases Rainbow Tables Enabling NTLMv1 Admin Password Hacking",
-    "link": "https://cybersecuritynews.com/rainbow-tables-enabling-ntlmv1-hack/",
-    "date": "2026-01-18",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 80",
-    "link": "https://securityaffairs.com/187028/uncategorized/security-affairs-malware-newsletter-round-80.html",
-    "date": "2026-01-18",
-    "terms": [
-      "react",
-      "CVE-2025-8110"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "SHADOW#REACTOR \u2013 Text-Only Staging, .NET Reactor, and In-Memory Remcos RAT Deployment",
-        "url": "https://www.securonix.com/blog/shadowreactor-text-only-staging-net-reactor-and-in-memory-remcos-rat-deployment/"
-      }
-    ]
-  },
-  {
-    "title": "Security Affairs newsletter Round 559 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/187019/breaking-news/security-affairs-newsletter-round-559-by-pierluigi-paganini-international-edition.html",
-    "date": "2026-01-18",
-    "terms": [
-      "Canada",
-      "Canadian",
-      "OpenAI",
-      "react",
-      "CVE-2025-8110",
-      "canada",
-      "canadian",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "Canada",
-        "text": "Data breach at Canada\u2019s Investment Watchdog Canadian Investment Regulatory Organization impacts 750,000 people",
-        "url": "https://securityaffairs.com/186993/data-breach/data-breach-at-canadas-investment-watchdog-canadian-investment-regulatory-organization-impacts-750000-people.html"
-      },
-      {
-        "term": "Canadian",
-        "text": "Data breach at Canada\u2019s Investment Watchdog Canadian Investment Regulatory Organization impacts 750,000 people",
-        "url": "https://securityaffairs.com/186993/data-breach/data-breach-at-canadas-investment-watchdog-canadian-investment-regulatory-organization-impacts-750000-people.html"
-      },
-      {
-        "term": "react",
-        "text": "SHADOW#REACTOR \u2013 Text-Only Staging, .NET Reactor, and In-Memory Remcos RAT Deployment",
-        "url": "https://www.securonix.com/blog/shadowreactor-text-only-staging-net-reactor-and-in-memory-remcos-rat-deployment/"
-      },
-      {
-        "term": "react",
-        "text": "Mitigating Denial-of-Service Vulnerability from Unrecoverable Stack Space Exhaustion for React, Next.js, and APM Users",
-        "url": "https://nodejs.org/en/blog/vulnerability/january-2026-dos-mitigation-async-hooks"
-      },
-      {
-        "term": "OpenAI",
-        "text": "OpenAI to Show Ads in ChatGPT for Logged-In U.S. Adults on Free and Go Plans",
-        "url": "https://thehackernews.com/2026/01/openai-to-show-ads-in-chatgpt-for.html"
-      }
-    ]
-  },
-  {
-    "title": "HIPAA Awareness Training",
-    "link": "https://www.hipaajournal.com/hipaa-awareness-training/",
-    "date": "2026-01-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "HIPAA Training for Medical Billing Employees",
-    "link": "https://www.hipaajournal.com/hipaa-training-for-medical-billing-employees/",
-    "date": "2026-01-18",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "How a hacking campaign targeted high-profile Gmail and WhatsApp users across the Middle East",
-    "link": "https://databreaches.net/2026/01/18/how-a-hacking-campaign-targeted-high-profile-gmail-and-whatsapp-users-across-the-middle-east/?pk_campaign=feed&pk_kwd=how-a-hacking-campaign-targeted-high-profile-gmail-and-whatsapp-users-across-the-middle-east",
-    "date": "2026-01-18",
-    "terms": [
-      "Phish"
     ],
     "inline_links": []
   }
