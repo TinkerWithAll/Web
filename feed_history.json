@@ -4,9 +4,17 @@
     "link": "https://www.securityweek.com/beyondtrust-vulnerability-exploited-in-ransomware-attacks/",
     "date": "2026-02-20",
     "terms": [
-      "CVE-2026-1731"
+      "BeyondTrust",
+      "CVE-2026-1731",
+      "beyondtrust"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "BeyondTrust",
+        "text": "BeyondTrust Vulnerability Exploited in Ransomware Attacks",
+        "url": "https://www.securityweek.com/beyondtrust-vulnerability-exploited-in-ransomware-attacks/"
+      }
+    ]
   },
   {
     "title": "651 arrested, $4.3 million recovered in African cybercrime sweep",
@@ -117,9 +125,17 @@
     "date": "2026-02-20",
     "terms": [
       "critical Vulnerability",
-      "CVE-2026-1731"
+      "BeyondTrust",
+      "CVE-2026-1731",
+      "beyondtrust"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "BeyondTrust",
+        "text": "Hackers Exploit Critical BeyondTrust Vulnerability to Deploy VShell and SparkRAT",
+        "url": "https://gbhackers.com/beyondtrust-vulnerability/"
+      }
+    ]
   },
   {
     "title": "Ongoing Campaign Targets Microsoft 365 to Steal OAuth Tokens for Persistent Access",
@@ -286,6 +302,75 @@
       "hunting"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Fabcon By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "date": "2026-02-20",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Age verification vendor Persona left frontend exposed",
+    "link": "https://www.malwarebytes.com/blog/news/2026/02/age-verification-vendor-persona-left-frontend-exposed",
+    "date": "2026-02-20",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PayPal Data Breach Exposes SSNs and Business PII of Customers for Over Six Months",
+    "link": "https://cybersecuritynews.com/paypal-data-breach-expose-customer-data/",
+    "date": "2026-02-20",
+    "terms": [
+      "PWC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How Surface Web Monitoring Turns Public Exposure Into Actionable Defense",
+    "link": "https://socradar.io/blog/surface-web-monitoring-actionable-defense/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Dark Web Profile: Lotus Blossom",
+    "link": "https://socradar.io/blog/dark-web-profile-lotus-blossom/",
+    "date": "2026-02-20",
+    "terms": [
+      "hunting",
+      "Phish",
+      "CVE-2009-4324",
+      "CVE-2010-0188",
+      "CVE-2010-2883",
+      "CVE-2012-0158",
+      "CVE-2014-4114",
+      "CVE-2014-6332",
+      "CVE-2016-1019",
+      "CVE-2017-11882",
+      "CVE-2018-0802",
+      "CVE-2025-15556",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "spear-phishing",
+        "url": "https://socradar.io/blog/how-to-identify-spear-phishing-attacks/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://socradar.io/glossary/phishing/"
+      }
+    ]
   },
   {
     "title": "OpenClaw Security Issues Continue as SecureClaw Open Source Tool Debuts",
@@ -594,7 +679,7 @@
     "inline_links": []
   },
   {
-    "title": "Graneles de Chile By qilin",
+    "title": "Willow Construction By qilin",
     "link": "https://www.ransomlook.io//group/qilin",
     "date": "2026-02-19",
     "terms": [
@@ -666,13 +751,20 @@
     "date": "2026-02-19",
     "terms": [
       "critical Vulnerability",
+      "BeyondTrust",
       "CVE-2026-1731",
       "critical vulnerability",
+      "beyondtrust",
       "cve-2026-1731"
     ],
     "inline_links": [
       {
         "term": "critical Vulnerability",
+        "text": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+        "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/"
+      },
+      {
+        "term": "BeyondTrust",
         "text": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
         "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/"
       },
@@ -700,10 +792,17 @@
     "date": "2026-02-19",
     "terms": [
       "IOC",
+      "DarkWebInformer",
       "qilin",
-      "sinobi"
+      "sinobi",
+      "darkwebinformer"
     ],
     "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com/socials",
+        "url": "https://darkwebinformer.com/socials"
+      },
       {
         "term": "qilin",
         "text": "Willow Construction LLC has fallen victim to Qilin Ransomware",
@@ -723,6 +822,11 @@
         "term": "sinobi",
         "text": "Sinobi Ransomware Claims 4 Victims",
         "url": "https://x.com/DarkWebInformer/status/2024615457865470393?s=20"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com",
+        "url": "https://darkwebinformer.com/"
       }
     ]
   },
@@ -731,6 +835,7 @@
     "link": "https://darkwebinformer.com/interpols-operation-red-card-2-0-nets-651-arrests-across-africa/",
     "date": "2026-02-19",
     "terms": [
+      "DarkWebInformer",
       "Phish"
     ],
     "inline_links": []
@@ -740,9 +845,17 @@
     "link": "https://darkwebinformer.com/alleged-data-breach-of-the-national-bank-of-ukraine-souvenir-coin-service-exposes-1-5-million-records/",
     "date": "2026-02-19",
     "terms": [
-      "IOC"
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
   },
   {
     "title": "Texas Sues TP-Link Over Alleged Security Risks and Supply Chain Deception",
@@ -1069,15 +1182,6 @@
     "inline_links": []
   },
   {
-    "title": "Cedar Grove Warehouse By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "date": "2026-02-18",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "Dell RecoverPoint for VMs Zero-Day CVE-2026-22769 Exploited Since Mid-2024",
     "link": "https://thehackernews.com/2026/02/dell-recoverpoint-for-vms-zero-day-cve.html",
     "date": "2026-02-18",
@@ -1133,13 +1237,25 @@
     "date": "2026-02-18",
     "terms": [
       "IOC",
-      "qilin"
+      "DarkWebInformer",
+      "qilin",
+      "darkwebinformer"
     ],
     "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com/socials",
+        "url": "https://darkwebinformer.com/socials"
+      },
       {
         "term": "qilin",
         "text": "Diversified Supply Inc. has fallen victim to Qilin Ransomware",
         "url": "https://x.com/DarkWebInformer/status/2024179512334815698?s=20"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com",
+        "url": "https://darkwebinformer.com/"
       }
     ]
   },
@@ -1148,9 +1264,17 @@
     "link": "https://darkwebinformer.com/alleged-auction-of-domain-admin-access-to-peruvian-logistics-company-worth-10-million/",
     "date": "2026-02-18",
     "terms": [
-      "IOC"
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
   },
   {
     "title": "Cybercrime Goes Corporate: Huntress Report Reveals Rise of Scalable, Stealth-First Attacks",
@@ -1261,6 +1385,24 @@
     "date": "2026-02-18",
     "terms": [
       "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Heretic: Fully Automatic Censorship Removal for Language Models via Optimized Abliteration",
+    "link": "https://darkwebinformer.com/heretic-fully-automatic-censorship-removal-for-language-models-via-optimized-abliteration/",
+    "date": "2026-02-18",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical RCE Vulnerability in Grandstream GXP1600 VoIP Phones Allows Root Access Without Authentication",
+    "link": "https://darkwebinformer.com/critical-rce-vulnerability-in-grandstream-gxp1600-voip-phones-allows-root-access-without-authentication/",
+    "date": "2026-02-18",
+    "terms": [
+      "DarkWebInformer"
     ],
     "inline_links": []
   },
@@ -1515,6 +1657,7 @@
     "link": "https://darkwebinformer.com/clawwork-an-economic-survival-benchmark-that-makes-ai-agents-earn-their-keep/",
     "date": "2026-02-17",
     "terms": [
+      "DarkWebInformer",
       "OpenAI",
       "react"
     ],
@@ -1675,13 +1818,25 @@
     "date": "2026-02-17",
     "terms": [
       "IOC",
-      "genesis"
+      "DarkWebInformer",
+      "genesis",
+      "darkwebinformer"
     ],
     "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com/socials",
+        "url": "https://darkwebinformer.com/socials"
+      },
       {
         "term": "genesis",
         "text": "Genesis Ransomware has listed six new alleged victims",
         "url": "https://x.com/DarkWebInformer/status/2023889208096813095?s=20"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com",
+        "url": "https://darkwebinformer.com/"
       }
     ]
   },
@@ -1790,6 +1945,24 @@
         "url": "https://socradar.io/glossary/phishing/"
       }
     ]
+  },
+  {
+    "title": "Polish Cybercrime Unit Arrests 47-Year-Old Man Linked to Phobos Ransomware Group",
+    "link": "https://darkwebinformer.com/polish-cybercrime-unit-arrests-47-year-old-man-linked-to-phobos-ransomware-group/",
+    "date": "2026-02-17",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Portless: Vercel Labs' Fix for the localhost Port Number Problem",
+    "link": "https://darkwebinformer.com/portless-vercel-labs-fix-for-the-localhost-port-number-problem/",
+    "date": "2026-02-17",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
   },
   {
     "title": "OpenClaw creator Peter Steinberger joins OpenAI",
@@ -2121,6 +2294,7 @@
     "date": "2026-02-16",
     "terms": [
       "Zero Day",
+      "BeyondTrust",
       "Phish",
       "CVE-2026-21510",
       "CVE-2026-1731"
@@ -2132,7 +2306,8 @@
     "link": "https://darkwebinformer.com/threat-actor-claims-sale-of-13-6-million-records-from-russian-edtech-platform-foxford/",
     "date": "2026-02-16",
     "terms": [
-      "IOC"
+      "IOC",
+      "DarkWebInformer"
     ],
     "inline_links": []
   },
@@ -2257,6 +2432,7 @@
     "link": "https://darkwebinformer.com/google-chrome-zero-day-exploited-in-the-wild-use-after-free-in-css-enables-remote-code-execution-cve-2026-2441/",
     "date": "2026-02-16",
     "terms": [
+      "DarkWebInformer",
       "CVE-2026-2441",
       "cve-2026-2441"
     ],
@@ -2390,7 +2566,17 @@
     "link": "https://darkwebinformer.com/brutus-praetorians-zero-dependency-credential-testing-tool-takes-aim-at-hydra/",
     "date": "2026-02-15",
     "terms": [
+      "DarkWebInformer",
       "MongoDB"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Refloow Geo Forensics: A Free Batch Image Geolocation and EXIF Forensics Tool for OSINT",
+    "link": "https://darkwebinformer.com/refloow-geo-forensics-a-free-batch-image-geolocation-and-exif-forensics-tool-for-osint/",
+    "date": "2026-02-15",
+    "terms": [
+      "DarkWebInformer"
     ],
     "inline_links": []
   },
@@ -3079,6 +3265,7 @@
     "link": "https://www.cisa.gov/news-events/alerts/2026/02/13/cisa-adds-one-known-exploited-vulnerability-catalog",
     "date": "2026-02-13",
     "terms": [
+      "BeyondTrust",
       "CVE-2026-1731",
       "cve-2026-1731"
     ],
@@ -3276,6 +3463,15 @@
     "terms": [
       "scattered spider",
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Researchers Observe In-the-Wild Exploitation of BeyondTrust CVSS 9.9 Vulnerability",
+    "link": "https://thehackernews.com/2026/02/researchers-observe-in-wild.html",
+    "date": "2026-02-13",
+    "terms": [
+      "BeyondTrust"
     ],
     "inline_links": []
   },
@@ -3884,6 +4080,7 @@
     "link": "https://www.greynoise.io/blog/reconnaissance-beyondtrust-rce-cve-2026-1731",
     "date": "2026-02-12",
     "terms": [
+      "BeyondTrust",
       "CVE-2026-1731"
     ],
     "inline_links": []
