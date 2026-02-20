@@ -1,5 +1,293 @@
 [
   {
+    "title": "BeyondTrust Vulnerability Exploited in Ransomware Attacks",
+    "link": "https://www.securityweek.com/beyondtrust-vulnerability-exploited-in-ransomware-attacks/",
+    "date": "2026-02-20",
+    "terms": [
+      "CVE-2026-1731"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "651 arrested, $4.3 million recovered in African cybercrime sweep",
+    "link": "https://www.helpnetsecurity.com/2026/02/20/interpol-operation-red-card-2-0-africa-cybercrime/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "FBI warns of surge in ATM Jackpotting, $20 Million lost in 2025",
+    "link": "https://securityaffairs.com/188281/cyber-crime/fbi-warns-of-surge-in-atm-jackpotting-20-million-lost-in-2025.html",
+    "date": "2026-02-20",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Red Card 2.0: INTERPOL busts scam networks across Africa, seizes millions",
+    "link": "https://securityaffairs.com/188272/cyber-crime/red-card-2-0-interpol-busts-scam-networks-across-africa-seizes-millions.html",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PromptSpy abuses Gemini AI to gain persistent access on Android",
+    "link": "https://securityaffairs.com/188261/ai/promptspy-abuses-gemini-ai-to-gain-persistent-access-on-android.html",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Facebook ads spread fake Windows 11 downloads that steal passwords and crypto wallets",
+    "link": "https://www.malwarebytes.com/blog/scams/2026/02/facebook-ads-spread-fake-windows-11-downloads-that-steal-passwords-and-crypto-wallets",
+    "date": "2026-02-20",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Top of the World Treatment Center Settles Alleged Risk Analysis HIPAA Violation",
+    "link": "https://www.hipaajournal.com/top-of-the-world-treatment-center-hipaa-settlement/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing incident",
+        "url": "https://www.hipaajournal.com/tallahassee-memorial-healthcare-patient-data-stolen-in-cyberattack/"
+      }
+    ]
+  },
+  {
+    "title": "KI und Komplexit\u00e4t als Brandbeschleuniger f\u00fcr Cyberkriminelle",
+    "link": "https://www.csoonline.com/article/4135199/ki-und-komplexitat-als-brandbeschleuniger-fur-cyberkriminelle.html",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PayPal launches latest struggle to get rid of SMS for MFA",
+    "link": "https://www.csoonline.com/article/4134258/paypal-launches-latest-struggle-to-get-rid-of-sms-for-mfa.html",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New phishing campaign tricks employees into bypassing Microsoft 365 MFA",
+    "link": "https://www.csoonline.com/article/4134874/new-phishing-campaign-tricks-employees-into-bypassing-microsoft-365-mfa.html",
+    "date": "2026-02-20",
+    "terms": [
+      "Canadian",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "wrote about device code phishing in 2020",
+        "url": "https://blog.knowbe4.com/watch-out-for-oauth-phishing-attacks-and-how-you-can-stay-safe"
+      },
+      {
+        "term": "Phish",
+        "text": "In a blog about device code phishing",
+        "url": "https://blog.knowbe4.com/what-is-device-code-phishing"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Exploit Critical BeyondTrust Vulnerability to Deploy VShell and SparkRAT",
+    "link": "https://gbhackers.com/beyondtrust-vulnerability/",
+    "date": "2026-02-20",
+    "terms": [
+      "critical Vulnerability",
+      "CVE-2026-1731"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ongoing Campaign Targets Microsoft 365 to Steal OAuth Tokens for Persistent Access",
+    "link": "https://gbhackers.com/microsoft-365-to-steal-oauth-tokens/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ThreatsDay Bulletin: OpenSSL RCE, Foxit 0-Days, Copilot Leak, AI Password Flaws & 20+ Stories",
+    "link": "https://thecyberpost.com/news/hackers/threatsday-bulletin-openssl-rce-foxit-0-days-copilot-leak-ai-password-flaws-20-stories/",
+    "date": "2026-02-20",
+    "terms": [
+      "Canada",
+      "IOC",
+      "WSUS",
+      "Phish",
+      "Lockbit",
+      "CVE-2026-1281",
+      "CVE-2021-22175",
+      "cve-2026-1281"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-1281",
+        "text": "CVE-2026-1281 and CVE-2026-1340",
+        "url": "https://thehackernews.com/2026/02/83-of-ivanti-epmm-exploits-linked-to.html"
+      }
+    ]
+  },
+  {
+    "title": "The Cyber Express Weekly Roundup: AI Disruption, Regulatory Pressure, and the Evolving Cyber Threat Landscape",
+    "link": "https://thecyberexpress.com/ai-deepfakes-ransomware-weekly-roundup/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "French National Bank Authority Breach Exposed 1.2 Million Accounts",
+    "link": "https://thecyberexpress.com/french-national-bank-authority-breach/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Two Petabytes Worth Data of Israeli\u2019s Siphoned, Says Cyber Head",
+    "link": "https://thecyberexpress.com/israel-data-breach-incd-head/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing attacks",
+        "url": "https://thecyberexpress.com/targeted-phishing-attacks-hit-swiss-users/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing attacks",
+        "url": "https://thecyberexpress.com/targeted-phishing-attacks-hit-swiss-users/"
+      }
+    ]
+  },
+  {
+    "title": "CharlieKirk Grabber Stealer Attacking Windows Systems to Exfiltrate Login Credentials",
+    "link": "https://cybersecuritynews.com/charliekirk-grabber-stealer-attacking-windows-systems/",
+    "date": "2026-02-20",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PoC Released for Critical Chrome 0-day Vulnerability Exploited in the Wild",
+    "link": "https://cybersecuritynews.com/chrome-0-day-vulnerability-poc/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "CVE-2026-2441",
+      "cve-2026-2441"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-2441",
+        "text": "CISA has added CVE-2026-2441 to its Known Exploited Vulnerabilities (KEV) catalog",
+        "url": "https://cybersecuritynews.com/google-chromium-0-day-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "PoC Released for Windows Notepad Vulnerability that Enables Malicious Command Execution",
+    "link": "https://cybersecuritynews.com/poc-windows-notepad-vulnerability/",
+    "date": "2026-02-20",
+    "terms": [
+      "Zero Day",
+      "zero day"
+    ],
+    "inline_links": [
+      {
+        "term": "Zero Day",
+        "text": "According to the Zero Day Initiative write-up",
+        "url": "https://www.zerodayinitiative.com/blog/2026/2/19/cve-2026-20841-arbitrary-code-execution-in-the-windows-notepad"
+      }
+    ]
+  },
+  {
+    "title": "Hackers Actively Exploiting Critical BeyondTrust Vulnerability to Deploy VShell and SparkRAT",
+    "link": "https://cybersecuritynews.com/hackers-actively-exploiting-critical-beyondtrust-vulnerability/",
+    "date": "2026-02-20",
+    "terms": [
+      "Canada",
+      "critical Vulnerability",
+      "apt27",
+      "silk typhoon",
+      "CVE-2024-12356",
+      "CVE-2026-1731"
+    ],
+    "inline_links": [
+      {
+        "term": "silk typhoon",
+        "text": "Silk Typhoon",
+        "url": "https://cybersecuritynews.com/microsoft-warns-of-silk-typhoon-hackers/"
+      }
+    ]
+  },
+  {
+    "title": "A $10K Bounty Awaits Anyone Who Can Hack Ring Cameras to Stop Sharing Data With Amazon",
+    "link": "https://www.wired.com/story/a-10k-bounty-awaits-anyone-who-can-hack-ring-cameras-to-stop-sharing-data-with-amazon/",
+    "date": "2026-02-20",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "OpenClaw Security Issues Continue as SecureClaw Open Source Tool Debuts",
     "link": "https://www.securityweek.com/openclaw-security-issues-continue-as-secureclaw-open-source-tool-debuts/",
     "date": "2026-02-19",
@@ -46,7 +334,7 @@
     "inline_links": []
   },
   {
-    "title": "Intimate products producer Tenga spilled customer data",
+    "title": "Intimate products maker Tenga spilled customer data",
     "link": "https://www.malwarebytes.com/blog/news/2026/02/intimate-products-producer-tenga-spilled-customer-data",
     "date": "2026-02-19",
     "terms": [
@@ -302,6 +590,184 @@
     "date": "2026-02-19",
     "terms": [
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Graneles de Chile By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-19",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Mayfair Hotels & Resorts By sinobi",
+    "link": "https://www.ransomlook.io//group/sinobi",
+    "date": "2026-02-19",
+    "terms": [
+      "sinobi"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Best-in-Class 'Starkiller' Phishing Kit Bypasses MFA",
+    "link": "https://www.darkreading.com/threat-intelligence/starkiller-phishing-kit-mfa",
+    "date": "2026-02-19",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds Dell RecoverPoint and GitLab flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/188243/hacking/u-s-cisa-adds-dell-recoverpoint-and-gitlab-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-19",
+    "terms": [
+      "CVE-2020-7796",
+      "CVE-2021-22175",
+      "CVE-2026-22769",
+      "cve-2021-22175",
+      "cve-2026-22769",
+      "cve-2020-7796"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-22175",
+        "text": "CVE-2021-22175",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-22175"
+      },
+      {
+        "term": "CVE-2026-22769",
+        "text": "CVE-2026-22769",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-22769"
+      },
+      {
+        "term": "CVE-2021-22175",
+        "text": "CVE-2021-22175",
+        "url": "https://securityaffairs.com/175344/hacking/coordinated-surge-exploitation-attempts-ssrf-vulnerabilities.html"
+      },
+      {
+        "term": "CVE-2020-7796",
+        "text": "CVE-2020-7796",
+        "url": "https://securityaffairs.com/175344/hacking/coordinated-surge-exploitation-attempts-ssrf-vulnerabilities.html"
+      },
+      {
+        "term": "CVE-2026-22769",
+        "text": "CVE-2026-22769",
+        "url": "https://securityaffairs.com/188176/apt/china-linked-apt-weaponized-dell-recoverpoint-zero-day-since-2024.html"
+      }
+    ]
+  },
+  {
+    "title": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+    "link": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/",
+    "date": "2026-02-19",
+    "terms": [
+      "critical Vulnerability",
+      "CVE-2026-1731",
+      "critical vulnerability",
+      "cve-2026-1731"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+        "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/"
+      },
+      {
+        "term": "CVE-2026-1731",
+        "text": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+        "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/"
+      }
+    ]
+  },
+  {
+    "title": "Data Shows Elevenfold Increase in Data-only Extortion Attacks",
+    "link": "https://www.hipaajournal.com/data-shows-elevenfold-increase-data-only-extortion-attacks/",
+    "date": "2026-02-19",
+    "terms": [
+      "qilin",
+      "Phish",
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - February 19th, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-february-19th-2026/",
+    "date": "2026-02-19",
+    "terms": [
+      "IOC",
+      "qilin",
+      "sinobi"
+    ],
+    "inline_links": [
+      {
+        "term": "qilin",
+        "text": "Willow Construction LLC has fallen victim to Qilin Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/2024535677627466035?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Kroll International has fallen victim to Qilin Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/2024536187214483461?s=20"
+      },
+      {
+        "term": "qilin",
+        "text": "Telecare Corporation has fallen victim to Qilin Ransomware",
+        "url": "https://x.com/DarkWebInformer/status/2024556943315259673?s=20"
+      },
+      {
+        "term": "sinobi",
+        "text": "Sinobi Ransomware Claims 4 Victims",
+        "url": "https://x.com/DarkWebInformer/status/2024615457865470393?s=20"
+      }
+    ]
+  },
+  {
+    "title": "INTERPOL's Operation Red Card 2.0 Nets 651 Arrests Across Africa",
+    "link": "https://darkwebinformer.com/interpols-operation-red-card-2-0-nets-651-arrests-across-africa/",
+    "date": "2026-02-19",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Alleged Data Breach of the National Bank of Ukraine Souvenir Coin Service Exposes 1.5 Million Records",
+    "link": "https://darkwebinformer.com/alleged-data-breach-of-the-national-bank-of-ukraine-souvenir-coin-service-exposes-1-5-million-records/",
+    "date": "2026-02-19",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Texas Sues TP-Link Over Alleged Security Risks and Supply Chain Deception",
+    "link": "https://www.esecurityplanet.com/threats/texas-sues-tp-link-over-alleged-security-risks-and-supply-chain-deception/",
+    "date": "2026-02-19",
+    "terms": [
+      "CVE-2023-1389"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "MCP Servers Expose a Hidden AI Attack Surface in Enterprise Environments",
+    "link": "https://www.esecurityplanet.com/threats/mcp-servers-expose-a-hidden-ai-attack-surface-in-enterprise-environments/",
+    "date": "2026-02-19",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Paisley Products of Canada By play",
+    "link": "https://www.ransomlook.io//group/play",
+    "date": "2026-02-19",
+    "terms": [
+      "Canada"
     ],
     "inline_links": []
   },
@@ -599,15 +1065,6 @@
     "date": "2026-02-18",
     "terms": [
       "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Diversified Supply Inc. By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-18",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -2570,15 +3027,6 @@
     "date": "2026-02-13",
     "terms": [
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Halcyon Technologies By sinobi",
-    "link": "https://www.ransomlook.io//group/sinobi",
-    "date": "2026-02-13",
-    "terms": [
-      "sinobi"
     ],
     "inline_links": []
   },
@@ -14414,498 +14862,5 @@
         "url": "https://www.cve.org/CVERecord?id=CVE-2026-20045"
       }
     ]
-  },
-  {
-    "title": "ChatGPT's cheapest subscription comes to the US: I compared Go to Plus and Pro",
-    "link": "https://www.zdnet.com/article/chat-gpt-go/",
-    "date": "2026-01-20",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Product showcase: PrivacyHawk for iOS helps users track and remove personal data from data brokers",
-    "link": "https://www.helpnetsecurity.com/2026/01/20/product-showcase-privacyhawk-for-ios/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Telegram-based illicit billionaire marketplace Tudou Guarantee stopped transactions",
-    "link": "https://securityaffairs.com/187102/cyber-crime/telegram-based-illicit-billionaire-marketplace-tudou-guarantee-stopped-transactions.html",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LinkedIn Phishing Campaign Exploits Open-Source Pen Testing Tool to Compromise Business Execs",
-    "link": "https://www.infosecurity-magazine.com/news/linkedin-phishing-campaign-targets/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Valley Eye Associates Confirms Patient Data Stolen in Ransomware Attack",
-    "link": "https://www.hipaajournal.com/valley-eye-associates-imperial-beach-community-clinic-data-breach/",
-    "date": "2026-01-20",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CrashFix attack hijacks browser failures to deliver ModelRAT malware via fake Chrome extension",
-    "link": "https://www.csoonline.com/article/4119047/crashfix-attack-hijacks-browser-failures-to-deliver-modelrat-malware-via-fake-chrome-extension.html",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Google Gemini flaw exposes new AI prompt injection risks for enterprises",
-    "link": "https://www.csoonline.com/article/4119029/google-gemini-flaw-exposes-new-ai-prompt-injection-risks-for-enterprises.html",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Secure web browsers for the enterprise compared: How to pick the right one",
-    "link": "https://www.csoonline.com/article/573875/secure-web-browsers-for-the-enterprise-compared-how-to-pick-the-right-one.html",
-    "date": "2026-01-20",
-    "terms": [
-      "hunting",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Spear-Phishing Campaign Abuses Argentine Federal Court Rulings to Deliver Covert RAT",
-    "link": "https://gbhackers.com/spear-phishing-campaign-2/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Spear-Phishing Campaign Abuses Argentine Federal Court Rulings to Deliver Covert RAT",
-        "url": "https://gbhackers.com/spear-phishing-campaign-2/"
-      }
-    ]
-  },
-  {
-    "title": "TP-Link Vulnerability Allows Authentication Bypass Via Password Recovery Feature",
-    "link": "https://cybersecuritynews.com/tp-link-vulnerability/",
-    "date": "2026-01-20",
-    "terms": [
-      "Easily Exploitable"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Raaga Data Breach Exposes 10.2 Million User Records",
-    "link": "https://cybersecuritynews.com/raaga-data-breach/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://cybersecuritynews.com/phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Python-based Malware SolyxImmortal Leverages Discord to Silently Harvest Sensitive Data",
-    "link": "https://cybersecuritynews.com/python-based-malware-solyximmortal-leverages-discord/",
-    "date": "2026-01-20",
-    "terms": [
-      "CL0P"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "WhisperPair Attack Allows Hijacking of Laptops, Earbuds Without User Consent \u2013 Millions Affected",
-    "link": "https://cybersecuritynews.com/whisperpair-attack/",
-    "date": "2026-01-20",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Profile: APT28",
-    "link": "https://socradar.io/blog/dark-web-profile-apt28/",
-    "date": "2026-01-20",
-    "terms": [
-      "Canada",
-      "IOC",
-      "hunting",
-      "Phish",
-      "CVE-2017-6742",
-      "CVE-2023-23397",
-      "CVE-2023-24880",
-      "phish",
-      "cve-2023-23397",
-      "cve-2017-6742"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "spear phishing campaigns",
-        "url": "https://socradar.io/blog/how-to-identify-spear-phishing-attacks/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://socradar.io/blog/top-10-phishing-attacks-of-2024-lessons-learned"
-      },
-      {
-        "term": "CVE-2023-23397",
-        "text": "CVE-2023-23397",
-        "url": "https://socradar.io/blog/microsoft-fixes-exploited-zero-days-in-march-patch-tuesday-cve-2023-23397-cve-2023-24880/"
-      },
-      {
-        "term": "CVE-2017-6742",
-        "text": "CVE-2017-6742",
-        "url": "https://socradar.io/blog/apt28-exploits-cisco-vulnerability-to-deploy-malware-in-espionage-campaign/"
-      }
-    ]
-  },
-  {
-    "title": "Add Punycode to your Threat Hunting Routine, (Tue, Jan 20th)",
-    "link": "https://isc.sans.edu/diary/rss/32640",
-    "date": "2026-01-20",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Use LinkedIn Messages to Spread RAT Malware Through DLL Sideloading",
-    "link": "https://thehackernews.com/2026/01/hackers-use-linkedin-messages-to-spread.html",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New PDFSider malware targets finance sector with stealthy backdoor",
-    "link": "https://www.scworld.com/brief/new-pdfsider-malware-targets-finance-sector-with-stealthy-backdoor",
-    "date": "2026-01-20",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft tops list of most spoofed brands in phishing attacks",
-    "link": "https://www.scworld.com/brief/microsoft-tops-list-of-most-spoofed-brands-in-phishing-attacks",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "PCComponentes Allegedly Breached, Exposing 16.3 Million Customer Records Including Payment Card Data",
-    "link": "https://darkwebinformer.com/pccomponentes-allegedly-breached-exposing-16-3-million-customer-records-including-payment-card-data/",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Guangdong Medical University Affiliated Hospital Database Allegedly for Sale with 1.4GB of Patient and Clinical Data",
-    "link": "https://darkwebinformer.com/guangdong-medical-university-affiliated-hospital-database-allegedly-for-sale-with-1-4gb-of-patient-and-clinical-data/",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware IOCs Lookup",
-    "link": "https://darkwebinformer.com/ransomware-iocs-lookup/",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Inter Partner Assistance Algeria Allegedly Hacked, Exposing Internal Systems, User Accounts, and Insurance Documents",
-    "link": "https://darkwebinformer.com/inter-partner-assistance-algeria-allegedly-hacked-exposing-internal-systems-user-accounts-and-insurance-documents/",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LayerX Links GhostPoster to 17 Extensions and 840K Downloads",
-    "link": "https://www.esecurityplanet.com/threats/layerx-links-ghostposter-to-17-extensions-and-840k-downloads/",
-    "date": "2026-01-20",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cisco Secure Email Appliance RCE Exploited in Attacks",
-    "link": "https://www.esecurityplanet.com/threats/cisco-secure-email-appliance-rce-exploited-in-attacks/",
-    "date": "2026-01-20",
-    "terms": [
-      "CVE-2025-20393",
-      "cve-2025-20393"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-20393",
-        "text": "CVE-2025-20393",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393"
-      }
-    ]
-  },
-  {
-    "title": "Cloudflare Zero-Day Let Attackers Bypass WAF via ACME Certificate Validation Path",
-    "link": "https://thecyberexpress.com/cloudflare-zero-day-waf-bypass-acme/",
-    "date": "2026-01-20",
-    "terms": [
-      "CVE-2025-9242"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Gootloader with Low Detection Rate Bypasses Most Security Tools",
-    "link": "https://cybersecuritynews.com/gootloader-with-low-detection-rate/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Most\u00a0SOCs\u00a0Are\u00a0Seeing\u00a0Attacks\u00a0Too\u00a0Late.\u00a0Here\u2019s\u00a0How\u00a0to\u00a0Fix\u00a0It",
-    "link": "https://cybersecuritynews.com/most-socs-are-seeing-attacks-too-late/",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC",
-      "hunting",
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Everest Ransomware Group Allegedly Claims to Have Breached McDonald\u2019s India",
-    "link": "https://cybersecuritynews.com/mcdonalds-india-everest-ransomware/",
-    "date": "2026-01-20",
-    "terms": [
-      "Everest",
-      "Phish",
-      "everest"
-    ],
-    "inline_links": [
-      {
-        "term": "Everest",
-        "text": "Everest Ransomware Group Allegedly Claims to Have Breached McDonald\u2019s India",
-        "url": "https://cybersecuritynews.com/mcdonalds-india-everest-ransomware/"
-      },
-      {
-        "term": "Everest",
-        "text": "Everest Ransomware Group Allegedly Claims to Have Breached McDonald\u2019s India",
-        "url": "https://cybersecuritynews.com/mcdonalds-india-everest-ransomware/"
-      }
-    ]
-  },
-  {
-    "title": "New Spear Phishing Attack Leveraging Argentine Federal Court Rulings to Covert RAT for Remote Access",
-    "link": "https://cybersecuritynews.com/new-spear-phishing-attack-leveraging-argentine-federal-court-rulings/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "New Spear Phishing Attack Leveraging Argentine Federal Court Rulings to Covert RAT for Remote Access",
-        "url": "https://cybersecuritynews.com/new-spear-phishing-attack-leveraging-argentine-federal-court-rulings/"
-      },
-      {
-        "term": "Phish",
-        "text": "New Spear Phishing Attack Leveraging Argentine Federal Court Rulings to Covert RAT for Remote Access",
-        "url": "https://cybersecuritynews.com/new-spear-phishing-attack-leveraging-argentine-federal-court-rulings/"
-      }
-    ]
-  },
-  {
-    "title": "NCSC Warns of Hacktivist Groups Attacking UK Organisations and Online Services",
-    "link": "https://cybersecuritynews.com/ncsc-warns-of-hacktivist-groups/",
-    "date": "2026-01-20",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Magen Eco Energy By the gentlemen",
-    "link": "https://www.ransomlook.io//group/the%20gentlemen",
-    "date": "2026-01-20",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "PDFSIDER Malware \u2013 Exploitation of DLL Side-Loading for AV and EDR Evasion",
-    "link": "https://securityaffairs.com/187126/malware/pdfsider-malware-exploitation-of-dll-side-loading-for-av-and-edr-evasion.html",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Everest Ransomware Claims McDonalds India Breach Involving Customer Data",
-    "link": "https://hackread.com/everest-ransomware-mcdonalds-india-breach-customer-data/",
-    "date": "2026-01-20",
-    "terms": [
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Airlock Digital Announces Independent TEI Study Quantifying Measurable ROI & Security Impact",
-    "link": "https://www.csoonline.com/article/4119592/airlock-digital-announces-independent-tei-study-quantifying-measurable-roi-security-impact.html",
-    "date": "2026-01-20",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware and Supply Chain Attacks Set Records in 2025",
-    "link": "https://thecyberexpress.com/ransomware-and-supply-chain-attacks-set-record/",
-    "date": "2026-01-20",
-    "terms": [
-      "Canada",
-      "akira",
-      "qilin",
-      "sinobi",
-      "CL0P",
-      "Salesforce",
-      "Lockbit",
-      "salesforce",
-      "lockbit",
-      "cl0p"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/salesforce-expands-investigation/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin",
-        "url": "https://thecyberexpress.com/qilin-ransomware-group-ttps/"
-      },
-      {
-        "term": "Lockbit",
-        "text": "Lockbit",
-        "url": "https://thecyberexpress.com/lockbit-returns-with-data-leak-site-victims/"
-      },
-      {
-        "term": "sinobi",
-        "text": "Sinobi",
-        "url": "https://thecyberexpress.com/ransomware-attacks-surge-in-2025/"
-      },
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://thecyberexpress.com/akira-ransomware-group-cisa-warning/"
-      },
-      {
-        "term": "CL0P",
-        "text": "CL0P",
-        "url": "https://thecyberexpress.com/cl0p-ransomware-targets-gladinet-centrestack/"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/salesforce-expands-investigation/"
-      },
-      {
-        "term": "qilin",
-        "text": "Qilin",
-        "url": "https://thecyberexpress.com/qilin-ransomware-group-ttps/"
-      },
-      {
-        "term": "Lockbit",
-        "text": "Lockbit",
-        "url": "https://thecyberexpress.com/lockbit-returns-with-data-leak-site-victims/"
-      },
-      {
-        "term": "sinobi",
-        "text": "Sinobi",
-        "url": "https://thecyberexpress.com/ransomware-attacks-surge-in-2025/"
-      },
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://thecyberexpress.com/akira-ransomware-group-cisa-warning/"
-      },
-      {
-        "term": "CL0P",
-        "text": "CL0P",
-        "url": "https://thecyberexpress.com/cl0p-ransomware-targets-gladinet-centrestack/"
-      }
-    ]
-  },
-  {
-    "title": "Smarter Inventory Control With AI-Driven Systems",
-    "link": "https://blog.comodo.com/others/ai-inventory-management-software/",
-    "date": "2026-01-20",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "HIPAA Compliance for Self-Insured Group Health Plans",
-    "link": "https://www.hipaajournal.com/hipaa-compliance-for-self-insured-group-health-plans/",
-    "date": "2026-01-20",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cyber Risks Among CEOs\u2019 Top Worries Amid Weak Short Term Growth Outlook",
-    "link": "https://www.infosecurity-magazine.com/news/cyber-risks-among-ceos-top-worries/",
-    "date": "2026-01-20",
-    "terms": [
-      "PWC"
-    ],
-    "inline_links": []
   }
 ]
