@@ -1,5 +1,101 @@
 [
   {
+    "title": "CISA Adds Two Actively Exploited Roundcube Flaws to KEV Catalog",
+    "link": "https://thehackernews.com/2026/02/cisa-adds-two-actively-exploited.html",
+    "date": "2026-02-21",
+    "terms": [
+      "CVE-2025-49113"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds RoundCube Webmail flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/188324/security/u-s-cisa-adds-roundcube-webmail-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-21",
+    "terms": [
+      "CVE-2025-49113",
+      "CVE-2025-68461",
+      "cve-2025-49113",
+      "cve-2025-68461"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-49113",
+        "text": "CVE-2025-49113",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-49113"
+      },
+      {
+        "term": "CVE-2025-68461",
+        "text": "CVE-2025-68461",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-68461"
+      },
+      {
+        "term": "CVE-2025-49113",
+        "text": "CVE-2025-49113",
+        "url": "https://securityaffairs.com/178615/hacking/roundcube-webmail-under-fire-critical-exploit-found-after-a-decade.html"
+      }
+    ]
+  },
+  {
+    "title": "Identity Cyber Scores: The New Metric Shaping Cyber Insurance in 2026",
+    "link": "https://thecyberpost.com/news/hackers/identity-cyber-scores-the-new-metric-shaping-cyber-insurance-in-2026/",
+    "date": "2026-02-21",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "BeyondTrust Flaw Used for Web Shells, Backdoors, and Data Exfiltration",
+    "link": "https://thecyberpost.com/news/hackers/beyondtrust-flaw-used-for-web-shells-backdoors-and-data-exfiltration/",
+    "date": "2026-02-21",
+    "terms": [
+      "Canada",
+      "BeyondTrust",
+      "silk typhoon",
+      "CVE-2024-12356",
+      "CVE-2026-1731",
+      "cve-2026-1731",
+      "cve-2024-12356"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-1731",
+        "text": "CVE-2026-1731",
+        "url": "https://thehackernews.com/2026/02/researchers-observe-in-wild.html"
+      },
+      {
+        "term": "CVE-2024-12356",
+        "text": "CVE-2024-12356",
+        "url": "https://thehackernews.com/2025/02/beyondtrust-zero-day-breach-exposes-17.html"
+      },
+      {
+        "term": "silk typhoon",
+        "text": "Silk Typhoon",
+        "url": "https://thehackernews.com/2025/03/china-linked-silk-typhoon-expands-cyber.html"
+      }
+    ]
+  },
+  {
+    "title": "Japanese-Language Phishing Emails, (Sat, Feb 21st)",
+    "link": "https://isc.sans.edu/diary/rss/32734",
+    "date": "2026-02-21",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Update Chrome now: Zero-day bug allows code execution via malicious webpages",
+    "link": "https://databreaches.net/2026/02/21/update-chrome-now-zero-day-bug-allows-code-execution-via-malicious-webpages/?pk_campaign=feed&pk_kwd=update-chrome-now-zero-day-bug-allows-code-execution-via-malicious-webpages",
+    "date": "2026-02-21",
+    "terms": [
+      "CVE-2026-2441"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "BeyondTrust Vulnerability Exploited in Ransomware Attacks",
     "link": "https://www.securityweek.com/beyondtrust-vulnerability-exploited-in-ransomware-attacks/",
     "date": "2026-02-20",
@@ -494,6 +590,121 @@
     "inline_links": []
   },
   {
+    "title": "Madison Services, Inc. By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-20",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "davila.cl By lockbit5",
+    "link": "https://www.ransomlook.io//group/lockbit5",
+    "date": "2026-02-20",
+    "terms": [
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "\u2018Starkiller\u2019 Phishing Service Proxies Real Login Pages, MFA",
+    "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Attackers Use New Tool to Scan for React2Shell Exposure",
+    "link": "https://www.darkreading.com/application-security/attackers-new-tool-scan-react2shell-exposure",
+    "date": "2026-02-20",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PayPal discloses extended data leak linked to Loan App glitch",
+    "link": "https://securityaffairs.com/188309/data-breach/paypal-discloses-extended-data-leak-linked-to-loan-app-glitch.html",
+    "date": "2026-02-20",
+    "terms": [
+      "PWC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Novel Starkiller phishing kit harnesses legitimate login sites",
+    "link": "https://www.scworld.com/brief/novel-starkiller-phishing-kit-harnesses-legitimate-login-sites",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New device code vishing campaign sets sights on Microsoft Entra accounts",
+    "link": "https://www.scworld.com/brief/new-device-code-vishing-campaign-sets-sights-on-microsoft-entra-accounts",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/02/20/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "date": "2026-02-20",
+    "terms": [
+      "CVE-2025-49113",
+      "CVE-2025-68461",
+      "cve-2025-49113",
+      "cve-2025-68461"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-49113",
+        "text": "CVE-2025-49113",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-49113"
+      },
+      {
+        "term": "CVE-2025-68461",
+        "text": "CVE-2025-68461",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-68461"
+      }
+    ]
+  },
+  {
+    "title": "University of Mississippi Medical Center Closes Clinics After Ransomware Attack",
+    "link": "https://www.esecurityplanet.com/threats/university-of-mississippi-medical-center-closes-clinics-after-ransomware-attack/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PayPal Flaw Exposed Sensitive Data in Lending App for Six Months",
+    "link": "https://www.esecurityplanet.com/threats/paypal-flaw-exposed-sensitive-data-in-lending-app-for-six-months/",
+    "date": "2026-02-20",
+    "terms": [
+      "Phish",
+      "PWC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hospitals at Risk of BeyondTrust Ransomware Hacks",
+    "link": "https://databreaches.net/2026/02/20/hospitals-at-risk-of-beyondtrust-ransomware-hacks/?pk_campaign=feed&pk_kwd=hospitals-at-risk-of-beyondtrust-ransomware-hacks",
+    "date": "2026-02-20",
+    "terms": [
+      "BeyondTrust"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "OpenClaw Security Issues Continue as SecureClaw Open Source Tool Debuts",
     "link": "https://www.securityweek.com/openclaw-security-issues-continue-as-secureclaw-open-source-tool-debuts/",
     "date": "2026-02-19",
@@ -796,15 +1007,6 @@
     "date": "2026-02-19",
     "terms": [
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Kensington HPP By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-19",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -14603,581 +14805,6 @@
         "term": "CVE-2025-68645",
         "text": "CVE-2025-68645",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-68645"
-      }
-    ]
-  },
-  {
-    "title": "frandent.it By lockbit5",
-    "link": "https://www.ransomlook.io//group/lockbit5",
-    "date": "2026-01-21",
-    "terms": [
-      "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LastPass Warns of Fake Maintenance Messages Targeting Users\u2019 Master Passwords",
-    "link": "https://thehackernews.com/2026/01/lastpass-warns-of-fake-maintenance.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "OpenAI adds age prediction to ChatGPT to strengthen teen safety",
-    "link": "https://www.helpnetsecurity.com/2026/01/21/chatgpt-age-prediction-teen-safety/",
-    "date": "2026-01-21",
-    "terms": [
-      "OpenAI",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "OpenAI",
-        "text": "OpenAI adds age prediction to ChatGPT to strengthen teen safety",
-        "url": "https://www.helpnetsecurity.com/2026/01/21/chatgpt-age-prediction-teen-safety/"
-      }
-    ]
-  },
-  {
-    "title": "Crooks impersonate LastPass in campaign to harvest master passwords",
-    "link": "https://securityaffairs.com/187145/cyber-crime/crooks-impersonate-lastpass-in-campaign-to-harvest-master-passwords.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Malicious Google Calendar invites could expose private data",
-    "link": "https://www.malwarebytes.com/blog/news/2026/01/malicious-google-calendar-invites-could-expose-private-data",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Contagious Interview turns VS Code into an attack vector",
-    "link": "https://www.csoonline.com/article/4119927/contagious-interview-turns-vs-code-into-an-attack-vector.html",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "13 cyber questions to better vet IT vendors and reduce third-party risk",
-    "link": "https://www.csoonline.com/article/4119475/13-cyber-questions-to-better-vet-it-vendors-and-reduce-third-party-risk.html",
-    "date": "2026-01-21",
-    "terms": [
-      "hunting",
-      "Salesforce",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "1.5 billion Salesforce records",
-        "url": "https://www.csoonline.com/article/4067846/extortion-gang-opens-data-leak-site-to-squeeze-victims-of-its-salesforce-attacks.html"
-      }
-    ]
-  },
-  {
-    "title": "Three vulnerabilities in Anthropic Git MCP Server could let attackers tamper with LLMs",
-    "link": "https://www.csoonline.com/article/4119571/three-vulnerabilities-found-in-anthropic-git-mcp-server-could-let-attackers-tamper-with-llms.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Canadian"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Flaws in Chainlit AI dev framework expose servers to compromise",
-    "link": "https://www.csoonline.com/article/4119469/flaws-in-chainlit-ai-dev-framework-expose-servers-to-compromise.html",
-    "date": "2026-01-21",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "NVIDIA Nsight Graphics on Linux Exposed to Code Execution Vulnerability",
-    "link": "https://gbhackers.com/nvidia-nsight-graphics-on-linux-exposed/",
-    "date": "2026-01-21",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Weaponize 2,500+ Security Tools to Disable Endpoint Defenses Before Ransomware Attacks",
-    "link": "https://gbhackers.com/ransomware-attacks-4/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC",
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "PURELOGS Payload Hidden in Weaponized PNG Images Used in Stealth Attacks",
-    "link": "https://gbhackers.com/weaponized-png-image/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Weaponized Shipping Documents Spread Remcos RAT in Stealthy Malware Campaign",
-    "link": "https://gbhackers.com/remcos-rat/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "HIBP adds alleged Under Armour data breach impacting 72 million emails",
-    "link": "https://cyberinsider.com/hibp-adds-alleged-under-armour-data-breach-impacting-72-million-emails/",
-    "date": "2026-01-21",
-    "terms": [
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LastPass warns of phishing campaign targeting vault credentials",
-    "link": "https://cyberinsider.com/lastpass-warns-of-phishing-campaign-targeting-vault-credentials/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "LastPass warns of phishing campaign targeting vault credentials",
-        "url": "https://cyberinsider.com/lastpass-warns-of-phishing-campaign-targeting-vault-credentials/"
-      }
-    ]
-  },
-  {
-    "title": "New EU Vulnerability Platform GCVE Goes Live, Reducing Reliance on Global Systems",
-    "link": "https://thecyberexpress.com/eu-launches-gcve-vulnerability-database/",
-    "date": "2026-01-21",
-    "terms": [
-      "CVE-2015-2051",
-      "CVE-2017-18368",
-      "CVE-2018-13379",
-      "CVE-2019-19781",
-      "CVE-2021-44228",
-      "CVE-2025-14847",
-      "CVE-2025-55182",
-      "CVE-2025-59374"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cyber Resilience in Healthcare: Lessons from 2025 and Priorities for 2026",
-    "link": "https://thecyberexpress.com/cyber-resilience-in-healthcare/",
-    "date": "2026-01-21",
-    "terms": [
-      "hunting",
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "NVIDIA NSIGHT Graphics for Linux Vulnerability Allows Code Execution Attacks",
-    "link": "https://cybersecuritynews.com/nvidia-nsight-graphics-linux-vulnerability/",
-    "date": "2026-01-21",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New PixelCode Attack Smuggles Malware via Image Pixel Encoding",
-    "link": "https://cybersecuritynews.com/pixelcode-attack/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Threat Actors Hiding stealthy PURELOGS Payload Within a Weaponized PNG File",
-    "link": "https://cybersecuritynews.com/threat-actors-hiding-stealthy-purelogs-payload/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Beware of Weaponized Shipping Documents that Deliver Remcos RAT with a Wide Range of Capabilities",
-    "link": "https://cybersecuritynews.com/beware-of-weaponized-shipping-documents-that-deliver-remcos-rat/",
-    "date": "2026-01-21",
-    "terms": [
-      "critical Vulnerability",
-      "Phish",
-      "CVE-2017-11882"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Alerted to a breach in November, Advanced Family Surgery Center remains publicly silent",
-    "link": "https://databreaches.net/2026/01/21/alerted-to-a-breach-in-november-advanced-family-surgery-center-remains-publicly-silent/?pk_campaign=feed&pk_kwd=alerted-to-a-breach-in-november-advanced-family-surgery-center-remains-publicly-silent",
-    "date": "2026-01-21",
-    "terms": [
-      "genesis"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LastPass Users Targeted With Backup-Themed Phishing Emails",
-    "link": "https://www.securityweek.com/lastpass-users-targeted-with-backup-themed-phishing-emails/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "LastPass Users Targeted With Backup-Themed Phishing Emails",
-        "url": "https://www.securityweek.com/lastpass-users-targeted-with-backup-themed-phishing-emails/"
-      }
-    ]
-  },
-  {
-    "title": "November 2025 Healthcare Data Breach Report",
-    "link": "https://www.hipaajournal.com/november-2025-healthcare-data-breach-report/",
-    "date": "2026-01-21",
-    "terms": [
-      "qilin",
-      "sinobi"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "AI Phishing Is Your Company\u2019s Biggest Security Risk in 2026: Here\u2019s How to Stop It",
-    "link": "https://cybersecuritynews.com/ai-phishing-security/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "AI Phishing Is Your Company\u2019s Biggest Security Risk in 2026: Here\u2019s How to Stop It",
-        "url": "https://cybersecuritynews.com/ai-phishing-security/"
-      },
-      {
-        "term": "Phish",
-        "text": "AI Phishing Is Your Company\u2019s Biggest Security Risk in 2026: Here\u2019s How to Stop It",
-        "url": "https://cybersecuritynews.com/ai-phishing-security/"
-      }
-    ]
-  },
-  {
-    "title": "Critical Vulnerability in Advanced Custom Fields: Extended Plugin Puts 100,000 WordPress Sites at Risk",
-    "link": "https://thecyberexpress.com/acf-add-on-vulnerability-wordpress/",
-    "date": "2026-01-21",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Building Stronger Security With Automated Patch Management",
-    "link": "https://blog.comodo.com/pc-security/automated-patch-management/",
-    "date": "2026-01-21",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Strengthening Cyber Defense With Modern Endpoint Security Solutions",
-    "link": "https://blog.comodo.com/endpoint-security/endpoint-security-solutions/",
-    "date": "2026-01-21",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LastPass Warns of Fake Maintenance Message Tracking Users to Steal Master Passwords",
-    "link": "https://cybersecuritynews.com/lastpass-warns-of-fake-maintenance-message/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing campaign",
-        "url": "https://cybersecuritynews.com/malicious-svgs-in-phishing-campaigns-how-to-detect-hidden-redirects-and-payloads/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing emails",
-        "url": "https://cybersecuritynews.com/hackers-leveraging-compromised-email-server/"
-      }
-    ]
-  },
-  {
-    "title": "Phishing Campaign Zeroes in on LastPass Customers",
-    "link": "https://www.darkreading.com/application-security/phishing-campaign-zeroes-lastpass-customers",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cisco fixed actively exploited Unified Communications zero day",
-    "link": "https://securityaffairs.com/187177/security/cisco-fixed-actively-exploited-unified-communications-zero-day.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Zero Day",
-      "CVE-2026-20045"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Phishing and Spoofed Sites Remain Primary Entry Points For Olympics",
-    "link": "https://www.infosecurity-magazine.com/news/phishing-spoofed-sites-olympic/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Peruvian Loan Scam Harvests Cards and PINs via Fake Applications",
-    "link": "https://www.infosecurity-magazine.com/news/loan-scam-harvests-cards-pins/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ACF Extended WordPress plugin flaw poses admin permission compromise risk",
-    "link": "https://www.scworld.com/brief/acf-extended-wordpress-plugin-flaw-poses-admin-permission-compromise-risk",
-    "date": "2026-01-21",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Afghan government offices subjected to phishing campaign",
-    "link": "https://www.scworld.com/brief/afghan-government-offices-subjected-to-phishing-campaign",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Can you use too many LOLBins to drop some RATs?",
-    "link": "https://www.malwarebytes.com/blog/news/2026/01/can-you-use-too-many-lolbins-to-drop-some-rats",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - January 21st, 2026",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-21st-2026/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC",
-      "sinobi",
-      "MongoDB",
-      "mongodb",
-      "ioc"
-    ],
-    "inline_links": [
-      {
-        "term": "MongoDB",
-        "text": "PentestOPS: A comprehensive penetration testing operations dashboard for managing projects, tasks, findings, clients, and assets. Built with Next.js, Express, and MongoDB.",
-        "url": "https://x.com/DarkWebInformer/status/2014049995859669276?s=20"
-      },
-      {
-        "term": "sinobi",
-        "text": "Sinobi Ransomware Claims 4 Victims",
-        "url": "https://x.com/DarkWebInformer/status/2014075444287434947?s=20"
-      },
-      {
-        "term": "IOC",
-        "text": "Ransomware IOCs Lookup is now also available for Pro subscribers. I have a big queue of IOCs that need to be added. There will be a banner above the lookup when changes are made.",
-        "url": "https://x.com/DarkWebInformer/status/2014088089975562482?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Ransomware Attack Update - January 21st, 2026",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-january-21st-2026/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC",
-      "akira",
-      "qilin",
-      "sinobi",
-      "Everest",
-      "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Attackers Actively Probing RCE Vulnerability in Cisco Enterprise Communications Products",
-    "link": "https://darkwebinformer.com/attackers-actively-probing-rce-vulnerability-in-cisco-enterprise-communications-products/",
-    "date": "2026-01-21",
-    "terms": [
-      "CVE-2026-20045",
-      "cve-2026-20045"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-20045",
-        "text": "https://nvd.nist.gov/vuln/detail/CVE-2026-20045",
-        "url": "https://t.co/TQQuqJGMpv"
-      }
-    ]
-  },
-  {
-    "title": "Menulux Turkish POS Platform Allegedly Breached, Exposing 93,000 Customer Records",
-    "link": "https://darkwebinformer.com/menulux-turkish-pos-platform-allegedly-breached-exposing-93-000-customer-records/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "53,000 USA Driver License Images Allegedly for Sale on Exploit Forum",
-    "link": "https://darkwebinformer.com/53-000-usa-driver-license-images-allegedly-for-sale-on-exploit-forum/",
-    "date": "2026-01-21",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "GitLab 2FA login protection bypass lets attackers take over accounts",
-    "link": "https://www.csoonline.com/article/4120316/gitlab-2fa-login-protection-bypass-lets-attackers-take-over-accounts.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Canadian",
-      "Phish",
-      "CVE-2026-0723",
-      "cve-2026-0723"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-0723",
-        "text": "CVE-2026-0723",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-0723"
-      }
-    ]
-  },
-  {
-    "title": "Oracle releases 337 security patches, including fix for critical Apache Tika flaw",
-    "link": "https://www.csoonline.com/article/4120197/oracle-releases-337-security-patches-including-fix-for-critical-apache-tika-flaw.html",
-    "date": "2026-01-21",
-    "terms": [
-      "Zero Day",
-      "CVE-2026-21962",
-      "CVE-2021-35587",
-      "cve-2026-21962"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21962",
-        "text": "CVE-2026-21962",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21962"
-      }
-    ]
-  },
-  {
-    "title": "Researchers Expose LockBit 5.0 Affiliate Panel and New Encryption Variants",
-    "link": "https://gbhackers.com/lockbit-5-0-panel/",
-    "date": "2026-01-21",
-    "terms": [
-      "Lockbit",
-      "lockbit"
-    ],
-    "inline_links": [
-      {
-        "term": "Lockbit",
-        "text": "Researchers Expose LockBit 5.0 Affiliate Panel and New Encryption Variants",
-        "url": "https://gbhackers.com/lockbit-5-0-panel/"
-      }
-    ]
-  },
-  {
-    "title": "LinkedIn Phishing Abuses DLL Sideloading for Persistent Access",
-    "link": "https://www.esecurityplanet.com/threats/linkedin-phishing-abuses-dll-sideloading-for-persistent-access/",
-    "date": "2026-01-21",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "LinkedIn Phishing Abuses DLL Sideloading for Persistent Access",
-        "url": "https://www.esecurityplanet.com/threats/linkedin-phishing-abuses-dll-sideloading-for-persistent-access/"
-      },
-      {
-        "term": "Phish",
-        "text": "LinkedIn Phishing Abuses DLL Sideloading for Persistent Access",
-        "url": "https://www.esecurityplanet.com/threats/linkedin-phishing-abuses-dll-sideloading-for-persistent-access/"
-      }
-    ]
-  },
-  {
-    "title": "Oracle WebLogic Proxy Bug Enables Unauthenticated Remote Compromise",
-    "link": "https://www.esecurityplanet.com/threats/oracle-weblogic-proxy-bug-enables-unauthenticated-remote-compromise/",
-    "date": "2026-01-21",
-    "terms": [
-      "CVE-2026-21962",
-      "cve-2026-21962"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21962",
-        "text": "CVE-2026-21962",
-        "url": "https://www.oracle.com/security-alerts/cpujan2026.html#AppendixFMW"
-      }
-    ]
-  },
-  {
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2026/01/21/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "date": "2026-01-21",
-    "terms": [
-      "CVE-2026-20045",
-      "cve-2026-20045"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-20045",
-        "text": "CVE-2026-20045",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20045"
       }
     ]
   }
