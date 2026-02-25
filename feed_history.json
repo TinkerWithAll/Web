@@ -1,6 +1,404 @@
 [
   {
-    "title": "Huber By akira",
+    "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
+    "link": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2026-25108"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ad Tech Company Optimizely Targeted in Cyberattack",
+    "link": "https://www.securityweek.com/ad-tech-company-optimizely-confirms-cyberattack/",
+    "date": "2026-02-25",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA flags exploited FileZen command injection bug, patch now! (CVE-2026-25108)",
+    "link": "https://www.helpnetsecurity.com/2026/02/25/cve-2026-25108-filezen-vulnerability-exploited/",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2026-25108",
+      "cve-2026-25108"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-25108",
+        "text": "CISA flags exploited FileZen command injection bug, patch now! (CVE-2026-25108)",
+        "url": "https://www.helpnetsecurity.com/2026/02/25/cve-2026-25108-filezen-vulnerability-exploited/"
+      }
+    ]
+  },
+  {
+    "title": "Airline brands become launchpads for phishing, crypto fraud",
+    "link": "https://www.helpnetsecurity.com/2026/02/25/airline-phishing-campaigns-crypto-fraud/",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Airline brands become launchpads for phishing, crypto fraud",
+        "url": "https://www.helpnetsecurity.com/2026/02/25/airline-phishing-campaigns-crypto-fraud/"
+      }
+    ]
+  },
+  {
+    "title": "90% of sales teams use AI agents - but half of them have the same data problem",
+    "link": "https://www.zdnet.com/article/sales-leaders-with-ai-agents-say-theyre-essential-for-growth/",
+    "date": "2026-02-25",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ShinyHunters cyberattack on CarGurus impacts 12.4 Million users",
+    "link": "https://securityaffairs.com/188491/cyber-crime/shinyhunters-cyberattack-on-cargurus-impacts-12-4-million-users.html",
+    "date": "2026-02-25",
+    "terms": [
+      "Canada",
+      "Salesforce",
+      "Phish",
+      "canada",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "Canada",
+        "text": "Canada Goose",
+        "url": "https://securityaffairs.com/188046/data-breach/shinyhunters-leaked-600k-canada-goose-customer-records-but-the-firm-denies-it-was-breached.html"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://securityaffairs.com/182159/cyber-crime/fbi-warns-of-salesforce-attacks-by-unc6040-and-unc6395-groups.html"
+      }
+    ]
+  },
+  {
+    "title": "U.S. CISA adds a flaw in Soliton Systems K.K FileZen to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/188473/hacking/u-s-cisa-adds-a-flaw-in-soliton-systems-k-k-filezen-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2026-25108",
+      "cve-2026-25108"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-25108",
+        "text": "CVE-2026-25108",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-25108"
+      }
+    ]
+  },
+  {
+    "title": "Lazarus APT group deployed Medusa Ransomware against Middle East target",
+    "link": "https://securityaffairs.com/188460/apt/lazarus-apt-group-deployed-medusa-ransomware-against-middle-east-target.html",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "lazarus"
+    ],
+    "inline_links": [
+      {
+        "term": "lazarus",
+        "text": "Lazarus APT Group",
+        "url": "https://securityaffairs.com/tag/lazarus-group"
+      }
+    ]
+  },
+  {
+    "title": "Former Defense Contractor Boss Gets 7+ Years for Selling Zero Days",
+    "link": "https://www.infosecurity-magazine.com/news/defense-contractor-boss-7-years/",
+    "date": "2026-02-25",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New York City transit union purportedly targeted by Qilin",
+    "link": "https://www.scworld.com/brief/new-york-city-transit-union-purportedly-targeted-by-qilin",
+    "date": "2026-02-25",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "About 140K compromised in Vikor Scientific breach",
+    "link": "https://www.scworld.com/brief/about-140k-compromised-in-vikor-scientific-breach",
+    "date": "2026-02-25",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Vishing-related breach reported by Optimizely",
+    "link": "https://www.scworld.com/brief/vishing-related-breach-reported-by-optimizely",
+    "date": "2026-02-25",
+    "terms": [
+      "Salesforce",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "315,000 Records from Venezuela's School of Planning Foundation Leaked with Sensitive Personal Data",
+    "link": "https://darkwebinformer.com/315-000-records-from-venezuelas-school-of-planning-foundation-leaked-with-sensitive-personal-data/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "The Week in Vulnerabilities: WordPress, BeyondTrust, and Critical ICS Bugs",
+    "link": "https://cyble.com/blog/cyble-weekly-vulnerability-reports-new-flaws/",
+    "date": "2026-02-25",
+    "terms": [
+      "BeyondTrust",
+      "CVE-2025-15556",
+      "CVE-2026-1731",
+      "CVE-2026-2441",
+      "beyondtrust"
+    ],
+    "inline_links": [
+      {
+        "term": "BeyondTrust",
+        "text": "The Week in Vulnerabilities: WordPress, BeyondTrust, and Critical ICS Bugs",
+        "url": "https://cyble.com/blog/cyble-weekly-vulnerability-reports-new-flaws/"
+      }
+    ]
+  },
+  {
+    "title": "Boards don\u2019t need cyber metrics \u2014 they need risk signals",
+    "link": "https://www.csoonline.com/article/4136995/boards-dont-need-cyber-metrics-they-need-risk-signals.html",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fake Zoom meeting silently installs surveillance software, says Malwarebytes",
+    "link": "https://www.csoonline.com/article/4136834/fake-zoom-meeting-silently-installs-surveillance-software-says-malwarebytes.html",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "VMware fixes command injection flaw in Aria Operations",
+    "link": "https://www.csoonline.com/article/4136954/vmware-fixes-command-injection-flaw-in-aria-operations.html",
+    "date": "2026-02-25",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Issues Alert on Active Exploitation of FileZen Vulnerability",
+    "link": "https://gbhackers.com/cisa-alert-filezen-vulnerability/",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2026-25108"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cybercriminals Exploit Fake Avast Website to Steal Users Credit Card Information",
+    "link": "https://gbhackers.com/fake-avast-website/",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Exploit Apache ActiveMQ Vulnerability to Gain RDP Access, Deploy LockBit Ransomware",
+    "link": "https://gbhackers.com/apache-activemq-vulnerability-2/",
+    "date": "2026-02-25",
+    "terms": [
+      "Lockbit",
+      "CVE-2023-46604",
+      "lockbit"
+    ],
+    "inline_links": [
+      {
+        "term": "Lockbit",
+        "text": "Threat Actors Exploit Apache ActiveMQ Vulnerability to Gain RDP Access, Deploy LockBit Ransomware",
+        "url": "https://gbhackers.com/apache-activemq-vulnerability-2/"
+      }
+    ]
+  },
+  {
+    "title": "Lazarus Group Uses Medusa Ransomware in Middle East and U.S. Healthcare Attacks",
+    "link": "https://thecyberpost.com/news/hackers/lazarus-group-uses-medusa-ransomware-in-middle-east-and-u-s-healthcare-attacks/",
+    "date": "2026-02-25",
+    "terms": [
+      "lazarus",
+      "qilin",
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Canadian Tire data breach impacted over 38 million people",
+    "link": "https://cyberinsider.com/canadian-tire-data-breach-impacted-over-38-million-people/",
+    "date": "2026-02-25",
+    "terms": [
+      "Canadian",
+      "Canadian tire",
+      "canadian",
+      "canadian tire"
+    ],
+    "inline_links": [
+      {
+        "term": "Canadian",
+        "text": "Canadian Tire data breach impacted over 38 million people",
+        "url": "https://cyberinsider.com/canadian-tire-data-breach-impacted-over-38-million-people/"
+      },
+      {
+        "term": "Canadian tire",
+        "text": "Canadian Tire data breach impacted over 38 million people",
+        "url": "https://cyberinsider.com/canadian-tire-data-breach-impacted-over-38-million-people/"
+      }
+    ]
+  },
+  {
+    "title": "Marquis Accuses SonicWall of Security Lapses; Ties it to Ransomware Attack",
+    "link": "https://thecyberexpress.com/marquis-sues-sonicwall-ransomware/",
+    "date": "2026-02-25",
+    "terms": [
+      "sonicwall",
+      "CVE-2025-9242"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. Sanctions Russian Broker Over Zero-Day Exploits Theft",
+    "link": "https://thecyberexpress.com/zero-day-exploits-theft/",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2026-21509"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Redefining Infrastructure Management With Autonomous IT Operations",
+    "link": "https://blog.comodo.com/it-management/autonomous-it-operations/",
+    "date": "2026-02-25",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OAuth Attacks in Entra ID Can Leverage ChatGPT to Compromise User Email Accounts",
+    "link": "https://cybersecuritynews.com/oauth-attacks-in-entra-id-can-leverage-chatgpt/",
+    "date": "2026-02-25",
+    "terms": [
+      "OpenAI",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing link",
+        "url": "https://cybersecuritynews.com/surge-in-ai-driven-phishing-attacks/"
+      }
+    ]
+  },
+  {
+    "title": "CISA Confirms Active Exploitation of FileZen Vulnerability",
+    "link": "https://cybersecuritynews.com/cisa-confirms-active-exploitation-of-filezen-vulnerability/",
+    "date": "2026-02-25",
+    "terms": [
+      "critical Vulnerability",
+      "CVE-2026-25108",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "exploiting a critical vulnerability in FileZen",
+        "url": "https://cybersecuritynews.com/filezen-file-transfer-app-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft to Stop Support for Windows Server 2016 and Windows 10 2016",
+    "link": "https://cybersecuritynews.com/microsoft-stop-support-windows-server-2016-and-windows-10-2016/",
+    "date": "2026-02-25",
+    "terms": [
+      "WSUS"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Warns of Hackers Attacking Developers with Malicious Next.js Repositories",
+    "link": "https://cybersecuritynews.com/malicious-next-js-repositories/",
+    "date": "2026-02-25",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Exploit Apache ActiveMQ Server Vulnerability to Gain RDP Access and Deploy LockBit Ransomware",
+    "link": "https://cybersecuritynews.com/threat-actors-exploit-apache-activemq-server-vulnerability/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "critical Vulnerability",
+      "Lockbit",
+      "CVE-2023-46604",
+      "lockbit"
+    ],
+    "inline_links": [
+      {
+        "term": "Lockbit",
+        "text": "Threat Actors Exploit Apache ActiveMQ Server Vulnerability to Gain RDP Access and Deploy LockBit Ransomware",
+        "url": "https://cybersecuritynews.com/threat-actors-exploit-apache-activemq-server-vulnerability/"
+      },
+      {
+        "term": "Lockbit",
+        "text": "Threat Actors Exploit Apache ActiveMQ Server Vulnerability to Gain RDP Access and Deploy LockBit Ransomware",
+        "url": "https://cybersecuritynews.com/threat-actors-exploit-apache-activemq-server-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "How to Make a Digital Asset Inventory?",
+    "link": "https://socradar.io/blog/make-digital-asset-inventory/",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Westiform Germany By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-02-24",
     "terms": [
@@ -251,6 +649,224 @@
     "date": "2026-02-24",
     "terms": [
       "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Boltech By everest",
+    "link": "https://www.ransomlook.io//group/everest",
+    "date": "2026-02-24",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Lazarus Group Picks a New Poison: Medusa Ransomware",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/lazarus-group-new-position-medusa-ransomware",
+    "date": "2026-02-24",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "SolarWinds patches four critical Serv-U flaws enabling root access",
+    "link": "https://securityaffairs.com/188454/hacking/solarwinds-patches-four-critical-serv-u-flaws-enabling-root-access.html",
+    "date": "2026-02-24",
+    "terms": [
+      "CVE-2024-28995",
+      "cve-2024-28995"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-28995",
+        "text": "CVE-2024-28995",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28995"
+      }
+    ]
+  },
+  {
+    "title": "VMware Aria Operations flaws could enable remote attacks",
+    "link": "https://securityaffairs.com/188445/security/vmware-aria-operations-flaws-could-enable-remote-attacks.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Multifaceted Phishing Scheme Deceives Bitpanda Customers",
+    "link": "https://www.infosecurity-magazine.com/news/bitpanda-mfa-phishing-scheme/",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "North Korean Lazarus Group Expands Ransomware Activity With Medusa",
+    "link": "https://www.infosecurity-magazine.com/news/north-korean-lazarus-group-medusa/",
+    "date": "2026-02-24",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/02/24/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "date": "2026-02-24",
+    "terms": [
+      "CVE-2026-25108",
+      "cve-2026-25108"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-25108",
+        "text": "CVE-2026-25108",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-25108"
+      }
+    ]
+  },
+  {
+    "title": "Reddit, porn sites fined by UK regulators over children\u2019s safety and privacy",
+    "link": "https://www.malwarebytes.com/blog/news/2026/02/reddit-porn-sites-fined-by-uk-regulators-over-childrens-safety-and-privacy",
+    "date": "2026-02-24",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "North Korean Lazarus Group Adopts Medusa Ransomware in Global Attacks",
+    "link": "https://hackread.com/north-korean-lazarus-group-medusa-ransomware/",
+    "date": "2026-02-24",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What does business email compromise look like?",
+    "link": "https://www.csoonline.com/article/4128950/what-does-business-email-compromise-look-like.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.huntress.com/phishing-guide?utm_source=cso_com&utm_medium=referral&utm_campaign=cy26-02-camp-multi-global-broad-iis-x-x-cso_paid_pr_bec_examples&hnt=2syc79cqa1bw"
+      },
+      {
+        "term": "Phish",
+        "text": "Phishing",
+        "url": "https://www.huntress.com/phishing-guide?utm_source=cso_com&utm_medium=referral&utm_campaign=cy26-02-camp-multi-global-broad-iis-x-x-cso_paid_pr_bec_examples&hnt=2syc79cqa1bw"
+      }
+    ]
+  },
+  {
+    "title": "What are the types of ransomware attacks?",
+    "link": "https://www.csoonline.com/article/4128947/what-are-the-types-of-ransomware-attacks.html",
+    "date": "2026-02-24",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Take control: Locking down common endpoint vulnerabilities",
+    "link": "https://www.csoonline.com/article/4128952/take-control-locking-down-common-endpoint-vulnerabilities.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish",
+      "CVE-2023-27532",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Email phishing",
+        "url": "https://www.huntress.com/blog/5-phishing-email-scams-and-how-not-to-fall-for-them?utm_source=cso_com&utm_medium=referral&utm_campaign=cy26-02-camp-multi-global-broad-iis-x-x-cso_paid_pr_endpoint_vulnerabilities&hnt=khafqenz4ofb"
+      },
+      {
+        "term": "Phish",
+        "text": "Tradecraft Tuesday: \u201cPhishing in the Fast Lane",
+        "url": "https://www.huntress.com/blog/phishing-in-the-fast-lane-the-attackers-eye-view?utm_source=cso_com&utm_medium=referral&utm_campaign=cy26-02-camp-multi-global-broad-iis-x-x-cso_paid_pr_endpoint_vulnerabilities&hnt=khafqenz4ofb"
+      }
+    ]
+  },
+  {
+    "title": "How to prevent business email compromise",
+    "link": "https://www.csoonline.com/article/4128848/how-to-prevent-business-email-compromise.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://www.huntress.com/phishing-guide?utm_source=cso_com&utm_medium=referral&utm_campaign=cy26-02-camp-multi-global-broad-iis-x-x-cso_paid_pr_bec_prevention&hnt=gb3dqynjj3hi"
+      }
+    ]
+  },
+  {
+    "title": "Know the red flags: Business email compromise signs to look out for",
+    "link": "https://www.csoonline.com/article/4128861/know-the-red-flags-business-email-compromise-signs-to-look-out-for.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cyber defense: From reactive to proactive",
+    "link": "https://www.csoonline.com/article/4134813/cyber-defense-from-reactive-to-proactive.html",
+    "date": "2026-02-24",
+    "terms": [
+      "Phish",
+      "react",
+      "PWC",
+      "pwc"
+    ],
+    "inline_links": [
+      {
+        "term": "PWC",
+        "text": "www.pwc.com/us/microsoftcyber",
+        "url": "https://url.usb.m.mimecastprotect.com/s/fIxXCM7q9qsjVzV0SJi6I8lwIK?domain=pwc.com"
+      }
+    ]
+  },
+  {
+    "title": "VMware Aria Vulnerabilities Expose RCE Risk",
+    "link": "https://www.esecurityplanet.com/threats/vmware-aria-vulnerabilities-expose-rce-risk/",
+    "date": "2026-02-24",
+    "terms": [
+      "Broadcom"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Marquis sues firewall provider SonicWall, alleges security failings with its firewall backup led to ransomware attack",
+    "link": "https://techcrunch.com/2026/02/24/marquis-sonicwall-lawsuit-ransomware-firewall-breach/",
+    "date": "2026-02-24",
+    "terms": [
+      "sonicwall"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Lazarus hackers adopt Medusa ransomware for extortion campaigns, targeting healthcare and nonprofits",
+    "link": "https://databreaches.net/2026/02/24/lazarus-hackers-adopt-medusa-ransomware-for-extortion-campaigns-targeting-healthcare-and-nonprofits/?pk_campaign=feed&pk_kwd=lazarus-hackers-adopt-medusa-ransomware-for-extortion-campaigns-targeting-healthcare-and-nonprofits",
+    "date": "2026-02-24",
+    "terms": [
+      "lazarus"
     ],
     "inline_links": []
   },
@@ -2592,15 +3208,6 @@
     "date": "2026-02-18",
     "terms": [
       "DarkWebInformer"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Atlas Air: MUSE INSECURE By everest",
-    "link": "https://www.ransomlook.io//group/everest",
-    "date": "2026-02-17",
-    "terms": [
-      "Everest"
     ],
     "inline_links": []
   },
@@ -13994,110 +14601,5 @@
         "url": "https://www.cve.org/CVERecord?id=CVE-2026-24061"
       }
     ]
-  },
-  {
-    "title": "Security Affairs newsletter Round 560 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/187290/breaking-news/security-affairs-newsletter-round-560-by-pierluigi-paganini-international-edition.html",
-    "date": "2026-01-25",
-    "terms": [
-      "Zero Day",
-      "Broadcom",
-      "Phish",
-      "CVE-2024-37079",
-      "CVE-2026-24061",
-      "broadcom",
-      "cve-2026-24061",
-      "zero day",
-      "phish",
-      "cve-2024-37079"
-    ],
-    "inline_links": [
-      {
-        "term": "Broadcom",
-        "text": "U.S. CISA adds a flaw in Broadcom VMware vCenter Server to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/187267/security/u-s-cisa-adds-a-flaw-in-broadcom-vmware-vcenter-server-to-its-known-exploited-vulnerabilities-catalog.html"
-      },
-      {
-        "term": "CVE-2026-24061",
-        "text": "11-Year-Old critical telnetd flaw found in GNU InetUtils (CVE-2026-24061)",
-        "url": "https://securityaffairs.com/187255/security/11-year-old-critical-telnetd-flaw-found-in-gnu-inetutils-cve-2026-24061.html"
-      },
-      {
-        "term": "Zero Day",
-        "text": "Cisco fixed actively exploited Unified Communications zero day",
-        "url": "https://securityaffairs.com/187177/security/cisco-fixed-actively-exploited-unified-communications-zero-day.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Resurgence of a multi\u2011stage AiTM phishing and BEC campaign abusing SharePoint",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/"
-      },
-      {
-        "term": "CVE-2024-37079",
-        "text": "CISA Adds Actively Exploited VMware vCenter Flaw CVE-2024-37079 to KEV Catalog",
-        "url": "https://thehackernews.com/2026/01/cisa-adds-actively-exploited-vmware.html"
-      },
-      {
-        "term": "Phish",
-        "text": "New Phishing Campaign Targeting LastPass Customers",
-        "url": "https://blog.lastpass.com/posts/new-phishing-campaign-targeting-lastpass-customers"
-      }
-    ]
-  },
-  {
-    "title": "Multi-Stage Phishing Campaign Targets Russia with Amnesia RAT and Ransomware",
-    "link": "https://thecyberpost.com/news/hackers/multi-stage-phishing-campaign-targets-russia-with-amnesia-rat-and-ransomware/",
-    "date": "2026-01-25",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
-    "link": "https://cybersecuritynews.com/rn-typo-phishing-attack/",
-    "date": "2026-01-25",
-    "terms": [
-      "IOC",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
-        "url": "https://cybersecuritynews.com/rn-typo-phishing-attack/"
-      },
-      {
-        "term": "Phish",
-        "text": "Hackers Use \u2018rn\u2019 Typo Trick to Impersonate Microsoft and Marriott in New Phishing Attack",
-        "url": "https://cybersecuritynews.com/rn-typo-phishing-attack/"
-      }
-    ]
-  },
-  {
-    "title": "Nike is investigating a possible data breach, after WorldLeaks claims",
-    "link": "https://securityaffairs.com/187303/data-breach/nike-is-investigating-a-possible-data-breach-after-worldleaks-claims.html",
-    "date": "2026-01-25",
-    "terms": [
-      "Everest",
-      "everest"
-    ],
-    "inline_links": [
-      {
-        "term": "Everest",
-        "text": "Everest ransomware",
-        "url": "https://securityaffairs.com/tag/everest-ransomware"
-      }
-    ]
-  },
-  {
-    "title": "Threat Feed 2.0 (Plus Subscribers Only)",
-    "link": "https://darkwebinformer.com/threat-feed-2-0-plus-subscribers-only/",
-    "date": "2026-01-25",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
   }
 ]
