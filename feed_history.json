@@ -190,6 +190,7 @@
     "date": "2026-02-26",
     "terms": [
       "ServiceNow",
+      "CVE-2026-0542",
       "servicenow"
     ],
     "inline_links": [
@@ -259,6 +260,7 @@
     "terms": [
       "critical Vulnerability",
       "ServiceNow",
+      "CVE-2026-0542",
       "servicenow"
     ],
     "inline_links": [
@@ -346,6 +348,119 @@
       "IOC"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Malaysia Airlines By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-02-26",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ThreatsDay Bulletin: Kali Linux + Claude, Chrome Crash Traps, WinRAR Flaws, LockBit & 15+ Stories",
+    "link": "https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html",
+    "date": "2026-02-26",
+    "terms": [
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "U.S. CISA adds Cisco SD-WAN flaws to its Known Exploited Vulnerabilities catalog",
+    "link": "https://securityaffairs.com/188548/hacking/u-s-cisa-adds-cisco-sd-wan-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+    "date": "2026-02-26",
+    "terms": [
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2022-20775",
+      "cve-2026-20127"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2022-20775",
+        "text": "CVE-2022-20775",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2022-20775"
+      },
+      {
+        "term": "CVE-2026-20127",
+        "text": "CVE-2026-20127",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20127"
+      },
+      {
+        "term": "CVE-2022-20775",
+        "text": "CVE-2022-20775",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2022-20775"
+      }
+    ]
+  },
+  {
+    "title": "Darktrace Flags 32 Million Phishing Emails in 2025 as Identity Attacks Intensify",
+    "link": "https://www.infosecurity-magazine.com/news/32m-phishing-emails-detected-2025/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Soaring Insider Breach Costs Driven by Shadow AI Use",
+    "link": "https://www.hipaajournal.com/insider-breach-costs-increase-shadow-ai-use/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "DarkCloud Infostealer Emerges as Major Threat With Scalable Credential Theft Targeting Enterprises",
+    "link": "https://cybersecuritynews.com/darkcloud-infostealer-emerges-as-major-threat/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What to Know About the Notepad++ Supply-Chain Attack",
+    "link": "https://flashpoint.io/blog/what-to-know-about-the-notepad-supply-chain-attack/",
+    "date": "2026-02-26",
+    "terms": [
+      "hunting",
+      "critical Vulnerability",
+      "react",
+      "CVE-2025-15556",
+      "cve-2025-15556",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-15556",
+        "text": "Understanding the Notepad++ Vulnerability (CVE-2025-15556)",
+        "url": "https://flashpoint.io/blog/feed/#understanding"
+      },
+      {
+        "term": "CVE-2025-15556",
+        "text": "How CVE-2025-15556 Works",
+        "url": "https://flashpoint.io/blog/feed/#how-it-works"
+      },
+      {
+        "term": "CVE-2025-15556",
+        "text": "Mapping CVE-2025-15556 to MITRE ATT&CK",
+        "url": "https://flashpoint.io/blog/feed/#mapping"
+      },
+      {
+        "term": "CVE-2025-15556",
+        "text": "Protecting Against CVE-2025-15556",
+        "url": "https://flashpoint.io/blog/feed/#protecting"
+      },
+      {
+        "term": "critical Vulnerability",
+        "text": "critical vulnerability for over six months",
+        "url": "https://cybersecuritynews.com/notepad-code-execution-vulnerability/"
+      }
+    ]
   },
   {
     "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
@@ -1847,15 +1962,6 @@
         "url": "https://cybersecuritynews.com/new-phishing-framework-starkiller-proxies/"
       }
     ]
-  },
-  {
-    "title": "FAMILY EYECARE LLC By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-02-23",
-    "terms": [
-      "qilin"
-    ],
-    "inline_links": []
   },
   {
     "title": "Vikor Scientific Affected by Ransomware Attack on Revenue Cycle Management Vendor",
