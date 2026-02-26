@@ -1,5 +1,353 @@
 [
   {
+    "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access",
+    "link": "https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html",
+    "date": "2026-02-26",
+    "terms": [
+      "CVE-2026-20127"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Zyxel Patches Critical Vulnerability in Many Device Models",
+    "link": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/",
+    "date": "2026-02-26",
+    "terms": [
+      "critical Vulnerability",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "Zyxel Patches Critical Vulnerability in Many Device Models",
+        "url": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/"
+      }
+    ]
+  },
+  {
+    "title": "Fraudsters integrate ChatGPT into global scam campaigns",
+    "link": "https://www.helpnetsecurity.com/2026/02/26/openai-malicious-chatgpt-use-report/",
+    "date": "2026-02-26",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Scattered Lapsus$ Hunters seeks women for vishing attacks",
+    "link": "https://www.helpnetsecurity.com/2026/02/26/slh-seeks-women-for-vishing-attacks/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers abused Cisco SD-WAN zero-day since 2023 to gain full admin control",
+    "link": "https://securityaffairs.com/188540/security/hackers-abused-cisco-sd-wan-zero-day-since-2023-to-gain-full-admin-control.html",
+    "date": "2026-02-26",
+    "terms": [
+      "hunting",
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2022-20775"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2022-20775",
+        "text": "CVE-2022-20775",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2022-20775"
+      },
+      {
+        "term": "hunting",
+        "text": "Cisco Catalyst SD-WAN threat hunting guide",
+        "url": "https://www.cyber.gov.au/sites/default/files/2026-02/ACSC-led%20Cisco%20SD-WAN%20Hunt%20Guide.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Google GTIG disrupted China-linked APT UNC2814 halting attacks on 53 orgs in 42 countries",
+    "link": "https://securityaffairs.com/188521/apt/google-gtig-disrupted-china-linked-apt-unc2814-halting-attacks-on-53-orgs-in-42-countries.html",
+    "date": "2026-02-26",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Global Cyber Agencies Urge Immediate Patching of Cisco SD-WAN Zero Day",
+    "link": "https://www.infosecurity-magazine.com/news/immediate-patch-cisco-catalyst/",
+    "date": "2026-02-26",
+    "terms": [
+      "Zero Day"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Conduent breach; from 10 million to 25 million (and counting)",
+    "link": "https://www.malwarebytes.com/blog/news/2026/02/the-conduent-breach-from-10-million-to-25-million-and-counting",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The farmers and the mercenaries: Rethinking the \u2018human layer\u2019 in security",
+    "link": "https://www.csoonline.com/article/4137281/the-farmers-and-the-mercenaries-rethinking-the-human-layer-in-security.html",
+    "date": "2026-02-26",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "5 trends that should top CISO\u2019s RSA 2026 agendas",
+    "link": "https://www.csoonline.com/article/4136999/5-trends-that-should-top-cisos-rsa-2026-agendas.html",
+    "date": "2026-02-26",
+    "terms": [
+      "ServiceNow"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "9 unverzichtbare Open-Source-Security-Tools",
+    "link": "https://www.csoonline.com/article/3494816/9-unverzichtbare-open-source-security-tools.html",
+    "date": "2026-02-26",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Steaelite RAT combines data theft and ransomware management capability in one tool",
+    "link": "https://www.csoonline.com/article/4137527/steaelite-rat-combines-data-theft-and-ransomware-management-capability-in-one-tool.html",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Phishing\u2011Led Agent Tesla Campaign Uses Process Hollowing and Anti\u2011Analysis to Evade Detection",
+    "link": "https://gbhackers.com/phishing-led-agent-tesla/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Phishing\u2011Led Agent Tesla Campaign Uses Process Hollowing and Anti\u2011Analysis to Evade Detection",
+        "url": "https://gbhackers.com/phishing-led-agent-tesla/"
+      }
+    ]
+  },
+  {
+    "title": "Marquis Takes Legal Action Against SonicWall Over Ransomware Attack from Backup Breach",
+    "link": "https://gbhackers.com/marquis-takes-legal-action-against-sonicwall/",
+    "date": "2026-02-26",
+    "terms": [
+      "sonicwall"
+    ],
+    "inline_links": [
+      {
+        "term": "sonicwall",
+        "text": "Marquis Takes Legal Action Against SonicWall Over Ransomware Attack from Backup Breach",
+        "url": "https://gbhackers.com/marquis-takes-legal-action-against-sonicwall/"
+      }
+    ]
+  },
+  {
+    "title": "OpenAI Confirms Chinese Hackers Used ChatGPT in Cyberattack Campaign",
+    "link": "https://gbhackers.com/chatgpt-in-cyberattack/",
+    "date": "2026-02-26",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Confirms Chinese Hackers Used ChatGPT in Cyberattack Campaign",
+        "url": "https://gbhackers.com/chatgpt-in-cyberattack/"
+      }
+    ]
+  },
+  {
+    "title": "Malicious Ads Bypass Google Ads Screening via New Campaign Platform Exploit",
+    "link": "https://gbhackers.com/google-ads-screening/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ServiceNow AI Platform Vulnerability Allows Remote Code Execution",
+    "link": "https://gbhackers.com/servicenow-ai-platform-vulnerability/",
+    "date": "2026-02-26",
+    "terms": [
+      "ServiceNow",
+      "servicenow"
+    ],
+    "inline_links": [
+      {
+        "term": "ServiceNow",
+        "text": "ServiceNow AI Platform Vulnerability Allows Remote Code Execution",
+        "url": "https://gbhackers.com/servicenow-ai-platform-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "SLH Offers $500\u2013$1,000 Per Call to Recruit Women for IT Help Desk Vishing Attacks",
+    "link": "https://thecyberpost.com/news/hackers/slh-offers-500-1000-per-call-to-recruit-women-for-it-help-desk-vishing-attacks/",
+    "date": "2026-02-26",
+    "terms": [
+      "scattered spider",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Samsung SDS Identifies Top Cybersecurity Threats of 2026 as AI Risks Escalate",
+    "link": "https://thecyberexpress.com/cybersecurity-threats-of-2026-samsung-sds/",
+    "date": "2026-02-26",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Exploited Cisco SD-WAN Zero-Day for Three Years Before Detection",
+    "link": "https://thecyberexpress.com/hackers-exploited-cisco-sd-wan-zero-day/",
+    "date": "2026-02-26",
+    "terms": [
+      "CVE-2021-21311",
+      "CVE-2025-20352",
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2025-20352"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-20352",
+        "text": "Cisco Confirms Critical CVE-2025-20352 Zero-Day RCE Vulnerability Under Active Exploitation",
+        "url": "https://thecyberexpress.com/cisco-ios-rce-vulnerability-cve-2025-20352/"
+      },
+      {
+        "term": "CVE-2025-20352",
+        "text": "Cisco Confirms Critical CVE-2025-20352 Zero-Day RCE Vulnerability Under Active Exploitation",
+        "url": "https://thecyberexpress.com/cisco-ios-rce-vulnerability-cve-2025-20352/"
+      }
+    ]
+  },
+  {
+    "title": "Australian Poultry Giant Hazeldenes Faces Operational Disruption After Cyberattack",
+    "link": "https://thecyberexpress.com/hazeldenes-cyberattack-australia/",
+    "date": "2026-02-26",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
+    "link": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/",
+    "date": "2026-02-26",
+    "terms": [
+      "critical Vulnerability",
+      "ServiceNow",
+      "servicenow"
+    ],
+    "inline_links": [
+      {
+        "term": "ServiceNow",
+        "text": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
+        "url": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/"
+      },
+      {
+        "term": "ServiceNow",
+        "text": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
+        "url": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/"
+      }
+    ]
+  },
+  {
+    "title": "Steaelite RAT Fuels New Wave of Double Extortion Threats Targeting Enterprises",
+    "link": "https://cybersecuritynews.com/steaelite-rat-fuels-new-wave/",
+    "date": "2026-02-26",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
+    "link": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/",
+    "date": "2026-02-26",
+    "terms": [
+      "OpenAI",
+      "Phish",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI analysts identified a particularly alarming planning session",
+        "url": "https://cdn.openai.com/pdf/df438d70-e3fe-4a6c-a403-ff632def8f79/disrupting-malicious-uses-of-ai.pdf"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
+        "url": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
+        "url": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/"
+      }
+    ]
+  },
+  {
+    "title": "27 Years old Telnet Vulnerability Enables Attackers to Gain Root Access",
+    "link": "https://cybersecuritynews.com/27-years-old-telnet-vulnerability/",
+    "date": "2026-02-26",
+    "terms": [
+      "CVE-2026-24061"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PoC Released for Windows Vulnerability That Allows Attackers to Cause Unrecoverable BSOD Crashes",
+    "link": "https://cybersecuritynews.com/windows-vulnerability-bsod-crashes/",
+    "date": "2026-02-26",
+    "terms": [
+      "CVE-2022-37969",
+      "CVE-2023-28252",
+      "CVE-2025-29824",
+      "cve-2025-29824"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-29824",
+        "text": "CVE-2025-29824",
+        "url": "https://cybersecuritynews.com/microsoft-patch-tuesday-april-2025/"
+      }
+    ]
+  },
+  {
+    "title": "Google Disrupts Chinese Hackers Infrastructre which Breached 53 Telecom and Government Entities",
+    "link": "https://cybersecuritynews.com/google-disrupts-chinese-hackers-infrastructre/",
+    "date": "2026-02-26",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
     "link": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
     "date": "2026-02-25",
@@ -424,6 +772,224 @@
     "inline_links": []
   },
   {
+    "title": "111 By everest",
+    "link": "https://www.ransomlook.io//group/everest",
+    "date": "2026-02-25",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "SLH Offers $500\u2013$1,000 Per Call to Recruit Women for IT Help Desk Vishing Attacks",
+    "link": "https://thehackernews.com/2026/02/slh-offers-5001000-per-call-to-recruit.html",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2022-20775",
+      "cve-2026-20127"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2022-20775",
+        "text": "CVE-2022-20775",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2022-20775"
+      },
+      {
+        "term": "CVE-2026-20127",
+        "text": "CVE-2026-20127",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20127"
+      }
+    ]
+  },
+  {
+    "title": "CISA and Partners Release Guidance for Ongoing Global Exploitation of Cisco SD-WAN Systems",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-and-partners-release-guidance-ongoing-global-exploitation-cisco-sd-wan-systems",
+    "date": "2026-02-25",
+    "terms": [
+      "Canadian",
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2026-20127",
+      "cve-2022-20775"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-20127",
+        "text": "CVE-2026-20127",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20127"
+      },
+      {
+        "term": "CVE-2022-20775",
+        "text": "CVE-2022-20775",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2022-20775"
+      }
+    ]
+  },
+  {
+    "title": "North Korean Hackers Using Medusa Ransomware in Attacks on U.S. Healthcare Sector",
+    "link": "https://www.hipaajournal.com/north-korean-hackers-medusa-ransomware-healthcare/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "lazarus",
+      "ioc"
+    ],
+    "inline_links": [
+      {
+        "term": "IOC",
+        "text": "indicators of compromise (IoCs)",
+        "url": "https://www.security.com/threat-intelligence/lazarus-medusa-ransomware"
+      }
+    ]
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - February 25th, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-february-25th-2026/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com/socials",
+        "url": "https://darkwebinformer.com/socials"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Alleged Sale of 125,000 Records from French Temp Agency MyConnect",
+    "link": "https://darkwebinformer.com/alleged-sale-of-125-000-records-from-french-temp-agency-myconnect/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "352,000 Member Records from the French Aikido Federation Put Up for Sale",
+    "link": "https://darkwebinformer.com/352-000-member-records-from-the-french-aikido-federation-put-up-for-sale/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Bulgaria's Largest Furniture Retailer Remington.bg Breached with 150,000+ Customer and Order Records for Sale",
+    "link": "https://darkwebinformer.com/bulgarias-largest-furniture-retailer-remington-bg-breached-with-150-000-customer-and-order-records-for-sale/",
+    "date": "2026-02-25",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Man Arrested in S\u00e3o Paulo for Running Fake Cell Tower SMS Scam Operation",
+    "link": "https://darkwebinformer.com/man-arrested-in-sao-paulo-for-running-fake-cell-tower-sms-scam-operation/",
+    "date": "2026-02-25",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Five Eyes issue emergency directive on exploited Cisco SD-WAN zero-day",
+    "link": "https://www.csoonline.com/article/4137562/five-eyes-issue-emergency-directive-on-exploited-cisco-sd-wan-zero-day.html",
+    "date": "2026-02-25",
+    "terms": [
+      "CVE-2022-20775",
+      "CVE-2026-20127",
+      "cve-2026-20127"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-20127",
+        "text": "CVE-2026-20127",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20127"
+      }
+    ]
+  },
+  {
+    "title": "Treasury Sanctions Russian Exploit Brokerage",
+    "link": "https://www.esecurityplanet.com/threats/treasury-sanctions-russian-exploit-brokerage/",
+    "date": "2026-02-25",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "12.4 Million Accounts Exposed in CarGurus Leak",
+    "link": "https://www.esecurityplanet.com/threats/12-4-million-accounts-exposed-in-cargurus-leak/",
+    "date": "2026-02-25",
+    "terms": [
+      "Canada",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Variations of the ClickFix | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/clickfix-attack-variations/55340/",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Understanding the DarkCloud Infostealer",
+    "link": "https://flashpoint.io/blog/understanding-darkcloud-infostealer/",
+    "date": "2026-02-25",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Westiform Germany By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-02-24",
@@ -504,7 +1070,7 @@
     ]
   },
   {
-    "title": "Fake Zoom meeting &#8220;update&#8221; silently installs surveillance software",
+    "title": "Fake Zoom meeting &#8220;update&#8221; silently installs rogue version of monitoring tool abused by cybercriminals to spy on victims",
     "link": "https://www.malwarebytes.com/blog/scams/2026/02/fake-zoom-meeting-update-silently-installs-surveillance-software",
     "date": "2026-02-24",
     "terms": [
@@ -675,15 +1241,6 @@
     "date": "2026-02-24",
     "terms": [
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Boltech By everest",
-    "link": "https://www.ransomlook.io//group/everest",
-    "date": "2026-02-24",
-    "terms": [
-      "Everest"
     ],
     "inline_links": []
   },
@@ -14097,545 +14654,6 @@
         "term": "CVE-2026-24858",
         "text": "CVE-2026-24858",
         "url": "https://www.cve.org/CVERecord?id=CVE-2026-24858"
-      }
-    ]
-  },
-  {
-    "title": "Konni Hackers Deploy AI-Generated PowerShell Backdoor Against Blockchain Developers",
-    "link": "https://thehackernews.com/2026/01/konni-hackers-deploy-ai-generated.html",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI",
-    "link": "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/",
-    "date": "2026-01-26",
-    "terms": [
-      "hunting",
-      "react"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI",
-        "url": "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/"
-      }
-    ]
-  },
-  {
-    "title": "\u2018Stanley\u2019 Malware Toolkit Enables Phishing via Website Spoofing",
-    "link": "https://www.securityweek.com/stanley-malware-toolkit-enables-phishing-via-website-spoofing/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "\u2018Stanley\u2019 Malware Toolkit Enables Phishing via Website Spoofing",
-        "url": "https://www.securityweek.com/stanley-malware-toolkit-enables-phishing-via-website-spoofing/"
-      }
-    ]
-  },
-  {
-    "title": "Energy sector targeted in multi-stage phishing and BEC campaign using SharePoint",
-    "link": "https://securityaffairs.com/187332/cyber-crime/energy-sector-targeted-in-multi-stage-phishing-and-bec-campaign-using-sharepoint.html",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "North Korea\u2013linked KONNI uses AI to build stealthy malware tooling",
-    "link": "https://securityaffairs.com/187317/apt/north-korea-linked-konni-uses-ai-to-build-stealthy-malware-tooling.html",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Russia-linked Sandworm APT implicated in major cyber attack on Poland\u2019s power grid",
-    "link": "https://securityaffairs.com/187309/breaking-news/russia-linked-sandworm-apt-implicated-in-major-cyber-attack-on-polands-power-grid.html",
-    "date": "2026-01-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Okta Flags Customized, Reactive Vishing Attacks Which Bypass MFA",
-    "link": "https://www.infosecurity-magazine.com/news/okta-flags-vishing-attacks-which/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CISO\u2019s predictions for 2026",
-    "link": "https://www.csoonline.com/article/4116527/cisos-predictions-for-2026.html",
-    "date": "2026-01-26",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Konni deploys AI-generated malware against Blockchain Devs",
-    "link": "https://cybersafe.news/konni-deploys-ai-generated-malware-against-blockchain-devs/",
-    "date": "2026-01-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Malware Toolkit Sends Users to Malicious Websites While the URL Stays the Same",
-    "link": "https://cybersecuritynews.com/new-malware-toolkit-sends-users/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Lazarus Hackers Actively Attacking European Drone Manufacturing Companies",
-    "link": "https://cybersecuritynews.com/lazarus-hackers-actively-attacking-european-drone/",
-    "date": "2026-01-26",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus Hackers Actively Attacking European Drone Manufacturing Companies",
-        "url": "https://cybersecuritynews.com/lazarus-hackers-actively-attacking-european-drone/"
-      },
-      {
-        "term": "lazarus",
-        "text": "Lazarus Hackers Actively Attacking European Drone Manufacturing Companies",
-        "url": "https://cybersecuritynews.com/lazarus-hackers-actively-attacking-european-drone/"
-      }
-    ]
-  },
-  {
-    "title": "New DPRK Interview Campaign Leverages Fake Fonts to Deploy Malware",
-    "link": "https://cybersecuritynews.com/new-dprk-interview-campaign-leverages-fake-fonts/",
-    "date": "2026-01-26",
-    "terms": [
-      "lazarus",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "\u2018SyncFuture\u2019 Campaign Weaponizing Legitimate Enterprise Security Software to Deploy Malware",
-    "link": "https://cybersecuritynews.com/syncfuture-campaign-weaponizing-security-software/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Phishing Attack Leverages Vercel Hosting Platform to Deliver a Remote Access Tool",
-    "link": "https://cybersecuritynews.com/new-phishing-attack-leverages-vercel-hosting-platform/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "New Phishing Attack Leverages Vercel Hosting Platform to Deliver a Remote Access Tool",
-        "url": "https://cybersecuritynews.com/new-phishing-attack-leverages-vercel-hosting-platform/"
-      },
-      {
-        "term": "Phish",
-        "text": "New Phishing Attack Leverages Vercel Hosting Platform to Deliver a Remote Access Tool",
-        "url": "https://cybersecuritynews.com/new-phishing-attack-leverages-vercel-hosting-platform/"
-      }
-    ]
-  },
-  {
-    "title": "Dark Web Profile: BravoX Ransomware",
-    "link": "https://socradar.io/blog/dark-web-profile-bravox-ransomware/",
-    "date": "2026-01-26",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": [
-      {
-        "term": "hunting",
-        "text": "SOCRadar Threat Hunting",
-        "url": "https://socradar.io/blog/security-teams-track-threat-actor-telegram-channels/"
-      }
-    ]
-  },
-  {
-    "title": "Upwind secures $250 million to expand runtime-first cloud security for AI workloads",
-    "link": "https://www.helpnetsecurity.com/2026/01/26/upwind-250-million-funding/",
-    "date": "2026-01-26",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "26th January \u2013 Threat Intelligence Report",
-    "link": "https://research.checkpoint.com/2026/26th-january-threat-intelligence-report/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish",
-      "CVE-2025-59718"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "MACT Health Board Patients Affected by November 2025 Ransomware Attack",
-    "link": "https://www.hipaajournal.com/mact-health-board-data-breach/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Lazarus Hackers Target European Drone Manufacturers in Active Campaign",
-    "link": "https://gbhackers.com/lazarus-hackers/",
-    "date": "2026-01-26",
-    "terms": [
-      "lazarus"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus Hackers Target European Drone Manufacturers in Active Campaign",
-        "url": "https://gbhackers.com/lazarus-hackers/"
-      }
-    ]
-  },
-  {
-    "title": "SyncFuture Campaign Abuses Enterprise Security Tools to Deploy Malware",
-    "link": "https://gbhackers.com/syncfuture-campaign/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Phishing Attack Exploits Vercel to Host and Deliver Remote Access Malware",
-    "link": "https://gbhackers.com/phishing-attack-3/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "New Phishing Attack Exploits Vercel to Host and Deliver Remote Access Malware",
-        "url": "https://gbhackers.com/phishing-attack-3/"
-      }
-    ]
-  },
-  {
-    "title": "Energy Firms Targeted in SharePoint AiTM Session Hijacking",
-    "link": "https://www.esecurityplanet.com/threats/energy-firms-targeted-in-sharepoint-aitm-session-hijacking/",
-    "date": "2026-01-26",
-    "terms": [
-      "IOC",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://www.esecurityplanet.com/threats/ai-powered-phishing-makes-human-risk-management-critical/"
-      }
-    ]
-  },
-  {
-    "title": "20,000 WordPress Sites at Risk From Plugin Admin Backdoor",
-    "link": "https://www.esecurityplanet.com/threats/20000-wordpress-sites-at-risk-from-plugin-admin-backdoor/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Indian Users Targeted in Tax Phishing Campaign Delivering Blackmoon Malware",
-    "link": "https://thehackernews.com/2026/01/indian-users-targeted-in-tax-phishing.html",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Who Operates the Badbox 2.0 Botnet?",
-    "link": "https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/",
-    "date": "2026-01-26",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Emergency Microsoft update fixes in-the-wild Office zero-day",
-    "link": "https://securityaffairs.com/187349/hacking/emergency-microsoft-update-fixes-in-the-wild-office-zero-day.html",
-    "date": "2026-01-26",
-    "terms": [
-      "CVE-2026-21509"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Amnesia RAT, ransomware spread in new Russia-targeted phishing campaign",
-    "link": "https://www.scworld.com/brief/amnesia-rat-ransomware-spread-in-new-russia-targeted-phishing-campaign",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - January 26th, 2026",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-january-26th-2026/",
-    "date": "2026-01-26",
-    "terms": [
-      "Canada",
-      "IOC",
-      "CVE-2026-21509",
-      "cve-2026-21509",
-      "canada"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509: Reliance on Untrusted Inputs in a Security Decision in Microsoft Office Allows an Unauthorized Attacker to Bypass a Security Feature Locally",
-        "url": "https://darkwebinformer.com/cve-2026-21509-reliance-on-untrusted-inputs-in-a-security-decision-in-microsoft-office-allows-an-unauthorized-attacker-to-bypass-a-security-feature-locally/"
-      },
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509: Microsoft Office security bypass via reliance on untrusted inputs",
-        "url": "https://x.com/DarkWebInformer/status/2015855598248616025?s=20"
-      },
-      {
-        "term": "Canada",
-        "text": "\ud83c\udde8\ud83c\udde6 Alleged sale of scraped canada411 data, claims of nearly 10 million records",
-        "url": "https://x.com/DarkWebInformer/status/2015876224690880680?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Update - January 26th, 2026",
-    "link": "https://darkwebinformer.com/threat-attack-update-january-26th-2026/",
-    "date": "2026-01-26",
-    "terms": [
-      "Canada",
-      "IOC",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update - January 26th, 2026",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-january-26th-2026/",
-    "date": "2026-01-26",
-    "terms": [
-      "IOC",
-      "qilin"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CVE-2026-21509: Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally",
-    "link": "https://darkwebinformer.com/cve-2026-21509-reliance-on-untrusted-inputs-in-a-security-decision-in-microsoft-office-allows-an-unauthorized-attacker-to-bypass-a-security-feature-locally/",
-    "date": "2026-01-26",
-    "terms": [
-      "Zero Day",
-      "CVE-2026-21509",
-      "cve-2026-21509"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21509",
-        "text": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
-      }
-    ]
-  },
-  {
-    "title": "Fake Microsoft Teams Billing Phishing Alerts Reach 6,135 Users via 12,866 Emails",
-    "link": "https://hackread.com/fake-microsoft-teams-billing-phishing-alerts-emails/",
-    "date": "2026-01-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Digitale Integrit\u00e4t: Warum Firewall und IDS nicht reichen",
-    "link": "https://www.csoonline.com/article/4121937/digitale-integritat-warum-firewall-und-ids-nicht-reichen.html",
-    "date": "2026-01-26",
-    "terms": [
-      "apt27",
-      "lazarus",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Spear Phishing",
-        "url": "https://www.csoonline.com/article/3491895/e-mail-sicherheit-die-psychotricks-der-spear-phishing-betruger.html"
-      }
-    ]
-  },
-  {
-    "title": "Microsoft releases second out-of-band fix for Windows in a week",
-    "link": "https://www.csoonline.com/article/4122144/microsoft-releases-second-out-of-band-fix-for-windows-in-a-week-2.html",
-    "date": "2026-01-26",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "PoC Released for GNU InetUtils telnetd RCE as 800K+ Exposed Instances Remain Online",
-    "link": "https://gbhackers.com/poc-released-for-gnu-inetutils-telnetd-rce/",
-    "date": "2026-01-26",
-    "terms": [
-      "CVE-2026-24061"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Microsoft Releases Emergency Fix for Exploited Office Zero-Day",
-    "link": "https://thecyberexpress.com/microsoft-emergency-fix-for-office-zero-day/",
-    "date": "2026-01-26",
-    "terms": [
-      "CVE-2026-20805",
-      "CVE-2026-21509",
-      "cve-2026-21509"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
-      },
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509",
-        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
-      }
-    ]
-  },
-  {
-    "title": "ShinyHunters, CL0P Return with New Claimed Victims",
-    "link": "https://thecyberexpress.com/shinyhunters-cl0p-return-with-new-victims/",
-    "date": "2026-01-26",
-    "terms": [
-      "Canada",
-      "Canadian",
-      "CL0P",
-      "Salesforce",
-      "Phish",
-      "salesforce"
-    ],
-    "inline_links": [
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/scattered-lapsus-hunters-salesforce-victims/"
-      },
-      {
-        "term": "Salesforce",
-        "text": "Salesforce",
-        "url": "https://thecyberexpress.com/scattered-lapsus-hunters-salesforce-victims/"
-      }
-    ]
-  },
-  {
-    "title": "Imperva Customers Protected Against CVE-2026-21962 in Oracle HTTP and WebLogic",
-    "link": "https://www.imperva.com/blog/imperva-customers-protected-against-cve-2026-21962-in-oracle-http-and-weblogic/",
-    "date": "2026-01-26",
-    "terms": [
-      "CVE-2026-21962",
-      "cve-2026-21962"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21962",
-        "text": "CVE-2026-21962",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21962"
-      },
-      {
-        "term": "CVE-2026-21962",
-        "text": "Imperva Customers Protected Against CVE-2026-21962 in Oracle HTTP and WebLogic",
-        "url": "https://www.imperva.com/blog/imperva-customers-protected-against-cve-2026-21962-in-oracle-http-and-weblogic/"
-      },
-      {
-        "term": "CVE-2026-21962",
-        "text": "Imperva Customers Protected Against CVE-2026-21962 in Oracle HTTP and WebLogic",
-        "url": "https://www.imperva.com/blog/imperva-customers-protected-against-cve-2026-21962-in-oracle-http-and-weblogic/"
-      }
-    ]
-  },
-  {
-    "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-    "link": "https://www.cisa.gov/news-events/alerts/2026/01/26/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-    "date": "2026-01-26",
-    "terms": [
-      "CVE-2018-14634",
-      "CVE-2025-52691",
-      "CVE-2026-21509",
-      "CVE-2026-23760",
-      "CVE-2026-24061",
-      "cve-2018-14634",
-      "cve-2025-52691",
-      "cve-2026-21509",
-      "cve-2026-23760",
-      "cve-2026-24061"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2018-14634",
-        "text": "CVE-2018-14634",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2018-14634"
-      },
-      {
-        "term": "CVE-2025-52691",
-        "text": "CVE-2025-52691",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2025-52691"
-      },
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-21509"
-      },
-      {
-        "term": "CVE-2026-23760",
-        "text": "CVE-2026-23760",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-23760"
-      },
-      {
-        "term": "CVE-2026-24061",
-        "text": "CVE-2026-24061",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-24061"
       }
     ]
   }
