@@ -377,6 +377,95 @@
     ]
   },
   {
+    "title": "Microsoft flags phishing campaign abusing Entra ID, Google OAuth links",
+    "link": "https://www.scworld.com/news/microsoft-flags-phishing-campaign-abusing-entra-id-google-oauth-links",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The Most Common Swap Scams in 2026, and How to Avoid Them",
+    "link": "https://hackread.com/common-swap-scams-2026-how-to-avoid/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New Threat Report Warns of AI is Automating High-Velocity Attacker Operations",
+    "link": "https://cybersecuritynews.com/ai-is-automating-high-velocity-attacker-operations/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing-as-a-service bots",
+        "url": "https://cybersecuritynews.com/a-multi-stage-phishing-kit-using-telegram/"
+      }
+    ]
+  },
+  {
+    "title": "Escalating Iranian APT Threats Against Critical Infrastructure Amid Geopolitical Conflict",
+    "link": "https://cybersecuritynews.com/escalating-iranian-apt-threats-against-critical-infrastructure/",
+    "date": "2026-03-04",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Trusted Azure Utility AzCopy Turned into Data Exfiltration Tool in Active Ransomware Campaigns",
+    "link": "https://cybersecuritynews.com/trusted-azure-utility-azcopy-turned/",
+    "date": "2026-03-04",
+    "terms": [
+      "Lockbit"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "What a browser-in-the-browser attack is, and how to spot a fake login window | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/browser-in-the-browser-phishing-facebook/55374/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Phishing and spam: the wildest campaigns of 2025",
+        "url": "https://www.kaspersky.com/blog/spam-and-phishing-2025/55295/"
+      },
+      {
+        "term": "Phish",
+        "text": "What happens to data stolen using phishing?",
+        "url": "https://www.kaspersky.com/blog/what-happens-to-data-after-phishing/54968/"
+      },
+      {
+        "term": "Phish",
+        "text": "How phishers and scammers use AI",
+        "url": "https://www.kaspersky.com/blog/ai-phishing-and-scams/54445/"
+      },
+      {
+        "term": "Phish",
+        "text": "Turnkey phishing",
+        "url": "https://www.kaspersky.com/blog/turnkey-phishing/51614/"
+      },
+      {
+        "term": "Phish",
+        "text": "Progressive phishing: how PWAs can be used to steal passwords",
+        "url": "https://www.kaspersky.com/blog/phishing-with-progressive-web-apps/51496/"
+      }
+    ]
+  },
+  {
     "title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
     "link": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
     "date": "2026-03-03",
@@ -541,7 +630,7 @@
     "inline_links": []
   },
   {
-    "title": "Les Oliviers By qilin",
+    "title": "JBC Computers By qilin",
     "link": "https://www.ransomlook.io//group/qilin",
     "date": "2026-03-03",
     "terms": [
@@ -921,6 +1010,15 @@
       "CVE-2024-4040",
       "CVE-2025-31161",
       "CVE-2025-54309"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI Amends A.I. Deal With the Pentagon",
+    "link": "https://www.nytimes.com/2026/03/02/technology/openai-pentagon-deal-amended-surveillance.html",
+    "date": "2026-03-03",
+    "terms": [
+      "OpenAI"
     ],
     "inline_links": []
   },
