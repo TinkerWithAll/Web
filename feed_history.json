@@ -1,6 +1,286 @@
 [
   {
-    "title": "ICAFe Companies By akira",
+    "title": "APT28-Linked Campaign Deploys BadPaw Loader and MeowMeow Backdoor in Ukraine",
+    "link": "https://thehackernews.com/2026/03/apt28-linked-campaign-deploys-badpaw.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Europol-Led Operation Takes Down Tycoon 2FA Phishing-as-a-Service Linked to 64,000 Attacks",
+    "link": "https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Authorities pull plug on Tycoon 2FA phishing-as-a-service platform",
+    "link": "https://www.helpnetsecurity.com/2026/03/05/tycoon-2fa-phishing-platform-takedown-europol/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Authorities pull plug on Tycoon 2FA phishing-as-a-service platform",
+        "url": "https://www.helpnetsecurity.com/2026/03/05/tycoon-2fa-phishing-platform-takedown-europol/"
+      }
+    ]
+  },
+  {
+    "title": "Google uncovers Coruna iOS Exploit Kit targeting iOS 13\u201317.2.1",
+    "link": "https://securityaffairs.com/188928/security/google-uncovers-coruna-ios-exploit-kit-targeting-ios-13-17-2-1.html",
+    "date": "2026-03-05",
+    "terms": [
+      "IOC",
+      "lazarus",
+      "CVE-2020-27932",
+      "CVE-2020-27950",
+      "CVE-2022-48503",
+      "CVE-2023-32409",
+      "CVE-2023-32434",
+      "CVE-2023-38606",
+      "CVE-2024-23222",
+      "CVE-2024-23225",
+      "CVE-2024-23296",
+      "cve-2024-23222"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2024-23222",
+        "text": "CVE-2024-23222",
+        "url": "https://securityaffairs.com/160048/hacking/apple-new-ios-zero-day-vulnerabilities.html"
+      }
+    ]
+  },
+  {
+    "title": "Authorities Shut Down Tycoon 2FA Phishing Platform Used to Bypass MFA",
+    "link": "https://hackread.com/tycoon-2fa-phishing-platform-shut-down-bypass-mfa/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "ClipXDaemon: Autonomous X11 Clipboard Hijacker Delivered via Bincrypter-Based Loader",
+    "link": "https://cyble.com/blog/clipxdaemon-autonomous-x11-clipboard-hijacker/",
+    "date": "2026-03-05",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "State-affiliated hackers set up for critical OT attacks that operators may not detect",
+    "link": "https://www.csoonline.com/article/4140841/state-affiliated-hackers-set-up-for-critical-ot-attacks-that-operators-may-not-detect.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "14 old software bugs that took way too long to squash",
+    "link": "https://www.csoonline.com/article/570815/10-old-software-bugs-that-took-way-too-long-to-squash.html",
+    "date": "2026-03-05",
+    "terms": [
+      "critical Vulnerability",
+      "CLOP",
+      "CVE-2019-0859",
+      "CVE-2019-1458",
+      "CVE-2026-24061",
+      "critical vulnerability"
+    ],
+    "inline_links": [
+      {
+        "term": "critical Vulnerability",
+        "text": "critical vulnerability in its own version of DNS",
+        "url": "https://www.csoonline.com/article/569845/sigred-what-is-it-how-serious-is-it-and-how-should-you-respond.html"
+      }
+    ]
+  },
+  {
+    "title": "Microsoft leads takedown of Tycoon2FA phishing service infrastructure",
+    "link": "https://www.csoonline.com/article/4140890/microsoft-leads-takedown-of-tycoon2fa-phishing-service-infrastructure.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Canadian",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New MongoDB Vulnerability Allows Attackers to Crash Servers, Exposing Critical Data",
+    "link": "https://gbhackers.com/new-mongodb-vulnerability-allows-attackers-to-crash-servers/",
+    "date": "2026-03-05",
+    "terms": [
+      "MongoDB",
+      "mongodb"
+    ],
+    "inline_links": [
+      {
+        "term": "MongoDB",
+        "text": "New MongoDB Vulnerability Allows Attackers to Crash Servers, Exposing Critical Data",
+        "url": "https://gbhackers.com/new-mongodb-vulnerability-allows-attackers-to-crash-servers/"
+      }
+    ]
+  },
+  {
+    "title": "PoC Exploit for Cisco SD-WAN 0-Day Vulnerability Now Released, Actively Exploited in the Wild",
+    "link": "https://gbhackers.com/poc-exploit-for-cisco-sd-wan-0-day-vulnerability/",
+    "date": "2026-03-05",
+    "terms": [
+      "CVE-2026-20127"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "DPRK Hackers Target Crypto Firms, Steal Keys and Cloud Assets in Coordinated Attacks",
+    "link": "https://gbhackers.com/dprk-hackers-target-crypto-firms-2/",
+    "date": "2026-03-05",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Warns OAuth Redirect Abuse Delivers Malware to Government Targets",
+    "link": "https://thecyberpost.com/news/hackers/microsoft-warns-oauth-redirect-abuse-delivers-malware-to-government-targets/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Israel Claims it \u2018Struck\u2019 Iran\u2019s Cyber Warfare Headquarters",
+    "link": "https://thecyberexpress.com/israel-hit-iran-cyber-warfare-headquarters/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "FBI and Europol Dismantle LeakBase Cybercrime Forum With 142,000 Users",
+    "link": "https://thecyberexpress.com/leakbase-cybercrime-forum-taken-down/",
+    "date": "2026-03-05",
+    "terms": [
+      "Canada",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Threat Actors Intensify Targeting of IP Cameras Across Middle East Amid Ongoing Conflict",
+    "link": "https://cybersecuritynews.com/threat-actors-intensify-targeting-of-ip-cameras/",
+    "date": "2026-03-05",
+    "terms": [
+      "CVE-2021-33044",
+      "CVE-2021-36260"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cisco Secure Firewall Management Vulnerability Enables Remote Code Execution",
+    "link": "https://cybersecuritynews.com/cisco-secure-firewall-management-vulnerability/",
+    "date": "2026-03-05",
+    "terms": [
+      "critical Vulnerability",
+      "BeyondTrust"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers Mimic LastPass Support Email to Steal Vault Passwords",
+    "link": "https://cybersecuritynews.com/hackers-mimic-lastpass-support-email/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Reclaim Security Raises $26M to Eliminate the 27-Day Remediation Gap",
+    "link": "https://cybersecuritynews.com/reclaim-security-raises-26m-to-eliminate-the-27-day-remediation-gap/",
+    "date": "2026-03-05",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Mail2Shell Zero-Click Attack lets Hackers Hijack FreeScout Mail Servers",
+    "link": "https://cybersecuritynews.com/hackers-hijack-freescout-mail-servers/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "How to disable unwanted AI assistants and features on your PC and smartphone | Kaspersky official blog",
+    "link": "https://www.kaspersky.com/blog/how-to-switch-off-ai/55383/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "FBI Seizes LeakBase Cybercrime Forum, Data of 142,000 Members",
+    "link": "https://socradar.io/blog/fbi-seizes-leakbase-forum-members-data/",
+    "date": "2026-03-05",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CTI & Coordinators By pear",
+    "link": "https://www.ransomlook.io//group/pear",
+    "date": "2026-03-05",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Reynolds DeMarco & Boland By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-03-04",
     "terms": [
@@ -466,6 +746,194 @@
     ]
   },
   {
+    "title": "Outsourcia By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "date": "2026-03-04",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Escalation in the Middle East: Tracking \u201cOperation Epic Fury\u201d Across Military and Cyber Domains",
+    "link": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Tycoon 2FA Phishing Platform Dismantled in Global Takedown",
+    "link": "https://www.securityweek.com/tycoon-2fa-phishing-platform-dismantled-in-global-takedown/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Tycoon 2FA Phishing Platform Dismantled in Global Takedown",
+        "url": "https://www.securityweek.com/tycoon-2fa-phishing-platform-dismantled-in-global-takedown/"
+      }
+    ]
+  },
+  {
+    "title": "Automate or orchestrate? Implementing a streamlined remediation program to shorten MTTR",
+    "link": "https://securityaffairs.com/188917/security/automate-or-orchestrate-implementing-a-streamlined-remediation-program-to-shorten-mttr.html",
+    "date": "2026-03-04",
+    "terms": [
+      "ServiceNow"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "LastPass warns of spoofed alerts aimed at stealing master passwords",
+    "link": "https://securityaffairs.com/188911/security/lastpass-warns-of-spoofed-alerts-aimed-at-stealing-master-passwords.html",
+    "date": "2026-03-04",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Global Takedown Neutralizes Tycoon2FA Phishing Service",
+    "link": "https://www.infosecurity-magazine.com/news/global-takedown-tycoon2fa-phishing/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "790GB Database From Agua y Drenaje de Monterrey Leaked for Free Covering All Water Service Users in Nuevo Le\u00f3n",
+    "link": "https://darkwebinformer.com/790gb-database-from-agua-y-drenaje-de-monterrey-leaked-for-free-covering-all-water-service-users-in-nuevo-leon/",
+    "date": "2026-03-04",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Win11Debloat: A 40k-Star PowerShell Script for Stripping Bloatware, Telemetry, and AI Features from Windows",
+    "link": "https://darkwebinformer.com/win11debloat-a-40k-star-powershell-script-for-stripping-bloatware-telemetry-and-ai-features-from-windows/",
+    "date": "2026-03-04",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fake Zoom, Teams Meeting Invites Use Compromised Certificates to Drop Malware",
+    "link": "https://hackread.com/fake-zoom-teams-invites-malware-certificates/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Exceptional Women Recognised for Contribution to Cyber Industry at Most Inspiring Women in Cyber Awards 2026",
+    "link": "https://www.itsecurityguru.org/2026/03/04/exceptional-women-recognised-for-contribution-to-cyber-industry-at-most-inspiring-women-in-cyber-awards-2026/?utm_source=rss&utm_medium=rss&utm_campaign=exceptional-women-recognised-for-contribution-to-cyber-industry-at-most-inspiring-women-in-cyber-awards-2026",
+    "date": "2026-03-04",
+    "terms": [
+      "affirm"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Why AI, Zero Trust, and modern security require deep visibility",
+    "link": "https://www.csoonline.com/article/4140747/why-ai-zero-trust-and-modern-security-require-deep-visibility.html",
+    "date": "2026-03-04",
+    "terms": [
+      "hunting",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The 10-hour problem: How visibility gaps are burning out the SOC",
+    "link": "https://www.csoonline.com/article/4140738/the-10-hour-problem-how-visibility-gaps-are-burning-out-the-soc.html",
+    "date": "2026-03-04",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Bitwarden now lets users log into Windows 11 using passkeys",
+    "link": "https://cyberinsider.com/bitwarden-now-lets-users-log-into-windows-11-using-passkeys/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cybercrime platform Tycoon2FA dismantled in international operation",
+    "link": "https://cyberinsider.com/cybercrime-platform-tycoon2fa-dismantled-in-international-operation/",
+    "date": "2026-03-04",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Tycoon 2FA Phishing Kit Disrupted by Microsoft, Europol and Partners",
+    "link": "https://cybersecuritynews.com/tycoon-2fa-phishing-kit-dismatled/",
+    "date": "2026-03-04",
+    "terms": [
+      "IOC",
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "Tycoon 2FA Phishing Kit Disrupted by Microsoft, Europol and Partners",
+        "url": "https://cybersecuritynews.com/tycoon-2fa-phishing-kit-dismatled/"
+      },
+      {
+        "term": "Phish",
+        "text": "Tycoon 2FA Phishing Kit Disrupted by Microsoft, Europol and Partners",
+        "url": "https://cybersecuritynews.com/tycoon-2fa-phishing-kit-dismatled/"
+      }
+    ]
+  },
+  {
+    "title": "CVE-2026-22719: VMware Aria Operations Command Injection Added to CISA KEV",
+    "link": "https://socradar.io/blog/cve-2026-22719-vmware-aria-operations/",
+    "date": "2026-03-04",
+    "terms": [
+      "Broadcom",
+      "CVE-2026-22719",
+      "cve-2026-22719",
+      "broadcom"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-22719",
+        "text": "CISA added CVE-2026-22719 to the KEV catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/03/03/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "term": "Broadcom",
+        "text": "Broadcom\u2019s workaround shell script",
+        "url": "https://knowledge.broadcom.com/external/article/430349"
+      }
+    ]
+  },
+  {
     "title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
     "link": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
     "date": "2026-03-03",
@@ -626,15 +1094,6 @@
     "date": "2026-03-03",
     "terms": [
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "JBC Computers By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "date": "2026-03-03",
-    "terms": [
-      "qilin"
     ],
     "inline_links": []
   },
@@ -1599,15 +2058,6 @@
     "inline_links": []
   },
   {
-    "title": "Escalation in the Middle East: Tracking \u201cOperation Epic Fury\u201d Across Military and Cyber Domains",
-    "link": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
-    "date": "2026-03-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
     "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 86",
     "link": "https://securityaffairs.com/188691/malware/security-affairs-malware-newsletter-round-86.html",
     "date": "2026-03-01",
@@ -1769,7 +2219,7 @@
     "inline_links": []
   },
   {
-    "title": "Cyber Reflections of the U.S. & Israel-Iran War",
+    "title": "Iran War vs. Israel & U.S. Cyber Reflections",
     "link": "https://socradar.io/blog/cyber-reflections-us-israel-iran-war/",
     "date": "2026-03-01",
     "terms": [
@@ -11062,6 +11512,57 @@
     "inline_links": []
   },
   {
+    "title": "Microsoft and Adobe Patch Tuesday,\u00a0February\u00a02026 Security Update Review",
+    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+    "date": "2026-02-10",
+    "terms": [
+      "CVE-2026-21510",
+      "CVE-2026-21513",
+      "CVE-2026-21514",
+      "CVE-2026-21519",
+      "CVE-2026-21525",
+      "CVE-2026-21533",
+      "cve-2026-21519",
+      "cve-2026-21533",
+      "cve-2026-21510",
+      "cve-2026-21514",
+      "cve-2026-21525",
+      "cve-2026-21513"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-21519",
+        "text": "CVE-2026-21519: Desktop Windows Manager Elevation of Privilege Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21519"
+      },
+      {
+        "term": "CVE-2026-21533",
+        "text": "CVE-2026-21533:\u00a0Windows Remote Desktop\u00a0Services Elevation of Privilege Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21533"
+      },
+      {
+        "term": "CVE-2026-21510",
+        "text": "CVE-2026-21510: Windows Shell Security Feature Bypass Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21510"
+      },
+      {
+        "term": "CVE-2026-21514",
+        "text": "CVE-2026-21514: Microsoft Word Security Feature Bypass Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21514"
+      },
+      {
+        "term": "CVE-2026-21525",
+        "text": "CVE-2026-21525:\u00a0Windows Remote Access Connection Manager\u00a0Denial of Service Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21525"
+      },
+      {
+        "term": "CVE-2026-21513",
+        "text": "CVE-2026-21513: MSHTML Framework Security Feature Bypass Vulnerability",
+        "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21513"
+      }
+    ]
+  },
+  {
     "title": "Bloody Wolf Targets Uzbekistan, Russia Using NetSupport RAT in Spear-Phishing Campaign",
     "link": "https://thehackernews.com/2026/02/bloody-wolf-targets-uzbekistan-russia.html",
     "date": "2026-02-09",
@@ -14104,737 +14605,6 @@
         "term": "CVE-2025-64328",
         "text": "CVE-2025-64328",
         "url": "https://www.cve.org/CVERecord?id=CVE-2025-64328"
-      }
-    ]
-  },
-  {
-    "title": "\u26a1 Weekly Recap: Proxy Botnet, Office Zero-Day, MongoDB Ransoms, AI Hijacks & New Threats",
-    "link": "https://thehackernews.com/2026/02/weekly-recap-proxy-botnet-office-zero.html",
-    "date": "2026-02-02",
-    "terms": [
-      "MongoDB"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Over 1,400 MongoDB Databases Ransacked by Threat Actor",
-    "link": "https://www.securityweek.com/over-1400-mongodb-databases-ransacked-by-threat-actor/",
-    "date": "2026-02-02",
-    "terms": [
-      "MongoDB",
-      "mongodb"
-    ],
-    "inline_links": [
-      {
-        "term": "MongoDB",
-        "text": "Over 1,400 MongoDB Databases Ransacked by Threat Actor",
-        "url": "https://www.securityweek.com/over-1400-mongodb-databases-ransacked-by-threat-actor/"
-      }
-    ]
-  },
-  {
-    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 82",
-    "link": "https://securityaffairs.com/187539/security/security-affairs-malware-newsletter-round-82.html",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Open-Source Python Script Drives Social Media Phishing Campaign",
-        "url": "https://reliaquest.com/blog/threat-spotlight-open-source-python-script-drives-social-media-phishing-campaign/"
-      }
-    ]
-  },
-  {
-    "title": "Security Affairs newsletter Round 561 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/187524/security/security-affairs-newsletter-round-561-by-pierluigi-paganini-international-edition.html",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "CVE-2025-8088",
-      "CVE-2026-24858",
-      "CVE-2025-40551",
-      "cve-2026-24858",
-      "phish",
-      "cve-2025-40551",
-      "cve-2025-8088"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-24858",
-        "text": "Fortinet patches actively exploited FortiOS SSO auth bypass (CVE-2026-24858)",
-        "url": "https://securityaffairs.com/187426/security/fortinet-patches-actively-exploited-fortios-sso-auth-bypass-cve-2026-24858.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Amnesia RAT deployed in multi-stage phishing attacks against Russian users",
-        "url": "https://securityaffairs.com/187367/malware/amnesia-rat-deployed-in-multi-stage-phishing-attacks-against-russian-users.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Energy sector targeted in multi-stage phishing and BEC campaign using SharePoint",
-        "url": "https://securityaffairs.com/187332/cyber-crime/energy-sector-targeted-in-multi-stage-phishing-and-bec-campaign-using-sharepoint.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Retro Phishing: Basic Auth URLs Make a Comeback in Japan",
-        "url": "https://www.netcraft.com/blog/retro-phishing-basic-auth-urls-make-a-comeback-in-japan"
-      },
-      {
-        "term": "Phish",
-        "text": "Resurgence of a multi\u2011stage AiTM phishing and BEC campaign abusing SharePoint",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/"
-      },
-      {
-        "term": "CVE-2025-40551",
-        "text": "CVE-2025-40551: Another Solarwinds Web Help Desk Deserialization Issue",
-        "url": "https://horizon3.ai/attack-research/cve-2025-40551-another-solarwinds-web-help-desk-deserialization-issue/"
-      },
-      {
-        "term": "CVE-2025-8088",
-        "text": "Diverse Threat Actors Exploiting Critical WinRAR Vulnerability CVE-2025-8088",
-        "url": "https://cloud.google.com/blog/topics/threat-intelligence/exploiting-critical-winrar-vulnerability"
-      },
-      {
-        "term": "CVE-2026-24858",
-        "text": "Fortinet Releases Guidance to Address Ongoing Exploitation of Authentication Bypass Vulnerability CVE-2026-24858",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/01/28/fortinet-releases-guidance-address-ongoing-exploitation-authentication-bypass-vulnerability-cve-2026"
-      }
-    ]
-  },
-  {
-    "title": "2nd February \u2013 Threat Intelligence Report",
-    "link": "https://research.checkpoint.com/2026/2nd-february-threat-intelligence-report/",
-    "date": "2026-02-02",
-    "terms": [
-      "qilin",
-      "Phish",
-      "CVE-2025-8088",
-      "CVE-2026-23760",
-      "CVE-2026-24858",
-      "CVE-2026-24423"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "A week in security (January 26 &#8211; February 1)",
-    "link": "https://www.malwarebytes.com/blog/news/2026/02/a-week-in-security-january-26-february-1",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Watch out for AT&T rewards phishing text that wants your personal details",
-        "url": "https://www.malwarebytes.com/blog/threat-intel/2026/01/watch-out-for-att-rewards-phishing-text-that-wants-your-personal-details"
-      }
-    ]
-  },
-  {
-    "title": "Top 10 Cyber Risk Management and GRC Companies in the UK and Globally",
-    "link": "https://www.itsecurityguru.org/2026/02/02/top-10-cyber-risk-management-and-grc-companies-in-the-uk-and-globally/?utm_source=rss&utm_medium=rss&utm_campaign=top-10-cyber-risk-management-and-grc-companies-in-the-uk-and-globally",
-    "date": "2026-02-02",
-    "terms": [
-      "react",
-      "ServiceNow"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "How risk culture turns cyber teams predictive",
-    "link": "https://www.csoonline.com/article/4125172/how-risk-culture-turns-cyber-teams-predictive.html",
-    "date": "2026-02-02",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "This stealthy Windows RAT holds live conversations with its operators",
-    "link": "https://www.csoonline.com/article/4125567/this-stealthy-windows-rat-holds-live-conversations-with-its-operators.html",
-    "date": "2026-02-02",
-    "terms": [
-      "Broadcom"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Why non-human identities are your biggest security blind spot in 2026",
-    "link": "https://www.csoonline.com/article/4125156/why-non-human-identities-are-your-biggest-security-blind-spot-in-2026.html",
-    "date": "2026-02-02",
-    "terms": [
-      "Salesforce",
-      "MongoDB"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "CSO Barry Hensley on staying a step ahead of the cyber threat landscape",
-    "link": "https://www.csoonline.com/article/4101470/a-desire-to-protect-his-nation-made-barry-hensley-seek-a-career-in-cybersecurity-after-24-years-of-military-service.html",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "When responsible disclosure becomes unpaid labor",
-    "link": "https://www.csoonline.com/article/4124766/when-responsible-disclosure-becomes-unpaid-labor.html",
-    "date": "2026-02-02",
-    "terms": [
-      "React2shell",
-      "react",
-      "CVE-2025-55182",
-      "react2shell",
-      "cve-2025-55182"
-    ],
-    "inline_links": [
-      {
-        "term": "React2shell",
-        "text": "React2Shell vulnerability (CVE-2025-55182)",
-        "url": "https://www.csoonline.com/article/4109221/react2shell-is-the-log4j-moment-for-front-end-development-2.html"
-      },
-      {
-        "term": "react",
-        "text": "React2Shell vulnerability (CVE-2025-55182)",
-        "url": "https://www.csoonline.com/article/4109221/react2shell-is-the-log4j-moment-for-front-end-development-2.html"
-      },
-      {
-        "term": "CVE-2025-55182",
-        "text": "React2Shell vulnerability (CVE-2025-55182)",
-        "url": "https://www.csoonline.com/article/4109221/react2shell-is-the-log4j-moment-for-front-end-development-2.html"
-      },
-      {
-        "term": "react",
-        "text": "React Foundation",
-        "url": "https://expo.dev/blog/the-react-foundation"
-      }
-    ]
-  },
-  {
-    "title": "Hackers Target MongoDB Instances to Delete Databases and Plant Ransom Notes",
-    "link": "https://gbhackers.com/hackers-target-mongodb-instances/",
-    "date": "2026-02-02",
-    "terms": [
-      "MongoDB",
-      "mongodb"
-    ],
-    "inline_links": [
-      {
-        "term": "MongoDB",
-        "text": "Hackers Target MongoDB Instances to Delete Databases and Plant Ransom Notes",
-        "url": "https://gbhackers.com/hackers-target-mongodb-instances/"
-      }
-    ]
-  },
-  {
-    "title": "Researchers Uncover Moltbook AI Flaw Exposing API Keys and Login Credentials",
-    "link": "https://gbhackers.com/moltbook-ai-flaw-exposing-api-keys-and-login-credentials/",
-    "date": "2026-02-02",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Google Uncovers Major Expansion in ShinyHunters Threat Activity Using New Tactics",
-    "link": "https://gbhackers.com/shinyhunters-threat/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "NationStates shuts down after data breach",
-    "link": "https://cybersafe.news/nationstates-shuts-down-after-data-breach/",
-    "date": "2026-02-02",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Benefits of Executive Monitoring Platforms for Business Growth",
-    "link": "https://thecyberexpress.com/benefits-of-executive-monitoring-platforms/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability",
-    "link": "https://thecyberexpress.com/russian-apt28-exploit-zero-day-cve-2026-21509/",
-    "date": "2026-02-02",
-    "terms": [
-      "CVE-2026-21509"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Britain and Japan Join Forces on Cybersecurity and Strategic Minerals",
-    "link": "https://thecyberexpress.com/britain-japanese-cybersecurity-cooperation/",
-    "date": "2026-02-02",
-    "terms": [
-      "affirm"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Union Budget 2026\u201327: India Bets Big on Cloud, AI, and Cyber Resilience",
-    "link": "https://thecyberexpress.com/india-budget-2026/",
-    "date": "2026-02-02",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "U.S. and Bulgaria Shut Down Three Major Piracy Websites in EU Crackdown",
-    "link": "https://thecyberexpress.com/online-piracy-sites-seized-bulgarian-crackdown/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Autonomous AI Agents Are Becoming the New Operating System of Cybercrime",
-    "link": "https://cybersecuritynews.com/autonomous-ai-agents-are-becoming-the-new-os/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Gakido CRLF Injection Vulnerability Let Attackers Bypass Security Controls",
-    "link": "https://cybersecuritynews.com/gakido-crlf-injection-vulnerability/",
-    "date": "2026-02-02",
-    "terms": [
-      "critical Vulnerability"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Attacking MongoDB Instances to Delete Database and Add Ransom Note",
-    "link": "https://cybersecuritynews.com/mongodb-instances-hacked/",
-    "date": "2026-02-02",
-    "terms": [
-      "MongoDB",
-      "mongodb"
-    ],
-    "inline_links": [
-      {
-        "term": "MongoDB",
-        "text": "MongoDB",
-        "url": "https://cybersecuritynews.com/critical-mongodb-vulnerability/"
-      },
-      {
-        "term": "MongoDB",
-        "text": "Hackers Attacking MongoDB Instances to Delete Database and Add Ransom Note",
-        "url": "https://cybersecuritynews.com/mongodb-instances-hacked/"
-      },
-      {
-        "term": "MongoDB",
-        "text": "Hackers Attacking MongoDB Instances to Delete Database and Add Ransom Note",
-        "url": "https://cybersecuritynews.com/mongodb-instances-hacked/"
-      }
-    ]
-  },
-  {
-    "title": "Google Uncovered Significant Expansion in ShinyHunters Threat Activity with New Tactics",
-    "link": "https://cybersecuritynews.com/google-uncovered-significant-expansion-in-shinyhunters/",
-    "date": "2026-02-02",
-    "terms": [
-      "Salesforce",
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing websites",
-        "url": "https://cybersecuritynews.com/threat-actors-leveraging-genai-for-phishing-attacks/"
-      }
-    ]
-  },
-  {
-    "title": "1-Click Clawdbot Vulnerability Enable Malicious Remote Code Execution Attacks",
-    "link": "https://cybersecuritynews.com/1-click-clawdbot-vulnerability-enable-malicious-remote-code-execution-attacks/",
-    "date": "2026-02-02",
-    "terms": [
-      "critical Vulnerability",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Scam-checking just got easier: Malwarebytes is now in ChatGPT",
-    "link": "https://www.malwarebytes.com/blog/product/2026/02/scam-checking-just-got-easier-malwarebytes-is-now-in-chatgpt",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://www.malwarebytes.com/phishing"
-      }
-    ]
-  },
-  {
-    "title": "Building Stronger Cyber Resilience With Automated Patch Management Software",
-    "link": "https://blog.comodo.com/pc-security/automated-patch-management-software/",
-    "date": "2026-02-02",
-    "terms": [
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Exploiting Microsoft Office 0-day Vulnerability to Deploy Malware",
-    "link": "https://cybersecuritynews.com/microsoft-office-0-day-vulnerability-exploited/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish",
-      "CVE-2026-21509",
-      "cve-2026-21509",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21509",
-        "text": "CVE-2026-21509",
-        "url": "https://cybersecuritynews.com/microsoft-office-zero-day-vulnerability-2/"
-      },
-      {
-        "term": "Phish",
-        "text": "phishing campaign",
-        "url": "https://cybersecuritynews.com/phishing-campaign-uses-maduro-arrest-deliver-malware/"
-      }
-    ]
-  },
-  {
-    "title": "Please Don\u2019t Feed the Scattered Lapsus ShinyHunters",
-    "link": "https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Attackers Harvest Dropbox Logins Via Fake PDF Lures",
-    "link": "https://www.darkreading.com/cloud-security/attackers-harvest-dropbox-logins-fake-pdf-lures",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ShinyHunters Expands Scope of SaaS Extortion Attacks",
-    "link": "https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-expands-scope-saas-extortion-attacks",
-    "date": "2026-02-02",
-    "terms": [
-      "Salesforce"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ShinyHunters flip the script on MFA in new data theft attacks",
-    "link": "https://www.helpnetsecurity.com/2026/02/02/shinyhunters-mfa-social-engineering/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers exploit unsecured MongoDB instances to wipe data and demand ransom",
-    "link": "https://securityaffairs.com/187548/security/hackers-exploit-unsecured-mongodb-instances-to-wipe-data-and-demand-ransom.html",
-    "date": "2026-02-02",
-    "terms": [
-      "MongoDB"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "How\u00a0Manifest v3\u00a0forced us to rethink\u00a0Browser Guard, and why\u00a0that\u2019s\u00a0a good thing",
-    "link": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/02/how-manifest-v3-forced-us-to-rethink-browser-guard-and-why-thats-a-good-thing",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "December 2025 Healthcare Data Breach Report",
-    "link": "https://www.hipaajournal.com/december-2025-healthcare-data-breach-report/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Daily Dose of Dark Web Informer - February 2nd, 2026",
-    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-february-2nd-2026/",
-    "date": "2026-02-02",
-    "terms": [
-      "IOC",
-      "Zero Day",
-      "zero day"
-    ],
-    "inline_links": [
-      {
-        "term": "Zero Day",
-        "text": "rxerium-templates: Nuclei scripts created by  @rxerium  for zero days / actively exploited vulnerabilities.",
-        "url": "https://x.com/DarkWebInformer/status/2018413232461934785?s=20"
-      }
-    ]
-  },
-  {
-    "title": "Threat Attack Update - February 2nd, 2026",
-    "link": "https://darkwebinformer.com/threat-attack-update-february-2nd-2026/",
-    "date": "2026-02-02",
-    "terms": [
-      "Canada",
-      "IOC",
-      "akira",
-      "genesis",
-      "qilin",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware Attack Update - February 2nd, 2026",
-    "link": "https://darkwebinformer.com/ransomware-attack-update-february-2nd-2026/",
-    "date": "2026-02-02",
-    "terms": [
-      "IOC",
-      "akira",
-      "genesis",
-      "qilin",
-      "Everest"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The Weekly Whiskey 02/02/2025",
-    "link": "https://darkwebinformer.com/the-weekly-whiskey-02-02-2025/",
-    "date": "2026-02-02",
-    "terms": [
-      "Canada",
-      "Canadian",
-      "canadian"
-    ],
-    "inline_links": [
-      {
-        "term": "Canadian",
-        "text": "/u/CanadianLegend",
-        "url": "https://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/u/CanadianLegend"
-      }
-    ]
-  },
-  {
-    "title": "Alleged Sale of Unauthorized Root Access to 1,500+ Linux Systems at Stevens Sales Company (SSCO)",
-    "link": "https://darkwebinformer.com/alleged-sale-of-unauthorized-root-access-to-1-500-linux-systems-at-stevens-sales-company-ssco/",
-    "date": "2026-02-02",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Phishing Scam Uses Clean Emails and PDFs to Steal Dropbox Logins",
-    "link": "https://hackread.com/phishing-scam-emails-pdfs-steal-dropbox-logins/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ivanti Issues Urgent Fix for Critical Zero-Day Flaws Under Active Attack",
-    "link": "https://hackread.com/ivanti-urgent-fix-critical-zero-day-vulnerabilities/",
-    "date": "2026-02-02",
-    "terms": [
-      "CVE-2026-1281"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Upcoming Firefox release to introduce centralized AI controls",
-    "link": "https://cyberinsider.com/upcoming-firefox-release-to-introduce-centralized-ai-controls/",
-    "date": "2026-02-02",
-    "terms": [
-      "affirm"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "AI Threats in 2026: A SecOps Playbook",
-    "link": "https://www.esecurityplanet.com/threats/ai-threats-in-2026-a-secops-playbook/",
-    "date": "2026-02-02",
-    "terms": [
-      "OpenAI",
-      "Phish",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Fake Clawdbot VS Code Extension Deploys ScreenConnect RAT",
-    "link": "https://www.esecurityplanet.com/threats/fake-clawdbot-vs-code-extension-deploys-screenconnect-rat/",
-    "date": "2026-02-02",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Arti 2.0.0 released: Relay, directory authority, and RPC development.",
-    "link": "https://blog.torproject.org/arti_2_0_0_released/",
-    "date": "2026-02-02",
-    "terms": [
-      "react"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "circuit reactor architecture",
-        "url": "https://gitlab.torproject.org/tpo/core/arti/-/blob/a63c96bdc62fc088affa565be61c0215830b870e/doc/dev/notes/relay-conflux.md"
-      },
-      {
-        "term": "react",
-        "text": "circuit reactor architecture",
-        "url": "https://gitlab.torproject.org/tpo/core/arti/-/blob/a63c96bdc62fc088affa565be61c0215830b870e/doc/dev/notes/relay-conflux.md"
-      }
-    ]
-  },
-  {
-    "title": "How does cyberthreat attribution help in practice?",
-    "link": "https://www.kaspersky.com/blog/practical-value-of-cyberthreat-attribution/55217/",
-    "date": "2026-02-02",
-    "terms": [
-      "IOC",
-      "hunting",
-      "CVE-2021-40449"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Notepad++ Infrastructure Hijacked in State-Linked Supply Chain Attack",
-    "link": "https://socradar.io/blog/notepad-infrastructure-hijacked/",
-    "date": "2026-02-02",
-    "terms": [
-      "IOC",
-      "react"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Dark Web Posts Claim Argaam User Data, Paage Records, and Airport Database",
-    "link": "https://socradar.io/blog/argaam-user-data-paage-records-airport-database/",
-    "date": "2026-02-02",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Ransomware attack compromised 377,000 people\u2019s Social Security and driver\u2019s license numbers from Texas gas station and convenience store chain",
-    "link": "https://databreaches.net/2026/02/02/ransomware-attack-compromised-377000-peoples-social-security-and-drivers-license-numbers-from-texas-gas-station-and-convenience-store-chain/?pk_campaign=feed&pk_kwd=ransomware-attack-compromised-377000-peoples-social-security-and-drivers-license-numbers-from-texas-gas-station-and-convenience-store-chain",
-    "date": "2026-02-02",
-    "terms": [
-      "Gas+"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "React Server Components Exploitation Consolidates as Two IPs Generate Majority of Attack Traffic",
-    "link": "https://www.greynoise.io/blog/react2shell-exploitation-consolidates",
-    "date": "2026-02-02",
-    "terms": [
-      "react",
-      "CVE-2025-55182"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Mutagen Astronomy: From Discovery to CISA Recognition\u2014A Seven-Year Journey",
-    "link": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-    "date": "2026-02-02",
-    "terms": [
-      "react",
-      "affirm",
-      "CVE-2017-1000253",
-      "CVE-2019-10149",
-      "CVE-2020-7247",
-      "CVE-2021-3156",
-      "CVE-2021-4034",
-      "CVE-2023-4911",
-      "CVE-2018-14634",
-      "cve-2018-14634",
-      "cve-2017-1000253",
-      "cve-2019-10149",
-      "cve-2020-7247",
-      "cve-2021-3156",
-      "cve-2021-4034",
-      "cve-2023-4911"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2018-14634",
-        "text": "the Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2018-14634 to its Known Exploited Vulnerabilities (KEV) catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/01/26/cisa-adds-five-known-exploited-vulnerabilities-catalog"
-      },
-      {
-        "term": "CVE-2017-1000253",
-        "text": "Linux PIE/stack corruption (CVE-2017-1000253)",
-        "url": "https://threatprotect.qualys.com/2017/09/26/linux-piestack-corruption-cve-20171000253/"
-      },
-      {
-        "term": "CVE-2018-14634",
-        "text": "Mutagen Astronomy (CVE-2018-14634)",
-        "url": "https://www.qualys.com/2018/09/25/cve-2018-14634/mutagen-astronomy-integer-overflow-linux-create_elf_tables-cve-2018-14634.txt"
-      },
-      {
-        "term": "CVE-2019-10149",
-        "text": "The Return of the WIZard (CVE-2019-10149)",
-        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2019/06/14/exim-mta-vulnerability-the-return-of-the-wizard-cve-2019-10149"
-      },
-      {
-        "term": "CVE-2020-7247",
-        "text": "OpenSMTPD (CVE-2020-7247)",
-        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2020/01/29/openbsd-opensmtpd-remote-code-execution-vulnerability-cve-2020-7247"
-      },
-      {
-        "term": "CVE-2021-3156",
-        "text": "Baron Samedit (CVE-2021-3156)",
-        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit"
-      },
-      {
-        "term": "CVE-2021-4034",
-        "text": "PwnKit (CVE-2021-4034)",
-        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034"
-      },
-      {
-        "term": "CVE-2023-4911",
-        "text": "Looney Tunables (CVE-2023-4911)",
-        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/03/cve-2023-4911-looney-tunables-local-privilege-escalation-in-the-glibcs-ld-so"
       }
     ]
   }
