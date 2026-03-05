@@ -82,7 +82,8 @@
     "link": "https://www.csoonline.com/article/4140841/state-affiliated-hackers-set-up-for-critical-ot-attacks-that-operators-may-not-detect.html",
     "date": "2026-03-05",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -166,13 +167,25 @@
     "date": "2026-03-05",
     "terms": [
       "Phish",
+      "Iran",
+      "iran",
       "phish"
     ],
     "inline_links": [
       {
+        "term": "Iran",
+        "text": "US Offers $10M for Iranian Cyber Operatives Behind Election Interference and Critical Infrastructure Attacks",
+        "url": "https://thecyberexpress.com/wanted-iranian-cyber-operatives/"
+      },
+      {
         "term": "Phish",
         "text": "phishing",
         "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Iran",
+        "text": "US Offers $10M for Iranian Cyber Operatives Behind Election Interference and Critical Infrastructure Attacks",
+        "url": "https://thecyberexpress.com/wanted-iranian-cyber-operatives/"
       },
       {
         "term": "Phish",
@@ -208,6 +221,7 @@
     "link": "https://cybersecuritynews.com/threat-actors-intensify-targeting-of-ip-cameras/",
     "date": "2026-03-05",
     "terms": [
+      "Iran",
       "CVE-2021-33044",
       "CVE-2021-36260"
     ],
@@ -278,6 +292,50 @@
       "Canada"
     ],
     "inline_links": []
+  },
+  {
+    "title": "Dust Specter Targets Iraqi Officials with New SPLITDROP and GHOSTFORM Malware",
+    "link": "https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Coruna iOS exploit kit moved from spy tool to mass criminal campaign in under a year",
+    "link": "https://www.csoonline.com/article/4141167/coruna-ios-exploit-kit-moved-from-spy-tool-to-mass-criminal-campaign-in-under-a-year.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Everest"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "New MongoDB Vulnerability Lets Hackers Crash Any MongoDB Server",
+    "link": "https://cybersecuritynews.com/mongodb-vulnerability-crash-server/",
+    "date": "2026-03-05",
+    "terms": [
+      "MongoDB",
+      "mongodb"
+    ],
+    "inline_links": [
+      {
+        "term": "MongoDB",
+        "text": "MongoDB memory",
+        "url": "https://cybersecuritynews.com/cisa-mongodb-server-vulnerability/"
+      },
+      {
+        "term": "MongoDB",
+        "text": "New MongoDB Vulnerability Lets Hackers Crash Any MongoDB Server",
+        "url": "https://cybersecuritynews.com/mongodb-vulnerability-crash-server/"
+      },
+      {
+        "term": "MongoDB",
+        "text": "New MongoDB Vulnerability Lets Hackers Crash Any MongoDB Server",
+        "url": "https://cybersecuritynews.com/mongodb-vulnerability-crash-server/"
+      }
+    ]
   },
   {
     "title": "Reynolds DeMarco & Boland By akira",
@@ -393,10 +451,23 @@
     "link": "https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/",
     "date": "2026-03-04",
     "terms": [
+      "Iran",
       "CVE-2021-33044",
-      "CVE-2021-36260"
+      "CVE-2021-36260",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Interplay between Iranian Targeting of IP Cameras and Physical Warfare in the Middle East",
+        "url": "https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/"
+      },
+      {
+        "term": "Iran",
+        "text": "Interplay between Iranian Targeting of IP Cameras and Physical Warfare in the Middle East",
+        "url": "https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/"
+      }
+    ]
   },
   {
     "title": "Attackers abuse OAuth\u2019s built-in redirects to launch phishing and malware attacks",
@@ -439,9 +510,17 @@
     "terms": [
       "Canada",
       "Canadian",
-      "Phish"
+      "Phish",
+      "Iran",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "summary of the most important Iranian threat groups",
+        "url": "https://www.tenable.com/blog/operation-epic-fury-potential-iranian-cyber-counteroffensive-operations"
+      }
+    ]
   },
   {
     "title": "Anthropic AI ultimatums and IP theft: The unspoken risk",
@@ -759,7 +838,8 @@
     "link": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
     "date": "2026-03-04",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -934,6 +1014,24 @@
     ]
   },
   {
+    "title": "149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries After Middle East Conflict",
+    "link": "https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html",
+    "date": "2026-03-04",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Surge in Attacks on Surveillance Cameras Linked to Iranian Hackers",
+    "link": "https://www.infosecurity-magazine.com/news/iran-attacks-surveillance-cameras/",
+    "date": "2026-03-04",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
     "link": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html",
     "date": "2026-03-03",
@@ -983,9 +1081,17 @@
     "link": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
     "date": "2026-03-03",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran",
+        "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/"
+      }
+    ]
   },
   {
     "title": "Chrome flaw let extensions hijack Gemini\u2019s camera, mic, and file access",
@@ -1027,9 +1133,22 @@
     "link": "https://cybersafe.news/uk-warns-of-iranian-cyber-threats/",
     "date": "2026-03-03",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "UK warns of Iranian cyber threats",
+        "url": "https://cybersafe.news/uk-warns-of-iranian-cyber-threats/"
+      },
+      {
+        "term": "Iran",
+        "text": "UK warns of Iranian cyber threats",
+        "url": "https://cybersafe.news/uk-warns-of-iranian-cyber-threats/"
+      }
+    ]
   },
   {
     "title": "University of Hawaii Cancer Center Breach Exposes SSNs of 87,000+ Participants",
@@ -1239,7 +1358,8 @@
     "date": "2026-03-03",
     "terms": [
       "OpenAI",
-      "react"
+      "react",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -1260,13 +1380,25 @@
     "terms": [
       "IOC",
       "DarkWebInformer",
-      "darkwebinformer"
+      "Iran",
+      "darkwebinformer",
+      "iran"
     ],
     "inline_links": [
       {
         "term": "DarkWebInformer",
         "text": "darkwebinformer.com/socials",
         "url": "https://darkwebinformer.com/socials"
+      },
+      {
+        "term": "Iran",
+        "text": "A threat actor has allegedly leaked a database from MTN Irancell, one of Iran's largest mobile telecommunications operators.",
+        "url": "https://x.com/DarkWebInformer/status/2028841665218183401?s=20"
+      },
+      {
+        "term": "Iran",
+        "text": "Alleged leak of Iranian police forces personal data",
+        "url": "https://x.com/DarkWebInformer/status/2028926215281664479?s=20"
       },
       {
         "term": "DarkWebInformer",
@@ -1349,9 +1481,42 @@
     "link": "https://cyble.com/blog/middle-east-iran-us-israel-hybrid-conflict/",
     "date": "2026-03-03",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
+        "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/"
+      },
+      {
+        "term": "Iran",
+        "text": "https://www.sophos.com/en-us/blog/cyber-advisory-increased-cyber-risk-amid-u-s-israel-iran-escalation",
+        "url": "https://www.sophos.com/en-us/blog/cyber-advisory-increased-cyber-risk-amid-u-s-israel-iran-escalation"
+      },
+      {
+        "term": "Iran",
+        "text": "https://www.cybersecuritydive.com/news/iran-hackers-threat-level-us-allies/813494/",
+        "url": "https://www.cybersecuritydive.com/news/iran-hackers-threat-level-us-allies/813494/"
+      },
+      {
+        "term": "Iran",
+        "text": "https://www.anomali.com/blog/cyber-threat-briefing-iran-retaliatory-posture",
+        "url": "https://www.anomali.com/blog/cyber-threat-briefing-iran-retaliatory-posture"
+      },
+      {
+        "term": "Iran",
+        "text": "https://blog.checkpoint.com/research/what-defenders-need-to-know-about-irans-cyber-capabilities/",
+        "url": "https://blog.checkpoint.com/research/what-defenders-need-to-know-about-irans-cyber-capabilities/"
+      },
+      {
+        "term": "Iran",
+        "text": "Middle East on the Brink: Iran-US-Israel Hostilities Trigger Cyber-Kinetic Conflict",
+        "url": "https://cyble.com/blog/middle-east-iran-us-israel-hybrid-conflict/"
+      }
+    ]
   },
   {
     "title": "Surviving Ransomware: Best practices to safeguard your business",
@@ -1367,9 +1532,27 @@
     "link": "https://www.esecurityplanet.com/threats/uk-warns-of-heightened-iranian-cyber-risk-as-middle-east-conflict-intensifies/",
     "date": "2026-03-03",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran",
+      "iran"
     ],
-    "inline_links": []
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Iran-linked",
+        "url": "https://www.esecurityplanet.com/news/iranian-cyberattacks-truth-social-airstrikes/"
+      },
+      {
+        "term": "Iran",
+        "text": "UK Warns of Heightened Iranian Cyber Risk as Middle East Conflict Intensifies",
+        "url": "https://www.esecurityplanet.com/threats/uk-warns-of-heightened-iranian-cyber-risk-as-middle-east-conflict-intensifies/"
+      },
+      {
+        "term": "Iran",
+        "text": "UK Warns of Heightened Iranian Cyber Risk as Middle East Conflict Intensifies",
+        "url": "https://www.esecurityplanet.com/threats/uk-warns-of-heightened-iranian-cyber-risk-as-middle-east-conflict-intensifies/"
+      }
+    ]
   },
   {
     "title": "Identity Security Blind Spots Fuel Modern Attacks",
@@ -1386,7 +1569,8 @@
     "link": "https://thecyberexpress.com/middle-east-iran-us-israel-hybrid-warfare/",
     "date": "2026-03-03",
     "terms": [
-      "Phish"
+      "Phish",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -1478,6 +1662,129 @@
     "date": "2026-03-03",
     "terms": [
       "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "As War Continues, Pro-Iranian Actors Launch Barrage of Cyberattacks",
+    "link": "https://www.darkreading.com/threat-intelligence/war-pro-iranian-actors-cyberattacks",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Ariomex, Iran-based crypto exchange, suffers data leak",
+    "link": "https://securityaffairs.com/188848/digital-id/ariomex-iran-based-crypto-exchange-suffers-data-leak.html",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Israel: RedAlert Spyware Campaign Exploits Wartime Panic With Trojanized App",
+    "link": "https://www.infosecurity-magazine.com/news/redalert-israel-spyware-campaign/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Leaked Database Sheds Light on Iranian Crypto Sanctions Evasion",
+    "link": "https://www.infosecurity-magazine.com/news/iranian-crypto-leaked-database/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Iranian Cyber Threat Actor Targets Iraqi Government Officials in AI-Powered Campaign",
+    "link": "https://www.infosecurity-magazine.com/news/iran-cyber-threat-actor-iraq/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hacktivist campaigns increase as United States, Iran, and Israel conflict intensifies",
+    "link": "https://www.sophos.com/en-us/blog/hacktivist-campaigns-increase-as-united-states-iran-and-israel-conflict-intensifies",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Epic Fury introduces new layer of enterprise risk",
+    "link": "https://www.csoonline.com/article/4139550/epic-fury-introduces-new-layer-of-enterprise-risk.html",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran",
+      "iran"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Iran\u2019s partial internet shutdown may be a windfall for cybersecurity intel",
+        "url": "https://www.csoonline.com/article/4116890/irans-partial-internet-shutdown-may-be-a-windfall-for-cybersecurity-intel.html"
+      },
+      {
+        "term": "Iran",
+        "text": "Iran-linked MuddyWater APT deploys Rust-based implant in latest campaign",
+        "url": "https://www.csoonline.com/article/4115379/iran-linked-muddywater-apt-deploys-rust-based-implant-in-latest-campaign.html"
+      },
+      {
+        "term": "Iran",
+        "text": "Iranian APT hacks helped direct missile strikes in Israel and the Red Sea",
+        "url": "https://www.csoonline.com/article/4093375/iranian-apt-hacks-helped-direct-missile-strikes-in-israel-and-the-red-sea.html"
+      }
+    ]
+  },
+  {
+    "title": "Hacked traffic cams and hijacked TVs: How cyber operations supported the war against Iran",
+    "link": "https://techcrunch.com/2026/03/03/hacked-traffic-cams-and-hijacked-tvs-how-cyber-operations-supported-the-war-against-iran/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Iran War Cybersecurity Threat",
+    "link": "https://snwire.com/iran-war-cybersecurity-threat/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran",
+      "iran"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Iran War Cybersecurity Threat",
+        "url": "https://snwire.com/iran-war-cybersecurity-threat/"
+      }
+    ]
+  },
+  {
+    "title": "How Journalists Are Reporting From Iran With No Internet",
+    "link": "https://www.wired.com/story/how-journalists-are-reporting-from-iran-with-no-internet/",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Israeli spies \u2018hacked every traffic camera in Tehran to plot killing of Iran\u2019s Ayatollah Ali Khamenei\u2019",
+    "link": "https://databreaches.net/2026/03/03/israeli-spies-hacked-every-traffic-camera-in-tehran-to-plot-killing-of-irans-ayatollah-ali-khamenei/?pk_campaign=feed&pk_kwd=israeli-spies-hacked-every-traffic-camera-in-tehran-to-plot-killing-of-irans-ayatollah-ali-khamenei",
+    "date": "2026-03-03",
+    "terms": [
+      "Iran"
     ],
     "inline_links": []
   },
@@ -1623,6 +1930,7 @@
     "date": "2026-03-02",
     "terms": [
       "hunting",
+      "Iran",
       "CVE-2025-0282"
     ],
     "inline_links": []
@@ -1934,6 +2242,7 @@
       "qilin",
       "OpenAI",
       "Phish",
+      "Iran",
       "CVE-2024-28986",
       "CVE-2025-40536",
       "CVE-2025-49113",
@@ -1979,7 +2288,8 @@
       "IOC",
       "DarkWebInformer",
       "qilin",
-      "Everest"
+      "Everest",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -2054,6 +2364,51 @@
     "date": "2026-03-02",
     "terms": [
       "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Expect Iran to Launch Cyber-Attacks Globally, Warns Google Head of Threat Intel",
+    "link": "https://www.infosecurity-magazine.com/news/iran-cyber-attacks-global-google/",
+    "date": "2026-03-02",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Hackers and internet outages hit Iran amid US air strikes",
+    "link": "https://techcrunch.com/2026/03/02/hackers-and-internet-outages-hit-iran-amid-u-s-air-strikes/",
+    "date": "2026-03-02",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "AI-assisted US strikes in Iran to intensify China drive for tech self-reliance: analysts",
+    "link": "https://www.scmp.com/tech/article/3345164/ai-assisted-us-strikes-iran-intensify-china-drive-tech-self-reliance-analysts?utm_source=rss_feed",
+    "date": "2026-03-02",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Attacks on GPS Spike Amid US and Israeli War on Iran",
+    "link": "https://www.wired.com/story/gps-attacks-on-ships-spike-amid-the-us-and-israeli-war-on-iran/",
+    "date": "2026-03-02",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "War in Iran Spiked Oil Prices. Trump Will Decide How High They Go",
+    "link": "https://www.wired.com/story/war-in-iran-sent-oil-prices-up-trump-will-decide-how-high-they-go/",
+    "date": "2026-03-02",
+    "terms": [
+      "Iran"
     ],
     "inline_links": []
   },
@@ -2226,9 +2581,16 @@
       "IOC",
       "Phish",
       "react",
+      "Iran",
+      "iran",
       "phish"
     ],
     "inline_links": [
+      {
+        "term": "Iran",
+        "text": "SOCRadar\u2019s live Iran-Israel Cyber War Dashboard",
+        "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/"
+      },
       {
         "term": "Phish",
         "text": "Spear phishing",
@@ -2240,6 +2602,24 @@
         "url": "https://socradar.io/glossary/phishing/"
       }
     ]
+  },
+  {
+    "title": "Cyber Advisory: Increased Cyber Risk Amid U.S.\u2013Israel\u2013Iran Escalation",
+    "link": "https://www.sophos.com/en-us/blog/cyber-advisory-increased-cyber-risk-amid-u-s-israel-iran-escalation",
+    "date": "2026-03-01",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "The 5 Big \u2018Known Unknowns\u2019 of Donald Trump\u2019s New War With Iran",
+    "link": "https://www.wired.com/story/5-big-known-unknowns-donald-trump-iran-war/",
+    "date": "2026-03-01",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
   },
   {
     "title": "Atlas Air: MUSE INSECURE - Database Leaked By everest",
@@ -2355,7 +2735,8 @@
     "terms": [
       "IOC",
       "hunting",
-      "Phish"
+      "Phish",
+      "Iran"
     ],
     "inline_links": []
   },
@@ -2401,6 +2782,33 @@
         "url": "https://cybersecuritynews.com/phishing-schemes-abuse-arpa-tld-and-ipv6-tunnels/"
       }
     ]
+  },
+  {
+    "title": "Hacked Prayer App Sends \u2018Surrender\u2019 Messages to Iranians Amid Israeli and US Strikes",
+    "link": "https://www.wired.com/story/hacked-prayer-app-sends-surrender-messages-to-iranians-amid-israeli-strikes/",
+    "date": "2026-02-28",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "This Is the System That Intercepted Iran\u2019s Missiles Over the UAE",
+    "link": "https://www.wired.com/story/uae-missile-intercept-system-iran/",
+    "date": "2026-02-28",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "US and Israel Launch Strikes Against Iran",
+    "link": "https://www.wired.com/story/us-iran-strike-donald-trump/",
+    "date": "2026-02-28",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
   },
   {
     "title": "The CSO guide to top security conferences",
@@ -2810,6 +3218,7 @@
     "date": "2026-02-27",
     "terms": [
       "Phish",
+      "Iran",
       "CVE-2022-20775",
       "CVE-2026-20127",
       "phish",
@@ -5144,14 +5553,21 @@
     "terms": [
       "Phish",
       "Zebra",
+      "Iran",
       "CVE-2025-21042",
       "CVE-2025-33053",
       "CVE-2025-53770",
+      "iran",
       "phish",
       "zebra",
       "cve-2025-21042"
     ],
     "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Iranian",
+        "url": "https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/"
+      },
       {
         "term": "Phish",
         "text": "sophisticated phishing campaign",
@@ -5302,6 +5718,15 @@
         "url": "https://nvd.nist.gov/vuln/detail/cve-2023-27532"
       }
     ]
+  },
+  {
+    "title": "Iran's MuddyWater Targets Orgs With Fresh Malware as Tensions Mount",
+    "link": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
+    "date": "2026-02-23",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": []
   },
   {
     "title": "AI-Assisted Threat Actor Compromises 600+ FortiGate Devices in 55 Countries",
@@ -5944,6 +6369,7 @@
     "date": "2026-02-20",
     "terms": [
       "Phish",
+      "Iran",
       "phish"
     ],
     "inline_links": [
@@ -8052,6 +8478,7 @@
       "Zero Day",
       "BeyondTrust",
       "Phish",
+      "Iran",
       "CVE-2026-21510",
       "CVE-2026-1731"
     ],
@@ -9047,6 +9474,7 @@
     "terms": [
       "Canada",
       "Phish",
+      "Iran",
       "phish"
     ],
     "inline_links": [
@@ -10720,7 +11148,8 @@
     "date": "2026-02-11",
     "terms": [
       "lazarus",
-      "react"
+      "react",
+      "Iran"
     ],
     "inline_links": []
   },
