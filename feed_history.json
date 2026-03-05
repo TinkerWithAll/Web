@@ -338,6 +338,128 @@
     ]
   },
   {
+    "title": "New GPT-5.4 clobbers humans on pro-level work in OpenAI's tests - by 83%",
+    "link": "https://www.zdnet.com/article/openai-gpt-5-4/",
+    "date": "2026-03-05",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Russian APT targets Ukraine with BadPaw and MeowMeow malware",
+    "link": "https://securityaffairs.com/188974/apt/russian-apt-targets-ukraine-with-badpaw-and-meowmeow-malware.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish",
+      "react",
+      "CVE-2026-21513"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Operation Leak: FBI and Europol dismantle LeakBase Cybercrime forum",
+    "link": "https://securityaffairs.com/188958/cyber-crime/operation-leak-fbi-and-europol-dismantle-leakbase-cybercrime-forum.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Canada",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "PIH Health Notifies Patients About 2024 Hacking Incident",
+    "link": "https://www.hipaajournal.com/pih-health-data-breach-ransomware/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cisco issues emergency patches for critical firewall vulnerabilities",
+    "link": "https://www.csoonline.com/article/4141268/cisco-issues-emergency-patches-for-critical-firewall-vulnerabilities.html",
+    "date": "2026-03-05",
+    "terms": [
+      "Zero Day",
+      "CVE-2025-20333",
+      "CVE-2025-20362",
+      "cve-2025-20333",
+      "cve-2025-20362"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-20333",
+        "text": "CVE-2025-20333",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2025-20333"
+      },
+      {
+        "term": "CVE-2025-20362",
+        "text": "CVE-2025-20362",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2025-20362"
+      }
+    ]
+  },
+  {
+    "title": "Coruna iOS Exploit Kit Compromises Thousands of iPhones",
+    "link": "https://www.esecurityplanet.com/threats/coruna-ios-exploit-kit-compromises-thousands-of-iphones/",
+    "date": "2026-03-05",
+    "terms": [
+      "CVE-2023-32409",
+      "CVE-2023-32434",
+      "CVE-2024-23222",
+      "CVE-2024-23225",
+      "cve-2023-32409",
+      "cve-2023-32434",
+      "cve-2024-23222",
+      "cve-2024-23225"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2023-32409",
+        "text": "CVE-2023-32409",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2023-32409"
+      },
+      {
+        "term": "CVE-2023-32434",
+        "text": "CVE-2023-32434",
+        "url": "https://www.esecurityplanet.com/trends/weekly-vulnerability-recap-october-30-2023/"
+      },
+      {
+        "term": "CVE-2024-23222",
+        "text": "CVE-2024-23222",
+        "url": "https://www.esecurityplanet.com/threats/vulnerability-recap-february-5-2024/"
+      },
+      {
+        "term": "CVE-2024-23225",
+        "text": "CVE-2024-23225",
+        "url": "https://www.esecurityplanet.com/threats/vulnerability-recap-march-11-2024/"
+      }
+    ]
+  },
+  {
+    "title": "Suspected DPRK Threat Actors Compromise Crypto Firms, Steal Keys and Cloud Assets in Coordinated Attacks",
+    "link": "https://cybersecuritynews.com/suspected-dprk-threat-actors-compromise-crypto-firms/",
+    "date": "2026-03-05",
+    "terms": [
+      "React2shell",
+      "react",
+      "CVE-2025-55182"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "RedAlert Mobile Espionage Campaign Targets Civilians with Trojanized Rocket Alert App for Surveillance",
+    "link": "https://cybersecuritynews.com/redalert-mobile-espionage-campaign/",
+    "date": "2026-03-05",
+    "terms": [
+      "hunting",
+      "Phish",
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "Reynolds DeMarco & Boland By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-03-04",
@@ -825,7 +947,7 @@
     ]
   },
   {
-    "title": "Outsourcia By qilin",
+    "title": "CJL Engineering By qilin",
     "link": "https://www.ransomlook.io//group/qilin",
     "date": "2026-03-04",
     "terms": [
