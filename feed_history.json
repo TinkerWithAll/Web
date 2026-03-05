@@ -49,6 +49,9 @@
       "CVE-2024-23222",
       "CVE-2024-23225",
       "CVE-2024-23296",
+      "CVE-2021-30952",
+      "CVE-2023-41974",
+      "CVE-2023-43000",
       "cve-2024-23222"
     ],
     "inline_links": [
@@ -223,7 +226,8 @@
     "terms": [
       "Iran",
       "CVE-2021-33044",
-      "CVE-2021-36260"
+      "CVE-2021-36260",
+      "CVE-2017-7921"
     ],
     "inline_links": []
   },
@@ -338,7 +342,7 @@
     ]
   },
   {
-    "title": "New GPT-5.4 clobbers humans on pro-level work in OpenAI's tests - by 83%",
+    "title": "OpenAI's new GPT-5.4 clobbers humans on pro-level work in tests - by 83%",
     "link": "https://www.zdnet.com/article/openai-gpt-5-4/",
     "date": "2026-03-05",
     "terms": [
@@ -409,12 +413,19 @@
       "CVE-2023-32434",
       "CVE-2024-23222",
       "CVE-2024-23225",
+      "CVE-2021-30952",
+      "cve-2021-30952",
       "cve-2023-32409",
       "cve-2023-32434",
       "cve-2024-23222",
       "cve-2024-23225"
     ],
     "inline_links": [
+      {
+        "term": "CVE-2021-30952",
+        "text": "CVE-2021-30952",
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2021-30952"
+      },
       {
         "term": "CVE-2023-32409",
         "text": "CVE-2023-32409",
@@ -460,7 +471,155 @@
     "inline_links": []
   },
   {
-    "title": "Reynolds DeMarco & Boland By akira",
+    "title": "Tycoon 2FA Goes Boom as Europol, Vendors Bust Phishing Platform",
+    "link": "https://www.darkreading.com/threat-intelligence/tycoon-2fa-europol-vendors-bust-phishing-platform",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/03/05/cisa-adds-five-known-exploited-vulnerabilities-catalog",
+    "date": "2026-03-05",
+    "terms": [
+      "CVE-2017-7921",
+      "CVE-2021-22681",
+      "CVE-2021-30952",
+      "CVE-2023-41974",
+      "CVE-2023-43000",
+      "cve-2017-7921",
+      "cve-2021-22681",
+      "cve-2021-30952",
+      "cve-2023-41974",
+      "cve-2023-43000"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2017-7921",
+        "text": "CVE-2017-7921",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2017-7921"
+      },
+      {
+        "term": "CVE-2021-22681",
+        "text": "CVE-2021-22681",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-22681"
+      },
+      {
+        "term": "CVE-2021-30952",
+        "text": "CVE-2021-30952",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-30952"
+      },
+      {
+        "term": "CVE-2023-41974",
+        "text": "CVE-2023-41974",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2023-41974"
+      },
+      {
+        "term": "CVE-2023-43000",
+        "text": "CVE-2023-43000",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2023-43000"
+      }
+    ]
+  },
+  {
+    "title": "What's Actually in an Anti-Kidnapping Kit and Why High-Risk Individuals Should Care",
+    "link": "https://darkwebinformer.com/whats-actually-in-an-anti-kidnapping-kit-and-why-high-risk-individuals-should-care/",
+    "date": "2026-03-05",
+    "terms": [
+      "DarkWebInformer"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Critical pac4j-jwt Authentication Bypass Vulnerability Allows Attackers to Impersonate Any User",
+    "link": "https://gbhackers.com/critical-pac4j-jwt-authentication-bypass-vulnerability-allows-attackers-to-impersonate-any-user/",
+    "date": "2026-03-05",
+    "terms": [
+      "CVE-2026-29000"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cisco SD-WAN Manager Vulnerabilities Actively Exploited",
+    "link": "https://www.esecurityplanet.com/threats/cisco-sd-wan-manager-vulnerabilities-actively-exploited/",
+    "date": "2026-03-05",
+    "terms": [
+      "Phish",
+      "CVE-2026-20127",
+      "cve-2026-20127"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-20127",
+        "text": "CVE-2026-20127",
+        "url": "https://www.esecurityplanet.com/threats/cisco-sd-wan-zero-day-actively-exploited-to-gain-root-access/"
+      }
+    ]
+  },
+  {
+    "title": "Threat Actors Using Fake Claude Code Download to Deploy Infostealer",
+    "link": "https://cybersecuritynews.com/threat-actors-using-fake-claude-code/",
+    "date": "2026-03-05",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat Actors Use New RingH23 Arsenal to Compromise MacCMS and CDN Infrastructure at Scale",
+    "link": "https://cybersecuritynews.com/threat-actors-use-new-ringh23-arsenal/",
+    "date": "2026-03-05",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Tracking the U.S.-Israel-Iran War with OSINT Tools: A Practical Guide",
+    "link": "https://socradar.io/blog/us-israel-iran-war-osint-track/",
+    "date": "2026-03-05",
+    "terms": [
+      "IOC",
+      "Iran",
+      "iran"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "SOCRadar deep-dive on Iran War vs. Israel and US Cyber Reflections",
+        "url": "https://socradar.io/blog/cyber-reflections-us-israel-iran-war/"
+      },
+      {
+        "term": "Iran",
+        "text": "SOCRadar Iran-Israel Cyber Conflict Dashboard",
+        "url": "https://socradar.io/iran-israil-cyber-conflict-dashboard/"
+      },
+      {
+        "term": "Iran",
+        "text": "SOCRadar Iran-Israel Cyber Conflict Dashboard",
+        "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/"
+      },
+      {
+        "term": "Iran",
+        "text": "SOCRadar Iran-Israel Cyber Conflict Dashboard",
+        "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/"
+      },
+      {
+        "term": "Iran",
+        "text": "Iran War vs. Israel and US Cyber Reflections \u2013 SOCRadar",
+        "url": "https://socradar.io/blog/cyber-reflections-us-israel-iran-war/"
+      },
+      {
+        "term": "Iran",
+        "text": "SOCRadar Iran-Israel Cyber Conflict Dashboard",
+        "url": "https://socradar.io/iran-israil-cyber-conflict-dashboard/"
+      }
+    ]
+  },
+  {
+    "title": "MarketGraphics Research Group By akira",
     "link": "https://www.ransomlook.io//group/akira",
     "date": "2026-03-04",
     "terms": [
@@ -576,6 +735,7 @@
       "Iran",
       "CVE-2021-33044",
       "CVE-2021-36260",
+      "CVE-2017-7921",
       "iran"
     ],
     "inline_links": [
@@ -5679,6 +5839,7 @@
       "CVE-2025-21042",
       "CVE-2025-33053",
       "CVE-2025-53770",
+      "CVE-2017-7921",
       "iran",
       "phish",
       "zebra",
