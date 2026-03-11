@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Security Feed  | Zachary Baillod</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="feed.js?v=20251130003744" defer></script>
+  <title>Security Feed | Zachary Baillod</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="feed.css" />
 </head>
 <body>
+
+  <div class="scan-line"></div>
+
   <header>
     <nav class="navbar">
-      <h1 class="logo">ZB</h1>
+      <a href="index.html" class="logo">ZB</a>
       <ul class="nav-links">
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#background">Background</a></li>
@@ -22,46 +27,121 @@
     </nav>
   </header>
 
-  <section class="section">
-    <h2>Security Feed (Last 30 Days)</h2>
-    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Last Updated: <span id="last-updated">Loading...</span></p>
-    <p>Automated scraping of security news matching specific threat vectors and CVEs.</p>
+  <main class="dashboard">
 
-    <div class="feed-controls">
-      <input type="text" id="searchInput" placeholder="Search title or summary..." />
-  
-      <div style="display: flex; gap: 0.5rem; flex: 1; min-width: 180px;">
-        <input type="text" id="termInput" placeholder="Filter terms (e.g., CVE-2024-1234, Cisco, Windows)..." style="flex-grow: 1;" />
-        <button id="termToggleBtn" class="toggle-and" title="Toggle between matching ALL terms (AND) or ANY term (OR).">Search: AND</button>
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <div class="status-item">
+        <span class="status-dot pulse"></span>
+        <span class="status-label">LIVE</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label mono">LAST RUN:</span>
+        <span class="status-value mono" id="last-updated">—</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label mono">ARTICLES (30d):</span>
+        <span class="status-value mono" id="article-count">—</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label mono">FEEDS:</span>
+        <span class="status-value mono">130+</span>
+      </div>
+      <div class="status-spacer"></div>
+      <button class="btn-refresh" id="refreshBtn" title="Trigger a fresh scrape. Rate-limited to once per 2 hours.">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+        <span id="refreshBtnLabel">Refresh</span>
+      </button>
+    </div>
+
+    <!-- TABS -->
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="report">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        AI Intel Report
+      </button>
+      <button class="tab-btn" data-tab="feed">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        Raw Feed
+      </button>
+    </div>
+
+    <!-- AI REPORT TAB -->
+    <div class="tab-panel active" id="tab-report">
+      <div class="report-controls">
+        <textarea id="customPrompt" placeholder="Optional custom analysis prompt… e.g. 'Summarize all SonicWall findings' or 'What TTPs is Lazarus using this week?'"></textarea>
+        <div class="report-actions">
+          <button class="btn-primary" id="defaultReportBtn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Default Report (48h)
+          </button>
+          <button class="btn-secondary" id="customReportBtn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Run Custom Prompt
+          </button>
+        </div>
       </div>
 
-      <button id="downloadBtn">Download Filtered CSV</button>
+      <div class="report-container" id="reportContainer">
+        <div class="report-placeholder" id="reportPlaceholder">
+          <div class="ph-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <p>Click <strong>Default Report (48h)</strong> to generate your AI threat intelligence briefing.</p>
+          <p class="ph-sub">Reports auto-generate daily at 05:00 PT and are cached in <code>report.json</code>. Manual triggers are rate-limited to once per 2 hours. Your Anthropic API key is stored as a GitHub Secret and never exposed in the browser.</p>
+        </div>
+        <div class="report-loading" id="reportLoading" style="display:none;">
+          <div class="loader-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <p id="loadingMsg">Generating intelligence briefing…</p>
+        </div>
+        <div class="report-content" id="reportContent" style="display:none;"></div>
+      </div>
     </div>
 
-    <div class="table-container">
-      <table id="feedTable">
-        <thead>
-          <tr>
-            <th style="width: 120px;">Date</th>
-            <th>Article</th>
-            <th>Matched Terms</th>
-          </tr>
-        </thead>
-        <tbody>
-          </tbody>
-      </table>
-      <p id="noResults" style="display:none; text-align:center; padding:1rem;">No matches found.</p>
+    <!-- RAW FEED TAB -->
+    <div class="tab-panel" id="tab-feed">
+      <div class="feed-controls">
+        <input type="text" id="searchInput" placeholder="Search title…" />
+        <div class="term-filter-group">
+          <input type="text" id="termInput" placeholder="Filter terms (comma-separated)…" />
+          <button id="termToggleBtn" class="toggle-and">AND</button>
+        </div>
+        <button class="btn-export" id="downloadBtn">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Export CSV
+        </button>
+      </div>
+
+      <div class="table-wrap">
+        <table id="feedTable">
+          <thead>
+            <tr>
+              <th style="width:108px">Date</th>
+              <th>Article</th>
+              <th style="width:250px">Matched Terms</th>
+            </tr>
+          </thead>
+          <tbody id="feedBody"></tbody>
+        </table>
+        <p id="noResults" style="display:none;" class="no-results">No matches found.</p>
+      </div>
+
+      <div class="feed-footer">
+        <button class="btn-text" id="downloadTermsBtn">↓ terms.txt</button>
+        <button class="btn-text" id="downloadFeedsBtn">↓ feeds.txt</button>
+        <span class="feed-count mono" id="feedCountLabel"></span>
+      </div>
     </div>
 
-    <div class="feed-controls">
-      <button id="downloadTermsBtn" title="Download the list of security terms used for filtering.">Download terms.txt</button>
-      <button id="downloadFeedsBtn" title="Download the list of RSS feeds being scraped.">Download feeds.txt</button>
-    </div>
-    
-  </section>
+  </main>
 
-  <footer>
-    <p>2025 Zachary  Baillod</p>
+  <footer class="site-footer">
+    <p class="mono">© 2025 Zachary Baillod</p>
   </footer>
+
+  <!-- config.js is auto-generated by GitHub Actions and contains the dispatch PAT -->
+  <!-- It is NOT in the repo source — it's created fresh on every workflow run    -->
+  <script src="config.js"></script>
+  <script src="feed.js?v=20260310"></script>
 </body>
 </html>

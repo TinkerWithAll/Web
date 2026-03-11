@@ -1,5 +1,153 @@
 [
   {
+    "title": "6 Mittel gegen Security-Tool-Wildwuchs",
+    "link": "https://www.csoonline.com/article/3495420/6-mittel-gegen-security-tool-wildwuchs.html",
+    "date": "2026-03-11",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": [
+      {
+        "term": "hunting",
+        "text": "Threat Hunting",
+        "url": "https://www.csoonline.com/article/3492793/ki-gestutzte-bedrohungsjagd-wie-genai-das-threat-hunting-beschleunigt.html"
+      }
+    ]
+  },
+  {
+    "title": "Jack & Jill went up the hill \u2014 and an AI tried to hack them",
+    "link": "https://www.csoonline.com/article/4143451/jack-jill-went-up-the-hill-and-an-ai-tried-to-hack-them-2.html",
+    "date": "2026-03-11",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
+    "link": "https://thecyberpost.com/news/hackers/cisa-flags-solarwinds-ivanti-and-workspace-one-vulnerabilities-as-actively-exploited/",
+    "date": "2026-03-11",
+    "terms": [
+      "CVE-2021-22054",
+      "CVE-2025-26399",
+      "CVE-2026-1603",
+      "cve-2021-22054",
+      "cve-2025-26399",
+      "cve-2026-1603"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-22054",
+        "text": "CVE-2021-22054",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-22054"
+      },
+      {
+        "term": "CVE-2025-26399",
+        "text": "CVE-2025-26399",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-26399"
+      },
+      {
+        "term": "CVE-2026-1603",
+        "text": "CVE-2026-1603",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-1603"
+      }
+    ]
+  },
+  {
+    "title": "FBI Flags Phishing Campaign Collecting Planning and Zoning Permit Payments",
+    "link": "https://thecyberexpress.com/planning-and-zoning-permit-phishing-scam/",
+    "date": "2026-03-11",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://thecyberexpress.com/how-to-stop-and-report-phishing-emails/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://thecyberexpress.com/how-to-stop-and-report-phishing-emails/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Iran\u2019s Fake \u201cShelter Danger\u201d Calls Part of Psychological Cyber Warfare Playbook",
+    "link": "https://thecyberexpress.com/irans-psychological-cyber-warfare-playbook/",
+    "date": "2026-03-11",
+    "terms": [
+      "Phish",
+      "Iran",
+      "iran",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Israel Claims it \u2018Struck\u2019 Iran\u2019s Cyber Warfare Headquarters",
+        "url": "https://thecyberexpress.com/israel-hit-iran-cyber-warfare-headquarters/"
+      },
+      {
+        "term": "Iran",
+        "text": "Cyber-Kinetic Warfare Escalates as Iran, US, and Israel Clash Across Military and Digital Fronts",
+        "url": "https://thecyberexpress.com/middle-east-iran-us-israel-hybrid-warfare/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel-Iran Conflict Sparks Wider Cyber Conflict, New Malware",
+        "url": "https://thecyberexpress.com/israel-iran-conflict-hacktivism/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel Claims it \u2018Struck\u2019 Iran\u2019s Cyber Warfare Headquarters",
+        "url": "https://thecyberexpress.com/israel-hit-iran-cyber-warfare-headquarters/"
+      },
+      {
+        "term": "Iran",
+        "text": "Cyber-Kinetic Warfare Escalates as Iran, US, and Israel Clash Across Military and Digital Fronts",
+        "url": "https://thecyberexpress.com/middle-east-iran-us-israel-hybrid-warfare/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel-Iran Conflict Sparks Wider Cyber Conflict, New Malware",
+        "url": "https://thecyberexpress.com/israel-iran-conflict-hacktivism/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Gogs Vulnerability Enables Attackers to Silently Overwrite Large File Storage Objects",
+    "link": "https://cybersecuritynews.com/gogs-overwrite-vulnerability/",
+    "date": "2026-03-11",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "I tried GPT-5.4, and most answers were really good - but a few had me concerned",
     "link": "https://www.zdnet.com/article/gpt-5-4-thinking-tests-review/",
     "date": "2026-03-10",
@@ -589,11 +737,321 @@
     ]
   },
   {
-    "title": "Colliers International Idaho By akira",
+    "title": "netCOMPONENTS By akira",
     "link": "https://www.ransomlook.io//group/akira",
-    "date": "2026-03-09",
+    "date": "2026-03-10",
     "terms": [
       "akira"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "'Overly Permissive' Salesforce Cloud Configs in the Crosshairs",
+    "link": "https://www.darkreading.com/application-security/overly-permissive-salesforce-cloud-configs-crosshairs",
+    "date": "2026-03-10",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Microsoft Patches 83 Vulnerabilities",
+    "link": "https://www.securityweek.com/microsoft-patches-83-vulnerabilities/",
+    "date": "2026-03-10",
+    "terms": [
+      "critical Vulnerability"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Attackers exploit FortiGate devices to access sensitive network information",
+    "link": "https://securityaffairs.com/189241/security/attackers-exploit-fortigate-devices-to-access-sensitive-network-information.html",
+    "date": "2026-03-10",
+    "terms": [
+      "CVE-2025-59718",
+      "CVE-2026-24858",
+      "cve-2025-59718",
+      "cve-2026-24858"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-59718",
+        "text": "CVE-2025-59718",
+        "url": "https://securityaffairs.com/185546/security/fortinet-fixed-two-critical-authentication-bypass-vulnerabilities.html"
+      },
+      {
+        "term": "CVE-2026-24858",
+        "text": "CVE-2026-24858",
+        "url": "https://securityaffairs.com/187435/security/u-s-cisa-adds-a-flaw-in-multiple-fortinet-products-to-its-known-exploited-vulnerabilities-catalog-2.html"
+      }
+    ]
+  },
+  {
+    "title": "APT28 conducts long-term espionage on Ukrainian forces using custom malware",
+    "link": "https://securityaffairs.com/189230/apt/apt28-conducts-long-term-espionage-on-ukrainian-forces-using-custom-malware.html",
+    "date": "2026-03-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI's Promptfoo Deal Plugs Agentic AI Testing Gap",
+    "link": "https://www.infosecurity-magazine.com/news/openai-promptfoo-deal-agentic-ai/",
+    "date": "2026-03-10",
+    "terms": [
+      "OpenAI"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Cloud Attackers Now Prefer Vulnerability Exploits Over Credentials, Google Cloud Finds",
+    "link": "https://www.infosecurity-magazine.com/news/cloud-attackers-prefer-exploits/",
+    "date": "2026-03-10",
+    "terms": [
+      "React2shell",
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Novel A0Backdoor spread in Teams phishing operation",
+    "link": "https://www.scworld.com/brief/novel-a0backdoor-spread-in-teams-phishing-operation",
+    "date": "2026-03-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Iranian MOIS Actors & the Cyber Crime Connection",
+    "link": "https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/",
+    "date": "2026-03-10",
+    "terms": [
+      "qilin",
+      "Phish",
+      "Iran",
+      "iran"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Iranian MOIS Actors & the Cyber Crime Connection",
+        "url": "https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/"
+      },
+      {
+        "term": "Iran",
+        "text": "Iranian MOIS Actors & the Cyber Crime Connection",
+        "url": "https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/"
+      }
+    ]
+  },
+  {
+    "title": "Trump Administration Announces Aggressive Cyber Strategy",
+    "link": "https://www.hipaajournal.com/trump-administration-2026-cyber-strategy/",
+    "date": "2026-03-10",
+    "terms": [
+      "Phish",
+      "Iran"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Daily Dose of Dark Web Informer - March 10th, 2026",
+    "link": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-march-10th-2026/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com/socials",
+        "url": "https://darkwebinformer.com/socials"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "darkwebinformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Alleged Sale of 1.8 Million Patient Records From Maple Respiratory Colombia Including Full Medical History",
+    "link": "https://darkwebinformer.com/alleged-sale-of-1-8-million-patient-records-from-maple-respiratory-colombia-including-full-medical-history/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Alleged Leak of Spanish Ministry of Finance Employee Data Including IDs, IBANs, and Personal Information",
+    "link": "https://darkwebinformer.com/alleged-leak-of-spanish-ministry-of-finance-employee-data-including-ids-ibans-and-personal-information/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "Alleged Sale of 150,000 Patient Records From US Clinic Including SSNs, Diagnoses, and Medications",
+    "link": "https://darkwebinformer.com/alleged-sale-of-150-000-patient-records-from-us-clinic-including-ssns-diagnoses-and-medications/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ]
+  },
+  {
+    "title": "ShinyHunters Hackers Threaten 400 Firms Over Stolen Salesforce Data",
+    "link": "https://hackread.com/shinyhunters-hackers-threat-stolen-salesforce-data/",
+    "date": "2026-03-10",
+    "terms": [
+      "Salesforce"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Forescout Introduces Automated Security Controls Assessment to Bring Continuous Compliance Visibility",
+    "link": "https://www.itsecurityguru.org/2026/03/10/forescout-introduces-automated-security-controls-assessment-to-bring-continuous-compliance-visibility/?utm_source=rss&utm_medium=rss&utm_campaign=forescout-introduces-automated-security-controls-assessment-to-bring-continuous-compliance-visibility",
+    "date": "2026-03-10",
+    "terms": [
+      "react"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "March Patch Tuesday: Three high severity holes in Microsoft Office",
+    "link": "https://www.csoonline.com/article/4143232/march-patch-tuesday-three-high-severity-holes-in-microsoft-office.html",
+    "date": "2026-03-10",
+    "terms": [
+      "Zero Day",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Threat intelligence by ESET is a game changer",
+    "link": "https://www.csoonline.com/article/4143209/threat-intelligence-by-eset-is-a-game-changer.html",
+    "date": "2026-03-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Fake OpenClaw npm Package Installs GhostClaw Malware",
+    "link": "https://www.esecurityplanet.com/threats/fake-openclaw-npm-package-installs-ghostclaw-malware/",
+    "date": "2026-03-10",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Teams Social Engineering Campaign Drops A0Backdoor Malware",
+    "link": "https://www.esecurityplanet.com/threats/teams-social-engineering-campaign-drops-a0backdoor-malware/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "Malformed ZIP Files Allows Attackers to Bypass Antivirus and EDR Detections",
+    "link": "https://cybersecuritynews.com/malformed-zip-files-bypass-antivirus-and-edr-detections/",
+    "date": "2026-03-10",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "OpenAI to Acquire Promptfoo to Fix Vulnerabilities in AI Systems",
+    "link": "https://cybersecuritynews.com/openai-to-acquire-promptfoo/",
+    "date": "2026-03-10",
+    "terms": [
+      "OpenAI",
+      "openai"
+    ],
+    "inline_links": [
+      {
+        "term": "OpenAI",
+        "text": "OpenAI Frontier platform",
+        "url": "https://cybersecuritynews.com/openai-launches-codex-security/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "Joining OpenAI allows the team to accelerate",
+        "url": "https://openai.com/index/openai-to-acquire-promptfoo/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI to Acquire Promptfoo to Fix Vulnerabilities in AI Systems",
+        "url": "https://cybersecuritynews.com/openai-to-acquire-promptfoo/"
+      },
+      {
+        "term": "OpenAI",
+        "text": "OpenAI to Acquire Promptfoo to Fix Vulnerabilities in AI Systems",
+        "url": "https://cybersecuritynews.com/openai-to-acquire-promptfoo/"
+      }
+    ]
+  },
+  {
+    "title": "Ivanti Desktop and Server Management Vulnerability Allows Attackers to Escalate Privileges",
+    "link": "https://cybersecuritynews.com/ivanti-desktop-and-server-management-vulnerability/",
+    "date": "2026-03-10",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "VMware vDefend: Zero Trust Lateral Security for Kubernetes Workloads on VCF",
+    "link": "https://blogs.vmware.com/security/2026/03/vdefend-kubernetes-workloads-vcf.html",
+    "date": "2026-03-10",
+    "terms": [
+      "critical Vulnerability",
+      "Broadcom",
+      "PWC"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "GPS Attacks Near Iran Are Wreaking Havoc on Delivery and Mapping Apps",
+    "link": "https://www.wired.com/story/gps-attacks-near-iran-are-wreaking-havoc-on-delivery-and-mapping-apps/",
+    "date": "2026-03-10",
+    "terms": [
+      "Iran"
     ],
     "inline_links": []
   },
@@ -15216,146 +15674,6 @@
       "critical Vulnerability",
       "CLOP",
       "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Week in review: Notepad++ supply chain attack details and targets, Patch Tuesday forecast",
-    "link": "https://www.helpnetsecurity.com/2026/02/08/week-in-review-notepad-supply-chain-attack-details-and-targets-patch-tuesday-forecast/",
-    "date": "2026-02-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "DKnife toolkit abuses routers to spy and deliver malware since 2019",
-    "link": "https://securityaffairs.com/187716/malware/dknife-toolkit-abuses-routers-to-spy-and-deliver-malware-since-2019.html",
-    "date": "2026-02-08",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "LocalGPT \u2013 A Secure Local Device Focused AI Assistant Built in Rust",
-    "link": "https://cybersecuritynews.com/localgpt/",
-    "date": "2026-02-08",
-    "terms": [
-      "OpenAI",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 83",
-    "link": "https://securityaffairs.com/187732/malware/security-affairs-malware-newsletter-round-83.html",
-    "date": "2026-02-08",
-    "terms": [
-      "CVE-2025-8088",
-      "CVE-2026-21509",
-      "cve-2026-21509",
-      "cve-2025-8088"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-21509",
-        "text": "APT28 Leverages CVE-2026-21509 in Operation Neusploit",
-        "url": "https://www.zscaler.com/blogs/security-research/apt28-leverages-cve-2026-21509-operation-neusploit"
-      },
-      {
-        "term": "CVE-2025-8088",
-        "text": "Amaranth-Dragon: Weaponizing CVE-2025-8088 for Targeted Espionage in the Southeast Asia",
-        "url": "https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/"
-      }
-    ]
-  },
-  {
-    "title": "Security Affairs newsletter Round 562 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-    "link": "https://securityaffairs.com/187727/security/security-affairs-newsletter-round-562-by-pierluigi-paganini-international-edition.html",
-    "date": "2026-02-08",
-    "terms": [
-      "hunting",
-      "Phish",
-      "react",
-      "MongoDB",
-      "CVE-2025-22225",
-      "CVE-2025-8088",
-      "CVE-2026-21509",
-      "cve-2025-22225",
-      "mongodb",
-      "phish",
-      "cve-2026-21509",
-      "cve-2025-8088"
-    ],
-    "inline_links": [
-      {
-        "term": "react",
-        "text": "U.S. CISA adds SmarterTools SmarterMail and React Native Community CLI flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/187675/security/u-s-cisa-adds-smartertools-smartermail-and-react-native-community-cli-flaws-to-its-known-exploited-vulnerabilities-catalog.html"
-      },
-      {
-        "term": "CVE-2025-22225",
-        "text": "CVE-2025-22225 in VMware ESXi now used in active ransomware attacks",
-        "url": "https://securityaffairs.com/187637/security/cve-2025-22225-in-vmware-esxi-now-used-in-active-ransomware-attacks.html"
-      },
-      {
-        "term": "react",
-        "text": "Hackers abused React Native CLI flaw to deploy Rust malware before public disclosure",
-        "url": "https://securityaffairs.com/187587/hacking/hackers-abused-react-native-cli-flaw-to-deploy-rust-malware-before-public-disclosure.html"
-      },
-      {
-        "term": "MongoDB",
-        "text": "Hackers exploit unsecured MongoDB instances to wipe data and demand ransom",
-        "url": "https://securityaffairs.com/187548/security/hackers-exploit-unsecured-mongodb-instances-to-wipe-data-and-demand-ransom.html"
-      },
-      {
-        "term": "Phish",
-        "text": "Joint security advisory from BSI and BfV on phishing via messenger services",
-        "url": "https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2026/2026-02-06-gemeinsamer-sicherheitshinweis-phishing.html"
-      },
-      {
-        "term": "react",
-        "text": "Metro4Shell: Exploitation of React Native\u2019s Metro Server in the Wild",
-        "url": "https://www.vulncheck.com/blog/metro4shell_eitw"
-      },
-      {
-        "term": "hunting",
-        "text": "Dual-Mode Citrix Gateway Reconnaissance: When Residential Proxies Meet Version Hunting",
-        "url": "https://www.labs.greynoise.io/grimoire/2026-02-02-citrix-recon-residential-proxies/index.html"
-      },
-      {
-        "term": "CVE-2026-21509",
-        "text": "APT28 Leverages CVE-2026-21509 in Operation Neusploit",
-        "url": "https://www.zscaler.com/blogs/security-research/apt28-leverages-cve-2026-21509-operation-neusploit"
-      },
-      {
-        "term": "CVE-2025-8088",
-        "text": "Amaranth-Dragon: Weaponizing CVE-2025-8088 for Targeted Espionage in the Southeast Asia",
-        "url": "https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/"
-      },
-      {
-        "term": "MongoDB",
-        "text": "MongoDB Ransom Isn\u2019t Back \u2013 It Never Left",
-        "url": "https://flare.io/learn/resources/blog/mongodb-ransom/"
-      }
-    ]
-  },
-  {
-    "title": "Telegram Channels",
-    "link": "https://darkwebinformer.com/telegram-channels/",
-    "date": "2026-02-08",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Some good news: downstream victims of mass data theft campaigns are less likely to pay \u2014 incident responders",
-    "link": "https://databreaches.net/2026/02/08/some-good-news-downstream-victims-of-mass-data-theft-campaigns-are-less-likely-to-pay-incident-responders/?pk_campaign=feed&pk_kwd=some-good-news-downstream-victims-of-mass-data-theft-campaigns-are-less-likely-to-pay-incident-responders",
-    "date": "2026-02-08",
-    "terms": [
-      "CLOP"
     ],
     "inline_links": []
   }

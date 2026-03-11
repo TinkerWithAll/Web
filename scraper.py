@@ -1,9 +1,21 @@
 #!/usr/bin/env python3
 """
 scraper.py
-Parses security news, maintains a rolling 30-day history in JSON,
-generates CSV reports, and updates a metadata timestamp.
-Now also updates the footer of a 'feeds.html' file.
+- Parses 130+ security RSS feeds
+- Maintains a rolling 30-day history in feed_history.json
+- Generates a timestamped CSV (cleans up old ones, keeps monthly archives)
+- Calls Anthropic API server-side to produce report.json
+- Accepts an optional CUSTOM_PROMPT env var for on-demand analysis
+- Updates meta.json with run timestamp
+
+API keys are read from environment variables (GitHub Secrets).
+They are NEVER committed to the repo or exposed in the browser.
+
+Environment variables expected:
+  ANTHROPIC_API_KEY   — your Anthropic API key (stored in GitHub Secrets)
+  CUSTOM_PROMPT       — (optional) if set, overrides the default 48h report
+  GH_DISPATCH_TOKEN   — (optional) GitHub PAT for workflow_dispatch from browser
+                         This is injected into config.js at build time, not scraper.py
 """
 
 import feedparser
@@ -12,47 +24,137 @@ import csv
 import sys
 import io
 import json
-from datetime import datetime, timedelta, timezone
-import socket
-import requests
+import glob
 import os
 import ssl
-import glob
+import socket
+import requests
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-# Fix for encoding and SSL
+# ── Encoding / SSL fixes ──────────────────────────────────────────
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 ssl._create_default_https_context = ssl._create_unverified_context
 socket.setdefaulttimeout(300)
 
-# Configuration
-HISTORY_FILE = "feed_history.json"
-META_FILE = "meta.json"  # New metadata file
-HTML_FILE = "feeds.html" # NEW: HTML file to update
-MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=30)
-USE_CISA_CVES = True
+# ── Configuration ─────────────────────────────────────────────────
+HISTORY_FILE   = "feed_history.json"
+META_FILE      = "meta.json"
+REPORT_FILE    = "report.json"
+HISTORY_DAYS   = 30
+REPORT_HOURS   = 48     # window for the AI report
+USE_CISA_CVES  = True
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+CUSTOM_PROMPT     = os.environ.get("CUSTOM_PROMPT", "").strip()
+EASTERN_TZ        = ZoneInfo("America/New_York")
+PACIFIC_TZ        = ZoneInfo("America/Los_Angeles")
 
+MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=HISTORY_DAYS)
+
+# ── AI Toggle ─────────────────────────────────────────────────────
+# TWO ways to disable AI (either is enough to turn it off):
+#
+#   1. Code-level:  set AI_REPORTS_ENABLED_CODE = False below
+#   2. GitHub-level (no code change needed):
+#        Settings → Secrets and variables → Actions → Variables tab
+#        Add variable: AI_ENABLED = false   (or true to re-enable)
+#        GitHub Actions Variables are not secret — a simple flag is fine here.
+#
+# The GitHub variable overrides the code flag, so you can pause
+# API spending instantly from the GitHub UI without touching source.
+
+AI_REPORTS_ENABLED_CODE = True   # ← flip to False to disable at code level
+
+_env_flag = os.environ.get("AI_ENABLED", "").strip().lower()
+if _env_flag == "false":
+    AI_REPORTS_ENABLED = False
+elif _env_flag == "true":
+    AI_REPORTS_ENABLED = True
+else:
+    AI_REPORTS_ENABLED = AI_REPORTS_ENABLED_CODE  # fall back to code flag
+
+print(f"AI reports: {'ENABLED' if AI_REPORTS_ENABLED else 'DISABLED'}", file=sys.stderr)
+
+
+# ─────────────────────────────────────────────────────────────────
+# CSV CLEANUP — keep only the first-of-month CSV archives
+# plus the current run's file. Delete everything else.
+# ─────────────────────────────────────────────────────────────────
+def cleanup_csv_files(current_csv: str):
+    """
+    Delete old results_*.csv files.
+    Rules:
+      - Always keep `current_csv` (today's run).
+      - For each calendar month, keep only the CSV whose date is the 1st.
+        If no file exists for the 1st, keep the earliest file of that month.
+      - Delete everything else.
+    """
+    all_csvs = sorted(glob.glob("results_*.csv"))
+    if not all_csvs:
+        return
+
+    # Group by YYYYMM
+    monthly: dict[str, list[str]] = {}
+    for f in all_csvs:
+        # filename: results_YYYYMMDD_HHMMSS.csv
+        try:
+            date_part = f.split("_")[1]          # YYYYMMDD
+            month_key = date_part[:6]             # YYYYMM
+            monthly.setdefault(month_key, []).append(f)
+        except (IndexError, ValueError):
+            continue
+
+    to_keep = set()
+    to_keep.add(current_csv)   # always keep current run
+
+    for month_key, files in monthly.items():
+        files_sorted = sorted(files)
+        # Prefer a file from the 1st of the month
+        first_of_month = [f for f in files_sorted
+                          if f.split("_")[1].endswith("01")]
+        if first_of_month:
+            to_keep.add(first_of_month[0])
+        else:
+            # Fall back to earliest file of the month
+            to_keep.add(files_sorted[0])
+
+    for f in all_csvs:
+        if f not in to_keep:
+            try:
+                os.remove(f)
+                print(f"Removed old CSV: {f}", file=sys.stderr)
+            except OSError as e:
+                print(f"Could not remove {f}: {e}", file=sys.stderr)
+
+
+# ─────────────────────────────────────────────────────────────────
+# FEED HELPERS
+# ─────────────────────────────────────────────────────────────────
 def load_list_from_file(filename):
     items = []
     try:
         with open(filename, "r", encoding="utf-8") as f:
             for line in f:
-                if line.strip() and not line.strip().startswith("#"):
-                    items.append(line.strip())
+                s = line.strip()
+                if s and not s.startswith("#"):
+                    items.append(s)
     except FileNotFoundError:
         pass
     return items
 
+
 def update_terms_with_cisa_cves(terms_file="terms.txt"):
     try:
-        r = requests.get("https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv", timeout=15)
+        r = requests.get(
+            "https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv",
+            timeout=15
+        )
         content = r.content.decode("utf-8", errors="ignore")
         cve_ids = set()
         reader = csv.DictReader(io.StringIO(content))
         for row in reader:
             if row.get("cveID", "").startswith("CVE-"):
                 cve_ids.add(row["cveID"])
-        
         existing = set(load_list_from_file(terms_file))
         new_cves = sorted(cve_ids - existing)
         if new_cves:
@@ -60,21 +162,25 @@ def update_terms_with_cisa_cves(terms_file="terms.txt"):
                 for cve in new_cves:
                     f.write(cve + "\n")
     except Exception as e:
-        print(f"Error updating CVEs: {e}", file=sys.stderr)
+        print(f"Error updating CVEs from CISA: {e}", file=sys.stderr)
+
 
 def safe_parse_feed(url):
     try:
         return feedparser.parse(url)
-    except:
+    except Exception:
         return feedparser.FeedParserDict(entries=[])
+
 
 def extract_links(html):
     links = []
-    if not html: return links
+    if not html:
+        return links
     soup = BeautifulSoup(html, "html.parser")
     for a in soup.find_all("a", href=True):
         links.append((a["href"].strip(), a.get_text().strip()))
     return links
+
 
 def parse_feeds(feed_urls, search_terms):
     entries = []
@@ -83,39 +189,42 @@ def parse_feeds(feed_urls, search_terms):
         d = safe_parse_feed(url)
         for e in d.entries:
             link = e.get("link", "")
-            
             published_dt = None
             try:
                 dt_tuple = e.get("published_parsed") or e.get("updated_parsed")
-                if dt_tuple: published_dt = datetime(*dt_tuple[:6])
-            except: pass
-            
+                if dt_tuple:
+                    published_dt = datetime(*dt_tuple[:6])
+            except Exception:
+                pass
+
             if not published_dt or published_dt < MIN_PUBLISHED_DATE:
                 continue
 
-            title = e.get("title", "")
+            title   = e.get("title", "")
             summary = e.get("summary", "")
             content = e.get("content", [{"value": ""}])[0]["value"]
             text_all = f"{title} {summary} {content}".lower()
-            
+
             matched = [t for t in search_terms if t.lower() in text_all]
-            
+
             inline_matches = []
             for href, txt in extract_links(content + summary):
                 for term in search_terms:
                     if term.lower() in txt.lower():
                         inline_matches.append({"term": term, "text": txt, "url": href})
-                        if term.lower() not in matched: matched.append(term.lower())
+                        if term.lower() not in matched:
+                            matched.append(term.lower())
 
             if matched:
                 entries.append({
-                    "title": title,
-                    "link": link,
-                    "date": published_dt.strftime("%Y-%m-%d"),
-                    "terms": matched,
-                    "inline_links": inline_matches
+                    "title":        title,
+                    "link":         link,
+                    "date":         published_dt.strftime("%Y-%m-%d"),
+                    "terms":        matched,
+                    "inline_links": inline_matches,
                 })
     return entries
+
 
 def update_history_file(new_entries):
     history = []
@@ -123,114 +232,289 @@ def update_history_file(new_entries):
         try:
             with open(HISTORY_FILE, "r", encoding="utf-8") as f:
                 history = json.load(f)
-        except: pass
+        except Exception:
+            pass
 
-    history_dict = {item['link']: item for item in history}
+    history_dict = {item["link"]: item for item in history}
     for entry in new_entries:
-        history_dict[entry['link']] = entry
+        history_dict[entry["link"]] = entry
 
-    full_list = sorted(history_dict.values(), key=lambda x: x['date'], reverse=True)
-    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
-    clean_list = [x for x in full_list if x['date'] >= cutoff]
+    full_list = sorted(history_dict.values(), key=lambda x: x["date"], reverse=True)
+    cutoff = (datetime.now() - timedelta(days=HISTORY_DAYS)).strftime("%Y-%m-%d")
+    clean_list = [x for x in full_list if x["date"] >= cutoff]
 
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(clean_list, f, indent=2)
-    
+
     return clean_list
+
 
 def save_csv(records, filename):
     with open(filename, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["Date", "Title", "Link", "Matched Terms", "Inline Links"])
         for r in records:
-            inline = " | ".join([f"{x['text']}->{x['url']}" for x in r['inline_links']])
-            w.writerow([r['date'], r['title'], r['link'], ", ".join(r['terms']), inline])
+            inline = " | ".join([f"{x['text']}->{x['url']}" for x in r.get("inline_links", [])])
+            w.writerow([r["date"], r["title"], r["link"],
+                        ", ".join(r["terms"]), inline])
+
 
 def save_metadata():
-    """Saves the current timestamp to a separate JSON file in Eastern Time."""
-    # Define the Eastern Time Zone using America/New_York
-    eastern_tz = ZoneInfo("America/New_York")
-    # Get the current time in UTC
-    now_utc = datetime.now(timezone.utc)
-    # Convert UTC time to Eastern Time
-    now_eastern = now_utc.astimezone(eastern_tz)
-    # Format the time string, using %Z to automatically display EST or EDT
-    timestamp = now_eastern.strftime("%Y-%m-%d %H:%M %Z")
+    now_utc     = datetime.now(timezone.utc)
+    now_eastern = now_utc.astimezone(EASTERN_TZ)
+    timestamp   = now_eastern.strftime("%Y-%m-%d %H:%M %Z")
     try:
         with open(META_FILE, "w", encoding="utf-8") as f:
             json.dump({"last_updated": timestamp}, f)
-        print(f"Updated {META_FILE} with timestamp: {timestamp}", file=sys.stderr)
+        print(f"Updated {META_FILE}: {timestamp}", file=sys.stderr)
     except Exception as e:
         print(f"Error saving metadata: {e}", file=sys.stderr)
 
-def update_footer_html(html_file=HTML_FILE):
-    """
-    Reads the HTML file, toggles the content of the footer <p> tag, and saves it.
-    """
+
+# ─────────────────────────────────────────────────────────────────
+# AI REPORT GENERATION
+# ─────────────────────────────────────────────────────────────────
+def get_48h_entries(full_history):
+    """Return only entries from the last 48 hours."""
+    cutoff = (datetime.now() - timedelta(hours=REPORT_HOURS)).strftime("%Y-%m-%d")
+    return [e for e in full_history if e.get("date", "") >= cutoff]
+
+
+def build_default_prompt(recent_entries):
+    """Build the structured analysis prompt from recent feed entries."""
+    if not recent_entries:
+        return (
+            "The security feed returned no new articles in the last 48 hours. "
+            "Please write a brief report noting this and provide general security posture advice."
+        )
+
+    # Summarise entries into a compact text block for the API
+    articles_text = []
+    for e in recent_entries[:120]:   # cap to avoid token limits
+        terms = ", ".join(e.get("terms", []))
+        articles_text.append(f"[{e['date']}] {e['title']} | Terms: {terms}")
+
+    articles_block = "\n".join(articles_text)
+
+    return f"""You are a senior cybersecurity analyst. Based on the following security news articles 
+from the last 48 hours, produce a structured threat intelligence briefing.
+
+ARTICLES:
+{articles_block}
+
+Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exact schema:
+
+{{
+  "vulnerabilities": {{
+    "count": <integer>,
+    "items": [
+      {{
+        "id": "CVE-XXXX-XXXXX",
+        "description": "brief one-line description of the vulnerability",
+        "criticality": "CRITICAL|HIGH|MEDIUM|LOW",
+        "software_affected": "vendor/product name and version if known",
+        "cia_impact": "e.g. Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "e.g. Network / No auth required"
+      }}
+    ]
+  }},
+  "threat_actors": {{
+    "items": [
+      {{
+        "name": "Threat Actor Name (aliases)",
+        "targets": "who was breached or targeted in the last 48h",
+        "ttps": "key TTPs to watch for, referenced as MITRE ATT&CK IDs where possible",
+        "iocs": ["ip/domain/hash", "..."]
+      }}
+    ]
+  }},
+  "canada_landscape": {{
+    "summary": "2-3 sentence overview of the Canadian cyber landscape in the last 48h",
+    "retailers": "any retail sector incidents in Canada — mention Canadian Tire, SportChek, Mark's, etc. if relevant; otherwise 'None identified'",
+    "financial": "any Canadian financial institution incidents; otherwise 'None identified'"
+  }},
+  "generated_at": "<ISO timestamp of when this report was generated>"
+}}
+
+Only include CVEs and TAs that actually appear in the article list above.
+For the Canada section, look for keywords: Canada, Canadian, Ontario, Quebec, CIBC, RBC, TD Bank, Scotiabank, BMO, Canadian Tire, SportChek, etc.
+Keep each field concise and factual. generated_at must be current UTC time."""
+
+
+def build_custom_prompt(user_prompt, full_history):
+    """Build a prompt that gives the model context + the user's question."""
+    recent = get_48h_entries(full_history)
+    all_recent = full_history[:200]   # broader context for custom queries
+
+    articles_text = []
+    for e in all_recent:
+        terms = ", ".join(e.get("terms", []))
+        articles_text.append(f"[{e['date']}] {e['title']} | Terms: {terms}")
+    articles_block = "\n".join(articles_text)
+
+    return f"""You are a senior cybersecurity analyst. You have access to the following security 
+news articles scraped from 130+ feeds over the last 30 days:
+
+{articles_block}
+
+The user has asked the following question or requested the following analysis:
+"{user_prompt}"
+
+Respond with a clear, well-structured analysis in plain text (you may use markdown headings 
+and bullet points). Be specific and cite article titles or dates where relevant.
+Do NOT use JSON — just write a readable intelligence report."""
+
+
+def call_anthropic(prompt: str) -> dict | None:
+    """Call Anthropic claude-sonnet and return parsed JSON or a text response."""
+    if not ANTHROPIC_API_KEY:
+        print("ANTHROPIC_API_KEY not set — skipping AI report.", file=sys.stderr)
+        return None
+
+    import urllib.request
+
+    headers = {
+        "x-api-key":         ANTHROPIC_API_KEY,
+        "anthropic-version": "2023-06-01",
+        "content-type":      "application/json",
+    }
+    body = json.dumps({
+        "model":      "claude-sonnet-4-5",
+        "max_tokens": 4096,
+        "messages":   [{"role": "user", "content": prompt}],
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=body,
+        headers=headers,
+        method="POST",
+    )
     try:
-        with open(html_file, "r", encoding="utf-8") as f:
-            soup = BeautifulSoup(f, 'html.parser')
-
-        footer = soup.find('footer')
-        if not footer:
-            print(f"Warning: Footer tag not found in {html_file}.", file=sys.stderr)
-            return
-
-        p_tag = footer.find('p')
-        if not p_tag:
-            print(f"Warning: <p> tag not found within <footer> in {html_file}.", file=sys.stderr)
-            return
-        
-        # Define the two states
-        state_one = "2025 Zachary Baillod " # With trailing space
-        state_two = "2025 Zachary Baillod"  # Without trailing space
-
-        # Determine the current state and toggle
-        current_text = p_tag.text.strip()
-        
-        # Check against both states (with and without stripping, just in case)
-        if p_tag.text == state_one or current_text == state_one.strip():
-            new_text = state_two
-            print(f"Toggling footer from '{state_one.strip()}' to '{state_two}'", file=sys.stderr)
-        else:
-            new_text = state_one
-            print(f"Toggling footer from '{state_two}' to '{state_one.strip()}'", file=sys.stderr)
-
-        # Update the text content of the <p> tag
-        p_tag.string = new_text
-
-        # Write the modified HTML back to the file
-        with open(html_file, "w", encoding="utf-8") as f:
-            f.write(str(soup))
-            
-    except FileNotFoundError:
-        print(f"Error: HTML file '{html_file}' not found. Skipping footer update.", file=sys.stderr)
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            text = data["content"][0]["text"].strip()
+            return text
     except Exception as e:
-        print(f"Error updating HTML footer: {e}", file=sys.stderr)
+        print(f"Anthropic API error: {e}", file=sys.stderr)
+        return None
 
 
+def generate_and_save_report(full_history: list):
+    """Generate the AI report and save it to report.json."""
+    now_utc = datetime.now(timezone.utc).isoformat()
+
+    # If AI is disabled, write a minimal report.json so the frontend
+    # knows to show a "disabled" state rather than an error.
+    if not AI_REPORTS_ENABLED:
+        report = {
+            "ai_enabled":    False,
+            "generated_at":  now_utc,
+            "message":       "AI analysis is currently disabled by the site administrator.",
+        }
+        with open(REPORT_FILE, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=2)
+        print(f"AI disabled — wrote placeholder {REPORT_FILE}", file=sys.stderr)
+        return
+
+    if CUSTOM_PROMPT:
+        print(f"Generating CUSTOM report: '{CUSTOM_PROMPT[:80]}'", file=sys.stderr)
+        prompt = build_custom_prompt(CUSTOM_PROMPT, full_history)
+        response_text = call_anthropic(prompt)
+
+        if response_text is None:
+            report = {
+                "ai_enabled":      True,
+                "generated_at":    now_utc,
+                "error":           "Anthropic API unavailable",
+                "custom_response": "Error: Could not reach Anthropic API.",
+            }
+        else:
+            report = {
+                "ai_enabled":      True,
+                "generated_at":    now_utc,
+                "custom_response": response_text,
+            }
+
+    else:
+        print("Generating DEFAULT 48h report...", file=sys.stderr)
+        recent_entries = get_48h_entries(full_history)
+        print(f"  {len(recent_entries)} articles in last 48h.", file=sys.stderr)
+        prompt = build_default_prompt(recent_entries)
+        response_text = call_anthropic(prompt)
+
+        if response_text is None:
+            report = {
+                "ai_enabled":   True,
+                "generated_at": now_utc,
+                "error":        "Anthropic API unavailable",
+            }
+        else:
+            # Try to parse JSON
+            try:
+                # Strip any accidental markdown fences
+                clean = response_text.strip()
+                if clean.startswith("```"):
+                    clean = "\n".join(clean.split("\n")[1:])
+                if clean.endswith("```"):
+                    clean = "\n".join(clean.split("\n")[:-1])
+                report = json.loads(clean)
+                report["ai_enabled"] = True
+                # Ensure generated_at is set
+                if "generated_at" not in report:
+                    report["generated_at"] = now_utc
+            except json.JSONDecodeError as e:
+                print(f"JSON parse error on AI response: {e}", file=sys.stderr)
+                # Fall back: store raw text so frontend can display it
+                report = {
+                    "ai_enabled":      True,
+                    "generated_at":    now_utc,
+                    "custom_response": response_text,
+                }
+
+    with open(REPORT_FILE, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
+    print(f"Saved {REPORT_FILE}", file=sys.stderr)
+
+
+# ─────────────────────────────────────────────────────────────────
+# MAIN
+# ─────────────────────────────────────────────────────────────────
 def main():
-    if USE_CISA_CVES: update_terms_with_cisa_cves()
-    
+    # 1. Update CISA CVE list
+    if USE_CISA_CVES:
+        update_terms_with_cisa_cves()
+
+    # 2. Load config
     terms = load_list_from_file("terms.txt")
-    if not USE_CISA_CVES: terms = [t for t in terms if not t.upper().startswith("CVE-")]
+    if not USE_CISA_CVES:
+        terms = [t for t in terms if not t.upper().startswith("CVE-")]
     feeds = load_list_from_file("feeds.txt")
 
+    # 3. Scrape
     print("Scanning feeds...", file=sys.stderr)
     new_matches = parse_feeds(feeds, terms)
-    
+
+    # 4. Update 30-day rolling history
     full_history = update_history_file(new_matches)
-    
-    timestamp = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
-    save_csv(new_matches, f"results_{timestamp}.csv")
-    
-    # NEW: Save the update time
+
+    # 5. Save CSV for this run
+    utc_ts  = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    csv_file = f"results_{utc_ts}.csv"
+    save_csv(new_matches, csv_file)
+    print(f"Saved {csv_file} ({len(new_matches)} new matches)", file=sys.stderr)
+
+    # 6. Clean up old CSVs (keep monthly 1st-of-month archives + current)
+    cleanup_csv_files(csv_file)
+
+    # 7. Save metadata timestamp
     save_metadata()
-    
-    # NEW: Update the HTML footer
-    update_footer_html()
-    
-    print(f"Done. History updated with {len(full_history)} total entries.")
+
+    # 8. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
+    generate_and_save_report(full_history)
+
+    print(f"Done. History: {len(full_history)} entries total.", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()
