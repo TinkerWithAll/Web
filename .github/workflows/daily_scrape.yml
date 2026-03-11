@@ -53,16 +53,12 @@ jobs:
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull latest BEFORE committing — avoids all rebase conflicts
-          git pull --rebase origin main
-
-          # Stage all generated files
           git add feed_history.json meta.json terms.txt config.js || true
           git add report.json || true
           git add results_*.csv 2>/dev/null || true
 
-          # Only commit and push if something changed
           if ! git diff --staged --quiet; then
+            git pull --rebase origin main
             git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
             git push origin main
           else
