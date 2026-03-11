@@ -2,12 +2,11 @@ name: Daily Security Feed Scraper
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 05:00 PT (PST/winter). Change to '0 12 * * *' for PDT/summer.
-
+    - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       custom_prompt:
-        description: 'Optional custom analysis prompt (overrides default 48h report)'
+        description: 'Optional custom analysis prompt'
         required: false
         default: ''
 
@@ -17,7 +16,6 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
 
       - name: Checkout repository
