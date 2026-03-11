@@ -1,5 +1,153 @@
 [
   {
+    "title": "6 Mittel gegen Security-Tool-Wildwuchs",
+    "link": "https://www.csoonline.com/article/3495420/6-mittel-gegen-security-tool-wildwuchs.html",
+    "date": "2026-03-11",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": [
+      {
+        "term": "hunting",
+        "text": "Threat Hunting",
+        "url": "https://www.csoonline.com/article/3492793/ki-gestutzte-bedrohungsjagd-wie-genai-das-threat-hunting-beschleunigt.html"
+      }
+    ]
+  },
+  {
+    "title": "Jack & Jill went up the hill \u2014 and an AI tried to hack them",
+    "link": "https://www.csoonline.com/article/4143451/jack-jill-went-up-the-hill-and-an-ai-tried-to-hack-them-2.html",
+    "date": "2026-03-11",
+    "terms": [
+      "hunting",
+      "Phish"
+    ],
+    "inline_links": []
+  },
+  {
+    "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
+    "link": "https://thecyberpost.com/news/hackers/cisa-flags-solarwinds-ivanti-and-workspace-one-vulnerabilities-as-actively-exploited/",
+    "date": "2026-03-11",
+    "terms": [
+      "CVE-2021-22054",
+      "CVE-2025-26399",
+      "CVE-2026-1603",
+      "cve-2021-22054",
+      "cve-2025-26399",
+      "cve-2026-1603"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2021-22054",
+        "text": "CVE-2021-22054",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2021-22054"
+      },
+      {
+        "term": "CVE-2025-26399",
+        "text": "CVE-2025-26399",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-26399"
+      },
+      {
+        "term": "CVE-2026-1603",
+        "text": "CVE-2026-1603",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-1603"
+      }
+    ]
+  },
+  {
+    "title": "FBI Flags Phishing Campaign Collecting Planning and Zoning Permit Payments",
+    "link": "https://thecyberexpress.com/planning-and-zoning-permit-phishing-scam/",
+    "date": "2026-03-11",
+    "terms": [
+      "Phish",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://thecyberexpress.com/how-to-stop-and-report-phishing-emails/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing emails",
+        "url": "https://thecyberexpress.com/how-to-stop-and-report-phishing-emails/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Iran\u2019s Fake \u201cShelter Danger\u201d Calls Part of Psychological Cyber Warfare Playbook",
+    "link": "https://thecyberexpress.com/irans-psychological-cyber-warfare-playbook/",
+    "date": "2026-03-11",
+    "terms": [
+      "Phish",
+      "Iran",
+      "iran",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Israel Claims it \u2018Struck\u2019 Iran\u2019s Cyber Warfare Headquarters",
+        "url": "https://thecyberexpress.com/israel-hit-iran-cyber-warfare-headquarters/"
+      },
+      {
+        "term": "Iran",
+        "text": "Cyber-Kinetic Warfare Escalates as Iran, US, and Israel Clash Across Military and Digital Fronts",
+        "url": "https://thecyberexpress.com/middle-east-iran-us-israel-hybrid-warfare/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel-Iran Conflict Sparks Wider Cyber Conflict, New Malware",
+        "url": "https://thecyberexpress.com/israel-iran-conflict-hacktivism/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel Claims it \u2018Struck\u2019 Iran\u2019s Cyber Warfare Headquarters",
+        "url": "https://thecyberexpress.com/israel-hit-iran-cyber-warfare-headquarters/"
+      },
+      {
+        "term": "Iran",
+        "text": "Cyber-Kinetic Warfare Escalates as Iran, US, and Israel Clash Across Military and Digital Fronts",
+        "url": "https://thecyberexpress.com/middle-east-iran-us-israel-hybrid-warfare/"
+      },
+      {
+        "term": "Iran",
+        "text": "Israel-Iran Conflict Sparks Wider Cyber Conflict, New Malware",
+        "url": "https://thecyberexpress.com/israel-iran-conflict-hacktivism/"
+      },
+      {
+        "term": "Phish",
+        "text": "phishing",
+        "url": "https://cyble.com/knowledge-hub/what-is-phishing/"
+      }
+    ]
+  },
+  {
+    "title": "Gogs Vulnerability Enables Attackers to Silently Overwrite Large File Storage Objects",
+    "link": "https://cybersecuritynews.com/gogs-overwrite-vulnerability/",
+    "date": "2026-03-11",
+    "terms": [
+      "lazarus"
+    ],
+    "inline_links": []
+  },
+  {
     "title": "I tried GPT-5.4, and most answers were really good - but a few had me concerned",
     "link": "https://www.zdnet.com/article/gpt-5-4-thinking-tests-review/",
     "date": "2026-03-10",
