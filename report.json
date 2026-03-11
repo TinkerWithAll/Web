@@ -1,196 +1,180 @@
 {
   "vulnerabilities": {
-    "count": 11,
+    "count": 9,
     "items": [
       {
         "id": "CVE-2026-1603",
-        "description": "Authentication bypass vulnerability in Ivanti Endpoint Manager",
+        "description": "Ivanti Endpoint Manager authentication bypass vulnerability actively exploited in the wild",
         "criticality": "CRITICAL",
-        "software_affected": "Ivanti Desktop and Server Management / Endpoint Manager",
+        "software_affected": "Ivanti Endpoint Manager (EPM)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / No authentication required"
+        "access_required": "Network / No auth required"
       },
       {
         "id": "CVE-2025-26399",
-        "description": "Actively exploited vulnerability in SolarWinds",
+        "description": "SolarWinds vulnerability actively exploited, added to CISA KEV catalog",
         "criticality": "HIGH",
-        "software_affected": "SolarWinds",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Authentication status unknown"
+        "software_affected": "SolarWinds (product not specified)",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+        "access_required": "Network / Auth may be required"
       },
       {
         "id": "CVE-2021-22054",
-        "description": "Actively exploited vulnerability in Workspace One",
+        "description": "VMware Workspace One vulnerability actively exploited, flagged by CISA",
         "criticality": "HIGH",
-        "software_affected": "VMware Workspace One",
+        "software_affected": "VMware Workspace One / Omnissa Workspace One",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Authentication status unknown"
+        "access_required": "Network / Auth may be required"
       },
       {
         "id": "CVE-2025-59718",
-        "description": "FortiGate Edge vulnerability exploited to access sensitive network information",
+        "description": "FortiGate edge device vulnerability exploited to access sensitive network information",
         "criticality": "HIGH",
         "software_affected": "Fortinet FortiGate",
         "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-        "access_required": "Network / Exploited in targeted attacks"
+        "access_required": "Network / Valid credentials or exploit"
       },
       {
         "id": "CVE-2026-24858",
-        "description": "FortiGate vulnerability leading to stolen service accounts and AD compromise",
+        "description": "FortiGate vulnerability enabling stolen service accounts and deep AD compromise",
         "criticality": "HIGH",
         "software_affected": "Fortinet FortiGate",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Leads to lateral movement"
+        "access_required": "Network / Initial access required"
       },
       {
         "id": "CVE-2023-32434",
-        "description": "iPhone exploit used by Russian spies, likely from US contractor",
+        "description": "iPhone exploit used in Russian spy toolkit, likely originated from U.S. contractor",
         "criticality": "HIGH",
-        "software_affected": "Apple iOS",
+        "software_affected": "Apple iPhone/iOS",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
-        "access_required": "Local / Sophisticated exploitation"
+        "access_required": "Local / Physical or remote exploit"
       },
       {
         "id": "CVE-2023-38606",
-        "description": "iPhone exploit in Russian spy toolkit",
+        "description": "iPhone vulnerability part of advanced exploitation toolkit used by Russian intelligence",
         "criticality": "HIGH",
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
-        "access_required": "Local / Sophisticated exploitation"
+        "software_affected": "Apple iPhone/iOS",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+        "access_required": "Local / Physical or remote exploit"
       },
       {
         "id": "CVE-2017-7921",
-        "description": "Hikvision privilege escalation vulnerability",
+        "description": "Hikvision products privilege escalation vulnerability allowing malicious users to gain elevated access",
         "criticality": "MEDIUM",
         "software_affected": "Hikvision Multiple Products",
-        "cia_impact": "Confidentiality: Medium, Integrity: High, Availability: Medium",
-        "access_required": "Network / Authenticated access"
+        "cia_impact": "Confidentiality: Medium, Integrity: High, Availability: Low",
+        "access_required": "Network / Low privilege required"
       },
       {
-        "id": "CVE-2021-30952",
-        "description": "macOS vulnerability exploited in attacks",
-        "criticality": "HIGH",
-        "software_affected": "Apple macOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Local / Active exploitation"
-      },
-      {
-        "id": "CVE-2023-41974",
-        "description": "iOS vulnerability exploited in attacks",
-        "criticality": "HIGH",
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Local / Active exploitation"
-      },
-      {
-        "id": "CVE-2023-43000",
-        "description": "Apple device vulnerability exploited in attacks",
-        "criticality": "HIGH",
-        "software_affected": "Apple macOS/iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Local / Active exploitation"
+        "id": "Microsoft Office RCE (March 2026)",
+        "description": "Critical vulnerability in Microsoft Office allows remote malicious code execution, patched in March 2026 Patch Tuesday",
+        "criticality": "CRITICAL",
+        "software_affected": "Microsoft Office (multiple versions)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / User interaction (open malicious file)"
       }
     ]
   },
   "threat_actors": {
     "items": [
       {
-        "name": "Iran-backed actors (multiple groups)",
-        "targets": "Stryker (MedTech), U.S. critical infrastructure, Israel, Middle East operations - wiper attacks and psychological warfare campaigns including fake shelter danger calls",
-        "ttps": "T1486 (Data Encrypted for Impact/Wiper), T1566 (Phishing), T1498 (Network DoS), T1589 (Gather Victim Identity Information), GPS jamming and mapping disruption",
+        "name": "Iran-backed actors (MOIS-linked)",
+        "targets": "Stryker (MedTech), U.S. critical infrastructure, Iranian domestic internet infrastructure (blackout operations), Qatar entities amid Middle East conflict",
+        "ttps": "T1485 Data Destruction (wiper attacks), T1566 Phishing, T1598 Phishing for Information, T1486 Data Encrypted for Impact (ransomware connections with Qilin), T1499 DDoS, T1589 Gather Victim Identity Information (fake shelter danger calls for psychological operations)",
+        "iocs": []
+      },
+      {
+        "name": "Lazarus Group (North Korean APT)",
+        "targets": "AllSecure CEO, developers via fake job opportunities and LinkedIn social engineering",
+        "ttps": "T1566.001 Spearphishing Attachment, T1566.003 Spearphishing via Service (LinkedIn), T1204.002 User Execution: Malicious File, T1027 Obfuscated Files or Information",
         "iocs": []
       },
       {
         "name": "ShinyHunters",
-        "targets": "Hundreds of Salesforce customers in mass data theft campaign targeting Salesforce Experience Cloud",
-        "ttps": "T1213 (Data from Information Repositories), T1567 (Exfiltration Over Web Service), Modified AuraInspector tool exploitation",
+        "targets": "Hundreds of Salesforce Experience Cloud customers in mass-scanning campaign using modified AuraInspector tool",
+        "ttps": "T1190 Exploit Public-Facing Application, T1530 Data from Cloud Storage Object, T1213 Data from Information Repositories, T1087 Account Discovery",
         "iocs": []
       },
       {
-        "name": "Lazarus (North Korean APT)",
-        "targets": "AllSecure CEO via fake LinkedIn interview, developers through supply chain attacks",
-        "ttps": "T1566.001 (Spearphishing Attachment), T1204 (User Execution), T1195 (Supply Chain Compromise), Social engineering via professional networking",
-        "iocs": []
-      },
-      {
-        "name": "APT28 (Fancy Bear/Russian GRU)",
-        "targets": "Ukrainian forces in long-term espionage operations, Signal and WhatsApp accounts",
-        "ttps": "T1566 (Phishing), T1659 (Content Injection), T1583 (Acquire Infrastructure), Advanced malware toolkit, cyber-espionage operations",
-        "iocs": []
-      },
-      {
-        "name": "Chinese Nexus Actors",
-        "targets": "Qatar amid Iranian conflict, using PlugX malware with Middle East conflict lures",
-        "ttps": "T1566.001 (Spearphishing Attachment), T1204 (User Execution), PlugX deployment, geopolitical targeting",
-        "iocs": []
-      },
-      {
-        "name": "MuddyWater (Iranian APT)",
-        "targets": "U.S. networks using Dindoor malware",
-        "ttps": "T1566 (Phishing), T1059 (Command and Scripting Interpreter), Dindoor malware deployment",
-        "iocs": []
-      },
-      {
-        "name": "Akira Ransomware",
+        "name": "Akira ransomware",
         "targets": "Priderock Capital Partners",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration)",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1567 Exfiltration Over Web Service, T1078 Valid Accounts",
         "iocs": []
       },
       {
-        "name": "Qilin Ransomware",
-        "targets": "Retamar, U.S. electric cooperative",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration), critical infrastructure targeting",
+        "name": "Qilin ransomware",
+        "targets": "Retamar, U.S. electric cooperative (alleged)",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1567.002 Exfiltration to Cloud Storage, T1199 Trusted Relationship",
         "iocs": []
       },
       {
-        "name": "Clop Ransomware",
+        "name": "Clop ransomware",
         "targets": "CLOUD.CLEARWAYGROUP.COM",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration), T1490 (Inhibit System Recovery)",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1567 Exfiltration Over Web Service, T1078 Valid Accounts",
         "iocs": []
       },
       {
-        "name": "Everest Ransomware",
-        "targets": "UD Trucks - database leaked",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration), T1490 (Inhibit System Recovery)",
+        "name": "Everest ransomware",
+        "targets": "UD Trucks (database leaked)",
+        "ttps": "T1486 Data Encrypted for Impact, T1567 Exfiltration Over Web Service, T1078 Valid Accounts, T1213 Data from Information Repositories",
         "iocs": []
       },
       {
-        "name": "BeatBanker Android Trojan",
-        "targets": "Mobile users via phishing, deploying crypto miner and RAT",
-        "ttps": "T1566.002 (Spearphishing Link), T1496 (Resource Hijacking), T1219 (Remote Access Software), dual-mode Android malware",
+        "name": "APT28 (Fancy Bear, Russian GRU)",
+        "targets": "Ukrainian armed forces (long-term espionage), Signal and WhatsApp accounts in phishing campaign",
+        "ttps": "T1566.001 Spearphishing Attachment, T1203 Exploitation for Client Execution, T1059 Command and Scripting Interpreter, T1071 Application Layer Protocol",
         "iocs": []
       },
       {
-        "name": "GhostClaw/GhostLoader",
-        "targets": "Developers via fake OpenClaw npm package",
-        "ttps": "T1195.002 (Compromise Software Supply Chain), T1036 (Masquerading), malicious npm package distribution",
+        "name": "Chinese nexus actors",
+        "targets": "Qatar entities with PlugX malware tied to Iranian-Middle East conflict, Finland tech sector (alongside Russia)",
+        "ttps": "T1566.001 Spearphishing Attachment, T1204.002 User Execution: Malicious File, T1059 Command and Scripting Interpreter (PlugX), T1071 Application Layer Protocol",
+        "iocs": []
+      },
+      {
+        "name": "DarkWebInformer (threat intelligence source)",
+        "targets": "Viking Line Ferries (passenger database and payment data), South Korean government server (root access with lateral movement to 42 hosts)",
+        "ttps": "T1078 Valid Accounts, T1021 Remote Services, T1570 Lateral Tool Transfer, T1083 File and Directory Discovery",
+        "iocs": []
+      },
+      {
+        "name": "BeatBanker/BTMOB trojan operators",
+        "targets": "Mobile users via phishing campaigns deploying crypto miners and RATs",
+        "ttps": "T1566.002 Phishing: Spearphishing Link, T1204.001 User Execution: Malicious Link, T1496 Resource Hijacking (crypto mining), T1219 Remote Access Software",
+        "iocs": []
+      },
+      {
+        "name": "SurxRAT operators",
+        "targets": "Android users with LLM-enhanced phishing and data theft",
+        "ttps": "T1566 Phishing, T1204 User Execution, T1420 File and Directory Discovery (mobile), T1513 Screen Capture",
         "iocs": []
       },
       {
         "name": "A0Backdoor operators",
-        "targets": "Organizations via Teams phishing and signed malware masquerading as Zoom/Teams apps",
-        "ttps": "T1566.001 (Spearphishing Attachment), T1036.005 (Match Legitimate Name or Location), T1553.002 (Code Signing), RMM backdoor deployment",
+        "targets": "Corporate users via fake Microsoft Teams phishing operation",
+        "ttps": "T1566.001 Spearphishing Attachment, T1204.002 User Execution: Malicious File, T1036.005 Masquerading: Match Legitimate Name or Location (Teams/Zoom), T1219 Remote Access Software",
         "iocs": []
       },
       {
-        "name": "Unnamed threat actor",
-        "targets": "Viking Line Ferries - full passenger database and payment data leaked",
-        "ttps": "T1530 (Data from Cloud Storage), T1567 (Exfiltration), payment card data theft",
+        "name": "GhostClaw operators",
+        "targets": "Developers via fake OpenClaw npm package",
+        "ttps": "T1195.002 Supply Chain Compromise: Software Supply Chain, T1027 Obfuscated Files or Information, T1106 Native API, T1071 Application Layer Protocol",
         "iocs": []
       },
       {
-        "name": "Unnamed threat actor",
-        "targets": "South Korean Government Server with root access and lateral movement to 42 internal hosts for sale",
-        "ttps": "T1078 (Valid Accounts), T1570 (Lateral Tool Transfer), T1210 (Exploitation of Remote Services), government network compromise",
+        "name": "INC Ransom",
+        "targets": "Pacific networks (Australia, New Zealand, Tonga warned of rising attacks)",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1567 Exfiltration Over Web Service",
         "iocs": []
       }
     ]
   },
   "canada_landscape": {
-    "summary": "Canada was referenced in multiple threat intelligence contexts over the past 48 hours. Specific incidents include alleged data listings involving Canadian data and hacktivist activity timelines mentioning Canada in the context of Iran-Israel-US cyber warfare. A hacker allegedly abusing .arpa domain for phishing was identified as Canadian.",
-    "retailers": "None identified - no specific incidents affecting Canadian Tire, SportChek, Mark's, or other Canadian retail chains reported in the last 48 hours.",
-    "financial": "None identified - no specific incidents affecting major Canadian financial institutions (CIBC, RBC, TD Bank, Scotiabank, BMO) reported in the last 48 hours."
+    "summary": "Canadian infrastructure remains on alert due to global phishing campaigns and increased threat actor activity. Meta disabled 150K accounts linked to Southeast Asia scam centers affecting Canada among other regions. A phishing campaign abusing .arpa domains specifically mentioned Canadian targeting. No direct breaches of major Canadian retailers or financial institutions were reported in the 48-hour period.",
+    "retailers": "None identified. No specific incidents reported affecting Canadian Tire, SportChek, Mark's, or other major Canadian retail chains.",
+    "financial": "None identified. No specific incidents reported affecting CIBC, RBC, TD Bank, Scotiabank, BMO, or other Canadian financial institutions."
   },
-  "generated_at": "2026-03-11T18:45:00Z",
+  "generated_at": "2026-03-11 14:30 ET",
   "ai_enabled": true
 }
