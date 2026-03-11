@@ -52,6 +52,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           # Stage ALL changes so nothing is left unstaged before the pull
+          git reset
           git add -A
 
           if ! git diff --staged --quiet; then
