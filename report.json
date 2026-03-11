@@ -1,0 +1,170 @@
+{
+  "vulnerabilities": {
+    "count": 10,
+    "items": [
+      {
+        "id": "CVE-2026-1603",
+        "description": "Ivanti Endpoint Manager authentication bypass vulnerability actively exploited in the wild",
+        "criticality": "CRITICAL",
+        "software_affected": "Ivanti Endpoint Manager (EPM)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required"
+      },
+      {
+        "id": "CVE-2025-26399",
+        "description": "SolarWinds vulnerability actively exploited, added to CISA KEV catalog",
+        "criticality": "HIGH",
+        "software_affected": "SolarWinds (product unspecified)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Authentication required"
+      },
+      {
+        "id": "CVE-2021-22054",
+        "description": "VMware Workspace One vulnerability actively exploited, flagged by CISA",
+        "criticality": "HIGH",
+        "software_affected": "VMware Workspace One / Omnissa Workspace One",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Authentication required"
+      },
+      {
+        "id": "CVE-2026-24858",
+        "description": "FortiGate Edge device vulnerability enabling intrusions and AD compromise",
+        "criticality": "CRITICAL",
+        "software_affected": "Fortinet FortiGate",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required"
+      },
+      {
+        "id": "CVE-2025-59718",
+        "description": "FortiGate device vulnerability exploited to access sensitive network information",
+        "criticality": "HIGH",
+        "software_affected": "Fortinet FortiGate",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+        "access_required": "Network / No authentication required"
+      },
+      {
+        "id": "CVE-2023-32434",
+        "description": "iPhone exploit used by Russian spies, likely originated from U.S. contractor",
+        "criticality": "HIGH",
+        "software_affected": "Apple iPhone iOS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "Local / User interaction required"
+      },
+      {
+        "id": "CVE-2023-38606",
+        "description": "iPhone exploit component used in Russian cyber-espionage operations",
+        "criticality": "HIGH",
+        "software_affected": "Apple iPhone iOS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "Local / User interaction required"
+      },
+      {
+        "id": "CVE-2023-41974",
+        "description": "macOS vulnerability exploited in attacks, CISA warning issued",
+        "criticality": "HIGH",
+        "software_affected": "Apple macOS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Local / User interaction required"
+      },
+      {
+        "id": "CVE-2023-43000",
+        "description": "iOS vulnerability exploited in attacks, added to CISA alert",
+        "criticality": "HIGH",
+        "software_affected": "Apple iOS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Local / User interaction required"
+      },
+      {
+        "id": "CVE-2021-30952",
+        "description": "macOS vulnerability exploited in attacks, flagged by CISA",
+        "criticality": "HIGH",
+        "software_affected": "Apple macOS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Local / User interaction required"
+      }
+    ]
+  },
+  "threat_actors": {
+    "items": [
+      {
+        "name": "ShinyHunters",
+        "targets": "Hundreds of Salesforce customers in mass data theft campaign targeting Experience Cloud configurations",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1213 (Data from Information Repositories), T1530 (Data from Cloud Storage), leveraging modified AuraInspector tool to harvest Salesforce data",
+        "iocs": []
+      },
+      {
+        "name": "Lazarus Group (North Korea)",
+        "targets": "AllSecure CEO targeted via fake LinkedIn interview, developers targeted via GhostClaw malware",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1547 (Boot or Logon Autostart), social engineering via fake job interviews",
+        "iocs": []
+      },
+      {
+        "name": "APT28 (Fancy Bear, Russia)",
+        "targets": "Ukrainian military forces in long-term espionage operations, Signal and WhatsApp accounts of government officials globally",
+        "ttps": "T1566.001 (Phishing), T1059 (Command and Scripting Interpreter), T1087 (Account Discovery), advanced custom malware toolkit for cyber-espionage",
+        "iocs": []
+      },
+      {
+        "name": "MuddyWater (MOIS, Iran)",
+        "targets": "U.S. critical infrastructure and corporate networks using Dindoor backdoor malware",
+        "ttps": "T1566.001 (Phishing), T1059.001 (PowerShell), T1071.001 (Web Protocols for C2), T1105 (Ingress Tool Transfer)",
+        "iocs": []
+      },
+      {
+        "name": "Qilin Ransomware",
+        "targets": "RWB Consulting Engineers, U.S. electric cooperative purported breach",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1083 (File and Directory Discovery), T1567 (Exfiltration Over Web Service)",
+        "iocs": []
+      },
+      {
+        "name": "Akira Ransomware",
+        "targets": "netCOMPONENTS and multiple victims in ongoing ransomware operations",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059 (Command and Scripting Interpreter), T1021 (Remote Services)",
+        "iocs": []
+      },
+      {
+        "name": "Everest Ransomware",
+        "targets": "First Priority Group compromised in recent attack",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1048 (Exfiltration Over Alternative Protocol)",
+        "iocs": []
+      },
+      {
+        "name": "Iranian Threat Actors",
+        "targets": "Psychological warfare operations with fake shelter danger calls, critical infrastructure targeting",
+        "ttps": "T1566 (Phishing), T1498 (Network Denial of Service), T1589 (Gather Victim Identity Information), psychological operations and GPS jamming near Iran",
+        "iocs": []
+      },
+      {
+        "name": "Chinese Nexus Actors",
+        "targets": "Qatar government and organizations with PlugX malware tied to Middle East Iranian conflict",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1059 (Command and Scripting Interpreter), T1027 (Obfuscated Files), geopolitical targeting with PlugX RAT",
+        "iocs": []
+      },
+      {
+        "name": "BeatBanker Android Trojan",
+        "targets": "Android banking users via dual-mode trojan with phishing capabilities",
+        "ttps": "T1417 (Input Capture), T1523 (Evade Analysis Environment), T1566.001 (Phishing), overlay attacks on banking applications",
+        "iocs": []
+      },
+      {
+        "name": "SurxRAT Android Malware",
+        "targets": "Android users with LLM-powered phishing and data theft capabilities",
+        "ttps": "T1417 (Input Capture), T1636 (Protected User Data), T1566 (Phishing), T1412 (Capture SMS Messages), AI-enhanced social engineering",
+        "iocs": []
+      },
+      {
+        "name": "Tycoon 2FA PhaaS",
+        "targets": "Multiple organizations via phishing-as-a-service platform (disrupted by law enforcement)",
+        "ttps": "T1539 (Steal Web Session Cookie), T1566.002 (Spearphishing Link), T1111 (Two-Factor Authentication Interception), adversary-in-the-middle attacks",
+        "iocs": []
+      }
+    ]
+  },
+  "canada_landscape": {
+    "summary": "Canadian entities appeared in multiple threat intelligence reports over the past 48 hours. Meta disabled 150K accounts linked to Southeast Asia scam centers affecting Canada among other nations. A phishing campaign abusing .arpa domains specifically targeted Canadian entities, and alleged Canadian data listings surfaced on dark web forums including AT&T Canada and Canva data.",
+    "retailers": "None identified - no specific incidents affecting Canadian Tire, SportChek, Mark's or other major Canadian retailers in the reporting period",
+    "financial": "None identified - no direct incidents affecting major Canadian financial institutions (CIBC, RBC, TD, Scotiabank, BMO) reported in the past 48 hours, though general phishing and fraud campaigns may impact Canadian banking customers"
+  },
+  "generated_at": "2026-03-11T19:45:00Z",
+  "ai_enabled": true
+}
