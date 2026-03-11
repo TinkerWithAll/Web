@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── DOM refs ──────────────────────────────────────────────────
   const lastUpdatedEl  = document.getElementById('last-updated');
   const articleCountEl = document.getElementById('article-count');
+  const feedCountEl    = document.getElementById('feed-count');
   const feedBody       = document.getElementById('feedBody');
   const searchInput    = document.getElementById('searchInput');
   const termInput      = document.getElementById('termInput');
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const downloadBtn    = document.getElementById('downloadBtn');
   const downloadTermsBtn = document.getElementById('downloadTermsBtn');
   const downloadFeedsBtn = document.getElementById('downloadFeedsBtn');
+  const downloadReportBtn = document.getElementById('downloadReportBtn');
   const feedCountLabel = document.getElementById('feedCountLabel');
   const noResults      = document.getElementById('noResults');
   const refreshBtn     = document.getElementById('refreshBtn');
@@ -63,7 +65,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── State ─────────────────────────────────────────────────────
   let feedData = [];
   let searchModeIsAND = true;
+  let currentReportData = null;   // stores last loaded report for download
   const cb = `?v=${Date.now()}`;
+
+  // ── Eastern Time formatter ─────────────────────────────────────
+  function toEastern(isoString) {
+    try {
+      const d = new Date(isoString);
+      return d.toLocaleString('en-CA', {
+        timeZone: 'America/Toronto',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hour12: false
+      }) + ' ET';
+    } catch { return isoString; }
+  }
 
   // ── TABS ──────────────────────────────────────────────────────
   document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -78,8 +93,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Metadata ──────────────────────────────────────────────────
   fetch(`meta.json${cb}`)
     .then(r => r.json())
-    .then(d => { if (lastUpdatedEl) lastUpdatedEl.textContent = d.last_updated || '—'; })
+    .then(d => {
+      if (lastUpdatedEl && d.last_updated) {
+        // meta.json stores Eastern time already; display as-is
+        lastUpdatedEl.textContent = d.last_updated;
+      }
+    })
     .catch(() => {});
+
+  // ── Exact feed count from feeds.txt ───────────────────────────
+  fetch(`feeds.txt${cb}`)
+    .then(r => r.text())
+    .then(text => {
+      const count = text.split('\n').filter(l => l.trim().startsWith('http')).length;
+      if (feedCountEl) feedCountEl.textContent = count;
+    })
+    .catch(() => { if (feedCountEl) feedCountEl.textContent = '180'; });
 
   // ── AI enabled check ──────────────────────────────────────────
   // Read report.json on load to check whether AI is currently enabled.
@@ -185,6 +214,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const blob = new Blob([rows.map(r => r.join(',')).join('\n')], { type: 'text/csv' });
     triggerDownload(URL.createObjectURL(blob), `security_feed_${iso()}.csv`);
   });
+
+  // ── Download Report as HTML ───────────────────────────────────
+  if (downloadReportBtn) {
+    downloadReportBtn.addEventListener('click', () => {
+      if (!currentReportData) return;
+      const ts = currentReportData.generated_at ? toEastern(currentReportData.generated_at) : 'unknown';
+      const content = reportContent.innerHTML;
+      const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Security Intel Report — ${ts}</title>
+<style>
+  body { font-family: 'Courier New', monospace; background: #0a0c0f; color: #e8f0f8; padding: 2rem; max-width: 900px; margin: 0 auto; font-size: 14px; line-height: 1.7; }
+  a { color: #00e5a0; }
+  .report-meta { color: #8fa8c0; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #1e2530; }
+  .report-ts { color: #00e5a0; }
+  .report-badge { background: #151a22; border: 1px solid #2a3545; padding: 2px 8px; border-radius: 3px; font-size: 11px; text-transform: uppercase; }
+  .r-section { margin-bottom: 2rem; }
+  .r-section-title { color: #00e5a0; font-size: 1rem; font-weight: bold; margin-bottom: 1rem; padding-bottom: 0.3rem; border-bottom: 1px solid #1e2530; }
+  .cve-card, .ta-card, .canada-card, .source-item { background: #151a22; border: 1px solid #1e2530; border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem; }
+  .cve-card { border-left: 3px solid #ff4757; }
+  .cve-card.high { border-left-color: #ffb830; }
+  .cve-card.med { border-left-color: #4fa3e3; }
+  .cve-id { color: #ffb830; font-weight: bold; }
+  .ta-card { border-left: 3px solid #ffb830; }
+  .ta-name { color: #ffb830; font-weight: bold; margin-bottom: 0.5rem; }
+  .crit-badge { font-size: 11px; padding: 2px 6px; border-radius: 3px; }
+  .crit-badge.CRITICAL { color: #ff4757; }
+  .crit-badge.HIGH { color: #ffb830; }
+  .crit-badge.MEDIUM { color: #4fa3e3; }
+  .term-tag { background: rgba(0,229,160,0.1); color: #00a872; border: 1px solid rgba(0,229,160,0.2); padding: 1px 6px; border-radius: 10px; font-size: 11px; margin: 2px; display: inline-block; }
+  .source-date { color: #8fa8c0; margin-right: 1rem; }
+  .source-link { color: #e8f0f8; }
+  .sources-list .source-item { padding: 0.5rem 0.75rem; }
+  strong { color: #e8f0f8; }
+</style>
+</head>
+<body>${content}</body>
+</html>`;
+      const blob = new Blob([html], { type: 'text/html' });
+      triggerDownload(URL.createObjectURL(blob), `security-report-${iso()}.html`);
+    });
+  }
 
   // ── Download txt files ────────────────────────────────────────
   function downloadTxt(filename) {
@@ -341,7 +414,10 @@ document.addEventListener('DOMContentLoaded', () => {
     hideLoading();
     reportPlaceholder.style.display = 'none';
     reportContent.style.display = 'block';
+    currentReportData = data;
+    if (downloadReportBtn) downloadReportBtn.style.display = 'flex';
 
+    const ts = data.generated_at ? toEastern(data.generated_at) : '—';
     const badge = isCustom
       ? `<span class="report-badge custom">Custom</span>`
       : `<span class="report-badge">48h Brief</span>`;
@@ -349,21 +425,49 @@ document.addEventListener('DOMContentLoaded', () => {
     let html = `
       <div class="report-meta">
         ${badge}
-        <span>Generated: <span class="report-ts mono">${escHtml(data.generated_at || '—')}</span></span>
-        ${isCustom && prompt ? `<span style="color:var(--text-dim);font-size:11px">Prompt: "${escHtml(prompt.substring(0,80))}${prompt.length>80?'…':''}"</span>` : ''}
+        <span>Generated: <span class="report-ts mono">${escHtml(ts)}</span></span>
+        ${isCustom && prompt ? `<span style="color:var(--text-dim);font-size:13px">Prompt: "${escHtml(prompt.substring(0,80))}${prompt.length>80?'…':''}"</span>` : ''}
       </div>`;
 
-    // If it's a custom prompt, the report may be free-form markdown
     if (data.custom_response) {
       html += `<div class="r-section"><div class="canada-card">${markdownToHtml(data.custom_response)}</div></div>`;
     } else {
-      // Structured default report
       html += renderVulnSection(data.vulnerabilities);
       html += renderTASection(data.threat_actors);
       html += renderCanadaSection(data.canada_landscape);
     }
 
+    // Source articles section — links to original articles that fed the report
+    html += renderSourcesSection();
+
     reportContent.innerHTML = html;
+  }
+
+  function renderSourcesSection() {
+    // Pull the most recent 48h articles from feedData as source references
+    if (!feedData.length) return '';
+    const cutoff = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString().slice(0,10);
+    const recent = feedData.filter(i => i.date >= cutoff).slice(0, 50);
+    if (!recent.length) return '';
+
+    let html = `
+      <div class="r-section">
+        <div class="r-section-title">
+          Source Articles
+          <span class="r-section-count">${recent.length} articles</span>
+        </div>
+        <div class="sources-list">`;
+    recent.forEach(item => {
+      const tags = (item.terms || []).slice(0,3).map(t => `<span class="term-tag">${escHtml(t)}</span>`).join('');
+      html += `
+        <div class="source-item">
+          <span class="source-date mono">${escHtml(item.date)}</span>
+          <a href="${escHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="source-link">${escHtml(item.title)}</a>
+          <div class="source-tags">${tags}</div>
+        </div>`;
+    });
+    html += `</div></div>`;
+    return html;
   }
 
   function renderVulnSection(vulns) {
