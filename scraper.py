@@ -338,7 +338,7 @@ Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exa
 
 Only include CVEs and TAs that actually appear in the article list above.
 For the Canada section, look for keywords: Canada, Canadian, Ontario, Quebec, CIBC, RBC, TD Bank, Scotiabank, BMO, Canadian Tire, SportChek, etc.
-Keep each field concise and factual. generated_at must be current UTC time."""
+Keep each field concise and factual. generated_at must be current Eastern Time in format "YYYY-MM-DD HH:MM ET"."""
 
 
 def build_custom_prompt(user_prompt, full_history):
@@ -402,14 +402,14 @@ def call_anthropic(prompt: str) -> dict | None:
 
 def generate_and_save_report(full_history: list):
     """Generate the AI report and save it to report.json."""
-    now_utc = datetime.now(timezone.utc).isoformat()
+    now_et = datetime.now(timezone.utc).astimezone(EASTERN_TZ).strftime("%Y-%m-%d %H:%M ET")
 
     # If AI is disabled, write a minimal report.json so the frontend
     # knows to show a "disabled" state rather than an error.
     if not AI_REPORTS_ENABLED:
         report = {
             "ai_enabled":    False,
-            "generated_at":  now_utc,
+            "generated_at":  now_et,
             "message":       "AI analysis is currently disabled by the site administrator.",
         }
         with open(REPORT_FILE, "w", encoding="utf-8") as f:
@@ -425,14 +425,14 @@ def generate_and_save_report(full_history: list):
         if response_text is None:
             report = {
                 "ai_enabled":      True,
-                "generated_at":    now_utc,
+                "generated_at":    now_et,
                 "error":           "Anthropic API unavailable",
                 "custom_response": "Error: Could not reach Anthropic API.",
             }
         else:
             report = {
                 "ai_enabled":      True,
-                "generated_at":    now_utc,
+                "generated_at":    now_et,
                 "custom_response": response_text,
             }
 
@@ -446,7 +446,7 @@ def generate_and_save_report(full_history: list):
         if response_text is None:
             report = {
                 "ai_enabled":   True,
-                "generated_at": now_utc,
+                "generated_at": now_et,
                 "error":        "Anthropic API unavailable",
             }
         else:
@@ -460,15 +460,14 @@ def generate_and_save_report(full_history: list):
                     clean = "\n".join(clean.split("\n")[:-1])
                 report = json.loads(clean)
                 report["ai_enabled"] = True
-                # Ensure generated_at is set
                 if "generated_at" not in report:
-                    report["generated_at"] = now_utc
+                    report["generated_at"] = now_et
             except json.JSONDecodeError as e:
                 print(f"JSON parse error on AI response: {e}", file=sys.stderr)
                 # Fall back: store raw text so frontend can display it
                 report = {
                     "ai_enabled":      True,
-                    "generated_at":    now_utc,
+                    "generated_at":    now_et,
                     "custom_response": response_text,
                 }
 
