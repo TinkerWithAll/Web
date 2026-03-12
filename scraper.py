@@ -2,6 +2,9 @@
 """
 scraper.py
 - Parses 130+ security RSS feeds
+- Scrapes Reddit (r/netsec, r/cybersecurity, r/canada_crime, r/Canada)
+- Scrapes Mastodon / InfoSec.exchange public timeline
+- Scrapes Canadian Centre for Cyber Security (CCCS) advisories
 - Maintains a rolling 30-day history in feed_history.json
 - Generates a timestamped CSV (cleans up old ones, keeps monthly archives)
 - Calls Anthropic API server-side to produce report.json
@@ -28,6 +31,9 @@ import glob
 import os
 import ssl
 import socket
+import time
+import urllib.request
+import urllib.error
 import requests
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -48,6 +54,27 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 CUSTOM_PROMPT     = os.environ.get("CUSTOM_PROMPT", "").strip()
 EASTERN_TZ        = ZoneInfo("America/New_York")
 PACIFIC_TZ        = ZoneInfo("America/Los_Angeles")
+
+# ── Extra source configuration ────────────────────────────────────
+# Reddit — uses the free JSON API (no auth needed for public subreddits)
+REDDIT_SUBREDDITS = [
+    "netsec",           # top security research subreddit
+    "cybersecurity",    # broader security community
+    "netsecstudents",   # CVE/vuln discussions
+    "malware",          # malware analysis & IoCs
+    "canada",           # catches Canadian breach news
+]
+REDDIT_POSTS_PER_SUB = 50   # fetch top N new posts per subreddit
+
+# Mastodon — InfoSec.exchange public timeline (no auth needed)
+MASTODON_INSTANCE  = "infosec.exchange"
+MASTODON_LIMIT     = 80    # posts to fetch per run
+
+# Canadian Centre for Cyber Security
+CCCS_FEEDS = [
+    "https://www.cyber.gc.ca/api/gcweb/feeds/alerts/feed.xml",
+    "https://www.cyber.gc.ca/api/gcweb/feeds/advisories/feed.xml",
+]
 
 MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=HISTORY_DAYS)
 
@@ -291,13 +318,17 @@ def build_default_prompt(recent_entries):
     # Summarise entries into a compact text block for the API
     articles_text = []
     for e in recent_entries[:120]:   # cap to avoid token limits
+        source = e.get("source_type", "rss").upper()
         terms = ", ".join(e.get("terms", []))
-        articles_text.append(f"[{e['date']}] {e['title']} | Terms: {terms}")
+        articles_text.append(f"[{e['date']}][{source}] {e['title']} | Terms: {terms}")
 
     articles_block = "\n".join(articles_text)
 
     return f"""You are a senior cybersecurity analyst. Based on the following security news articles 
 from the last 48 hours, produce a structured threat intelligence briefing.
+
+Sources: 130+ RSS feeds, Reddit (r/netsec r/cybersecurity r/canada), Mastodon/InfoSec.exchange, CCCS advisories.
+Tags: [RSS]=news [REDDIT]=community [MASTODON]=infosec community [CCCS]=official Canadian govt advisories.
 
 ARTICLES:
 {articles_block}
@@ -329,15 +360,16 @@ Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exa
     ]
   }},
   "canada_landscape": {{
-    "summary": "2-3 sentence overview of the Canadian cyber landscape in the last 48h",
-    "retailers": "any retail sector incidents in Canada — mention Canadian Tire, SportChek, Mark's, etc. if relevant; otherwise 'None identified'",
-    "financial": "any Canadian financial institution incidents; otherwise 'None identified'"
+    "summary": "2-3 sentence overview of the Canadian cyber landscape in the last 48h, including any CCCS advisories",
+    "retailers": "any Canadian retail incidents — Loblaws, Canadian Tire, SportChek, Shoppers Drug Mart, etc.; otherwise 'None identified'",
+    "financial": "any Canadian financial incidents — CIBC, RBC, TD, Scotiabank, BMO, etc.; otherwise 'None identified'"
   }},
-  "generated_at": "<ISO timestamp of when this report was generated>"
+  "generated_at": "<current Eastern Time>"
 }}
 
 Only include CVEs and TAs that actually appear in the article list above.
-For the Canada section, look for keywords: Canada, Canadian, Ontario, Quebec, CIBC, RBC, TD Bank, Scotiabank, BMO, Canadian Tire, SportChek, etc.
+For Canada section look for: Canada, Canadian, Ontario, Quebec, CCCS, Loblaws, Canadian Tire, CIBC, RBC, TD Bank, Scotiabank, BMO, Shoppers Drug Mart.
+Pay special attention to [CCCS] items — these are official Canadian government cybersecurity advisories.
 Keep each field concise and factual. generated_at must be current Eastern Time in format "YYYY-MM-DD HH:MM ET"."""
 
 
@@ -477,6 +509,170 @@ def generate_and_save_report(full_history: list):
 
 
 # ─────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────
+# REDDIT SCRAPER — free JSON API, no auth required
+# ─────────────────────────────────────────────────────────────────
+def fetch_reddit(subreddits: list, search_terms: list) -> list:
+    """Fetch new posts from subreddits and match against search_terms."""
+    entries = []
+    headers = {
+        "User-Agent": "SecurityFeedBot/1.0 (github.com/TinkerWithAll/Web)",
+    }
+    cutoff = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
+
+    for sub in subreddits:
+        url = f"https://www.reddit.com/r/{sub}/new.json?limit={REDDIT_POSTS_PER_SUB}"
+        try:
+            print(f"Reddit: fetching r/{sub}...", file=sys.stderr)
+            time.sleep(1)   # be polite — Reddit rate limit is 60 req/min
+            resp = requests.get(url, headers=headers, timeout=15)
+            if resp.status_code != 200:
+                print(f"  Reddit r/{sub} returned {resp.status_code}", file=sys.stderr)
+                continue
+            data = resp.json()
+            posts = data.get("data", {}).get("children", [])
+            for post in posts:
+                p = post.get("data", {})
+                created_utc = p.get("created_utc", 0)
+                published_dt = datetime.utcfromtimestamp(created_utc)
+                if published_dt < cutoff:
+                    continue
+
+                title    = p.get("title", "")
+                selftext = p.get("selftext", "")
+                flair    = p.get("link_flair_text", "") or ""
+                text_all = f"{title} {selftext} {flair}".lower()
+                permalink = "https://www.reddit.com" + p.get("permalink", "")
+                ext_url   = p.get("url", permalink)
+
+                matched = [t for t in search_terms if t.lower() in text_all]
+                if matched:
+                    entries.append({
+                        "title":        f"[r/{sub}] {title}",
+                        "link":         ext_url,
+                        "source_url":   permalink,
+                        "date":         published_dt.strftime("%Y-%m-%d"),
+                        "terms":        matched,
+                        "inline_links": [],
+                        "source_type":  "reddit",
+                    })
+        except Exception as e:
+            print(f"  Reddit r/{sub} error: {e}", file=sys.stderr)
+
+    print(f"Reddit: {len(entries)} matched posts across {len(subreddits)} subreddits", file=sys.stderr)
+    return entries
+
+
+# ─────────────────────────────────────────────────────────────────
+# MASTODON SCRAPER — InfoSec.exchange public API, no auth required
+# ─────────────────────────────────────────────────────────────────
+def fetch_mastodon(search_terms: list) -> list:
+    """Fetch public timeline from InfoSec.exchange and match search terms."""
+    entries = []
+    cutoff  = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
+    url     = f"https://{MASTODON_INSTANCE}/api/v1/timelines/public?limit={MASTODON_LIMIT}&local=true"
+
+    try:
+        print(f"Mastodon: fetching {MASTODON_INSTANCE} public timeline...", file=sys.stderr)
+        resp = requests.get(url, timeout=15)
+        if resp.status_code != 200:
+            print(f"  Mastodon returned {resp.status_code}", file=sys.stderr)
+            return entries
+
+        posts = resp.json()
+        for post in posts:
+            created_str = post.get("created_at", "")
+            try:
+                published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%S.%fZ")
+            except Exception:
+                try:
+                    published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
+                except Exception:
+                    continue
+
+            if published_dt < cutoff:
+                continue
+
+            # Strip HTML tags from content
+            raw_content = post.get("content", "")
+            soup        = BeautifulSoup(raw_content, "html.parser")
+            plain_text  = soup.get_text(" ", strip=True)
+            text_all    = plain_text.lower()
+
+            matched = [t for t in search_terms if t.lower() in text_all]
+            if matched:
+                account  = post.get("account", {})
+                username = account.get("acct", "unknown")
+                post_url = post.get("url", "")
+                title    = plain_text[:120] + ("…" if len(plain_text) > 120 else "")
+
+                entries.append({
+                    "title":        f"[Mastodon @{username}] {title}",
+                    "link":         post_url,
+                    "source_url":   post_url,
+                    "date":         published_dt.strftime("%Y-%m-%d"),
+                    "terms":        matched,
+                    "inline_links": [],
+                    "source_type":  "mastodon",
+                })
+    except Exception as e:
+        print(f"  Mastodon error: {e}", file=sys.stderr)
+
+    print(f"Mastodon: {len(entries)} matched posts", file=sys.stderr)
+    return entries
+
+
+# ─────────────────────────────────────────────────────────────────
+# CCCS SCRAPER — Canadian Centre for Cyber Security RSS feeds
+# ─────────────────────────────────────────────────────────────────
+def fetch_cccs(search_terms: list) -> list:
+    """Fetch CCCS alerts and advisories RSS feeds."""
+    entries     = []
+    cccs_terms  = search_terms + ["canada", "canadian", "cccs", "cse"]  # always include Canada terms
+    cccs_terms  = list(set(t.lower() for t in cccs_terms))
+
+    for feed_url in CCCS_FEEDS:
+        try:
+            print(f"CCCS: fetching {feed_url}...", file=sys.stderr)
+            d = safe_parse_feed(feed_url)
+            for e in d.entries:
+                link = e.get("link", "")
+                published_dt = None
+                try:
+                    dt_tuple = e.get("published_parsed") or e.get("updated_parsed")
+                    if dt_tuple:
+                        published_dt = datetime(*dt_tuple[:6])
+                except Exception:
+                    pass
+
+                if not published_dt or published_dt < (datetime.utcnow() - timedelta(days=HISTORY_DAYS)):
+                    continue
+
+                title   = e.get("title", "")
+                summary = e.get("summary", "")
+                text_all = f"{title} {summary}".lower()
+
+                # CCCS items are always relevant — include all, tag with matched terms
+                matched = [t for t in search_terms if t.lower() in text_all]
+                if not matched:
+                    matched = ["cccs-advisory"]   # ensure it appears even with no term match
+
+                entries.append({
+                    "title":        f"[CCCS] {title}",
+                    "link":         link,
+                    "source_url":   link,
+                    "date":         published_dt.strftime("%Y-%m-%d"),
+                    "terms":        matched,
+                    "inline_links": [],
+                    "source_type":  "cccs",
+                })
+        except Exception as ex:
+            print(f"  CCCS feed error {feed_url}: {ex}", file=sys.stderr)
+
+    print(f"CCCS: {len(entries)} items", file=sys.stderr)
+    return entries
+
+
 # MAIN
 # ─────────────────────────────────────────────────────────────────
 def main():
@@ -490,26 +686,53 @@ def main():
         terms = [t for t in terms if not t.upper().startswith("CVE-")]
     feeds = load_list_from_file("feeds.txt")
 
-    # 3. Scrape
-    print("Scanning feeds...", file=sys.stderr)
-    new_matches = parse_feeds(feeds, terms)
+    # 3. Scrape RSS feeds
+    print("Scanning RSS feeds...", file=sys.stderr)
+    rss_matches = parse_feeds(feeds, terms)
 
-    # 4. Update 30-day rolling history
+    # 4. Scrape Reddit
+    print("Scanning Reddit...", file=sys.stderr)
+    reddit_matches = fetch_reddit(REDDIT_SUBREDDITS, terms)
+
+    # 5. Scrape Mastodon / InfoSec.exchange
+    print("Scanning Mastodon...", file=sys.stderr)
+    mastodon_matches = fetch_mastodon(terms)
+
+    # 6. Scrape CCCS
+    print("Scanning CCCS...", file=sys.stderr)
+    cccs_matches = fetch_cccs(terms)
+
+    # 7. Merge all sources — deduplicate by link
+    all_matches_dict = {}
+    for entry in rss_matches + cccs_matches + reddit_matches + mastodon_matches:
+        link = entry.get("link", "")
+        if link and link not in all_matches_dict:
+            all_matches_dict[link] = entry
+    new_matches = list(all_matches_dict.values())
+
+    source_summary = (
+        f"RSS:{len(rss_matches)} Reddit:{len(reddit_matches)} "
+        f"Mastodon:{len(mastodon_matches)} CCCS:{len(cccs_matches)} "
+        f"Total:{len(new_matches)}"
+    )
+    print(f"Sources — {source_summary}", file=sys.stderr)
+
+    # 8. Update 30-day rolling history
     full_history = update_history_file(new_matches)
 
-    # 5. Save CSV for this run
-    utc_ts  = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    # 9. Save CSV for this run
+    utc_ts   = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     csv_file = f"results_{utc_ts}.csv"
     save_csv(new_matches, csv_file)
     print(f"Saved {csv_file} ({len(new_matches)} new matches)", file=sys.stderr)
 
-    # 6. Clean up old CSVs (keep monthly 1st-of-month archives + current)
+    # 10. Clean up old CSVs (keep monthly 1st-of-month archives + current)
     cleanup_csv_files(csv_file)
 
-    # 7. Save metadata timestamp
+    # 11. Save metadata timestamp
     save_metadata()
 
-    # 8. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
+    # 12. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
     generate_and_save_report(full_history)
 
     print(f"Done. History: {len(full_history)} entries total.", file=sys.stderr)
