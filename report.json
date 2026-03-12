@@ -4,7 +4,7 @@
     "items": [
       {
         "id": "CVE-2026-1603",
-        "description": "Ivanti Endpoint Manager authentication bypass vulnerability actively exploited",
+        "description": "Ivanti Endpoint Manager authentication bypass vulnerability actively exploited in the wild",
         "criticality": "CRITICAL",
         "software_affected": "Ivanti Endpoint Manager (EPM)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
@@ -12,82 +12,82 @@
       },
       {
         "id": "CVE-2025-26399",
-        "description": "SolarWinds vulnerability actively exploited in the wild",
+        "description": "SolarWinds vulnerability actively exploited, added to CISA KEV catalog",
         "criticality": "HIGH",
         "software_affected": "SolarWinds",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Auth required"
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+        "access_required": "Network / Low privileges"
       },
       {
         "id": "CVE-2021-22054",
         "description": "Omnissa Workspace One vulnerability actively exploited",
         "criticality": "HIGH",
-        "software_affected": "Omnissa Workspace One (formerly VMware)",
+        "software_affected": "Omnissa Workspace One (formerly VMware Workspace One)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Low privileges"
+        "access_required": "Network / Authenticated"
+      },
+      {
+        "id": "CVE-2026-20127",
+        "description": "Cisco SD-WAN vulnerability actively exploited",
+        "criticality": "HIGH",
+        "software_affected": "Cisco SD-WAN",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+        "access_required": "Network / No auth required"
       },
       {
         "id": "CVE-2025-68613",
         "description": "Known exploited vulnerability added to CISA catalog",
         "criticality": "HIGH",
-        "software_affected": "Unknown",
-        "cia_impact": "Unknown - recently cataloged",
-        "access_required": "Unknown"
-      },
-      {
-        "id": "CVE-2026-24858",
-        "description": "FortiGate Edge intrusion enabling Active Directory compromise",
-        "criticality": "CRITICAL",
-        "software_affected": "Fortinet FortiGate",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Stolen service accounts"
+        "software_affected": "Unknown vendor/product",
+        "cia_impact": "Unknown impact profile",
+        "access_required": "Unknown access vector"
       },
       {
         "id": "CVE-2025-59718",
-        "description": "FortiGate device exploitation for sensitive network information access",
+        "description": "FortiGate Edge intrusion vulnerability leading to stolen service accounts and AD compromise",
+        "criticality": "CRITICAL",
+        "software_affected": "Fortinet FortiGate",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No auth required"
+      },
+      {
+        "id": "CVE-2026-24858",
+        "description": "FortiGate vulnerability exploited to access sensitive network information",
         "criticality": "HIGH",
         "software_affected": "Fortinet FortiGate",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-        "access_required": "Network / Auth required"
+        "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+        "access_required": "Network / Authenticated"
       },
       {
         "id": "CVE-2024-28986",
-        "description": "Cisco SD-WAN vulnerability exploited in attacks",
+        "description": "Ivanti EPM vulnerability actively exploited",
         "criticality": "HIGH",
-        "software_affected": "Cisco SD-WAN",
+        "software_affected": "Ivanti Endpoint Manager",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
         "access_required": "Network / Low privileges"
       },
       {
         "id": "CVE-2022-20775",
-        "description": "Cisco vulnerability actively exploited alongside SD-WAN flaws",
-        "criticality": "HIGH",
-        "software_affected": "Cisco products",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / Auth required"
-      },
-      {
-        "id": "CVE-2026-20127",
-        "description": "Cisco vulnerability in active exploitation campaigns",
-        "criticality": "HIGH",
-        "software_affected": "Cisco products",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Low privileges"
+        "description": "Cisco vulnerability actively exploited",
+        "criticality": "MEDIUM",
+        "software_affected": "Cisco Systems products",
+        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
+        "access_required": "Network / Authenticated"
       },
       {
         "id": "CVE-2023-32434",
-        "description": "iPhone exploit used by Russian intelligence in espionage operations",
+        "description": "iPhone exploit used in Russian espionage operations",
         "criticality": "HIGH",
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "software_affected": "Apple iPhone iOS",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
         "access_required": "Local / User interaction"
       },
       {
         "id": "CVE-2023-38606",
-        "description": "iPhone exploit toolkit component used in Russian spy operations",
+        "description": "iPhone exploit used in Russian espionage toolkit",
         "criticality": "HIGH",
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "software_affected": "Apple iPhone iOS",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
         "access_required": "Local / User interaction"
       }
     ]
@@ -96,56 +96,50 @@
     "items": [
       {
         "name": "Handala (Iran-linked hacktivist group)",
-        "targets": "Stryker medical technology company, Verifone payment systems",
-        "ttps": "T1485 (Data Destruction/Wiper), T1486 (Data Encrypted for Impact), T1082 (System Information Discovery)",
+        "targets": "Stryker (US medical device manufacturer), Verifone (payment systems)",
+        "ttps": "T1485 (Data Destruction/Wiper attacks), T1486 (Data Encrypted for Impact), T1589 (Gather Victim Identity Information), T1566 (Phishing)",
         "iocs": []
       },
       {
         "name": "ShinyHunters",
-        "targets": "Hundreds of Salesforce Experience Cloud sites, ongoing campaign targeting 400+ organizations",
-        "ttps": "T1190 (Exploit Public-Facing Application), T1213 (Data from Information Repositories), T1567 (Exfiltration Over Web Service)",
+        "targets": "400+ Salesforce Experience Cloud sites, mass-scanning campaign targeting customer data",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1213 (Data from Information Repositories), T1530 (Data from Cloud Storage Object)",
         "iocs": []
       },
       {
-        "name": "Lazarus Group (North Korea)",
-        "targets": "AllSecure CEO via fake LinkedIn interview, developers via supply chain attacks",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1195.002 (Supply Chain Compromise: Software Supply Chain)",
+        "name": "APT28 (Fancy Bear, Russian state-sponsored)",
+        "targets": "Ukrainian military forces, Signal and WhatsApp accounts",
+        "ttps": "T1566 (Phishing), T1071 (Application Layer Protocol), T1087 (Account Discovery), T1005 (Data from Local System)",
         "iocs": []
       },
       {
-        "name": "APT28 (Russia, Fancy Bear)",
-        "targets": "Ukrainian military forces in long-term espionage operations, Signal and WhatsApp accounts",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1071 (Application Layer Protocol), T1056 (Input Capture), T1005 (Data from Local System)",
-        "iocs": []
-      },
-      {
-        "name": "Chinese APT (Nexus Actors)",
-        "targets": "Qatar government and organizations amid Middle East conflict, PlugX malware deployment",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1059 (Command and Scripting Interpreter), T1071 (Application Layer Protocol)",
+        "name": "Lazarus Group (North Korean APT)",
+        "targets": "AllSecure CEO via fake LinkedIn interview, developers via Gogs LFS vulnerability",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1204.002 (Malicious File), T1059 (Command and Scripting Interpreter)",
         "iocs": []
       },
       {
         "name": "Qilin Ransomware",
         "targets": "Arimex Importadora, US electric cooperative",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1083 (File and Directory Discovery)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567.002 (Exfiltration to Cloud Storage)",
         "iocs": []
       },
       {
         "name": "Akira Ransomware",
         "targets": "Robinson Nursery",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1027 (Obfuscated Files or Information)",
-        "iocs": []
-      },
-      {
-        "name": "Everest Ransomware",
-        "targets": "UD Trucks database leaked",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1589 (Gather Victim Identity Information)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059.001 (PowerShell)",
         "iocs": []
       },
       {
         "name": "CLOP Ransomware",
-        "targets": "AIGHEALTHCARE.IN",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1190 (Exploit Public-Facing Application)",
+        "targets": "AIGHEALTHCARE.IN (Indian healthcare provider)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service)",
+        "iocs": []
+      },
+      {
+        "name": "Everest Ransomware",
+        "targets": "UD Trucks (database leaked)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration to Cloud Storage), T1485 (Data Destruction)",
         "iocs": []
       },
       {
@@ -155,40 +149,28 @@
         "iocs": []
       },
       {
-        "name": "BeatBanker Trojan operators",
-        "targets": "Android users via phishing campaigns deploying banking Trojan and crypto miner",
-        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1410 (Network Traffic Capture or Redirection), T1496 (Resource Hijacking)",
+        "name": "Chinese Nexus Actors",
+        "targets": "Qatar government and private sector amid Iranian conflict, PlugX malware deployment",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1027 (Obfuscated Files or Information), T1071 (Application Layer Protocol)",
         "iocs": []
       },
       {
-        "name": "DarkWebInformer (Threat Intelligence source)",
-        "targets": "Viking Line Ferries passenger database, South Korean government server with lateral movement access, Maple Respiratory Colombia (1.8M patient records), Spanish Ministry of Finance employee data, US Clinic (150K patient records)",
-        "ttps": "T1078 (Valid Accounts), T1021 (Remote Services), T1534 (Internal Spearphishing)",
+        "name": "BeatBanker / BTMOB",
+        "targets": "Android users via phishing, deploys banking trojan and crypto miner",
+        "ttps": "T1566.002 (Spearphishing Link), T1402 (Broadcast Receivers), T1406 (Obfuscated Files or Information), T1496 (Resource Hijacking)",
         "iocs": []
       },
       {
-        "name": "GhostClaw/GhostLoader",
-        "targets": "Developers via fake OpenClaw npm package masquerading as legitimate tools",
-        "ttps": "T1195.002 (Supply Chain Compromise: Software Supply Chain), T1059.007 (Command and Scripting Interpreter: JavaScript), T1027 (Obfuscated Files or Information)",
-        "iocs": []
-      },
-      {
-        "name": "A0Backdoor operators",
-        "targets": "Organizations via Teams and Zoom social engineering campaigns",
-        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1204.002 (User Execution: Malicious File), T1059 (Command and Scripting Interpreter)",
-        "iocs": []
-      },
-      {
-        "name": "Tycoon 2FA (Phishing-as-a-Service)",
-        "targets": "Multiple organizations through phishing kit (platform disrupted by law enforcement)",
-        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1539 (Steal Web Session Cookie), T1528 (Steal Application Access Token)",
+        "name": "GhostClaw / GhostLoader",
+        "targets": "Developers via fake OpenClaw npm package, infostealer malware via fake Claude install pages",
+        "ttps": "T1195.002 (Compromise Software Supply Chain), T1566 (Phishing), T1027 (Obfuscated Files or Information)",
         "iocs": []
       }
     ]
   },
   "canada_landscape": {
-    "summary": "In the past 48 hours, Canadian entities have been impacted by multiple threat campaigns. Canada Goose was reportedly breached by the Coinbase Cartel ransomware group. Meta disabled 150K accounts linked to Southeast Asia scam centers affecting Canadian users. Additionally, phishing campaigns using malicious ISO attachments in resumes and .arpa domain abuse for phishing evasion are actively targeting Canadian organizations and citizens.",
-    "retailers": "Canada Goose reported breach by Coinbase Cartel ransomware group",
+    "summary": "Canadian organizations remain under threat from multiple vectors. Canada Goose was breached by the Coinbase Cartel ransomware group. Meta disabled 150,000 accounts linked to Southeast Asian scam centers with Canadian victims identified. Phishing campaigns targeting Canadian entities include malicious ISO-attached resum\u00e9s and ARPA domain abuse for detection evasion.",
+    "retailers": "Canada Goose breach claimed by Coinbase Cartel ransomware group",
     "financial": "None identified"
   },
   "generated_at": "2026-03-12 14:30 ET",
