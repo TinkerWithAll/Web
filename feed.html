@@ -43,6 +43,7 @@
         <span class="status-label mono">FEEDS:</span>
         <span class="status-value mono" id="feed-count">—</span>
       </div>
+      <div class="status-item" id="source-breakdown" style="gap:0.35rem;flex-wrap:wrap"></div>
       <div class="status-spacer"></div>
       <button class="btn-refresh" id="refreshBtn" title="Trigger a fresh scrape. Rate-limited to once per 2 hours.">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
@@ -100,6 +101,13 @@
 
     <!-- RAW FEED TAB -->
     <div class="tab-panel" id="tab-feed">
+      <div class="source-filters">
+        <button class="source-filter-btn active" data-source="all">All</button>
+        <button class="source-filter-btn" data-source="rss">RSS</button>
+        <button class="source-filter-btn" data-source="reddit">Reddit</button>
+        <button class="source-filter-btn" data-source="mastodon">Mastodon</button>
+        <button class="source-filter-btn" data-source="cccs">CCCS</button>
+      </div>
       <div class="feed-controls">
         <input type="text" id="searchInput" placeholder="Search title…" />
         <div class="term-filter-group">
@@ -140,6 +148,6 @@
   </footer>
 
   <script src="config.js"></script>
-  <script src="feed.js?v=20260311b"></script>
+  <script src="feed.js?v=20260312"></script>
 </body>
 </html>
