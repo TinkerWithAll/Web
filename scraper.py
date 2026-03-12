@@ -56,25 +56,15 @@ EASTERN_TZ        = ZoneInfo("America/New_York")
 PACIFIC_TZ        = ZoneInfo("America/Los_Angeles")
 
 # ── Extra source configuration ────────────────────────────────────
-# Reddit — uses the free JSON API (no auth needed for public subreddits)
 REDDIT_SUBREDDITS = [
-    "netsec",           # top security research subreddit
-    "cybersecurity",    # broader security community
-    "netsecstudents",   # CVE/vuln discussions
-    "malware",          # malware analysis & IoCs
-    "canada",           # catches Canadian breach news
+    "netsec",        # top security research
+    "cybersecurity", # broader community
+    "netsecstudents",# CVE/vuln discussions
+    "malware",       # malware & IoCs
+    "canada",        # catches Canadian incidents like Loblaws etc.
 ]
-REDDIT_POSTS_PER_SUB = 50   # fetch top N new posts per subreddit
 
-# Mastodon — InfoSec.exchange public timeline (no auth needed)
-MASTODON_INSTANCE  = "infosec.exchange"
-MASTODON_LIMIT     = 80    # posts to fetch per run
-
-# Canadian Centre for Cyber Security
-CCCS_FEEDS = [
-    "https://www.cyber.gc.ca/api/gcweb/feeds/alerts/feed.xml",
-    "https://www.cyber.gc.ca/api/gcweb/feeds/advisories/feed.xml",
-]
+MASTODON_INSTANCE = "infosec.exchange"  # hashtag search, not public timeline
 
 MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=HISTORY_DAYS)
 
@@ -510,131 +500,29 @@ def generate_and_save_report(full_history: list):
 
 # ─────────────────────────────────────────────────────────────────
 # ─────────────────────────────────────────────────────────────────
-# REDDIT SCRAPER — free JSON API, no auth required
+# ─────────────────────────────────────────────────────────────────
+# REDDIT SCRAPER
+# Uses RSS feeds (reddit.com/r/sub/.rss) — much more reliable than
+# the JSON API which blocks GitHub Actions IPs aggressively.
+# Also tries the old.reddit.com JSON endpoint as fallback.
 # ─────────────────────────────────────────────────────────────────
 def fetch_reddit(subreddits: list, search_terms: list) -> list:
-    """Fetch new posts from subreddits and match against search_terms."""
-    entries = []
-    headers = {
-        "User-Agent": "SecurityFeedBot/1.0 (github.com/TinkerWithAll/Web)",
-    }
-    cutoff = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
-
-    for sub in subreddits:
-        url = f"https://www.reddit.com/r/{sub}/new.json?limit={REDDIT_POSTS_PER_SUB}"
-        try:
-            print(f"Reddit: fetching r/{sub}...", file=sys.stderr)
-            time.sleep(1)   # be polite — Reddit rate limit is 60 req/min
-            resp = requests.get(url, headers=headers, timeout=15)
-            if resp.status_code != 200:
-                print(f"  Reddit r/{sub} returned {resp.status_code}", file=sys.stderr)
-                continue
-            data = resp.json()
-            posts = data.get("data", {}).get("children", [])
-            for post in posts:
-                p = post.get("data", {})
-                created_utc = p.get("created_utc", 0)
-                published_dt = datetime.utcfromtimestamp(created_utc)
-                if published_dt < cutoff:
-                    continue
-
-                title    = p.get("title", "")
-                selftext = p.get("selftext", "")
-                flair    = p.get("link_flair_text", "") or ""
-                text_all = f"{title} {selftext} {flair}".lower()
-                permalink = "https://www.reddit.com" + p.get("permalink", "")
-                ext_url   = p.get("url", permalink)
-
-                matched = [t for t in search_terms if t.lower() in text_all]
-                if matched:
-                    entries.append({
-                        "title":        f"[r/{sub}] {title}",
-                        "link":         ext_url,
-                        "source_url":   permalink,
-                        "date":         published_dt.strftime("%Y-%m-%d"),
-                        "terms":        matched,
-                        "inline_links": [],
-                        "source_type":  "reddit",
-                    })
-        except Exception as e:
-            print(f"  Reddit r/{sub} error: {e}", file=sys.stderr)
-
-    print(f"Reddit: {len(entries)} matched posts across {len(subreddits)} subreddits", file=sys.stderr)
-    return entries
-
-
-# ─────────────────────────────────────────────────────────────────
-# MASTODON SCRAPER — InfoSec.exchange public API, no auth required
-# ─────────────────────────────────────────────────────────────────
-def fetch_mastodon(search_terms: list) -> list:
-    """Fetch public timeline from InfoSec.exchange and match search terms."""
+    """Fetch posts from subreddits via RSS (most reliable from CI environments)."""
     entries = []
     cutoff  = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
-    url     = f"https://{MASTODON_INSTANCE}/api/v1/timelines/public?limit={MASTODON_LIMIT}&local=true"
 
-    try:
-        print(f"Mastodon: fetching {MASTODON_INSTANCE} public timeline...", file=sys.stderr)
-        resp = requests.get(url, timeout=15)
-        if resp.status_code != 200:
-            print(f"  Mastodon returned {resp.status_code}", file=sys.stderr)
-            return entries
+    # Build a set of lowercase terms for fast matching
+    terms_lower = [t.lower() for t in search_terms]
 
-        posts = resp.json()
-        for post in posts:
-            created_str = post.get("created_at", "")
-            try:
-                published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%S.%fZ")
-            except Exception:
-                try:
-                    published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
-                except Exception:
-                    continue
+    for sub in subreddits:
+        # Try RSS first — GitHub Actions IPs are rarely blocked for RSS
+        rss_url = f"https://www.reddit.com/r/{sub}/new/.rss?limit=100"
+        print(f"Reddit: fetching r/{sub} via RSS...", file=sys.stderr)
+        time.sleep(1.5)  # polite delay
 
-            if published_dt < cutoff:
-                continue
-
-            # Strip HTML tags from content
-            raw_content = post.get("content", "")
-            soup        = BeautifulSoup(raw_content, "html.parser")
-            plain_text  = soup.get_text(" ", strip=True)
-            text_all    = plain_text.lower()
-
-            matched = [t for t in search_terms if t.lower() in text_all]
-            if matched:
-                account  = post.get("account", {})
-                username = account.get("acct", "unknown")
-                post_url = post.get("url", "")
-                title    = plain_text[:120] + ("…" if len(plain_text) > 120 else "")
-
-                entries.append({
-                    "title":        f"[Mastodon @{username}] {title}",
-                    "link":         post_url,
-                    "source_url":   post_url,
-                    "date":         published_dt.strftime("%Y-%m-%d"),
-                    "terms":        matched,
-                    "inline_links": [],
-                    "source_type":  "mastodon",
-                })
-    except Exception as e:
-        print(f"  Mastodon error: {e}", file=sys.stderr)
-
-    print(f"Mastodon: {len(entries)} matched posts", file=sys.stderr)
-    return entries
-
-
-# ─────────────────────────────────────────────────────────────────
-# CCCS SCRAPER — Canadian Centre for Cyber Security RSS feeds
-# ─────────────────────────────────────────────────────────────────
-def fetch_cccs(search_terms: list) -> list:
-    """Fetch CCCS alerts and advisories RSS feeds."""
-    entries     = []
-    cccs_terms  = search_terms + ["canada", "canadian", "cccs", "cse"]  # always include Canada terms
-    cccs_terms  = list(set(t.lower() for t in cccs_terms))
-
-    for feed_url in CCCS_FEEDS:
         try:
-            print(f"CCCS: fetching {feed_url}...", file=sys.stderr)
-            d = safe_parse_feed(feed_url)
+            d = feedparser.parse(rss_url)
+            count_before = len(entries)
             for e in d.entries:
                 link = e.get("link", "")
                 published_dt = None
@@ -645,19 +533,174 @@ def fetch_cccs(search_terms: list) -> list:
                 except Exception:
                     pass
 
-                if not published_dt or published_dt < (datetime.utcnow() - timedelta(days=HISTORY_DAYS)):
+                if not published_dt or published_dt < cutoff:
                     continue
 
                 title   = e.get("title", "")
                 summary = e.get("summary", "")
+                soup    = BeautifulSoup(summary, "html.parser")
+                plain   = soup.get_text(" ", strip=True)
+                text_all = f"{title} {plain}".lower()
+
+                matched = [t for t in search_terms if t.lower() in text_all]
+                if matched:
+                    entries.append({
+                        "title":        f"[r/{sub}] {title}",
+                        "link":         link,
+                        "source_url":   link,
+                        "date":         published_dt.strftime("%Y-%m-%d"),
+                        "terms":        matched,
+                        "inline_links": [],
+                        "source_type":  "reddit",
+                    })
+            got = len(entries) - count_before
+            print(f"  r/{sub}: {got} matched from RSS", file=sys.stderr)
+
+        except Exception as e:
+            print(f"  Reddit r/{sub} RSS error: {e}", file=sys.stderr)
+
+    print(f"Reddit total: {len(entries)} matched posts", file=sys.stderr)
+    return entries
+
+
+# ─────────────────────────────────────────────────────────────────
+# MASTODON SCRAPER
+# Searches security-relevant hashtags instead of the public timeline.
+# Hashtag search returns posts from federated instances too, not just
+# local accounts — dramatically more relevant content.
+# ─────────────────────────────────────────────────────────────────
+MASTODON_HASHTAGS = [
+    "cybersecurity", "infosec", "cve", "ransomware", "databreach",
+    "threatintel", "malware", "vulnerability", "canada", "canadian",
+    "phishing", "apt", "ics", "scada", "zeroday",
+]
+MASTODON_PER_TAG = 40  # posts per hashtag
+
+def fetch_mastodon(search_terms: list) -> list:
+    """Search security hashtags on InfoSec.exchange."""
+    entries    = {}   # keyed by post URL to deduplicate
+    cutoff     = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
+    terms_lower = [t.lower() for t in search_terms]
+
+    for tag in MASTODON_HASHTAGS:
+        url = f"https://{MASTODON_INSTANCE}/api/v1/timelines/tag/{tag}?limit={MASTODON_PER_TAG}"
+        try:
+            print(f"Mastodon: #{tag}...", file=sys.stderr)
+            time.sleep(0.5)
+            resp = requests.get(url, timeout=15)
+            if resp.status_code != 200:
+                print(f"  Mastodon #{tag} → {resp.status_code}", file=sys.stderr)
+                continue
+
+            for post in resp.json():
+                post_url = post.get("url", "")
+                if not post_url or post_url in entries:
+                    continue
+
+                created_str = post.get("created_at", "")
+                try:
+                    published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%S.%fZ")
+                except Exception:
+                    try:
+                        published_dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
+                    except Exception:
+                        continue
+
+                if published_dt < cutoff:
+                    continue
+
+                raw_content = post.get("content", "")
+                soup        = BeautifulSoup(raw_content, "html.parser")
+                plain_text  = soup.get_text(" ", strip=True)
+                text_all    = plain_text.lower()
+
+                # Always include CCCS-tagged or Canada posts; otherwise match terms
+                hashtags_in_post = [t.get("name","").lower() for t in post.get("tags", [])]
+                canada_post = any(h in ("canada","canadian","cccs") for h in hashtags_in_post)
+                matched = [t for t in search_terms if t.lower() in text_all]
+
+                if matched or canada_post:
+                    if not matched:
+                        matched = ["infosec"]
+                    account  = post.get("account", {})
+                    username = account.get("acct", "unknown")
+                    title    = plain_text[:140] + ("…" if len(plain_text) > 140 else "")
+                    entries[post_url] = {
+                        "title":        f"[Mastodon @{username}] {title}",
+                        "link":         post_url,
+                        "source_url":   post_url,
+                        "date":         published_dt.strftime("%Y-%m-%d"),
+                        "terms":        matched,
+                        "inline_links": [],
+                        "source_type":  "mastodon",
+                    }
+
+        except Exception as e:
+            print(f"  Mastodon #{tag} error: {e}", file=sys.stderr)
+
+    result = list(entries.values())
+    print(f"Mastodon total: {len(result)} unique matched posts", file=sys.stderr)
+    return result
+
+
+# ─────────────────────────────────────────────────────────────────
+# CCCS SCRAPER — Canadian Centre for Cyber Security
+# Uses multiple known working feed URLs + HTML scrape fallback.
+# ─────────────────────────────────────────────────────────────────
+CCCS_FEEDS = [
+    # Primary RSS feeds — try all, some may 404 depending on CMS version
+    "https://www.cyber.gc.ca/en/alerts-advisories/feed",
+    "https://cyber.gc.ca/en/alerts-advisories/feed",
+    "https://www.cyber.gc.ca/api/v1/rss/alerts",
+    "https://www.cyber.gc.ca/api/v1/rss/advisories",
+    # Fallback — CCCS content also syndicated through Public Safety Canada
+    "https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cbr-scrt/rssfeed-en.aspx",
+]
+
+def fetch_cccs(search_terms: list) -> list:
+    """Fetch CCCS alerts and advisories — try multiple feed URLs."""
+    entries = {}
+    cutoff  = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
+    found_working = False
+
+    for feed_url in CCCS_FEEDS:
+        try:
+            print(f"CCCS: trying {feed_url}...", file=sys.stderr)
+            d = feedparser.parse(feed_url)
+            if not d.entries:
+                print(f"  No entries from {feed_url}", file=sys.stderr)
+                continue
+
+            found_working = True
+            count_before  = len(entries)
+            for e in d.entries:
+                link = e.get("link", "")
+                if not link or link in entries:
+                    continue
+                published_dt = None
+                try:
+                    dt_tuple = e.get("published_parsed") or e.get("updated_parsed")
+                    if dt_tuple:
+                        published_dt = datetime(*dt_tuple[:6])
+                except Exception:
+                    pass
+
+                if not published_dt:
+                    published_dt = datetime.utcnow()  # fallback: treat as today
+
+                if published_dt < cutoff:
+                    continue
+
+                title   = e.get("title", "Untitled CCCS Advisory")
+                summary = e.get("summary", "")
                 text_all = f"{title} {summary}".lower()
 
-                # CCCS items are always relevant — include all, tag with matched terms
+                # Match against user terms; CCCS items always included regardless
                 matched = [t for t in search_terms if t.lower() in text_all]
                 if not matched:
-                    matched = ["cccs-advisory"]   # ensure it appears even with no term match
+                    matched = ["cccs-advisory"]
 
-                entries.append({
+                entries[link] = {
                     "title":        f"[CCCS] {title}",
                     "link":         link,
                     "source_url":   link,
@@ -665,12 +708,20 @@ def fetch_cccs(search_terms: list) -> list:
                     "terms":        matched,
                     "inline_links": [],
                     "source_type":  "cccs",
-                })
+                }
+
+            got = len(entries) - count_before
+            print(f"  CCCS {feed_url}: {got} items", file=sys.stderr)
+
         except Exception as ex:
             print(f"  CCCS feed error {feed_url}: {ex}", file=sys.stderr)
 
-    print(f"CCCS: {len(entries)} items", file=sys.stderr)
-    return entries
+    if not found_working:
+        print("  CCCS: all feeds returned empty — URLs may need updating", file=sys.stderr)
+
+    result = list(entries.values())
+    print(f"CCCS total: {len(result)} items", file=sys.stderr)
+    return result
 
 
 # MAIN
