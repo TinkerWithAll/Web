@@ -7,79 +7,81 @@ const GITHUB_REPO   = 'Web';
 const WORKFLOW_FILE = 'daily_scrape.yml';
 const RATE_LIMIT_MS  = 2 * 60 * 60 * 1000;
 const RATE_LIMIT_KEY = 'feed_last_trigger';
+const TOKEN_KEY      = 'gh_dispatch_token_cache';
 
-// GH_DISPATCH_TOKEN is injected at build time into config.js by GitHub Actions.
-// We also cache it in localStorage so it survives if config.js is stale.
-// If neither works, the user is prompted to enter it once manually.
-const TOKEN_STORAGE_KEY = 'gh_dispatch_token_cache';
-
+// ── Token management ──────────────────────────────────────────────
 function getToken() {
-  // Priority: 1) config.js (freshest, regenerated each workflow run)
-  //           2) localStorage cache (survives stale config.js)
   const live = (window.GH_DISPATCH_TOKEN || '').trim();
   if (live && live !== 'undefined') {
-    // Cache it for next time
-    try { localStorage.setItem(TOKEN_STORAGE_KEY, live); } catch {}
+    try { localStorage.setItem(TOKEN_KEY, live); } catch {}
     return live;
   }
-  // Fall back to cached token
-  try {
-    const cached = (localStorage.getItem(TOKEN_STORAGE_KEY) || '').trim();
-    if (cached) return cached;
-  } catch {}
+  try { return (localStorage.getItem(TOKEN_KEY) || '').trim(); } catch {}
   return '';
 }
 
 function promptForToken() {
-  const msg = [
-    'GH_DISPATCH_TOKEN is not available.',
-    '',
-    'This happens when config.js has not been generated yet.',
-    'Fix: Go to GitHub Actions → Run workflow manually once.',
-    '',
-    'OR paste your Fine-Grained PAT here to cache it locally',
-    '(Actions: Read & Write scope on TinkerWithAll/Web):',
-  ].join('\n');
-  const token = window.prompt(msg, '');
-  if (token && token.trim()) {
-    try { localStorage.setItem(TOKEN_STORAGE_KEY, token.trim()); } catch {}
-    return token.trim();
-  }
-  return '';
+  const t = window.prompt(
+    'GH_DISPATCH_TOKEN not found in config.js.\n\n' +
+    'Paste your Fine-Grained PAT (Actions: Read & Write on TinkerWithAll/Web).\n' +
+    'It will be saved locally so you only need to do this once.'
+  );
+  const token = (t || '').trim();
+  if (token) { try { localStorage.setItem(TOKEN_KEY, token); } catch {} }
+  return token;
 }
 
+function clearTokenCache() { try { localStorage.removeItem(TOKEN_KEY); } catch {} }
+
+// ── GitHub API helpers ────────────────────────────────────────────
+async function verifyToken(token) {
+  try {
+    const res = await fetch(
+      'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO,
+      { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' } }
+    );
+    if (res.status === 200) return { ok: true };
+    if (res.status === 401) return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
+    if (res.status === 403) return { ok: false, message: 'Token lacks Actions: Write permission. Edit your PAT at github.com/settings/personal-access-tokens.' };
+    if (res.status === 404) return { ok: false, message: 'Repo not found — check the token has access to TinkerWithAll/Web.' };
+    return { ok: false, message: 'Token check returned HTTP ' + res.status };
+  } catch { return { ok: true }; } // network error — proceed anyway
+}
+
+async function triggerWorkflow(inputs, token) {
+  try {
+    const res = await fetch(
+      'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+      '/actions/workflows/' + WORKFLOW_FILE + '/dispatches',
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + token,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ref: 'main', inputs }),
+      }
+    );
+    if (res.status === 204) return { ok: true };
+    let ghMsg = '';
+    try { ghMsg = (await res.json()).message || ''; } catch {}
+    console.error('dispatch HTTP ' + res.status, ghMsg);
+    const msgs = {
+      401: 'Token invalid/expired — enter a new PAT.',
+      403: 'Token lacks Actions: Write permission on this repo.',
+      404: 'Workflow file "' + WORKFLOW_FILE + '" not found in .github/workflows/.',
+      422: 'workflow_dispatch may not be enabled in the workflow file, or the ref "main" is wrong.',
+    };
+    return { ok: false, status: res.status, message: msgs[res.status] || 'GitHub returned HTTP ' + res.status + (ghMsg ? ': ' + ghMsg : '') };
+  } catch (err) {
+    return { ok: false, status: 0, message: 'Network error reaching GitHub API: ' + err.message };
+  }
+}
+
+// ── Main ──────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-
-  const lastUpdatedEl    = document.getElementById('last-updated');
-  const articleCountEl   = document.getElementById('article-count');
-  const feedCountEl      = document.getElementById('feed-count');
-  const sourceBreakdown  = document.getElementById('source-breakdown');
-  const feedBody         = document.getElementById('feedBody');
-  const searchInput      = document.getElementById('searchInput');
-  const termInput        = document.getElementById('termInput');
-  const termToggleBtn    = document.getElementById('termToggleBtn');
-  const sourceFilterBtns = document.querySelectorAll('.source-filter-btn');
-  const downloadBtn      = document.getElementById('downloadBtn');
-  const downloadTermsBtn = document.getElementById('downloadTermsBtn');
-  const downloadFeedsBtn = document.getElementById('downloadFeedsBtn');
-  const downloadReportBtn= document.getElementById('downloadReportBtn');
-  const feedCountLabel   = document.getElementById('feedCountLabel');
-  const noResults        = document.getElementById('noResults');
-  const refreshBtn       = document.getElementById('refreshBtn');
-  const refreshBtnLabel  = document.getElementById('refreshBtnLabel');
-  const defaultReportBtn = document.getElementById('defaultReportBtn');
-  const customReportBtn  = document.getElementById('customReportBtn');
-  const customPrompt     = document.getElementById('customPrompt');
-  const reportPlaceholder= document.getElementById('reportPlaceholder');
-  const reportLoading    = document.getElementById('reportLoading');
-  const reportContent    = document.getElementById('reportContent');
-  const loadingMsg       = document.getElementById('loadingMsg');
-
-  let feedData        = [];
-  let activeSource    = 'all';
-  let searchModeIsAND = true;
-  let currentReportData = null;
-  const cb = () => '?v=' + Date.now();
 
   const SOURCE_LABELS = {
     reddit:   { label: 'Reddit',   cls: 'src-reddit' },
@@ -88,20 +90,76 @@ document.addEventListener('DOMContentLoaded', () => {
     rss:      { label: 'RSS',      cls: 'src-rss' },
   };
 
-  // Eastern time formatter
+  // DOM refs
+  const $  = id => document.getElementById(id);
+  const lastUpdatedEl    = $('last-updated');
+  const articleCountEl   = $('article-count');
+  const feedCountEl      = $('feed-count');
+  const sourceBreakdown  = $('source-breakdown');
+  const feedBody         = $('feedBody');
+  const searchInput      = $('searchInput');
+  const termInput        = $('termInput');
+  const termToggleBtn    = $('termToggleBtn');
+  const downloadBtn      = $('downloadBtn');
+  const downloadTermsBtn = $('downloadTermsBtn');
+  const downloadFeedsBtn = $('downloadFeedsBtn');
+  const downloadReportBtn= $('downloadReportBtn');
+  const feedCountLabel   = $('feedCountLabel');
+  const noResults        = $('noResults');
+  const refreshBtn       = $('refreshBtn');
+  const refreshBtnLabel  = $('refreshBtnLabel');
+  const defaultReportBtn = $('defaultReportBtn');
+  const customReportBtn  = $('customReportBtn');
+  const customPrompt     = $('customPrompt');
+  const reportPlaceholder= $('reportPlaceholder');
+  const reportLoading    = $('reportLoading');
+  const reportContent    = $('reportContent');
+  const loadingMsg       = $('loadingMsg');
+  const sourceFilterBtns = document.querySelectorAll('.source-filter-btn');
+
+  // State
+  let feedData        = [];
+  let activeSource    = 'all';
+  let searchModeIsAND = true;
+  let currentReportData = null;
+  const cb = () => '?v=' + Date.now();
+
+  // ── Helpers ───────────────────────────────────────────────────
+  function escHtml(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function critClass(c) {
+    return ({ CRITICAL:'crit', HIGH:'high', MEDIUM:'med', LOW:'low' })[(c||'').toUpperCase()] || 'med';
+  }
+  function iso()       { return new Date().toISOString().slice(0,10); }
+  function sleep(ms)   { return new Promise(r => setTimeout(r, ms)); }
+  function dlBlob(url, name) {
+    const a = document.createElement('a');
+    a.href = url; a.download = name; a.click();
+    URL.revokeObjectURL(url);
+  }
   function toEastern(str) {
     if (!str) return '—';
     if (typeof str === 'string' && str.endsWith(' ET')) return str;
     try {
       return new Date(str).toLocaleString('en-CA', {
-        timeZone: 'America/Toronto',
-        year: 'numeric', month: '2-digit', day: '2-digit',
-        hour: '2-digit', minute: '2-digit', hour12: false
+        timeZone: 'America/Toronto', year:'numeric', month:'2-digit',
+        day:'2-digit', hour:'2-digit', minute:'2-digit', hour12: false
       }) + ' ET';
     } catch { return str; }
   }
+  function markdownToHtml(md) {
+    return md.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/^### (.+)$/gm,'<h4 style="color:var(--green);margin:1rem 0 .4rem;font-size:.85rem">$1</h4>')
+      .replace(/^## (.+)$/gm,'<h3 style="color:var(--amber);margin:1.2rem 0 .5rem">$1</h3>')
+      .replace(/^# (.+)$/gm,'<h2 style="color:var(--green);margin:1.5rem 0 .5rem">$1</h2>')
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/`([^`]+)`/g,'<code style="color:var(--amber);font-size:12px">$1</code>')
+      .replace(/^- (.+)$/gm,'<li style="margin-left:1.2rem;margin-bottom:.2rem">$1</li>')
+      .replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
+  }
 
-  // Tabs
+  // ── Tabs ──────────────────────────────────────────────────────
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -111,13 +169,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Metadata
+  // ── Load metadata ─────────────────────────────────────────────
   fetch('meta.json' + cb())
     .then(r => r.json())
     .then(d => { if (lastUpdatedEl && d.last_updated) lastUpdatedEl.textContent = toEastern(d.last_updated); })
     .catch(() => {});
 
-  // Exact feed count from feeds.txt
   fetch('feeds.txt' + cb())
     .then(r => r.text())
     .then(text => {
@@ -137,10 +194,13 @@ document.addEventListener('DOMContentLoaded', () => {
     customReportBtn.disabled  = true;
     customPrompt.disabled     = true;
     customPrompt.placeholder  = 'AI features are currently disabled.';
-    reportPlaceholder.innerHTML = '<div class="ph-icon" style="color:var(--amber)"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div><p style="color:var(--amber)">' + escHtml(msg) + '</p><p class="ph-sub">To re-enable: set <code>AI_ENABLED = true</code> in GitHub Actions Variables.</p>';
+    reportPlaceholder.innerHTML =
+      '<div class="ph-icon" style="color:var(--amber)"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>' +
+      '<p style="color:var(--amber)">' + escHtml(msg) + '</p>' +
+      '<p class="ph-sub">To re-enable: set <code>AI_ENABLED = true</code> in GitHub Actions Variables.</p>';
   }
 
-  // Feed data
+  // ── Load feed history ─────────────────────────────────────────
   fetch('feed_history.json')
     .then(r => { if (!r.ok) throw new Error(); return r.json(); })
     .then(data => {
@@ -150,24 +210,25 @@ document.addEventListener('DOMContentLoaded', () => {
       renderTable(data);
     })
     .catch(() => {
-      feedBody.innerHTML = '<tr><td colspan="3" style="text-align:center;color:var(--text-faint);padding:2rem">No data available.</td></tr>';
+      if (feedBody) feedBody.innerHTML =
+        '<tr><td colspan="3" style="text-align:center;color:var(--text-faint);padding:2rem">No data available.</td></tr>';
     });
 
   function updateSourceBreakdown(data) {
     if (!sourceBreakdown) return;
-    const counts = { rss: 0, reddit: 0, mastodon: 0, cccs: 0 };
+    const c = { rss:0, reddit:0, mastodon:0, cccs:0 };
     data.forEach(item => {
       const t = (item.source_type || 'rss').toLowerCase();
-      if (counts[t] !== undefined) counts[t]++; else counts.rss++;
+      if (c[t] !== undefined) c[t]++; else c.rss++;
     });
     sourceBreakdown.innerHTML =
-      '<span class="src-pill src-rss">RSS\u00a0' + counts.rss + '</span>' +
-      '<span class="src-pill src-reddit">Reddit\u00a0' + counts.reddit + '</span>' +
-      '<span class="src-pill src-mastodon">Mastodon\u00a0' + counts.mastodon + '</span>' +
-      '<span class="src-pill src-cccs">CCCS\u00a0' + counts.cccs + '</span>';
+      '<span class="src-pill src-rss">RSS\u00a0' + c.rss + '</span>' +
+      '<span class="src-pill src-reddit">Reddit\u00a0' + c.reddit + '</span>' +
+      '<span class="src-pill src-mastodon">Mastodon\u00a0' + c.mastodon + '</span>' +
+      '<span class="src-pill src-cccs">CCCS\u00a0' + c.cccs + '</span>';
   }
 
-  // Source filter buttons
+  // ── Source filter buttons ─────────────────────────────────────
   sourceFilterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       sourceFilterBtns.forEach(b => b.classList.remove('active'));
@@ -177,14 +238,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Render table ──────────────────────────────────────────────
   function renderTable(data) {
+    if (!feedBody) return;
     feedBody.innerHTML = '';
-    noResults.style.display = data.length === 0 ? 'block' : 'none';
-    feedCountLabel.textContent = data.length + ' article' + (data.length !== 1 ? 's' : '');
+    if (noResults) noResults.style.display = data.length === 0 ? 'block' : 'none';
+    if (feedCountLabel) feedCountLabel.textContent = data.length + ' article' + (data.length !== 1 ? 's' : '');
     data.forEach(item => {
       const srcType = (item.source_type || 'rss').toLowerCase();
       const srcInfo = SOURCE_LABELS[srcType] || SOURCE_LABELS.rss;
-      const tagsHtml = (item.terms || []).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
+      const tags = (item.terms || []).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
       const tr = document.createElement('tr');
       tr.innerHTML =
         '<td class="mono" style="color:var(--text-dim);font-size:12px;white-space:nowrap">' +
@@ -192,247 +255,204 @@ document.addEventListener('DOMContentLoaded', () => {
           '<span class="src-badge ' + srcInfo.cls + '">' + srcInfo.label + '</span>' +
         '</td>' +
         '<td><a href="' + escHtml(item.link) + '" target="_blank" rel="noopener noreferrer">' + escHtml(item.title) + '</a></td>' +
-        '<td>' + tagsHtml + '</td>';
+        '<td>' + tags + '</td>';
       feedBody.appendChild(tr);
     });
   }
 
   function filterData() {
-    const txt   = searchInput.value.toLowerCase();
-    const terms = termInput.value.toLowerCase().split(',').map(t => t.trim()).filter(Boolean);
+    const txt   = searchInput ? searchInput.value.toLowerCase() : '';
+    const terms = termInput ? termInput.value.toLowerCase().split(',').map(t => t.trim()).filter(Boolean) : [];
     const filtered = feedData.filter(item => {
-      if (activeSource !== 'all') {
-        const srcType = (item.source_type || 'rss').toLowerCase();
-        if (srcType !== activeSource) return false;
-      }
+      if (activeSource !== 'all' && (item.source_type || 'rss').toLowerCase() !== activeSource) return false;
       const textOk = !txt || item.title.toLowerCase().includes(txt);
-      if (terms.length === 0) return textOk;
-      const articleTerms = (item.terms || []).map(t => t.toLowerCase());
+      if (!terms.length) return textOk;
+      const at = (item.terms || []).map(t => t.toLowerCase());
       const termOk = searchModeIsAND
-        ? terms.every(st => articleTerms.some(at => at.includes(st)))
-        : terms.some(st => articleTerms.some(at => at.includes(st)));
+        ? terms.every(st => at.some(a => a.includes(st)))
+        : terms.some(st => at.some(a => a.includes(st)));
       return textOk && termOk;
     });
     renderTable(filtered);
     return filtered;
   }
 
-  searchInput.addEventListener('input', filterData);
-  termInput.addEventListener('input', filterData);
-  termToggleBtn.addEventListener('click', () => {
+  if (searchInput) searchInput.addEventListener('input', filterData);
+  if (termInput)   termInput.addEventListener('input', filterData);
+  if (termToggleBtn) termToggleBtn.addEventListener('click', () => {
     searchModeIsAND = !searchModeIsAND;
     termToggleBtn.textContent = searchModeIsAND ? 'AND' : 'OR';
     termToggleBtn.className   = searchModeIsAND ? 'toggle-and' : 'toggle-or';
     filterData();
   });
 
-  // Export CSV
-  downloadBtn.addEventListener('click', () => {
-    const current = filterData();
-    if (!current.length) return alert('No data to export.');
-    const rows = [['Date','Source','Title','Link','Terms']];
-    current.forEach(i => rows.push([i.date, i.source_type||'rss', '"'+(i.title||'').replace(/"/g,'""')+'"', i.link, '"'+(i.terms||[]).join(', ')+'"']));
-    const blob = new Blob([rows.map(r => r.join(',')).join('\n')], { type: 'text/csv' });
-    triggerDownload(URL.createObjectURL(blob), 'security_feed_' + iso() + '.csv');
+  // ── Exports ───────────────────────────────────────────────────
+  if (downloadBtn) downloadBtn.addEventListener('click', () => {
+    const rows = filterData();
+    if (!rows.length) { alert('No data to export.'); return; }
+    const lines = [['Date','Source','Title','Link','Terms'].join(',')];
+    rows.forEach(i => lines.push([
+      i.date, i.source_type||'rss',
+      '"' + (i.title||'').replace(/"/g,'""') + '"',
+      i.link,
+      '"' + (i.terms||[]).join(', ') + '"',
+    ].join(',')));
+    dlBlob(URL.createObjectURL(new Blob([lines.join('\n')], {type:'text/csv'})), 'security_feed_' + iso() + '.csv');
   });
 
-  // Download Report
-  if (downloadReportBtn) {
-    downloadReportBtn.addEventListener('click', () => {
-      if (!currentReportData) return;
-      const html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Security Report</title><style>body{font-family:Courier New,monospace;background:#0a0c0f;color:#e8f0f8;padding:2rem;max-width:900px;margin:0 auto;font-size:14px;line-height:1.7}a{color:#00e5a0}strong{color:#e8f0f8}.report-meta,.r-section-title{color:#00e5a0}.report-ts{color:#00e5a0}.cve-card,.ta-card,.canada-card,.source-item{background:#151a22;border:1px solid #1e2530;border-radius:6px;padding:1rem;margin-bottom:.75rem}.cve-card{border-left:3px solid #ff4757}.ta-card{border-left:3px solid #ffb830}.cve-id,.ta-name{color:#ffb830;font-weight:bold}.src-badge{font-size:11px;padding:1px 6px;border-radius:3px}.src-rss{background:rgba(79,163,227,.15);color:#4fa3e3}.src-reddit{background:rgba(255,100,0,.15);color:#ff6400}.src-mastodon{background:rgba(99,100,255,.15);color:#6366f1}.src-cccs{background:rgba(255,71,87,.15);color:#ff4757}.term-tag{background:rgba(0,229,160,.1);color:#00a872;border:1px solid rgba(0,229,160,.2);padding:1px 6px;border-radius:10px;font-size:11px;margin:2px;display:inline-block}</style></head><body>' + reportContent.innerHTML + '</body></html>';
-      triggerDownload(URL.createObjectURL(new Blob([html], {type:'text/html'})), 'security-report-' + iso() + '.html');
-    });
-  }
+  if (downloadReportBtn) downloadReportBtn.addEventListener('click', () => {
+    if (!currentReportData) return;
+    const html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family:Courier New,monospace;background:#0a0c0f;color:#e8f0f8;padding:2rem;max-width:900px;margin:0 auto}a{color:#00e5a0}strong{color:#e8f0f8}.r-section-title{color:#00e5a0;font-weight:bold;margin:1.5rem 0 .5rem}.cve-card,.ta-card,.canada-card,.source-item{background:#151a22;border:1px solid #1e2530;border-radius:6px;padding:1rem;margin-bottom:.75rem}.cve-card{border-left:3px solid #ff4757}.ta-card{border-left:3px solid #ffb830}.cve-id,.ta-name{color:#ffb830;font-weight:bold}.src-badge{font-size:11px;padding:1px 5px;border-radius:3px}.src-rss{background:rgba(79,163,227,.15);color:#4fa3e3}.src-reddit{background:rgba(255,100,0,.15);color:#ff6400}.src-mastodon{background:rgba(99,100,255,.15);color:#8b8fff}.src-cccs{background:rgba(255,71,87,.15);color:#ff4757}.term-tag{background:rgba(0,229,160,.1);color:#00a872;border:1px solid rgba(0,229,160,.2);padding:1px 6px;border-radius:10px;font-size:11px;margin:2px;display:inline-block}</style></head><body>' +
+      reportContent.innerHTML + '</body></html>';
+    dlBlob(URL.createObjectURL(new Blob([html],{type:'text/html'})), 'security-report-' + iso() + '.html');
+  });
 
-  // Download txt
-  function downloadTxt(filename) {
-    fetch(filename).then(r => { if (!r.ok) throw new Error(); return r.text(); })
-      .then(text => triggerDownload(URL.createObjectURL(new Blob([text],{type:'text/plain'})), filename))
-      .catch(() => alert('Could not download ' + filename));
+  function dlTxt(name) {
+    fetch(name).then(r => { if (!r.ok) throw 0; return r.text(); })
+      .then(t => dlBlob(URL.createObjectURL(new Blob([t],{type:'text/plain'})), name))
+      .catch(() => alert('Could not download ' + name));
   }
-  downloadTermsBtn.addEventListener('click', () => downloadTxt('terms.txt'));
-  downloadFeedsBtn.addEventListener('click', () => downloadTxt('feeds.txt'));
+  if (downloadTermsBtn) downloadTermsBtn.addEventListener('click', () => dlTxt('terms.txt'));
+  if (downloadFeedsBtn) downloadFeedsBtn.addEventListener('click', () => dlTxt('feeds.txt'));
 
-  // Cooldown
-  function getRemainingCooldown() {
-    const last = parseInt(localStorage.getItem(RATE_LIMIT_KEY) || '0', 10);
-    return Math.max(0, RATE_LIMIT_MS - (Date.now() - last));
+  // ── Cooldown ──────────────────────────────────────────────────
+  function cooldownLeft() {
+    return Math.max(0, RATE_LIMIT_MS - (Date.now() - parseInt(localStorage.getItem(RATE_LIMIT_KEY)||'0',10)));
   }
   function updateRefreshBtn() {
-    const rem = getRemainingCooldown();
-    if (rem > 0) { refreshBtn.disabled = true; refreshBtnLabel.textContent = 'Cooldown ' + Math.ceil(rem/60000) + 'm'; }
-    else         { refreshBtn.disabled = false; refreshBtnLabel.textContent = 'Refresh'; }
+    const rem = cooldownLeft();
+    refreshBtn.disabled = rem > 0;
+    refreshBtnLabel.textContent = rem > 0 ? 'Cooldown ' + Math.ceil(rem/60000) + 'm' : 'Refresh';
   }
   updateRefreshBtn();
   setInterval(updateRefreshBtn, 30000);
 
-  // Refresh button
+  // ── Refresh button ────────────────────────────────────────────
   refreshBtn.addEventListener('click', async () => {
-    if (getRemainingCooldown() > 0) return;
-    const token = getToken();
-    if (!token) { token = promptForToken(); if (!token) return; }
+    if (cooldownLeft() > 0) return;
+    let tok = getToken();
+    if (!tok) tok = promptForToken();
+    if (!tok) return;
     refreshBtn.disabled = true;
     refreshBtnLabel.textContent = 'Triggering…';
-    const result = await triggerWorkflow({}, token);
-    if (result.ok) {
+    const res = await triggerWorkflow({}, tok);
+    if (res.ok) {
       localStorage.setItem(RATE_LIMIT_KEY, Date.now().toString());
       refreshBtnLabel.textContent = 'Triggered ✓';
     } else {
       refreshBtnLabel.textContent = 'Error';
-      alert('Refresh failed:\n\n' + result.message);
-      if (result.status === 401 || result.status === 403) {
-        try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
-      }
+      if (res.status === 401 || res.status === 403) clearTokenCache();
+      alert('Refresh failed:\n\n' + res.message);
     }
     setTimeout(updateRefreshBtn, 3000);
   });
 
-  // Default report
+  // ── Loading states ────────────────────────────────────────────
+  function showLoading(msg) {
+    reportPlaceholder.style.display = 'none';
+    reportContent.style.display     = 'none';
+    reportLoading.style.display     = 'flex';
+    if (loadingMsg) loadingMsg.textContent = msg || 'Generating…';
+  }
+  function hideLoading() { if (reportLoading) reportLoading.style.display = 'none'; }
+  function showError(msg) {
+    hideLoading();
+    reportPlaceholder.style.display = 'none';
+    reportContent.style.display     = 'block';
+    reportContent.innerHTML = '<div style="padding:2rem;color:var(--red);font-size:13px;line-height:1.8"><strong>Error:</strong> ' + escHtml(msg) + '</div>';
+  }
+
+  // ── Default report ────────────────────────────────────────────
   defaultReportBtn.addEventListener('click', async () => {
     defaultReportBtn.disabled = true;
     customReportBtn.disabled  = true;
     showLoading('Loading cached intelligence report…');
     try {
       const r = await fetch('report.json' + cb());
-      if (!r.ok) throw new Error('not found');
+      if (!r.ok) throw new Error('report.json not found');
       renderReport(await r.json(), false);
-    } catch {
-      showError('report.json not found. Make sure your GitHub Action has run at least once.');
+    } catch (e) {
+      showError(e.message || 'Could not load report.json');
     } finally {
       defaultReportBtn.disabled = false;
       customReportBtn.disabled  = false;
     }
   });
 
-  // Custom prompt
+  // ── Custom prompt ─────────────────────────────────────────────
   customReportBtn.addEventListener('click', async () => {
     const prompt = customPrompt.value.trim();
     if (!prompt) { customPrompt.focus(); return; }
-    let token = getToken();
-    if (!token) {
-      token = promptForToken();
-      if (!token) {
-        showError('No dispatch token available. Run the workflow from GitHub Actions once, or enter your Fine-Grained PAT when prompted.');
-        return;
-      }
-    }
+
+    let tok = getToken();
+    if (!tok) tok = promptForToken();
+    if (!tok) { showError('No token provided. Cannot trigger workflow.'); return; }
+
     customReportBtn.disabled  = true;
     defaultReportBtn.disabled = true;
     showLoading('Verifying token…');
 
-    // Quick token check before the full dispatch
-    const verify = await verifyToken(token);
-    if (!verify.ok) {
-      try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
-      showError(verify.message + '\n\nClick Run Custom Prompt again to enter a new token.');
+    const check = await verifyToken(tok);
+    if (!check.ok) {
+      clearTokenCache();
+      showError(check.message + '\n\nClick Run Custom Prompt again to enter a new token.');
       customReportBtn.disabled  = false;
       defaultReportBtn.disabled = false;
       return;
     }
 
-    loadingMsg.textContent = 'Dispatching custom analysis… this takes 1–3 minutes.';
-    const result = await triggerWorkflow({ custom_prompt: prompt }, token);
-    if (!result.ok) {
-      if (result.status === 401 || result.status === 403) {
-        try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
-      }
-      showError(result.message);
+    if (loadingMsg) loadingMsg.textContent = 'Dispatching custom analysis… this takes 1–3 minutes.';
+    const dispatch = await triggerWorkflow({ custom_prompt: prompt }, tok);
+    if (!dispatch.ok) {
+      if (dispatch.status === 401 || dispatch.status === 403) clearTokenCache();
+      showError(dispatch.message);
       customReportBtn.disabled  = false;
       defaultReportBtn.disabled = false;
       return;
     }
-    loadingMsg.textContent = 'Workflow triggered ✓ — polling for new report (up to 3 min)…';
-    const result = await pollForReport(180);
+
+    if (loadingMsg) loadingMsg.textContent = 'Workflow triggered ✓ — polling for new report (up to 3 min)…';
+    const polled = await pollForReport(180);
     hideLoading();
-    if (result) { renderReport(result, true, prompt); }
-    else { showError('Timed out. The workflow may still be running — wait 2 min then click Default Report to load the result.'); }
+    if (polled) {
+      renderReport(polled, true, prompt);
+    } else {
+      showError('Timed out. The workflow may still be running — wait 2 min then click Default Report.');
+    }
     customReportBtn.disabled  = false;
     defaultReportBtn.disabled = false;
   });
 
-  // Verify the token is valid before dispatching — gives a clear error fast
-  async function verifyToken(token) {
-    try {
-      const res = await fetch(
-        'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO,
-        { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' } }
-      );
-      if (res.status === 200) return { ok: true };
-      if (res.status === 401) return { ok: false, message: 'Token is invalid or expired. Enter a valid Fine-Grained PAT.' };
-      if (res.status === 404) return { ok: false, message: 'Repo TinkerWithAll/Web not found — check the token has access to this repo.' };
-      return { ok: false, message: 'Token check returned HTTP ' + res.status };
-    } catch { return { ok: true }; } // network error — proceed anyway
-  }
-
-  // Returns { ok: bool, status: int, message: string }
-  async function triggerWorkflow(inputs, token) {
-    const url = 'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
-                '/actions/workflows/' + WORKFLOW_FILE + '/dispatches';
-    try {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Authorization': 'Bearer ' + token,
-          'Accept': 'application/vnd.github+json',
-          'X-GitHub-Api-Version': '2022-11-28',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ ref: 'main', inputs }),
-      });
-
-      if (res.status === 204) return { ok: true, status: 204, message: '' };
-
-      let body = '';
-      try { body = await res.text(); } catch {}
-      let ghMsg = '';
-      try { ghMsg = JSON.parse(body).message || ''; } catch {}
-      console.error('GitHub dispatch HTTP ' + res.status, body);
-
-      const msgs = {
-        401: 'Token is invalid or lacks permission. Make sure GH_DISPATCH_TOKEN is a Fine-Grained PAT with Actions: Read & Write on the TinkerWithAll/Web repo.',
-        403: 'Token does not have Actions: Write permission on this repo. Edit the PAT at github.com/settings/personal-access-tokens and add Actions: Read & Write.',
-        404: 'Workflow file not found. Make sure "' + WORKFLOW_FILE + '" exists in .github/workflows/ on the main branch.',
-        422: 'Unprocessable — the workflow file exists but may not have workflow_dispatch enabled, or the ref "main" is wrong. Check that daily_scrape.yml has "workflow_dispatch:" in its "on:" section.',
-      };
-      const message = msgs[res.status] || ('GitHub returned HTTP ' + res.status + (ghMsg ? ': ' + ghMsg : '') + '. Check the browser console for details.');
-      return { ok: false, status: res.status, message };
-    } catch (err) {
-      console.error('triggerWorkflow network error:', err);
-      return { ok: false, status: 0, message: 'Network error — could not reach GitHub API. Check your internet connection.' };
-    }
-  }
-
+  // ── Poll for updated report ───────────────────────────────────
   async function pollForReport(timeoutSecs) {
     let oldTs = null;
     try { const r = await fetch('report.json' + cb()); if (r.ok) { const d = await r.json(); oldTs = d.generated_at; } } catch {}
     const deadline = Date.now() + timeoutSecs * 1000;
     while (Date.now() < deadline) {
       await sleep(8000);
-      try { const r = await fetch('report.json' + cb()); if (r.ok) { const d = await r.json(); if (d.generated_at && d.generated_at !== oldTs) return d; } } catch {}
+      try {
+        const r = await fetch('report.json' + cb());
+        if (r.ok) { const d = await r.json(); if (d.generated_at && d.generated_at !== oldTs) return d; }
+      } catch {}
     }
     return null;
   }
 
-  function showLoading(msg) {
-    reportPlaceholder.style.display = 'none'; reportContent.style.display = 'none';
-    reportLoading.style.display = 'flex'; loadingMsg.textContent = msg || 'Generating…';
-  }
-  function hideLoading() { reportLoading.style.display = 'none'; }
-  function showError(msg) {
-    hideLoading(); reportPlaceholder.style.display = 'none'; reportContent.style.display = 'block';
-    reportContent.innerHTML = '<div style="padding:2rem;color:var(--red);font-size:13px;line-height:1.8"><strong>Error:</strong> ' + escHtml(msg) + '</div>';
-  }
-
+  // ── Render report ─────────────────────────────────────────────
   function renderReport(data, isCustom, prompt) {
     hideLoading();
-    reportPlaceholder.style.display = 'none'; reportContent.style.display = 'block';
+    reportPlaceholder.style.display = 'none';
+    reportContent.style.display     = 'block';
     currentReportData = data;
     if (downloadReportBtn) downloadReportBtn.style.display = 'flex';
+
     const ts    = toEastern(data.generated_at);
     const badge = isCustom ? '<span class="report-badge custom">Custom</span>' : '<span class="report-badge">48h Brief</span>';
-    let html = '<div class="report-meta">' + badge + '<span>Generated: <span class="report-ts mono">' + escHtml(ts) + '</span></span>' +
-      (isCustom && prompt ? '<span style="color:var(--text-dim)">Prompt: "' + escHtml(prompt.substring(0,80)) + (prompt.length>80?'…':'') + '"</span>' : '') + '</div>';
+    let html = '<div class="report-meta">' + badge +
+      '<span>Generated: <span class="report-ts mono">' + escHtml(ts) + '</span></span>' +
+      (isCustom && prompt ? '<span style="color:var(--text-dim)">Prompt: "' + escHtml(prompt.substring(0,80)) + (prompt.length>80?'…':'') + '"</span>' : '') +
+      '</div>';
+
     if (data.custom_response) {
       html += '<div class="r-section"><div class="canada-card">' + markdownToHtml(data.custom_response) + '</div></div>';
     } else {
@@ -452,10 +472,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let html = '<div class="r-section"><div class="r-section-title">Source Articles <span class="r-section-count">' + recent.length + '</span></div><div class="sources-list">';
     recent.forEach(item => {
       const srcType = (item.source_type || 'rss').toLowerCase();
-      const srcInfo = SOURCE_LABELS[srcType] || SOURCE_LABELS.rss;
-      const tags = (item.terms||[]).slice(0,3).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
-      html += '<div class="source-item"><span class="source-date mono">' + escHtml(item.date) + '</span>' +
-        '<span class="src-badge ' + srcInfo.cls + '">' + srcInfo.label + '</span>' +
+      const si      = SOURCE_LABELS[srcType] || SOURCE_LABELS.rss;
+      const tags    = (item.terms||[]).slice(0,3).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
+      html += '<div class="source-item">' +
+        '<span class="source-date mono">' + escHtml(item.date) + '</span>' +
+        '<span class="src-badge ' + si.cls + '">' + si.label + '</span>' +
         '<a href="' + escHtml(item.link) + '" target="_blank" rel="noopener noreferrer" class="source-link">' + escHtml(item.title) + '</a>' +
         '<div class="source-tags">' + tags + '</div></div>';
     });
@@ -466,10 +487,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!vulns) return '';
     const items = vulns.items || [];
     let html = '<div class="r-section"><div class="r-section-title">New Vulnerabilities <span class="r-section-count">' + (vulns.count ?? items.length) + ' CVEs</span></div><div class="cve-list">';
-    if (!items.length) { html += '<p class="r-empty">No new CVEs matched in the last 48h.</p>'; }
-    else items.forEach(cve => {
-      html += '<div class="cve-card ' + critClass(cve.criticality) + '"><div class="cve-header"><span class="cve-id">' + escHtml(cve.id||'') + '</span><span class="cve-title">' + escHtml(cve.description||'') + '</span><span class="crit-badge ' + escHtml(cve.criticality||'') + '">' + escHtml(cve.criticality||'?') + '</span></div>' +
-        '<div class="cve-meta"><div class="cve-meta-item"><strong>Software:</strong> ' + escHtml(cve.software_affected||'—') + '</div><div class="cve-meta-item"><strong>CIA Impact:</strong> ' + escHtml(cve.cia_impact||'—') + '</div><div class="cve-meta-item"><strong>Access Required:</strong> ' + escHtml(cve.access_required||'—') + '</div></div></div>';
+    if (!items.length) return html + '<p class="r-empty">No new CVEs matched in the last 48h.</p></div></div>';
+    items.forEach(cve => {
+      html += '<div class="cve-card ' + critClass(cve.criticality) + '">' +
+        '<div class="cve-header"><span class="cve-id">' + escHtml(cve.id||'') + '</span>' +
+        '<span class="cve-title">' + escHtml(cve.description||'') + '</span>' +
+        '<span class="crit-badge ' + escHtml(cve.criticality||'') + '">' + escHtml(cve.criticality||'?') + '</span></div>' +
+        '<div class="cve-meta">' +
+        '<div class="cve-meta-item"><strong>Software:</strong> ' + escHtml(cve.software_affected||'—') + '</div>' +
+        '<div class="cve-meta-item"><strong>CIA Impact:</strong> ' + escHtml(cve.cia_impact||'—') + '</div>' +
+        '<div class="cve-meta-item"><strong>Access Required:</strong> ' + escHtml(cve.access_required||'—') + '</div>' +
+        '</div></div>';
     });
     return html + '</div></div>';
   }
@@ -478,8 +506,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!actors) return '';
     const items = actors.items || [];
     let html = '<div class="r-section"><div class="r-section-title">Active Threat Actors <span class="r-section-count">' + items.length + ' active</span></div><div class="ta-list">';
-    if (!items.length) { html += '<p class="r-empty">No threat actor activity matched in the last 48h.</p>'; }
-    else items.forEach(ta => {
+    if (!items.length) return html + '<p class="r-empty">No threat actor activity matched in the last 48h.</p></div></div>';
+    items.forEach(ta => {
       html += '<div class="ta-card"><div class="ta-name">' + escHtml(ta.name||'') + '</div><div class="ta-body">' +
         (ta.targets ? '<p><strong>Targets / Breaches:</strong> ' + escHtml(ta.targets) + '</p>' : '') +
         (ta.ttps    ? '<p><strong>TTPs:</strong> ' + escHtml(ta.ttps) + '</p>' : '') +
@@ -495,24 +523,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (canada.summary)   html += '<p>' + escHtml(canada.summary) + '</p>';
     if (canada.retailers) html += '<p><strong><span class="ca-flag">🇨🇦</span> Retailers:</strong> ' + escHtml(canada.retailers) + '</p>';
     if (canada.financial) html += '<p><strong><span class="ca-flag">🇨🇦</span> Financial:</strong> ' + escHtml(canada.financial) + '</p>';
-    if (!canada.summary && !canada.retailers && !canada.financial) html += '<p class="r-empty">No Canadian-specific incidents matched in the last 48h.</p>';
+    if (!canada.summary && !canada.retailers && !canada.financial)
+      html += '<p class="r-empty">No Canadian-specific incidents matched in the last 48h.</p>';
     return html + '</div></div>';
-  }
-
-  function escHtml(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-  function critClass(c) { return ({CRITICAL:'crit',HIGH:'high',MEDIUM:'med',LOW:'low'})[(c||'').toUpperCase()]||'med'; }
-  function iso() { return new Date().toISOString().slice(0,10); }
-  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-  function triggerDownload(url, filename) { const a = document.createElement('a'); a.href=url; a.download=filename; a.click(); URL.revokeObjectURL(url); }
-  function markdownToHtml(md) {
-    return md.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-      .replace(/^### (.+)$/gm,'<h4 style="color:var(--green);margin:1rem 0 .4rem;font-size:.85rem">$1</h4>')
-      .replace(/^## (.+)$/gm,'<h3 style="color:var(--amber);margin:1.2rem 0 .5rem">$1</h3>')
-      .replace(/^# (.+)$/gm,'<h2 style="color:var(--green);margin:1.5rem 0 .5rem">$1</h2>')
-      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-      .replace(/`([^`]+)`/g,'<code style="color:var(--amber);font-size:12px">$1</code>')
-      .replace(/^- (.+)$/gm,'<li style="margin-left:1.2rem;margin-bottom:.2rem">$1</li>')
-      .replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
   }
 
 });
