@@ -404,29 +404,34 @@ def save_metadata(source_counts: dict = None):
 # ─────────────────────────────────────────────────────────────────
 def get_48h_entries(full_history):
     """Return only entries from the last 48 hours."""
-    cutoff = (datetime.now() - timedelta(hours=REPORT_HOURS)).strftime("%Y-%m-%d")
+    cutoff = (datetime.now() - timedelta(hours=48)).strftime("%Y-%m-%d")
+    return [e for e in full_history if e.get("date", "") >= cutoff]
+
+def get_2week_entries(full_history):
+    """Return entries from the last 14 days."""
+    cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
     return [e for e in full_history if e.get("date", "") >= cutoff]
 
 
-def build_default_prompt(recent_entries):
+def build_default_prompt(recent_entries, window_label="48h"):
     """Build the structured analysis prompt from recent feed entries."""
     if not recent_entries:
         return (
-            "The security feed returned no new articles in the last 48 hours. "
+            f"The security feed returned no new articles in the last {window_label}. "
             "Please write a brief report noting this and provide general security posture advice."
         )
 
-    # Summarise entries into a compact text block for the API
+    # Include link so AI can pass it through to source_url in output
     articles_text = []
-    for e in recent_entries[:120]:   # cap to avoid token limits
+    for e in recent_entries[:150]:
         source = e.get("source_type", "rss").upper()
-        terms = ", ".join(e.get("terms", []))
-        articles_text.append(f"[{e['date']}][{source}] {e['title']} | Terms: {terms}")
+        terms  = ", ".join(e.get("terms", []))
+        link   = e.get("link", "")
+        articles_text.append(f"[{e['date']}][{source}] {e['title']} | URL: {link} | Terms: {terms}")
 
     articles_block = "\n".join(articles_text)
 
-    return f"""You are a senior cybersecurity analyst. Based on the following security news articles 
-from the last 48 hours, produce a structured threat intelligence briefing.
+    return f"""You are a senior cybersecurity analyst. Based on the following security news articles from the last {window_label}, produce a structured threat intelligence briefing.
 
 Sources: 130+ RSS feeds, Reddit (r/netsec r/cybersecurity r/canada), Mastodon/InfoSec.exchange, CCCS advisories.
 Tags: [RSS]=news [REDDIT]=community [MASTODON]=infosec community [CCCS]=official Canadian govt advisories.
@@ -437,6 +442,7 @@ ARTICLES:
 Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exact schema:
 
 {{
+  "executive_summary": "3-5 sentences written in plain English for a non-technical reader. Lead with the single most urgent finding. Call out anything actively exploited, zero-day, or involving a major breach by name. Make it punchy and specific — not generic.",
   "vulnerabilities": {{
     "count": <integer>,
     "items": [
@@ -444,9 +450,12 @@ Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exa
         "id": "CVE-XXXX-XXXXX",
         "description": "brief one-line description of the vulnerability",
         "criticality": "CRITICAL|HIGH|MEDIUM|LOW",
+        "actively_exploited": true or false,
+        "zero_day": true or false,
         "software_affected": "vendor/product name and version if known",
         "cia_impact": "e.g. Confidentiality: High, Integrity: High, Availability: Low",
-        "access_required": "e.g. Network / No auth required"
+        "access_required": "e.g. Network / No auth required",
+        "source_url": "the URL from the article that reported this CVE"
       }}
     ]
   }},
@@ -454,24 +463,31 @@ Respond ONLY with valid JSON (no markdown fences, no preamble) matching this exa
     "items": [
       {{
         "name": "Threat Actor Name (aliases)",
-        "targets": "who was breached or targeted in the last 48h",
-        "ttps": "key TTPs to watch for, referenced as MITRE ATT&CK IDs where possible",
-        "iocs": ["ip/domain/hash", "..."]
+        "targets": "who was breached or targeted",
+        "ttps": "key TTPs, referenced as MITRE ATT&CK IDs where possible",
+        "iocs": ["ip/domain/hash"],
+        "source_url": "the URL from the article that reported this actor"
       }}
     ]
   }},
   "canada_landscape": {{
-    "summary": "2-3 sentence overview of the Canadian cyber landscape in the last 48h, including any CCCS advisories",
+    "summary": "2-3 sentence overview of the Canadian cyber landscape, including any CCCS advisories",
     "retailers": "any Canadian retail incidents — Loblaws, Canadian Tire, SportChek, Shoppers Drug Mart, etc.; otherwise 'None identified'",
-    "financial": "any Canadian financial incidents — CIBC, RBC, TD, Scotiabank, BMO, etc.; otherwise 'None identified'"
+    "financial": "any Canadian financial incidents — CIBC, RBC, TD, Scotiabank, BMO, etc.; otherwise 'None identified'",
+    "source_urls": ["URLs of any Canada-related articles"]
   }},
   "generated_at": "<current Eastern Time>"
 }}
 
-Only include CVEs and TAs that actually appear in the article list above.
-For Canada section look for: Canada, Canadian, Ontario, Quebec, CCCS, Loblaws, Canadian Tire, CIBC, RBC, TD Bank, Scotiabank, BMO, Shoppers Drug Mart.
-Pay special attention to [CCCS] items — these are official Canadian government cybersecurity advisories.
-Keep each field concise and factual. generated_at must be current Eastern Time in format "YYYY-MM-DD HH:MM ET"."""
+Rules:
+- Only include CVEs and TAs that actually appear in the article list above.
+- Set actively_exploited=true if the article mentions "actively exploited", "in the wild", "0-day", "zero-day", or "PoC available".
+- Set zero_day=true if the article mentions "zero-day", "0-day", or "no patch available".
+- source_url must be copied exactly from the URL field of the matching article.
+- For Canada section look for: Canada, Canadian, Ontario, Quebec, CCCS, Loblaws, Canadian Tire, CIBC, RBC, TD, Scotiabank, BMO.
+- Pay special attention to [CCCS] items — these are official Canadian government cybersecurity advisories.
+- executive_summary must be plain English, no jargon acronyms without explanation, written as if briefing a VP.
+- generated_at must be current Eastern Time in format "YYYY-MM-DD HH:MM ET"."""
 
 
 def build_custom_prompt(user_prompt, full_history):
@@ -570,39 +586,38 @@ def generate_and_save_report(full_history: list):
             }
 
     else:
-        print("Generating DEFAULT 48h report...", file=sys.stderr)
-        recent_entries = get_48h_entries(full_history)
-        print(f"  {len(recent_entries)} articles in last 48h.", file=sys.stderr)
-        prompt = build_default_prompt(recent_entries)
-        response_text = call_anthropic(prompt)
-
-        if response_text is None:
-            report = {
-                "ai_enabled":   True,
-                "generated_at": now_et,
-                "error":        "Anthropic API unavailable",
-            }
-        else:
-            # Try to parse JSON
+        def parse_ai_response(response_text, now_et):
+            if response_text is None:
+                return {"ai_enabled": True, "generated_at": now_et, "error": "Anthropic API unavailable"}
             try:
-                # Strip any accidental markdown fences
                 clean = response_text.strip()
                 if clean.startswith("```"):
                     clean = "\n".join(clean.split("\n")[1:])
                 if clean.endswith("```"):
                     clean = "\n".join(clean.split("\n")[:-1])
-                report = json.loads(clean)
-                report["ai_enabled"] = True
-                if "generated_at" not in report:
-                    report["generated_at"] = now_et
+                r = json.loads(clean)
+                r["ai_enabled"] = True
+                if "generated_at" not in r:
+                    r["generated_at"] = now_et
+                return r
             except json.JSONDecodeError as e:
-                print(f"JSON parse error on AI response: {e}", file=sys.stderr)
-                # Fall back: store raw text so frontend can display it
-                report = {
-                    "ai_enabled":      True,
-                    "generated_at":    now_et,
-                    "custom_response": response_text,
-                }
+                print(f"JSON parse error: {e}", file=sys.stderr)
+                return {"ai_enabled": True, "generated_at": now_et, "custom_response": response_text}
+
+        # 48h report
+        print("Generating 48h report...", file=sys.stderr)
+        entries_48h = get_48h_entries(full_history)
+        print(f"  {len(entries_48h)} articles in last 48h.", file=sys.stderr)
+        report = parse_ai_response(call_anthropic(build_default_prompt(entries_48h, "48h")), now_et)
+        report["window"] = "48h"
+
+        # 2-week report
+        print("Generating 2-week report...", file=sys.stderr)
+        entries_2w = get_2week_entries(full_history)
+        print(f"  {len(entries_2w)} articles in last 2 weeks.", file=sys.stderr)
+        report_2w = parse_ai_response(call_anthropic(build_default_prompt(entries_2w, "2 weeks")), now_et)
+        report_2w["window"] = "2w"
+        report["report_2w"] = report_2w
 
     with open(REPORT_FILE, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
