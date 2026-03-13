@@ -1,18 +1,29 @@
 {
-  "executive_summary": "Two Chrome zero-day vulnerabilities (CVE-2026-2441 and one unnamed) were actively exploited in attacks last year, with Google patching them on March 13. Iranian threat actors launched a destructive wiper attack against medical device manufacturer Stryker, disrupting manufacturing and shipping operations globally. Canadian telecommunications giant Telus Digital confirmed a massive data breach after threat actor ShinyHunters claimed to have stolen 1 petabyte of data from Salesforce Experience Cloud sites. A critical n8n workflow automation flaw (CVE-2025-68613) is under active exploitation with 24,700 instances still exposed. Canadian grocer Loblaws also suffered a data breach exposing customer information after hackers accessed their IT network through a SonicWall vulnerability.",
+  "executive_summary": "Google has patched two Chrome zero-day vulnerabilities (CVE-2026-3909 and CVE-2026-3910) actively exploited in the wild to run malicious code\u2014update immediately. Canadian telecom Telus Digital suffered a massive breach with threat actor ShinyHunters claiming 1 petabyte of data stolen via Salesforce misconfiguration; Canadian grocer Loblaws also disclosed a breach exposing customer information. Iran-linked hackers are escalating attacks: the Handala group wiped data on 200,000 devices at U.S. medical manufacturer Stryker, and multiple Iranian groups are running phishing campaigns exploiting war-related social engineering. CISA added two Chrome zero-days and an n8n workflow automation flaw (CVE-2025-68613) to its actively exploited list.",
   "vulnerabilities": {
     "count": 12,
     "items": [
       {
-        "id": "CVE-2026-2441",
-        "description": "Chrome browser zero-day vulnerability actively exploited in attacks",
+        "id": "CVE-2026-3909",
+        "description": "Chrome vulnerability in Skia graphics library exploited in the wild",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": true,
-        "software_affected": "Google Chrome",
+        "software_affected": "Google Chrome (version unspecified)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / User interaction required",
-        "source_url": "https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html"
+        "access_required": "User interaction (visiting malicious page)",
+        "source_url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html"
+      },
+      {
+        "id": "CVE-2026-3910",
+        "description": "Chrome vulnerability in V8 JavaScript engine exploited in the wild",
+        "criticality": "CRITICAL",
+        "actively_exploited": true,
+        "zero_day": true,
+        "software_affected": "Google Chrome (version unspecified)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "User interaction (visiting malicious page)",
+        "source_url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html"
       },
       {
         "id": "CVE-2025-68613",
@@ -22,117 +33,106 @@
         "zero_day": false,
         "software_affected": "n8n workflow automation platform",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / No authentication required",
+        "access_required": "Network / No authentication required (zero-click)",
         "source_url": "https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html"
       },
       {
-        "id": "CVE-2025-59718",
-        "description": "Zero-day vulnerability exploited in attacks last year",
-        "criticality": "HIGH",
-        "actively_exploited": true,
-        "zero_day": true,
-        "software_affected": "Unknown vendor/product",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / Authentication may be required",
-        "source_url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/"
-      },
-      {
-        "id": "CVE-2026-24858",
-        "description": "Zero-day vulnerability exploited in attacks last year",
-        "criticality": "HIGH",
-        "actively_exploited": true,
-        "zero_day": true,
-        "software_affected": "Unknown vendor/product",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / Authentication may be required",
-        "source_url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/"
-      },
-      {
-        "id": "CVE-2024-40711",
-        "description": "Veeam Backup & Replication RCE vulnerability previously exploited by Akira ransomware",
-        "criticality": "CRITICAL",
-        "actively_exploited": false,
-        "zero_day": false,
-        "software_affected": "Veeam Backup & Replication",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html"
-      },
-      {
         "id": "CVE-2026-21666",
-        "description": "Veeam Backup & Replication RCE vulnerability requiring immediate patching",
+        "description": "Veeam Backup & Replication RCE vulnerability",
         "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "Veeam Backup & Replication",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
+        "access_required": "Network access",
         "source_url": "https://socradar.io/blog/veeam-backup-replication-cve-2026-21666/"
       },
       {
-        "id": "CVE-2024-23222",
-        "description": "Apple iOS WebKit vulnerability exploited by Coruna exploit kit",
+        "id": "CVE-2024-40711",
+        "description": "Veeam vulnerability previously exploited by Akira ransomware",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Apple iOS 15.8.6 and earlier",
+        "software_affected": "Veeam Backup & Replication",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network access",
+        "source_url": "https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html"
+      },
+      {
+        "id": "CVE-2026-2441",
+        "description": "Chrome vulnerability patched in recent security update",
+        "criticality": "HIGH",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Google Chrome",
+        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
+        "access_required": "User interaction",
+        "source_url": "https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html"
+      },
+      {
+        "id": "CVE-2024-23222",
+        "description": "Apple WebKit vulnerability in older iOS versions exploited by Coruna exploit kit",
+        "criticality": "HIGH",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Apple iOS 15.8.7 and earlier",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / User interaction required",
+        "access_required": "User interaction (visiting malicious website)",
         "source_url": "https://cybersecuritynews.com/apple-released-emergency-updates/"
       },
       {
         "id": "CVE-2023-41974",
-        "description": "Apple iOS vulnerability exploited by Coruna exploit kit",
+        "description": "Apple vulnerability in older iOS versions exploited by Coruna exploit kit",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Apple iOS 15.8.6 and earlier",
+        "software_affected": "Apple iOS 15.8.7 and earlier",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / User interaction required",
+        "access_required": "User interaction",
         "source_url": "https://cybersecuritynews.com/apple-released-emergency-updates/"
       },
       {
         "id": "CVE-2023-43000",
-        "description": "Apple iOS vulnerability exploited by Coruna exploit kit",
+        "description": "Apple vulnerability in older iOS versions exploited by Coruna exploit kit",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Apple iOS 15.8.6 and earlier",
+        "software_affected": "Apple iOS 15.8.7 and earlier",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / User interaction required",
+        "access_required": "User interaction",
         "source_url": "https://cybersecuritynews.com/apple-released-emergency-updates/"
-      },
-      {
-        "id": "CVE-2019-0604",
-        "description": "SharePoint RCE vulnerability used by Handala Hack threat group",
-        "criticality": "CRITICAL",
-        "actively_exploited": true,
-        "zero_day": false,
-        "software_affected": "Microsoft SharePoint",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://socradar.io/blog/dark-web-profile-handala-hack/"
       },
       {
         "id": "CVE-2025-26399",
         "description": "SolarWinds Web Help Desk deserialization vulnerability enabling command execution",
-        "criticality": "CRITICAL",
+        "criticality": "HIGH",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "SolarWinds Web Help Desk",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication may be required",
+        "access_required": "Network access",
         "source_url": "https://cybersecuritynews.com/solarwinds-web-help-desk-deserialization-vulnerability/"
       },
       {
+        "id": "CVE-2019-0604",
+        "description": "SharePoint vulnerability used by Handala Hack Iranian threat group",
+        "criticality": "HIGH",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Microsoft SharePoint",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Authenticated user",
+        "source_url": "https://socradar.io/blog/dark-web-profile-handala-hack/"
+      },
+      {
         "id": "CVE-2025-55182",
-        "description": "Package manager vulnerability highlighted in ENISA DevSecOps guidance",
+        "description": "Package manager vulnerability highlighted in ENISA DevSecOps advisory",
         "criticality": "MEDIUM",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "Various package managers",
         "cia_impact": "Confidentiality: Medium, Integrity: High, Availability: Low",
-        "access_required": "Local / Developer access required",
+        "access_required": "Supply chain compromise",
         "source_url": "https://securityaffairs.com/189333/security/enisa-technical-advisory-on-secure-package-managers-essential-devsecops-guidance.html"
       }
     ]
@@ -140,80 +140,88 @@
   "threat_actors": {
     "items": [
       {
-        "name": "Handala Hack (Iran-linked)",
-        "targets": "Stryker medical device manufacturer, wiped 200K devices",
-        "ttps": "T1485 Data Destruction, T1490 Inhibit System Recovery, T1566 Phishing, T1190 Exploit Public-Facing Application (CVE-2019-0604 SharePoint)",
-        "iocs": [],
-        "source_url": "https://thecyberexpress.com/who-is-handala-hackers-in-stryker-cyberattack/"
-      },
-      {
         "name": "ShinyHunters",
-        "targets": "Telus Digital (1 petabyte data theft via Salesforce Experience Cloud)",
-        "ttps": "T1190 Exploit Public-Facing Application, T1530 Data from Cloud Storage Object",
+        "targets": "Telus Digital (Canadian telecom), Salesforce Experience Cloud sites",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1530 (Data from Cloud Storage Object), T1567 (Exfiltration Over Web Service) - exploited Salesforce misconfigurations to exfiltrate 1 petabyte of data",
         "iocs": [],
         "source_url": "https://cyberinsider.com/telus-digital-confirms-security-incident-as-shinyhunters-claims-1pb-data-theft/"
       },
       {
+        "name": "Handala Hack (Iran-linked)",
+        "targets": "Stryker (U.S. medical device manufacturer), Israeli security institutes",
+        "ttps": "T1486 (Data Encrypted for Impact), T1485 (Data Destruction), T1566 (Phishing), T1190 (Exploit Public-Facing Application) - wiper attacks destroying data on 200,000 devices, exploits CVE-2019-0604 SharePoint vulnerability",
+        "iocs": [],
+        "source_url": "https://thecyberexpress.com/who-is-handala-hackers-in-stryker-cyberattack/"
+      },
+      {
+        "name": "TA453 (Iran-linked APT)",
+        "targets": "U.S. and allied targets",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1566.002 (Phishing: Spearphishing Link), T1204 (User Execution) - war-themed phishing campaigns exploiting Iran conflict",
+        "iocs": [],
+        "source_url": "https://gbhackers.com/iran-war-bait/"
+      },
+      {
+        "name": "TA473 (Iran-linked APT)",
+        "targets": "U.S. and allied targets",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1566.002 (Phishing: Spearphishing Link), T1204 (User Execution) - war-themed phishing campaigns exploiting Iran conflict",
+        "iocs": [],
+        "source_url": "https://gbhackers.com/iran-war-bait/"
+      },
+      {
         "name": "Storm-2561",
-        "targets": "Enterprise VPN users via SEO poisoning and fake VPN clients",
-        "ttps": "T1566 Phishing, T1189 Drive-by Compromise, T1036 Masquerading",
+        "targets": "Enterprise VPN users",
+        "ttps": "T1598.003 (Phishing for Information: Spearphishing via Service), T1189 (Drive-by Compromise), T1027 (Obfuscated Files or Information) - SEO poisoning to distribute fake VPN clients",
         "iocs": [],
         "source_url": "https://www.csoonline.com/article/4144783/storm-2561-targets-enterprise-vpn-users-with-seo-poisoning-fake-clients.html"
       },
       {
-        "name": "TA453 (Iran-linked)",
-        "targets": "US and other targets using Iran war-themed phishing bait",
-        "ttps": "T1566.001 Phishing: Spearphishing Attachment, T1204 User Execution",
-        "iocs": [],
-        "source_url": "https://gbhackers.com/iran-war-bait/"
-      },
-      {
-        "name": "TA473 (Iran-linked)",
-        "targets": "US and other targets using Iran war-themed phishing bait",
-        "ttps": "T1566.001 Phishing: Spearphishing Attachment, T1204 User Execution",
-        "iocs": [],
-        "source_url": "https://gbhackers.com/iran-war-bait/"
-      },
-      {
         "name": "Akira Ransomware",
-        "targets": "Veeam Backup & Replication users, Wills Point Chevrolet",
-        "ttps": "T1486 Data Encrypted for Impact, T1190 Exploit Public-Facing Application (CVE-2024-40711)",
+        "targets": "Wills Point Chevrolet, Veeam backup infrastructure",
+        "ttps": "T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application) - exploits CVE-2024-40711 Veeam vulnerability",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/akira"
       },
       {
         "name": "Qilin Ransomware",
-        "targets": "Alarmco, TDS Construction Group, Silvon Software Group",
-        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery",
+        "targets": "Alarmco",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service) - double extortion ransomware",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/qilin"
       },
       {
-        "name": "LockBit5",
+        "name": "LockBit5 Ransomware",
         "targets": "yaomazi.com",
-        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service) - ransomware operations",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/lockbit5"
       },
       {
         "name": "Lazarus Group (North Korea)",
-        "targets": "Frontend developers via fake job interview scams",
-        "ttps": "T1566.001 Phishing: Spearphishing Attachment, T1204.002 User Execution: Malicious File, T1059 Command and Scripting Interpreter",
+        "targets": "Frontend developers, cryptocurrency platforms",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1059 (Command and Scripting Interpreter) - Contagious Interview job scam targeting developers",
         "iocs": [],
         "source_url": "https://www.reddit.com/r/cybersecurity/comments/1rsrnpm/psa_technical_analysis_of_a_contagious_interview/"
+      },
+      {
+        "name": "Unknown (Russia-linked)",
+        "targets": "Canadian governments, businesses, and military",
+        "ttps": "Not specified in articles - general targeting warning from Canadian cyber spy agency",
+        "iocs": [],
+        "source_url": "https://www.reddit.com/r/canada/comments/1rs95pv/russian_hackers_targeting_canadas_governments/"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "Canadian telecommunications giant Telus Digital confirmed a massive data breach after ShinyHunters claimed to steal 1 petabyte of customer data from Salesforce systems. Loblaws suffered a separate breach exposing customer information after attackers exploited a SonicWall vulnerability to access their IT network. Reddit discussions warned that Russian hackers are actively targeting Canadian governments, businesses, and military infrastructure.",
-    "retailers": "Loblaws confirmed data breach exposing sensitive customer information after hackers accessed IT network via SonicWall vulnerability",
+    "summary": "Canada faces active targeting by Russian state-sponsored hackers against government, business, and military infrastructure according to Canadian cyber intelligence warnings. Two major Canadian data breaches were disclosed: Telus Digital suffered a massive breach with 1 petabyte of customer data allegedly stolen by ShinyHunters via Salesforce misconfiguration, and grocery giant Loblaws disclosed a breach exposing customer information following a SonicWall VPN compromise.",
+    "retailers": "Loblaws (Canadian grocery chain) disclosed data breach exposing sensitive customer information via compromised IT network infrastructure. Telus Digital (Canadian telecom/BPO) suffered massive breach with ShinyHunters claiming 1 petabyte data theft including customer records from Salesforce.",
     "financial": "None identified",
     "source_urls": [
-      "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
+      "https://www.reddit.com/r/canada/comments/1rs95pv/russian_hackers_targeting_canadas_governments/",
       "https://cyberinsider.com/telus-digital-confirms-security-incident-as-shinyhunters-claims-1pb-data-theft/",
+      "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
       "https://cybersecuritynews.com/loblaw-data-breach/",
       "https://cyberinsider.com/loblaw-suffers-data-breach-exposing-sensitive-customer-information/",
-      "https://www.reddit.com/r/canada/comments/1rs95pv/russian_hackers_targeting_canadas_governments/",
+      "https://databreaches.net/2026/03/12/telus-digital-confirms-breach-after-shinyhunters-claims-1-petabyte-data-theft/?pk_campaign=feed&pk_kwd=telus-digital-confirms-breach-after-shinyhunters-claims-1-petabyte-data-theft",
       "https://socradar.io/blog/telus-1-petabyte-breach-third-party-risk/"
     ]
   },
@@ -222,8 +230,8 @@
   "window": "48h",
   "report_2w": {
     "ai_enabled": true,
-    "generated_at": "2026-03-13 13:01 ET",
-    "custom_response": "```json\n{\n  \"executive_summary\": \"A massive 1 petabyte data breach at Telus Digital (Canadian telco subsidiary) by ShinyHunters was confirmed March 13, affecting Salesforce Experience Cloud sites. Iran-linked group Handala Hack claimed a destructive wiper attack on US medical device maker Stryker, disrupting manufacturing and shipping globally. Google disclosed 90 zero-days were exploited in 2025, while CISA added an actively exploited n8n workflow automation RCE flaw to its KEV catalog. Canadian grocer Loblaws also suffered a breach exposing customer data via SonicWall infrastructure compromise. Russian state hackers continue targeting Canadian governments, businesses, and military per public warnings.\",\n  \"vulnerabilities\": {\n    \"count\": 17,\n    \"items\": [\n      {\n        \"id\": \"CVE-2026-2441\",\n        \"description\": \"Google Chrome actively exploited vulnerability\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Google Chrome\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"User interaction (browse to malicious site)\",\n        \"source_url\": \"https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html\"\n      },\n      {\n        \"id\": \"CVE-2025-59718\",\n        \"description\": \"Zero-day vulnerability exploited in attacks\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": true,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/\"\n      },\n      {\n        \"id\": \"CVE-2026-24858\",\n        \"description\": \"Zero-day vulnerability exploited in attacks\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": true,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/\"\n      },\n      {\n        \"id\": \"CVE-2024-40711\",\n        \"description\": \"Veeam Backup & Replication RCE vulnerability previously exploited by Akira ransomware\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Veeam Backup & Replication\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / Authenticated\",\n        \"source_url\": \"https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html\"\n      },\n      {\n        \"id\": \"CVE-2026-21666\",\n        \"description\": \"Veeam Backup & Replication critical RCE vulnerability\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"Veeam Backup & Replication\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / Authenticated\",\n        \"source_url\": \"https://socradar.io/blog/veeam-backup-replication-cve-2026-21666/\"\n      },\n      {\n        \"id\": \"CVE-2025-68613\",\n        \"description\": \"n8n workflow automation RCE vulnerability enabling full server compromise\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"n8n workflow automation platform\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required (zero-click)\",\n        \"source_url\": \"https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html\"\n      },\n      {\n        \"id\": \"CVE-2024-23222\",\n        \"description\": \"Apple iOS vulnerability exploited by Coruna exploit kit\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS 15.8.6 and earlier\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Low\",\n        \"access_required\": \"User interaction (malicious website)\",\n        \"source_url\": \"https://cybersecuritynews.com/apple-released-emergency-updates/\"\n      },\n      {\n        \"id\": \"CVE-2023-41974\",\n        \"description\": \"Apple iOS vulnerability exploited by Coruna exploit kit\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS 15.8.6 and earlier\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Low\",\n        \"access_required\": \"User interaction (malicious website)\",\n        \"source_url\": \"https://cybersecuritynews.com/apple-released-emergency-updates/\"\n      },\n      {\n        \"id\": \"CVE-2023-43000\",\n        \"description\": \"Apple iOS vulnerability exploited by Coruna exploit kit\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS 15.8.6 and earlier\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Low\",\n        \"access_required\": \"User interaction (malicious website)\",\n        \"source_url\": \"https://cybersecuritynews.com/apple-released-emergency-updates/\"\n      },\n      {\n        \"id\": \"CVE-2019-0604\",\n        \"description\": \"SharePoint RCE vulnerability used by Handala Hack group\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Microsoft SharePoint\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / Authenticated\",\n        \"source_url\": \"https://socradar.io/blog/dark-web-profile-handala-hack/\"\n      },\n      {\n        \"id\": \"CVE-2025-26399\",\n        \"description\": \"SolarWinds Web Help Desk deserialization vulnerability enabling command execution\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"SolarWinds Web Help Desk\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / Authenticated\",\n        \"source_url\": \"https://cybersecuritynews.com/solarwinds-web-help-desk-deserialization-vulnerability/\"\n      },\n      {\n        \"id\": \"CVE-2025-55182\",\n        \"description\": \"Package manager vulnerability highlighted in ENISA DevSecOps guidance\",\n        \"criticality\": \"MEDIUM\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"Various package managers\",\n        \"cia_impact\": \"Confidentiality: Medium, Integrity: High, Availability: Low\",\n        \"access_required\": \"Supply chain compromise\",\n        \"source_url\": \"https://securityaffairs.com/189333/security/enisa-technical-advisory-on-secure-package-managers-essential-devsecops-guidance.html\"\n      },\n      {\n        \"id\": \"CVE-2025-8088\",\n        \"description\": \"Nation-state cyberwarfare vulnerability\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/\"\n      },\n      {\n        \"id\": \"CVE-2026-21509\",\n        \"description\": \"Nation-state cyberwarfare vulnerability\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/\"\n      },\n      {\n        \"id\": \"CVE-2026-24423\",\n        \"description\": \"Nation-state cyberwarfare vulnerability\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/\"\n      },\n      {\n        \"id\": \"CVE-2026-22719\",\n        \"description\": \"Nation-state cyberwarfare vulnerability\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown pending disclosure\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/\"\n      },\n      {\n        \"id\": \"CVE-2020-27932\",\n        \"description\": \"Apple iOS legacy vulnerability patched in emergency Coruna response\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS older versions\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"User interaction\",\n        \"source_url\": \"https://securityaffairs.com/189362/security/apple-issues-emergency-fixes-for-coruna-flaws-in-older-ios-versions.html\"\n      }\n    ]\n  },\n  \"threat_actors\": {\n    \"items\": [\n      {\n        \"name\": \"ShinyHunters\",\n        \"targets\": \"Telus Digital (Canadian telecommunications), Salesforce Experience Cloud sites\",\n        \"ttps\": \"T1190 Exploit Public-Facing Application, T1567 Exfiltration Over Web Service (claimed 1 petabyte data theft)\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html\"\n      },\n      {\n        \"name\": \"Handala Hack (Iran-linked)\",\n        \"targets\": \"Stryker medical device manufacturer (US), Israeli security institutes, various Middle East targets\",\n        \"ttps\": \"T1485 Data Destruction (wiper malware), T1566 Phishing, T1190 Exploit Public-Facing Application (CVE-2019-0604 SharePoint), T1586 Compromise Accounts\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.securityweek.com/iran-linked-hacker-attack-on-stryker-disrupted-manufacturing-and-shipping/\"\n      },\n      {\n        \"name\": \"Akira (Ransomware group)\",\n        \"targets\": \"Wills Point Chevrolet, Veeam Backup & Replication users (historically)\",\n        \"ttps\": \"T1486 Data Encrypted for Impact, T1190 Exploit Public-Facing Application (CVE-2024-40711 Veeam)\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.ransomlook.io//group/akira\"\n      },\n      {\n        \"name\": \"Qilin (Ransomware group)\",\n        \"targets\": \"Alarmco, TDS Construction Group, Silvon Software Group\",\n        \"ttps\": \"T1486 Data Encrypted for Impact, T1048 Exfiltration Over Alternative Protocol\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.ransomlook.io//group/qilin\"\n      },\n      {\n        \"name\": \"Storm-2561 (Microsoft tracking)\",\n        \"targets\": \"Enterprise VPN users via SEO poisoning and fake VPN clients\",\n        \"ttps\": \"T1566 Phishing, T1189 Drive-by Compromise (SEO poisoning), T1204 User Execution (fake VPN clients)\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.csoonline.com/article/4144783/storm-2561-targets-enterprise-vpn-users-with-seo-poisoning-fake-clients.html\"\n      },\n      {\n        \"name\": \"Lazarus Group (North Korea)\",\n        \"targets\": \"Frontend developers via fake job interview scams\",\n        \"ttps\": \"T1566.001 Spearphishing Attachment (Contagious Interview campaign), T1204 User Execution\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.reddit.com/r/cybersecurity/comments/1rsrnpm/psa_technical_analysis_of_a_contagious_interview/\"\n      },\n      {\n        \"name\": \"Russian state hackers (APT)\",\n        \"targets\": \"Canadian governments, businesses, and military\",\n        \"ttps\": \"T1566 Phishing, T1078 Valid Accounts, T1190 Exploit Public-Facing Application\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.reddit.com/r/canada/comments/1rs95pv/russian_hackers_targeting_canadas_governments/\"\n      },\n      {\n        \"name\": \"TA453, TA473 (Iran-linked)\",\n        \"targets\": \"Various US and allied targets using Iran war-themed bait\",\n        \"ttps\": \"T1566.001 Spearphishing Attachment, T1204 User Execution (Iran war bait lures)\",\n        \"iocs\": [],\n        \"source_url\": \"https://gbhackers.com/iran-war-bait/\"\n      },\n      {\n        \"name\": \"Lockbit5 (Ransomware group)\",\n        \"targets\": \"yaomazi.com\",\n        \"ttps\": \"T1486 Data Encrypted for Impact\",\n        \"iocs\": [],\n        \"source_url\": \"https://www.ransomlook.io//group/lockbit5\"\n      },\n      {\n        \"name\": \"CL0P/Clop (Ransomware group)\",\n        \"targets\": \"Referenced in historical context ($46M US government theft attempt)\",\n        \"ttps\": \"T1486 Data Encrypted for Impact, T1567 Exfiltration Over Web Service\",\n        \"iocs\": [],\n        \"source_url\": \"https://grahamcluley.com/smashing-security-podcast-458/\"\n      }\n    ]\n  },\n  \"canada_landscape\": {\n    \"summary\": \"Canadian entities faced multiple significant breaches this period. Telus Digital confirmed a massive 1 petabyte breach by ShinyHunters affecting Salesforce infrastructure. Loblaws grocery chain suffered a data breach exposing customer information via compromised So",
+    "generated_at": "2026-03-13 14:14 ET",
+    "custom_response": "```json\n{\n  \"executive_summary\": \"CISA has flagged three actively exploited vulnerabilities in Ivanti Endpoint Manager, SolarWinds, and Omnissa Workspace One, requiring immediate patching by federal agencies and critical infrastructure. The notorious ShinyHunters threat actor is conducting a massive Salesforce campaign targeting hundreds of organizations using a weaponized AuraInspector tool to steal sensitive customer data. FortiGate devices are being exploited via two new CVEs (CVE-2025-59718, CVE-2026-24858) allowing attackers deep Active Directory compromise. Iranian state-sponsored group MuddyWater deployed new 'Dindoor' backdoor malware against U.S. airports, banks, and software companies. Multiple phishing campaigns are abusing AWS, Signal, WhatsApp, and even the .arpa infrastructure domain to bypass detection.\",\n  \"vulnerabilities\": {\n    \"count\": 20,\n    \"items\": [\n      {\n        \"id\": \"CVE-2026-1603\",\n        \"description\": \"Ivanti Endpoint Manager authentication bypass vulnerability\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": true,\n        \"software_affected\": \"Ivanti Endpoint Manager (EPM)\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html\"\n      },\n      {\n        \"id\": \"CVE-2025-26399\",\n        \"description\": \"SolarWinds vulnerability actively exploited in the wild\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"SolarWinds\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Medium\",\n        \"access_required\": \"Network / Authentication required\",\n        \"source_url\": \"https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html\"\n      },\n      {\n        \"id\": \"CVE-2021-22054\",\n        \"description\": \"Omnissa Workspace One vulnerability actively exploited\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Omnissa Workspace One (formerly VMware)\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Medium\",\n        \"access_required\": \"Network / Authentication required\",\n        \"source_url\": \"https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html\"\n      },\n      {\n        \"id\": \"CVE-2025-59718\",\n        \"description\": \"FortiGate authentication bypass allowing AD compromise\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Fortinet FortiGate\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://www.sentinelone.com/blog/fortigate-edge-intrusions/\"\n      },\n      {\n        \"id\": \"CVE-2026-24858\",\n        \"description\": \"FortiGate vulnerability enabling deep network access and AD compromise\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Fortinet FortiGate\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://www.sentinelone.com/blog/fortigate-edge-intrusions/\"\n      },\n      {\n        \"id\": \"CVE-2023-32434\",\n        \"description\": \"iPhone exploit used by Russian intelligence services\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"Local / User interaction required\",\n        \"source_url\": \"https://cybersecuritynews.com/iphone-exploit-toolkit-and-russian-spies/\"\n      },\n      {\n        \"id\": \"CVE-2023-38606\",\n        \"description\": \"iPhone vulnerability exploited in Russian spy toolkit\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple iOS\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"Local / User interaction required\",\n        \"source_url\": \"https://cybersecuritynews.com/iphone-exploit-toolkit-and-russian-spies/\"\n      },\n      {\n        \"id\": \"CVE-2026-20127\",\n        \"description\": \"Cisco Catalyst SD-WAN vulnerability now widely exploited\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Cisco Catalyst SD-WAN\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Medium\",\n        \"access_required\": \"Network / Authentication required\",\n        \"source_url\": \"https://www.securityweek.com/recent-cisco-catalyst-sd-wan-vulnerability-now-widely-exploited/\"\n      },\n      {\n        \"id\": \"CVE-2021-30952\",\n        \"description\": \"Apple macOS/iOS vulnerability exploited in attacks\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple macOS and iOS\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Medium\",\n        \"access_required\": \"Local / User interaction required\",\n        \"source_url\": \"https://cybersecuritynews.com/macos-and-ios-vulnerabilities-exploited/\"\n      },\n      {\n        \"id\": \"CVE-2023-41974\",\n        \"description\": \"Apple macOS/iOS vulnerability exploited in attacks\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple macOS and iOS\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Medium\",\n        \"access_required\": \"Local / User interaction required\",\n        \"source_url\": \"https://cybersecuritynews.com/macos-and-ios-vulnerabilities-exploited/\"\n      },\n      {\n        \"id\": \"CVE-2023-43000\",\n        \"description\": \"Apple macOS/iOS vulnerability exploited in attacks\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Apple macOS and iOS\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: Medium\",\n        \"access_required\": \"Local / User interaction required\",\n        \"source_url\": \"https://cybersecuritynews.com/macos-and-ios-vulnerabilities-exploited/\"\n      },\n      {\n        \"id\": \"CVE-2017-7921\",\n        \"description\": \"Hikvision IP camera vulnerability exploited by Iranian actors\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Hikvision IP Cameras (multiple models)\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://thehackernews.com/2026/03/hikvision-and-rockwell-automation-cvss.html\"\n      },\n      {\n        \"id\": \"CVE-2021-22681\",\n        \"description\": \"Rockwell Automation vulnerability added to CISA KEV\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Rockwell Automation industrial control systems\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / Authentication required\",\n        \"source_url\": \"https://securityaffairs.com/189005/security/u-s-cisa-adds-apple-rockwell-and-hikvision-flaws-to-its-known-exploited-vulnerabilities-catalog.html\"\n      },\n      {\n        \"id\": \"CVE-2026-21533\",\n        \"description\": \"Windows Remote Desktop Services zero-day flaw allegedly being sold\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": false,\n        \"zero_day\": true,\n        \"software_affected\": \"Microsoft Windows Remote Desktop Services\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: High, Availability: High\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://cybersecuritynews.com/windows-remote-desktop-services-0-day/\"\n      },\n      {\n        \"id\": \"CVE-2021-33044\",\n        \"description\": \"Hikvision IP camera vulnerability used by Iranian actors for intelligence\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Hikvision IP Cameras\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://securityaffairs.com/189069/cyber-warfare-2/iran-linked-hackers-target-ip-cameras-across-israel-and-gulf-states-for-military-intelligence.html\"\n      },\n      {\n        \"id\": \"CVE-2021-33045\",\n        \"description\": \"Hikvision IP camera vulnerability exploited for military intelligence\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Hikvision IP Cameras\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://securityaffairs.com/189069/cyber-warfare-2/iran-linked-hackers-target-ip-cameras-across-israel-and-gulf-states-for-military-intelligence.html\"\n      },\n      {\n        \"id\": \"CVE-2021-36260\",\n        \"description\": \"Hikvision camera vulnerability exploited by Iranian threat actors\",\n        \"criticality\": \"HIGH\",\n        \"actively_exploited\": true,\n        \"zero_day\": false,\n        \"software_affected\": \"Hikvision IP Cameras\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Medium, Availability: Low\",\n        \"access_required\": \"Network / No authentication required\",\n        \"source_url\": \"https://securityaffairs.com/189069/cyber-warfare-2/iran-linked-hackers-target-ip-cameras-across-israel-and-gulf-states-for-military-intelligence.html\"\n      },\n      {\n        \"id\": \"CVE-2026-21385\",\n        \"description\": \"Vulnerability referenced in Check Point threat intelligence report\",\n        \"criticality\": \"MEDIUM\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://research.checkpoint.com/2026/9th-march-threat-intelligence-report/\"\n      },\n      {\n        \"id\": \"CVE-2026-22719\",\n        \"description\": \"Vulnerability referenced in Check Point threat intelligence report\",\n        \"criticality\": \"MEDIUM\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"Unknown\",\n        \"cia_impact\": \"Unknown\",\n        \"access_required\": \"Unknown\",\n        \"source_url\": \"https://research.checkpoint.com/2026/9th-march-threat-intelligence-report/\"\n      },\n      {\n        \"id\": \"CVE-2026-27944\",\n        \"description\": \"Critical Nginx UI flaw exposes full server backups\",\n        \"criticality\": \"CRITICAL\",\n        \"actively_exploited\": false,\n        \"zero_day\": false,\n        \"software_affected\": \"Nginx UI\",\n        \"cia_impact\": \"Confidentiality: High, Integrity: Low, Availability: Low\",\n        \"access_required\": \"Network / Authentication required\",\n        \"source_url\": \"https://securityaffairs.com/189123/security/critical-nginx-ui-flaw-cve-2026-27944-exposes-server-backups.html\"\n      }\n    ]\n  },\n  \"threat_actors\": {\n    \"items\": [\n      {\n        \"name\": \"ShinyHunters\",\n        \"targets\": \"Hundreds of Salesforce customers globally in data theft campaign targeting Experience Cloud instances\",\n        \"ttps\": \"T1190 (Exploit Public-Facing Application) - Modified AuraInspector tool for mass-scanning Salesforce environments; T1530 (Data from Cloud Storage Object) - Harvesting customer data from Salesforce systems\",\n        \"iocs\": [],\n        \"source_url\": \"https://thehackernews.com/2026/03/threat-actors-mass-scan-salesforce.html\"\n      },\n      {\n        \"name\": \"MuddyWater (Iranian APT)\",\n        \"targets\": \"U.S. airport, bank, and software company networks\",\n        \"ttps\": \"T1566 (Phishing); T1059 (Command and Scripting Interpreter) - Dindoor backdoor malware deployment; T1071 (Application Layer Protocol) - C2 communications\",\n        \"iocs\": [],\n        \"source_url\": \"https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html\"\n      },\n      {\n        \"name\": \"Lazarus Group (North Korean APT)\",\n        \"targets\": \"AllSecure CEO via fake LinkedIn interview social engineering\",\n        \"ttps\": \"T1566.001 (Phishing: Spearphishing Attachment); T1204.002 (User Execution: Malicious File) - Fake job interview lures\",\n        \"iocs\": [],\n        \"source_url\": \"https://hackread.com/fake-linkedin-interview-lazarus-hackers-allsecure-ceo/\"\n      },\n      {\n        \"name\": \"APT28 (Fancy Bear, Russian GRU)\",\n        \"targets\": \"Ukrainian military forces in long-term espionage operations\",\n        \"ttps\": \"T1566 (Phishing); T1059 (Command and Scripting Interpreter) - Custom malware toolkit revival; T1068 (Exploitation for Privilege Escalation)\",\n        \"iocs\": [],\n        \"source_url\": \"https://securityaffairs.com/189230/apt/apt28-conducts-long-term-espionage-on-ukrainian-forces-using-custom-malware.html\"\n      },\n      {\n        \"name\": \"Russian State-Sponsored Hackers\",\n        \"targets\": \"Signal and WhatsApp accounts of government officials globally\",\n        \"ttps\": \"T1566.002 (Phishing: Spearphishing Link); T1111 (Two-Factor Authentication Interception) - Targeting encrypted messaging apps\",\n        \"iocs\": [],\n        \"source_url\": \"https://securityaffairs.",
     "window": "2w"
   }
 }

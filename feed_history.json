@@ -304,9 +304,23 @@
     "date": "2026-03-13",
     "terms": [
       "CVE-2026-2441",
+      "CVE-2026-3909",
+      "CVE-2026-3910",
+      "cve-2026-3909",
+      "cve-2026-3910",
       "cve-2026-2441"
     ],
     "inline_links": [
+      {
+        "term": "CVE-2026-3909",
+        "text": "CVE-2026-3909",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-3909"
+      },
+      {
+        "term": "CVE-2026-3910",
+        "text": "CVE-2026-3910",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-3910"
+      },
       {
         "term": "CVE-2026-2441",
         "text": "tracked as CVE-2026-2441",
@@ -360,7 +374,7 @@
     "source_type": "rss"
   },
   {
-    "title": "Fake Temu Coin airdrop uses ClickFix trick to install stealthy malware",
+    "title": "Attackers impersonate Temu in ClickFix $Temu airdrop scam",
     "link": "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-temu-coin-airdrop-uses-clickfix-trick-to-install-stealthy-malware",
     "feed_url": "https://blog.malwarebytes.com/feed/",
     "date": "2026-03-13",
@@ -1183,6 +1197,133 @@
     "terms": [
       "Canada",
       "Iran"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
+    "link": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
+    "feed_url": "https://thehackernews.com/feeds/posts/default",
+    "date": "2026-03-13",
+    "terms": [
+      "CVE-2026-3909"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/03/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "feed_url": "https://us-cert.cisa.gov/ncas/current-activity.xml",
+    "date": "2026-03-13",
+    "terms": [
+      "CVE-2026-3909",
+      "CVE-2026-3910",
+      "cve-2026-3909",
+      "cve-2026-3910"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2026-3909",
+        "text": "CVE-2026-3909",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-3909"
+      },
+      {
+        "term": "CVE-2026-3910",
+        "text": "CVE-2026-3910",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-3910"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Initial access techniques used by Iran-based threat actors",
+    "link": "https://www.sophos.com/en-us/blog/initial-access-techniques-used-by-iran-based-threat-actors",
+    "feed_url": "https://news.sophos.com/feed/",
+    "date": "2026-03-13",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Google patches two Chrome zero-days under active attack. Update now",
+    "link": "https://www.malwarebytes.com/blog/news/2026/03/google-patches-two-chrome-zero-days-under-active-attack-update-now",
+    "feed_url": "https://blog.malwarebytes.com/feed/",
+    "date": "2026-03-13",
+    "terms": [
+      "CVE-2026-3909",
+      "CVE-2026-3910"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Two Newly Discovered Chrome Zero-Days Exploited in the Wild to Run Malicious Code",
+    "link": "https://gbhackers.com/two-newly-discovered-chrome-zero-days-exploited/",
+    "feed_url": "https://gbhackers.com/feed",
+    "date": "2026-03-13",
+    "terms": [
+      "CVE-2026-3909",
+      "CVE-2026-3910"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Chrome Zero-Day Vulnerabilities Actively Exploited in the Wild to Execute Malicious Code",
+    "link": "https://cybersecuritynews.com/chrome-zero-day-vulnerabilities-actively-exploited/",
+    "feed_url": "https://cybersecuritynews.com/feed",
+    "date": "2026-03-13",
+    "terms": [
+      "CVE-2026-3909",
+      "CVE-2026-3910"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "[r/canada] China to impose anti-dumping duties on halogenated butyl rubber imports from Japan, Canada: MOFCOM",
+    "link": "https://www.reddit.com/r/canada/comments/1rstsg8/china_to_impose_antidumping_duties_on_halogenated/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rstsg8/china_to_impose_antidumping_duties_on_halogenated/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] How Canada\u2019s once great immigration system is being weakened even further",
+    "link": "https://www.reddit.com/r/canada/comments/1rstqnh/how_canadas_once_great_immigration_system_is/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rstqnh/how_canadas_once_great_immigration_system_is/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Trump administration expands trade investigations to Canada, dozens of other countries",
+    "link": "https://www.reddit.com/r/canada/comments/1rstk3r/trump_administration_expands_trade_investigations/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rstk3r/trump_administration_expands_trade_investigations/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Washington adds Canada to expanded list of countries facing trade investigations",
+    "link": "https://www.reddit.com/r/canada/comments/1rstjuc/washington_adds_canada_to_expanded_list_of/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rstjuc/washington_adds_canada_to_expanded_list_of/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada"
     ],
     "inline_links": [],
     "source_type": "reddit"
