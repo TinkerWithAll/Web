@@ -2,13 +2,12 @@
 """
 scraper.py
 - Parses 130+ security RSS feeds
-- Scrapes Reddit (r/netsec, r/cybersecurity, r/canada_crime, r/Canada)
-- Scrapes Mastodon / InfoSec.exchange public timeline
-- Scrapes Canadian Centre for Cyber Security (CCCS) advisories
+- Scrapes Reddit, Mastodon/InfoSec.exchange, CCCS advisories
 - Maintains a rolling 30-day history in feed_history.json
-- Generates a timestamped CSV (cleans up old ones, keeps monthly archives)
+- ONE CSV per calendar month (results_YYYYMM.csv) — appends new rows each run
+- Tracks per-feed article counts in feed_stats.json
 - Calls Anthropic API server-side to produce report.json
-- Accepts an optional CUSTOM_PROMPT env var for on-demand analysis
+- Accepts CUSTOM_PROMPT env var for on-demand analysis
 - Updates meta.json with run timestamp
 
 API keys are read from environment variables (GitHub Secrets).
@@ -44,9 +43,11 @@ ssl._create_default_https_context = ssl._create_unverified_context
 socket.setdefaulttimeout(300)
 
 # ── Configuration ─────────────────────────────────────────────────
-HISTORY_FILE   = "feed_history.json"
-META_FILE      = "meta.json"
-REPORT_FILE    = "report.json"
+HISTORY_FILE      = "feed_history.json"
+META_FILE         = "meta.json"
+REPORT_FILE       = "report.json"
+FEED_STATS_FILE   = "feed_stats.json"
+ARTICLE_TREND_FILE= "article_trend.json"
 HISTORY_DAYS   = 30
 REPORT_HOURS   = 48     # window for the AI report
 USE_CISA_CVES  = True
@@ -97,51 +98,88 @@ print(f"AI reports: {'ENABLED' if AI_REPORTS_ENABLED else 'DISABLED'}", file=sys
 # CSV CLEANUP — keep only the first-of-month CSV archives
 # plus the current run's file. Delete everything else.
 # ─────────────────────────────────────────────────────────────────
-def cleanup_csv_files(current_csv: str):
+# ─────────────────────────────────────────────────────────────────
+# MONTHLY CSV — one file per calendar month, append-mode
+# Filename: results_YYYYMM.csv  e.g. results_202603.csv
+# Columns: Date, Source, Feed/Subreddit, Title, Link, Matched Terms
+# ─────────────────────────────────────────────────────────────────
+CSV_COLUMNS = ["Date", "Source", "Feed", "Title", "Link", "Matched Terms"]
+
+def get_monthly_csv_path(dt: datetime = None) -> str:
+    """Return the CSV path for the given month (default: current month ET)."""
+    if dt is None:
+        dt = datetime.now(timezone.utc).astimezone(EASTERN_TZ)
+    return f"results_{dt.strftime('%Y%m')}.csv"
+
+
+def load_existing_links_from_csv(csv_path: str) -> set:
+    """Load all links already in the monthly CSV to avoid duplicates."""
+    links = set()
+    if not os.path.exists(csv_path):
+        return links
+    try:
+        with open(csv_path, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get("Link"):
+                    links.add(row["Link"])
+    except Exception as e:
+        print(f"  Could not read existing CSV {csv_path}: {e}", file=sys.stderr)
+    return links
+
+
+def append_to_monthly_csv(records: list, csv_path: str) -> int:
     """
-    Delete old results_*.csv files.
-    Rules:
-      - Always keep `current_csv` (today's run).
-      - For each calendar month, keep only the CSV whose date is the 1st.
-        If no file exists for the 1st, keep the earliest file of that month.
-      - Delete everything else.
+    Append new records to the monthly CSV.
+    Creates the file with headers if it doesn't exist.
+    Skips records whose link is already in the file.
+    Returns count of rows actually written.
     """
-    all_csvs = sorted(glob.glob("results_*.csv"))
-    if not all_csvs:
-        return
+    existing_links = load_existing_links_from_csv(csv_path)
+    new_records = [r for r in records if r.get("link", "") not in existing_links]
 
-    # Group by YYYYMM
-    monthly: dict[str, list[str]] = {}
-    for f in all_csvs:
-        # filename: results_YYYYMMDD_HHMMSS.csv
-        try:
-            date_part = f.split("_")[1]          # YYYYMMDD
-            month_key = date_part[:6]             # YYYYMM
-            monthly.setdefault(month_key, []).append(f)
-        except (IndexError, ValueError):
-            continue
+    if not new_records:
+        print(f"  Monthly CSV: no new rows to append (all {len(records)} already present)", file=sys.stderr)
+        return 0
 
-    to_keep = set()
-    to_keep.add(current_csv)   # always keep current run
+    file_exists = os.path.exists(csv_path)
+    with open(csv_path, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_COLUMNS, extrasaction="ignore")
+        if not file_exists:
+            writer.writeheader()
+        for r in new_records:
+            source_type = r.get("source_type", "rss").upper()
+            # Feed = URL for RSS, subreddit for reddit, hashtag/instance for mastodon, url for cccs
+            feed_id = r.get("feed_url", r.get("source_url", r.get("link", "")))
+            writer.writerow({
+                "Date":          r.get("date", ""),
+                "Source":        source_type,
+                "Feed":          feed_id,
+                "Title":         r.get("title", ""),
+                "Link":          r.get("link", ""),
+                "Matched Terms": ", ".join(r.get("terms", [])),
+            })
 
-    for month_key, files in monthly.items():
-        files_sorted = sorted(files)
-        # Prefer a file from the 1st of the month
-        first_of_month = [f for f in files_sorted
-                          if f.split("_")[1].endswith("01")]
-        if first_of_month:
-            to_keep.add(first_of_month[0])
-        else:
-            # Fall back to earliest file of the month
-            to_keep.add(files_sorted[0])
+    print(f"  Monthly CSV {csv_path}: appended {len(new_records)} new rows", file=sys.stderr)
+    return len(new_records)
 
-    for f in all_csvs:
-        if f not in to_keep:
+
+def cleanup_csv_files():
+    """Remove any old per-run CSVs (results_YYYYMMDD_HHMMSS.csv format).
+    Monthly CSVs (results_YYYYMM.csv — 6 digit month) are kept forever."""
+    removed = 0
+    for f in glob.glob("results_*.csv"):
+        # Old format has underscore after 8-digit date: results_20260311_065557.csv
+        parts = f.replace(".csv", "").split("_")
+        if len(parts) >= 3 and len(parts[1]) == 8:
             try:
                 os.remove(f)
-                print(f"Removed old CSV: {f}", file=sys.stderr)
-            except OSError as e:
-                print(f"Could not remove {f}: {e}", file=sys.stderr)
+                print(f"  Removed old per-run CSV: {f}", file=sys.stderr)
+                removed += 1
+            except OSError:
+                pass
+    if removed:
+        print(f"  Cleaned up {removed} old per-run CSV files", file=sys.stderr)
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -200,10 +238,16 @@ def extract_links(html):
 
 
 def parse_feeds(feed_urls, search_terms):
-    entries = []
+    """Parse RSS feeds and return matched entries. Tracks per-feed article counts."""
+    entries    = []
+    feed_stats = {}   # url -> {"total": N, "matched": N}
+
     for url in feed_urls:
         print(f"Parsing {url}...", file=sys.stderr)
-        d = safe_parse_feed(url)
+        d     = safe_parse_feed(url)
+        total = 0
+        matched_count = 0
+
         for e in d.entries:
             link = e.get("link", "")
             published_dt = None
@@ -217,6 +261,7 @@ def parse_feeds(feed_urls, search_terms):
             if not published_dt or published_dt < MIN_PUBLISHED_DATE:
                 continue
 
+            total += 1
             title   = e.get("title", "")
             summary = e.get("summary", "")
             content = e.get("content", [{"value": ""}])[0]["value"]
@@ -233,14 +278,56 @@ def parse_feeds(feed_urls, search_terms):
                             matched.append(term.lower())
 
             if matched:
+                matched_count += 1
                 entries.append({
                     "title":        title,
                     "link":         link,
+                    "feed_url":     url,
                     "date":         published_dt.strftime("%Y-%m-%d"),
                     "terms":        matched,
                     "inline_links": inline_matches,
+                    "source_type":  "rss",
                 })
+
+        feed_stats[url] = {"total": total, "matched": matched_count}
+
+    # Persist per-feed stats
+    update_feed_stats(feed_stats)
     return entries
+
+
+def update_feed_stats(new_counts: dict):
+    """Merge new per-feed counts into feed_stats.json (cumulative totals)."""
+    stats = {}
+    if os.path.exists(FEED_STATS_FILE):
+        try:
+            with open(FEED_STATS_FILE, "r", encoding="utf-8") as f:
+                stats = json.load(f)
+        except Exception:
+            pass
+
+    run_date = datetime.now(timezone.utc).astimezone(EASTERN_TZ).strftime("%Y-%m-%d")
+    for url, counts in new_counts.items():
+        if url not in stats:
+            stats[url] = {"total_all_time": 0, "matched_all_time": 0, "runs": []}
+        stats[url]["total_all_time"]   += counts["total"]
+        stats[url]["matched_all_time"] += counts["matched"]
+        stats[url]["last_run_date"]     = run_date
+        stats[url]["last_run_total"]    = counts["total"]
+        stats[url]["last_run_matched"]  = counts["matched"]
+        # Keep last 90 daily snapshots for trend charting
+        stats[url]["runs"].append({
+            "date": run_date,
+            "total": counts["total"],
+            "matched": counts["matched"],
+        })
+        stats[url]["runs"] = stats[url]["runs"][-90:]
+
+    try:
+        with open(FEED_STATS_FILE, "w", encoding="utf-8") as f:
+            json.dump(stats, f, indent=2)
+    except Exception as e:
+        print(f"  Could not save feed_stats: {e}", file=sys.stderr)
 
 
 def update_history_file(new_entries):
@@ -266,17 +353,24 @@ def update_history_file(new_entries):
     return clean_list
 
 
+# save_csv kept for backward compat but monthly CSV is now used instead
 def save_csv(records, filename):
+    """Legacy: write a one-off CSV. Monthly append is now preferred."""
     with open(filename, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["Date", "Title", "Link", "Matched Terms", "Inline Links"])
+        w = csv.DictWriter(f, fieldnames=CSV_COLUMNS, extrasaction="ignore")
+        w.writeheader()
         for r in records:
-            inline = " | ".join([f"{x['text']}->{x['url']}" for x in r.get("inline_links", [])])
-            w.writerow([r["date"], r["title"], r["link"],
-                        ", ".join(r["terms"]), inline])
+            source_type = r.get("source_type", "rss").upper()
+            feed_id = r.get("feed_url", r.get("source_url", r.get("link", "")))
+            w.writerow({
+                "Date": r.get("date",""), "Source": source_type,
+                "Feed": feed_id, "Title": r.get("title",""),
+                "Link": r.get("link",""),
+                "Matched Terms": ", ".join(r.get("terms",[])),
+            })
 
 
-def save_metadata():
+def save_metadata(source_counts: dict = None):
     now_utc     = datetime.now(timezone.utc)
     now_eastern = now_utc.astimezone(EASTERN_TZ)
     timestamp   = now_eastern.strftime("%Y-%m-%d %H:%M %Z")
@@ -286,6 +380,23 @@ def save_metadata():
         print(f"Updated {META_FILE}: {timestamp}", file=sys.stderr)
     except Exception as e:
         print(f"Error saving metadata: {e}", file=sys.stderr)
+
+    # Update article count trend (one entry per day)
+    if source_counts:
+        try:
+            trend = []
+            if os.path.exists(ARTICLE_TREND_FILE):
+                with open(ARTICLE_TREND_FILE, "r", encoding="utf-8") as f:
+                    trend = json.load(f)
+            today = now_eastern.strftime("%Y-%m-%d")
+            # Replace today's entry if it exists, otherwise append
+            trend = [t for t in trend if t.get("date") != today]
+            trend.append({"date": today, **source_counts})
+            trend = sorted(trend, key=lambda x: x["date"])[-365:]  # keep 1 year
+            with open(ARTICLE_TREND_FILE, "w", encoding="utf-8") as f:
+                json.dump(trend, f, indent=2)
+        except Exception as e:
+            print(f"Error saving article trend: {e}", file=sys.stderr)
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -771,19 +882,27 @@ def main():
     # 8. Update 30-day rolling history
     full_history = update_history_file(new_matches)
 
-    # 9. Save CSV for this run
-    utc_ts   = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-    csv_file = f"results_{utc_ts}.csv"
-    save_csv(new_matches, csv_file)
-    print(f"Saved {csv_file} ({len(new_matches)} new matches)", file=sys.stderr)
+    # 9. Append to monthly CSV (one file per calendar month, all sources)
+    monthly_csv = get_monthly_csv_path()
+    rows_added  = append_to_monthly_csv(new_matches, monthly_csv)
+    print(f"Monthly CSV {monthly_csv}: {rows_added} rows added this run", file=sys.stderr)
 
-    # 10. Clean up old CSVs (keep monthly 1st-of-month archives + current)
-    cleanup_csv_files(csv_file)
+    # 10. Clean up any old per-run CSVs left over from previous scraper version
+    cleanup_csv_files()
 
-    # 11. Save metadata timestamp
-    save_metadata()
+    # 11. Source counts for trend tracking
+    source_counts = {
+        "rss":      len(rss_matches),
+        "reddit":   len(reddit_matches),
+        "mastodon": len(mastodon_matches),
+        "cccs":     len(cccs_matches),
+        "total":    len(new_matches),
+    }
 
-    # 12. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
+    # 12. Save metadata timestamp + article trend
+    save_metadata(source_counts)
+
+    # 13. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
     generate_and_save_report(full_history)
 
     print(f"Done. History: {len(full_history)} entries total.", file=sys.stderr)
