@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
     collapseCounter = 0;
 
     const ts    = toEastern(data.generated_at);
-    const label = window === '2w' ? 'Last 2 Weeks' : 'Last 48h';
+    const label = window === '2w' ? 'Days 3–14 (2-Week View)' : 'Last 48h';
 
     let html = `<div class="report-meta">
       <span class="report-badge">${esc(label)}</span>
@@ -479,8 +479,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSourcesSection() {
     if (!feedData.length) return '';
-    const cutoff = new Date(Date.now() - (activeWindow === '2w' ? 14 : 2) * 24*60*60*1000).toISOString().slice(0,10);
-    const recent = feedData.filter(i => i.date >= cutoff).slice(0, 80);
+    const now = new Date();
+    let recent;
+    if (activeWindow === '2w') {
+      // Days 3-14: same non-overlapping window as the scraper
+      const cutoldDate = new Date(now - 14*24*60*60*1000).toISOString().slice(0,10);
+      const cutnewDate = new Date(now -  2*24*60*60*1000).toISOString().slice(0,10);
+      recent = feedData.filter(i => i.date >= cutoldDate && i.date < cutnewDate).slice(0, 80);
+    } else {
+      // Last 2 days
+      const cutoff = new Date(now - 2*24*60*60*1000).toISOString().slice(0,10);
+      recent = feedData.filter(i => i.date >= cutoff).slice(0, 80);
+    }
     if (!recent.length) return '';
     let inner = '<div class="sources-list">';
     recent.forEach(item => {
