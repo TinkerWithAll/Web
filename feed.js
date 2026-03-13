@@ -35,17 +35,38 @@ function clearTokenCache() { try { localStorage.removeItem(TOKEN_KEY); } catch {
 
 // ── GitHub API helpers ────────────────────────────────────────────
 async function verifyToken(token) {
+  // Step 1: check the token is valid at all via /user
+  // (works with any PAT scope, unlike /repos which needs repo read)
   try {
-    const res = await fetch(
-      'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO,
+    const r1 = await fetch('https://api.github.com/user', {
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' }
+    });
+    if (r1.status === 401) {
+      return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
+    }
+    if (r1.status === 403) {
+      return { ok: false, message: 'Token is valid but blocked (possible IP restriction or suspended account).' };
+    }
+    // Any non-401 is fine — Fine-Grained PATs may return 200 or other codes on /user
+  } catch { /* network issue — proceed */ }
+
+  // Step 2: check the workflow file exists and is dispatch-able
+  try {
+    const r2 = await fetch(
+      'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+      '/actions/workflows/' + WORKFLOW_FILE,
       { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' } }
     );
-    if (res.status === 200) return { ok: true };
-    if (res.status === 401) return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
-    if (res.status === 403) return { ok: false, message: 'Token lacks Actions: Write permission. Edit your PAT at github.com/settings/personal-access-tokens.' };
-    if (res.status === 404) return { ok: false, message: 'Repo not found — check the token has access to TinkerWithAll/Web.' };
-    return { ok: false, message: 'Token check returned HTTP ' + res.status };
-  } catch { return { ok: true }; } // network error — proceed anyway
+    if (r2.status === 404) {
+      return { ok: false, message: 'Workflow file "' + WORKFLOW_FILE + '" not found in .github/workflows/ on the main branch.' };
+    }
+    if (r2.status === 401) {
+      return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
+    }
+    // 200 = confirmed workflow exists and token can see it
+  } catch { /* proceed */ }
+
+  return { ok: true };
 }
 
 async function triggerWorkflow(inputs, token) {
@@ -168,6 +189,32 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
     });
   });
+
+  // ── Token status indicator ───────────────────────────────────
+  // Shows a small status badge near the custom prompt so you know
+  // immediately if the token is present/valid without clicking anything.
+  async function refreshTokenStatus() {
+    const indicator = document.getElementById('tokenStatus');
+    if (!indicator) return;
+    const tok = getToken();
+    if (!tok) {
+      indicator.textContent = '⚠ No token — dispatch unavailable';
+      indicator.className = 'token-status token-missing';
+      return;
+    }
+    indicator.textContent = '· Checking token…';
+    indicator.className = 'token-status token-checking';
+    const check = await verifyToken(tok);
+    if (check.ok) {
+      indicator.textContent = '✓ Token OK';
+      indicator.className = 'token-status token-ok';
+    } else {
+      indicator.textContent = '✗ Token invalid — click Run Custom Prompt to re-enter';
+      indicator.className = 'token-status token-bad';
+      clearTokenCache();
+    }
+  }
+  refreshTokenStatus();
 
   // ── Load metadata ─────────────────────────────────────────────
   fetch('meta.json' + cb())
@@ -421,6 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     customReportBtn.disabled  = false;
     defaultReportBtn.disabled = false;
+    refreshTokenStatus();
   });
 
   // ── Poll for updated report ───────────────────────────────────
