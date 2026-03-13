@@ -741,3 +741,138 @@ header {
 .token-ok       { color: #00e5a0; background: rgba(0,229,160,0.08); border: 1px solid rgba(0,229,160,0.2); }
 .token-bad      { color: #ff4757; background: rgba(255,71,87,0.08);  border: 1px solid rgba(255,71,87,0.2); }
 .token-missing  { color: var(--amber); background: rgba(255,184,48,0.08); border: 1px solid rgba(255,184,48,0.2); }
+
+/* ── WINDOW TOGGLE (48h / 2 weeks) ─────────────────────────── */
+.window-toggle {
+  display: flex;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 3px;
+  gap: 2px;
+}
+.window-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.18s;
+  white-space: nowrap;
+}
+.window-btn:hover  { color: var(--text); }
+.window-btn.active { background: var(--green); color: #0a0c0f; font-weight: 700; }
+
+/* ── EXECUTIVE SUMMARY ──────────────────────────────────────── */
+.executive-summary {
+  background: linear-gradient(135deg, rgba(0,229,160,0.06) 0%, rgba(0,229,160,0.02) 100%);
+  border: 1px solid rgba(0,229,160,0.25);
+  border-left: 3px solid var(--green);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.exec-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.exec-text {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── COLLAPSIBLE SECTIONS ───────────────────────────────────── */
+.collapsible-section { margin-bottom: 0.75rem; }
+
+.r-section-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+  letter-spacing: 0.04em;
+}
+.r-section-toggle:hover { background: var(--bg3); border-color: var(--green-dim); }
+
+.r-section-title-text { flex: 1; }
+
+.collapse-chevron {
+  transition: transform 0.2s ease;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+.r-section-toggle.open .collapse-chevron { transform: rotate(180deg); }
+
+.collapsible-body {
+  display: none;
+  padding: 0.75rem 0 0;
+}
+.collapsible-body.open { display: block; }
+
+/* ── FLAG BADGES (actively exploited / zero-day) ────────────── */
+.flag-row {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 0.4rem 0 0.6rem;
+}
+.flag-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.flag-exploited {
+  background: rgba(255,71,87,0.15);
+  color: #ff4757;
+  border: 1px solid rgba(255,71,87,0.3);
+}
+.flag-zeroday {
+  background: rgba(255,184,48,0.15);
+  color: var(--amber);
+  border: 1px solid rgba(255,184,48,0.3);
+}
+
+/* ── CARD SOURCE LINK ───────────────────────────────────────── */
+.card-source-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,229,160,0.3);
+  transition: border-color 0.15s, color 0.15s;
+}
+.card-source-link:hover { color: #fff; border-color: #fff; }
+
+.canada-sources { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
