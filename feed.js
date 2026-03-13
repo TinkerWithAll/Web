@@ -1,5 +1,7 @@
 /**
  * feed.js — Security Feed Dashboard
+ * Changes: removed custom prompt, added executive summary, collapsible sections,
+ *          source links on cards, 48h/2w window toggle.
  */
 
 const GITHUB_OWNER  = 'TinkerWithAll';
@@ -9,7 +11,6 @@ const RATE_LIMIT_MS  = 2 * 60 * 60 * 1000;
 const RATE_LIMIT_KEY = 'feed_last_trigger';
 const TOKEN_KEY      = 'gh_dispatch_token_cache';
 
-// ── Token management ──────────────────────────────────────────────
 function getToken() {
   const live = (window.GH_DISPATCH_TOKEN || '').trim();
   if (live && live !== 'undefined') {
@@ -19,55 +20,15 @@ function getToken() {
   try { return (localStorage.getItem(TOKEN_KEY) || '').trim(); } catch {}
   return '';
 }
-
 function promptForToken() {
   const t = window.prompt(
-    'GH_DISPATCH_TOKEN not found in config.js.\n\n' +
-    'Paste your Fine-Grained PAT (Actions: Read & Write on TinkerWithAll/Web).\n' +
-    'It will be saved locally so you only need to do this once.'
+    'GH_DISPATCH_TOKEN not found.\n\nPaste your Fine-Grained PAT (Actions: Read & Write on TinkerWithAll/Web).\nIt will be saved locally.'
   );
   const token = (t || '').trim();
   if (token) { try { localStorage.setItem(TOKEN_KEY, token); } catch {} }
   return token;
 }
-
 function clearTokenCache() { try { localStorage.removeItem(TOKEN_KEY); } catch {} }
-
-// ── GitHub API helpers ────────────────────────────────────────────
-async function verifyToken(token) {
-  // Step 1: check the token is valid at all via /user
-  // (works with any PAT scope, unlike /repos which needs repo read)
-  try {
-    const r1 = await fetch('https://api.github.com/user', {
-      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' }
-    });
-    if (r1.status === 401) {
-      return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
-    }
-    if (r1.status === 403) {
-      return { ok: false, message: 'Token is valid but blocked (possible IP restriction or suspended account).' };
-    }
-    // Any non-401 is fine — Fine-Grained PATs may return 200 or other codes on /user
-  } catch { /* network issue — proceed */ }
-
-  // Step 2: check the workflow file exists and is dispatch-able
-  try {
-    const r2 = await fetch(
-      'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
-      '/actions/workflows/' + WORKFLOW_FILE,
-      { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' } }
-    );
-    if (r2.status === 404) {
-      return { ok: false, message: 'Workflow file "' + WORKFLOW_FILE + '" not found in .github/workflows/ on the main branch.' };
-    }
-    if (r2.status === 401) {
-      return { ok: false, message: 'Token is invalid or expired. You will be prompted to enter a new one.' };
-    }
-    // 200 = confirmed workflow exists and token can see it
-  } catch { /* proceed */ }
-
-  return { ok: true };
-}
 
 async function triggerWorkflow(inputs, token) {
   try {
@@ -88,20 +49,18 @@ async function triggerWorkflow(inputs, token) {
     if (res.status === 204) return { ok: true };
     let ghMsg = '';
     try { ghMsg = (await res.json()).message || ''; } catch {}
-    console.error('dispatch HTTP ' + res.status, ghMsg);
     const msgs = {
-      401: 'Token invalid/expired — enter a new PAT.',
+      401: 'Token invalid/expired.',
       403: 'Token lacks Actions: Write permission on this repo.',
       404: 'Workflow file "' + WORKFLOW_FILE + '" not found in .github/workflows/.',
-      422: 'workflow_dispatch may not be enabled in the workflow file, or the ref "main" is wrong.',
+      422: 'workflow_dispatch may not be enabled in the workflow file.',
     };
-    return { ok: false, status: res.status, message: msgs[res.status] || 'GitHub returned HTTP ' + res.status + (ghMsg ? ': ' + ghMsg : '') };
+    return { ok: false, status: res.status, message: msgs[res.status] || 'GitHub HTTP ' + res.status + (ghMsg ? ': ' + ghMsg : '') };
   } catch (err) {
-    return { ok: false, status: 0, message: 'Network error reaching GitHub API: ' + err.message };
+    return { ok: false, status: 0, message: 'Network error: ' + err.message };
   }
 }
 
-// ── Main ──────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
 
   const SOURCE_LABELS = {
@@ -111,8 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rss:      { label: 'RSS',      cls: 'src-rss' },
   };
 
-  // DOM refs
-  const $  = id => document.getElementById(id);
+  const $ = id => document.getElementById(id);
   const lastUpdatedEl    = $('last-updated');
   const articleCountEl   = $('article-count');
   const feedCountEl      = $('feed-count');
@@ -129,43 +87,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const noResults        = $('noResults');
   const refreshBtn       = $('refreshBtn');
   const refreshBtnLabel  = $('refreshBtnLabel');
-  const defaultReportBtn = $('defaultReportBtn');
-  const customReportBtn  = $('customReportBtn');
-  const customPrompt     = $('customPrompt');
+  const loadReportBtn    = $('loadReportBtn');
+  const btn48h           = $('btn48h');
+  const btn2w            = $('btn2w');
   const reportPlaceholder= $('reportPlaceholder');
   const reportLoading    = $('reportLoading');
   const reportContent    = $('reportContent');
   const loadingMsg       = $('loadingMsg');
   const sourceFilterBtns = document.querySelectorAll('.source-filter-btn');
 
-  // State
   let feedData        = [];
   let activeSource    = 'all';
+  let activeWindow    = '48h';   // '48h' or '2w'
   let searchModeIsAND = true;
   let currentReportData = null;
   const cb = () => '?v=' + Date.now();
 
   // ── Helpers ───────────────────────────────────────────────────
-  function escHtml(s) {
+  function esc(s) {
     return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
   function critClass(c) {
-    return ({ CRITICAL:'crit', HIGH:'high', MEDIUM:'med', LOW:'low' })[(c||'').toUpperCase()] || 'med';
+    return ({CRITICAL:'crit',HIGH:'high',MEDIUM:'med',LOW:'low'})[(c||'').toUpperCase()]||'med';
   }
-  function iso()       { return new Date().toISOString().slice(0,10); }
-  function sleep(ms)   { return new Promise(r => setTimeout(r, ms)); }
-  function dlBlob(url, name) {
-    const a = document.createElement('a');
-    a.href = url; a.download = name; a.click();
-    URL.revokeObjectURL(url);
+  function iso()     { return new Date().toISOString().slice(0,10); }
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+  function dl(url, name) {
+    const a = document.createElement('a'); a.href=url; a.download=name; a.click(); URL.revokeObjectURL(url);
   }
   function toEastern(str) {
     if (!str) return '—';
     if (typeof str === 'string' && str.endsWith(' ET')) return str;
     try {
       return new Date(str).toLocaleString('en-CA', {
-        timeZone: 'America/Toronto', year:'numeric', month:'2-digit',
-        day:'2-digit', hour:'2-digit', minute:'2-digit', hour12: false
+        timeZone:'America/Toronto', year:'numeric', month:'2-digit',
+        day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false
       }) + ' ET';
     } catch { return str; }
   }
@@ -180,6 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
   }
 
+  // ── Collapsible section builder ───────────────────────────────
+  let collapseCounter = 0;
+  function collapsible(title, badgeText, innerHtml, startOpen = true) {
+    const id = 'collapse-' + (++collapseCounter);
+    return `
+      <div class="r-section collapsible-section">
+        <button class="r-section-toggle ${startOpen ? 'open' : ''}" data-target="${id}">
+          <span class="r-section-title-text">${title}</span>
+          ${badgeText ? `<span class="r-section-count">${esc(badgeText)}</span>` : ''}
+          <svg class="collapse-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="collapsible-body ${startOpen ? 'open' : ''}" id="${id}">
+          ${innerHtml}
+        </div>
+      </div>`;
+  }
+
   // ── Tabs ──────────────────────────────────────────────────────
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -190,31 +163,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Token status indicator ───────────────────────────────────
-  // Shows a small status badge near the custom prompt so you know
-  // immediately if the token is present/valid without clicking anything.
-  async function refreshTokenStatus() {
-    const indicator = document.getElementById('tokenStatus');
-    if (!indicator) return;
-    const tok = getToken();
-    if (!tok) {
-      indicator.textContent = '⚠ No token — dispatch unavailable';
-      indicator.className = 'token-status token-missing';
-      return;
-    }
-    indicator.textContent = '· Checking token…';
-    indicator.className = 'token-status token-checking';
-    const check = await verifyToken(tok);
-    if (check.ok) {
-      indicator.textContent = '✓ Token OK';
-      indicator.className = 'token-status token-ok';
-    } else {
-      indicator.textContent = '✗ Token invalid — click Run Custom Prompt to re-enter';
-      indicator.className = 'token-status token-bad';
-      clearTokenCache();
-    }
-  }
-  refreshTokenStatus();
+  // ── Collapsible toggle (delegated) ────────────────────────────
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.r-section-toggle');
+    if (!btn) return;
+    const targetId = btn.dataset.target;
+    const body = document.getElementById(targetId);
+    if (!body) return;
+    const open = body.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  });
+
+  // ── Window toggle ─────────────────────────────────────────────
+  [btn48h, btn2w].forEach(btn => {
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      [btn48h, btn2w].forEach(b => b && b.classList.remove('active'));
+      btn.classList.add('active');
+      activeWindow = btn.dataset.window;
+    });
+  });
 
   // ── Load metadata ─────────────────────────────────────────────
   fetch('meta.json' + cb())
@@ -225,31 +193,14 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('feeds.txt' + cb())
     .then(r => r.text())
     .then(text => {
-      const count = text.split('\n').filter(l => l.trim().startsWith('http')).length;
-      if (feedCountEl) feedCountEl.textContent = count;
+      const n = text.split('\n').filter(l => l.trim().startsWith('http')).length;
+      if (feedCountEl) feedCountEl.textContent = n;
     })
     .catch(() => { if (feedCountEl) feedCountEl.textContent = '180'; });
 
-  // AI enabled check
-  fetch('report.json' + cb())
-    .then(r => r.ok ? r.json() : null)
-    .then(data => { if (data && data.ai_enabled === false) disableAI(data.message || 'AI analysis is currently disabled.'); })
-    .catch(() => {});
-
-  function disableAI(msg) {
-    defaultReportBtn.disabled = true;
-    customReportBtn.disabled  = true;
-    customPrompt.disabled     = true;
-    customPrompt.placeholder  = 'AI features are currently disabled.';
-    reportPlaceholder.innerHTML =
-      '<div class="ph-icon" style="color:var(--amber)"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>' +
-      '<p style="color:var(--amber)">' + escHtml(msg) + '</p>' +
-      '<p class="ph-sub">To re-enable: set <code>AI_ENABLED = true</code> in GitHub Actions Variables.</p>';
-  }
-
   // ── Load feed history ─────────────────────────────────────────
   fetch('feed_history.json')
-    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+    .then(r => { if (!r.ok) throw 0; return r.json(); })
     .then(data => {
       feedData = data;
       if (articleCountEl) articleCountEl.textContent = data.length;
@@ -263,19 +214,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateSourceBreakdown(data) {
     if (!sourceBreakdown) return;
-    const c = { rss:0, reddit:0, mastodon:0, cccs:0 };
-    data.forEach(item => {
-      const t = (item.source_type || 'rss').toLowerCase();
-      if (c[t] !== undefined) c[t]++; else c.rss++;
-    });
+    const c = {rss:0,reddit:0,mastodon:0,cccs:0};
+    data.forEach(i => { const t=(i.source_type||'rss').toLowerCase(); if(c[t]!==undefined)c[t]++;else c.rss++; });
     sourceBreakdown.innerHTML =
-      '<span class="src-pill src-rss">RSS\u00a0' + c.rss + '</span>' +
-      '<span class="src-pill src-reddit">Reddit\u00a0' + c.reddit + '</span>' +
-      '<span class="src-pill src-mastodon">Mastodon\u00a0' + c.mastodon + '</span>' +
-      '<span class="src-pill src-cccs">CCCS\u00a0' + c.cccs + '</span>';
+      '<span class="src-pill src-rss">RSS\u00a0'+c.rss+'</span>'+
+      '<span class="src-pill src-reddit">Reddit\u00a0'+c.reddit+'</span>'+
+      '<span class="src-pill src-mastodon">Mastodon\u00a0'+c.mastodon+'</span>'+
+      '<span class="src-pill src-cccs">CCCS\u00a0'+c.cccs+'</span>';
   }
 
-  // ── Source filter buttons ─────────────────────────────────────
   sourceFilterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       sourceFilterBtns.forEach(b => b.classList.remove('active'));
@@ -285,39 +232,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Render table ──────────────────────────────────────────────
+  // ── Table ─────────────────────────────────────────────────────
   function renderTable(data) {
     if (!feedBody) return;
     feedBody.innerHTML = '';
     if (noResults) noResults.style.display = data.length === 0 ? 'block' : 'none';
     if (feedCountLabel) feedCountLabel.textContent = data.length + ' article' + (data.length !== 1 ? 's' : '');
     data.forEach(item => {
-      const srcType = (item.source_type || 'rss').toLowerCase();
-      const srcInfo = SOURCE_LABELS[srcType] || SOURCE_LABELS.rss;
-      const tags = (item.terms || []).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
+      const si = SOURCE_LABELS[(item.source_type||'rss').toLowerCase()] || SOURCE_LABELS.rss;
+      const tags = (item.terms||[]).map(t=>'<span class="term-tag">'+esc(t)+'</span>').join('');
       const tr = document.createElement('tr');
       tr.innerHTML =
-        '<td class="mono" style="color:var(--text-dim);font-size:12px;white-space:nowrap">' +
-          escHtml(item.date) + '<br>' +
-          '<span class="src-badge ' + srcInfo.cls + '">' + srcInfo.label + '</span>' +
-        '</td>' +
-        '<td><a href="' + escHtml(item.link) + '" target="_blank" rel="noopener noreferrer">' + escHtml(item.title) + '</a></td>' +
-        '<td>' + tags + '</td>';
+        '<td class="mono" style="color:var(--text-dim);font-size:12px;white-space:nowrap">'+esc(item.date)+'<br>'+
+        '<span class="src-badge '+si.cls+'">'+si.label+'</span></td>'+
+        '<td><a href="'+esc(item.link)+'" target="_blank" rel="noopener noreferrer">'+esc(item.title)+'</a></td>'+
+        '<td>'+tags+'</td>';
       feedBody.appendChild(tr);
     });
   }
 
   function filterData() {
-    const txt   = searchInput ? searchInput.value.toLowerCase() : '';
-    const terms = termInput ? termInput.value.toLowerCase().split(',').map(t => t.trim()).filter(Boolean) : [];
+    const txt = searchInput ? searchInput.value.toLowerCase() : '';
+    const terms = termInput ? termInput.value.toLowerCase().split(',').map(t=>t.trim()).filter(Boolean) : [];
     const filtered = feedData.filter(item => {
-      if (activeSource !== 'all' && (item.source_type || 'rss').toLowerCase() !== activeSource) return false;
+      if (activeSource !== 'all' && (item.source_type||'rss').toLowerCase() !== activeSource) return false;
       const textOk = !txt || item.title.toLowerCase().includes(txt);
       if (!terms.length) return textOk;
-      const at = (item.terms || []).map(t => t.toLowerCase());
-      const termOk = searchModeIsAND
-        ? terms.every(st => at.some(a => a.includes(st)))
-        : terms.some(st => at.some(a => a.includes(st)));
+      const at = (item.terms||[]).map(t=>t.toLowerCase());
+      const termOk = searchModeIsAND ? terms.every(st=>at.some(a=>a.includes(st))) : terms.some(st=>at.some(a=>a.includes(st)));
       return textOk && termOk;
     });
     renderTable(filtered);
@@ -338,44 +280,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const rows = filterData();
     if (!rows.length) { alert('No data to export.'); return; }
     const lines = [['Date','Source','Title','Link','Terms'].join(',')];
-    rows.forEach(i => lines.push([
-      i.date, i.source_type||'rss',
-      '"' + (i.title||'').replace(/"/g,'""') + '"',
-      i.link,
-      '"' + (i.terms||[]).join(', ') + '"',
-    ].join(',')));
-    dlBlob(URL.createObjectURL(new Blob([lines.join('\n')], {type:'text/csv'})), 'security_feed_' + iso() + '.csv');
+    rows.forEach(i => lines.push([i.date,i.source_type||'rss','"'+(i.title||'').replace(/"/g,'""')+'"',i.link,'"'+(i.terms||[]).join(', ')+'"'].join(',')));
+    dl(URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/csv'})), 'security_feed_'+iso()+'.csv');
   });
-
   if (downloadReportBtn) downloadReportBtn.addEventListener('click', () => {
     if (!currentReportData) return;
-    const html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family:Courier New,monospace;background:#0a0c0f;color:#e8f0f8;padding:2rem;max-width:900px;margin:0 auto}a{color:#00e5a0}strong{color:#e8f0f8}.r-section-title{color:#00e5a0;font-weight:bold;margin:1.5rem 0 .5rem}.cve-card,.ta-card,.canada-card,.source-item{background:#151a22;border:1px solid #1e2530;border-radius:6px;padding:1rem;margin-bottom:.75rem}.cve-card{border-left:3px solid #ff4757}.ta-card{border-left:3px solid #ffb830}.cve-id,.ta-name{color:#ffb830;font-weight:bold}.src-badge{font-size:11px;padding:1px 5px;border-radius:3px}.src-rss{background:rgba(79,163,227,.15);color:#4fa3e3}.src-reddit{background:rgba(255,100,0,.15);color:#ff6400}.src-mastodon{background:rgba(99,100,255,.15);color:#8b8fff}.src-cccs{background:rgba(255,71,87,.15);color:#ff4757}.term-tag{background:rgba(0,229,160,.1);color:#00a872;border:1px solid rgba(0,229,160,.2);padding:1px 6px;border-radius:10px;font-size:11px;margin:2px;display:inline-block}</style></head><body>' +
-      reportContent.innerHTML + '</body></html>';
-    dlBlob(URL.createObjectURL(new Blob([html],{type:'text/html'})), 'security-report-' + iso() + '.html');
+    const html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family:Courier New,monospace;background:#0a0c0f;color:#e8f0f8;padding:2rem;max-width:900px;margin:0 auto}a{color:#00e5a0}strong{color:#e8f0f8}</style></head><body>' + reportContent.innerHTML + '</body></html>';
+    dl(URL.createObjectURL(new Blob([html],{type:'text/html'})), 'security-report-'+iso()+'.html');
   });
-
-  function dlTxt(name) {
-    fetch(name).then(r => { if (!r.ok) throw 0; return r.text(); })
-      .then(t => dlBlob(URL.createObjectURL(new Blob([t],{type:'text/plain'})), name))
-      .catch(() => alert('Could not download ' + name));
+  function dlTxt(n) {
+    fetch(n).then(r=>{if(!r.ok)throw 0;return r.text();}).then(t=>dl(URL.createObjectURL(new Blob([t],{type:'text/plain'})),n)).catch(()=>alert('Could not download '+n));
   }
   if (downloadTermsBtn) downloadTermsBtn.addEventListener('click', () => dlTxt('terms.txt'));
   if (downloadFeedsBtn) downloadFeedsBtn.addEventListener('click', () => dlTxt('feeds.txt'));
 
-  // ── Cooldown ──────────────────────────────────────────────────
+  // ── Refresh button ────────────────────────────────────────────
   function cooldownLeft() {
     return Math.max(0, RATE_LIMIT_MS - (Date.now() - parseInt(localStorage.getItem(RATE_LIMIT_KEY)||'0',10)));
   }
   function updateRefreshBtn() {
     const rem = cooldownLeft();
-    refreshBtn.disabled = rem > 0;
-    refreshBtnLabel.textContent = rem > 0 ? 'Cooldown ' + Math.ceil(rem/60000) + 'm' : 'Refresh';
+    if (refreshBtn) refreshBtn.disabled = rem > 0;
+    if (refreshBtnLabel) refreshBtnLabel.textContent = rem > 0 ? 'Cooldown '+Math.ceil(rem/60000)+'m' : 'Refresh';
   }
   updateRefreshBtn();
   setInterval(updateRefreshBtn, 30000);
 
-  // ── Refresh button ────────────────────────────────────────────
-  refreshBtn.addEventListener('click', async () => {
+  if (refreshBtn) refreshBtn.addEventListener('click', async () => {
     if (cooldownLeft() > 0) return;
     let tok = getToken();
     if (!tok) tok = promptForToken();
@@ -394,112 +325,71 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(updateRefreshBtn, 3000);
   });
 
-  // ── Loading states ────────────────────────────────────────────
+  // ── Load / show report ────────────────────────────────────────
   function showLoading(msg) {
-    reportPlaceholder.style.display = 'none';
-    reportContent.style.display     = 'none';
-    reportLoading.style.display     = 'flex';
-    if (loadingMsg) loadingMsg.textContent = msg || 'Generating…';
+    if (reportPlaceholder) reportPlaceholder.style.display = 'none';
+    if (reportContent)     reportContent.style.display     = 'none';
+    if (reportLoading)     reportLoading.style.display     = 'flex';
+    if (loadingMsg)        loadingMsg.textContent = msg || 'Loading…';
   }
   function hideLoading() { if (reportLoading) reportLoading.style.display = 'none'; }
   function showError(msg) {
     hideLoading();
-    reportPlaceholder.style.display = 'none';
-    reportContent.style.display     = 'block';
-    reportContent.innerHTML = '<div style="padding:2rem;color:var(--red);font-size:13px;line-height:1.8"><strong>Error:</strong> ' + escHtml(msg) + '</div>';
+    if (reportPlaceholder) reportPlaceholder.style.display = 'none';
+    if (reportContent) {
+      reportContent.style.display = 'block';
+      reportContent.innerHTML = '<div style="padding:2rem;color:var(--red);font-size:13px;line-height:1.8"><strong>Error:</strong> ' + esc(msg) + '</div>';
+    }
   }
 
-  // ── Default report ────────────────────────────────────────────
-  defaultReportBtn.addEventListener('click', async () => {
-    defaultReportBtn.disabled = true;
-    customReportBtn.disabled  = true;
-    showLoading('Loading cached intelligence report…');
+  if (loadReportBtn) loadReportBtn.addEventListener('click', async () => {
+    loadReportBtn.disabled = true;
+    showLoading('Loading intelligence briefing…');
     try {
       const r = await fetch('report.json' + cb());
-      if (!r.ok) throw new Error('report.json not found');
-      renderReport(await r.json(), false);
+      if (!r.ok) throw new Error('report.json not found — run the workflow at least once.');
+      const data = await r.json();
+      if (data.ai_enabled === false) {
+        showError(data.message || 'AI is disabled.');
+        return;
+      }
+      // Pick 48h or 2w data
+      const reportData = activeWindow === '2w' && data.report_2w ? data.report_2w : data;
+      renderReport(reportData, activeWindow);
     } catch (e) {
-      showError(e.message || 'Could not load report.json');
+      showError(e.message);
     } finally {
-      defaultReportBtn.disabled = false;
-      customReportBtn.disabled  = false;
+      loadReportBtn.disabled = false;
     }
   });
-
-  // ── Custom prompt ─────────────────────────────────────────────
-  customReportBtn.addEventListener('click', async () => {
-    const prompt = customPrompt.value.trim();
-    if (!prompt) { customPrompt.focus(); return; }
-
-    let tok = getToken();
-    if (!tok) tok = promptForToken();
-    if (!tok) { showError('No token provided. Cannot trigger workflow.'); return; }
-
-    customReportBtn.disabled  = true;
-    defaultReportBtn.disabled = true;
-    showLoading('Verifying token…');
-
-    const check = await verifyToken(tok);
-    if (!check.ok) {
-      clearTokenCache();
-      showError(check.message + '\n\nClick Run Custom Prompt again to enter a new token.');
-      customReportBtn.disabled  = false;
-      defaultReportBtn.disabled = false;
-      return;
-    }
-
-    if (loadingMsg) loadingMsg.textContent = 'Dispatching custom analysis… this takes 1–3 minutes.';
-    const dispatch = await triggerWorkflow({ custom_prompt: prompt }, tok);
-    if (!dispatch.ok) {
-      if (dispatch.status === 401 || dispatch.status === 403) clearTokenCache();
-      showError(dispatch.message);
-      customReportBtn.disabled  = false;
-      defaultReportBtn.disabled = false;
-      return;
-    }
-
-    if (loadingMsg) loadingMsg.textContent = 'Workflow triggered ✓ — polling for new report (up to 3 min)…';
-    const polled = await pollForReport(180);
-    hideLoading();
-    if (polled) {
-      renderReport(polled, true, prompt);
-    } else {
-      showError('Timed out. The workflow may still be running — wait 2 min then click Default Report.');
-    }
-    customReportBtn.disabled  = false;
-    defaultReportBtn.disabled = false;
-    refreshTokenStatus();
-  });
-
-  // ── Poll for updated report ───────────────────────────────────
-  async function pollForReport(timeoutSecs) {
-    let oldTs = null;
-    try { const r = await fetch('report.json' + cb()); if (r.ok) { const d = await r.json(); oldTs = d.generated_at; } } catch {}
-    const deadline = Date.now() + timeoutSecs * 1000;
-    while (Date.now() < deadline) {
-      await sleep(8000);
-      try {
-        const r = await fetch('report.json' + cb());
-        if (r.ok) { const d = await r.json(); if (d.generated_at && d.generated_at !== oldTs) return d; }
-      } catch {}
-    }
-    return null;
-  }
 
   // ── Render report ─────────────────────────────────────────────
-  function renderReport(data, isCustom, prompt) {
+  function renderReport(data, window) {
     hideLoading();
-    reportPlaceholder.style.display = 'none';
-    reportContent.style.display     = 'block';
+    if (reportPlaceholder) reportPlaceholder.style.display = 'none';
+    if (reportContent)     reportContent.style.display     = 'block';
     currentReportData = data;
     if (downloadReportBtn) downloadReportBtn.style.display = 'flex';
+    collapseCounter = 0;
 
     const ts    = toEastern(data.generated_at);
-    const badge = isCustom ? '<span class="report-badge custom">Custom</span>' : '<span class="report-badge">48h Brief</span>';
-    let html = '<div class="report-meta">' + badge +
-      '<span>Generated: <span class="report-ts mono">' + escHtml(ts) + '</span></span>' +
-      (isCustom && prompt ? '<span style="color:var(--text-dim)">Prompt: "' + escHtml(prompt.substring(0,80)) + (prompt.length>80?'…':'') + '"</span>' : '') +
-      '</div>';
+    const label = window === '2w' ? 'Last 2 Weeks' : 'Last 48h';
+
+    let html = `<div class="report-meta">
+      <span class="report-badge">${esc(label)}</span>
+      <span>Generated: <span class="report-ts mono">${esc(ts)}</span></span>
+    </div>`;
+
+    // Executive summary — always open, no collapse
+    if (data.executive_summary) {
+      html += `<div class="executive-summary">
+        <div class="exec-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Key Findings
+        </div>
+        <p class="exec-text">${esc(data.executive_summary)}</p>
+      </div>`;
+    }
 
     if (data.custom_response) {
       html += '<div class="r-section"><div class="canada-card">' + markdownToHtml(data.custom_response) + '</div></div>';
@@ -512,68 +402,99 @@ document.addEventListener('DOMContentLoaded', () => {
     reportContent.innerHTML = html;
   }
 
-  function renderSourcesSection() {
-    if (!feedData.length) return '';
-    const cutoff = new Date(Date.now() - 48*60*60*1000).toISOString().slice(0,10);
-    const recent = feedData.filter(i => i.date >= cutoff).slice(0, 60);
-    if (!recent.length) return '';
-    let html = '<div class="r-section"><div class="r-section-title">Source Articles <span class="r-section-count">' + recent.length + '</span></div><div class="sources-list">';
-    recent.forEach(item => {
-      const srcType = (item.source_type || 'rss').toLowerCase();
-      const si      = SOURCE_LABELS[srcType] || SOURCE_LABELS.rss;
-      const tags    = (item.terms||[]).slice(0,3).map(t => '<span class="term-tag">' + escHtml(t) + '</span>').join('');
-      html += '<div class="source-item">' +
-        '<span class="source-date mono">' + escHtml(item.date) + '</span>' +
-        '<span class="src-badge ' + si.cls + '">' + si.label + '</span>' +
-        '<a href="' + escHtml(item.link) + '" target="_blank" rel="noopener noreferrer" class="source-link">' + escHtml(item.title) + '</a>' +
-        '<div class="source-tags">' + tags + '</div></div>';
-    });
-    return html + '</div></div>';
-  }
-
+  // ── Section renderers ─────────────────────────────────────────
   function renderVulnSection(vulns) {
     if (!vulns) return '';
     const items = vulns.items || [];
-    let html = '<div class="r-section"><div class="r-section-title">New Vulnerabilities <span class="r-section-count">' + (vulns.count ?? items.length) + ' CVEs</span></div><div class="cve-list">';
-    if (!items.length) return html + '<p class="r-empty">No new CVEs matched in the last 48h.</p></div></div>';
-    items.forEach(cve => {
-      html += '<div class="cve-card ' + critClass(cve.criticality) + '">' +
-        '<div class="cve-header"><span class="cve-id">' + escHtml(cve.id||'') + '</span>' +
-        '<span class="cve-title">' + escHtml(cve.description||'') + '</span>' +
-        '<span class="crit-badge ' + escHtml(cve.criticality||'') + '">' + escHtml(cve.criticality||'?') + '</span></div>' +
-        '<div class="cve-meta">' +
-        '<div class="cve-meta-item"><strong>Software:</strong> ' + escHtml(cve.software_affected||'—') + '</div>' +
-        '<div class="cve-meta-item"><strong>CIA Impact:</strong> ' + escHtml(cve.cia_impact||'—') + '</div>' +
-        '<div class="cve-meta-item"><strong>Access Required:</strong> ' + escHtml(cve.access_required||'—') + '</div>' +
-        '</div></div>';
-    });
-    return html + '</div></div>';
+    let inner = '';
+    if (!items.length) {
+      inner = '<p class="r-empty">No new CVEs matched in this period.</p>';
+    } else {
+      items.forEach(cve => {
+        const flags = [];
+        if (cve.actively_exploited) flags.push('<span class="flag-badge flag-exploited">⚡ Actively Exploited</span>');
+        if (cve.zero_day)           flags.push('<span class="flag-badge flag-zeroday">💀 Zero-Day</span>');
+        const sourceLink = cve.source_url
+          ? `<a href="${esc(cve.source_url)}" target="_blank" rel="noopener noreferrer" class="card-source-link">View Source →</a>`
+          : '';
+        inner += `<div class="cve-card ${critClass(cve.criticality)}">
+          <div class="cve-header">
+            <span class="cve-id">${esc(cve.id||'')}</span>
+            <span class="cve-title">${esc(cve.description||'')}</span>
+            <span class="crit-badge ${esc(cve.criticality||'')}">${esc(cve.criticality||'?')}</span>
+          </div>
+          ${flags.length ? '<div class="flag-row">'+flags.join('')+'</div>' : ''}
+          <div class="cve-meta">
+            <div class="cve-meta-item"><strong>Software:</strong> ${esc(cve.software_affected||'—')}</div>
+            <div class="cve-meta-item"><strong>CIA Impact:</strong> ${esc(cve.cia_impact||'—')}</div>
+            <div class="cve-meta-item"><strong>Access Required:</strong> ${esc(cve.access_required||'—')}</div>
+          </div>
+          ${sourceLink}
+        </div>`;
+      });
+    }
+    return collapsible('New Vulnerabilities', (vulns.count ?? items.length) + ' CVEs', inner, true);
   }
 
   function renderTASection(actors) {
     if (!actors) return '';
     const items = actors.items || [];
-    let html = '<div class="r-section"><div class="r-section-title">Active Threat Actors <span class="r-section-count">' + items.length + ' active</span></div><div class="ta-list">';
-    if (!items.length) return html + '<p class="r-empty">No threat actor activity matched in the last 48h.</p></div></div>';
-    items.forEach(ta => {
-      html += '<div class="ta-card"><div class="ta-name">' + escHtml(ta.name||'') + '</div><div class="ta-body">' +
-        (ta.targets ? '<p><strong>Targets / Breaches:</strong> ' + escHtml(ta.targets) + '</p>' : '') +
-        (ta.ttps    ? '<p><strong>TTPs:</strong> ' + escHtml(ta.ttps) + '</p>' : '') +
-        (ta.iocs && ta.iocs.length ? '<p><strong>IoCs:</strong></p><div class="ioc-tags">' + ta.iocs.map(i=>'<span class="ioc-tag">'+escHtml(i)+'</span>').join('') + '</div>' : '') +
-        '</div></div>';
-    });
-    return html + '</div></div>';
+    let inner = '';
+    if (!items.length) {
+      inner = '<p class="r-empty">No threat actor activity matched in this period.</p>';
+    } else {
+      items.forEach(ta => {
+        const sourceLink = ta.source_url
+          ? `<a href="${esc(ta.source_url)}" target="_blank" rel="noopener noreferrer" class="card-source-link">View Source →</a>`
+          : '';
+        inner += `<div class="ta-card">
+          <div class="ta-name">${esc(ta.name||'')}</div>
+          <div class="ta-body">
+            ${ta.targets ? '<p><strong>Targets / Breaches:</strong> '+esc(ta.targets)+'</p>' : ''}
+            ${ta.ttps    ? '<p><strong>TTPs:</strong> '+esc(ta.ttps)+'</p>' : ''}
+            ${ta.iocs && ta.iocs.length ? '<p><strong>IoCs:</strong></p><div class="ioc-tags">'+ta.iocs.map(i=>'<span class="ioc-tag">'+esc(i)+'</span>').join('')+'</div>' : ''}
+          </div>
+          ${sourceLink}
+        </div>`;
+      });
+    }
+    return collapsible('Active Threat Actors', items.length + ' active', inner, true);
   }
 
   function renderCanadaSection(canada) {
     if (!canada) return '';
-    let html = '<div class="r-section"><div class="r-section-title">Canadian Cyber Landscape</div><div class="canada-card">';
-    if (canada.summary)   html += '<p>' + escHtml(canada.summary) + '</p>';
-    if (canada.retailers) html += '<p><strong><span class="ca-flag">🇨🇦</span> Retailers:</strong> ' + escHtml(canada.retailers) + '</p>';
-    if (canada.financial) html += '<p><strong><span class="ca-flag">🇨🇦</span> Financial:</strong> ' + escHtml(canada.financial) + '</p>';
+    const urls = canada.source_urls || [];
+    const sourceLinks = urls.length
+      ? '<div class="canada-sources">' + urls.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer" class="card-source-link">View Source →</a>`).join('') + '</div>'
+      : '';
+    let inner = '<div class="canada-card">';
+    if (canada.summary)   inner += '<p>'+esc(canada.summary)+'</p>';
+    if (canada.retailers) inner += '<p><strong><span class="ca-flag">🇨🇦</span> Retailers:</strong> '+esc(canada.retailers)+'</p>';
+    if (canada.financial) inner += '<p><strong><span class="ca-flag">🇨🇦</span> Financial:</strong> '+esc(canada.financial)+'</p>';
     if (!canada.summary && !canada.retailers && !canada.financial)
-      html += '<p class="r-empty">No Canadian-specific incidents matched in the last 48h.</p>';
-    return html + '</div></div>';
+      inner += '<p class="r-empty">No Canadian-specific incidents matched in this period.</p>';
+    inner += sourceLinks + '</div>';
+    return collapsible('Canadian Cyber Landscape', null, inner, true);
+  }
+
+  function renderSourcesSection() {
+    if (!feedData.length) return '';
+    const cutoff = new Date(Date.now() - (activeWindow === '2w' ? 14 : 2) * 24*60*60*1000).toISOString().slice(0,10);
+    const recent = feedData.filter(i => i.date >= cutoff).slice(0, 80);
+    if (!recent.length) return '';
+    let inner = '<div class="sources-list">';
+    recent.forEach(item => {
+      const si   = SOURCE_LABELS[(item.source_type||'rss').toLowerCase()] || SOURCE_LABELS.rss;
+      const tags = (item.terms||[]).slice(0,3).map(t=>'<span class="term-tag">'+esc(t)+'</span>').join('');
+      inner += `<div class="source-item">
+        <span class="source-date mono">${esc(item.date)}</span>
+        <span class="src-badge ${si.cls}">${si.label}</span>
+        <a href="${esc(item.link)}" target="_blank" rel="noopener noreferrer" class="source-link">${esc(item.title)}</a>
+        <div class="source-tags">${tags}</div>
+      </div>`;
+    });
+    inner += '</div>';
+    return collapsible('Source Articles', recent.length + ' articles', inner, false);
   }
 
 });
