@@ -726,3 +726,18 @@ header {
 }
 .source-filter-btn:hover { color: var(--text); border-color: var(--green-dim); }
 .source-filter-btn.active { color: var(--green); border-color: var(--green); background: var(--green-glow); }
+
+/* ---- TOKEN STATUS INDICATOR ---- */
+.token-status {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.token-checking { color: var(--text-faint); background: transparent; }
+.token-ok       { color: #00e5a0; background: rgba(0,229,160,0.08); border: 1px solid rgba(0,229,160,0.2); }
+.token-bad      { color: #ff4757; background: rgba(255,71,87,0.08);  border: 1px solid rgba(255,71,87,0.2); }
+.token-missing  { color: var(--amber); background: rgba(255,184,48,0.08); border: 1px solid rgba(255,184,48,0.2); }
