@@ -189,7 +189,7 @@
     "source_type": "reddit"
   },
   {
-    "title": "FMRS Health Systems By qilin",
+    "title": "Alarmco By qilin",
     "link": "https://www.ransomlook.io//group/qilin",
     "feed_url": "https://www.ransomlook.io/rss.xml",
     "date": "2026-03-13",
@@ -585,7 +585,7 @@
   {
     "title": "Starbucks Data Breach Impacts Employees",
     "link": "https://www.securityweek.com/starbucks-data-breach-impacts-employees/",
-    "feed_url": "https://securityweek.com/rss",
+    "feed_url": "https://www.securityweek.com/feed",
     "date": "2026-03-13",
     "terms": [
       "Phish"
@@ -1017,6 +1017,172 @@
     "date": "2026-03-13",
     "terms": [
       "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "Wills Point Chevrolet By akira",
+    "link": "https://www.ransomlook.io//group/akira",
+    "feed_url": "https://www.ransomlook.io/rss.xml",
+    "date": "2026-03-13",
+    "terms": [
+      "akira"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "INTERPOL Dismantles 45,000 Malicious IPs, Arrests 94 in Global Cybercrime",
+    "link": "https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html",
+    "feed_url": "https://thehackernews.com/feeds/posts/default",
+    "date": "2026-03-13",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Interpol's 'Operation Synergia III' Nets 94 Arrests in Major Cybercrime Sweep",
+    "link": "https://www.infosecurity-magazine.com/news/interpol-operation-synergia3-94/",
+    "feed_url": "https://www.infosecurity-magazine.com/rss/news/",
+    "date": "2026-03-13",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Watch out for fake Malwarebytes renewal notices in your calendar",
+    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-malwarebytes-renewal-notices-in-your-calendar",
+    "feed_url": "https://blog.malwarebytes.com/feed/",
+    "date": "2026-03-13",
+    "terms": [
+      "IOC",
+      "Phish",
+      "react",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "calendar invites can be abused for phishing,",
+        "url": "https://www.malwarebytes.com/blog/news/2025/11/fake-calendar-invites-are-spreading-heres-how-to-remove-them-and-prevent-more"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Alleged Breach of Therapeutes Exposes 71,500 Patient Records and 199,000 Therapy Appointments From French Mental Health Platform",
+    "link": "https://darkwebinformer.com/alleged-breach-of-therapeutes-exposes-71-500-patient-records-and-199-000-therapy-appointments-from-french-mental-health-platform/",
+    "feed_url": "https://darkwebinformer.com/rss/",
+    "date": "2026-03-13",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Threat Actor Selling Alleged Databases From Crypto, AI, and Finance Platforms Including MagicSlides, TLDR.Tech, and 365.loans",
+    "link": "https://darkwebinformer.com/threat-actor-selling-alleged-databases-from-crypto-ai-and-finance-platforms-including-magicslides-tldr-tech-and-365-loans/",
+    "feed_url": "https://darkwebinformer.com/rss/",
+    "date": "2026-03-13",
+    "terms": [
+      "IOC",
+      "DarkWebInformer",
+      "Phish",
+      "phish",
+      "darkwebinformer"
+    ],
+    "inline_links": [
+      {
+        "term": "Phish",
+        "text": "T1589.002\nGather Victim Identity: Email Addresses\n\nCollects email addresses from compromised platforms for resale, enabling phishing campaigns, credential stuffing, and targeted social engineering.",
+        "url": "https://attack.mitre.org/techniques/T1589/002/"
+      },
+      {
+        "term": "DarkWebInformer",
+        "text": "DarkWebInformer.com",
+        "url": "https://darkwebinformer.com/"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Driving Smarter Technology Operations With AI Copilot for IT Teams",
+    "link": "https://blog.comodo.com/others/ai-copilot-for-it-teams/",
+    "feed_url": "https://blog.comodo.com/rss",
+    "date": "2026-03-13",
+    "terms": [
+      "react"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "[r/cybersecurity] Alert fatigue isn't just an ops problem anymore. Attackers are actively engineering for it.",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1rssqen/alert_fatigue_isnt_just_an_ops_problem_anymore/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1rssqen/alert_fatigue_isnt_just_an_ops_problem_anymore/",
+    "date": "2026-03-13",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] PSA: Technical Analysis of a \"Contagious Interview\" (Lazarus Group) Job Scam targeting Frontend Devs",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1rsrnpm/psa_technical_analysis_of_a_contagious_interview/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1rsrnpm/psa_technical_analysis_of_a_contagious_interview/",
+    "date": "2026-03-13",
+    "terms": [
+      "lazarus",
+      "react"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Canada raises temporary foreign workers (TFW) cap to 15% in rural areas to \"support employers\".",
+    "link": "https://www.reddit.com/r/canada/comments/1rssokh/canada_raises_temporary_foreign_workers_tfw_cap/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rssokh/canada_raises_temporary_foreign_workers_tfw_cap/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Nanos survey says border crossing no longer \u2018on the radar\u2019 for many Canadians",
+    "link": "https://www.reddit.com/r/canada/comments/1rsrdlu/nanos_survey_says_border_crossing_no_longer_on/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rsrdlu/nanos_survey_says_border_crossing_no_longer_on/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Oil price spike from Iran war could help Canada in CUSMA talks, experts say",
+    "link": "https://www.reddit.com/r/canada/comments/1rsr9bq/oil_price_spike_from_iran_war_could_help_canada/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1rsr9bq/oil_price_spike_from_iran_war_could_help_canada/",
+    "date": "2026-03-13",
+    "terms": [
+      "Canada",
+      "Iran"
     ],
     "inline_links": [],
     "source_type": "reddit"
@@ -1647,17 +1813,6 @@
     ],
     "inline_links": [],
     "source_type": "mastodon"
-  },
-  {
-    "title": "Financial Brokerage By akira",
-    "link": "https://www.ransomlook.io//group/akira",
-    "feed_url": "https://www.ransomlook.io/rss.xml",
-    "date": "2026-03-12",
-    "terms": [
-      "akira"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
   },
   {
     "title": "How to Scale Phishing Detection in Your SOC: 3 Steps for CISOs",
