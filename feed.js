@@ -274,9 +274,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!token) { token = promptForToken(); if (!token) return; }
     refreshBtn.disabled = true;
     refreshBtnLabel.textContent = 'Triggering…';
-    const ok = await triggerWorkflow({}, token);
-    if (ok) { localStorage.setItem(RATE_LIMIT_KEY, Date.now().toString()); refreshBtnLabel.textContent = 'Triggered ✓'; }
-    else    { refreshBtnLabel.textContent = 'Error'; }
+    const result = await triggerWorkflow({}, token);
+    if (result.ok) {
+      localStorage.setItem(RATE_LIMIT_KEY, Date.now().toString());
+      refreshBtnLabel.textContent = 'Triggered ✓';
+    } else {
+      refreshBtnLabel.textContent = 'Error';
+      alert('Refresh failed:\n\n' + result.message);
+      if (result.status === 401 || result.status === 403) {
+        try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
+      }
+    }
     setTimeout(updateRefreshBtn, 3000);
   });
 
@@ -311,12 +319,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     customReportBtn.disabled  = true;
     defaultReportBtn.disabled = true;
-    showLoading('Dispatching custom analysis… this takes 1–3 minutes.');
-    const ok = await triggerWorkflow({ custom_prompt: prompt }, token);
-    if (!ok) {
-      // Token might be expired — clear cache and prompt for a new one
+    showLoading('Verifying token…');
+
+    // Quick token check before the full dispatch
+    const verify = await verifyToken(token);
+    if (!verify.ok) {
       try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
-      showError('Workflow dispatch failed (HTTP 422/401). Your token may have expired. Click "Run Custom Prompt" again — you will be prompted to enter a new Fine-Grained PAT (Actions: Read & Write scope on TinkerWithAll/Web). You can also run the workflow from GitHub Actions directly to regenerate config.js.');
+      showError(verify.message + '\n\nClick Run Custom Prompt again to enter a new token.');
+      customReportBtn.disabled  = false;
+      defaultReportBtn.disabled = false;
+      return;
+    }
+
+    loadingMsg.textContent = 'Dispatching custom analysis… this takes 1–3 minutes.';
+    const result = await triggerWorkflow({ custom_prompt: prompt }, token);
+    if (!result.ok) {
+      if (result.status === 401 || result.status === 403) {
+        try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
+      }
+      showError(result.message);
       customReportBtn.disabled  = false;
       defaultReportBtn.disabled = false;
       return;
@@ -330,25 +351,56 @@ document.addEventListener('DOMContentLoaded', () => {
     defaultReportBtn.disabled = false;
   });
 
-  async function triggerWorkflow(inputs, token) {
+  // Verify the token is valid before dispatching — gives a clear error fast
+  async function verifyToken(token) {
     try {
       const res = await fetch(
-        'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO + '/actions/workflows/' + WORKFLOW_FILE + '/dispatches',
-        {
-          method: 'POST',
-          headers: {
-            'Authorization': 'Bearer ' + token,
-            'Accept': 'application/vnd.github+json',
-            'X-GitHub-Api-Version': '2022-11-28',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ ref: 'main', inputs }),
-        }
+        'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO,
+        { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' } }
       );
-      if (res.status === 204) return true;
-      console.error('GitHub dispatch HTTP ' + res.status, await res.text().catch(() => ''));
-      return false;
-    } catch (err) { console.error('triggerWorkflow:', err); return false; }
+      if (res.status === 200) return { ok: true };
+      if (res.status === 401) return { ok: false, message: 'Token is invalid or expired. Enter a valid Fine-Grained PAT.' };
+      if (res.status === 404) return { ok: false, message: 'Repo TinkerWithAll/Web not found — check the token has access to this repo.' };
+      return { ok: false, message: 'Token check returned HTTP ' + res.status };
+    } catch { return { ok: true }; } // network error — proceed anyway
+  }
+
+  // Returns { ok: bool, status: int, message: string }
+  async function triggerWorkflow(inputs, token) {
+    const url = 'https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO +
+                '/actions/workflows/' + WORKFLOW_FILE + '/dispatches';
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + token,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ref: 'main', inputs }),
+      });
+
+      if (res.status === 204) return { ok: true, status: 204, message: '' };
+
+      let body = '';
+      try { body = await res.text(); } catch {}
+      let ghMsg = '';
+      try { ghMsg = JSON.parse(body).message || ''; } catch {}
+      console.error('GitHub dispatch HTTP ' + res.status, body);
+
+      const msgs = {
+        401: 'Token is invalid or lacks permission. Make sure GH_DISPATCH_TOKEN is a Fine-Grained PAT with Actions: Read & Write on the TinkerWithAll/Web repo.',
+        403: 'Token does not have Actions: Write permission on this repo. Edit the PAT at github.com/settings/personal-access-tokens and add Actions: Read & Write.',
+        404: 'Workflow file not found. Make sure "' + WORKFLOW_FILE + '" exists in .github/workflows/ on the main branch.',
+        422: 'Unprocessable — the workflow file exists but may not have workflow_dispatch enabled, or the ref "main" is wrong. Check that daily_scrape.yml has "workflow_dispatch:" in its "on:" section.',
+      };
+      const message = msgs[res.status] || ('GitHub returned HTTP ' + res.status + (ghMsg ? ': ' + ghMsg : '') + '. Check the browser console for details.');
+      return { ok: false, status: res.status, message };
+    } catch (err) {
+      console.error('triggerWorkflow network error:', err);
+      return { ok: false, status: 0, message: 'Network error — could not reach GitHub API. Check your internet connection.' };
+    }
   }
 
   async function pollForReport(timeoutSecs) {
