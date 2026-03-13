@@ -1,22 +1,22 @@
 {
   "vulnerabilities": {
-    "count": 10,
+    "count": 11,
     "items": [
       {
         "id": "CVE-2025-68613",
-        "description": "n8n RCE vulnerability allowing full server compromise, actively exploited with 24,700 exposed instances",
+        "description": "Critical RCE vulnerability in n8n workflow automation platform enabling full server compromise",
         "criticality": "CRITICAL",
-        "software_affected": "n8n workflow automation",
+        "software_affected": "n8n (24,700 instances exposed)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Zero-click exploitation"
+        "access_required": "Network / No auth required (zero-click)"
       },
       {
         "id": "CVE-2026-21509",
-        "description": "Microsoft Office Security Feature Bypass, actively exploited, CISA KEV listed, PoC public",
+        "description": "Actively exploited Microsoft Office security feature bypass vulnerability",
         "criticality": "CRITICAL",
         "software_affected": "Microsoft Office",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "User interaction / File opening"
+        "access_required": "User interaction required"
       },
       {
         "id": "CVE-2025-26399",
@@ -24,122 +24,141 @@
         "criticality": "HIGH",
         "software_affected": "SolarWinds Web Help Desk",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required"
+        "access_required": "Network / Auth required"
       },
       {
         "id": "CVE-2025-55182",
-        "description": "Package manager vulnerability addressed in ENISA DevSecOps advisory",
+        "description": "Vulnerability in package managers affecting DevSecOps supply chain",
         "criticality": "MEDIUM",
-        "software_affected": "Package management systems",
+        "software_affected": "Multiple package managers",
         "cia_impact": "Confidentiality: Medium, Integrity: High, Availability: Low",
-        "access_required": "Supply chain / Developer access"
+        "access_required": "Supply chain compromise"
       },
       {
         "id": "CVE-2025-8088",
-        "description": "Cyber warfare related vulnerability exploited in nation-state attacks",
+        "description": "Nation-state exploited vulnerability in cyber warfare campaigns",
         "criticality": "HIGH",
         "software_affected": "Unknown",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / APT level access"
-      },
-      {
-        "id": "CVE-2026-22719",
-        "description": "Nation-state cyber warfare vulnerability exploited in 2026",
-        "criticality": "HIGH",
-        "software_affected": "Unknown",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / APT level access"
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Auth required"
       },
       {
         "id": "CVE-2026-24423",
-        "description": "Nation-state cyber warfare vulnerability exploited in 2026",
+        "description": "Zero-day vulnerability exploited in nation-state attacks",
         "criticality": "HIGH",
         "software_affected": "Unknown",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / APT level access"
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Variable"
       },
       {
         "id": "CVE-2026-2441",
-        "description": "Nation-state cyber warfare vulnerability exploited in 2026",
+        "description": "Zero-day vulnerability used in targeted attacks",
         "criticality": "HIGH",
         "software_affected": "Unknown",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-        "access_required": "Network / APT level access"
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Variable"
+      },
+      {
+        "id": "CVE-2026-22719",
+        "description": "Vulnerability exploited in state-sponsored operations",
+        "criticality": "HIGH",
+        "software_affected": "Unknown",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / Variable"
       },
       {
         "id": "CVE-2024-23222",
-        "description": "Apple Coruna exploit kit flaw affecting older iOS versions, emergency patches issued",
+        "description": "Apple Coruna exploit kit vulnerability affecting older iOS versions",
         "criticality": "HIGH",
         "software_affected": "Apple iOS (older versions)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / User interaction"
+        "access_required": "User interaction / Web-based"
       },
       {
         "id": "CVE-2023-41974",
-        "description": "Apple Coruna exploit kit flaw affecting older iOS versions, emergency patches issued",
+        "description": "Apple Coruna exploit kit vulnerability patched in emergency update",
         "criticality": "HIGH",
         "software_affected": "Apple iOS (older versions)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / User interaction"
+        "access_required": "User interaction / Web-based"
+      },
+      {
+        "id": "CVE-2023-43000",
+        "description": "Apple Coruna exploit kit vulnerability affecting legacy iOS devices",
+        "criticality": "HIGH",
+        "software_affected": "Apple iOS (older versions)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "User interaction / Web-based"
       }
     ]
   },
   "threat_actors": {
     "items": [
       {
-        "name": "Handala (Iran-linked)",
-        "targets": "Stryker Corporation (US medical device manufacturer) - wiped 200K devices causing global network disruption; Raz Zimmt (head of Iran Desk at Israeli security institutes)",
-        "ttps": "Wiper malware deployment (T1485 Data Destruction), supply chain attacks, remote device wiping, destructive operations targeting healthcare infrastructure",
+        "name": "Handala (Iran-linked hacktivists)",
+        "targets": "Stryker Corporation (US medical device manufacturer) - wiped 200K devices globally; Raz Zimmt (Israeli security analyst)",
+        "ttps": "T1485 Data Destruction, T1561 Disk Wipe, T1486 Data Encrypted for Impact, T1078 Valid Accounts, supply chain targeting",
+        "iocs": []
+      },
+      {
+        "name": "Iran MOIS (Ministry of Intelligence and Security)",
+        "targets": "Multiple US and Middle East targets during ongoing Iran conflict; colluding with cybercriminals for enhanced operations",
+        "ttps": "T1566 Phishing, T1078 Valid Accounts, T1071 Application Layer Protocol, nation-state espionage, wiper malware deployment",
         "iocs": []
       },
       {
         "name": "ShinyHunters",
-        "targets": "Telus Digital (Canadian) - claims 1 petabyte data theft; massive data breach confirmed by company",
-        "ttps": "Large-scale data exfiltration (T1020), Salesforce targeting, credential theft, data breach operations",
+        "targets": "Telus Digital (Canadian company) - claims 1 petabyte data theft; Ericsson US - employee and customer data breach",
+        "ttps": "T1530 Data from Cloud Storage Object, T1213 Data from Information Repositories, T1567 Exfiltration Over Web Service, Salesforce exploitation",
+        "iocs": []
+      },
+      {
+        "name": "Akira Ransomware",
+        "targets": "Financial brokerage (unnamed)",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1083 File and Directory Discovery, double extortion",
         "iocs": []
       },
       {
         "name": "Qilin Ransomware",
         "targets": "Syed Professional Services, TDS Construction Group, Silvon Software Group",
-        "ttps": "Ransomware deployment (T1486), double extortion, data exfiltration prior to encryption",
+        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1059 Command and Scripting Interpreter, double extortion",
         "iocs": []
       },
       {
-        "name": "Akira Ransomware",
-        "targets": "Financial Brokerage sector",
-        "ttps": "Ransomware deployment (T1486), financial sector targeting, data encryption",
+        "name": "Lazarus Group (North Korea)",
+        "targets": "Ongoing campaigns targeting multiple sectors globally",
+        "ttps": "T1566 Phishing, T1059 Command and Scripting Interpreter, T1071 Application Layer Protocol, supply chain compromise",
         "iocs": []
       },
       {
-        "name": "Russian State-Sponsored Actors",
-        "targets": "Canadian governments, businesses and military - per Canadian cyber spy agency warning",
-        "ttps": "Espionage operations (T1590 Reconnaissance), government targeting, critical infrastructure attacks",
+        "name": "Scattered Spider",
+        "targets": "Referenced in context of Iran-linked Stryker attack analysis",
+        "ttps": "T1078 Valid Accounts, T1621 Multi-Factor Authentication Request Generation, T1556 Modify Authentication Process, social engineering",
         "iocs": []
       },
       {
-        "name": "Lazarus Group (North Korea-linked)",
-        "targets": "Multiple targets mentioned in context of APT activity and Splunk RCE exploitation",
-        "ttps": "APT operations, RCE exploitation, supply chain compromise, persistent access",
+        "name": "Unknown TA - OAuth Device Code Abuse",
+        "targets": "Microsoft 365 accounts across multiple organizations",
+        "ttps": "T1550.001 Use Alternate Authentication Material: Application Access Token, T1528 Steal Application Access Token, T1566 Phishing, OAuth device code flow abuse, no password theft",
         "iocs": []
       },
       {
-        "name": "Multiple Threat Actors",
-        "targets": "Microsoft 365 users globally via OAuth device code abuse and Cloudflare anti-bot bypass",
-        "ttps": "OAuth device code phishing (T1566.002), credential theft without password stealing, Cloudflare security bypass for credential harvesting (T1589.001)",
-        "iocs": [
-          "invite[.]komiku[.]my[.]id/Teams/Windows/invite.php",
-          "hxxp[:]//eroslombardieli4[.]blogspot[.]com/?m=1",
-          "hxxps[:]//pub-67d4c17ca5cc456cbb7eec6c156c7e97[.]r2[.]dev/index[.]html",
-          "hxxps[:]//maneesh004-code[.]github[.]io/netflix-clone/",
-          "hxxps[:]//89988---8[.]weebly[.]com",
-          "hxxps[:]//uniaen-fr[.]weebly[.]com"
-        ]
+        "name": "Unknown TA - Cloudflare Anti-Bot Phishing",
+        "targets": "Microsoft 365 users globally",
+        "ttps": "T1566.002 Phishing: Spearphishing Link, T1078 Valid Accounts, T1583.006 Acquire Infrastructure: Web Services, Cloudflare anti-bot feature abuse",
+        "iocs": []
+      },
+      {
+        "name": "DarkWebInformer (Threat Intelligence Source)",
+        "targets": "HB Brantner (Austrian trailer manufacturer) - customer data and NDAs exfiltrated; Sweden E-Government Platform - full source code leaked from CGI Sverige; 26,500 IoT devices and 3,000 RTSP cameras in Saudi Arabia listed",
+        "ttps": "T1213 Data from Information Repositories, T1039 Data from Network Shared Drive, T1078 Valid Accounts, infrastructure compromise",
+        "iocs": []
       }
     ]
   },
   "canada_landscape": {
-    "summary": "Canadian organizations faced significant threats in the past 48 hours. Russian state-sponsored hackers are actively targeting Canadian governments, businesses, and military per cyber spy agency warnings. Two major data breaches hit Canadian companies: Telus Digital confirmed a massive breach after ShinyHunters claimed 1 petabyte of data theft, and Loblaw suffered a data breach exposing sensitive customer information. No CCCS advisories were identified in the reporting period.",
-    "retailers": "Loblaw suffered data breach exposing sensitive customer information",
+    "summary": "Russian hackers are actively targeting Canadian governments, businesses, and military according to cyber spy agency warnings. Two major Canadian data breaches occurred: Telus Digital suffered a massive breach with ShinyHunters claiming 1 petabyte data theft involving Salesforce systems, and Loblaw experienced a data breach exposing sensitive customer information. Canada has cancelled hundreds of visas over Iran connections amid heightened geopolitical tensions.",
+    "retailers": "Loblaw - data breach exposing sensitive customer information reported March 12, 2026",
     "financial": "None identified"
   },
   "generated_at": "2026-03-13 14:30 ET",
