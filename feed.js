@@ -8,9 +8,45 @@ const WORKFLOW_FILE = 'daily_scrape.yml';
 const RATE_LIMIT_MS  = 2 * 60 * 60 * 1000;
 const RATE_LIMIT_KEY = 'feed_last_trigger';
 
-// GH_DISPATCH_TOKEN is injected at build time into config.js.
-// Read it lazily inside functions so it's always fresh.
-function getToken() { return (window.GH_DISPATCH_TOKEN || '').trim(); }
+// GH_DISPATCH_TOKEN is injected at build time into config.js by GitHub Actions.
+// We also cache it in localStorage so it survives if config.js is stale.
+// If neither works, the user is prompted to enter it once manually.
+const TOKEN_STORAGE_KEY = 'gh_dispatch_token_cache';
+
+function getToken() {
+  // Priority: 1) config.js (freshest, regenerated each workflow run)
+  //           2) localStorage cache (survives stale config.js)
+  const live = (window.GH_DISPATCH_TOKEN || '').trim();
+  if (live && live !== 'undefined') {
+    // Cache it for next time
+    try { localStorage.setItem(TOKEN_STORAGE_KEY, live); } catch {}
+    return live;
+  }
+  // Fall back to cached token
+  try {
+    const cached = (localStorage.getItem(TOKEN_STORAGE_KEY) || '').trim();
+    if (cached) return cached;
+  } catch {}
+  return '';
+}
+
+function promptForToken() {
+  const msg = [
+    'GH_DISPATCH_TOKEN is not available.',
+    '',
+    'This happens when config.js has not been generated yet.',
+    'Fix: Go to GitHub Actions → Run workflow manually once.',
+    '',
+    'OR paste your Fine-Grained PAT here to cache it locally',
+    '(Actions: Read & Write scope on TinkerWithAll/Web):',
+  ].join('\n');
+  const token = window.prompt(msg, '');
+  if (token && token.trim()) {
+    try { localStorage.setItem(TOKEN_STORAGE_KEY, token.trim()); } catch {}
+    return token.trim();
+  }
+  return '';
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -235,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
   refreshBtn.addEventListener('click', async () => {
     if (getRemainingCooldown() > 0) return;
     const token = getToken();
-    if (!token) { alert('GH_DISPATCH_TOKEN not configured. Run the workflow once from GitHub Actions to generate config.js.'); return; }
+    if (!token) { token = promptForToken(); if (!token) return; }
     refreshBtn.disabled = true;
     refreshBtnLabel.textContent = 'Triggering…';
     const ok = await triggerWorkflow({}, token);
@@ -265,17 +301,22 @@ document.addEventListener('DOMContentLoaded', () => {
   customReportBtn.addEventListener('click', async () => {
     const prompt = customPrompt.value.trim();
     if (!prompt) { customPrompt.focus(); return; }
-    const token = getToken();
+    let token = getToken();
     if (!token) {
-      showError('GH_DISPATCH_TOKEN is not set. The workflow must run at least once to generate config.js with the token. Go to GitHub Actions → Run workflow manually first.');
-      return;
+      token = promptForToken();
+      if (!token) {
+        showError('No dispatch token available. Run the workflow from GitHub Actions once, or enter your Fine-Grained PAT when prompted.');
+        return;
+      }
     }
     customReportBtn.disabled  = true;
     defaultReportBtn.disabled = true;
     showLoading('Dispatching custom analysis… this takes 1–3 minutes.');
     const ok = await triggerWorkflow({ custom_prompt: prompt }, token);
     if (!ok) {
-      showError('GitHub Actions dispatch failed (HTTP status was not 204). Most likely cause: GH_DISPATCH_TOKEN has expired. Create a new Fine-Grained PAT with Actions: Read & Write scope, add it to GitHub Secrets as GH_DISPATCH_TOKEN, then run the workflow once so config.js is regenerated. Check the browser console for details.');
+      // Token might be expired — clear cache and prompt for a new one
+      try { localStorage.removeItem(TOKEN_STORAGE_KEY); } catch {}
+      showError('Workflow dispatch failed (HTTP 422/401). Your token may have expired. Click "Run Custom Prompt" again — you will be prompted to enter a new Fine-Grained PAT (Actions: Read & Write scope on TinkerWithAll/Web). You can also run the workflow from GitHub Actions directly to regenerate config.js.');
       customReportBtn.disabled  = false;
       defaultReportBtn.disabled = false;
       return;
