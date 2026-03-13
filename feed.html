@@ -66,16 +66,20 @@
     <!-- AI REPORT TAB -->
     <div class="tab-panel active" id="tab-report">
       <div class="report-controls">
-        <textarea id="customPrompt" placeholder="Optional custom analysis prompt… e.g. 'Summarize all SonicWall findings' or 'What TTPs is Lazarus using this week?'"></textarea>
-        <div id="tokenStatus" class="token-status token-checking">· Checking token…</div>
         <div class="report-actions">
-          <button class="btn-primary" id="defaultReportBtn">
+          <div class="window-toggle">
+            <button class="window-btn active" id="btn48h" data-window="48h">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Last 48h
+            </button>
+            <button class="window-btn" id="btn2w" data-window="2w">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Last 2 Weeks
+            </button>
+          </div>
+          <button class="btn-primary" id="loadReportBtn">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            Default Report (48h)
-          </button>
-          <button class="btn-secondary" id="customReportBtn">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            Run Custom Prompt
+            Load Report
           </button>
           <button class="btn-secondary" id="downloadReportBtn" style="display:none;">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
@@ -89,12 +93,12 @@
           <div class="ph-icon">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
           </div>
-          <p>Click <strong>Default Report (48h)</strong> to generate your AI threat intelligence briefing.</p>
-          <p class="ph-sub">Reports auto-generate daily at 05:00 PT and are cached in <code>report.json</code>. Manual triggers are rate-limited to once per 2 hours. Your Anthropic API key is stored as a GitHub Secret and never exposed in the browser.</p>
+          <p>Select a window and click <strong>Load Report</strong> to view your AI threat intelligence briefing.</p>
+          <p class="ph-sub">Reports auto-generate daily at 05:00 PT. Your Anthropic API key is stored as a GitHub Secret and never exposed in the browser.</p>
         </div>
         <div class="report-loading" id="reportLoading" style="display:none;">
           <div class="loader-bars"><span></span><span></span><span></span><span></span><span></span></div>
-          <p id="loadingMsg">Generating intelligence briefing…</p>
+          <p id="loadingMsg">Loading intelligence briefing…</p>
         </div>
         <div class="report-content" id="reportContent" style="display:none;"></div>
       </div>
@@ -149,6 +153,6 @@
   </footer>
 
   <script src="config.js"></script>
-  <script src="feed.js?v=20260312"></script>
+  <script src="feed.js?v=20260313"></script>
 </body>
 </html>
