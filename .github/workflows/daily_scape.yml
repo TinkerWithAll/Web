@@ -1,0 +1,116 @@
+name: Daily Security Feed Scraper
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      custom_prompt:
+        description: 'Optional custom analysis prompt'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CUSTOM_PROMPT:     ${{ github.event.inputs.custom_prompt }}
+          AI_ENABLED:        ${{ vars.AI_ENABLED }}
+        run: python scraper.py
+
+      - name: Write config.js via Contents API
+        env:
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          printf 'window.GH_DISPATCH_TOKEN="%s";\n' "$GH_DISPATCH_TOKEN" > config.js
+
+          SHA=$(curl -s \
+            -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js?ref=main" \
+            | python3 -c "
+import sys,json
+try: print(json.load(sys.stdin).get('sha',''))
+except: print('')
+")
+
+          CONTENT=$(base64 -w 0 config.js)
+
+          BODY=$(python3 -c "
+import json
+d={'message':'chore: update config.js [skip ci]','content':'${CONTENT}'}
+sha='${SHA}'.strip()
+if sha: d['sha']=sha
+print(json.dumps(d))
+")
+
+          curl -s -X PUT \
+            -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js" \
+            -d "$BODY" \
+            | python3 -c "
+import sys,json
+try:
+  d=json.load(sys.stdin)
+  sha=d.get('commit',{}).get('sha','')
+  print('config.js OK:',sha[:12] if sha else 'ERROR: '+json.dumps(d)[:150])
+except Exception as e: print('parse error:',e)
+"
+
+      - name: Commit and push data files
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Unstage config.js — it was written via API above, never via git
+          git reset HEAD config.js 2>/dev/null || true
+          git checkout -- config.js 2>/dev/null || true
+
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+
+          # Retry loop — pulls and rebases up to 3 times to handle the
+          # config.js API commit that lands between our commit and push
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed, retrying in 5s..."
+            sleep 5
+          done
+
+          echo "ERROR: push failed after 3 attempts."
+          exit 1
