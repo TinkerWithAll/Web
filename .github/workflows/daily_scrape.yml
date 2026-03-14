@@ -36,8 +36,8 @@ jobs:
       - name: Run scraper
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CUSTOM_PROMPT:     ${{ github.event.inputs.custom_prompt }}
-          AI_ENABLED:        ${{ vars.AI_ENABLED }}
+          CUSTOM_PROMPT: ${{ github.event.inputs.custom_prompt }}
+          AI_ENABLED: ${{ vars.AI_ENABLED }}
         run: python scraper.py
 
       - name: Write config.js via Contents API
@@ -46,47 +46,58 @@ jobs:
         run: |
           printf 'window.GH_DISPATCH_TOKEN="%s";\n' "$GH_DISPATCH_TOKEN" > config.js
 
-          SHA=$(curl -s \
+          # Get current SHA of config.js if it exists
+          curl -s \
             -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js?ref=main" \
-            | python3 -c "
-import sys,json
-try: print(json.load(sys.stdin).get('sha',''))
-except: print('')
-")
+            > /tmp/config_meta.json
 
-          CONTENT=$(base64 -w 0 config.js)
+          python3 << 'PYEOF'
+          import json, subprocess, sys
 
-          BODY=$(python3 -c "
-import json
-d={'message':'chore: update config.js [skip ci]','content':'${CONTENT}'}
-sha='${SHA}'.strip()
-if sha: d['sha']=sha
-print(json.dumps(d))
-")
+          with open('/tmp/config_meta.json') as f:
+              meta = json.load(f)
+          sha = meta.get('sha', '')
 
-          curl -s -X PUT \
-            -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "Content-Type: application/json" \
-            "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js" \
-            -d "$BODY" \
-            | python3 -c "
-import sys,json
-try:
-  d=json.load(sys.stdin)
-  sha=d.get('commit',{}).get('sha','')
-  print('config.js OK:',sha[:12] if sha else 'ERROR: '+json.dumps(d)[:150])
-except Exception as e: print('parse error:',e)
-"
+          with open('config.js', 'rb') as f:
+              import base64
+              content = base64.b64encode(f.read()).decode()
+
+          body = {'message': 'chore: update config.js [skip ci]', 'content': content}
+          if sha:
+              body['sha'] = sha
+
+          import urllib.request, json as jsonmod
+          data = jsonmod.dumps(body).encode()
+
+          import os
+          token = os.environ['GH_DISPATCH_TOKEN']
+          req = urllib.request.Request(
+              'https://api.github.com/repos/TinkerWithAll/Web/contents/config.js',
+              data=data,
+              method='PUT',
+              headers={
+                  'Authorization': f'Bearer {token}',
+                  'Accept': 'application/vnd.github+json',
+                  'Content-Type': 'application/json',
+              }
+          )
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  result = json.loads(resp.read())
+                  commit_sha = result.get('commit', {}).get('sha', '')
+                  print(f'config.js written OK: {commit_sha[:12]}')
+          except Exception as e:
+              print(f'WARNING: config.js write failed: {e}', file=sys.stderr)
+          PYEOF
 
       - name: Commit and push data files
         run: |
-          git config --global user.name  "github-actions[bot]"
+          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Unstage config.js — it was written via API above, never via git
+          # Never commit config.js — it was written via API above
           git reset HEAD config.js 2>/dev/null || true
           git checkout -- config.js 2>/dev/null || true
 
@@ -99,18 +110,16 @@ except Exception as e: print('parse error:',e)
 
           git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
 
-          # Retry loop — pulls and rebases up to 3 times to handle the
-          # config.js API commit that lands between our commit and push
+          # Retry loop — rebase up to 3 times to absorb the config.js API commit
           for attempt in 1 2 3; do
-            echo "Push attempt $attempt..."
+            echo "Push attempt ${attempt}..."
             git pull --rebase origin main
             if git push origin main; then
-              echo "Push succeeded on attempt $attempt."
+              echo "Push succeeded."
               exit 0
             fi
-            echo "Push failed, retrying in 5s..."
             sleep 5
           done
 
-          echo "ERROR: push failed after 3 attempts."
+          echo "Push failed after 3 attempts."
           exit 1
