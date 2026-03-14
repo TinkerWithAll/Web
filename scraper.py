@@ -242,6 +242,19 @@ def parse_feeds(feed_urls, search_terms):
     entries    = []
     feed_stats = {}   # url -> {"total": N, "matched": N}
 
+    # Deduplicate feed URLs — normalise by stripping trailing slashes
+    seen_urls = set()
+    deduped = []
+    for url in feed_urls:
+        norm = url.rstrip('/')
+        if norm not in seen_urls:
+            seen_urls.add(norm)
+            deduped.append(url)
+    skipped = len(feed_urls) - len(deduped)
+    if skipped:
+        print(f"  Deduped {skipped} duplicate feed URLs ({len(deduped)} unique)", file=sys.stderr)
+    feed_urls = deduped
+
     for url in feed_urls:
         print(f"Parsing {url}...", file=sys.stderr)
         d     = safe_parse_feed(url)
@@ -428,9 +441,23 @@ def build_default_prompt(recent_entries, window_label="48h"):
             "Please write a brief report noting this and provide general security posture advice."
         )
 
-    # Include link so AI can pass it through to source_url in output
+    # Cap articles to avoid hitting token limits.
+    # Priority: CCCS first (official advisories), then by source diversity, then recency.
+    MAX_ARTICLES = 100  # ~100 articles × ~120 chars ≈ 12k chars, well within limits
+    cccs   = [e for e in recent_entries if e.get("source_type","").lower() == "cccs"]
+    others = [e for e in recent_entries if e.get("source_type","").lower() != "cccs"]
+    # Deduplicate others by title prefix to avoid the same story from 5 sources
+    seen_titles = set()
+    deduped_others = []
+    for e in others:
+        key = e.get("title","")[:60].lower()
+        if key not in seen_titles:
+            seen_titles.add(key)
+            deduped_others.append(e)
+    selected = (cccs + deduped_others)[:MAX_ARTICLES]
+
     articles_text = []
-    for e in recent_entries[:150]:
+    for e in selected:
         source = e.get("source_type", "rss").upper()
         terms  = ", ".join(e.get("terms", []))
         link   = e.get("link", "")
@@ -536,7 +563,7 @@ def call_anthropic(prompt: str) -> dict | None:
     }
     body = json.dumps({
         "model":      "claude-sonnet-4-5",
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "messages":   [{"role": "user", "content": prompt}],
     }).encode("utf-8")
 
@@ -749,7 +776,10 @@ def fetch_mastodon(search_terms: list) -> list:
             print(f"Mastodon: #{tag}...", file=sys.stderr)
             while page_url and pages_fetched < MAX_PAGES_PER_TAG:
                 time.sleep(0.6)   # respect rate limits
-                resp = requests.get(page_url, timeout=15)
+                resp = requests.get(
+                    page_url, timeout=15,
+                    headers={"User-Agent": "SecurityFeedBot/1.0 (github.com/TinkerWithAll/Web)"}
+                )
                 if resp.status_code != 200:
                     print(f"  Mastodon #{tag} page {pages_fetched+1} → {resp.status_code}", file=sys.stderr)
                     break
