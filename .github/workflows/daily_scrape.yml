@@ -40,7 +40,7 @@ jobs:
           AI_ENABLED:        ${{ vars.AI_ENABLED }}
         run: python scraper.py
 
-      - name: Write config.js via Contents API (before git push to avoid race)
+      - name: Write config.js via Contents API
         env:
           GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
         run: |
@@ -51,42 +51,34 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js?ref=main" \
             | python3 -c "
-import sys, json
-try:
-    print(json.load(sys.stdin).get('sha',''))
-except:
-    print('')
+import sys,json
+try: print(json.load(sys.stdin).get('sha',''))
+except: print('')
 ")
 
           CONTENT=$(base64 -w 0 config.js)
 
           BODY=$(python3 -c "
 import json
-d = {'message': 'chore: update config.js [skip ci]', 'content': '${CONTENT}'}
-sha = '${SHA}'.strip()
-if sha:
-    d['sha'] = sha
+d={'message':'chore: update config.js [skip ci]','content':'${CONTENT}'}
+sha='${SHA}'.strip()
+if sha: d['sha']=sha
 print(json.dumps(d))
 ")
 
-          RESULT=$(curl -s -X PUT \
+          curl -s -X PUT \
             -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             -H "Content-Type: application/json" \
             "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js" \
-            -d "$BODY")
-
-          echo "$RESULT" | python3 -c "
-import sys, json
+            -d "$BODY" \
+            | python3 -c "
+import sys,json
 try:
-    d = json.load(sys.stdin)
-    sha = d.get('commit', {}).get('sha', '')
-    if sha:
-        print('config.js written OK:', sha[:12])
-    else:
-        print('WARNING config.js write failed:', json.dumps(d)[:200])
-except Exception as e:
-    print('Parse error:', e)
+  d=json.load(sys.stdin)
+  sha=d.get('commit',{}).get('sha','')
+  print('config.js OK:',sha[:12] if sha else 'ERROR: '+json.dumps(d)[:150])
+except Exception as e: print('parse error:',e)
 "
 
       - name: Commit and push data files
@@ -94,17 +86,31 @@ except Exception as e:
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Never stage config.js — written above via API
+          # Unstage config.js — it was written via API above, never via git
           git reset HEAD config.js 2>/dev/null || true
           git checkout -- config.js 2>/dev/null || true
 
           git add -A
 
-          if ! git diff --staged --quiet; then
-            git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-            # Pull with rebase to incorporate the config.js API commit made above
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes to commit."
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+            exit 0
           fi
+
+          git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+
+          # Retry loop — pulls and rebases up to 3 times to handle the
+          # config.js API commit that lands between our commit and push
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed, retrying in 5s..."
+            sleep 5
+          done
+
+          echo "ERROR: push failed after 3 attempts."
+          exit 1
