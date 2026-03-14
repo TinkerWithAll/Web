@@ -380,25 +380,52 @@ document.addEventListener('DOMContentLoaded', () => {
       <span>Generated: <span class="report-ts mono">${esc(ts)}</span></span>
     </div>`;
 
-    // Executive summary — always open, no collapse
-    if (data.executive_summary) {
-      html += `<div class="executive-summary">
+    // Executive summary rendered after potential re-parse below
+    function renderExecSummary(summary) {
+      if (!summary) return '';
+      return `<div class="executive-summary">
         <div class="exec-label">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           Key Findings
         </div>
-        <p class="exec-text">${esc(data.executive_summary)}</p>
+        <p class="exec-text">${esc(summary)}</p>
       </div>`;
     }
+    const execPlaceholder = '%%EXEC_SUMMARY%%';
+    html += execPlaceholder;
 
+    // If custom_response contains raw JSON (fallback from failed parse), re-parse it
     if (data.custom_response) {
-      html += '<div class="r-section"><div class="canada-card">' + markdownToHtml(data.custom_response) + '</div></div>';
+      const raw = data.custom_response.trim();
+      let parsed = null;
+      try {
+        // Strip markdown fences if present
+        const clean = raw.replace(/^```[a-z]*\n?/i, '').replace(/\n?```$/,'').trim();
+        const start = clean.indexOf('{');
+        const end   = clean.lastIndexOf('}') + 1;
+        if (start >= 0 && end > start) {
+          parsed = JSON.parse(clean.slice(start, end));
+        }
+      } catch (e) { parsed = null; }
+
+      if (parsed && (parsed.vulnerabilities || parsed.threat_actors || parsed.executive_summary)) {
+        // Successfully re-parsed — render as structured report
+        if (parsed.executive_summary) data.executive_summary = parsed.executive_summary;
+        html += renderVulnSection(parsed.vulnerabilities);
+        html += renderTASection(parsed.threat_actors);
+        html += renderCanadaSection(parsed.canada_landscape);
+      } else {
+        // Genuine free-text response — render as markdown
+        html += '<div class="r-section"><div class="canada-card">' + markdownToHtml(raw) + '</div></div>';
+      }
     } else {
       html += renderVulnSection(data.vulnerabilities);
       html += renderTASection(data.threat_actors);
       html += renderCanadaSection(data.canada_landscape);
     }
     html += renderSourcesSection();
+    // Now inject exec summary — data.executive_summary may have been set during re-parse
+    html = html.replace(execPlaceholder, renderExecSummary(data.executive_summary));
     reportContent.innerHTML = html;
   }
 
