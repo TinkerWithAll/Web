@@ -623,27 +623,73 @@ def generate_and_save_report(full_history: list):
         def parse_ai_response(response_text, now_et):
             if response_text is None:
                 return {"ai_enabled": True, "generated_at": now_et, "error": "Anthropic API unavailable"}
-            try:
-                clean = response_text.strip()
-                # Strip any markdown fences (```json ... ``` or ``` ... ```)
-                import re
-                clean = re.sub(r"^```[a-zA-Z]*\n?", "", clean)
-                clean = re.sub(r"\n?```$", "", clean)
-                clean = clean.strip()
-                # Find the outermost JSON object in case there's leading/trailing text
+            import re as _re
+
+            def try_parse(text):
+                """Try progressively more aggressive extraction strategies."""
+                # Strategy 1: direct parse
+                try:
+                    return json.loads(text)
+                except json.JSONDecodeError:
+                    pass
+                # Strategy 2: strip markdown fences
+                clean = _re.sub(r"^```[a-zA-Z]*\s*", "", text.strip())
+                clean = _re.sub(r"\s*```$", "", clean).strip()
+                try:
+                    return json.loads(clean)
+                except json.JSONDecodeError:
+                    pass
+                # Strategy 3: find outermost {...}
                 start = clean.find("{")
                 end   = clean.rfind("}") + 1
                 if start >= 0 and end > start:
-                    clean = clean[start:end]
-                r = json.loads(clean)
-                r["ai_enabled"] = True
-                if "generated_at" not in r:
-                    r["generated_at"] = now_et
-                return r
-            except json.JSONDecodeError as e:
-                print(f"JSON parse error: {e}", file=sys.stderr)
-                print(f"  Raw response start: {response_text[:200]}", file=sys.stderr)
-                return {"ai_enabled": True, "generated_at": now_et, "custom_response": response_text}
+                    try:
+                        return json.loads(clean[start:end])
+                    except json.JSONDecodeError:
+                        pass
+                # Strategy 4: truncated JSON — try to close any open structure
+                # Find the last complete top-level key block and close the JSON
+                candidate = clean[start:end] if start >= 0 else clean
+                # Count open braces/brackets to detect truncation
+                depth = 0
+                last_good = 0
+                in_str = False
+                esc_next = False
+                for i, ch in enumerate(candidate):
+                    if esc_next:
+                        esc_next = False
+                        continue
+                    if ch == '\\' and in_str:
+                        esc_next = True
+                        continue
+                    if ch == '"' and not esc_next:
+                        in_str = not in_str
+                    if not in_str:
+                        if ch in ('{', '['):
+                            depth += 1
+                        elif ch in ('}', ']'):
+                            depth -= 1
+                            if depth == 0:
+                                last_good = i + 1
+                if last_good > 0 and last_good < len(candidate):
+                    # Response was truncated — close the JSON at last complete object
+                    truncated = candidate[:last_good]
+                    try:
+                        return json.loads(truncated)
+                    except json.JSONDecodeError:
+                        pass
+                return None
+
+            result = try_parse(response_text)
+            if result is not None:
+                result["ai_enabled"] = True
+                if "generated_at" not in result:
+                    result["generated_at"] = now_et
+                return result
+
+            print(f"JSON parse error — all strategies failed, storing as text", file=sys.stderr)
+            print(f"  Response start: {response_text[:300]}", file=sys.stderr)
+            return {"ai_enabled": True, "generated_at": now_et, "custom_response": response_text}
 
         # 48h report
         print("Generating 48h report...", file=sys.stderr)
