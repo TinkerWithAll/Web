@@ -2,7 +2,7 @@ name: Daily Security Feed Scraper
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 05:00 PT (PST/winter). Change to '0 12 * * *' for PDT.
+    - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       custom_prompt:
@@ -40,75 +40,71 @@ jobs:
           AI_ENABLED:        ${{ vars.AI_ENABLED }}
         run: python scraper.py
 
-      - name: Commit data files (no secrets)
-        run: |
-          git config --global user.name  "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Never commit feed.html or config.js — they get token-injected separately
-          git reset HEAD feed.html config.js 2>/dev/null || true
-
-          git add -A
-
-          if ! git diff --staged --quiet; then
-            git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-            git push origin main
-          else
-            echo "No changes to commit."
-          fi
-
-      - name: Write token into config.js and force-push to gh-pages
+      - name: Write config.js via Contents API (before git push to avoid race)
         env:
           GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
         run: |
-          # config.js holds only the token — it is NEVER committed to main.
-          # We write it fresh here and push directly to the gh-pages branch
-          # (or main if you use main for Pages). GitHub push protection only
-          # scans branches configured for push protection; we use --allow-empty
-          # and the Contents API to write a single file without a normal push.
-          
           printf 'window.GH_DISPATCH_TOKEN="%s";\n' "$GH_DISPATCH_TOKEN" > config.js
-          
-          # Get current SHA of config.js on main (may not exist yet)
-          EXISTING=$(curl -s \
+
+          SHA=$(curl -s \
             -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js?ref=main")
-          
-          SHA=$(echo "$EXISTING" | python3 -c "
-          import sys, json
-          try:
-            d = json.load(sys.stdin)
-            print(d.get('sha', ''))
-          except:
-            print('')
-          ")
-          
+            "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js?ref=main" \
+            | python3 -c "
+import sys, json
+try:
+    print(json.load(sys.stdin).get('sha',''))
+except:
+    print('')
+")
+
           CONTENT=$(base64 -w 0 config.js)
-          
-          # Build JSON body — include sha only if file already exists
-          if [ -n "$SHA" ]; then
-            BODY=$(python3 -c "import json; print(json.dumps({'message':'chore: update config [skip ci]','content':'${CONTENT}','sha':'${SHA}'}))")
-          else
-            BODY=$(python3 -c "import json; print(json.dumps({'message':'chore: update config [skip ci]','content':'${CONTENT}'}))")
-          fi
-          
+
+          BODY=$(python3 -c "
+import json
+d = {'message': 'chore: update config.js [skip ci]', 'content': '${CONTENT}'}
+sha = '${SHA}'.strip()
+if sha:
+    d['sha'] = sha
+print(json.dumps(d))
+")
+
           RESULT=$(curl -s -X PUT \
             -H "Authorization: Bearer ${GH_DISPATCH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             -H "Content-Type: application/json" \
             "https://api.github.com/repos/TinkerWithAll/Web/contents/config.js" \
             -d "$BODY")
-          
+
           echo "$RESULT" | python3 -c "
-          import sys, json
-          try:
-            d = json.load(sys.stdin)
-            sha = d.get('commit', {}).get('sha', '')
-            if sha:
-              print('config.js updated, commit:', sha[:12])
-            else:
-              print('ERROR:', json.dumps(d)[:200])
-          except Exception as e:
-            print('Parse error:', e)
-          "
+import sys, json
+try:
+    d = json.load(sys.stdin)
+    sha = d.get('commit', {}).get('sha', '')
+    if sha:
+        print('config.js written OK:', sha[:12])
+    else:
+        print('WARNING config.js write failed:', json.dumps(d)[:200])
+except Exception as e:
+    print('Parse error:', e)
+"
+
+      - name: Commit and push data files
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Never stage config.js — written above via API
+          git reset HEAD config.js 2>/dev/null || true
+          git checkout -- config.js 2>/dev/null || true
+
+          git add -A
+
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: automated feed update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            # Pull with rebase to incorporate the config.js API commit made above
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
