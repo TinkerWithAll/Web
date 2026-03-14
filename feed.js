@@ -294,6 +294,146 @@ document.addEventListener('DOMContentLoaded', () => {
   if (downloadTermsBtn) downloadTermsBtn.addEventListener('click', () => dlTxt('terms.txt'));
   if (downloadFeedsBtn) downloadFeedsBtn.addEventListener('click', () => dlTxt('feeds.txt'));
 
+  // ── Feed Stats Tab ────────────────────────────────────────────
+  let statsData = {};   // raw feed_stats.json content
+
+  // Load stats when tab is first opened
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.tab === 'stats' && Object.keys(statsData).length === 0) {
+        loadFeedStats();
+      }
+    });
+  });
+
+  const statsSearch    = $('statsSearch');
+  const statsSortBy    = $('statsSortBy');
+  const statsFilter    = $('statsFilter');
+  const statsBody      = $('statsBody');
+  const statsSummary   = $('statsSummary');
+  const statsNoResults = $('statsNoResults');
+  const exportStatsBtn = $('exportStatsBtn');
+
+  async function loadFeedStats() {
+    if (statsBody) statsBody.innerHTML =
+      '<tr><td colspan="6" style="text-align:center;color:var(--text-faint);padding:2rem">Loading feed stats…</td></tr>';
+    try {
+      const r = await fetch('feed_stats.json' + cb());
+      if (!r.ok) throw new Error('feed_stats.json not found — run the scraper at least once.');
+      statsData = await r.json();
+      renderStats();
+    } catch (e) {
+      if (statsBody) statsBody.innerHTML =
+        '<tr><td colspan="6" style="text-align:center;color:var(--red);padding:2rem">' + esc(e.message) + '</td></tr>';
+    }
+  }
+
+  function getFeedName(url) {
+    // Extract a readable short name from the URL
+    try {
+      const u = new URL(url);
+      return u.hostname.replace(/^www\./, '');
+    } catch { return url; }
+  }
+
+  function renderStats() {
+    if (!statsBody || !Object.keys(statsData).length) return;
+
+    const search    = statsSearch  ? statsSearch.value.toLowerCase()  : '';
+    const sortBy    = statsSortBy  ? statsSortBy.value                : 'matched_all_time';
+    const filterVal = statsFilter  ? statsFilter.value                : 'all';
+
+    // Build rows array
+    let rows = Object.entries(statsData).map(([url, s]) => {
+      const total   = s.total_all_time   || 0;
+      const matched = s.matched_all_time || 0;
+      const rate    = total > 0 ? (matched / total * 100) : 0;
+      return { url, total, matched, rate,
+        lastMatched: s.last_run_matched || 0,
+        lastDate:    s.last_run_date    || '—' };
+    });
+
+    // Filter
+    if (filterVal === 'active') rows = rows.filter(r => r.matched > 0);
+    if (filterVal === 'zero')   rows = rows.filter(r => r.matched === 0);
+    if (search) rows = rows.filter(r => r.url.toLowerCase().includes(search));
+
+    // Sort
+    rows.sort((a, b) => {
+      if (sortBy === 'matched_all_time')  return b.matched - a.matched;
+      if (sortBy === 'last_run_matched')  return b.lastMatched - a.lastMatched;
+      if (sortBy === 'total_all_time')    return b.total - a.total;
+      if (sortBy === 'match_rate')        return b.rate - a.rate;
+      if (sortBy === 'url')               return a.url.localeCompare(b.url);
+      return 0;
+    });
+
+    // Summary bar
+    const totalFeeds   = Object.keys(statsData).length;
+    const activeFeeds  = Object.values(statsData).filter(s => (s.matched_all_time||0) > 0).length;
+    const totalMatched = Object.values(statsData).reduce((n, s) => n + (s.matched_all_time||0), 0);
+    const deadFeeds    = totalFeeds - activeFeeds;
+    if (statsSummary) statsSummary.innerHTML =
+      stat('Total Feeds', totalFeeds) +
+      stat('Active (matched >0)', activeFeeds) +
+      stat('Zero Results', deadFeeds) +
+      stat('Total Matches (all time)', totalMatched.toLocaleString());
+
+    // Table rows
+    statsBody.innerHTML = '';
+    if (statsNoResults) statsNoResults.style.display = rows.length === 0 ? 'block' : 'none';
+
+    const maxMatched = Math.max(1, ...rows.map(r => r.matched));
+
+    rows.forEach(r => {
+      const pct      = Math.round(r.rate);
+      const barWidth = Math.round(r.matched / maxMatched * 100);
+      const barClass = pct >= 10 ? '' : pct >= 2 ? 'mid' : 'low';
+      const name     = getFeedName(r.url);
+      const tr       = document.createElement('tr');
+      if (r.matched === 0) tr.classList.add('zero-row');
+      tr.innerHTML =
+        '<td class="feed-url-cell" title="' + esc(r.url) + '">' +
+          '<a href="' + esc(r.url) + '" target="_blank" rel="noopener noreferrer">' + esc(name) + '</a>' +
+        '</td>' +
+        '<td class="num-col">' + (r.matched > 0 ? '<strong style="color:var(--green)">' + r.matched + '</strong>' : '0') + '</td>' +
+        '<td class="num-col">' + r.total + '</td>' +
+        '<td class="num-col match-rate-cell">' +
+          '<div class="match-bar-wrap">' +
+            '<span class="match-rate-pct">' + pct + '%</span>' +
+            '<div class="match-bar-bg"><div class="match-bar-fill ' + barClass + '" style="width:' + barWidth + '%"></div></div>' +
+          '</div>' +
+        '</td>' +
+        '<td class="num-col">' + r.lastMatched + '</td>' +
+        '<td class="num-col">' + esc(r.lastDate) + '</td>';
+      statsBody.appendChild(tr);
+    });
+  }
+
+  function stat(label, value) {
+    return '<div class="stats-summary-item">' +
+      '<span class="stats-summary-label">' + esc(label) + '</span>' +
+      '<span class="stats-summary-value">' + value + '</span>' +
+      '</div>';
+  }
+
+  if (statsSearch)  statsSearch.addEventListener('input',  renderStats);
+  if (statsSortBy)  statsSortBy.addEventListener('change', renderStats);
+  if (statsFilter)  statsFilter.addEventListener('change', renderStats);
+
+  if (exportStatsBtn) exportStatsBtn.addEventListener('click', () => {
+    if (!Object.keys(statsData).length) { alert('No stats loaded yet.'); return; }
+    const rows = [['Feed URL', 'Feed Name', 'All-Time Matched', 'All-Time Seen', 'Match Rate %', 'Last Run Matched', 'Last Run Date']];
+    Object.entries(statsData).forEach(([url, s]) => {
+      const total   = s.total_all_time   || 0;
+      const matched = s.matched_all_time || 0;
+      const rate    = total > 0 ? (matched / total * 100).toFixed(1) : '0.0';
+      rows.push([url, getFeedName(url), matched, total, rate, s.last_run_matched||0, s.last_run_date||'']);
+    });
+    const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g,'""') + '"').join(',')).join('\n');
+    dl(URL.createObjectURL(new Blob([csv], {type:'text/csv'})), 'feed_stats_' + iso() + '.csv');
+  });
+
   // ── Refresh button ────────────────────────────────────────────
   function cooldownLeft() {
     return Math.max(0, RATE_LIMIT_MS - (Date.now() - parseInt(localStorage.getItem(RATE_LIMIT_KEY)||'0',10)));
