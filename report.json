@@ -1,33 +1,44 @@
 {
-  "executive_summary": "Google patched two actively exploited Chrome zero-days (CVE-2026-3909 and CVE-2026-3910) now being used to run malicious code in the wild\u2014update immediately. Canadian retail giant Loblaw confirmed a data breach affecting customer information after hackers penetrated its IT network. INTERPOL dismantled 45,000 malicious IPs used in ransomware campaigns and arrested 94 suspects globally. Iran-linked threat actors launched a destructive cyberattack against U.S. medical device maker Stryker, disrupting manufacturing and shipping, marking an escalation in cyber conflict. Telus Digital (Canadian) confirmed a massive breach with threat actor ShinyHunters claiming 1 petabyte of stolen data.",
+  "executive_summary": "Google patched two actively exploited zero-day vulnerabilities in Chrome, affecting the Skia graphics library and V8 JavaScript engine\u2014immediate patching is critical. Canadian retail giant Loblaw disclosed a data breach affecting customer information following unauthorized IT network access. Interpol's Operation Synergia III dismantled 45,000 malicious IPs used in ransomware campaigns and arrested 94 individuals globally. Iran-linked threat actors launched a destructive cyberattack against U.S. medical technology firm Stryker, disrupting manufacturing and shipping\u2014marking an escalation in Iranian cyber operations amid ongoing conflict. Veeam released critical patches for remote code execution flaws in its Backup & Replication platform, previously exploited by the Akira ransomware group.",
   "vulnerabilities": {
     "count": 8,
     "items": [
       {
         "id": "CVE-2026-3909",
-        "description": "Chrome vulnerability actively exploited in the wild to execute malicious code",
+        "description": "Actively exploited zero-day vulnerability in Chrome Skia graphics library",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": true,
         "software_affected": "Google Chrome (Skia component)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
         "access_required": "Network / User interaction (visit malicious site)",
-        "source_url": "https://www.cisa.gov/news-events/alerts/2026/03/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        "source_url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html"
       },
       {
         "id": "CVE-2026-3910",
-        "description": "Chrome V8 vulnerability actively exploited in the wild to execute malicious code",
+        "description": "Actively exploited zero-day vulnerability in Chrome V8 JavaScript engine",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": true,
         "software_affected": "Google Chrome (V8 engine)",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
         "access_required": "Network / User interaction (visit malicious site)",
-        "source_url": "https://www.cisa.gov/news-events/alerts/2026/03/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        "source_url": "https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html"
+      },
+      {
+        "id": "CVE-2026-2441",
+        "description": "Actively exploited vulnerability in Chrome browser",
+        "criticality": "HIGH",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Google Chrome",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / User interaction required",
+        "source_url": "https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html"
       },
       {
         "id": "CVE-2026-21666",
-        "description": "Veeam Backup & Replication remote code execution vulnerability",
+        "description": "Critical remote code execution vulnerability in Veeam Backup & Replication",
         "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
@@ -38,58 +49,47 @@
       },
       {
         "id": "CVE-2024-40711",
-        "description": "Veeam vulnerability previously exploited by Akira ransomware group",
+        "description": "Remote code execution flaw in Veeam Backup & Replication previously exploited by Akira ransomware",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
         "software_affected": "Veeam Backup & Replication",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
+        "access_required": "Network / Authentication may be required",
         "source_url": "https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html"
       },
       {
-        "id": "CVE-2026-2441",
-        "description": "Chrome vulnerability fixed alongside other actively exploited flaws",
-        "criticality": "HIGH",
-        "actively_exploited": false,
-        "zero_day": false,
-        "software_affected": "Google Chrome",
-        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
-        "access_required": "Network / User interaction",
-        "source_url": "https://securityaffairs.com/189373/hacking/google-fixed-two-new-actively-exploited-flaws-in-the-chrome-browser.html"
-      },
-      {
         "id": "CVE-2025-59718",
-        "description": "Zero-day vulnerability mentioned in SentinelOne weekly roundup",
+        "description": "Zero-day vulnerability exploited in attacks",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": true,
         "software_affected": "Unknown",
-        "cia_impact": "Unknown",
-        "access_required": "Unknown",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+        "access_required": "Network / Unknown authentication requirement",
         "source_url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/"
       },
       {
         "id": "CVE-2026-24858",
-        "description": "Zero-day vulnerability mentioned in SentinelOne weekly roundup",
+        "description": "Zero-day vulnerability exploited in attacks",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": true,
         "software_affected": "Unknown",
-        "cia_impact": "Unknown",
-        "access_required": "Unknown",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+        "access_required": "Network / Unknown authentication requirement",
         "source_url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-11-7/"
       },
       {
-        "id": "CVE-2019-0604",
-        "description": "SharePoint vulnerability exploited by Handala Hack threat actor",
+        "id": "CVE-2024-23222",
+        "description": "WebKit vulnerability addressed in Apple iOS 15.8.7 emergency update to counter Coruna exploit kit",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Microsoft SharePoint",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://socradar.io/blog/dark-web-profile-handala-hack/"
+        "software_affected": "Apple iOS 15.x",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "Network / User interaction (visit malicious site)",
+        "source_url": "https://cybersecuritynews.com/apple-released-emergency-updates/"
       }
     ]
   },
@@ -98,107 +98,105 @@
       {
         "name": "Qilin (ransomware group)",
         "targets": "Duffy's Sports Grill",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/qilin"
       },
       {
+        "name": "Storm-2561",
+        "targets": "Enterprise VPN users globally",
+        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1189 (Drive-by Compromise), T1608.005 (Stage Capabilities: Link Target), SEO poisoning to distribute fake VPN clients",
+        "iocs": [],
+        "source_url": "https://securityaffairs.com/189426/cyber-crime/storm-2561-lures-victims-to-spoofed-vpn-sites-to-harvest-corporate-logins.html"
+      },
+      {
         "name": "Akira (ransomware group)",
-        "targets": "Wills Point Chevrolet; previously exploited Veeam CVE-2024-40711",
-        "ttps": "T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application), T1078 (Valid Accounts)",
+        "targets": "Wills Point Chevrolet, organizations using Veeam Backup & Replication",
+        "ttps": "T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application) - CVE-2024-40711 exploitation",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/akira"
       },
       {
         "name": "LockBit5 (ransomware group)",
         "targets": "yaomazi.com",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1048 (Exfiltration Over Alternative Protocol)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/lockbit5"
       },
       {
         "name": "ShinyHunters",
-        "targets": "Telus Digital (Canadian), Salesforce Experience Cloud sites",
+        "targets": "Telus Digital (claimed 1 petabyte data theft), Salesforce Experience Cloud Sites",
         "ttps": "T1190 (Exploit Public-Facing Application), T1567 (Exfiltration Over Web Service), T1078 (Valid Accounts)",
         "iocs": [],
-        "source_url": "https://cyberinsider.com/telus-digital-confirms-security-incident-as-shinyhunters-claims-1pb-data-theft/"
+        "source_url": "https://cybersecuritynews.com/salesforce-warns-shinyhunters/"
       },
       {
-        "name": "Iran-linked hackers (TA453, TA473, Handala Hack)",
-        "targets": "Stryker (U.S. medical device manufacturer), Canadian governments/businesses/military, U.S. enterprise targets",
-        "ttps": "T1566 (Phishing), T1059 (Command and Scripting Interpreter), T1190 (Exploit Public-Facing Application - CVE-2019-0604), T1485 (Data Destruction), T1583 (Acquire Infrastructure)",
+        "name": "Iranian threat actors (TA453, TA473, Handala Hack)",
+        "targets": "U.S. medical technology firm Stryker, U.S. companies, global targets",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1485 (Data Destruction), T1491 (Defacement), T1190 (Exploit Public-Facing Application) - CVE-2019-0604 exploitation, war-themed lures",
         "iocs": [],
         "source_url": "https://www.securityweek.com/iran-linked-hacker-attack-on-stryker-disrupted-manufacturing-and-shipping/"
       },
       {
-        "name": "Storm-2561",
-        "targets": "Enterprise VPN users",
-        "ttps": "T1566 (Phishing), T1189 (Drive-by Compromise), T1608.005 (SEO Poisoning), T1204 (User Execution)",
-        "iocs": [],
-        "source_url": "https://www.csoonline.com/article/4144783/storm-2561-targets-enterprise-vpn-users-with-seo-poisoning-fake-clients.html"
-      },
-      {
-        "name": "Lazarus Group",
-        "targets": "Frontend developers via contagious interview scams",
-        "ttps": "T1566.001 (Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1027 (Obfuscated Files or Information)",
+        "name": "Lazarus Group (North Korean APT)",
+        "targets": "Frontend developers via fake job interviews",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), Social engineering through contagious interview scams",
         "iocs": [],
         "source_url": "https://www.reddit.com/r/cybersecurity/comments/1rsrnpm/psa_technical_analysis_of_a_contagious_interview/"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "The Canadian cyber landscape faces multiple threats this week. Loblaw, Canada's largest retail giant, disclosed a data breach after attackers accessed its IT network and customer information through SonicWall VPN exploitation. Telus Digital (Canadian telecom) confirmed a massive security incident with ShinyHunters claiming 1 petabyte of data stolen. Russian hackers are actively targeting Canadian governments, businesses, and military infrastructure according to Canada's cyber spy agency warnings.",
-    "retailers": "Loblaw (major Canadian retail chain operating grocery stores, pharmacies including Shoppers Drug Mart) confirmed data breach with customer information exposed after IT network compromise via SonicWall VPN exploitation",
+    "summary": "Canadian retail giant Loblaw notified customers of a data breach involving unauthorized access to its IT network and customer information. Canadian telecommunications provider Telus Digital confirmed a security incident after ShinyHunters claimed theft of 1 petabyte of data. No CCCS advisories were identified in this reporting period.",
+    "retailers": "Loblaw (data breach - unauthorized IT network access, customer information exposed)",
     "financial": "None identified",
     "source_urls": [
       "https://www.reddit.com/r/cybersecurity/comments/1rt9ct3/canadian_retail_giant_loblaw_notifies_customers/",
       "https://www.reddit.com/r/canada/comments/1rt7mmk/canadian_retail_giant_loblaw_notifies_customers/",
       "https://cybersecuritynews.com/loblaw-data-breach/",
       "https://cyberinsider.com/telus-digital-confirms-security-incident-as-shinyhunters-claims-1pb-data-theft/",
-      "https://www.reddit.com/r/canada/comments/1rs95pv/russian_hackers_targeting_canadas_governments/",
-      "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
       "https://www.reddit.com/r/cybersecurity/comments/1rsp17i/telus_digital_confirms_breach_after_hacker_claims/"
     ]
   },
-  "generated_at": "2026-03-14 14:30 ET",
+  "generated_at": "2026-03-14 18:45 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "CISA has flagged three vulnerabilities in Ivanti Endpoint Manager (CVE-2026-1603), SolarWinds (CVE-2025-26399), and Omnissa Workspace One (CVE-2021-22054) as actively exploited in the wild, requiring immediate patching. A pro-Iranian hacktivist group called Handala launched wiper attacks against U.S. medical device giant Stryker, disrupting operations globally in apparent retaliation for Middle East strikes. ShinyHunters threat actors are mass-scanning hundreds of Salesforce Experience Cloud sites using modified tools to steal customer data. Canadian retail brand Canada Goose was hit by the Coinbase Cartel ransomware group, and law enforcement disrupted the Tycoon 2FA phishing-as-a-service platform. Microsoft released its March 2026 Patch Tuesday addressing two zero-day vulnerabilities and critical remote code execution bugs.",
+    "executive_summary": "CISA has flagged three vulnerabilities in Ivanti Endpoint Manager, SolarWinds, and Omnissa Workspace One as actively exploited in the wild, requiring immediate patching. Medical technology giant Stryker was hit by an Iran-linked wiper attack claimed by the Handala hacktivist group, disrupting global operations. A major Salesforce campaign is underway, with ShinyHunters allegedly targeting hundreds of Experience Cloud sites using a modified AuraInspector tool to steal customer data. Microsoft's March Patch Tuesday addressed two zero-day vulnerabilities and critical remote code execution bugs. Canadian retailer Canada Goose was targeted by the Coinbase Cartel ransomware group.",
     "vulnerabilities": {
-      "count": 9,
+      "count": 11,
       "items": [
         {
           "id": "CVE-2026-1603",
-          "description": "Authentication bypass vulnerability in Ivanti Endpoint Manager",
+          "description": "Ivanti Endpoint Manager authentication bypass vulnerability",
           "criticality": "CRITICAL",
           "actively_exploited": true,
-          "zero_day": true,
-          "software_affected": "Ivanti Endpoint Manager",
+          "zero_day": false,
+          "software_affected": "Ivanti Endpoint Manager (EPM)",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
           "access_required": "Network / No authentication required",
           "source_url": "https://thecyberpost.com/news/hackers/cisa-flags-solarwinds-ivanti-and-workspace-one-vulnerabilities-as-actively-exploited/"
         },
         {
           "id": "CVE-2025-26399",
-          "description": "Actively exploited vulnerability in SolarWinds",
-          "criticality": "CRITICAL",
+          "description": "SolarWinds vulnerability actively exploited",
+          "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "SolarWinds",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "software_affected": "SolarWinds (product not specified)",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
           "access_required": "Network / Authentication required",
           "source_url": "https://thecyberpost.com/news/hackers/cisa-flags-solarwinds-ivanti-and-workspace-one-vulnerabilities-as-actively-exploited/"
         },
         {
           "id": "CVE-2021-22054",
-          "description": "Actively exploited vulnerability in Omnissa Workspace One",
+          "description": "Omnissa Workspace One vulnerability actively exploited",
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Omnissa Workspace One (formerly VMware Workspace One)",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
-          "access_required": "Network / Low privileges required",
+          "software_affected": "Omnissa Workspace One (formerly VMware)",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "access_required": "Network / Authentication required",
           "source_url": "https://thecyberpost.com/news/hackers/cisa-flags-solarwinds-ivanti-and-workspace-one-vulnerabilities-as-actively-exploited/"
         },
         {
@@ -207,64 +205,86 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Unknown - CISA advisory",
-          "cia_impact": "Unknown",
+          "software_affected": "Product not specified in article",
+          "cia_impact": "Unknown - insufficient detail in source",
           "access_required": "Unknown",
           "source_url": "https://www.cisa.gov/news-events/alerts/2026/03/11/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
           "id": "CVE-2026-28292",
-          "description": "Remote code execution in simple-git via case-sensitivity bypass",
+          "description": "RCE in simple-git via case-sensitivity bypass",
           "criticality": "CRITICAL",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "simple-git (Node.js library)",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Exploitation requires user interaction",
+          "access_required": "Network / Authentication may be required",
           "source_url": "https://www.reddit.com/r/netsec/comments/1rqmrer/cve202628292_rce_in_simplegit_via_casesensitivity/"
+        },
+        {
+          "id": "CVE-2024-28986",
+          "description": "Cisco SD-WAN vulnerability actively exploited",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Cisco SD-WAN",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://www.csoonline.com/article/4143992/cisa-warns-of-actively-exploited-ivanti-epm-and-cisco-sd-wan-flaws.html"
+        },
+        {
+          "id": "CVE-2022-20775",
+          "description": "Cisco vulnerability actively exploited",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Cisco (product not specified)",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "access_required": "Network / Authentication required",
+          "source_url": "https://www.csoonline.com/article/4143992/cisa-warns-of-actively-exploited-ivanti-epm-and-cisco-sd-wan-flaws.html"
+        },
+        {
+          "id": "CVE-2026-20127",
+          "description": "Cisco SD-WAN vulnerability actively exploited",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Cisco SD-WAN",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://www.csoonline.com/article/4143992/cisa-warns-of-actively-exploited-ivanti-epm-and-cisco-sd-wan-flaws.html"
         },
         {
           "id": "CVE-2025-59718",
           "description": "FortiGate vulnerability exploited in edge intrusions",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "FortiGate",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://www.sentinelone.com/blog/fortigate-edge-intrusions/"
-        },
-        {
-          "id": "CVE-2026-24858",
-          "description": "FortiGate vulnerability exploited in edge intrusions leading to AD compromise",
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
           "software_affected": "FortiGate",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Network / Low privileges required",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://www.sentinelone.com/blog/fortigate-edge-intrusions/"
+        },
+        {
+          "id": "CVE-2026-24858",
+          "description": "FortiGate vulnerability exploited in edge intrusions",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "FortiGate",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "access_required": "Network / No authentication required",
           "source_url": "https://www.sentinelone.com/blog/fortigate-edge-intrusions/"
         },
         {
           "id": "CVE-2023-32434",
-          "description": "iPhone exploit used in espionage toolkit by Russian intelligence",
+          "description": "iPhone exploit used by Russian spies, likely from U.S. contractor",
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
           "software_affected": "Apple iPhone iOS",
-          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-          "access_required": "Physical / User interaction required",
-          "source_url": "https://cybersecuritynews.com/iphone-exploit-toolkit-and-russian-spies/"
-        },
-        {
-          "id": "CVE-2023-38606",
-          "description": "iPhone exploit used in Russian intelligence operations",
-          "criticality": "HIGH",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Apple iPhone iOS",
-          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-          "access_required": "Physical / User interaction required",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+          "access_required": "Physical or Network / No authentication required",
           "source_url": "https://cybersecuritynews.com/iphone-exploit-toolkit-and-russian-spies/"
         }
       ]
@@ -272,80 +292,94 @@
     "threat_actors": {
       "items": [
         {
-          "name": "Handala (Pro-Iranian hacktivist group)",
-          "targets": "Stryker (U.S. medical device manufacturer), Verifone (payment systems)",
-          "ttps": "T1485 (Data Destruction), T1490 (Inhibit System Recovery) - Wiper malware deployed to destroy systems and disrupt operations in retaliation for Middle East military strikes",
+          "name": "Handala (Iran-linked, pro-Palestinian hacktivist group)",
+          "targets": "Stryker (medical technology giant), Verifone (payment systems)",
+          "ttps": "T1485 (Data Destruction - wiper malware), T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application). Deployed wiper attacks causing global disruption to medical device operations.",
           "iocs": [],
           "source_url": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/"
         },
         {
           "name": "ShinyHunters",
-          "targets": "Hundreds of Salesforce Experience Cloud (Aura framework) customer sites",
-          "ttps": "T1213 (Data from Information Repositories), T1190 (Exploit Public-Facing Application) - Mass-scanning Salesforce sites using modified AuraInspector tool to extract customer data",
+          "targets": "Hundreds of Salesforce Experience Cloud sites",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1213 (Data from Information Repositories). Mass-scanning Salesforce Aura framework using modified AuraInspector tool to exfiltrate customer data.",
           "iocs": [],
           "source_url": "https://www.helpnetsecurity.com/2026/03/11/shinyhunters-salesforce-aura-data-breach/"
         },
         {
-          "name": "Lazarus Group (North Korean APT)",
-          "targets": "AllSecure CEO via fake LinkedIn recruitment",
-          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File) - Fake LinkedIn job interviews delivering malware",
+          "name": "Lazarus (North Korean APT)",
+          "targets": "AllSecure CEO via fake LinkedIn interview",
+          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1583.001 (Acquire Infrastructure: Domains). Social engineering via fake job interviews on LinkedIn to deliver malware.",
           "iocs": [],
           "source_url": "https://hackread.com/fake-linkedin-interview-lazarus-hackers-allsecure-ceo/"
         },
         {
-          "name": "APT28 (Fancy Bear, Russian GRU)",
-          "targets": "Signal and WhatsApp accounts, cyber-espionage operations",
-          "ttps": "T1566.002 (Phishing: Spearphishing Link), T1056.001 (Input Capture: Keylogging) - Revived advanced malware toolkit for espionage and phishing campaigns targeting secure messaging apps",
-          "iocs": [],
-          "source_url": "https://www.malwarebytes.com/blog/news/2026/03/signal-and-whatsapp-accounts-targeted-in-phishing-campaign"
-        },
-        {
-          "name": "Coinbase Cartel (Ransomware group)",
-          "targets": "Canada Goose",
-          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery) - Ransomware deployment against Canadian retail brand",
-          "iocs": [],
-          "source_url": "https://www.ransomlook.io//group/coinbase%20cartel"
-        },
-        {
           "name": "Everest (Ransomware group)",
-          "targets": "UD Trucks - database leaked",
-          "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service) - Data exfiltration and leak",
+          "targets": "UD Trucks (database leaked)",
+          "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration Over Web Service: Exfiltration to Cloud Storage). Double extortion ransomware operation with data leak.",
           "iocs": [],
           "source_url": "https://www.ransomlook.io//group/everest"
         },
         {
           "name": "Clop (Ransomware group)",
           "targets": "AIGHEALTHCARE.IN",
-          "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service) - Healthcare sector targeting",
+          "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration Over Web Service: Exfiltration to Cloud Storage). Known for exploiting zero-day vulnerabilities and mass-exploitation campaigns.",
           "iocs": [],
           "source_url": "https://www.ransomlook.io//group/clop"
         },
         {
+          "name": "Coinbase Cartel (Ransomware group)",
+          "targets": "Canada Goose (Canadian retailer)",
+          "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration Over Web Service: Exfiltration to Cloud Storage). Ransomware operation targeting retail sector.",
+          "iocs": [],
+          "source_url": "https://www.ransomlook.io//group/coinbase%20cartel"
+        },
+        {
           "name": "Qilin (Ransomware group)",
           "targets": "U.S. electric cooperative",
-          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery) - Critical infrastructure targeting",
+          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567.002 (Exfiltration Over Web Service). Critical infrastructure targeting.",
           "iocs": [],
           "source_url": "https://www.scworld.com/brief/qilin-purports-breach-of-us-electric-cooperative"
         },
         {
+          "name": "APT28 (Russian state-sponsored, Fancy Bear)",
+          "targets": "Signal and WhatsApp accounts in phishing campaign",
+          "ttps": "T1566.002 (Phishing: Spearphishing Link), T1539 (Steal Web Session Cookie), T1528 (Steal Application Access Token). Revived advanced malware toolkit for cyber-espionage operations.",
+          "iocs": [],
+          "source_url": "https://www.malwarebytes.com/blog/news/2026/03/signal-and-whatsapp-accounts-targeted-in-phishing-campaign"
+        },
+        {
           "name": "Unknown threat actor",
-          "targets": "South Korean Government Server - root access sold with lateral movement to 42 internal hosts",
-          "ttps": "T1078 (Valid Accounts), T1210 (Exploitation of Remote Services), T1021 (Remote Services) - Initial access broker selling government network access",
+          "targets": "South Korean government server with lateral movement to 42 internal hosts",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1078 (Valid Accounts), T1021 (Remote Services), T1570 (Lateral Tool Transfer). Selling root access on dark web.",
           "iocs": [],
           "source_url": "https://darkwebinformer.com/threat-actor-selling-root-access-to-south-korean-government-server-with-lateral-movement-to-42-internal-hosts/"
         },
         {
           "name": "Unknown threat actor",
-          "targets": "Viking Line Ferries - full passenger database and payment data leaked",
-          "ttps": "T1213 (Data from Information Repositories), T1567 (Exfiltration Over Web Service) - Payment card data and PII breach",
+          "targets": "Viking Line Ferries - full passenger database and payment data",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1213 (Data from Information Repositories), T1567 (Exfiltration Over Web Service). Payment card data and personally identifiable information breach.",
           "iocs": [],
           "source_url": "https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/"
+        },
+        {
+          "name": "BeatBanker operators",
+          "targets": "Android users (banking trojan and crypto miner)",
+          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1412 (Capture SMS Messages), T1496 (Resource Hijacking). Dual-mode trojan masquerading as Starlink and INSS apps.",
+          "iocs": [],
+          "source_url": "https://gbhackers.com/beatbanker-trojan-spreads-via-phishing/"
+        },
+        {
+          "name": "Chinese Nexus Actors",
+          "targets": "Qatar (shift from Iranian targets)",
+          "ttps": "T1583.001 (Acquire Infrastructure: Domains), T1566 (Phishing), T1505.003 (Server Software Component: Web Shell). Cyber-espionage operations related to Middle East conflict.",
+          "iocs": [],
+          "source_url": "https://www.darkreading.com/threat-intelligence/chinese-nexus-actors-shift-focus-qatar-iranian-conflict"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "Canada Goose, the premium outerwear retailer, was targeted by the Coinbase Cartel ransomware group according to ransom leak sites. No CCCS advisories were identified in this reporting period. Multiple articles referenced Canadian context including phishing campaigns using Canadian permit fraud and malicious resume attachments circulating with Canadian targets, but no major financial institution or critical infrastructure breaches involving Canadian organizations were reported.",
-      "retailers": "Canada Goose - targeted by Coinbase Cartel ransomware group",
+      "summary": "Canadian retailer Canada Goose was hit by the Coinbase Cartel ransomware group. Multiple articles mention phishing campaigns using Canadian lures, including malicious resume attachments with ISO files circulating. Meta disabled 150,000 accounts linked to Southeast Asia scam centers, including operations targeting Canadians. No CCCS advisories were identified in the reporting period.",
+      "retailers": "Canada Goose (targeted by Coinbase Cartel ransomware group)",
       "financial": "None identified",
       "source_urls": [
         "https://www.ransomlook.io//group/coinbase%20cartel",
