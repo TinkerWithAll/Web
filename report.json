@@ -1,11 +1,11 @@
 {
-  "executive_summary": "CISA has issued urgent warnings for two actively exploited vulnerabilities: a critical Langflow remote code execution flaw (CVE-2026-33017) exploited within hours of disclosure, and an Aquasecurity Trivy supply chain compromise (CVE-2026-33634) that allowed attackers to poison the npm ecosystem. BreachForums version 5 was itself breached by ShinyHunters, exposing 340,000 user credentials. Multiple sophisticated phishing campaigns are targeting TikTok business accounts, Dutch Police systems, and financial firms using novel techniques including fake CAPTCHA pages and ZIP-based stealers. Canada experienced a significant data breach at Nova Scotia Power affecting over 900,000 users, while Dutch Police disclosed compromise via phishing\u2014highlighting the continued effectiveness of social engineering attacks against both infrastructure and law enforcement.",
+  "executive_summary": "CISA has issued urgent warnings about two actively exploited vulnerabilities: a critical Langflow remote code execution flaw (CVE-2026-33017) being exploited within hours of disclosure, and an Aquasecurity Trivy supply chain compromise (CVE-2026-33634) that affects 742,000 package downloads. Both have been added to CISA's Known Exploited Vulnerabilities catalog, requiring immediate federal agency remediation. In Canada, Nova Scotia Power suffered a data breach compromising over 900,000 users, and Dutch Police disclosed a breach after falling victim to a phishing attack. Multiple phishing campaigns are targeting TikTok Business accounts, Japanese businesses with tax-themed lures, and financial firms with stealer malware.",
   "vulnerabilities": {
-    "count": 7,
+    "count": 6,
     "items": [
       {
         "id": "CVE-2026-33017",
-        "description": "Langflow remote code execution vulnerability allowing workflow hijacking",
+        "description": "Critical Langflow code injection vulnerability enabling remote code execution to hijack AI workflows",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -16,24 +16,24 @@
       },
       {
         "id": "CVE-2026-33634",
-        "description": "Aquasecurity Trivy scanner supply chain vulnerability enabling malicious code injection",
+        "description": "Aquasecurity Trivy scanner supply chain compromise in TeamPCP attack affecting PyPI packages",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Aquasecurity Trivy vulnerability scanner",
+        "software_affected": "Aquasecurity Trivy vulnerability scanner / Telnyx PyPI package versions 4.87.1 and 4.87.2",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Supply chain compromise / No direct auth required",
+        "access_required": "Supply chain - users downloading compromised packages",
         "source_url": "https://www.helpnetsecurity.com/2026/03/27/cve-2026-33017-cve-2026-33634-exploited/"
       },
       {
         "id": "CVE-2025-3248",
-        "description": "Langflow code injection vulnerability exploited in attacks",
-        "criticality": "CRITICAL",
+        "description": "Related Langflow vulnerability exploited in conjunction with CVE-2026-33017",
+        "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
         "software_affected": "Langflow",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / No auth required",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network",
         "source_url": "https://www.csoonline.com/article/4151203/attackers-exploit-critical-langflow-rce-within-hours-as-cisa-sounds-alarm.html"
       },
       {
@@ -44,29 +44,29 @@
         "zero_day": false,
         "software_affected": "Cisco Secure Firewall",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
+        "access_required": "Network / Remote",
         "source_url": "https://cybersecuritynews.com/critical-cisco-secure-firewall-vulnerability/"
       },
       {
         "id": "CVE-2023-32434",
-        "description": "iOS vulnerability used in Operation Triangulation exploit chain",
+        "description": "iOS vulnerability used in Operation Triangulation exploit chain with Coruna framework",
         "criticality": "HIGH",
         "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / No user interaction",
+        "software_affected": "Apple iOS (historical)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "Remote / Zero-click",
         "source_url": "https://securelist.com/coruna-framework-updated-operation-triangulation-exploit/119228/"
       },
       {
         "id": "CVE-2023-38606",
-        "description": "iOS vulnerability used in Operation Triangulation Coruna framework",
+        "description": "iOS vulnerability used in Operation Triangulation exploit chain with Coruna framework",
         "criticality": "HIGH",
         "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "Apple iOS",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / No user interaction",
+        "software_affected": "Apple iOS (historical)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+        "access_required": "Remote / Zero-click",
         "source_url": "https://securelist.com/coruna-framework-updated-operation-triangulation-exploit/119228/"
       }
     ]
@@ -74,102 +74,120 @@
   "threat_actors": {
     "items": [
       {
+        "name": "TeamPCP",
+        "targets": "PyPI package repository users, specifically Telnyx package consumers (742,000 downloads)",
+        "ttps": "T1195.002 (Supply Chain Compromise: Compromise Software Supply Chain), malicious package injection into legitimate software repositories",
+        "iocs": [],
+        "source_url": "https://cybersecuritynews.com/telnyx-pypi-package-compromised/"
+      },
+      {
         "name": "ShinyHunters",
-        "targets": "BreachForums version 5 platform itself, exposing 340,000 user emails and passwords",
-        "ttps": "T1589.002 (Gather Victim Identity Information: Email Addresses), T1078 (Valid Accounts)",
+        "targets": "BreachForums V5 - 340,000 user emails and passwords exposed in data leak",
+        "ttps": "T1589 (Gather Victim Identity Information), credential harvesting, database breach",
         "iocs": [],
         "source_url": "https://cyberinsider.com/breachforums-v5-data-leak-exposes-emails-and-passwords-of-340k-users/"
       },
       {
-        "name": "Qilin",
-        "targets": "Kerjaya Prospek Group, energy sector organizations",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
-        "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/qilin"
-      },
-      {
-        "name": "Akira",
-        "targets": "Frontier Technologies, energy sector organizations",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
-        "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/akira"
-      },
-      {
         "name": "Red Menshen (China-linked APT)",
-        "targets": "Telecom networks globally with focus on critical infrastructure",
-        "ttps": "T1542.003 (Pre-OS Boot: Bootkit), T1027 (Obfuscated Files or Information), T1071 (Application Layer Protocol) using BPFDoor implants",
+        "targets": "Telecom networks in Southeast Asia",
+        "ttps": "T1542 (Pre-OS Boot), BPFDoor implant deployment, stealthy persistence in critical infrastructure",
         "iocs": [],
         "source_url": "https://securityaffairs.com/190029/malware/china-linked-red-menshen-apt-deploys-stealthy-bpfdoor-implants-in-telecom-networks.html"
       },
       {
         "name": "Silver Fox",
-        "targets": "Japanese businesses using tax-themed phishing, financial firms",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1547 (Boot or Logon Autostart Execution), deploying AtlasCross RAT and Python stealers",
+        "targets": "Japanese businesses and financial firms",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), tax-themed phishing with ZIP archives delivering PXA Stealer and AtlasCross RAT, abuse of stolen EV certificates",
         "iocs": [],
         "source_url": "https://gbhackers.com/silver-fox-cyberattack/"
       },
       {
-        "name": "TeamPCP",
-        "targets": "Python developers via malicious PyPI packages (telnyx 4.87.1 and 4.87.2)",
-        "ttps": "T1195.001 (Supply Chain Compromise: Compromise Software Dependencies and Development Tools), T1059.006 (Command and Scripting Interpreter: Python)",
+        "name": "Qilin Ransomware",
+        "targets": "ITWAL, German political party Die Linke, energy sector",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), double extortion ransomware",
         "iocs": [],
-        "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s4zpwi/teampcp_strikes_again_telnyx_4871_and_4872_on/"
+        "source_url": "https://www.ransomlook.io//group/qilin"
+      },
+      {
+        "name": "Akira Ransomware",
+        "targets": "BHS Bau construction company, energy sector",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), double extortion ransomware targeting critical infrastructure",
+        "iocs": [],
+        "source_url": "https://www.ransomlook.io//group/akira"
       },
       {
         "name": "Pay2Key (Iran-linked)",
-        "targets": "Organizations in ransomware campaigns",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "targets": "Re-emerging threat actor targeting undisclosed victims",
+        "ttps": "T1486 (Data Encrypted for Impact), Iranian state-aligned ransomware operations",
         "iocs": [],
         "source_url": "https://www.infosecurity-magazine.com/news/iranlinked-pay2key-ransomware/"
       },
       {
         "name": "Ghost Campaign (npm attackers)",
-        "targets": "Developers using npm packages with fake progress bars to phish sudo passwords",
-        "ttps": "T1195.001 (Supply Chain Compromise), T1056.002 (Input Capture: GUI Input Capture), T1078 (Valid Accounts)",
+        "targets": "npm developers and sudo password theft",
+        "ttps": "T1552.001 (Unsecured Credentials: Credentials In Files), T1556 (Modify Authentication Process), fake npm progress bars used to phish sudo passwords, malicious npm packages with fake install messages hiding RAT malware",
         "iocs": [],
         "source_url": "https://hackread.com/ghost-campaign-npm-progress-bars-phish-sudo-passwords/"
       },
       {
-        "name": "PXA Stealer operators",
-        "targets": "Financial firms via phishing ZIP files",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1140 (Deobfuscate/Decode Files or Information), T1555 (Credentials from Password Stores)",
-        "iocs": [],
-        "source_url": "https://gbhackers.com/phishing-zip-files/"
-      },
-      {
         "name": "Venom Stealer operators",
-        "targets": "Users searching for Avast antivirus via fake website",
-        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1189 (Drive-by Compromise), T1555 (Credentials from Password Stores)",
+        "targets": "Users searching for Avast antivirus software",
+        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1204.001 (User Execution: Malicious Link), fake Avast website delivering stealer malware",
         "iocs": [],
         "source_url": "https://www.malwarebytes.com/blog/threat-intel/2026/03/bogus-avast-website-fakes-virus-scan-installs-venom-stealer-instead"
       },
       {
+        "name": "GlassWorm",
+        "targets": "Browser users for surveillance operations",
+        "ttps": "T1176 (Browser Extensions), T1113 (Screen Capture), fake browser extension installation for surveillance",
+        "iocs": [],
+        "source_url": "https://www.malwarebytes.com/blog/news/2026/03/glassworm-attack-installs-fake-browser-extension-for-surveillance"
+      },
+      {
         "name": "Infiniti Stealer operators",
-        "targets": "macOS users via fake Cloudflare CAPTCHA pages",
-        "ttps": "T1189 (Drive-by Compromise), T1204.001 (User Execution: Malicious Link), T1555 (Credentials from Password Stores)",
+        "targets": "macOS users",
+        "ttps": "T1204.001 (User Execution: Malicious Link), T1539 (Steal Web Session Cookie), fake Cloudflare CAPTCHA pages using ClickFix technique, Python/Nuitka-based macOS infostealer",
         "iocs": [],
         "source_url": "https://cybersecuritynews.com/fake-cloudflare-captcha-pages-spread-infiniti-stealer/"
+      },
+      {
+        "name": "TikTok Business AitM phishing campaign",
+        "targets": "TikTok for Business account holders",
+        "ttps": "T1557.001 (Man-in-the-Middle: LLMNR/NBT-NS Poisoning), T1539 (Steal Web Session Cookie), adversary-in-the-middle phishing bypassing Cloudflare Turnstile protection",
+        "iocs": [],
+        "source_url": "https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html"
+      },
+      {
+        "name": "Kiss Loader operators",
+        "targets": "General malware distribution campaign",
+        "ttps": "T1055.004 (Process Injection: Asynchronous Procedure Call), Early Bird APC injection technique",
+        "iocs": [],
+        "source_url": "https://cybersecuritynews.com/new-kiss-loader-malware-uses-early-bird-apc-injection/"
+      },
+      {
+        "name": "Southeast Asian government espionage actors",
+        "targets": "Southeast Asian government entities",
+        "ttps": "T1091 (Replication Through Removable Media), T1219 (Remote Access Software), USB malware, RATs, and stealers in espionage operations",
+        "iocs": [],
+        "source_url": "https://cybersecuritynews.com/hackers-use-usb-malware-rats-and-stealers-in-espionage-attacks/"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "Nova Scotia Power suffered a major data breach affecting over 900,000 users, representing one of the largest Canadian utility breaches in recent history. No CCCS advisories were issued in this 48-hour period. Transport Canada issued warnings about WestJet seating hazards and is soliciting public input on headlight glare regulations, but no direct cybersecurity incidents were identified at major Canadian retailers or financial institutions.",
+    "summary": "Nova Scotia Power disclosed a significant data breach compromising personal information of over 900,000 users, marking a major incident affecting Canadian critical infrastructure. No CCCS advisories were issued in this 48-hour period. Multiple r/canada posts discuss domestic policy and infrastructure issues, but no additional cybersecurity incidents targeting Canadian retailers or financial institutions were identified.",
     "retailers": "None identified",
     "financial": "None identified",
     "source_urls": [
-      "https://thecyberexpress.com/nova-scotia-power-data-breach-2/",
-      "https://www.reddit.com/r/canada/comments/1s4z630/transport_canada_warned_about_westjet_seating/",
-      "https://www.reddit.com/r/canada/comments/1s4o8an/transport_canada_wants_your_opinion_on_headlight/",
-      "https://www.helpnetsecurity.com/2026/03/26/telecom-bpfdoor-detection-script/"
+      "https://thecyberexpress.com/nova-scotia-power-data-breach-2/"
     ]
   },
   "generated_at": "2026-03-27 14:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "Oracle issued an emergency patch for a critical pre-authentication remote code execution flaw (CVE-2026-21992) in Identity Manager that poses immediate risk. CISA added multiple vulnerabilities to its Known Exploited Vulnerabilities catalog, including a maximum-severity Cisco flaw (CVE-2026-20131) and a Craft CMS code injection bug (CVE-2025-32432) under active attack. Iranian state-linked groups (Handala) are using fake Telegram apps and messaging platforms to deploy malware against dissidents and journalists. A compromised Python package (litellm 1.82.8) was found stealing SSH keys, cloud credentials, and Kubernetes secrets while installing persistent backdoors. The ShinyHunters threat group claims to have breached Infinite Campus via a Salesforce compromise, affecting student data systems.",
+    "executive_summary": "Oracle has issued an emergency patch for a critical pre-authentication remote code execution flaw (CVE-2026-21992) in Identity Manager that poses an immediate threat. Cisco devices are under active attack via CVE-2026-20131, prompting CISA to order immediate federal patching. Multiple Iran-linked threat groups (Handala, Silver Fox) are targeting dissidents and journalists using Telegram-based malware and fake messaging apps, while a supply chain attack poisoned the litellm Python package (version 1.82.8) to steal SSH keys, cloud credentials, and Kubernetes secrets. ShinyHunters has claimed responsibility for breaching Infinite Campus via a Salesforce compromise, and Russian hackers are hijacking Signal and WhatsApp accounts through sophisticated phishing. Canadian institutions face a 'tsunami' of transnational repression, though no specific breaches of major Canadian retailers or banks were reported this period.",
     "vulnerabilities": {
-      "count": 11,
+      "count": 13,
       "items": [
         {
           "id": "CVE-2026-21992",
@@ -184,46 +202,24 @@
         },
         {
           "id": "CVE-2026-20131",
-          "description": "Maximum severity flaw in Cisco product requiring immediate patching",
+          "description": "Maximum severity flaw in Cisco devices under active exploitation",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Cisco (product unspecified)",
+          "software_affected": "Cisco devices (multiple products)",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network",
+          "access_required": "Network accessible",
           "source_url": "https://www.infosecurity-magazine.com/news/cisa-orders-us-government-patch/"
         },
         {
-          "id": "CVE-2025-32432",
-          "description": "Code injection vulnerability in Craft CMS exploited in active attacks",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Craft CMS",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Network / Authenticated",
-          "source_url": "https://gbhackers.com/cisa-warns-of-craft-cms-code-injection-flaw/"
-        },
-        {
-          "id": "CVE-2023-4966",
-          "description": "Critical data leakage vulnerability in Citrix NetScaler requiring immediate patching",
-          "criticality": "CRITICAL",
-          "actively_exploited": false,
-          "zero_day": false,
-          "software_affected": "Citrix NetScaler",
-          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
-          "access_required": "Network",
-          "source_url": "https://securityaffairs.com/189908/security/citrix-netscaler-critical-flaw-could-leak-data-update-now.html"
-        },
-        {
           "id": "CVE-2026-3055",
-          "description": "Memory disclosure vulnerability in NetScaler affecting SAML-enabled edge devices",
-          "criticality": "HIGH",
+          "description": "Memory disclosure vulnerability in NetScaler SAML-enabled edge devices",
+          "criticality": "CRITICAL",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Citrix NetScaler",
           "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
-          "access_required": "Network / SAML configuration required",
+          "access_required": "Network / Authenticated",
           "source_url": "https://socradar.io/blog/cve-2026-3055-netscaler-memory-disclosure/"
         },
         {
@@ -232,9 +228,9 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
         },
         {
@@ -243,9 +239,9 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
         },
         {
@@ -254,9 +250,9 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
         },
         {
@@ -265,9 +261,9 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
         },
         {
@@ -276,9 +272,9 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
         },
         {
@@ -287,10 +283,54 @@
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Apple iPhone/iOS",
+          "software_affected": "Apple iPhone iOS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local/Physical",
+          "access_required": "User interaction required",
           "source_url": "https://cybersecuritynews.com/darksword-exploit-chain-leaked/"
+        },
+        {
+          "id": "CVE-2025-32432",
+          "description": "Code injection flaw in Craft CMS exploited in active attacks",
+          "criticality": "CRITICAL",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Craft CMS",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / Authenticated",
+          "source_url": "https://gbhackers.com/cisa-warns-of-craft-cms-code-injection-flaw/"
+        },
+        {
+          "id": "CVE-2026-33017",
+          "description": "Vulnerability mentioned in Check Point threat intelligence report",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Unknown - see Check Point advisory",
+          "cia_impact": "Unknown - requires further analysis",
+          "access_required": "Unknown",
+          "source_url": "https://research.checkpoint.com/2026/23rd-march-threat-intelligence-report/"
+        },
+        {
+          "id": "CVE-2025-66376",
+          "description": "Vulnerability mentioned in Check Point threat intelligence report",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Unknown - see Check Point advisory",
+          "cia_impact": "Unknown - requires further analysis",
+          "access_required": "Unknown",
+          "source_url": "https://research.checkpoint.com/2026/23rd-march-threat-intelligence-report/"
+        },
+        {
+          "id": "CVE-2023-4966",
+          "description": "Known Citrix NetScaler data leak vulnerability referenced in current patching guidance",
+          "criticality": "CRITICAL",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Citrix NetScaler",
+          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+          "access_required": "Network accessible",
+          "source_url": "https://securityaffairs.com/189908/security/citrix-netscaler-critical-flaw-could-leak-data-update-now.html"
         }
       ]
     },
@@ -298,85 +338,120 @@
       "items": [
         {
           "name": "Handala Group (Iran-linked)",
-          "targets": "Dissidents, journalists, activists, Windows users",
-          "ttps": "T1566 Phishing, T1071.001 Application Layer Protocol (Telegram C2), T1204.002 Malicious File, T1486 Data Encrypted for Impact (hack-and-leak operations)",
+          "targets": "Dissidents, journalists, Windows users; Stryker medical device company",
+          "ttps": "T1566 (Phishing), T1204 (User Execution), T1071.001 (Application Layer Protocol - Telegram C2), T1055 (Process Injection), fake Telegram apps for espionage",
           "iocs": [],
           "source_url": "https://www.infosecurity-magazine.com/news/handala-group-iranian-hack-and/"
         },
         {
-          "name": "Tycoon2FA",
-          "targets": "Cloud accounts (Microsoft 365, Google Workspace)",
-          "ttps": "T1566.002 Spearphishing Link, T1056.003 Web Portal Capture, T1539 Steal Web Session Cookie, T1621 Multi-Factor Authentication Request Generation",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/tycoon2fa-operators/"
-        },
-        {
-          "name": "TeamPCP",
-          "targets": "Iranian infrastructure (CanisterWorm wiper targeting Kubernetes)",
-          "ttps": "T1485 Data Destruction, T1610 Deploy Container, T1609 Container Administration Command",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/canisterworm-kubernetes/"
-        },
-        {
-          "name": "ShinyHunters",
-          "targets": "Infinite Campus (student information systems) via Salesforce compromise",
-          "ttps": "T1078 Valid Accounts, T1530 Data from Cloud Storage Object, T1567.002 Exfiltration to Cloud Storage",
-          "iocs": [],
-          "source_url": "https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/"
-        },
-        {
-          "name": "Ghost Campaign",
-          "targets": "Developers using npm packages",
-          "ttps": "T1195.002 Compromise Software Supply Chain, T1539 Steal Web Session Cookie, T1555 Credentials from Password Stores, T1573 Encrypted Channel",
-          "iocs": [],
-          "source_url": "https://thehackernews.com/2026/03/ghost-campaign-uses-7-npm-packages-to.html"
-        },
-        {
-          "name": "Silver Fox",
-          "targets": "Dual espionage targets (specifics not detailed)",
-          "ttps": "T1566 Phishing, T1071 Application Layer Protocol",
+          "name": "Silver Fox (unknown attribution)",
+          "targets": "Dual espionage campaigns targeting multiple sectors",
+          "ttps": "T1566 (Phishing), T1059 (Command and Scripting Interpreter), shift toward dual espionage operations",
           "iocs": [],
           "source_url": "https://www.infosecurity-magazine.com/news/silver-fox-cyber-dual-espionage/"
         },
         {
-          "name": "Russian APT (Signal/WhatsApp hijacking)",
-          "targets": "Signal and WhatsApp users via account takeover",
-          "ttps": "T1566.002 Spearphishing Link, T1078 Valid Accounts, T1185 Browser Session Hijacking, T1621 Multi-Factor Authentication Request Generation",
+          "name": "ShinyHunters",
+          "targets": "Infinite Campus (student information system), Salesforce platform compromise",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1530 (Data from Cloud Storage Object), claimed 800GB+ data theft",
+          "iocs": [],
+          "source_url": "https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/"
+        },
+        {
+          "name": "Ghost Campaign (npm supply chain)",
+          "targets": "Cryptocurrency wallet users, developers using npm packages",
+          "ttps": "T1195.002 (Compromise Software Supply Chain), T1555 (Credentials from Password Stores), 7 malicious npm packages for crypto wallet and credential theft",
+          "iocs": [],
+          "source_url": "https://thehackernews.com/2026/03/ghost-campaign-uses-7-npm-packages-to.html"
+        },
+        {
+          "name": "Tycoon2FA",
+          "targets": "Cloud account users via phishing",
+          "ttps": "T1566 (Phishing), T1621 (Multi-Factor Authentication Request Generation), resumed operations following infrastructure takedown",
+          "iocs": [],
+          "source_url": "https://gbhackers.com/tycoon2fa-operators/"
+        },
+        {
+          "name": "TeamPCP (anti-Iran)",
+          "targets": "Iranian Kubernetes infrastructure, National Oil Ethiopia",
+          "ttps": "T1485 (Data Destruction), T1486 (Data Encrypted for Impact), CanisterWorm wiper malware, 800GB ERP database exfiltration, Veeam and Kaspersky compromise",
+          "iocs": [],
+          "source_url": "https://gbhackers.com/canisterworm-kubernetes/"
+        },
+        {
+          "name": "Russian State-Sponsored (APT29 suspected)",
+          "targets": "Signal and WhatsApp users, high-value targets",
+          "ttps": "T1566 (Phishing), T1539 (Steal Web Session Cookie), T1078 (Valid Accounts), account hijacking via sophisticated phishing campaigns",
           "iocs": [],
           "source_url": "https://www.malwarebytes.com/blog/news/2026/03/fbi-cisa-warn-of-russian-hackers-hijacking-signal-and-whatsapp-accounts"
         },
         {
-          "name": "North Korean Fake IT Worker",
-          "targets": "Corporate IT departments (insider threat via fake employment)",
-          "ttps": "T1078 Valid Accounts, T1199 Trusted Relationship, T1020 Automated Exfiltration",
+          "name": "litellm supply chain attacker (unknown)",
+          "targets": "Developers using litellm Python package version 1.82.8",
+          "ttps": "T1195.002 (Compromise Software Supply Chain), T1552.004 (Private Keys), T1078 (Valid Accounts), steals SSH keys, cloud credentials, Kubernetes secrets, installs persistent backdoor",
           "iocs": [],
-          "source_url": "https://www.csoonline.com/article/4148279/behavioral-xdr-and-threat-intel-nab-north-korean-fake-it-worker-within-10-days-of-hire.html"
+          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s2gf82/litellm_1828_on_pypi_was_compromised_steals_ssh/"
         },
         {
-          "name": "VoidStealer Operators",
-          "targets": "Chrome browser users (ABE bypass for credential theft)",
-          "ttps": "T1539 Steal Web Session Cookie, T1555.003 Credentials from Web Browsers, T1005 Data from Local System",
+          "name": "Dependency Confusion Campaign Actor",
+          "targets": "Adobe, Ford, Sony, Coca-Cola since June 2025",
+          "ttps": "T1195.002 (Compromise Software Supply Chain), T1559 (Inter-Process Communication), ongoing since June 2025",
+          "iocs": [],
+          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s2g1ns/someone_has_been_running_a_dependency_confusion/"
+        },
+        {
+          "name": "StoatWaffle",
+          "targets": "Developers via auto-executing malware",
+          "ttps": "T1204.002 (User Execution: Malicious File), T1059 (Command and Scripting Interpreter), auto-execution attacks on developers",
+          "iocs": [],
+          "source_url": "https://www.csoonline.com/article/4149274/new-stoatwaffle-malware-auto%e2%80%91executes-attacks-on-developers.html"
+        },
+        {
+          "name": "VoidStealer",
+          "targets": "Chrome browser users",
+          "ttps": "T1555.003 (Credentials from Web Browsers), T1539 (Steal Web Session Cookie), Chrome ABE bypass to steal passwords and cookies",
           "iocs": [],
           "source_url": "https://www.csoonline.com/article/4148601/chrome-abe-bypass-discovered-new-voidstealer-malware-steals-passwords-and-cookies.html"
         },
         {
-          "name": "IRS Phishing Campaign Operators",
-          "targets": "29,000 users via IRS-themed phishing deploying RMM malware",
-          "ttps": "T1566.002 Spearphishing Link, T1566.001 Spearphishing Attachment, T1219 Remote Access Software",
+          "name": "North Korean fake IT workers",
+          "targets": "Western companies hiring remote IT workers",
+          "ttps": "T1078 (Valid Accounts), T1199 (Trusted Relationship), detected within 10 days via behavioral XDR and threat intelligence",
+          "iocs": [],
+          "source_url": "https://www.csoonline.com/article/4148279/behavioral-xdr-and-threat-intel-nab-north-korean-fake-it-worker-within-10-days-of-hire.html"
+        },
+        {
+          "name": "PureHVNC Campaign",
+          "targets": "Job seekers via Google Forms phishing",
+          "ttps": "T1566.002 (Phishing: Spearphishing Link), T1204 (User Execution), T1219 (Remote Access Software), deploys PureHVNC remote access malware",
+          "iocs": [],
+          "source_url": "https://gbhackers.com/google-forms-job-scam/"
+        },
+        {
+          "name": "Fake Resume Campaign",
+          "targets": "Enterprise HR and recruitment departments",
+          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204 (User Execution), T1496 (Resource Hijacking), fake resumes deploy crypto miners and steal credentials",
+          "iocs": [],
+          "source_url": "https://thehackernews.com/2026/03/hackers-use-fake-resumes-to-steal.html"
+        },
+        {
+          "name": "IRS Phishing Campaign",
+          "targets": "29,000+ users impersonating IRS",
+          "ttps": "T1566.002 (Phishing: Spearphishing Link), T1219 (Remote Access Software), deploys RMM (Remote Monitoring and Management) malware",
           "iocs": [],
           "source_url": "https://thehackernews.com/2026/03/microsoft-warns-irs-phishing-hits-29000.html"
         },
         {
-          "name": "litellm PyPI Compromiser",
-          "targets": "Developers using litellm package (version 1.82.8 compromised)",
-          "ttps": "T1195.002 Compromise Software Supply Chain, T1552.004 Private Keys, T1552.001 Credentials In Files, T1053.003 Cron (persistence), T1071.001 Web Protocols (C2)",
+          "name": "Palo Alto Networks Recruitment Impersonation",
+          "targets": "Job seekers and security professionals",
+          "ttps": "T1566.002 (Phishing: Spearphishing Link), T1598 (Phishing for Information), impersonating Palo Alto Networks talent acquisition team",
           "iocs": [],
-          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s2gf82/litellm_1828_on_pypi_was_compromised_steals_ssh/"
+          "source_url": "https://unit42.paloaltonetworks.com/phishing-attackers-pose-as-panw-recruiters/"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "Canadian institutions face growing transnational repression threats, with a cyber-research group warning of an impending 'tsunami' of attacks. Iran-linked sleeper cells have become a topic of concern among intelligence experts regarding threats to Canadians. No CCCS advisories were published in this reporting period, and no direct cyber incidents affecting major Canadian retailers or financial institutions were identified.",
+      "summary": "Canadian institutions face warnings of a 'tsunami' of transnational repression in coming years, particularly from Iranian sleeper cells according to intelligence experts. No CCCS advisories were identified in this reporting period. Insider threat activity is rising across North America including Canada, with behavioral indicators becoming critical detection signals.",
       "retailers": "None identified",
       "financial": "None identified",
       "source_urls": [
