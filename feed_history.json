@@ -1,5 +1,390 @@
 [
   {
+    "title": "Doctor.com By qilin",
+    "link": "https://www.ransomlook.io//group/qilin",
+    "feed_url": "https://www.ransomlook.io/rss.xml",
+    "date": "2026-03-29",
+    "terms": [
+      "qilin"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages",
+    "link": "https://www.helpnetsecurity.com/2026/03/29/week-in-review-nist-updates-dns-security-guidance-compromised-litellm-pypi-packages/",
+    "feed_url": "https://helpnetsecurity.com/feed/",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 90",
+    "link": "https://securityaffairs.com/190123/malware/security-affairs-malware-newsletter-round-90.html",
+    "feed_url": "https://feeds.feedburner.com/securityaffairs",
+    "date": "2026-03-29",
+    "terms": [
+      "POS",
+      "TeamPCP",
+      "Phish",
+      "Iran",
+      "iran",
+      "teampcp",
+      "phish"
+    ],
+    "inline_links": [
+      {
+        "term": "Iran",
+        "text": "Government of Iran Cyber Actors Deploy Telegram C2 to Push Malware to Identified Targets",
+        "url": "https://www.ic3.gov/CSA/2026/260320.pdf"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "Telnyx Malware: TeamPCP Strikes Again Following LiteLLM Compromise",
+        "url": "https://www.ox.security/blog/telnyx-malware-teampcp-strikes-again-following-litellm-compromise/"
+      },
+      {
+        "term": "Iran",
+        "text": "\u2018CanisterWorm\u2019 Springs Wiper Attack Targeting Iran",
+        "url": "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/"
+      },
+      {
+        "term": "Phish",
+        "text": "New BianLian Ransomware Activity Detected: SVG Phishing Campaign Targeting Venezuelan Companies",
+        "url": "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/new-bianlian-ransomware-activity-detected-svg-phishing-campaign"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Security Affairs newsletter Round 569 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+    "link": "https://securityaffairs.com/190104/uncategorized/security-affairs-newsletter-round-569-by-pierluigi-paganini-international-edition.html",
+    "feed_url": "https://feeds.feedburner.com/securityaffairs",
+    "date": "2026-03-29",
+    "terms": [
+      "POS",
+      "BreachForums",
+      "TeamPCP",
+      "Handala",
+      "ShinyHunters",
+      "Phish",
+      "Iran",
+      "shinyhunters",
+      "handala",
+      "iran",
+      "phish",
+      "teampcp",
+      "pos",
+      "breachforums"
+    ],
+    "inline_links": [
+      {
+        "term": "ShinyHunters",
+        "text": "ShinyHunters claims the hack of the European Commission",
+        "url": "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html"
+      },
+      {
+        "term": "Handala",
+        "text": "Iran-linked group Handala hacked FBI Director Kash Patel\u2019s personal email account",
+        "url": "https://securityaffairs.com/190088/intelligence/iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account.html"
+      },
+      {
+        "term": "Iran",
+        "text": "Iran-linked group Handala hacked FBI Director Kash Patel\u2019s personal email account",
+        "url": "https://securityaffairs.com/190088/intelligence/iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account.html"
+      },
+      {
+        "term": "Phish",
+        "text": "New AITM phishing wave hijacks TikTok Business accounts",
+        "url": "https://securityaffairs.com/190058/security/new-aitm-phishing-wave-hijacks-tiktok-business-accounts.html"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "Malicious LiteLLM versions linked to TeamPCP supply chain attack",
+        "url": "https://securityaffairs.com/189948/hacking/malicious-litellm-versions-linked-to-teampcp-supply-chain-attack.html"
+      },
+      {
+        "term": "Iran",
+        "text": "Pro-Iranian Nasir Security is targeting energy companies in the Gulf",
+        "url": "https://securityaffairs.com/189865/cyber-warfare-2/pro-iranian-nasir-security-is-targeting-energy-companies-in-the-gulf.html"
+      },
+      {
+        "term": "POS",
+        "text": "44 Aqua Security repositories defaced after Trivy supply chain breach",
+        "url": "https://securityaffairs.com/189856/hacking/44-aqua-security-repositories-defaced-after-trivy-supply-chain-breach.html"
+      },
+      {
+        "term": "Iran",
+        "text": "Iran-linked actors use Telegram as C2 in malware attacks on dissidents",
+        "url": "https://securityaffairs.com/189820/malware/iran-linked-actors-use-telegram-as-c2-in-malware-attacks-on-dissidents.html"
+      },
+      {
+        "term": "Phish",
+        "text": "Russia-linked actors target WhatsApp and Signal in phishing campaign",
+        "url": "https://securityaffairs.com/189808/intelligence/russia-linked-actors-target-whatsapp-and-signal-in-phishing-campaign.html"
+      },
+      {
+        "term": "POS",
+        "text": "TeamPCP Defaces Aqua Security\u2019s Internal GitHub Org \u2014 44 Repos Exposed",
+        "url": "https://opensourcemalware.com/blog/teampcp-aquasec-com-github-org-compromise"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "TeamPCP Defaces Aqua Security\u2019s Internal GitHub Org \u2014 44 Repos Exposed",
+        "url": "https://opensourcemalware.com/blog/teampcp-aquasec-com-github-org-compromise"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "TeamPCP Isn\u2019t Done: Threat Actor Behind Trivy and KICS Compromises Now Hits LiteLLM\u2019s 95 Million Monthly Downloads on PyPI",
+        "url": "https://www.endorlabs.com/learn/teampcp-isnt-done"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "Popular litellm Python package is the latest victim of TeamPCP\u2019s ongoing supply chain attack",
+        "url": "https://research.jfrog.com/post/litellm-compromised-teampcp/"
+      },
+      {
+        "term": "BreachForums",
+        "text": "BreachForums Data Leaks: Technical Analysis and Timeline Attribution (2022\u20132026)",
+        "url": "https://www.d3lab.net/breachforums-data-leaks-technical-analysis-and-timeline-attribution-2022-2026/"
+      },
+      {
+        "term": "TeamPCP",
+        "text": "TeamPCP expands: Supply chain compromise spreads from Trivy to Checkmarx GitHub Actions",
+        "url": "https://www.sysdig.com/blog/teampcp-expands-supply-chain-compromise-spreads-from-trivy-to-checkmarx-github-actions"
+      },
+      {
+        "term": "Phish",
+        "text": "Attackers are now targeting business TikTok accounts using session-stealing phishing kits",
+        "url": "https://pushsecurity.com/blog/tiktok-phishing#id-why-tiktok"
+      },
+      {
+        "term": "Iran",
+        "text": "Government of Iran Cyber Actors Deploy Telegram C2 to Push Malware to Identified Targets",
+        "url": "https://www.ic3.gov/CSA/2026/260320.pdf"
+      },
+      {
+        "term": "Iran",
+        "text": "Pro-Iranian Nasir Security is Targeting The Energy Sector in the Middle East",
+        "url": "https://www.resecurity.com/blog/article/pro-iranian-nasir-security-is-targeting-the-energy-sector-in-the-middle-east"
+      },
+      {
+        "term": "Iran",
+        "text": "Iran built a vast camera network to control dissent. Israel turned it into a targeting tool",
+        "url": "https://apnews.com/article/iran-war-security-cameras-surveillance-5f9a1fe5845d94894f3edd50af560d3a"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Apple issues urgent lock screen warnings for unpatched iPhones and iPads",
+    "link": "https://securityaffairs.com/190109/security/apple-issues-urgent-lock-screen-warnings-for-unpatched-iphones-and-ipads.html",
+    "feed_url": "https://feeds.feedburner.com/securityaffairs",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Wormsign, RSAC 2026: More auto-updating supply-chain attacks on the way",
+    "link": "https://www.scworld.com/news/wormsign-rsac-2026-more-auto-updating-supply-chain-attacks-on-the-way",
+    "feed_url": "https://www.scmagazine.com/rss",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "AI Threat Landscape Digest January-February 2026",
+    "link": "https://research.checkpoint.com/2026/ai-threat-landscape-digest-january-february-2026/",
+    "feed_url": "https://research.checkpoint.com/feed/",
+    "date": "2026-03-29",
+    "terms": [
+      "POS",
+      "OpenAI",
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Iran-linked hackers open low-cost digital front as US-Israeli attacks mount",
+    "link": "https://www.scmp.com/news/world/middle-east/article/3348285/iran-linked-hackers-open-low-cost-digital-front-us-israeli-attacks-mount?utm_source=rss_feed",
+    "feed_url": "https://scmp.com/rss/296935/feed",
+    "date": "2026-03-29",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Hackers Probe Citrix NetScaler Instances Ahead of Likely CVE-2026-3055 Exploitation",
+    "link": "https://cybersecuritynews.com/citrix-netscaler-instances-exploited/",
+    "feed_url": "https://cybersecuritynews.com/feed",
+    "date": "2026-03-29",
+    "terms": [
+      "critical Vulnerability",
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "[r/netsec] OAuth Consent and Device Code Phishing for Red Teams",
+    "link": "https://www.reddit.com/r/netsec/comments/1s6ig2y/oauth_consent_and_device_code_phishing_for_red/",
+    "source_url": "https://www.reddit.com/r/netsec/comments/1s6ig2y/oauth_consent_and_device_code_phishing_for_red/",
+    "date": "2026-03-29",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] I built ThreatPad \u2014 an open-source, self-hosted note-taking app for CTI teams. Looking for feedback.",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6qldx/i_built_threatpad_an_opensource_selfhosted/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6qldx/i_built_threatpad_an_opensource_selfhosted/",
+    "date": "2026-03-29",
+    "terms": [
+      "IOC",
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Attach Vectors for BYOD FIDO2 - M365",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6qc7k/attach_vectors_for_byod_fido2_m365/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6qc7k/attach_vectors_for_byod_fido2_m365/",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Al-Qaeda\u2019s Cyber Jihad Movement: Plugging into Iran\u2019s Wartime Hacktivist Ecosystem",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6nbch/alqaedas_cyber_jihad_movement_plugging_into_irans/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6nbch/alqaedas_cyber_jihad_movement_plugging_into_irans/",
+    "date": "2026-03-29",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] The Shift from Telegram C2s (affecting \u201crecaptured phishing/credentials\u201d products)",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6mg5u/the_shift_from_telegram_c2s_affecting_recaptured/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6mg5u/the_shift_from_telegram_c2s_affecting_recaptured/",
+    "date": "2026-03-29",
+    "terms": [
+      "hunting",
+      "Easily Exploitable",
+      "POS",
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] GRC Tools and Skills to Learn?",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6j1oh/grc_tools_and_skills_to_learn/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6j1oh/grc_tools_and_skills_to_learn/",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] OAuth Consent and Device Code Phishing for Red Teams",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6ig66/oauth_consent_and_device_code_phishing_for_red/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6ig66/oauth_consent_and_device_code_phishing_for_red/",
+    "date": "2026-03-29",
+    "terms": [
+      "Phish"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/netsecstudents] I built a CTF the way I wanted to play one... Maybe it lands for some of you here too.",
+    "link": "https://www.reddit.com/r/netsecstudents/comments/1s6gulc/i_built_a_ctf_the_way_i_wanted_to_play_one_maybe/",
+    "source_url": "https://www.reddit.com/r/netsecstudents/comments/1s6gulc/i_built_a_ctf_the_way_i_wanted_to_play_one_maybe/",
+    "date": "2026-03-29",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Canada, Saab still in \u2018intensive\u2019 talks, but no decision made on fighter jets purchase: CEO",
+    "link": "https://www.reddit.com/r/canada/comments/1s6tzjo/canada_saab_still_in_intensive_talks_but_no/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s6tzjo/canada_saab_still_in_intensive_talks_but_no/",
+    "date": "2026-03-29",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Oxford Frozen Foods fined $10K for mislabelling blueberries as Canadian",
+    "link": "https://www.reddit.com/r/canada/comments/1s6rdok/oxford_frozen_foods_fined_10k_for_mislabelling/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s6rdok/oxford_frozen_foods_fined_10k_for_mislabelling/",
+    "date": "2026-03-29",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Iconic Canadian sweater surprise breakout star of \u2018Project Hail Mary\u2019",
+    "link": "https://www.reddit.com/r/canada/comments/1s6o3eq/iconic_canadian_sweater_surprise_breakout_star_of/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s6o3eq/iconic_canadian_sweater_surprise_breakout_star_of/",
+    "date": "2026-03-29",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] 'It only takes one' \u2014 Why a runway collision like LaGuardia could happen in Canada",
+    "link": "https://www.reddit.com/r/canada/comments/1s6jk47/it_only_takes_one_why_a_runway_collision_like/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s6jk47/it_only_takes_one_why_a_runway_collision_like/",
+    "date": "2026-03-29",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Soccer: Canada show character in comeback effort against Iceland (2-2)",
+    "link": "https://www.reddit.com/r/canada/comments/1s6gdlw/soccer_canada_show_character_in_comeback_effort/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s6gdlw/soccer_canada_show_character_in_comeback_effort/",
+    "date": "2026-03-29",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
     "title": "CISA Adds CVE-2025-53521 to KEV After Active F5 BIG-IP APM Exploitation",
     "link": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
     "feed_url": "https://thehackernews.com/feeds/posts/default",
@@ -495,28 +880,341 @@
     "source_type": "reddit"
   },
   {
-    "title": "BreachForums version 5 By shinyhunters",
+    "title": "European Commission (*.europa.eu) By shinyhunters",
     "link": "https://www.ransomlook.io//group/shinyhunters",
     "feed_url": "https://www.ransomlook.io/rss.xml",
-    "date": "2026-03-27",
+    "date": "2026-03-28",
     "terms": [
-      "POS",
-      "BreachForums",
       "ShinyHunters"
     ],
     "inline_links": [],
     "source_type": "rss"
   },
   {
-    "title": "Fondation Boghossian By qilin",
-    "link": "https://www.ransomlook.io//group/qilin",
-    "feed_url": "https://www.ransomlook.io/rss.xml",
-    "date": "2026-03-27",
+    "title": "Iran-Linked Hackers Breach FBI Director\u2019s Personal Email, Hit Stryker With Wiper Attack",
+    "link": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
+    "feed_url": "https://thehackernews.com/feeds/posts/default",
+    "date": "2026-03-28",
     "terms": [
-      "qilin"
+      "Handala",
+      "Iran"
     ],
     "inline_links": [],
     "source_type": "rss"
+  },
+  {
+    "title": "We're tracking the best tech deals under $50 during Amazon's Big Spring Sale event",
+    "link": "https://www.zdnet.com/article/best-deals-under-50-amazon-spring-sale/",
+    "feed_url": "https://www.zdnet.com/topic/security/rss.xml",
+    "date": "2026-03-28",
+    "terms": [
+      "Retail"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "ShinyHunters claims the hack of the European Commission",
+    "link": "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html",
+    "feed_url": "https://feeds.feedburner.com/securityaffairs",
+    "date": "2026-03-28",
+    "terms": [
+      "Canada",
+      "POS",
+      "ShinyHunters",
+      "Salesforce",
+      "Phish",
+      "shinyhunters",
+      "canada",
+      "salesforce"
+    ],
+    "inline_links": [
+      {
+        "term": "ShinyHunters",
+        "text": "ShinyHunters",
+        "url": "https://securityaffairs.com/tag/shinyhunters"
+      },
+      {
+        "term": "Canada",
+        "text": "Canada Goose",
+        "url": "https://securityaffairs.com/188046/data-breach/shinyhunters-leaked-600k-canada-goose-customer-records-but-the-firm-denies-it-was-breached.html"
+      },
+      {
+        "term": "Salesforce",
+        "text": "Salesforce",
+        "url": "https://securityaffairs.com/182159/cyber-crime/fbi-warns-of-salesforce-attacks-by-unc6040-and-unc6395-groups.html"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "ShinyHunters Claims 350GB Data Breach at European Commission",
+    "link": "https://hackread.com/shinyhunters-350gb-data-breach-european-commission/",
+    "feed_url": "https://hackread.com/feed",
+    "date": "2026-03-28",
+    "terms": [
+      "ShinyHunters"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Cybersecurity Companies\u2019 Stocks Fall as Anthropic Tests Powerful New Model",
+    "link": "https://cybersecuritynews.com/cybersecurity-stocks-anthropic/",
+    "feed_url": "https://cybersecuritynews.com/feed",
+    "date": "2026-03-28",
+    "terms": [
+      "POS",
+      "react"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "CISA Warns of F5 BIG-IP Vulnerability Actively Exploited in Attacks",
+    "link": "https://cybersecuritynews.com/f5-big-ip-vulnerability-actively-exploited/",
+    "feed_url": "https://cybersecuritynews.com/feed",
+    "date": "2026-03-28",
+    "terms": [
+      "POS",
+      "CVE-2025-53521",
+      "cve-2025-53521"
+    ],
+    "inline_links": [
+      {
+        "term": "CVE-2025-53521",
+        "text": "tracked as CVE-2025-53521",
+        "url": "https://cybersecuritynews.com/f5-security-updates/"
+      }
+    ],
+    "source_type": "rss"
+  },
+  {
+    "title": "Q2 Artificial Lift Services By payload",
+    "link": "https://www.ransomlook.io//group/payload",
+    "feed_url": "https://www.ransomlook.io/rss.xml",
+    "date": "2026-03-28",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "Thankfully, the Infinite Campus incident did not involve a lot of non-directory student information",
+    "link": "https://databreaches.net/2026/03/28/thankfully-the-infinite-campus-incident-did-not-involve-a-lot-of-non-directory-student-information/?pk_campaign=feed&pk_kwd=thankfully-the-infinite-campus-incident-did-not-involve-a-lot-of-non-directory-student-information",
+    "feed_url": "https://www.databreaches.net/feed/",
+    "date": "2026-03-28",
+    "terms": [
+      "ShinyHunters"
+    ],
+    "inline_links": [],
+    "source_type": "rss"
+  },
+  {
+    "title": "[r/cybersecurity] Building on AI, what I actually worry about\u2026",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6d00q/building_on_ai_what_i_actually_worry_about/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6d00q/building_on_ai_what_i_actually_worry_about/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Do you think I am qualified for a security engineer role?",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6cpxe/do_you_think_i_am_qualified_for_a_security/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6cpxe/do_you_think_i_am_qualified_for_a_security/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] How TeamPCP turned Aqua Security's own Trivy scanner into a weapon against millions of developers",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s6blcm/how_teampcp_turned_aqua_securitys_own_trivy/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s6blcm/how_teampcp_turned_aqua_securitys_own_trivy/",
+    "date": "2026-03-28",
+    "terms": [
+      "TeamPCP"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] How fun is cybersecurity as a job and question about bug hunting",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s69lo5/how_fun_is_cybersecurity_as_a_job_and_question/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s69lo5/how_fun_is_cybersecurity_as_a_job_and_question/",
+    "date": "2026-03-28",
+    "terms": [
+      "hunting",
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] GitHub - clicksiem/clickdetect: Clickdetect - generic and no vendor lock-in threshold based detection",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s690hz/github_clicksiemclickdetect_clickdetect_generic/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s690hz/github_clicksiemclickdetect_clickdetect_generic/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Excited about a role but stuck waiting on scheduling. Is this normal?",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s68ifz/excited_about_a_role_but_stuck_waiting_on/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s68ifz/excited_about_a_role_but_stuck_waiting_on/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Threat hunting projects",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s66pd8/threat_hunting_projects/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s66pd8/threat_hunting_projects/",
+    "date": "2026-03-28",
+    "terms": [
+      "hunting"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] How do I make use of this in the best way possible?",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s617ut/how_do_i_make_use_of_this_in_the_best_way_possible/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s617ut/how_do_i_make_use_of_this_in_the_best_way_possible/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] Three recent attacks that Cyber Essentials controls could have stopped",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s5wvmk/three_recent_attacks_that_cyber_essentials/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s5wvmk/three_recent_attacks_that_cyber_essentials/",
+    "date": "2026-03-28",
+    "terms": [
+      "CL0P",
+      "POS",
+      "Phish",
+      "Lockbit"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/cybersecurity] CTFs are now competitions between LLMs -- what does this mean for the job market?",
+    "link": "https://www.reddit.com/r/cybersecurity/comments/1s5onle/ctfs_are_now_competitions_between_llms_what_does/",
+    "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s5onle/ctfs_are_now_competitions_between_llms_what_does/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/netsecstudents] You can now 1v1 someone in ranked phishing",
+    "link": "https://www.reddit.com/r/netsecstudents/comments/1s6a1od/you_can_now_1v1_someone_in_ranked_phishing/",
+    "source_url": "https://www.reddit.com/r/netsecstudents/comments/1s6a1od/you_can_now_1v1_someone_in_ranked_phishing/",
+    "date": "2026-03-28",
+    "terms": [
+      "POS",
+      "Phish",
+      "react"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Canadian Army overhaul looms as DND finalizes mobilization plans",
+    "link": "https://www.reddit.com/r/canada/comments/1s63wo0/canadian_army_overhaul_looms_as_dnd_finalizes/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s63wo0/canadian_army_overhaul_looms_as_dnd_finalizes/",
+    "date": "2026-03-28",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Breaking down the IOC policy banning transgender women from female Olympic events - How does the genetic testing work? How does the IOC define a female?",
+    "link": "https://www.reddit.com/r/canada/comments/1s63h1h/breaking_down_the_ioc_policy_banning_transgender/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s63h1h/breaking_down_the_ioc_policy_banning_transgender/",
+    "date": "2026-03-28",
+    "terms": [
+      "IOC"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Canada meets NATO defence target, but opposition says it's 'creative accounting'",
+    "link": "https://www.reddit.com/r/canada/comments/1s62l9q/canada_meets_nato_defence_target_but_opposition/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s62l9q/canada_meets_nato_defence_target_but_opposition/",
+    "date": "2026-03-28",
+    "terms": [
+      "Canada",
+      "POS"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] UN committee criticizes Canada for not filling corporate human rights abuses watchdog role",
+    "link": "https://www.reddit.com/r/canada/comments/1s62jo0/un_committee_criticizes_canada_for_not_filling/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s62jo0/un_committee_criticizes_canada_for_not_filling/",
+    "date": "2026-03-28",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Tanker sails through Canada\u2019s misunderstood \u2018tanker ban\u2019 area off B.C.\u2019s north coast",
+    "link": "https://www.reddit.com/r/canada/comments/1s62df9/tanker_sails_through_canadas_misunderstood_tanker/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s62df9/tanker_sails_through_canadas_misunderstood_tanker/",
+    "date": "2026-03-28",
+    "terms": [
+      "Canada"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] 'This is a dumb war,' Manitoba Premier Wab Kinew says in letter urging PM to take action to stop Iran conflict",
+    "link": "https://www.reddit.com/r/canada/comments/1s62a7d/this_is_a_dumb_war_manitoba_premier_wab_kinew/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s62a7d/this_is_a_dumb_war_manitoba_premier_wab_kinew/",
+    "date": "2026-03-28",
+    "terms": [
+      "Iran"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
+  },
+  {
+    "title": "[r/canada] Generic versions of weight-loss drugs should arrive on Canadian pharmacy shelves this summer",
+    "link": "https://www.reddit.com/r/canada/comments/1s61sqy/generic_versions_of_weightloss_drugs_should/",
+    "source_url": "https://www.reddit.com/r/canada/comments/1s61sqy/generic_versions_of_weightloss_drugs_should/",
+    "date": "2026-03-28",
+    "terms": [
+      "Canadian"
+    ],
+    "inline_links": [],
+    "source_type": "reddit"
   },
   {
     "title": "GeoMechanics Technologies By akira",
@@ -27704,848 +28402,6 @@
     "link": "https://www.reddit.com/r/netsecstudents/comments/1rgjjxm/theres_no_awesome_projects_list_for_cybersecurity/",
     "source_url": "https://www.reddit.com/r/netsecstudents/comments/1rgjjxm/theres_no_awesome_projects_list_for_cybersecurity/",
     "date": "2026-02-27",
-    "terms": [
-      "POS"
-    ],
-    "inline_links": [],
-    "source_type": "reddit"
-  },
-  {
-    "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access",
-    "link": "https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2026-20127"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Zyxel Patches Critical Vulnerability in Many Device Models",
-    "link": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/",
-    "date": "2026-02-26",
-    "terms": [
-      "critical Vulnerability",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "critical Vulnerability",
-        "text": "Zyxel Patches Critical Vulnerability in Many Device Models",
-        "url": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/"
-      }
-    ]
-  },
-  {
-    "title": "Fraudsters integrate ChatGPT into global scam campaigns",
-    "link": "https://www.helpnetsecurity.com/2026/02/26/openai-malicious-chatgpt-use-report/",
-    "date": "2026-02-26",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Scattered Lapsus$ Hunters seeks women for vishing attacks",
-    "link": "https://www.helpnetsecurity.com/2026/02/26/slh-seeks-women-for-vishing-attacks/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers abused Cisco SD-WAN zero-day since 2023 to gain full admin control",
-    "link": "https://securityaffairs.com/188540/security/hackers-abused-cisco-sd-wan-zero-day-since-2023-to-gain-full-admin-control.html",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting",
-      "CVE-2022-20775",
-      "CVE-2026-20127",
-      "cve-2022-20775"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2022-20775",
-        "text": "CVE-2022-20775",
-        "url": "https://nvd.nist.gov/vuln/detail/cve-2022-20775"
-      },
-      {
-        "term": "hunting",
-        "text": "Cisco Catalyst SD-WAN threat hunting guide",
-        "url": "https://www.cyber.gov.au/sites/default/files/2026-02/ACSC-led%20Cisco%20SD-WAN%20Hunt%20Guide.pdf"
-      }
-    ]
-  },
-  {
-    "title": "Google GTIG disrupted China-linked APT UNC2814 halting attacks on 53 orgs in 42 countries",
-    "link": "https://securityaffairs.com/188521/apt/google-gtig-disrupted-china-linked-apt-unc2814-halting-attacks-on-53-orgs-in-42-countries.html",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Global Cyber Agencies Urge Immediate Patching of Cisco SD-WAN Zero Day",
-    "link": "https://www.infosecurity-magazine.com/news/immediate-patch-cisco-catalyst/",
-    "feed_url": "https://www.infosecurity-magazine.com/rss/news/",
-    "date": "2026-02-26",
-    "terms": [
-      "Zero Day"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "The Conduent breach; from 10 million to 25 million (and counting)",
-    "link": "https://www.malwarebytes.com/blog/news/2026/02/the-conduent-breach-from-10-million-to-25-million-and-counting",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "The farmers and the mercenaries: Rethinking the \u2018human layer\u2019 in security",
-    "link": "https://www.csoonline.com/article/4137281/the-farmers-and-the-mercenaries-rethinking-the-human-layer-in-security.html",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "5 trends that should top CISO\u2019s RSA 2026 agendas",
-    "link": "https://www.csoonline.com/article/4136999/5-trends-that-should-top-cisos-rsa-2026-agendas.html",
-    "date": "2026-02-26",
-    "terms": [
-      "ServiceNow"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "9 unverzichtbare Open-Source-Security-Tools",
-    "link": "https://www.csoonline.com/article/3494816/9-unverzichtbare-open-source-security-tools.html",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Steaelite RAT combines data theft and ransomware management capability in one tool",
-    "link": "https://www.csoonline.com/article/4137527/steaelite-rat-combines-data-theft-and-ransomware-management-capability-in-one-tool.html",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Phishing\u2011Led Agent Tesla Campaign Uses Process Hollowing and Anti\u2011Analysis to Evade Detection",
-    "link": "https://gbhackers.com/phishing-led-agent-tesla/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "Phishing\u2011Led Agent Tesla Campaign Uses Process Hollowing and Anti\u2011Analysis to Evade Detection",
-        "url": "https://gbhackers.com/phishing-led-agent-tesla/"
-      }
-    ]
-  },
-  {
-    "title": "Marquis Takes Legal Action Against SonicWall Over Ransomware Attack from Backup Breach",
-    "link": "https://gbhackers.com/marquis-takes-legal-action-against-sonicwall/",
-    "date": "2026-02-26",
-    "terms": [
-      "sonicwall"
-    ],
-    "inline_links": [
-      {
-        "term": "sonicwall",
-        "text": "Marquis Takes Legal Action Against SonicWall Over Ransomware Attack from Backup Breach",
-        "url": "https://gbhackers.com/marquis-takes-legal-action-against-sonicwall/"
-      }
-    ]
-  },
-  {
-    "title": "OpenAI Confirms Chinese Hackers Used ChatGPT in Cyberattack Campaign",
-    "link": "https://gbhackers.com/chatgpt-in-cyberattack/",
-    "date": "2026-02-26",
-    "terms": [
-      "OpenAI",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "OpenAI",
-        "text": "OpenAI Confirms Chinese Hackers Used ChatGPT in Cyberattack Campaign",
-        "url": "https://gbhackers.com/chatgpt-in-cyberattack/"
-      }
-    ]
-  },
-  {
-    "title": "Malicious Ads Bypass Google Ads Screening via New Campaign Platform Exploit",
-    "link": "https://gbhackers.com/google-ads-screening/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ServiceNow AI Platform Vulnerability Allows Remote Code Execution",
-    "link": "https://gbhackers.com/servicenow-ai-platform-vulnerability/",
-    "date": "2026-02-26",
-    "terms": [
-      "ServiceNow",
-      "CVE-2026-0542",
-      "servicenow"
-    ],
-    "inline_links": [
-      {
-        "term": "ServiceNow",
-        "text": "ServiceNow AI Platform Vulnerability Allows Remote Code Execution",
-        "url": "https://gbhackers.com/servicenow-ai-platform-vulnerability/"
-      }
-    ]
-  },
-  {
-    "title": "SLH Offers $500\u2013$1,000 Per Call to Recruit Women for IT Help Desk Vishing Attacks",
-    "link": "https://thecyberpost.com/news/hackers/slh-offers-500-1000-per-call-to-recruit-women-for-it-help-desk-vishing-attacks/",
-    "feed_url": "https://thecyberpost.com/feed",
-    "date": "2026-02-26",
-    "terms": [
-      "scattered spider",
-      "Phish"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "Samsung SDS Identifies Top Cybersecurity Threats of 2026 as AI Risks Escalate",
-    "link": "https://thecyberexpress.com/cybersecurity-threats-of-2026-samsung-sds/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Hackers Exploited Cisco SD-WAN Zero-Day for Three Years Before Detection",
-    "link": "https://thecyberexpress.com/hackers-exploited-cisco-sd-wan-zero-day/",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2021-21311",
-      "CVE-2025-20352",
-      "CVE-2022-20775",
-      "CVE-2026-20127",
-      "cve-2025-20352"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-20352",
-        "text": "Cisco Confirms Critical CVE-2025-20352 Zero-Day RCE Vulnerability Under Active Exploitation",
-        "url": "https://thecyberexpress.com/cisco-ios-rce-vulnerability-cve-2025-20352/"
-      },
-      {
-        "term": "CVE-2025-20352",
-        "text": "Cisco Confirms Critical CVE-2025-20352 Zero-Day RCE Vulnerability Under Active Exploitation",
-        "url": "https://thecyberexpress.com/cisco-ios-rce-vulnerability-cve-2025-20352/"
-      }
-    ]
-  },
-  {
-    "title": "Australian Poultry Giant Hazeldenes Faces Operational Disruption After Cyberattack",
-    "link": "https://thecyberexpress.com/hazeldenes-cyberattack-australia/",
-    "date": "2026-02-26",
-    "terms": [
-      "Canada"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
-    "link": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/",
-    "date": "2026-02-26",
-    "terms": [
-      "critical Vulnerability",
-      "ServiceNow",
-      "CVE-2026-0542",
-      "servicenow"
-    ],
-    "inline_links": [
-      {
-        "term": "ServiceNow",
-        "text": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
-        "url": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/"
-      },
-      {
-        "term": "ServiceNow",
-        "text": "Critical ServiceNow AI Platform Vulnerability Enables Remote Code Execution",
-        "url": "https://cybersecuritynews.com/servicenow-ai-platform-vulnerability/"
-      }
-    ]
-  },
-  {
-    "title": "Steaelite RAT Fuels New Wave of Double Extortion Threats Targeting Enterprises",
-    "link": "https://cybersecuritynews.com/steaelite-rat-fuels-new-wave/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
-    "link": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/",
-    "date": "2026-02-26",
-    "terms": [
-      "OpenAI",
-      "Phish",
-      "openai"
-    ],
-    "inline_links": [
-      {
-        "term": "OpenAI",
-        "text": "OpenAI analysts identified a particularly alarming planning session",
-        "url": "https://cdn.openai.com/pdf/df438d70-e3fe-4a6c-a403-ff632def8f79/disrupting-malicious-uses-of-ai.pdf"
-      },
-      {
-        "term": "OpenAI",
-        "text": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
-        "url": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/"
-      },
-      {
-        "term": "OpenAI",
-        "text": "OpenAI Confirms that Chinese Hackers Used ChatGPT to Launch Cyberattacks",
-        "url": "https://cybersecuritynews.com/openai-confirms-that-chinese-hackers-used-chatgpt/"
-      }
-    ]
-  },
-  {
-    "title": "27 Years old Telnet Vulnerability Enables Attackers to Gain Root Access",
-    "link": "https://cybersecuritynews.com/27-years-old-telnet-vulnerability/",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2026-24061"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "PoC Released for Windows Vulnerability That Allows Attackers to Cause Unrecoverable BSOD Crashes",
-    "link": "https://cybersecuritynews.com/windows-vulnerability-bsod-crashes/",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2022-37969",
-      "CVE-2023-28252",
-      "CVE-2025-29824",
-      "cve-2025-29824"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-29824",
-        "text": "CVE-2025-29824",
-        "url": "https://cybersecuritynews.com/microsoft-patch-tuesday-april-2025/"
-      }
-    ]
-  },
-  {
-    "title": "Google Disrupts Chinese Hackers Infrastructre which Breached 53 Telecom and Government Entities",
-    "link": "https://cybersecuritynews.com/google-disrupts-chinese-hackers-infrastructre/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "ThreatsDay Bulletin: Kali Linux + Claude, Chrome Crash Traps, WinRAR Flaws, LockBit & 15+ Stories",
-    "link": "https://thehackernews.com/2026/02/threatsday-bulletin-kali-linux-claude.html",
-    "date": "2026-02-26",
-    "terms": [
-      "Lockbit"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "U.S. CISA adds Cisco SD-WAN flaws to its Known Exploited Vulnerabilities catalog",
-    "link": "https://securityaffairs.com/188548/hacking/u-s-cisa-adds-cisco-sd-wan-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2022-20775",
-      "CVE-2026-20127",
-      "cve-2022-20775",
-      "cve-2026-20127"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2022-20775",
-        "text": "CVE-2022-20775",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2022-20775"
-      },
-      {
-        "term": "CVE-2026-20127",
-        "text": "CVE-2026-20127",
-        "url": "https://www.cve.org/CVERecord?id=CVE-2026-20127"
-      },
-      {
-        "term": "CVE-2022-20775",
-        "text": "CVE-2022-20775",
-        "url": "https://nvd.nist.gov/vuln/detail/cve-2022-20775"
-      }
-    ]
-  },
-  {
-    "title": "Darktrace Flags 32 Million Phishing Emails in 2025 as Identity Attacks Intensify",
-    "link": "https://www.infosecurity-magazine.com/news/32m-phishing-emails-detected-2025/",
-    "feed_url": "https://www.infosecurity-magazine.com/rss/news/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "Soaring Insider Breach Costs Driven by Shadow AI Use",
-    "link": "https://www.hipaajournal.com/insider-breach-costs-increase-shadow-ai-use/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "DarkCloud Infostealer Emerges as Major Threat With Scalable Credential Theft Targeting Enterprises",
-    "link": "https://cybersecuritynews.com/darkcloud-infostealer-emerges-as-major-threat/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "What to Know About the Notepad++ Supply-Chain Attack",
-    "link": "https://flashpoint.io/blog/what-to-know-about-the-notepad-supply-chain-attack/",
-    "feed_url": "https://flashpoint.io/blog/feed/",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting",
-      "critical Vulnerability",
-      "POS",
-      "react",
-      "CVE-2025-15556",
-      "cve-2025-15556",
-      "critical vulnerability"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2025-15556",
-        "text": "Understanding the Notepad++ Vulnerability (CVE-2025-15556)",
-        "url": "https://flashpoint.io/blog/feed/#understanding"
-      },
-      {
-        "term": "CVE-2025-15556",
-        "text": "How CVE-2025-15556 Works",
-        "url": "https://flashpoint.io/blog/feed/#how-it-works"
-      },
-      {
-        "term": "CVE-2025-15556",
-        "text": "Mapping CVE-2025-15556 to MITRE ATT&CK",
-        "url": "https://flashpoint.io/blog/feed/#mapping"
-      },
-      {
-        "term": "CVE-2025-15556",
-        "text": "Protecting Against CVE-2025-15556",
-        "url": "https://flashpoint.io/blog/feed/#protecting"
-      },
-      {
-        "term": "critical Vulnerability",
-        "text": "critical vulnerability for over six months",
-        "url": "https://cybersecuritynews.com/notepad-code-execution-vulnerability/"
-      }
-    ],
-    "source_type": "rss"
-  },
-  {
-    "title": "Marquis v. SonicWall Lawsuit Ups the Breach Blame Game",
-    "link": "https://www.darkreading.com/cloud-security/marquis-sonicwall-lawsuit-breach-blame-game",
-    "feed_url": "https://www.darkreading.com/rss.xml",
-    "date": "2026-02-26",
-    "terms": [
-      "sonicwall"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "Cisco SD-WAN Zero-Day Under Exploitation for 3 Years",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-sd-wan-zero-day-exploitation-3-years",
-    "feed_url": "https://www.darkreading.com/rss.xml",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2026-20127"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "Trend Micro fixes two critical flaws in Apex One",
-    "link": "https://securityaffairs.com/188572/security/trend-micro-fixes-two-critical-flaws-in-apex-one.html",
-    "date": "2026-02-26",
-    "terms": [
-      "Zero Day",
-      "zero day"
-    ],
-    "inline_links": [
-      {
-        "term": "Zero Day",
-        "text": "TrendAI\u2019s Zero Day Initiative",
-        "url": "http://zerodayinitiative.com/"
-      }
-    ]
-  },
-  {
-    "title": "UAT-10027 campaign hits U.S. education and healthcare with stealthy Dohdoor backdoor",
-    "link": "https://securityaffairs.com/188558/apt/uat-10027-campaign-hits-u-s-education-and-healthcare-with-stealthy-dohdoor-backdoor.html",
-    "date": "2026-02-26",
-    "terms": [
-      "lazarus",
-      "Phish"
-    ],
-    "inline_links": [
-      {
-        "term": "lazarus",
-        "text": "Lazarus",
-        "url": "https://securityaffairs.com/tag/lazarus"
-      }
-    ]
-  },
-  {
-    "title": "Scattered LAPSUS$ Hunters recruit women for vishing attacks",
-    "link": "https://www.scworld.com/brief/scattered-lapsus-hunters-recruit-women-for-vishing-attacks",
-    "date": "2026-02-26",
-    "terms": [
-      "scattered spider"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Fake Zoom and Google Meet scams install Teramind: A technical deep dive",
-    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-zoom-and-google-meet-scams-install-teramind-a-technical-deep-dive",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "How to understand and avoid Advanced Persistent Threats",
-    "link": "https://www.malwarebytes.com/blog/how-to/2026/02/how-to-understand-and-avoid-advanced-persistent-threats",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Chilean National Extradited to the U.S. for Trafficking Over 26,000 Stolen Credit Cards via Telegram",
-    "link": "https://darkwebinformer.com/chilean-national-extradited-to-the-u-s-for-trafficking-over-26-000-stolen-credit-cards-via-telegram/",
-    "date": "2026-02-26",
-    "terms": [
-      "DarkWebInformer"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "New Zealand Police Dismantle Dark Web Drug Syndicate in Operation Solana",
-    "link": "https://darkwebinformer.com/new-zealand-police-dismantle-dark-web-drug-syndicate-in-operation-solana/",
-    "date": "2026-02-26",
-    "terms": [
-      "DarkWebInformer"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "DevChallenges Database Leaked With 20,000 User Records Published for Free Download",
-    "link": "https://darkwebinformer.com/devchallenges-database-leaked-with-20-000-user-records-published-for-free-download/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC",
-      "DarkWebInformer",
-      "darkwebinformer"
-    ],
-    "inline_links": [
-      {
-        "term": "DarkWebInformer",
-        "text": "DarkWebInformer.com",
-        "url": "https://darkwebinformer.com/"
-      }
-    ]
-  },
-  {
-    "title": "Alleged Sale of 116,000 User Records from French Insurance Comparison Site Santeo",
-    "link": "https://darkwebinformer.com/alleged-sale-of-116-000-user-records-from-french-insurance-comparison-site-santeo/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC",
-      "DarkWebInformer",
-      "darkwebinformer"
-    ],
-    "inline_links": [
-      {
-        "term": "DarkWebInformer",
-        "text": "DarkWebInformer.com",
-        "url": "https://darkwebinformer.com/"
-      }
-    ]
-  },
-  {
-    "title": "Cisco SD-WAN vulnerabilities (CVE-2026-20127, CVE-2022-20775) in active exploitation",
-    "link": "https://www.sophos.com/en-us/blog/cisco-sd-wan-vulnerabilities-cve-2026-20127-cve-2022-20775-in-active-exploitation",
-    "feed_url": "https://news.sophos.com/feed/",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2022-20775",
-      "CVE-2026-20127"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "Fake Avast Website Targets Users With \u20ac499 Phishing Refund Scam",
-    "link": "https://hackread.com/fake-avast-website-phishing-refund-scam/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Cisco SD-WAN Zero-Day Actively Exploited to Gain Root Access",
-    "link": "https://www.esecurityplanet.com/threats/cisco-sd-wan-zero-day-actively-exploited-to-gain-root-access/",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting",
-      "Phish",
-      "CVE-2022-20775",
-      "CVE-2026-20127",
-      "cve-2026-20127",
-      "cve-2022-20775"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-20127",
-        "text": "CVE-2026-20127",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20127"
-      },
-      {
-        "term": "CVE-2022-20775",
-        "text": "CVE-2022-20775",
-        "url": "https://nvd.nist.gov/vuln/detail/cve-2022-20775"
-      },
-      {
-        "term": "hunting",
-        "text": "threat hunting",
-        "url": "https://www.esecurityplanet.com/threats/threat-hunting/"
-      }
-    ]
-  },
-  {
-    "title": "ServiceNow AI Platform Vulnerability Enables Unauthenticated RCE",
-    "link": "https://www.esecurityplanet.com/threats/servicenow-ai-platform-vulnerability-enables-unauthenticated-rce/",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting",
-      "critical Vulnerability",
-      "ServiceNow",
-      "CVE-2026-0542",
-      "cve-2026-0542",
-      "servicenow"
-    ],
-    "inline_links": [
-      {
-        "term": "CVE-2026-0542",
-        "text": "CVE-2026-0542",
-        "url": "https://radar.offseq.com/threat/cve-2026-0542-cwe-653-improper-isolation-or-compar-5d8d7dac"
-      },
-      {
-        "term": "hunting",
-        "text": "threat hunting",
-        "url": "https://www.esecurityplanet.com/threats/threat-hunting/"
-      },
-      {
-        "term": "ServiceNow",
-        "text": "ServiceNow AI Platform Vulnerability Enables Unauthenticated RCE",
-        "url": "https://www.esecurityplanet.com/threats/servicenow-ai-platform-vulnerability-enables-unauthenticated-rce/"
-      },
-      {
-        "term": "ServiceNow",
-        "text": "ServiceNow AI Platform Vulnerability Enables Unauthenticated RCE",
-        "url": "https://www.esecurityplanet.com/threats/servicenow-ai-platform-vulnerability-enables-unauthenticated-rce/"
-      }
-    ]
-  },
-  {
-    "title": "Nearly 38 Million Impacted in ManoMano Third-Party Breach",
-    "link": "https://www.esecurityplanet.com/threats/nearly-38-million-impacted-in-manomano-third-party-breach/",
-    "date": "2026-02-26",
-    "terms": [
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Why Perimeter Firewall is Not Enough: Lessons from the GoAnywhere MFT Zero-Day",
-    "link": "https://blogs.vmware.com/security/2026/02/perimeter-fw-not-enough-zero-day.html",
-    "feed_url": "https://blogs.vmware.com/security/feed/",
-    "date": "2026-02-26",
-    "terms": [
-      "POS",
-      "Phish",
-      "react",
-      "CVE-2025-10035"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "The U.S. 2026 National Defense Strategy: A Cybersecurity Perspective",
-    "link": "https://socradar.io/blog/us-2026-national-defense-strategy-cybersecurity/",
-    "date": "2026-02-26",
-    "terms": [
-      "hunting",
-      "akira",
-      "qilin",
-      "Phish",
-      "react",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "qilin",
-        "text": "Qilin",
-        "url": "https://socradar.io/blog/dark-web-profile-qilin-agenda-ransomware/"
-      },
-      {
-        "term": "akira",
-        "text": "Akira",
-        "url": "https://socradar.io/blog/dark-web-profile-akira-ransomware/"
-      },
-      {
-        "term": "Phish",
-        "text": "Phishing",
-        "url": "https://socradar.io/glossary/phishing/"
-      }
-    ]
-  },
-  {
-    "title": "CVE-2026-20127: Cisco Catalyst SD-WAN Auth Bypass Exploited In The Wild",
-    "link": "https://socradar.io/blog/cve-2026-20127-cisco-catalyst-sd-wan-auth-bypass/",
-    "date": "2026-02-26",
-    "terms": [
-      "CVE-2022-20775",
-      "CVE-2026-20127"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Finance Industry Under Pressure: What U.S. Institutions Need to Know in 2026",
-    "link": "https://socradar.io/blog/finance-industry-us-institutions-2026/",
-    "date": "2026-02-26",
-    "terms": [
-      "scattered spider",
-      "Phish",
-      "react",
-      "phish"
-    ],
-    "inline_links": [
-      {
-        "term": "Phish",
-        "text": "phishing",
-        "url": "https://socradar.io/glossary/phishing/"
-      },
-      {
-        "term": "scattered spider",
-        "text": "Scattered Spider",
-        "url": "https://socradar.io/blog/dark-web-profile-scattered-spider/"
-      }
-    ]
-  },
-  {
-    "title": "AI-Based Browsers: Are They Really Safe?",
-    "link": "https://socradar.io/blog/ai-based-browsers-are-they-really-safe/",
-    "date": "2026-02-26",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Top 10 DDoS Attacks",
-    "link": "https://socradar.io/blog/top-10-ddos-attacks/",
-    "date": "2026-02-26",
-    "terms": [
-      "Canada",
-      "Canadian",
-      "affirm"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "Healthcare Data Breach Statistics \u2013 Updated for 2026",
-    "link": "https://www.hipaajournal.com/healthcare-data-breach-statistics/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC",
-      "Phish"
-    ],
-    "inline_links": []
-  },
-  {
-    "title": "[r/netsec] Reverse CAPTCHA: Evaluating LLM Susceptibility to Invisible Unicode Instruction Injection",
-    "link": "https://www.reddit.com/r/netsec/comments/1rfjlyh/reverse_captcha_evaluating_llm_susceptibility_to/",
-    "source_url": "https://www.reddit.com/r/netsec/comments/1rfjlyh/reverse_captcha_evaluating_llm_susceptibility_to/",
-    "date": "2026-02-26",
-    "terms": [
-      "OpenAI"
-    ],
-    "inline_links": [],
-    "source_type": "reddit"
-  },
-  {
-    "title": "[r/malware] New Modular RAT With Victim Profiling: Detect It Early",
-    "link": "https://www.reddit.com/r/Malware/comments/1rfj0c2/new_modular_rat_with_victim_profiling_detect_it/",
-    "source_url": "https://www.reddit.com/r/Malware/comments/1rfj0c2/new_modular_rat_with_victim_profiling_detect_it/",
-    "date": "2026-02-26",
-    "terms": [
-      "IOC"
-    ],
-    "inline_links": [],
-    "source_type": "reddit"
-  },
-  {
-    "title": "New Release: Tails 7.5",
-    "link": "https://blog.torproject.org/new-release-tails-7_5/",
-    "feed_url": "https://blog.torproject.org/rss.xml",
-    "date": "2026-02-26",
-    "terms": [
-      "POS"
-    ],
-    "inline_links": [],
-    "source_type": "rss"
-  },
-  {
-    "title": "[r/malware] PSA: How a hidden 771MB crypto-miner bypassed Malwarebytes and Task Manager using a BYOVD attack (and the script to kill it)",
-    "link": "https://www.reddit.com/r/Malware/comments/1rfcrv8/psa_how_a_hidden_771mb_cryptominer_bypassed/",
-    "source_url": "https://www.reddit.com/r/Malware/comments/1rfcrv8/psa_how_a_hidden_771mb_cryptominer_bypassed/",
-    "date": "2026-02-26",
     "terms": [
       "POS"
     ],
