@@ -1,11 +1,11 @@
 {
-  "executive_summary": "Multiple critical vulnerabilities are being actively exploited in the wild, including Fortinet FortiClient EMS (CVE-2023-48788), F5 BIG-IP (upgraded from DoS to critical RCE), and Citrix NetScaler (CVE-2026-3055) which is under active reconnaissance just hours after disclosure. The European Commission confirmed a data breach after hackers breached their cloud infrastructure, with threat actor ShinyHunters allegedly involved. Russian APT Star Blizzard (TA446) has adopted the DarkSword iOS exploit kit to target iPhone users via phishing. TeamPCP supply chain attacks continue to expand, now targeting Telnyx and allegedly Databricks platforms through backdoored Python SDKs.",
+  "executive_summary": "Critical vulnerabilities in Fortinet FortiClient EMS and F5 BIG-IP are being actively exploited in the wild right now. The European Commission suffered its second data breach this year, with hackers claiming to steal sensitive data. Russian state-sponsored group Star Blizzard (TA446) is deploying DarkSword exploit kit to target iPhones in phishing campaigns. Supply chain attacks continue with TeamPCP compromising Telnyx SDK on PyPI to steal cloud credentials. Iran-linked hackers claim a major breach of Lockheed Martin and attacked FBI Director Kash Patel's email.",
   "vulnerabilities": {
-    "count": 7,
+    "count": 10,
     "items": [
       {
-        "id": "CVE-2023-48788",
-        "description": "Fortinet FortiClient EMS critical remote code execution vulnerability",
+        "id": "CVE-2026-21643",
+        "description": "Fortinet FortiClient EMS remote code execution vulnerability",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -15,30 +15,41 @@
         "source_url": "https://www.bleepingcomputer.com/news/security/critical-fortinet-forticlient-ems-flaw-now-exploited-in-attacks/"
       },
       {
+        "id": "CVE-2023-48788",
+        "description": "Fortinet FortiClient EMS remote code execution flaw",
+        "criticality": "CRITICAL",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Fortinet FortiClient EMS",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required",
+        "source_url": "https://securityaffairs.com/190158/security/critical-fortinet-forticlient-ems-flaw-exploited-for-remote-code-execution.html"
+      },
+      {
         "id": "CVE-2026-3055",
-        "description": "Citrix NetScaler SAML IDP vulnerability enabling data leakage",
+        "description": "Citrix NetScaler SAML IDP vulnerability exploited within hours of disclosure",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
         "software_affected": "Citrix NetScaler",
-        "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
         "access_required": "Network / No authentication required",
-        "source_url": "https://www.securityweek.com/exploitation-of-fresh-citrix-netscaler-vulnerability-begins/"
+        "source_url": "https://thecyberexpress.com/cve-2026-3055-citrix-netscaler-saml-idp/"
       },
       {
         "id": "CVE-2026-33634",
-        "description": "TeamPCP supply chain attack via backdoored Telnyx SDK",
+        "description": "TeamPCP supply chain attack vulnerability affecting Databricks platform",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Telnyx Python SDK on PyPI",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
-        "access_required": "Supply chain compromise / SDK installation",
+        "software_affected": "Databricks platform via Telnyx SDK",
+        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+        "access_required": "Supply chain - SDK backdoor",
         "source_url": "https://cybersecuritynews.com/databricks-teampcp-supply-chain/"
       },
       {
         "id": "CVE-2026-33017",
-        "description": "Langflow critical unauthenticated remote code execution vulnerability with no patch available",
+        "description": "Langflow critical unauthenticated remote code execution with no patch available",
         "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": true,
@@ -49,87 +60,116 @@
       },
       {
         "id": "CVE-2025-3248",
-        "description": "Related vulnerability mentioned in Langflow critical RCE discussion",
-        "criticality": "HIGH",
+        "description": "Related critical vulnerability in AI workflow platform",
+        "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "Unknown - referenced alongside Langflow",
-        "cia_impact": "Unknown",
-        "access_required": "Unknown",
+        "software_affected": "Langflow",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required",
         "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s7nm2w/cve202633017_langflow_has_a_critical/"
       },
       {
-        "id": "F5 BIG-IP DoS-to-RCE",
-        "description": "F5 BIG-IP vulnerability upgraded from DoS to critical RCE, now exploited in the wild",
+        "id": "CVE-2026-20131",
+        "description": "Vulnerability referenced in threat intelligence report",
+        "criticality": "HIGH",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Unknown",
+        "cia_impact": "Unknown",
+        "access_required": "Unknown",
+        "source_url": "https://research.checkpoint.com/2026/30th-march-threat-intelligence-report/"
+      },
+      {
+        "id": "Unknown",
+        "description": "F5 BIG-IP DoS flaw upgraded to critical RCE, now exploited in the wild",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
         "software_affected": "F5 BIG-IP",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication status unknown",
+        "access_required": "Network / Authentication may be required",
         "source_url": "https://www.securityweek.com/f5-big-ip-dos-flaw-upgraded-to-critical-rce-now-exploited-in-the-wild/"
       },
       {
-        "id": "CVE-2023-4966",
-        "description": "Historical NetScaler vulnerability referenced in comparison to CVE-2026-3055",
+        "id": "Unknown",
+        "description": "Grafana critical remote code execution vulnerabilities",
         "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "Citrix NetScaler (historical)",
-        "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
-        "access_required": "Network / No authentication required",
-        "source_url": "https://securityaffairs.com/190131/hacking/urgent-alert-netscaler-bug-cve-2026-3055-probed-by-attackers-could-leak-sensitive-data.html"
+        "software_affected": "Grafana",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / Authentication status varies",
+        "source_url": "https://gbhackers.com/critical-grafana-flaws/"
+      },
+      {
+        "id": "Unknown",
+        "description": "n8n workflow automation critical remote code execution vulnerability",
+        "criticality": "CRITICAL",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "n8n workflow automation",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / Authentication status unknown",
+        "source_url": "https://cybersecuritynews.com/n8n-vulnerability/"
       }
     ]
   },
   "threat_actors": {
     "items": [
       {
-        "name": "Star Blizzard (TA446, Russian APT)",
-        "targets": "iPhone users via phishing campaigns",
-        "ttps": "T1566 Phishing, T1203 Exploitation for Client Execution - using DarkSword iOS exploit kit for targeted phishing",
+        "name": "Star Blizzard (TA446)",
+        "targets": "iPhone users, likely government and high-value targets",
+        "ttps": "T1566 (Phishing), T1203 (Exploitation for Client Execution) - DarkSword iOS exploit kit deployment via phishing campaigns",
         "iocs": [],
         "source_url": "https://www.securityweek.com/russian-apt-star-blizzard-adopts-darksword-ios-exploit-kit/"
       },
       {
-        "name": "TeamPCP",
-        "targets": "Telnyx, Databricks platform, supply chain targeting cloud infrastructure",
-        "ttps": "T1195.001 Supply Chain Compromise: Compromise Software Dependencies and Development Tools - backdooring Python SDKs on PyPI with fake ringtone files to steal credentials",
-        "iocs": [],
-        "source_url": "https://www.securityweek.com/telnyx-targeted-in-growing-teampcp-supply-chain-attack/"
-      },
-      {
-        "name": "ShinyHunters",
-        "targets": "European Commission cloud infrastructure and websites",
-        "ttps": "T1190 Exploit Public-Facing Application, T1530 Data from Cloud Storage Object - breach of cloud infrastructure resulting in data theft",
-        "iocs": [],
-        "source_url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-breach-after-europaeu-hack/"
-      },
-      {
-        "name": "Handala (Iran-linked)",
-        "targets": "FBI Director Kash Patel personal email, Lockheed Martin",
-        "ttps": "T1589 Gather Victim Identity Information, T1114 Email Collection - compromised personal email accounts of high-value targets",
-        "iocs": [],
-        "source_url": "https://socradar.io/blog/handala-hack-fbi-director/"
-      },
-      {
-        "name": "Qilin (Ransomware)",
-        "targets": "Blantyre Capital",
-        "ttps": "T1486 Data Encrypted for Impact - ransomware operation",
+        "name": "Qilin",
+        "targets": "Miles Electric",
+        "ttps": "T1486 (Data Encrypted for Impact) - Ransomware operations",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/qilin"
       },
       {
-        "name": "CTRL Toolkit (Russian)",
-        "targets": "Various organizations via RDP hijacking",
-        "ttps": "T1566 Phishing, T1219 Remote Access Software - delivered via malicious LNK files, hijacks RDP via FRP tunnels",
+        "name": "ShinyHunters",
+        "targets": "European Commission",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1530 (Data from Cloud Storage) - Cloud infrastructure attack with data exfiltration",
+        "iocs": [],
+        "source_url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-breach-after-europaeu-hack/"
+      },
+      {
+        "name": "TeamPCP",
+        "targets": "Telnyx SDK users, Databricks platform customers, cloud developers",
+        "ttps": "T1195.001 (Supply Chain Compromise), T1554 (Compromise Client Software Binary) - Backdoored Python SDK on PyPI for credential theft",
+        "iocs": [],
+        "source_url": "https://www.securityweek.com/telnyx-targeted-in-growing-teampcp-supply-chain-attack/"
+      },
+      {
+        "name": "Handala (Iran-linked)",
+        "targets": "FBI Director Kash Patel, Lockheed Martin (alleged)",
+        "ttps": "T1566 (Phishing), T1078 (Valid Accounts) - Email compromise operations",
+        "iocs": [],
+        "source_url": "https://socradar.io/blog/handala-hack-fbi-director/"
+      },
+      {
+        "name": "Unknown Russian operators",
+        "targets": "Remote Desktop Protocol (RDP) users",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1572 (Protocol Tunneling) - CTRL toolkit delivered via malicious LNK files, FRP tunnels for RDP hijacking",
         "iocs": [],
         "source_url": "https://thehackernews.com/2026/03/russian-ctrl-toolkit-delivered-via.html"
+      },
+      {
+        "name": "Unknown threat actor (impersonating CERT-UA)",
+        "targets": "Ukrainian government and hospital networks",
+        "ttps": "T1566 (Phishing), T1036.005 (Match Legitimate Name or Location), T1219 (Remote Access Software) - AgeWheeze RAT deployment via phishing",
+        "iocs": [],
+        "source_url": "https://thecyberexpress.com/hackers-impersonate-cert-ua-agewheeze-rat/"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "No direct cyberattacks on Canadian organizations were reported in this 48-hour period. Two articles discuss smart home security guidance gaps that include Canadian context, noting that government guidance is insufficient for smart home breach recovery. No CCCS advisories were published during this timeframe.",
+    "summary": "Two articles reference Canada, both relating to smart home security gaps in post-breach guidance. No CCCS advisories were identified in this 48-hour period. No breaches or incidents involving major Canadian retailers (Loblaws, Canadian Tire, SportChek, Shoppers Drug Mart) or financial institutions (CIBC, RBC, TD, Scotiabank, BMO) were reported.",
     "retailers": "None identified",
     "financial": "None identified",
     "source_urls": [
@@ -137,68 +177,57 @@
       "https://thecyberexpress.com/smart-home-breach-guidance-leipzig/"
     ]
   },
-  "generated_at": "2026-03-30 08:15 ET",
+  "generated_at": "2026-03-30 09:45 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "CISA has added two critical vulnerabilities to its Known Exploited Vulnerabilities catalog\u2014Aquasecurity Trivy (CVE-2026-33634) and Langflow (CVE-2026-33017)\u2014both actively exploited within hours of disclosure. A major supply chain attack by the TeamPCP threat actor compromised the Telnyx Python package (742,000 downloads), delivering malware to AI developers. Iran-linked hackers from the Handala group claim to have breached FBI Director Kash Patel's personal email account. Canada-specific threats include a ransomware claim against GeoMechanics Technologies by the Akira group, though no major retail or financial institution breaches were reported.",
+    "executive_summary": "CISA has added two critical vulnerabilities to its Known Exploited Vulnerabilities catalog that are being actively exploited in the wild: CVE-2026-33017 (Langflow RCE) and CVE-2026-33634 (Aquasecurity Trivy supply chain flaw), both exploited within hours of disclosure. The TeamPCP threat group has compromised the Telnyx PyPI package (742,000 downloads) in an ongoing supply chain attack targeting AI developers. Iran-linked Handala hackers claim to have breached FBI Director Kash Patel's personal email account. A Canadian company, GeoMechanics Technologies, was listed as a victim of the Akira ransomware group. Dutch Police disclosed a security breach after falling victim to a phishing attack, highlighting that even law enforcement is not immune to social engineering.",
     "vulnerabilities": {
-      "count": 5,
+      "count": 4,
       "items": [
         {
-          "id": "CVE-2026-33634",
-          "description": "Supply chain vulnerability in Aquasecurity Trivy scanner allowing malicious code execution",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Aquasecurity Trivy scanner",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Supply chain compromise",
-          "source_url": "https://securityaffairs.com/190044/security/u-s-cisa-adds-an-aquasecurity-trivy-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
-        },
-        {
           "id": "CVE-2026-33017",
-          "description": "Critical remote code execution vulnerability in Langflow AI framework",
+          "description": "Critical Langflow RCE vulnerability enabling remote code execution",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Langflow AI framework",
+          "software_affected": "Langflow",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
           "access_required": "Network / No authentication required",
           "source_url": "https://www.helpnetsecurity.com/2026/03/27/cve-2026-33017-cve-2026-33634-exploited/"
         },
         {
-          "id": "CVE-2025-3248",
-          "description": "Related Langflow vulnerability exploited in the wild",
+          "id": "CVE-2026-33634",
+          "description": "Critical Aquasecurity Trivy supply chain vulnerability allowing malicious code execution",
           "criticality": "CRITICAL",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Aquasecurity Trivy scanner",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "access_required": "Supply chain compromise",
+          "source_url": "https://www.helpnetsecurity.com/2026/03/27/cve-2026-33017-cve-2026-33634-exploited/"
+        },
+        {
+          "id": "CVE-2025-3248",
+          "description": "Langflow vulnerability related to RCE exploitation",
+          "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
           "software_affected": "Langflow",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Network / No authentication required",
+          "access_required": "Network access",
           "source_url": "https://www.csoonline.com/article/4151203/attackers-exploit-critical-langflow-rce-within-hours-as-cisa-sounds-alarm.html"
         },
         {
-          "id": "Citrix NetScaler",
-          "description": "Critical vulnerabilities in Citrix NetScaler and Gateway allowing remote information disclosure",
+          "id": "Citrix NetScaler CVE (unspecified)",
+          "description": "Critical Citrix NetScaler and Gateway vulnerabilities allowing remote information disclosure",
           "criticality": "CRITICAL",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Citrix NetScaler and Gateway",
           "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
-          "access_required": "Network / Remote access",
+          "access_required": "Remote / Network access",
           "source_url": "https://www.hipaajournal.com/urgent-action-required-to-fix-critical-citrix-netscaler-vulnerability/"
-        },
-        {
-          "id": "Windows Error Reporting",
-          "description": "Windows Error Reporting vulnerability allowing privilege escalation to SYSTEM access",
-          "criticality": "HIGH",
-          "actively_exploited": false,
-          "zero_day": false,
-          "software_affected": "Microsoft Windows Error Reporting service",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Local access / Low privileges required",
-          "source_url": "https://cybersecuritynews.com/new-windows-error-reporting-vulnerability/"
         }
       ]
     },
@@ -206,112 +235,84 @@
       "items": [
         {
           "name": "TeamPCP",
-          "targets": "AI developers and projects using Python PyPI packages; compromised Telnyx package with 742,000 downloads",
-          "ttps": "T1195.001 (Supply Chain Compromise - Compromise Software Dependencies and Development Tools), T1027 (Obfuscated Files or Information using WAV audio files), T1071 (Application Layer Protocol)",
-          "iocs": [],
+          "targets": "AI developers and organizations using Telnyx PyPI package (742,000 downloads)",
+          "ttps": "T1195.001 (Supply Chain Compromise: Compromise Software Dependencies and Development Tools), T1027 (Obfuscated Files or Information - malware hidden in WAV files), T1059 (Command and Scripting Interpreter)",
+          "iocs": [
+            "Telnyx PyPI versions 4.87.1 and 4.87.2"
+          ],
           "source_url": "https://cybersecuritynews.com/telnyx-pypi-package-compromised/"
-        },
-        {
-          "name": "Handala (Iran-linked)",
-          "targets": "FBI Director Kash Patel's personal email account",
-          "ttps": "T1566 (Phishing), T1589 (Gather Victim Identity Information), T1078 (Valid Accounts)",
-          "iocs": [],
-          "source_url": "https://techcrunch.com/2026/03/27/iranian-hackers-claim-breach-of-fbi-director-kash-patels-personal-email-account/"
         },
         {
           "name": "Akira",
           "targets": "GeoMechanics Technologies (Canada)",
-          "ttps": "T1486 (Data Encrypted for Impact - Ransomware), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service)",
+          "ttps": "T1486 (Data Encrypted for Impact - Ransomware)",
           "iocs": [],
           "source_url": "https://www.ransomlook.io//group/akira"
         },
         {
           "name": "Red Menshen (China-linked APT)",
-          "targets": "Telecom networks in Southeast Asia",
-          "ttps": "T1542.004 (Pre-OS Boot - ROMMONkit), T1205 (Traffic Signaling using BPFDoor kernel backdoor), T1071 (Application Layer Protocol)",
+          "targets": "Telecom networks globally",
+          "ttps": "T1014 (Rootkit - BPFdoor kernel backdoor), T1205 (Traffic Signaling), T1071 (Application Layer Protocol)",
           "iocs": [],
           "source_url": "https://securityaffairs.com/190029/malware/china-linked-red-menshen-apt-deploys-stealthy-bpfdoor-implants-in-telecom-networks.html"
         },
         {
+          "name": "Handala (Iran-linked)",
+          "targets": "FBI Director Kash Patel's personal email account",
+          "ttps": "T1078 (Valid Accounts), T1589 (Gather Victim Identity Information), T1566 (Phishing)",
+          "iocs": [],
+          "source_url": "https://techcrunch.com/2026/03/27/iranian-hackers-claim-breach-of-fbi-director-kash-patels-personal-email-account/"
+        },
+        {
           "name": "Silver Fox",
-          "targets": "Japanese businesses with tax-themed phishing campaigns",
-          "ttps": "T1566.001 (Phishing - Spearphishing Attachment), T1204.002 (User Execution - Malicious File), T1027 (Obfuscated Files or Information)",
+          "targets": "Japanese businesses using tax-themed phishing campaigns",
+          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204 (User Execution)",
           "iocs": [],
           "source_url": "https://gbhackers.com/silver-fox-cyberattack/"
         },
         {
           "name": "BianLian Ransomware",
-          "targets": "Organizations via fake invoice SVG images",
-          "ttps": "T1566.001 (Phishing - Spearphishing Attachment), T1204.002 (User Execution - Malicious File), T1486 (Data Encrypted for Impact)",
+          "targets": "Various organizations via fake invoice SVG images",
+          "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1486 (Data Encrypted for Impact)",
           "iocs": [],
           "source_url": "https://hackread.com/bianlian-ransomware-fake-invoice-svg-images-attacks/"
         },
         {
           "name": "Qilin Ransomware",
           "targets": "German political party Die Linke",
-          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1041 (Exfiltration Over C2 Channel)",
+          "ttps": "T1486 (Data Encrypted for Impact)",
           "iocs": [],
           "source_url": "https://www.csoonline.com/article/4151169/cyberangriff-auf-die-linke.html"
         },
         {
           "name": "ShinyHunters",
-          "targets": "Southeast Asian government agencies with USB malware, RATs, and stealers",
-          "ttps": "T1091 (Replication Through Removable Media), T1204.002 (User Execution), T1056 (Input Capture)",
+          "targets": "BreachForums V5 (340k user records exposed including emails and passwords)",
+          "ttps": "T1589.001 (Gather Victim Identity Information: Credentials), T1078 (Valid Accounts)",
           "iocs": [],
-          "source_url": "https://cybersecuritynews.com/hackers-use-usb-malware-rats-and-stealers-in-espionage-attacks/"
+          "source_url": "https://cyberinsider.com/breachforums-v5-data-leak-exposes-emails-and-passwords-of-340k-users/"
+        },
+        {
+          "name": "Vect Ransomware",
+          "targets": "Mass affiliate program launched targeting multiple sectors",
+          "ttps": "T1486 (Data Encrypted for Impact), T1568 (Dynamic Resolution)",
+          "iocs": [],
+          "source_url": "https://isc.sans.edu/diary/rss/32838"
         },
         {
           "name": "APT41 (China-linked)",
-          "targets": "Enterprise attack surface targeting multiple sectors",
-          "ttps": "T1190 (Exploit Public-Facing Application), T1133 (External Remote Services), T1078 (Valid Accounts)",
+          "targets": "Enterprise networks with expanding attack surface",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1078 (Valid Accounts), T1071 (Application Layer Protocol)",
           "iocs": [],
           "source_url": "https://cyble.com/blog/apt41-enterprise-attack-surface-cyber-risk/"
-        },
-        {
-          "name": "Venom Stealer",
-          "targets": "Users searching for Avast antivirus via bogus website",
-          "ttps": "T1189 (Drive-by Compromise), T1204.002 (User Execution - Malicious File), T1555 (Credentials from Password Stores)",
-          "iocs": [],
-          "source_url": "https://www.malwarebytes.com/blog/threat-intel/2026/03/bogus-avast-website-fakes-virus-scan-installs-venom-stealer-instead"
-        },
-        {
-          "name": "PXA Stealer",
-          "targets": "Financial firms via phishing ZIP files",
-          "ttps": "T1566.001 (Phishing - Spearphishing Attachment), T1204.002 (User Execution), T1555 (Credentials from Password Stores)",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/phishing-zip-files/"
-        },
-        {
-          "name": "Infiniti Stealer",
-          "targets": "macOS systems via fake Cloudflare CAPTCHA pages",
-          "ttps": "T1189 (Drive-by Compromise), T1204.002 (User Execution), T1555 (Credentials from Password Stores)",
-          "iocs": [],
-          "source_url": "https://cybersecuritynews.com/fake-cloudflare-captcha-pages-spread-infiniti-stealer/"
-        },
-        {
-          "name": "BRUSHWORM and BRUSHLOGGER",
-          "targets": "South Asian financial firm",
-          "ttps": "T1566 (Phishing), T1056.001 (Input Capture - Keylogging), T1071 (Application Layer Protocol)",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/brushworm-and-brushlogger/"
-        },
-        {
-          "name": "Bearlyfy",
-          "targets": "70+ Russian firms with custom GenieLocker ransomware",
-          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059 (Command and Scripting Interpreter)",
-          "iocs": [],
-          "source_url": "https://thehackernews.com/2026/03/bearlyfy-hits-70-russian-firms-with.html"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "The Canadian cybersecurity landscape this period features a ransomware claim by Akira against GeoMechanics Technologies, marking the only direct Canada-targeted cyber incident. No CCCS advisories were published during this reporting period. Canadian organizations should remain vigilant regarding the actively exploited Trivy and Langflow vulnerabilities, as well as the widespread TeamPCP supply chain campaign.",
+      "summary": "One Canadian company, GeoMechanics Technologies, was publicly listed as a victim of the Akira ransomware group this period. No CCCS advisories were identified in the reporting period. Multiple articles referenced Canada in general cybersecurity context including quantum cryptography discussions and international trade agreements, but no specific incidents involving major Canadian retailers or financial institutions were reported.",
       "retailers": "None identified",
       "financial": "None identified",
       "source_urls": [
-        "https://www.ransomlook.io//group/akira",
-        "https://thecyberpost.com/news/hackers/threatsday-bulletin-pqc-push-ai-vuln-hunting-pirated-traps-phishing-kits-20-more-stories/",
-        "https://thecyberexpress.com/apple-age-verification-uk-rollout/"
+        "https://www.ransomlook.io//group/akira"
       ]
     },
     "generated_at": "2026-03-27 18:45 ET",
