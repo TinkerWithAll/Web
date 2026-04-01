@@ -1,184 +1,208 @@
 {
-  "executive_summary": "Two critical vulnerabilities are being actively exploited in the wild: a Fortinet FortiClient EMS flaw and a Citrix NetScaler vulnerability (CVE-2026-3055) now added to CISA's Known Exploited Vulnerabilities catalog. The Axios npm package, downloaded 400 million times monthly, was hijacked in a major supply chain attack that delivered malware to thousands of developers. F5 BIG-IP has a critical flaw (CVE-2025-53521) upgraded to 9.8 severity with active exploitation. The Qilin ransomware group claims to have breached chemical giant Dow Inc, while multiple healthcare organizations disclosed breaches affecting hundreds of thousands of patients. No Canadian-specific incidents or CCCS advisories were reported in this period.",
+  "executive_summary": "Google patched a Chrome zero-day vulnerability (CVE-2026-5281) actively exploited in the wild\u2014all users must update immediately. North Korea's Lazarus Group compromised the popular Axios npm package in a supply-chain attack, while ShinyHunters claims to have breached Cisco Systems and leaked source code. Critical vulnerabilities in Oracle WebLogic and Fortinet FortiClient EMS are now being actively exploited by attackers. No Canadian government advisories or major Canadian retailer/financial institution breaches were reported in this period.",
   "vulnerabilities": {
-    "count": 6,
+    "count": 9,
     "items": [
       {
-        "id": "CVE-2025-53521",
-        "description": "F5 BIG-IP critical remote code execution flaw, severity upgraded to 9.8",
+        "id": "CVE-2026-5281",
+        "description": "Chrome zero-day vulnerability with in-the-wild exploit",
+        "criticality": "CRITICAL",
+        "actively_exploited": true,
+        "zero_day": true,
+        "software_affected": "Google Chrome (version not specified)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / User interaction required",
+        "source_url": "https://www.helpnetsecurity.com/2026/04/01/google-chrome-zero-day-cve-2026-5281/"
+      },
+      {
+        "id": "CVE-2026-21962",
+        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "F5 BIG-IP",
+        "software_affected": "Oracle WebLogic Server",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
         "access_required": "Network / No authentication required",
-        "source_url": "https://hackread.com/critical-f5-big-ip-flaw-upgrad-to-9-8-rce-exploited/"
+        "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
       },
       {
-        "id": "CVE-2026-3055",
-        "description": "Citrix NetScaler vulnerability actively exploited, added to CISA KEV catalog",
+        "id": "CVE-2017-10271",
+        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Citrix NetScaler",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://securityaffairs.com/190197/security/u-s-cisa-adds-a-flaw-in-citrix-netscaler-to-its-known-exploited-vulnerabilities-catalog.html"
+        "software_affected": "Oracle WebLogic Server",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required",
+        "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
       },
       {
-        "id": "CVE-2023-4966",
-        "description": "Citrix NetScaler flaw related to CVE-2026-3055",
+        "id": "CVE-2020-14882",
+        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "criticality": "CRITICAL",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Oracle WebLogic Server",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required",
+        "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
+      },
+      {
+        "id": "CVE-2020-14883",
+        "description": "Oracle WebLogic privilege escalation vulnerability actively exploited in attacks",
         "criticality": "HIGH",
-        "actively_exploited": false,
-        "zero_day": false,
-        "software_affected": "Citrix NetScaler",
-        "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://securityaffairs.com/190197/security/u-s-cisa-adds-a-flaw-in-citrix-netscaler-to-its-known-exploited-vulnerabilities-catalog.html"
-      },
-      {
-        "id": "CVE-2025-30066",
-        "description": "Axios npm supply chain attack via compromised maintainer account",
-        "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Axios npm packages 1.14.1 and 0.30.4",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-        "access_required": "Supply chain compromise / No user interaction",
-        "source_url": "https://thecyberexpress.com/axios-supply-chain-attack-npm-malware/"
-      },
-      {
-        "id": "Unknown - Fortinet FortiClient EMS",
-        "description": "Critical Fortinet FortiClient EMS flaw being actively exploited",
-        "criticality": "CRITICAL",
-        "actively_exploited": true,
-        "zero_day": false,
-        "software_affected": "Fortinet FortiClient EMS",
+        "software_affected": "Oracle WebLogic Server",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
         "access_required": "Network / Low privilege required",
-        "source_url": "https://www.securityweek.com/exploitation-of-critical-fortinet-forticlient-ems-flaw-begins/"
+        "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
       },
       {
-        "id": "Unknown - StrongSwan",
-        "description": "StrongSwan VPN flaw allows unauthenticated attackers to crash VPN services",
-        "criticality": "HIGH",
+        "id": "CVE-2020-2551",
+        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "criticality": "CRITICAL",
+        "actively_exploited": true,
+        "zero_day": false,
+        "software_affected": "Oracle WebLogic Server",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+        "access_required": "Network / No authentication required",
+        "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
+      },
+      {
+        "id": "CVE-2025-53521",
+        "description": "F5 BIG-IP APM flaw reclassified as unauthenticated RCE vulnerability",
+        "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "StrongSwan VPN",
-        "cia_impact": "Confidentiality: None, Integrity: None, Availability: High",
+        "software_affected": "F5 BIG-IP APM",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
         "access_required": "Network / No authentication required",
-        "source_url": "https://www.securityweek.com/strongswan-flaw-allows-unauthenticated-attackers-to-crash-vpns/"
+        "source_url": "https://socradar.io/blog/cve-2025-53521-f5-big-ip-apm-flaw-rce/"
+      },
+      {
+        "id": "CVE-2025-38352",
+        "description": "Chrome vulnerability fixed in stable channel update",
+        "criticality": "MEDIUM",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Google Chrome",
+        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
+        "access_required": "Network / User interaction required",
+        "source_url": "https://thecyberexpress.com/chrome-stable-channel-update-security/"
+      },
+      {
+        "id": "CVE-2025-48543",
+        "description": "Chrome vulnerability fixed in stable channel update",
+        "criticality": "MEDIUM",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Google Chrome",
+        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
+        "access_required": "Network / User interaction required",
+        "source_url": "https://thecyberexpress.com/chrome-stable-channel-update-security/"
       }
     ]
   },
   "threat_actors": {
     "items": [
       {
-        "name": "Qilin Ransomware",
-        "targets": "Dow Inc (chemical manufacturer), Chickasaw Holding, healthcare providers including Corewell Health",
-        "ttps": "T1486 (Data Encrypted for Impact), T1566 (Phishing), T1190 (Exploit Public-Facing Application)",
+        "name": "Lazarus Group (North Korea-linked APT)",
+        "targets": "Axios npm package - supply chain attack affecting downstream users",
+        "ttps": "T1195.002 (Compromise Software Supply Chain), T1059 (Command and Scripting Interpreter)",
         "iocs": [],
-        "source_url": "https://securityaffairs.com/190186/cyber-crime/qilin-ransomware-allegedly-breached-chemical-manufacturer-giant-dow-inc.html"
+        "source_url": "https://thecyberexpress.com/lazarus-behind-axios-npm-supply-chain-attack/"
+      },
+      {
+        "name": "ShinyHunters",
+        "targets": "Cisco Systems, Inc. - alleged source code and data leak",
+        "ttps": "T1567.002 (Exfiltration to Cloud Storage), T1078 (Valid Accounts), T1213 (Data from Information Repositories)",
+        "iocs": [],
+        "source_url": "https://cybersecuritynews.com/cisco-source-code-and-data-leak/"
       },
       {
         "name": "TeamPCP",
-        "targets": "Databricks (alleged), supply chain targeting OSS and AWS environments, Trivy, LiteLLM, Telnyx",
-        "ttps": "T1195.002 (Compromise Software Supply Chain), T1078 (Valid Accounts), T1567 (Exfiltration Over Web Service), dual ransomware operations",
+        "targets": "AI startup Mercor - supply chain attack via LiteLLM",
+        "ttps": "T1195.002 (Compromise Software Supply Chain), T1078 (Valid Accounts), T1526 (Cloud Service Discovery)",
         "iocs": [],
-        "source_url": "https://www.infosecurity-magazine.com/news/teampcp-exploit-stolen-supply/"
+        "source_url": "https://thecyberexpress.com/mercor-cyberattack/"
       },
       {
-        "name": "Silver Fox (APT)",
-        "targets": "Asia cyber campaign targets",
-        "ttps": "T1566 (Phishing), T1071 (Application Layer Protocol), uses AtlasCross RAT and fake domains",
+        "name": "Handala (Iran-linked)",
+        "targets": "Kash Patel email hack and Iranian exile portal Iranwire",
+        "ttps": "T1566 (Phishing), T1078 (Valid Accounts), T1110 (Brute Force)",
         "iocs": [],
-        "source_url": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html"
+        "source_url": "https://thecyberexpress.com/what-kash-patel-email-hack-is-really-about/"
       },
       {
-        "name": "Everest Ransomware",
-        "targets": "Parque E\u00f3lico Toabr\u00e9",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "name": "Everest (Ransomware Group)",
+        "targets": "Nissan",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/everest"
       },
       {
-        "name": "Akira Ransomware",
-        "targets": "Cox Design & Metal Fabrication, Intesa Sanpaolo data breach (3,500+ customers)",
+        "name": "Akira (Ransomware Group)",
+        "targets": "Tange, Mann & Garza",
         "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomlook.io//group/akira"
       },
       {
-        "name": "Leaknet Ransomware",
-        "targets": "Boston Capital",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration to Cloud Storage)",
+        "name": "Qilin (Ransomware Group)",
+        "targets": "Service Star Freightways",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/leaknet"
+        "source_url": "https://www.ransomlook.io//group/qilin"
       },
       {
-        "name": "Genesis Ransomware",
-        "targets": "Catalyst Learning Company",
-        "ttps": "T1486 (Data Encrypted for Impact)",
+        "name": "Silver Fox",
+        "targets": "Asia region with AtlasCross RAT and fake domains",
+        "ttps": "T1566 (Phishing), T1204 (User Execution), T1071 (Application Layer Protocol), T1059 (Command and Scripting Interpreter)",
         "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/genesis"
-      },
-      {
-        "name": "EvilTokens (PhaaS)",
-        "targets": "Microsoft account users globally, operators in Canada noted",
-        "ttps": "T1566.002 (Phishing: Spearphishing Link), T1528 (Steal Application Access Token), Phishing-as-a-Service platform",
-        "iocs": [],
-        "source_url": "https://cybersecuritynews.com/eviltokens-emerges-as-new-phishing-as-a-service-platform/"
-      },
-      {
-        "name": "ResokerRAT (Telegram-based)",
-        "targets": "Undisclosed targets using Telegram for C2",
-        "ttps": "T1113 (Screen Capture), T1547 (Boot or Logon Autostart Execution), T1071.001 (Application Layer Protocol: Web Protocols)",
-        "iocs": [],
-        "source_url": "https://gbhackers.com/telegram-based-resokerrat/"
-      },
-      {
-        "name": "DeepLoad Malware",
-        "targets": "Enterprise networks",
-        "ttps": "T1566 (Phishing), T1047 (Windows Management Instrumentation), T1555 (Credentials from Password Stores), ClickFix social engineering, AI evasion techniques",
-        "iocs": [],
-        "source_url": "https://gbhackers.com/deepload-malware/"
-      },
-      {
-        "name": "Iranian Threat Actor (unspecified)",
-        "targets": "FBI Director Christopher Wray's personal email",
-        "ttps": "T1586 (Compromise Accounts), T1078 (Valid Accounts), posted CV and photos online",
-        "iocs": [],
-        "source_url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-breach-fbi-directors-personal-email-post-cv-and-photos-online"
-      },
-      {
-        "name": "Russian CTRL Toolkit Operators",
-        "targets": "RDP endpoints via FRP tunnels",
-        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1566.002 (Phishing: Spearphishing Link), T1090 (Proxy), T1219 (Remote Access Software), malicious LNK files",
-        "iocs": [],
-        "source_url": "https://thecyberpost.com/news/hackers/russian-ctrl-toolkit-delivered-via-malicious-lnk-files-hijacks-rdp-via-frp-tunnels/"
+        "source_url": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "No Canadian government CCCS advisories were issued in this 48-hour period. The EvilTokens phishing-as-a-service platform was noted to have operators in Canada targeting Microsoft accounts. General articles referencing Canada were related to economic and political news rather than cybersecurity incidents.",
+    "summary": "No CCCS advisories were published in this reporting period. Multiple Reddit discussions about Canadian policy and economic matters were flagged but contained no cybersecurity incidents. No breaches or security incidents involving Canadian retailers or financial institutions were identified.",
     "retailers": "None identified",
     "financial": "None identified",
     "source_urls": [
-      "https://cybersecuritynews.com/eviltokens-emerges-as-new-phishing-as-a-service-platform/",
-      "https://cybersecuritynews.com/cybercriminals-abuse-irs-and-tax-filing-lures/"
+      "https://www.reddit.com/r/canada/comments/1s9lttf/canada_approved_98_of_indian_student_visas/",
+      "https://www.reddit.com/r/canada/comments/1s9l02d/she_lives_with_chronic_pain_that_went_undiagnosed/",
+      "https://www.reddit.com/r/canada/comments/1s9kpsy/canada_with_a_fading_economic_heartbeat_is_no/",
+      "https://www.reddit.com/r/canada/comments/1s9jkk6/potential_occupational_exposure_to_artificial/",
+      "https://www.reddit.com/r/canada/comments/1s9jd12/fuel_price_spikes_cheaper_models_prompt_surge_in/",
+      "https://www.reddit.com/r/canada/comments/1s9ivq9/canadian_space_agency_astronaut_jeremy_hansen_is/",
+      "https://www.reddit.com/r/canada/comments/1s9cmfb/canada_and_mexico_on_different_paths_heading_into/",
+      "https://www.reddit.com/r/canada/comments/1s97knf/canada_driving_investment_away_needs_major/",
+      "https://www.reddit.com/r/canada/comments/1s95tn2/buy_canadian_policy_flagged_by_us_as_trade/",
+      "https://www.reddit.com/r/canada/comments/1s95cq1/out_in_space_canada_and_the_us_are_getting_along/"
     ]
   },
-  "generated_at": "2026-03-31 20:45 ET",
+  "generated_at": "2026-04-01 14:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "F5 BIG-IP APM is under active exploitation (CVE-2025-53521) and has been added to CISA's Known Exploited Vulnerabilities catalog\u2014patch immediately. A second critical flaw in Aquasecurity's Trivy scanner (CVE-2026-33634) was weaponized by TeamPCP in a supply chain attack against the Telnyx package on PyPI, affecting 742,000 downloads. Iran-linked threat group Handala breached FBI Director Kash Patel's personal Gmail account, while ShinyHunters claims a 350GB breach of the European Commission. Citrix NetScaler devices face active reconnaissance for a high-severity memory overread bug (CVE-2026-3055). No CCCS advisories or direct Canadian critical infrastructure incidents identified, though several Canada-related articles on broader geopolitical and trade topics appeared.",
+    "executive_summary": "Three critical vulnerabilities are actively being exploited in the wild: CVE-2026-3055 (Citrix NetScaler memory overread allowing sensitive data leakage), CVE-2025-53521 (F5 BIG-IP APM remote code execution now in CISA's KEV catalog), and CVE-2026-33017 (Langflow unauthenticated RCE, also KEV-listed with no installable patch). Iran-linked threat actor Handala successfully breached FBI Director Kash Patel's personal Gmail account in a targeted spear-phishing campaign. TeamPCP conducted a sophisticated supply chain attack by compromising the Telnyx PyPI package and hiding malware inside WAV audio files using steganography, while also weaponizing Aqua Security's Trivy scanner (CVE-2026-33634). ShinyHunters claims a 350GB data breach of the European Commission following an AWS account compromise.",
     "vulnerabilities": {
       "count": 5,
       "items": [
         {
+          "id": "CVE-2026-3055",
+          "description": "Citrix NetScaler memory overread vulnerability allowing sensitive data leakage",
+          "criticality": "CRITICAL",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Citrix NetScaler",
+          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+          "access_required": "Network / Authentication required",
+          "source_url": "https://cybersecuritynews.com/citrix-netscaler-instances-exploited/"
+        },
+        {
           "id": "CVE-2025-53521",
-          "description": "Remote Code Execution in F5 BIG-IP APM",
+          "description": "F5 BIG-IP APM remote code execution vulnerability",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
@@ -188,48 +212,37 @@
           "source_url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html"
         },
         {
+          "id": "CVE-2026-33017",
+          "description": "Langflow unauthenticated remote code execution via public flow endpoint",
+          "criticality": "CRITICAL",
+          "actively_exploited": true,
+          "zero_day": true,
+          "software_affected": "Langflow",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1s72wek/langflow_cve202633017_unauthenticated_rce_via/"
+        },
+        {
           "id": "CVE-2026-33634",
-          "description": "Critical vulnerability in Aquasecurity Trivy scanner exploited in supply chain attack",
+          "description": "Aquasecurity Trivy Scanner vulnerability weaponized in TeamPCP supply chain attack",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Aquasecurity Trivy Scanner",
+          "software_affected": "Aqua Security Trivy Scanner",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Network / Package installation",
+          "access_required": "Supply chain compromise / Developer systems",
           "source_url": "https://cybersecuritynews.com/aquasecurity-trivy-scanner-vulnerability/"
         },
         {
-          "id": "CVE-2026-3055",
-          "description": "Memory overread vulnerability in Citrix NetScaler under active reconnaissance",
-          "criticality": "CRITICAL",
+          "id": "CVE-2023-4966",
+          "description": "Previous Citrix NetScaler vulnerability referenced in context of CVE-2026-3055",
+          "criticality": "HIGH",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Citrix NetScaler",
-          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Medium",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html"
-        },
-        {
-          "id": "CVE-2026-33017",
-          "description": "Remote Code Execution in Langflow exploited within hours of disclosure",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Langflow",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Authenticated access",
-          "source_url": "https://www.helpnetsecurity.com/2026/03/27/cve-2026-33017-cve-2026-33634-exploited/"
-        },
-        {
-          "id": "CVE-2025-3248",
-          "description": "Langflow RCE vulnerability exploited in active attacks",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Langflow",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Low privileges",
-          "source_url": "https://www.csoonline.com/article/4151203/attackers-exploit-critical-langflow-rce-within-hours-as-cisa-sounds-alarm.html"
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+          "access_required": "Network / Authentication required",
+          "source_url": "https://securityaffairs.com/190131/hacking/urgent-alert-netscaler-bug-cve-2026-3055-probed-by-attackers-could-leak-sensitive-data.html"
         }
       ]
     },
@@ -237,69 +250,54 @@
       "items": [
         {
           "name": "Handala (Iran-linked)",
-          "targets": "FBI Director Kash Patel's personal Gmail account; Stryker (wiper attack)",
-          "ttps": "T1566 Phishing, T1485 Data Destruction (wiper malware), T1586 Compromise Accounts",
+          "targets": "FBI Director Kash Patel's personal Gmail account, U.S. government officials",
+          "ttps": "T1566.001 Spear-Phishing Attachment, T1589 Gather Victim Identity Information, T1114 Email Collection, credential harvesting via phishing campaigns",
           "iocs": [],
-          "source_url": "https://securityaffairs.com/190088/intelligence/iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account.html"
+          "source_url": "https://www.bleepingcomputer.com/news/security/fbi-confirms-hack-of-director-patels-personal-email-inbox/"
         },
         {
-          "name": "TA446",
-          "targets": "Unspecified targets via spear-phishing",
-          "ttps": "T1566.001 Spear-phishing Attachment, T1190 Exploit Public-Facing Application (iOS DarkSword exploit kit)",
+          "name": "TeamPCP",
+          "targets": "Software developers using PyPI packages (Telnyx), Aqua Security Trivy scanner users",
+          "ttps": "T1195.002 Compromise Software Supply Chain, T1027.003 Steganography (WAV file payload hiding), T1059 Command and Scripting Interpreter, malicious package deployment to PyPI repository",
+          "iocs": [],
+          "source_url": "https://www.reddit.com/r/netsec/comments/1s6weca/breakdown_how_teampcp_hid_malware_inside_wav/"
+        },
+        {
+          "name": "ShinyHunters",
+          "targets": "European Commission (350GB data breach via AWS account compromise), Infinite Campus",
+          "ttps": "T1078 Valid Accounts, T1530 Data from Cloud Storage Object, T1213 Data from Information Repositories, cloud infrastructure compromise (AWS), data exfiltration",
+          "iocs": [],
+          "source_url": "https://hackread.com/shinyhunters-350gb-data-breach-european-commission/"
+        },
+        {
+          "name": "TA446 (Iran-linked)",
+          "targets": "iOS users via targeted spear-phishing campaigns",
+          "ttps": "T1566.001 Spear-Phishing Attachment, T1203 Exploitation for Client Execution, DarkSword iOS exploit kit deployment",
           "iocs": [],
           "source_url": "https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html"
         },
         {
-          "name": "TeamPCP",
-          "targets": "PyPI ecosystem, developers using Telnyx package (742,000 downloads)",
-          "ttps": "T1195.002 Supply Chain Compromise (Software Supply Chain), T1027.003 Steganography (payload hidden in WAV files), T1105 Ingress Tool Transfer",
-          "iocs": [],
-          "source_url": "https://thecyberpost.com/news/hackers/teampcp-pushes-malicious-telnyx-versions-to-pypi-hides-stealer-in-wav-files/"
-        },
-        {
-          "name": "ShinyHunters",
-          "targets": "European Commission (350GB data breach claimed); BreachForums V5 (340k user credentials)",
-          "ttps": "T1530 Data from Cloud Storage, T1078 Valid Accounts, T1213 Data from Information Repositories",
-          "iocs": [],
-          "source_url": "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html"
-        },
-        {
-          "name": "Red Menshen (China-linked APT)",
-          "targets": "Telecom networks",
-          "ttps": "T1542 Pre-OS Boot, T1055 Process Injection (BPFDoor implants), T1071 Application Layer Protocol",
-          "iocs": [],
-          "source_url": "https://securityaffairs.com/190029/malware/china-linked-red-menshen-apt-deploys-stealthy-bpfdoor-implants-in-telecom-networks.html"
-        },
-        {
           "name": "Bearlyfy",
           "targets": "Russian firms",
-          "ttps": "T1486 Data Encrypted for Impact (GenieLocker ransomware)",
+          "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, custom GenieLocker ransomware deployment",
           "iocs": [],
           "source_url": "https://thecyberpost.com/news/hackers/bearlyfy-hits-russian-firms-with-custom-genielocker-ransomware/"
-        },
-        {
-          "name": "Silver Fox",
-          "targets": "Japanese businesses",
-          "ttps": "T1566.002 Spear-phishing Link (tax-themed phishing scams)",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/silver-fox-cyberattack/"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "No CCCS advisories were identified in the reporting period. Multiple Canada-related articles appeared focusing on trade, defense policy, healthcare, and regulatory topics, but no direct cyber incidents targeting Canadian critical infrastructure, retailers, or financial institutions were reported. General threat landscape discussions referenced Canada alongside other geopolitical contexts.",
+      "summary": "Canadian cybersecurity discussions focused primarily on policy and international trade issues rather than specific cyber incidents. No CCCS advisories were identified in the reporting period. Community discussions highlighted concerns about Canada's defense sector expansion in Oshawa and cryptocurrency donation bans for election campaigns, alongside general career-related cybersecurity topics in the Canadian market.",
       "retailers": "None identified",
       "financial": "None identified",
       "source_urls": [
-        "https://www.reddit.com/r/canada/comments/1s53vp0/canada_nears_freetrade_deal_with_mercosur_block/",
-        "https://www.reddit.com/r/canada/comments/1s62l9q/canada_meets_nato_defence_target_but_opposition/",
-        "https://www.reddit.com/r/canada/comments/1s5momg/low_earth_orbit_satellite_telecomm_leo_satcom/",
-        "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html",
-        "https://thecyberpost.com/news/hackers/threatsday-bulletin-pqc-push-ai-vuln-hunting-pirated-traps-phishing-kits-20-more-stories/",
-        "https://thecyberpost.com/news/hackers/we-are-at-war/"
+        "https://www.reddit.com/r/cybersecurity/comments/1s5momg/low_earth_orbit_satellite_telecomm_leo_satcom/",
+        "https://www.reddit.com/r/cybersecurity/comments/1s77n38/is_canada_easier_than_the_us_for_entrylevel_jobs/",
+        "https://www.reddit.com/r/canada/comments/1s6wdpp/the_city_of_oshawa_wants_to_be_a_leader_in/",
+        "https://www.reddit.com/r/canada/comments/1s73dwn/canada_moves_to_ban_crypto_donations_for_election/",
+        "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html"
       ]
     },
-    "generated_at": "2026-03-28 18:45 ET",
+    "generated_at": "2026-03-29 18:45 ET",
     "ai_enabled": true,
     "window": "2w"
   }
