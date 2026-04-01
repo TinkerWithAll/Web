@@ -1,126 +1,86 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zachary Baillod | Cybersecurity Specialist</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <title>Zachary Baillod | Coming Soon</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .monogram {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #58a6ff;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: #8b949e;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+    }
+
+    .feed-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(88, 166, 255, 0.1);
+      color: #58a6ff;
+      border: 1px solid rgba(88, 166, 255, 0.3);
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .feed-btn:hover {
+      background: rgba(88, 166, 255, 0.18);
+      border-color: rgba(88, 166, 255, 0.55);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1.5rem;
+      color: #484f58;
+      font-size: 0.78rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">ZB</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#certs">Certifications</a></li>
-        <li><a href="#blog">Projects</a></li>
-		<li><a href="feed.html" class="active">Security Feed</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I'm no tech guru,
-      I'm a nerd who loves to learn all that is security but also a wide veriety of different subjects.
-      My goal is to put what I learn to good use and make a difference in the security landscape of people around me and especially the not-so-tech-savvy majority of people.
-      I also bring many years of customer service experience, which taught me the value of people care and clear communication. For the past 2+ years, I’ve been working in the security field, and before that I gained valuable experience in the Fraud Department at Desjardins Bank, where I developed a sharp eye for threats and risks.
-      I’m always looking to connect with others who have questions preferably security-related or about the projects I’ve posted here, but I welcome any topic. 
-      I might not always have the answer right away, but I’ll either find it or work through it together with you. And even if you don’t have a question, I’d love for you to reach out through the contacts at the bottom of this page.
-      I know I have much to learn from the experiences and insights of others.
-    </p>
-  </section>
-
-  <!-- BACKGROUND -->
-  <section id="background" class="section">
-    <h2>Professional Background</h2>
-    <div class="timeline">
-      <div class="job">
-        <h3>Canadian Tire Corporation <span>(2023 – 2025)</span></h3>
-        <h4>Cyber security Specialist / Threat Intelligence Analyst</h4>
-	<p>Role description</p>
- <p>Vulnerability Management Specialist
-​Oversees end-to-end penetration testing and cloud vulnerability triage, driving the communication and escalation of critical risks to ensure rapid system remediation.</p>
-<p>Threat Intelligence Analyst
-Monitors public sources for points of compromise and performs proactive hunts to evaluate emerging threats and validate organizational security posture.</p>
-	<ul>
-		<li>Created Vulnerability dashboard to provide visibility to asset owners allowing proactive visibility to assist in remediation.</li>
-		<li>project 2</li>
-	</ul>
-      </div>
-      <div class="job">
-        <h3>CGI<span>(2023)</span></h3>
-        <h4>Information Technology Specialist</h4>
-	<p>description</p>
-	<ul>
-		<li>project 1</li>
-		<li>project 2</li>
-	</ul>
-      </div>
-      <div class="job">
-        <h3>Desjardins<span>(2022 – 2023)</span></h3>
-        <h4>Fraude prevention agent</h4>
-	<p>description</p>
-	<ul>
-		<li>project 1</li>
-		<li>project 2</li>
-	</ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section id="certs" class="section">
-    <h2>Achievements & Aspirations</h2>
-    <div class="achievements">
-      <h3>Acquired</h3>
-      <ul>
-        <li class="completed">🎓 Complete a college education in cybersecurity</li>
-        <li class="completed">💼 Get first cybersecurity specific role</li>
-        <li class="completed">🤝 Spend a year alongside a professional team in the field</li>
-      </ul>
-      <h3>Aspiration</h3>
-      <ul>
-        <li class="locked">🔒 Obtain CompTIA Security+ cert</li>
-        <li class="locked">🔒 Certified Ethical Hacker (CEH)</li>
-        <li class="locked">🔒 Certified Information Systems Security Professional (CISSP)</li>
-        <li class="locked">🔒 Create a tool for non-tech-savvy users to browse securely</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="blog" class="section">
-    <h2>Projects</h2>
-    <div id="blog-container" class="blog-container">
-      <!-- Blog posts injected by JS -->
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <div class="social-links">
-    <a href="https://x.com/zachary_sec" target="_blank" class="social-icon">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="X" />
-    </a>
-    <a href="https://www.linkedin.com/in/zachary-baillod-a03a651a6/" target="_blank" class="social-icon">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" />
-    </a>
-    <a href="mailto:contactfromsite.peso775@passmail.net" class="social-icon">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/protonmail.svg" alt="Email" />
-    </a>
-  </div>
-</section>
-
-  <footer>
-    <p>© 2025 Zachary Baillod</p>
-  </footer>
+  <div class="monogram">ZB</div>
+  <h1>Portfolio — Coming Soon</h1>
+  <p>This page is currently being built. In the meantime, the Security Intelligence Feed is live and updated daily.</p>
+  <a href="feed.html" class="feed-btn">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+      <path d="M2.5 3.5a.5.5 0 0 1 1 0v9a.5.5 0 0 1-1 0v-9zm4 0a.5.5 0 0 1 1 0v9a.5.5 0 0 1-1 0v-9zm4.5-.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0v-9a.5.5 0 0 1 .5-.5z"/>
+    </svg>
+    Open Security Feed
+  </a>
+  <footer>© 2025 Zachary Baillod</footer>
 </body>
 </html>
-
- -->
