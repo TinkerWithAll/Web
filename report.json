@@ -1,22 +1,33 @@
 {
-  "executive_summary": "Google patched a Chrome zero-day vulnerability (CVE-2026-5281) actively exploited in the wild\u2014all users must update immediately. North Korea's Lazarus Group compromised the popular Axios npm package in a supply-chain attack, while ShinyHunters claims to have breached Cisco Systems and leaked source code. Critical vulnerabilities in Oracle WebLogic and Fortinet FortiClient EMS are now being actively exploited by attackers. No Canadian government advisories or major Canadian retailer/financial institution breaches were reported in this period.",
+  "executive_summary": "Google patched a Chrome zero-day vulnerability (CVE-2026-5281) that is actively being exploited in the wild\u2014users must update immediately. The Canadian Cyber Security Centre (CCCS) issued an alert for a critical Citrix NetScaler ADC/Gateway vulnerability (CVE-2026-3055). North Korean threat actors compromised the widely-used Axios npm package in a supply chain attack, and ShinyHunters claims to have breached Cisco Systems, allegedly exposing source code and customer data including Salesforce records. Multiple ransomware groups (Akira, Everest) published new victims, and attackers are actively exploiting several Oracle WebLogic remote code execution flaws.",
   "vulnerabilities": {
-    "count": 9,
+    "count": 11,
     "items": [
       {
         "id": "CVE-2026-5281",
-        "description": "Chrome zero-day vulnerability with in-the-wild exploit",
+        "description": "Chrome zero-day vulnerability under active exploitation",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": true,
-        "software_affected": "Google Chrome (version not specified)",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / User interaction required",
+        "software_affected": "Google Chrome (version unspecified, patched in latest Stable Channel update)",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network / User interaction (visit malicious site)",
         "source_url": "https://www.helpnetsecurity.com/2026/04/01/google-chrome-zero-day-cve-2026-5281/"
       },
       {
+        "id": "CVE-2026-3055",
+        "description": "Vulnerability impacting Citrix NetScaler ADC and NetScaler Gateway",
+        "criticality": "CRITICAL",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Citrix NetScaler ADC and NetScaler Gateway",
+        "cia_impact": "Unknown - CCCS advisory issued",
+        "access_required": "Network",
+        "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-006-vulnerability-impacting-citrix-netscaler-adc-netscaler-gateway-cve-2026-3055"
+      },
+      {
         "id": "CVE-2026-21962",
-        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "description": "Oracle WebLogic RCE vulnerability being actively exploited",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -27,7 +38,7 @@
       },
       {
         "id": "CVE-2017-10271",
-        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "description": "Oracle WebLogic RCE vulnerability being actively exploited",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -38,7 +49,7 @@
       },
       {
         "id": "CVE-2020-14882",
-        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "description": "Oracle WebLogic RCE vulnerability being actively exploited",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -49,18 +60,18 @@
       },
       {
         "id": "CVE-2020-14883",
-        "description": "Oracle WebLogic privilege escalation vulnerability actively exploited in attacks",
-        "criticality": "HIGH",
+        "description": "Oracle WebLogic RCE vulnerability being actively exploited",
+        "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
         "software_affected": "Oracle WebLogic Server",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Low privilege required",
+        "access_required": "Network / No authentication required",
         "source_url": "https://cybersecuritynews.com/hackers-exploiting-weblogic-rce-vulnerabilities/"
       },
       {
         "id": "CVE-2020-2551",
-        "description": "Oracle WebLogic RCE vulnerability actively exploited in attacks",
+        "description": "Oracle WebLogic RCE vulnerability being actively exploited",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
@@ -71,7 +82,7 @@
       },
       {
         "id": "CVE-2025-53521",
-        "description": "F5 BIG-IP APM flaw reclassified as unauthenticated RCE vulnerability",
+        "description": "F5 BIG-IP APM flaw reclassified as unauthenticated RCE",
         "criticality": "CRITICAL",
         "actively_exploited": false,
         "zero_day": false,
@@ -82,24 +93,35 @@
       },
       {
         "id": "CVE-2025-38352",
-        "description": "Chrome vulnerability fixed in stable channel update",
+        "description": "Chrome vulnerability patched in stable channel update",
         "criticality": "MEDIUM",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "Google Chrome",
-        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
-        "access_required": "Network / User interaction required",
+        "cia_impact": "Unknown - part of 21-flaw Chrome update",
+        "access_required": "Network",
         "source_url": "https://thecyberexpress.com/chrome-stable-channel-update-security/"
       },
       {
         "id": "CVE-2025-48543",
-        "description": "Chrome vulnerability fixed in stable channel update",
+        "description": "Chrome vulnerability patched in stable channel update",
         "criticality": "MEDIUM",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "Google Chrome",
-        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
-        "access_required": "Network / User interaction required",
+        "cia_impact": "Unknown - part of 21-flaw Chrome update",
+        "access_required": "Network",
+        "source_url": "https://thecyberexpress.com/chrome-stable-channel-update-security/"
+      },
+      {
+        "id": "CVE-2025-52691",
+        "description": "Chrome vulnerability patched in stable channel update",
+        "criticality": "MEDIUM",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "Google Chrome",
+        "cia_impact": "Unknown - part of 21-flaw Chrome update",
+        "access_required": "Network",
         "source_url": "https://thecyberexpress.com/chrome-stable-channel-update-security/"
       }
     ]
@@ -107,88 +129,118 @@
   "threat_actors": {
     "items": [
       {
-        "name": "Lazarus Group (North Korea-linked APT)",
-        "targets": "Axios npm package - supply chain attack affecting downstream users",
-        "ttps": "T1195.002 (Compromise Software Supply Chain), T1059 (Command and Scripting Interpreter)",
+        "name": "Lazarus Group (UNC1069, North Korea-linked APT)",
+        "targets": "Axios npm package (supply chain attack), AWS environments via TeamPCP campaign",
+        "ttps": "T1195.002 (Supply Chain Compromise: Software Supply Chain), T1059 (Command and Scripting Interpreter), T1078 (Valid Accounts for cloud enumeration)",
         "iocs": [],
         "source_url": "https://thecyberexpress.com/lazarus-behind-axios-npm-supply-chain-attack/"
       },
       {
         "name": "ShinyHunters",
-        "targets": "Cisco Systems, Inc. - alleged source code and data leak",
-        "ttps": "T1567.002 (Exfiltration to Cloud Storage), T1078 (Valid Accounts), T1213 (Data from Information Repositories)",
+        "targets": "Cisco Systems (alleged breach of source code and customer data including Salesforce records)",
+        "ttps": "T1567 (Exfiltration Over Web Service), T1078 (Valid Accounts)",
         "iocs": [],
-        "source_url": "https://cybersecuritynews.com/cisco-source-code-and-data-leak/"
+        "source_url": "https://gbhackers.com/cisco-data-leak-as-shinyhunters-claims-responsibility/"
       },
       {
         "name": "TeamPCP",
-        "targets": "AI startup Mercor - supply chain attack via LiteLLM",
-        "ttps": "T1195.002 (Compromise Software Supply Chain), T1078 (Valid Accounts), T1526 (Cloud Service Discovery)",
+        "targets": "AI startup Mercor, AWS environments (supply chain attack via LiteLLM)",
+        "ttps": "T1195.002 (Supply Chain Compromise: Software Supply Chain), T1526 (Cloud Service Discovery for post-compromise enumeration)",
         "iocs": [],
         "source_url": "https://thecyberexpress.com/mercor-cyberattack/"
       },
       {
+        "name": "Akira Ransomware",
+        "targets": "Alliance Roofing",
+        "ttps": "T1486 (Data Encrypted for Impact), T1562.001 (Impair Defenses: Disable or Modify Tools using legitimate IT tools)",
+        "iocs": [],
+        "source_url": "https://www.ransomlook.io//group/akira"
+      },
+      {
+        "name": "Everest Ransomware",
+        "targets": "Nissan",
+        "ttps": "T1486 (Data Encrypted for Impact)",
+        "iocs": [],
+        "source_url": "https://www.ransomlook.io//group/everest"
+      },
+      {
+        "name": "Qilin Ransomware",
+        "targets": "State Road and Tollway Authority",
+        "ttps": "T1486 (Data Encrypted for Impact)",
+        "iocs": [],
+        "source_url": "https://www.ransomlook.io//group/qilin"
+      },
+      {
         "name": "Handala (Iran-linked)",
-        "targets": "Kash Patel email hack and Iranian exile portal Iranwire",
+        "targets": "Iranian exile portal Iranwire, Kash Patel email compromise",
         "ttps": "T1566 (Phishing), T1078 (Valid Accounts), T1110 (Brute Force)",
         "iocs": [],
         "source_url": "https://thecyberexpress.com/what-kash-patel-email-hack-is-really-about/"
       },
       {
-        "name": "Everest (Ransomware Group)",
-        "targets": "Nissan",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "name": "Iran-linked APT (unspecified)",
+        "targets": "Widespread Microsoft 365 account compromise campaigns",
+        "ttps": "T1078 (Valid Accounts), T1110 (Brute Force), T1114 (Email Collection)",
         "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/everest"
+        "source_url": "https://www.scworld.com/brief/widespread-microsoft-365-account-compromise-sought-by-iran-linked-hackers"
       },
       {
-        "name": "Akira (Ransomware Group)",
-        "targets": "Tange, Mann & Garza",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "name": "FulcrumSec",
+        "targets": "Unique Computing, ReFocus AI, Gennet AI (insurance data breach exposing 23,000 policyholders, driver licenses, SSNs, ML models via unpatched AWS account)",
+        "ttps": "T1190 (Exploit Public-Facing Application using CVE-2025-55182), T1078 (Valid Accounts), T1083 (File and Directory Discovery), T1530 (Data from Cloud Storage Object)",
         "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/akira"
+        "source_url": "https://darkwebinformer.com/fulcrumsec-breaches-unique-computing-refocus-ai-and-gennet-ai-exposing-23-000-insurance-policyholders-797m-in-premiums-driver-licenses-ssns-and-proprietary-ml-models-from-a-single-unpat/"
       },
       {
-        "name": "Qilin (Ransomware Group)",
-        "targets": "Service Star Freightways",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "name": "CrystalX MaaS operators",
+        "targets": "Victims via Telegram distribution (Stealer, RAT, prankware features)",
+        "ttps": "T1219 (Remote Access Software), T1555 (Credentials from Password Stores), T1005 (Data from Local System)",
         "iocs": [],
-        "source_url": "https://www.ransomlook.io//group/qilin"
+        "source_url": "https://securelist.com/crystalx-rat-with-prankware-features/119283/"
       },
       {
-        "name": "Silver Fox",
-        "targets": "Asia region with AtlasCross RAT and fake domains",
-        "ttps": "T1566 (Phishing), T1204 (User Execution), T1071 (Application Layer Protocol), T1059 (Command and Scripting Interpreter)",
+        "name": "DeepLoad malware operators",
+        "targets": "Victims via ClickFix social engineering attacks",
+        "ttps": "T1204.002 (User Execution: Malicious File), T1027 (Obfuscated Files or Information)",
         "iocs": [],
-        "source_url": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html"
+        "source_url": "https://www.securityweek.com/new-deepload-malware-dropped-in-clickfix-attacks/"
+      },
+      {
+        "name": "Casbaneiro (banking trojan)",
+        "targets": "Latin America and Europe via phishing with dynamic PDF lures",
+        "ttps": "T1566.001 (Phishing: Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1082 (System Information Discovery)",
+        "iocs": [],
+        "source_url": "https://thehackernews.com/2026/04/casbaneiro-phishing-targets-latin.html"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "No CCCS advisories were published in this reporting period. Multiple Reddit discussions about Canadian policy and economic matters were flagged but contained no cybersecurity incidents. No breaches or security incidents involving Canadian retailers or financial institutions were identified.",
+    "summary": "The Canadian Centre for Cyber Security (CCCS) issued Alert AL26-006 warning of a critical vulnerability (CVE-2026-3055) affecting Citrix NetScaler ADC and Gateway products. No Canadian-specific retail or financial institution breaches were identified in this reporting period, though general North Korean supply chain attacks and ransomware activity pose ongoing risk to Canadian organizations.",
     "retailers": "None identified",
     "financial": "None identified",
     "source_urls": [
-      "https://www.reddit.com/r/canada/comments/1s9lttf/canada_approved_98_of_indian_student_visas/",
-      "https://www.reddit.com/r/canada/comments/1s9l02d/she_lives_with_chronic_pain_that_went_undiagnosed/",
-      "https://www.reddit.com/r/canada/comments/1s9kpsy/canada_with_a_fading_economic_heartbeat_is_no/",
-      "https://www.reddit.com/r/canada/comments/1s9jkk6/potential_occupational_exposure_to_artificial/",
-      "https://www.reddit.com/r/canada/comments/1s9jd12/fuel_price_spikes_cheaper_models_prompt_surge_in/",
-      "https://www.reddit.com/r/canada/comments/1s9ivq9/canadian_space_agency_astronaut_jeremy_hansen_is/",
-      "https://www.reddit.com/r/canada/comments/1s9cmfb/canada_and_mexico_on_different_paths_heading_into/",
-      "https://www.reddit.com/r/canada/comments/1s97knf/canada_driving_investment_away_needs_major/",
-      "https://www.reddit.com/r/canada/comments/1s95tn2/buy_canadian_policy_flagged_by_us_as_trade/",
-      "https://www.reddit.com/r/canada/comments/1s95cq1/out_in_space_canada_and_the_us_are_getting_along/"
+      "https://www.cyber.gc.ca/en/alerts-advisories/al26-006-vulnerability-impacting-citrix-netscaler-adc-netscaler-gateway-cve-2026-3055"
     ]
   },
-  "generated_at": "2026-04-01 14:30 ET",
+  "generated_at": "2026-04-01 09:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "Three critical vulnerabilities are actively being exploited in the wild: CVE-2026-3055 (Citrix NetScaler memory overread allowing sensitive data leakage), CVE-2025-53521 (F5 BIG-IP APM remote code execution now in CISA's KEV catalog), and CVE-2026-33017 (Langflow unauthenticated RCE, also KEV-listed with no installable patch). Iran-linked threat actor Handala successfully breached FBI Director Kash Patel's personal Gmail account in a targeted spear-phishing campaign. TeamPCP conducted a sophisticated supply chain attack by compromising the Telnyx PyPI package and hiding malware inside WAV audio files using steganography, while also weaponizing Aqua Security's Trivy scanner (CVE-2026-33634). ShinyHunters claims a 350GB data breach of the European Commission following an AWS account compromise.",
+    "executive_summary": "Canada's cybersecurity authority (CCCS) issued an alert on March 20 for a critical Microsoft SharePoint vulnerability (CVE-2026-20963) requiring immediate patching. Three other vulnerabilities are being actively exploited in the wild: CVE-2026-3055 (Citrix NetScaler memory leak), CVE-2025-53521 (F5 BIG-IP remote code execution now on CISA's must-patch list), and CVE-2026-33017 (Langflow unauthenticated remote code execution). Iran-linked group Handala successfully breached FBI Director Kash Patel's personal Gmail account, demonstrating continued Iranian cyber aggression. The TeamPCP supply chain attack hid malware inside audio files distributed via compromised Python packages, affecting developers worldwide.",
     "vulnerabilities": {
-      "count": 5,
+      "count": 6,
       "items": [
+        {
+          "id": "CVE-2026-20963",
+          "description": "Critical vulnerability in Microsoft SharePoint Server",
+          "criticality": "CRITICAL",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Microsoft SharePoint Server",
+          "cia_impact": "Unknown - CCCS advisory issued",
+          "access_required": "Unknown - details not disclosed",
+          "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-005-critical-vulnerability-impacting-microsoft-sharepoint-server-cve-2026-20963"
+        },
         {
           "id": "CVE-2026-3055",
           "description": "Citrix NetScaler memory overread vulnerability allowing sensitive data leakage",
@@ -196,24 +248,24 @@
           "actively_exploited": true,
           "zero_day": false,
           "software_affected": "Citrix NetScaler",
-          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
-          "access_required": "Network / Authentication required",
-          "source_url": "https://cybersecuritynews.com/citrix-netscaler-instances-exploited/"
+          "cia_impact": "Confidentiality: High, Integrity: Unknown, Availability: Low",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://securityaffairs.com/190131/hacking/urgent-alert-netscaler-bug-cve-2026-3055-probed-by-attackers-could-leak-sensitive-data.html"
         },
         {
           "id": "CVE-2025-53521",
-          "description": "F5 BIG-IP APM remote code execution vulnerability",
+          "description": "Remote code execution vulnerability in F5 BIG-IP APM systems",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
           "software_affected": "F5 BIG-IP APM",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
+          "access_required": "Network / Authentication required",
           "source_url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html"
         },
         {
           "id": "CVE-2026-33017",
-          "description": "Langflow unauthenticated remote code execution via public flow endpoint",
+          "description": "Unauthenticated remote code execution via public flow endpoint in Langflow",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": true,
@@ -224,24 +276,24 @@
         },
         {
           "id": "CVE-2026-33634",
-          "description": "Aquasecurity Trivy Scanner vulnerability weaponized in TeamPCP supply chain attack",
-          "criticality": "CRITICAL",
+          "description": "Vulnerability exploited in TeamPCP supply chain attack via malicious PyPI packages",
+          "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Aqua Security Trivy Scanner",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
-          "access_required": "Supply chain compromise / Developer systems",
-          "source_url": "https://cybersecuritynews.com/aquasecurity-trivy-scanner-vulnerability/"
+          "software_affected": "Telnyx Python package (PyPI)",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+          "access_required": "User installs compromised package",
+          "source_url": "https://thecyberpost.com/news/hackers/teampcp-pushes-malicious-telnyx-versions-to-pypi-hides-stealer-in-wav-files/"
         },
         {
           "id": "CVE-2023-4966",
-          "description": "Previous Citrix NetScaler vulnerability referenced in context of CVE-2026-3055",
+          "description": "Historical Citrix NetScaler vulnerability referenced in context of CVE-2026-3055",
           "criticality": "HIGH",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Citrix NetScaler",
-          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-          "access_required": "Network / Authentication required",
+          "cia_impact": "Confidentiality: High, Integrity: Unknown, Availability: Low",
+          "access_required": "Network / No authentication required",
           "source_url": "https://securityaffairs.com/190131/hacking/urgent-alert-netscaler-bug-cve-2026-3055-probed-by-attackers-could-leak-sensitive-data.html"
         }
       ]
@@ -250,51 +302,55 @@
       "items": [
         {
           "name": "Handala (Iran-linked)",
-          "targets": "FBI Director Kash Patel's personal Gmail account, U.S. government officials",
-          "ttps": "T1566.001 Spear-Phishing Attachment, T1589 Gather Victim Identity Information, T1114 Email Collection, credential harvesting via phishing campaigns",
+          "targets": "FBI Director Kash Patel's personal Gmail account",
+          "ttps": "T1566 Phishing, T1110 Brute Force (credential compromise), T1114 Email Collection",
           "iocs": [],
-          "source_url": "https://www.bleepingcomputer.com/news/security/fbi-confirms-hack-of-director-patels-personal-email-inbox/"
+          "source_url": "https://securityaffairs.com/190088/intelligence/iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account.html"
         },
         {
           "name": "TeamPCP",
-          "targets": "Software developers using PyPI packages (Telnyx), Aqua Security Trivy scanner users",
-          "ttps": "T1195.002 Compromise Software Supply Chain, T1027.003 Steganography (WAV file payload hiding), T1059 Command and Scripting Interpreter, malicious package deployment to PyPI repository",
+          "targets": "Software developers using PyPI packages (Telnyx library)",
+          "ttps": "T1195.002 Supply Chain Compromise: Software Supply Chain, T1027.003 Steganography (hiding malware in WAV audio files), T1059 Command and Scripting Interpreter",
           "iocs": [],
-          "source_url": "https://www.reddit.com/r/netsec/comments/1s6weca/breakdown_how_teampcp_hid_malware_inside_wav/"
+          "source_url": "https://thecyberpost.com/news/hackers/teampcp-pushes-malicious-telnyx-versions-to-pypi-hides-stealer-in-wav-files/"
         },
         {
-          "name": "ShinyHunters",
-          "targets": "European Commission (350GB data breach via AWS account compromise), Infinite Campus",
-          "ttps": "T1078 Valid Accounts, T1530 Data from Cloud Storage Object, T1213 Data from Information Repositories, cloud infrastructure compromise (AWS), data exfiltration",
-          "iocs": [],
-          "source_url": "https://hackread.com/shinyhunters-350gb-data-breach-european-commission/"
-        },
-        {
-          "name": "TA446 (Iran-linked)",
-          "targets": "iOS users via targeted spear-phishing campaigns",
-          "ttps": "T1566.001 Spear-Phishing Attachment, T1203 Exploitation for Client Execution, DarkSword iOS exploit kit deployment",
+          "name": "TA446 (DarkSword)",
+          "targets": "iOS users via spear-phishing",
+          "ttps": "T1566.001 Spear-phishing Attachment, T1203 Exploitation for Client Execution (iOS exploit kit)",
           "iocs": [],
           "source_url": "https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html"
         },
         {
+          "name": "ShinyHunters",
+          "targets": "Infinite Campus EdTech platform - student data leaked",
+          "ttps": "T1530 Data from Cloud Storage, T1567 Exfiltration Over Web Service",
+          "iocs": [],
+          "source_url": "https://infosec.exchange/@PogoWasRight/116313215672419157"
+        },
+        {
           "name": "Bearlyfy",
           "targets": "Russian firms",
-          "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, custom GenieLocker ransomware deployment",
+          "ttps": "T1486 Data Encrypted for Impact (GenieLocker ransomware), custom ransomware deployment",
           "iocs": [],
           "source_url": "https://thecyberpost.com/news/hackers/bearlyfy-hits-russian-firms-with-custom-genielocker-ransomware/"
+        },
+        {
+          "name": "Everest (Ransomware Group)",
+          "targets": "Hosokawa Micron (Japanese company)",
+          "ttps": "T1486 Data Encrypted for Impact, T1567 Exfiltration Over Web Service (cloud-based data theft)",
+          "iocs": [],
+          "source_url": "https://mastodon.social/@securityLab_jp/116314924497831265"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "Canadian cybersecurity discussions focused primarily on policy and international trade issues rather than specific cyber incidents. No CCCS advisories were identified in the reporting period. Community discussions highlighted concerns about Canada's defense sector expansion in Oshawa and cryptocurrency donation bans for election campaigns, alongside general career-related cybersecurity topics in the Canadian market.",
+      "summary": "The Canadian Centre for Cyber Security (CCCS) issued Alert AL26-005 on March 20, 2026, warning of a critical Microsoft SharePoint vulnerability (CVE-2026-20963) requiring immediate patching. Rogers Communications and Fido confirmed a data breach potentially affecting millions of Canadian customer records. No other Canadian critical infrastructure incidents were identified in this reporting period.",
       "retailers": "None identified",
-      "financial": "None identified",
+      "financial": "Rogers Communications and Fido (telecommunications/media) confirmed data breach affecting potentially millions of customer records",
       "source_urls": [
-        "https://www.reddit.com/r/cybersecurity/comments/1s5momg/low_earth_orbit_satellite_telecomm_leo_satcom/",
-        "https://www.reddit.com/r/cybersecurity/comments/1s77n38/is_canada_easier_than_the_us_for_entrylevel_jobs/",
-        "https://www.reddit.com/r/canada/comments/1s6wdpp/the_city_of_oshawa_wants_to_be_a_leader_in/",
-        "https://www.reddit.com/r/canada/comments/1s73dwn/canada_moves_to_ban_crypto_donations_for_election/",
-        "https://securityaffairs.com/190095/data-breach/shinyhunters-claims-the-hack-of-the-european-commission.html"
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-005-critical-vulnerability-impacting-microsoft-sharepoint-server-cve-2026-20963",
+        "https://infosec.exchange/@beyondmachines1/116312591977047307"
       ]
     },
     "generated_at": "2026-03-29 18:45 ET",
