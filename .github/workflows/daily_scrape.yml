@@ -38,6 +38,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CUSTOM_PROMPT: ${{ github.event.inputs.custom_prompt }}
           AI_ENABLED: ${{ vars.AI_ENABLED }}
+          RANSOMWARE_LIVE_KEY: ${{ secrets.RANSOMWARE_LIVE_KEY }}
         run: python scraper.py
 
       - name: Write config.js via Contents API
