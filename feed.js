@@ -64,10 +64,11 @@ async function triggerWorkflow(inputs, token) {
 document.addEventListener('DOMContentLoaded', () => {
 
   const SOURCE_LABELS = {
-    reddit:   { label: 'Reddit',   cls: 'src-reddit' },
-    mastodon: { label: 'Mastodon', cls: 'src-mastodon' },
-    cccs:     { label: 'CCCS',     cls: 'src-cccs' },
-    rss:      { label: 'RSS',      cls: 'src-rss' },
+    reddit:     { label: 'Reddit',      cls: 'src-reddit' },
+    mastodon:   { label: 'Mastodon',    cls: 'src-mastodon' },
+    cccs:       { label: 'CCCS',        cls: 'src-cccs' },
+    rss:        { label: 'RSS',         cls: 'src-rss' },
+    ransomware: { label: 'Ransomware',  cls: 'src-ransomware' },
   };
 
   const $ = id => document.getElementById(id);
@@ -214,13 +215,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateSourceBreakdown(data) {
     if (!sourceBreakdown) return;
-    const c = {rss:0,reddit:0,mastodon:0,cccs:0};
+    const c = {rss:0,reddit:0,mastodon:0,cccs:0,ransomware:0};
     data.forEach(i => { const t=(i.source_type||'rss').toLowerCase(); if(c[t]!==undefined)c[t]++;else c.rss++; });
     sourceBreakdown.innerHTML =
       '<span class="src-pill src-rss">RSS\u00a0'+c.rss+'</span>'+
       '<span class="src-pill src-reddit">Reddit\u00a0'+c.reddit+'</span>'+
       '<span class="src-pill src-mastodon">Mastodon\u00a0'+c.mastodon+'</span>'+
-      '<span class="src-pill src-cccs">CCCS\u00a0'+c.cccs+'</span>';
+      '<span class="src-pill src-cccs">CCCS\u00a0'+c.cccs+'</span>'+
+      '<span class="src-pill src-ransomware">Ransomware\u00a0'+c.ransomware+'</span>';
   }
 
   sourceFilterBtns.forEach(btn => {

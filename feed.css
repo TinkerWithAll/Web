@@ -688,10 +688,11 @@ header {
   border-radius: 10px;
   white-space: nowrap;
 }
-.src-rss      { background: rgba(79,163,227,0.12); color: #4fa3e3; border: 1px solid rgba(79,163,227,0.25); }
-.src-reddit   { background: rgba(255,100,0,0.12);  color: #ff7733; border: 1px solid rgba(255,100,0,0.25); }
-.src-mastodon { background: rgba(99,100,255,0.12); color: #8b8fff; border: 1px solid rgba(99,100,255,0.25); }
-.src-cccs     { background: rgba(255,71,87,0.12);  color: #ff4757; border: 1px solid rgba(255,71,87,0.25); }
+.src-rss        { background: rgba(79,163,227,0.12);  color: #4fa3e3; border: 1px solid rgba(79,163,227,0.25); }
+.src-reddit     { background: rgba(255,100,0,0.12);   color: #ff7733; border: 1px solid rgba(255,100,0,0.25); }
+.src-mastodon   { background: rgba(99,100,255,0.12);  color: #8b8fff; border: 1px solid rgba(99,100,255,0.25); }
+.src-cccs       { background: rgba(255,71,87,0.12);   color: #ff4757; border: 1px solid rgba(255,71,87,0.25); }
+.src-ransomware { background: rgba(255,165,0,0.12);   color: #ffa500; border: 1px solid rgba(255,165,0,0.25); }
 
 /* ---- SOURCE BADGE (table rows) ---- */
 .src-badge {

@@ -51,8 +51,9 @@ ARTICLE_TREND_FILE= "article_trend.json"
 HISTORY_DAYS   = 30
 REPORT_HOURS   = 48     # window for the AI report
 USE_CISA_CVES  = True
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CUSTOM_PROMPT     = os.environ.get("CUSTOM_PROMPT", "").strip()
+ANTHROPIC_API_KEY      = os.environ.get("ANTHROPIC_API_KEY", "")
+CUSTOM_PROMPT          = os.environ.get("CUSTOM_PROMPT", "").strip()
+RANSOMWARE_LIVE_KEY    = os.environ.get("RANSOMWARE_LIVE_KEY", "")
 EASTERN_TZ        = ZoneInfo("America/New_York")
 PACIFIC_TZ        = ZoneInfo("America/Los_Angeles")
 
@@ -65,7 +66,7 @@ REDDIT_SUBREDDITS = [
     "canada",        # catches Canadian incidents like Loblaws etc.
 ]
 
-MASTODON_INSTANCE = "infosec.exchange"  # hashtag search, not public timeline
+MASTODON_INSTANCE = "mastodon.social"   # infosec.exchange now requires auth for tag timelines
 
 MIN_PUBLISHED_DATE = datetime.today() - timedelta(days=HISTORY_DAYS)
 
@@ -906,83 +907,227 @@ def fetch_mastodon(search_terms: list) -> list:
 
 # ─────────────────────────────────────────────────────────────────
 # CCCS SCRAPER — Canadian Centre for Cyber Security
-# Uses multiple known working feed URLs + HTML scrape fallback.
+# RSS feeds were removed by CCCS. We now scrape the alerts listing
+# page directly and fetch each advisory for title/date/summary.
 # ─────────────────────────────────────────────────────────────────
-CCCS_FEEDS = [
-    # Primary RSS feeds — try all, some may 404 depending on CMS version
-    "https://www.cyber.gc.ca/en/alerts-advisories/feed",
-    "https://cyber.gc.ca/en/alerts-advisories/feed",
-    "https://www.cyber.gc.ca/api/v1/rss/alerts",
-    "https://www.cyber.gc.ca/api/v1/rss/advisories",
-    # Fallback — CCCS content also syndicated through Public Safety Canada
-    "https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cbr-scrt/rssfeed-en.aspx",
-]
+CCCS_BASE     = "https://www.cyber.gc.ca"
+CCCS_LIST_URL = "https://www.cyber.gc.ca/en/alerts-advisories"
+CCCS_HEADERS  = {
+    "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Accept-Language": "en-CA,en;q=0.9",
+    "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
 
 def fetch_cccs(search_terms: list) -> list:
-    """Fetch CCCS alerts and advisories — try multiple feed URLs."""
+    """Scrape CCCS alerts/advisories listing page — RSS feeds no longer exist."""
     entries = {}
     cutoff  = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
-    found_working = False
 
-    for feed_url in CCCS_FEEDS:
-        try:
-            print(f"CCCS: trying {feed_url}...", file=sys.stderr)
-            d = feedparser.parse(feed_url)
-            if not d.entries:
-                print(f"  No entries from {feed_url}", file=sys.stderr)
+    try:
+        print(f"CCCS: scraping {CCCS_LIST_URL}...", file=sys.stderr)
+        resp = requests.get(CCCS_LIST_URL, timeout=15, headers=CCCS_HEADERS)
+        if resp.status_code != 200:
+            print(f"  CCCS listing page returned {resp.status_code}", file=sys.stderr)
+            return []
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+        advisory_links = []
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            # Advisory URLs look like /en/alerts-advisories/al26-001-...
+            if "/alerts-advisories/" in href and href != "/en/alerts-advisories":
+                full_url = href if href.startswith("http") else CCCS_BASE + href
+                if full_url not in advisory_links:
+                    advisory_links.append(full_url)
+
+        print(f"  CCCS: found {len(advisory_links)} advisory links", file=sys.stderr)
+
+        for adv_url in advisory_links[:30]:   # cap at 30 to keep runtime reasonable
+            if adv_url in entries:
                 continue
-
-            found_working = True
-            count_before  = len(entries)
-            for e in d.entries:
-                link = e.get("link", "")
-                if not link or link in entries:
+            try:
+                time.sleep(0.5)
+                ar = requests.get(adv_url, timeout=10, headers=CCCS_HEADERS)
+                if ar.status_code != 200:
                     continue
-                published_dt = None
-                try:
-                    dt_tuple = e.get("published_parsed") or e.get("updated_parsed")
-                    if dt_tuple:
-                        published_dt = datetime(*dt_tuple[:6])
-                except Exception:
-                    pass
+                asoup = BeautifulSoup(ar.text, "html.parser")
 
+                # Title: <h1> or <title>
+                h1 = asoup.find("h1")
+                title = h1.get_text(strip=True) if h1 else adv_url.split("/")[-1]
+
+                # Date: look for a <time> element or "Date modified" text
+                published_dt = None
+                time_el = asoup.find("time")
+                if time_el:
+                    dt_str = time_el.get("datetime", "") or time_el.get_text(strip=True)
+                    for fmt in ("%Y-%m-%d", "%B %d, %Y", "%Y-%m-%dT%H:%M:%S"):
+                        try:
+                            published_dt = datetime.strptime(dt_str[:10], "%Y-%m-%d")
+                            break
+                        except ValueError:
+                            continue
                 if not published_dt:
-                    published_dt = datetime.utcnow()  # fallback: treat as today
+                    # Try "Date modified: YYYY-MM-DD" pattern in page text
+                    import re as _re
+                    dm = _re.search(r"(\d{4}-\d{2}-\d{2})", ar.text)
+                    if dm:
+                        try:
+                            published_dt = datetime.strptime(dm.group(1), "%Y-%m-%d")
+                        except ValueError:
+                            pass
+                if not published_dt:
+                    published_dt = datetime.utcnow()
 
                 if published_dt < cutoff:
                     continue
 
-                title   = e.get("title", "Untitled CCCS Advisory")
-                summary = e.get("summary", "")
-                text_all = f"{title} {summary}".lower()
+                # Summary: first <p> in main content
+                summary = ""
+                main_content = asoup.find("main") or asoup.find("article") or asoup
+                first_p = main_content.find("p")
+                if first_p:
+                    summary = first_p.get_text(" ", strip=True)[:300]
 
-                # Match against user terms; CCCS items always included regardless
+                text_all = f"{title} {summary}".lower()
                 matched = [t for t in search_terms if t.lower() in text_all]
                 if not matched:
                     matched = ["cccs-advisory"]
 
-                entries[link] = {
+                entries[adv_url] = {
                     "title":        f"[CCCS] {title}",
-                    "link":         link,
-                    "source_url":   link,
+                    "link":         adv_url,
+                    "source_url":   adv_url,
                     "date":         published_dt.strftime("%Y-%m-%d"),
                     "terms":        matched,
                     "inline_links": [],
                     "source_type":  "cccs",
                 }
 
-            got = len(entries) - count_before
-            print(f"  CCCS {feed_url}: {got} items", file=sys.stderr)
+            except Exception as ex:
+                print(f"  CCCS advisory fetch error {adv_url}: {ex}", file=sys.stderr)
 
-        except Exception as ex:
-            print(f"  CCCS feed error {feed_url}: {ex}", file=sys.stderr)
-
-    if not found_working:
-        print("  CCCS: all feeds returned empty — URLs may need updating", file=sys.stderr)
+    except Exception as ex:
+        print(f"  CCCS scraper error: {ex}", file=sys.stderr)
 
     result = list(entries.values())
     print(f"CCCS total: {len(result)} items", file=sys.stderr)
     return result
+
+
+# ─────────────────────────────────────────────────────────────────
+# RANSOMWARE.LIVE SCRAPER
+# Fetches Canadian ransomware victims from the ransomware.live Pro API.
+# Requires RANSOMWARE_LIVE_KEY env var (stored in GitHub Secrets).
+# API docs: https://api-pro.ransomware.live/docs
+# ─────────────────────────────────────────────────────────────────
+RANSOMWARE_LIVE_API = "https://api-pro.ransomware.live"
+
+def fetch_ransomware_live() -> list:
+    """Fetch Canadian ransomware victims from ransomware.live Pro API."""
+    if not RANSOMWARE_LIVE_KEY:
+        print("  ransomware.live: RANSOMWARE_LIVE_KEY not set — skipping", file=sys.stderr)
+        return []
+
+    entries = []
+    cutoff  = datetime.utcnow() - timedelta(days=HISTORY_DAYS)
+    headers = {
+        "X-API-KEY":    RANSOMWARE_LIVE_KEY,
+        "Accept":       "application/json",
+        "User-Agent":   "SecurityFeedBot/1.0 (github.com/TinkerWithAll/Web)",
+    }
+
+    try:
+        # Primary: victims filtered by Canada (ISO code CA)
+        url = f"{RANSOMWARE_LIVE_API}/victims/?country=CA&limit=200"
+        print(f"  ransomware.live: fetching {url}...", file=sys.stderr)
+        resp = requests.get(url, headers=headers, timeout=20)
+
+        if resp.status_code == 200:
+            victims = resp.json()
+            if isinstance(victims, dict):
+                victims = victims.get("victims", victims.get("data", []))
+        elif resp.status_code in (401, 403):
+            print(f"  ransomware.live: auth error {resp.status_code} — check RANSOMWARE_LIVE_KEY", file=sys.stderr)
+            return []
+        else:
+            # Fallback: pull recent victims and filter for Canada
+            print(f"  ransomware.live: /victims/?country=CA returned {resp.status_code}, trying /victims/recent", file=sys.stderr)
+            resp2 = requests.get(f"{RANSOMWARE_LIVE_API}/victims/recent", headers=headers, timeout=20)
+            if resp2.status_code != 200:
+                print(f"  ransomware.live: /victims/recent also returned {resp2.status_code}", file=sys.stderr)
+                return []
+            all_victims = resp2.json()
+            if isinstance(all_victims, dict):
+                all_victims = all_victims.get("victims", all_victims.get("data", []))
+            victims = [
+                v for v in all_victims
+                if str(v.get("country", "") or v.get("country_code", "")).upper() in ("CA", "CANADA")
+            ]
+
+        print(f"  ransomware.live: {len(victims)} Canadian victims returned", file=sys.stderr)
+
+        for v in victims:
+            # Normalize field names — API may use different keys across versions
+            victim_name  = v.get("victim",     v.get("name",         v.get("company",     "Unknown")))
+            group        = v.get("group",       v.get("threat_actor", v.get("gang",        "Unknown")))
+            sector       = v.get("activity",    v.get("sector",       v.get("industry",    "")))
+            description  = v.get("description", v.get("summary",      v.get("notes",       "")))
+            website      = v.get("website",     v.get("url",          ""))
+            country      = v.get("country",     v.get("country_code", "CA"))
+
+            # Date: try discovered, then attacked, then published
+            raw_date = (
+                v.get("discovered")  or v.get("attackdate") or
+                v.get("published")   or v.get("date")       or ""
+            )
+            published_dt = None
+            for fmt in ("%Y-%m-%dT%H:%M:%S.%fZ", "%Y-%m-%dT%H:%M:%SZ",
+                        "%Y-%m-%dT%H:%M:%S+00:00", "%Y-%m-%d"):
+                try:
+                    published_dt = datetime.strptime(str(raw_date)[:19], fmt[:len(str(raw_date)[:19])])
+                    break
+                except (ValueError, TypeError):
+                    continue
+            if not published_dt:
+                published_dt = datetime.utcnow()
+
+            if published_dt < cutoff:
+                continue
+
+            # Build a stable link — ransomware.live victim page or website
+            link = website or f"https://www.ransomware.live/victims/{group.lower().replace(' ','-')}"
+
+            title_parts = [f"[Ransomware] {group} →  {victim_name}"]
+            if sector:
+                title_parts.append(f"| {sector}")
+            title = " ".join(title_parts)
+
+            body = f"Threat actor: {group}. Victim: {victim_name} ({country})."
+            if sector:
+                body += f" Sector: {sector}."
+            if description:
+                body += f" {description[:200]}"
+
+            entries.append({
+                "title":        title,
+                "link":         link,
+                "source_url":   link,
+                "date":         published_dt.strftime("%Y-%m-%d"),
+                "terms":        ["ransomware", "canada", group.lower()],
+                "inline_links": [],
+                "source_type":  "ransomware",
+                "body":         body,
+                "threat_actor": group,
+                "victim":       victim_name,
+                "sector":       sector,
+            })
+
+    except Exception as ex:
+        print(f"  ransomware.live error: {ex}", file=sys.stderr)
+
+    print(f"ransomware.live total: {len(entries)} Canadian incidents", file=sys.stderr)
+    return entries
 
 
 # MAIN
@@ -1014,9 +1159,13 @@ def main():
     print("Scanning CCCS...", file=sys.stderr)
     cccs_matches = fetch_cccs(terms)
 
-    # 7. Merge all sources — deduplicate by link
+    # 7. Fetch Canadian ransomware victims from ransomware.live
+    print("Scanning ransomware.live (Canada)...", file=sys.stderr)
+    ransomware_matches = fetch_ransomware_live()
+
+    # 8. Merge all sources — deduplicate by link
     all_matches_dict = {}
-    for entry in rss_matches + cccs_matches + reddit_matches + mastodon_matches:
+    for entry in rss_matches + cccs_matches + reddit_matches + mastodon_matches + ransomware_matches:
         link = entry.get("link", "")
         if link and link not in all_matches_dict:
             all_matches_dict[link] = entry
@@ -1025,34 +1174,35 @@ def main():
     source_summary = (
         f"RSS:{len(rss_matches)} Reddit:{len(reddit_matches)} "
         f"Mastodon:{len(mastodon_matches)} CCCS:{len(cccs_matches)} "
-        f"Total:{len(new_matches)}"
+        f"Ransomware:{len(ransomware_matches)} Total:{len(new_matches)}"
     )
     print(f"Sources — {source_summary}", file=sys.stderr)
 
-    # 8. Update 30-day rolling history
+    # 9. Update 30-day rolling history
     full_history = update_history_file(new_matches)
 
-    # 9. Append to monthly CSV (one file per calendar month, all sources)
+    # 10. Append to monthly CSV (one file per calendar month, all sources)
     monthly_csv = get_monthly_csv_path()
     rows_added  = append_to_monthly_csv(new_matches, monthly_csv)
     print(f"Monthly CSV {monthly_csv}: {rows_added} rows added this run", file=sys.stderr)
 
-    # 10. Clean up any old per-run CSVs left over from previous scraper version
+    # 11. Clean up any old per-run CSVs left over from previous scraper version
     cleanup_csv_files()
 
-    # 11. Source counts for trend tracking
+    # 12. Source counts for trend tracking
     source_counts = {
-        "rss":      len(rss_matches),
-        "reddit":   len(reddit_matches),
-        "mastodon": len(mastodon_matches),
-        "cccs":     len(cccs_matches),
-        "total":    len(new_matches),
+        "rss":        len(rss_matches),
+        "reddit":     len(reddit_matches),
+        "mastodon":   len(mastodon_matches),
+        "cccs":       len(cccs_matches),
+        "ransomware": len(ransomware_matches),
+        "total":      len(new_matches),
     }
 
-    # 12. Save metadata timestamp + article trend
+    # 13. Save metadata timestamp + article trend
     save_metadata(source_counts)
 
-    # 13. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
+    # 14. Generate AI report (server-side, uses ANTHROPIC_API_KEY secret)
     generate_and_save_report(full_history)
 
     print(f"Done. History: {len(full_history)} entries total.", file=sys.stderr)
