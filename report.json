@@ -1,17 +1,17 @@
 {
-  "executive_summary": "Canada is experiencing a massive ransomware wave with over 100 organizations compromised in the past 48 hours, including critical infrastructure: Canada Goose (hit by two groups), Markham Stouffville Hospital, Eastern Townships School Board, Peterborough Public Health, and the Municipality of North Perth. The Canadian Centre for Cyber Security issued an urgent alert for a vulnerability in Fortinet's enterprise management software (CVE-2026-35616) that organizations must patch immediately. Fifteen different ransomware gangs are actively targeting Canadian victims across all sectors, with Qilin and Play groups leading the assault. Healthcare, education, and financial services organizations face the highest risk of data theft and operational disruption.",
+  "executive_summary": "Canada is experiencing a massive ransomware surge with over 100 Canadian organizations victimized in the past 48 hours, affecting critical sectors including healthcare (Markham Stouffville Hospital), education (Eastern Townships School Board), public health (Peterborough Public Health), and a major financial services breach at National Money Mart with database exfiltration confirmed. The Canadian Centre for Cyber Security has issued an alert for a vulnerability in Fortinet FortiClientEMS (CVE-2026-35616). High-profile victims include Canada Goose (hit by two separate groups), multiple healthcare facilities, municipalities, and essential infrastructure providers. This represents one of the most significant concentrated ransomware campaigns against Canadian targets on record.",
   "vulnerabilities": {
     "count": 1,
     "items": [
       {
         "id": "CVE-2026-35616",
-        "description": "Vulnerability impacting Fortinet FortiClientEMS enterprise management software",
-        "criticality": "CRITICAL",
+        "description": "Vulnerability impacting Fortinet FortiClientEMS",
+        "criticality": "HIGH",
         "actively_exploited": false,
         "zero_day": false,
         "software_affected": "Fortinet FortiClientEMS",
-        "cia_impact": "Unknown - CCCS advisory requires review for full impact assessment",
-        "access_required": "Unknown - requires technical advisory review",
+        "cia_impact": "Not specified in advisory",
+        "access_required": "Not specified in advisory",
         "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-007-vulnerability-impacting-fortinet-forticlientems-cve-2026-35616"
       }
     ]
@@ -20,7 +20,7 @@
     "items": [
       {
         "name": "Qilin",
-        "targets": "Service Star Freightways, Kuzco Lighting, Waterloo Information Systems, A Lococo Wholesale, Traffic Tech, Gradient Wind Engineering, Workers Health & Safety Centre, Bergmanis Preyra (law firm), Pre-Con Builders, Questica, Eastern Townships School Board, MG Chartered Professional Accountant, Watermark Beach Resort, CST Coal, BioPharma Services, NovAtel (Hexagon), Maheu&Maheu",
+        "targets": "Service Star Freightways, Kuzco Lighting, Waterloo Information Systems, A Lococo Wholesale, Traffic Tech, Gradient Wind Engineering, Workers Health & Safety Centre, Bergmanis Preyra, Pre-Con Builders, Questica, Eastern Townships School Board, MG Chartered Professional Accountant, Watermark Beach Resort, CST Coal, BioPharma Services, NovAtel, Maheu&Maheu",
         "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1190 (Exploit Public-Facing Application)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/qilin"
@@ -28,44 +28,51 @@
       {
         "name": "Play",
         "targets": "Select Tool, Equine Canada, Chemical Computing Group, Paisley Products of Canada, Makivik, ALLMAX, Pewarchuk CPA, Security ONE Alarm Systems",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059 (Command and Scripting Interpreter)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1190 (Exploit Public-Facing Application)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/play"
       },
       {
         "name": "Clop",
-        "targets": "Strategic Objectives, Ideal Welders, Conwest, CMH Helicopters, Granite Pointe, SMT Lawyers, Cloud Data Works, Sensible Solutions, Whiskijack Resorts, CCCM.BC.CA, Technikel, Modtech, Eastern Platinum, Centaur Products",
-        "ttps": "T1486 (Data Encrypted for Impact), T1078 (Valid Accounts), T1190 (Exploit Public-Facing Application)",
+        "targets": "STRATEGICOBJECTIVES.COM, IDEALWELDERS.COM, CONWEST.COM, CMHHELI.COM, GRANITEPOINTE.CA, SMTLAWYERS.CA, CLOUDDATAWORKS.CA, SENSIBLESOLUTIONS.CA, WHISKIJACKRESORTS.COM, CCCM.BC.CA, TECHNIKEL.CA, MODTECH.CA, EASTPLATS.COM, CENTAURPRODUCTS.COM",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1078 (Valid Accounts)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/clop"
       },
       {
-        "name": "SafePay",
-        "targets": "Briway Carriers, Matt and Steve, Ripobec, Groupe Piche, Precision Aluminum, Kenalex, Silverline Group, Teccart College, Mactavish Co",
-        "ttps": "T1486 (Data Encrypted for Impact), T1566 (Phishing), T1059 (Command and Scripting Interpreter)",
+        "name": "Safepay",
+        "targets": "briwaycarriers.com, mattandsteve.com, ripobec.com, groupepiche.ca, precisionaluminum.ca, kenalex.ca, silverlinegroupinc.com, teccart.qc.ca, mactavishco.ca",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "briwaycarriers.com"
+        "source_url": "https://www.ransomware.live/victims/safepay"
       },
       {
         "name": "TheGentlemen",
         "targets": "Groupe Caddac, ControlGMC, Labtician Ophthalmics, Real Tech",
-        "ttps": "T1486 (Data Encrypted for Impact), T1071 (Application Layer Protocol)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "groupe-caddac.com"
+        "source_url": "https://www.ransomware.live/victims/thegentlemen"
       },
       {
-        "name": "DragonForce",
-        "targets": "Phoenix Labs, CCR Solutions, Esposito Bros. Construction, Soteck (Victoriaville, QC), McKee-Pownall Equine Services, Emond Publishing",
-        "ttps": "T1486 (Data Encrypted for Impact), T1059 (Command and Scripting Interpreter)",
+        "name": "Dragonforce",
+        "targets": "phoenixlabs.com, CCR Solutions, Esposito Bros. Construction Ltd, soteck.com, McKee-Pownall Equine Services, Emond Publishing",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "phoenixlabs.com"
+        "source_url": "https://www.ransomware.live/victims/dragonforce"
+      },
+      {
+        "name": "AiLock",
+        "targets": "Solutions Extreme Technology, Eeyou Communications Network",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/ailock"
       },
       {
         "name": "Lynx",
-        "targets": "Peterborough Public Health, Laurysen Kitchens, Group Echo, KTL Group, Trucash",
-        "ttps": "T1486 (Data Encrypted for Impact), T1071 (Application Layer Protocol)",
+        "targets": "peterboroughpublichealth.ca, laurysenkitchens.com, groupecho.com, www.ktlgroup.com, Trucash",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "peterboroughpublichealth.ca"
+        "source_url": "https://www.ransomware.live/victims/lynx"
       },
       {
         "name": "Sinobi",
@@ -75,116 +82,252 @@
         "source_url": "https://www.ransomware.live/victims/sinobi"
       },
       {
-        "name": "AiLock",
-        "targets": "Solutions Extreme Technology, Eeyou Communications Network (telecommunications)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
-        "iocs": [],
-        "source_url": "solutionsextreme.com"
-      },
-      {
-        "name": "IncRansom",
-        "targets": "Tract Consulting, Excavation Tourigny, Bison Family Medical, Omega Tool Corp, Steelworks Inc, Glasser's TV",
-        "ttps": "T1486 (Data Encrypted for Impact), T1059 (Command and Scripting Interpreter)",
+        "name": "Incransom",
+        "targets": "Tract Consulting, excavationtourigny.ca, glasserstv.com, steelworksinc.ca, bisonfamilymedical.com, omegatoolcorp.com",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/incransom"
       },
       {
-        "name": "Akira",
-        "targets": "Ecofit",
-        "ttps": "T1486 (Data Encrypted for Impact), T1021 (Remote Services)",
+        "name": "Coinbase Cartel",
+        "targets": "Canada Goose",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/akira"
+        "source_url": "https://www.ransomware.live/victims/coinbasecartel"
       },
       {
-        "name": "Lapsus$",
-        "targets": "Salesfloor",
-        "ttps": "T1078 (Valid Accounts), T1530 (Data from Cloud Storage), T1567 (Exfiltration Over Web Service)",
+        "name": "ShinyHunters",
+        "targets": "Canada Goose",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1530 (Data from Cloud Storage)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/lapsus$"
+        "source_url": "https://www.ransomware.live/victims/shinyhunters"
       },
       {
         "name": "Everest",
-        "targets": "National Money Mart Company (database leaked)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1005 (Data from Local System)",
+        "targets": "National Money Mart Company - Database leaked",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1213 (Data from Information Repositories)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/everest"
       },
       {
         "name": "Anubis",
         "targets": "Markham Stouffville Hospital",
-        "ttps": "T1486 (Data Encrypted for Impact), T1566 (Phishing), T1078 (Valid Accounts)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/anubis"
       },
       {
+        "name": "Worldleaks",
+        "targets": "Municipality of North Perth",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/worldleaks"
+      },
+      {
         "name": "Rhysida",
-        "targets": "Coll\u00e8ge Sup\u00e9rieur De Montr\u00e9al",
-        "ttps": "T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application)",
+        "targets": "Collge Superieur De Montreal",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/rhysida"
       },
       {
-        "name": "CoinbaseCartel",
-        "targets": "Canada Goose",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
-        "iocs": [],
-        "source_url": "canadagoose.com"
-      },
-      {
-        "name": "ShinyHunters",
-        "targets": "Canada Goose",
-        "ttps": "T1530 (Data from Cloud Storage), T1567 (Exfiltration Over Web Service), T1078 (Valid Accounts)",
-        "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/shinyhunters"
-      },
-      {
-        "name": "Payload",
-        "targets": "Q2 Artificial Lift Services",
-        "ttps": "T1486 (Data Encrypted for Impact), T1059 (Command and Scripting Interpreter)",
-        "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/payload"
-      },
-      {
         "name": "Medusa",
         "targets": "Thunder Bay Counselling",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/medusa"
       },
       {
-        "name": "Worldleaks",
-        "targets": "Municipality of North Perth",
-        "ttps": "T1486 (Data Encrypted for Impact), T1078 (Valid Accounts)",
+        "name": "Payload",
+        "targets": "Q2 Artificial Lift Services",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "www.northperth.ca"
+        "source_url": "https://www.ransomware.live/victims/payload"
+      },
+      {
+        "name": "Lapsus$",
+        "targets": "Salesfloor",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1199 (Trusted Relationship)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/lapsus$"
+      },
+      {
+        "name": "Nightspire",
+        "targets": "Regal Building Materials Ltd., HO** RIL** LLP",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/nightspire"
+      },
+      {
+        "name": "Kairos",
+        "targets": "Robbins Parking Service Ltd",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/kairos"
+      },
+      {
+        "name": "Bravox",
+        "targets": "John O's Foods",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/bravox"
+      },
+      {
+        "name": "Securotrop",
+        "targets": "Living Realty, Cadman Power Equipment",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/securotrop"
+      },
+      {
+        "name": "Devman",
+        "targets": "beausejourco-op.crs, Axion50plus, a**o*50*****.org, b**u**jou***-**.crs, ravand.com",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/devman"
+      },
+      {
+        "name": "Sarcoma",
+        "targets": "Propane Levac Inc.",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/sarcoma"
+      },
+      {
+        "name": "Nitrogen",
+        "targets": "Whitfield Welding Inc",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/nitrogen"
+      },
+      {
+        "name": "Tridentlocker",
+        "targets": "GuestTek",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/tridentlocker"
+      },
+      {
+        "name": "Akira",
+        "targets": "Ecofit",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/akira"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "The Canadian Centre for Cyber Security issued Alert AL26-007 for CVE-2026-35616 affecting Fortinet FortiClientEMS. Canada faces an unprecedented ransomware crisis with over 100 organizations compromised across all provinces and sectors, including critical infrastructure (hospitals, schools, municipalities), major retailers (Canada Goose hit twice), and financial services (National Money Mart database leaked, Morison Insurance Brokers).",
-    "retailers": "Canada Goose (compromised by both CoinbaseCartel and ShinyHunters), Active Green + Ross, Canadian Tire-related suppliers (indirect supply chain risk)",
-    "financial": "National Money Mart Company (database leaked by Everest group), Morison Insurance Brokers, multiple accounting firms including Pewarchuk CPA and MG Chartered Professional Accountant",
+    "summary": "Canada faces an unprecedented ransomware crisis with over 100 organizations victimized across all provinces in 48 hours. Critical infrastructure has been heavily targeted including healthcare facilities (Markham Stouffville Hospital, Labtician Ophthalmics, BioPharma Services), public health (Peterborough Public Health), education (Eastern Townships School Board, Collge Superieur De Montreal, Teccart), municipalities (North Perth), and telecommunications (Eeyou Communications Network). The Canadian Centre for Cyber Security issued alert AL26-007 regarding CVE-2026-35616 affecting Fortinet FortiClientEMS.",
+    "retailers": "Canada Goose victimized by two separate ransomware groups (Coinbase Cartel and ShinyHunters), Active Green + Ross breached by Sinobi, Kids & Company childcare services hit by Sinobi",
+    "financial": "National Money Mart Company suffered confirmed database leak via Everest ransomware group, Morison Insurance Brokers breached by Sinobi, multiple accounting firms targeted including Pewarchuk CPA and MG Chartered Professional Accountant",
     "source_urls": [
       "https://www.cyber.gc.ca/en/alerts-advisories/al26-007-vulnerability-impacting-fortinet-forticlientems-cve-2026-35616",
+      "www.servicestar.ca",
+      "https://www.ransomware.live/victims/payload",
+      "groupe-caddac.com",
+      "briwaycarriers.com",
+      "mattandsteve.com",
+      "solutionsextreme.com",
+      "phoenixlabs.com",
+      "controlgmc.com",
       "canadagoose.com",
-      "https://www.ransomware.live/victims/everest",
-      "www.morisoninsurance.com",
-      "https://www.ransomware.live/victims/anubis",
-      "www.etsb.qc.ca",
+      "www.kuzcolighting.com",
+      "eeyou.ca",
+      "www.selecttool.com",
+      "www.wisl.com",
+      "www.lococos.ca",
+      "https://www.ransomware.live/victims/akira",
+      "ripobec.com",
+      "www.equestrian.ca",
+      "labtician.com",
+      "www.traffictech.com",
+      "https://www.ransomware.live/victims/lapsus$",
+      "https://www.ransomware.live/victims/incransom",
+      "regalbuilding.com",
+      "https://www.ransomware.live/victims/shinyhunters",
+      "www.chemcomp.com",
+      "www.paisley.ca",
+      "ccrsolutions.com",
+      "https://www.ransomware.live/victims/nightspire",
+      "https://www.ransomware.live/victims/kairos",
+      "excavationtourigny.ca",
+      "www.makivik.org",
+      "www.johnofoods.com",
+      "https://www.ransomware.live/victims/sinobi",
+      "www.gradientwind.com",
+      "groupepiche.ca",
+      "STRATEGICOBJECTIVES.COM",
+      "IDEALWELDERS.COM",
+      "CONWEST.COM",
+      "CMHHELI.COM",
+      "GRANITEPOINTE.CA",
+      "SMTLAWYERS.CA",
+      "CLOUDDATAWORKS.CA",
+      "SENSIBLESOLUTIONS.CA",
+      "www.espositobros.com",
       "peterboroughpublichealth.ca",
-      "www.northperth.ca",
       "www.whsc.on.ca",
+      "www.activegreenross.com",
+      "www.morisoninsurance.com",
+      "www.allmaxnutrition.com",
+      "WHISKIJACKRESORTS.COM",
+      "CCCM.BC.CA",
+      "TECHNIKEL.CA",
+      "MODTECH.CA",
+      "EASTPLATS.COM",
+      "CENTAURPRODUCTS.COM",
+      "https://www.ransomware.live/victims/sarcoma",
+      "www.whitfieldwelding.com",
+      "soteck.com",
+      "www.bplawyers.ca",
+      "https://www.ransomware.live/victims/everest",
+      "www.preconbuilders.com",
+      "www.livingrealty.com",
+      "www.realtech-eg.com",
+      "laurysenkitchens.com",
+      "groupecho.com",
+      "www.pewarchukcpa.com",
+      "precisionaluminum.ca",
+      "www.questica.com",
+      "www.etsb.qc.ca",
+      "www.securityonealarm.com",
+      "kenalex.ca",
+      "glasserstv.com",
+      "https://www.ransomware.live/victims/medusa",
+      "www.cpamg.ca",
+      "beausejourco-op.crs",
+      "silverlinegroupinc.com",
+      "www.axion50plus.org",
+      "www.ktlgroup.com",
+      "mckeepownall.ca",
+      "https://www.ransomware.live/victims/anubis",
+      "steelworksinc.ca",
+      "teccart.qc.ca",
+      "www.watermarkbeachresort.com",
+      "www.northperth.ca",
+      "www.cadmanpower.com",
+      "www.trucash.com",
+      "mactavishco.ca",
+      "www.cstcoal.ca",
       "bisonfamilymedical.com",
-      "teccart.qc.ca"
+      "ravand.com",
+      "https://www.ransomware.live/victims/tridentlocker",
+      "www.biopharmaservices.com",
+      "emond.ca",
+      "www.kidsandcompany.com",
+      "omegatoolcorp.com",
+      "www.novatel.com",
+      "https://www.ransomware.live/victims/rhysida",
+      "www.maheu-maheu.com"
     ]
   },
-  "generated_at": "2026-04-08 14:30 ET",
+  "generated_at": "2026-04-09 14:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "Canada's cybersecurity agency (CCCS) issued an urgent alert on March 30 for CVE-2026-3055, a critical vulnerability in Citrix NetScaler ADC and Gateway products. Separately, attackers compromised 36 malicious npm packages (JavaScript libraries) that exploited Redis and PostgreSQL databases to install persistent backdoors\u2014a supply chain attack affecting developers worldwide. The Axios npm library was also compromised in a separate supply chain incident. Multiple ransomware groups remain active, with Dragonforce claiming a new victim (Innovision Holdings) and Qilin continuing operations. No major Canadian retail or financial institution breaches were identified this period.",
+    "executive_summary": "Fortinet has issued emergency patches for CVE-2026-35616, a high-severity vulnerability being actively exploited in the wild. Citrix NetScaler ADC and Gateway face a critical vulnerability (CVE-2026-3055) flagged by the Canadian Cyber Security Centre. North Korean state-sponsored hackers (UNC4736) spent six months infiltrating Drift Protocol through social engineering, ultimately draining $285 million in cryptocurrency in just 12 minutes. A sophisticated supply chain attack compromised the widely-used Axios NPM package, potentially affecting millions of applications. TeamPCP threat actors exploited the Trivy security tool to breach Cisco, the European Commission, and over 1,000 organizations, with a massive 91GB data leak from the EU Commission confirmed.",
     "vulnerabilities": {
-      "count": 3,
+      "count": 9,
       "items": [
         {
           "id": "CVE-2026-3055",
@@ -193,105 +336,197 @@
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Citrix NetScaler ADC and NetScaler Gateway",
-          "cia_impact": "Unknown - CCCS advisory requires review for full impact assessment",
-          "access_required": "Unknown - details in CCCS advisory",
+          "cia_impact": "Not specified in advisory",
+          "access_required": "Network-based",
           "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-006-vulnerability-impacting-citrix-netscaler-adc-netscaler-gateway-cve-2026-3055"
         },
         {
-          "id": "CVE-2026-5281",
-          "description": "Mentioned in Security Affairs newsletter roundup",
+          "id": "CVE-2026-35616",
+          "description": "Fortinet vulnerability actively exploited in the wild",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Fortinet products",
+          "cia_impact": "Not fully specified",
+          "access_required": "Network-based",
+          "source_url": "https://securityaffairs.com/190392/hacking/cve-2026-35616-fortinet-fixes-actively-exploited-high-severity-flaw.html"
+        },
+        {
+          "id": "CVE-2025-53521",
+          "description": "Vulnerability reported in threat intelligence bulletin",
           "criticality": "MEDIUM",
           "actively_exploited": false,
           "zero_day": false,
-          "software_affected": "Unknown",
-          "cia_impact": "Unknown",
-          "access_required": "Unknown",
-          "source_url": "https://securityaffairs.com/190368/breaking-news/security-affairs-newsletter-round-571-by-pierluigi-paganini-international-edition.html"
+          "software_affected": "Not specified",
+          "cia_impact": "Not specified",
+          "access_required": "Not specified",
+          "source_url": "https://research.checkpoint.com/2026/6th-march-threat-intelligence-report-2/"
         },
         {
-          "id": "CVE-2026-5550",
-          "description": "Stack buffer overflow in Tenda AC10 /bin/httpd allowing remote code execution",
+          "id": "CVE-2026-5281",
+          "description": "Vulnerability reported in threat intelligence bulletin",
+          "criticality": "MEDIUM",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Not specified",
+          "cia_impact": "Not specified",
+          "access_required": "Not specified",
+          "source_url": "https://research.checkpoint.com/2026/6th-march-threat-intelligence-report-2/"
+        },
+        {
+          "id": "CVE-2026-3502",
+          "description": "Vulnerability reported in threat intelligence bulletin",
+          "criticality": "MEDIUM",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Not specified",
+          "cia_impact": "Not specified",
+          "access_required": "Not specified",
+          "source_url": "https://research.checkpoint.com/2026/6th-march-threat-intelligence-report-2/"
+        },
+        {
+          "id": "CVE-2025-55182",
+          "description": "React2Shell vulnerability allowing automated credential theft",
+          "criticality": "CRITICAL",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "React-based applications",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+          "access_required": "Network / No auth required",
+          "source_url": "https://mastodon.social/@Matchbook3469/116357575620008428"
+        },
+        {
+          "id": "CVE-2026-5610",
+          "description": "Stack-based buffer overflow in Belkin F9K1015 router formWISP5G function",
           "criticality": "HIGH",
           "actively_exploited": false,
           "zero_day": false,
-          "software_affected": "Tenda AC10 v16.03.10.10_multi_TDE01",
+          "software_affected": "Belkin F9K1015 v1.00.10",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Remote",
-          "source_url": "https://infosec.exchange/@offseq/116351279339813810"
+          "access_required": "Network / Authenticated",
+          "source_url": "https://mastodon.social/@thehackerwire/116355359914793731"
+        },
+        {
+          "id": "CVE-2026-5613",
+          "description": "Stack-based buffer overflow in Belkin F9K1015 allowing remote code execution or DoS",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": true,
+          "software_affected": "Belkin F9K1015 v1.00.10",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / No auth required",
+          "source_url": "https://infosec.exchange/@offseq/116356233811069903"
+        },
+        {
+          "id": "CVE-2026-5614",
+          "description": "Stack buffer overflow in Belkin F9K1015 with public exploit available and no vendor patch",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": true,
+          "software_affected": "Belkin F9K1015 v1.00.10",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / Remote management access",
+          "source_url": "https://infosec.exchange/@offseq/116355879991866572"
         }
       ]
     },
     "threat_actors": {
       "items": [
         {
-          "name": "npm supply chain attackers (unknown)",
-          "targets": "Developers using npm packages, Redis and PostgreSQL database users",
-          "ttps": "T1195.002 (Supply Chain Compromise: Compromise Software Supply Chain), T1543.003 (Create or Modify System Process: Persistent Implants), exploitation of Redis and PostgreSQL for lateral movement",
+          "name": "UNC4736 (Citrine Sleet, AppleJeus, Lazarus)",
+          "targets": "Drift Protocol cryptocurrency platform ($285M stolen), Node.js maintainers, cryptocurrency trading platforms",
+          "ttps": "T1566.001 (Spearphishing Attachment), T1204.002 (User Execution: Malicious File), T1195.002 (Supply Chain Compromise: Software Supply Chain), T1027 (Obfuscated Files), Social engineering over 6-month period, LNK file abuse, GitHub repository weaponization, modular malware deployment",
           "iocs": [],
-          "source_url": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html"
+          "source_url": "https://hackread.com/north-korean-hackers-trading-firm-drift-protocol/"
         },
         {
-          "name": "Axios npm attackers (unknown)",
-          "targets": "Developers using Axios npm library",
-          "ttps": "T1195.002 (Supply Chain Compromise: Compromise Software Supply Chain)",
+          "name": "UNC1069",
+          "targets": "Axios NPM package maintainers",
+          "ttps": "T1195.002 (Supply Chain Compromise: Software Supply Chain), T1598 (Phishing for Information), Social engineering targeting high-profile open-source maintainers, phantom dependency exploitation",
           "iocs": [],
-          "source_url": "https://www.helpnetsecurity.com/2026/04/05/week-in-review-axios-npm-supply-chain-compromise-critical-forticlient-ems-bug-exploited/"
+          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1sdwya8/axios_maintainers_post_mortem_confirms_social/"
         },
         {
-          "name": "Dragonforce (ransomware)",
-          "targets": "Innovision Holdings",
-          "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+          "name": "TeamPCP (ShinyHunters affiliate)",
+          "targets": "Cisco, European Commission, 1,000+ organizations, Him & Hers telehealth",
+          "ttps": "T1195.002 (Supply Chain Compromise: Software Supply Chain), T1072 (Software Deployment Tools), Exploitation of Trivy vulnerability scanner for cloud breaches, data exfiltration (91GB from EU Commission)",
           "iocs": [],
-          "source_url": "https://infosec.exchange/@CTI_FYI/116352033533583587"
+          "source_url": "https://www.reddit.com/r/cybersecurity/comments/1sdmipk/teampcp_used_trivy_to_breach_cisco_the_eu/"
         },
         {
-          "name": "Qilin (ransomware)",
-          "targets": "Anabuki Kosan (Japan), potential for customer and executive data leakage",
-          "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
+          "name": "Qilin Ransomware",
+          "targets": "Enterprise organizations using EDR tools",
+          "ttps": "T1562.001 (Impair Defenses: Disable or Modify Tools), T1486 (Data Encrypted for Impact), Exploitation of vulnerable drivers to disable 300+ EDR tools, BYOVD (Bring Your Own Vulnerable Driver)",
           "iocs": [],
-          "source_url": "https://mastodon.social/@securityLab_jp/116350539273854940"
+          "source_url": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html"
         },
         {
-          "name": "Nasir Security (ransomware/hacktivist)",
-          "targets": "Kuwait Ministry of Interior",
-          "ttps": "T1486 (Data Encrypted for Impact), T1491 (Defacement)",
+          "name": "Warlock Ransomware",
+          "targets": "Enterprise organizations using EDR tools",
+          "ttps": "T1562.001 (Impair Defenses: Disable or Modify Tools), T1486 (Data Encrypted for Impact), Exploitation of vulnerable drivers to disable 300+ EDR tools, BYOVD (Bring Your Own Vulnerable Driver)",
           "iocs": [],
-          "source_url": "https://social.circl.lu/@Ransomlook/116351657665244125"
+          "source_url": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html"
         },
         {
-          "name": "Handala (hacktivist - Iran-linked)",
-          "targets": "Syria government infrastructure",
-          "ttps": "T1190 (Exploit Public-Facing Application), T1567 (Exfiltration Over Web Service)",
+          "name": "UNKN (REvil/GandCrab leader)",
+          "targets": "Global ransomware campaigns",
+          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), Ransomware-as-a-Service operations",
           "iocs": [],
-          "source_url": "https://securityaffairs.com/190368/breaking-news/security-affairs-newsletter-round-571-by-pierluigi-paganini-international-edition.html"
+          "source_url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/"
         },
         {
-          "name": "DarkSword (spyware operator - Iran-linked)",
-          "targets": "Apple iOS users, data and cryptocurrency theft",
-          "ttps": "T1566 (Phishing), T1005 (Data from Local System), T1532 (Data from Cloud Storage), geolocation tracking",
+          "name": "LockBit5",
+          "targets": "fastindustria.com.br",
+          "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration Over Web Service), Ransomware double-extortion",
           "iocs": [],
-          "source_url": "https://mastodon.social/@metaadvisor/116350710677571291"
+          "source_url": "https://www.ransomlook.io//group/lockbit5"
         },
         {
-          "name": "Lazarus Group (North Korea APT)",
-          "targets": "Cryptocurrency platforms - $285M theft",
-          "ttps": "T1566 (Phishing), T1573 (Encrypted Channel), T1657 (Financial Theft)",
+          "name": "Clop Ransomware",
+          "targets": "ARCHIVE14, Progress Software ShareFile customers",
+          "ttps": "T1486 (Data Encrypted for Impact), T1190 (Exploit Public-Facing Application), T1567.002 (Exfiltration Over Web Service), Exploitation of zero-day vulnerabilities in enterprise software",
           "iocs": [],
-          "source_url": "https://infosec.exchange/@thecybermind/116350046191962487"
+          "source_url": "https://www.ransomlook.io//group/clop"
+        },
+        {
+          "name": "ShinyHunters",
+          "targets": "Him & Hers telehealth, European Commission (via TeamPCP)",
+          "ttps": "T1078 (Valid Accounts), T1567.002 (Exfiltration Over Web Service), T1119 (Automated Collection), Data theft and sale on underground forums",
+          "iocs": [],
+          "source_url": "https://www.hipaajournal.com/him-hers-data-breach/"
+        },
+        {
+          "name": "Iranian state-sponsored actors",
+          "targets": "Social media platforms with antisemitic conspiracy theories and disinformation",
+          "ttps": "T1566 (Phishing), T1586 (Compromise Accounts), T1583.001 (Acquire Infrastructure: Domains), Coordinated inauthentic behavior, antisemitic disinformation campaigns",
+          "iocs": [],
+          "source_url": "https://mastodon.social/@The_Rational_Dispatch/116357612845403385"
+        },
+        {
+          "name": "Nightspire Ransomware",
+          "targets": "Carmelo Candy Inc",
+          "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration Over Web Service), Ransomware double-extortion",
+          "iocs": [],
+          "source_url": "https://infosec.exchange/@CTI_FYI/116356311618533546"
+        },
+        {
+          "name": "Yurei Ransomware",
+          "targets": "Multiple organizations",
+          "ttps": "T1486 (Data Encrypted for Impact), T1059 (Command and Scripting Interpreter), Operator toolkit exposed revealing strings and artifacts",
+          "iocs": [],
+          "source_url": "https://social.raytec.co/@techbot/116356025536534228"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "The Canadian Centre for Cyber Security (CCCS) issued Alert AL26-006 on March 30, 2026, warning of CVE-2026-3055 affecting Citrix NetScaler products\u2014a critical concern for Canadian enterprise infrastructure. Multiple phishing campaigns are targeting Canadians, including fraudulent milk settlement scams and bread price-fixing schemes designed to harvest credentials. No direct attacks on Canadian critical infrastructure, retailers, or financial institutions were reported this period.",
+      "summary": "The Canadian Cyber Security Centre (CCCS) issued Alert AL26-006 on March 30, 2026, warning of a critical vulnerability (CVE-2026-3055) impacting Citrix NetScaler ADC and Gateway products. This represents the primary official Canadian government cybersecurity advisory during this period. No specific incidents targeting major Canadian retailers or financial institutions were identified in the reporting period, though the global supply chain attacks (Axios NPM, Trivy/TeamPCP) and ransomware campaigns pose systemic risk to Canadian organizations.",
       "retailers": "None identified",
       "financial": "None identified",
       "source_urls": [
-        "https://www.cyber.gc.ca/en/alerts-advisories/al26-006-vulnerability-impacting-citrix-netscaler-adc-netscaler-gateway-cve-2026-3055",
-        "https://mastodon.hongkongers.net/@cbcnf_mirror/116352319807942656",
-        "https://oceanplayground.social/@news/116352162448215292"
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-006-vulnerability-impacting-citrix-netscaler-adc-netscaler-gateway-cve-2026-3055"
       ]
     },
-    "generated_at": "2026-04-05 18:30 ET",
+    "generated_at": "2026-04-06 18:45 ET",
     "ai_enabled": true,
     "window": "2w"
   }
