@@ -1,10 +1,15 @@
+## 1. Organization / Brand / Business Context (CTC-Focused)
 #
-# Work Related 
+##Primary Corporate
+#
 Canada
 Canadian
-Canadian tire
+Canadian Tire
 Cantire
 Canadian Tire Retail
+#
+##CTC Banners & Subsidiaries
+#
 SportChek
 Mark’s
 Canadian Tire Financial Services
@@ -17,105 +22,144 @@ PartSource
 Party City
 CT REIT
 #
-# Important Flags
+## 2. Threat Intelligence Concepts & High-Risk Flags
+#
+##General TI / Detection Keywords
+#
 IOC
-indicator of compromise
-hunting
-critical Vulnerability
+Indicator of Compromise
+Hunting
+Phish
+Critical Vulnerability
 Easily Exploitable
+#
+##High-Impact Exploitation
+#
 Zero Day
 Zero Click
-cisco
 #
-# 02/20/2026
-Asian_Baddie
-DarkWebInformer
-Support Panel 
-Admin 1k PCs
-Canadian MSP
-BeyondTrust
-Bomgar
-tailscale
+##Vendors / Tech Often Mentioned in Advisories
 #
-# 03/11/2026
-Loblaw
+Cisco
 #
-# Threat actors
-apt27
-emissary panda
-iron tiger
-luckymouse
-silk typhoon
-murky panda
-unc5221
-scattered spider
-lazarus
-applejeus
-citrine sleet
-unc4736
-gleaming pisces
-akira
-genesis
-qilin
-sinobi
+## 3. Threat Actors (APT, Criminal, Ransomware)
+#
+##Nation-State / APT
+#
+APT27
+Emissary Panda
+Iron Tiger
+LuckyMouse
+Silk Typhoon
+Murky Panda
+UNC5221
+Augustus? (if intended, verify; otherwise remove)
+Lazarus
+AppleJeus
+Citrine Sleet
+UNC4736
+Gleaming Pisces
+APT‑C‑36
+Blind Eagle
+#
+##Cybercrime / Ransomware / Access Brokers
+#
+Scattered Spider
+Akira
+Genesis
+Qilin
+Sinobi
 Everest
-apt-c-36
-blind eagle
-CL0P
-CLOP
+CL0P / CLOP
 #
-# 03/27/2026
-point-of-sale
-point of sale
-Retail
-Vect Ransomware
-BreachForums
-TeamPCP
-Handala
+## 4. Malware Families, Campaigns & TTPs
+#
+##Malware / Campaigns
+#
+SocGholish
 SocGolish
-SocoGholish
 FakeUpdates
+FAKEUPDATES
 Fake Browser Update malware
 “FakeUpdate campaign”
 JavaScript loader malware
 Drive‑by download malware
 DarkSword
+DragonForce
+Vect Ransomware
 #
-# Current News
-Big-IP
-f5
-ShinyHunters
+## 5. Attack Surface & Targeted Environments
+#
+##Retail / Payments
+#
+Point‑of‑Sale
+POS
+Retail
+#
+##Admin / Access / Infrastructure
+#
+Admin 1k PCs
+Canadian MSP
+Support Panel
+BeyondTrust
+Bomgar
+Tailscale
+#
+## 6. Platforms, Products & Technologies in Current Threat Reporting
+#
+##Enterprise / Infrastructure
+#
+F5
+Big‑IP
 WSUS
-Broadcom
-Salesforce
-OpenAIA
-Phish
-Lockbit
-React2shell
-react
-sonicwall
-ServiceNow
-Service Now
+SonicWall
+ServiceNow / Service Now
 MongoDB
-UnderArmour
-affirm
-Zebra Technologies
-Zebra
-PWC
-PricewaterhouseCoopers
-Iran
-CVE-2025-21298
-CVE-2025-12420
-CVE-2026-0723
-CVE-2026-21962
-CVE-2026-0542
-CVE-2026-29000
-CVE-2026-20963
 #
-# 04/02/2026
-AXIOS NPM
+##Cloud / SaaS / Dev
+#
+Salesforce
 AXIOS
+AXIOS NPM
 NPM
+React
+React2Shell
+#
+##Vendors / Organizations Mentioned in Breaches
+#
+Broadcom
+OpenAI
+Under Armour
+Affirm
+Zebra
+Zebra Technologies
+PwC
+PricewaterhouseCoopers
+#
+## 7. Dark Web / Leak & Criminal Ecosystem
+#
+DarkWebInformer
+BreachForums
+TeamPCP
+ShinyHunters
+#
+## 8. Geographic / Geopolitical Context
+#
+Iran
+#
+## 9. Vulnerabilities (Track Individually, High Signal)
+#
+CVE‑2025‑21298
+CVE‑2025‑12420
+CVE‑2026‑0723
+CVE‑2026‑21962
+CVE‑2026‑0542
+CVE‑2026‑29000
+CVE‑2026‑20963
+#
+## 10. Misc / Emerging
+#
+Loblaw
 ClickFix
 #
 # CISA KEV
