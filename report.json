@@ -1,5 +1,5 @@
 {
-  "executive_summary": "Canada is experiencing an unprecedented ransomware crisis with 103 organizations compromised in a single 48-hour period. The Qilin ransomware group leads the assault with 21 victims including Eastern Townships School Board and Workers Health & Safety Centre. Canada Goose has been hit twice by different groups (CoinbaseCartel and ShinyHunters), and critical infrastructure including Peterborough Public Health, Markham Stouffville Hospital, Municipality of North Perth, and Eeyou Communications Network are confirmed breached. The Clop gang alone has claimed 14 Canadian victims spanning law firms, technology providers, and manufacturing.",
+  "executive_summary": "Canada is experiencing an unprecedented ransomware surge with 99 organizations compromised in a single 24-hour period on April 18, 2026. High-profile victims include Canada Goose (hit by both Coinbasecartel and Shinyhunters), Markham Stouffville Hospital, National Money Mart (database leaked by Everest), and a public health unit in Peterborough. The Qilin gang alone claimed 18 Canadian victims including an Eastern Townships school board and multiple technology firms. Critical infrastructure sectors hit include healthcare, education, transportation, energy, and municipal government (Municipality of North Perth).",
   "vulnerabilities": {
     "count": 0,
     "items": []
@@ -8,357 +8,351 @@
     "items": [
       {
         "name": "Qilin",
-        "targets": "21 Canadian victims including Service Star Freightways, Kuzco Lighting, Waterloo Information Systems, A Lococo Wholesale, Traffic Tech, Gradient Wind Engineering, Workers Health & Safety Centre, Bergmanis Preyra law firm, Pre-Con Builders, Questica, Eastern Townships School Board, MG Chartered Professional Accountant, Watermark Beach Resort, CST Coal, BioPharma Services, NovAtel (Hexagon subsidiary), Maheu&Maheu, and Berts Electric",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service) - Double extortion ransomware operations with victim shaming sites",
+        "targets": "18 Canadian organizations including Eastern Townships School Board, Waterloo Information Systems, Kuzco Lighting, Service Star Freightways, Traffic Tech, Workers Health & Safety Centre, BioPharma Services, NovAtel (Hexagon subsidiary), Questica, Gradient Wind Engineering, A Lococo Wholesale, Watermark Beach Resort, CST Coal, Maheu&Maheu, Berts Electric, MG Chartered Professional Accountant, Pre-Con Builders, Bergmanis Preyra",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "www.servicestar.ca"
       },
       {
         "name": "Play",
-        "targets": "9 Canadian victims including Select Tool, Equine Canada, Chemical Computing Group, Paisley Products of Canada, Makivik, ALLMAX, Pewarchuk CPA, Security ONE Alarm Systems",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System), T1041 (Exfiltration Over C2 Channel)",
+        "targets": "8 Canadian organizations including Select Tool, Equine Canada, Chemical Computing Group, Paisley Products of Canada, Makivik, ALLMAX, Pewarchuk CPA, Security ONE Alarm Systems",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059 (Command and Scripting Interpreter)",
         "iocs": [],
         "source_url": "www.selecttool.com"
       },
       {
         "name": "Clop",
-        "targets": "14 Canadian victims including Strategic Objectives, Ideal Welders, Conwest, CMH Helicopters, Granite Pointe, SMT Lawyers, Cloud Data Works, Sensible Solutions, Whiskijack Resorts, CCCM.BC.CA, Technikel, Modtech, Eastplats, and Centaur Products",
-        "ttps": "T1190 (Exploit Public-Facing Application), T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration to Cloud Storage) - Known for mass exploitation campaigns targeting file transfer vulnerabilities",
+        "targets": "14 Canadian organizations including Strategic Objectives, Ideal Welders, Conwest, CMH Heli, Granite Pointe, SMT Lawyers, Cloud Data Works, Sensible Solutions, Whiskijack Resorts, CCCM.BC.CA, Technikel, Modtech, East Plats, Centaur Products",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1190 (Exploit Public-Facing Application)",
         "iocs": [],
         "source_url": "STRATEGICOBJECTIVES.COM"
       },
       {
-        "name": "SafePay",
-        "targets": "11 Canadian victims including Briway Carriers, Matt and Steve, Ripobec, Groupe Piche, Precision Aluminum, Kenalex, Silverline Group, Teccart college, and MacTavish Co",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "name": "Safepay",
+        "targets": "11 Canadian organizations including Briway Carriers, Matt and Steve, Ripobec, Groupe Piche, Precision Aluminum, Kenalex, Silverline Group, Teccart College, Mactavish Co",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "briwaycarriers.com"
       },
       {
-        "name": "DragonForce",
-        "targets": "6 Canadian victims including Phoenix Labs, CCR Solutions, Esposito Bros Construction, Soteck, McKee-Pownall Equine Services, and Emond Publishing",
-        "ttps": "T1486 (Data Encrypted for Impact), T1071 (Application Layer Protocol)",
-        "iocs": [],
-        "source_url": "phoenixlabs.com"
-      },
-      {
         "name": "TheGentlemen",
-        "targets": "4 Canadian victims including Groupe Caddac, ControlGMC, Labtician Ophthalmics, and Real Tech",
+        "targets": "4 Canadian organizations including Groupe Caddac, ControlGMC, Labtician Ophthalmics, Real Tech",
         "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "groupe-caddac.com"
       },
       {
-        "name": "Sinobi",
-        "targets": "4 Canadian victims including The Sundher Group, Active Green + Ross, Morison Insurance Brokers, and Kids & Company childcare",
-        "ttps": "T1486 (Data Encrypted for Impact), T1003 (OS Credential Dumping)",
+        "name": "Dragonforce",
+        "targets": "6 Canadian organizations including Phoenix Labs, CCR Solutions, Esposito Bros Construction, Soteck, McKee-Pownall Equine Services, Emond Publishing",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1059 (Command and Scripting Interpreter)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/sinobi"
+        "source_url": "phoenixlabs.com"
       },
       {
         "name": "Lynx",
-        "targets": "5 Canadian victims including Peterborough Public Health, Laurysen Kitchens, Group Echo, KTL Group, and Trucash",
+        "targets": "5 Canadian organizations including Peterborough Public Health, Laurysen Kitchens, Group Echo, KTL Group, Trucash",
         "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "peterboroughpublichealth.ca"
       },
       {
-        "name": "IncRansom",
-        "targets": "6 Canadian victims including Tract Consulting, Excavation Tourigny, Glassers TV, Steelworks Inc, Bison Family Medical, and Omega Tool Corp",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "name": "Sinobi",
+        "targets": "4 Canadian organizations including The Sundher Group, Active Green + Ross, Morison Insurance Brokers, Kids & Company",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/incransom"
+        "source_url": "https://www.ransomware.live/victims/sinobi"
       },
       {
         "name": "AiLock",
-        "targets": "2 Canadian victims including Solutions Extreme Technology and Eeyou Communications Network (telecommunications)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1489 (Service Stop)",
+        "targets": "2 Canadian organizations including Solutions Extreme Technology, Eeyou Communications Network",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "solutionsextreme.com"
       },
       {
-        "name": "Devman",
-        "targets": "4 Canadian victims including Beausejour Co-op, Axion50plus, and Ravand",
-        "ttps": "T1486 (Data Encrypted for Impact), T1070 (Indicator Removal)",
+        "name": "Incransom",
+        "targets": "7 Canadian organizations including Tract Consulting, Excavation Tourigny, Glassers TV, Steelworks Inc, Bison Family Medical, Omega Tool Corp",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
-        "source_url": "beausejourco-op.crs"
+        "source_url": "https://www.ransomware.live/victims/incransom"
       },
       {
-        "name": "CoinbaseCartel",
-        "targets": "Canada Goose (Consumer Services)",
+        "name": "Coinbasecartel",
+        "targets": "Canada Goose (major Canadian retail brand)",
         "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "canadagoose.com"
       },
       {
-        "name": "ShinyHunters",
-        "targets": "Canada Goose (Consumer Services) - second attack on same company",
-        "ttps": "T1486 (Data Encrypted for Impact), T1078 (Valid Accounts) - Known for database theft and credential harvesting",
+        "name": "Shinyhunters",
+        "targets": "Canada Goose (major Canadian retail brand)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1589 (Gather Victim Identity Information)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/shinyhunters"
       },
       {
         "name": "Everest",
-        "targets": "National Money Mart Company - Database leaked (Financial Services)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1530 (Data from Cloud Storage)",
+        "targets": "National Money Mart Company (Canadian financial services, database leaked)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service), T1005 (Data from Local System)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/everest"
       },
       {
         "name": "Anubis",
-        "targets": "Markham Stouffville Hospital (Healthcare)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System), T1078 (Valid Accounts)",
+        "targets": "Markham Stouffville Hospital (Ontario healthcare facility)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1005 (Data from Local System)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/anubis"
       },
       {
-        "name": "WorldLeaks",
-        "targets": "Municipality of North Perth (Public Sector)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1078 (Valid Accounts), T1190 (Exploit Public-Facing Application)",
-        "iocs": [],
-        "source_url": "www.northperth.ca"
-      },
-      {
         "name": "Rhysida",
-        "targets": "Coll\u00e8ge Sup\u00e9rieur De Montr\u00e9al (Education)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System), T1567 (Exfiltration Over Web Service)",
+        "targets": "Coll\u00e8ge Sup\u00e9rieur De Montr\u00e9al (Quebec educational institution)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/rhysida"
       },
       {
-        "name": "Medusa",
-        "targets": "Thunder Bay Counselling (Public Sector)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "name": "Worldleaks",
+        "targets": "Municipality of North Perth (Ontario municipal government)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/medusa"
+        "source_url": "www.northperth.ca"
       },
       {
         "name": "Akira",
-        "targets": "CIR Realty",
-        "ttps": "T1486 (Data Encrypted for Impact), T1003 (OS Credential Dumping), T1078 (Valid Accounts)",
+        "targets": "CIR Realty (Canadian real estate)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/akira"
       },
       {
+        "name": "Payload",
+        "targets": "Q2 Artificial Lift Services (Canadian manufacturing)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/payload"
+      },
+      {
         "name": "Lapsus$",
-        "targets": "Salesfloor (Technology)",
-        "ttps": "T1078 (Valid Accounts), T1566 (Phishing), T1528 (Steal Application Access Token) - Known for social engineering and insider recruitment",
+        "targets": "Salesfloor (Canadian technology company)",
+        "ttps": "T1078 (Valid Accounts), T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/lapsus$"
       },
       {
         "name": "Nightspire",
-        "targets": "Regal Building Materials Ltd (Construction) and HO** RIL** LLP",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "targets": "Regal Building Materials Ltd, HO** RIL** LLP (Canadian construction sector)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "regalbuilding.com"
       },
       {
         "name": "Kairos",
-        "targets": "Robbins Parking Service Ltd (Transportation/Logistics)",
+        "targets": "Robbins Parking Service Ltd (Canadian transportation)",
         "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/kairos"
       },
       {
         "name": "Bravox",
-        "targets": "John O's Foods (Agriculture and Food Production)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "targets": "John O's Foods (Canadian agriculture and food production)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "www.johnofoods.com"
       },
       {
-        "name": "Securotrop",
-        "targets": "Living Realty and Cadman Power Equipment",
-        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
-        "iocs": [],
-        "source_url": "www.livingrealty.com"
-      },
-      {
         "name": "Sarcoma",
-        "targets": "Propane Levac Inc (Energy)",
+        "targets": "Propane Levac Inc (Canadian energy sector)",
         "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "https://www.ransomware.live/victims/sarcoma"
       },
       {
         "name": "Nitrogen",
-        "targets": "Whitfield Welding Inc (Manufacturing)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "targets": "Whitfield Welding Inc (Canadian manufacturing)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
         "source_url": "www.whitfieldwelding.com"
       },
       {
-        "name": "TridentLocker",
-        "targets": "GuestTek (Technology)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1489 (Service Stop)",
+        "name": "Securotrop",
+        "targets": "Living Realty, Cadman Power Equipment (Canadian businesses)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/tridentlocker"
+        "source_url": "www.livingrealty.com"
       },
       {
-        "name": "Payload",
-        "targets": "Q2 Artificial Lift Services (Manufacturing)",
-        "ttps": "T1486 (Data Encrypted for Impact), T1005 (Data from Local System)",
+        "name": "Medusa",
+        "targets": "Thunder Bay Counselling (Ontario public sector)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://www.ransomware.live/victims/payload"
+        "source_url": "https://www.ransomware.live/victims/medusa"
+      },
+      {
+        "name": "Devman",
+        "targets": "Beausejour Co-op, Axion50plus, Ravand.com (Canadian organizations)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "iocs": [],
+        "source_url": "beausejourco-op.crs"
+      },
+      {
+        "name": "Tridentlocker",
+        "targets": "GuestTek (Canadian technology/hospitality)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
+        "iocs": [],
+        "source_url": "https://www.ransomware.live/victims/tridentlocker"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "Canada is under siege by ransomware groups with 103 confirmed victims across all sectors in 48 hours. Critical infrastructure has been severely impacted including healthcare (Markham Stouffville Hospital, Bison Family Medical, Thunder Bay Counselling), education (Eastern Townships School Board, Teccart, Coll\u00e8ge Sup\u00e9rieur De Montr\u00e9al), public sector (Municipality of North Perth, Peterborough Public Health, Workers Health & Safety Centre), and telecommunications (Eeyou Communications Network). No CCCS advisories were issued despite this mass compromise event.",
-    "retailers": "Canada Goose breached by two separate ransomware groups (CoinbaseCartel and ShinyHunters). Active Green + Ross automotive retailer and Kids & Company childcare services also compromised.",
-    "financial": "National Money Mart Company suffered database leak via Everest ransomware. Morison Insurance Brokers compromised by Sinobi. Multiple accounting firms targeted including Pewarchuk CPA, MG Chartered Professional Accountant, and SMT Lawyers.",
+    "summary": "Canada experienced a catastrophic ransomware event on April 18, 2026, with 99 confirmed victims across all sectors including critical infrastructure. Major brands Canada Goose and National Money Mart were compromised with data leaks confirmed. Healthcare (Markham Stouffville Hospital, BioPharma Services, multiple clinics), education (Eastern Townships School Board, Coll\u00e8ge Sup\u00e9rieur De Montr\u00e9al, Teccart College), municipal government (North Perth), public health (Peterborough), and energy sectors were all hit. No CCCS advisories were identified in this dataset.",
+    "retailers": "Canada Goose was compromised by two separate threat actors (Coinbasecartel and Shinyhunters). Active Green + Ross automotive retailer was hit by Sinobi. Kids & Company childcare services was compromised by Sinobi.",
+    "financial": "National Money Mart Company (financial services) suffered a confirmed database leak by the Everest ransomware gang. Morison Insurance Brokers was compromised by Sinobi. Multiple accounting and financial service firms were hit including Pewarchuk CPA (Play), MG Chartered Professional Accountant (Qilin), and SMT Lawyers (Clop). No major banks (CIBC, RBC, TD, Scotiabank, BMO) were identified as victims.",
     "source_urls": [
-      "www.servicestar.ca",
       "canadagoose.com",
-      "https://www.ransomware.live/victims/shinyhunters",
-      "peterboroughpublichealth.ca",
-      "https://www.ransomware.live/victims/anubis",
-      "www.northperth.ca",
-      "www.etsb.qc.ca",
-      "eeyou.ca",
       "https://www.ransomware.live/victims/everest",
+      "https://www.ransomware.live/victims/anubis",
+      "www.etsb.qc.ca",
+      "www.northperth.ca",
+      "peterboroughpublichealth.ca",
+      "www.kidsandcompany.com",
+      "www.activegreenross.com",
       "www.morisoninsurance.com",
+      "www.whsc.on.ca",
+      "www.biopharmaservices.com",
       "teccart.qc.ca",
       "https://www.ransomware.live/victims/rhysida",
-      "bisonfamilymedical.com",
-      "https://www.ransomware.live/victims/medusa",
-      "www.whsc.on.ca",
-      "www.activegreenross.com",
-      "www.kidsandcompany.com",
-      "www.cpamg.ca",
-      "www.pewarchukcpa.com",
-      "SMTLAWYERS.CA"
+      "bisonfamilymedical.com"
     ]
   },
-  "generated_at": "2026-04-17 14:30 ET",
+  "generated_at": "2026-04-18 14:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "Adobe Acrobat/Reader zero-day CVE-2026-34621 has been actively exploited since December 2025 and requires immediate patching across all systems. CISA has added six actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog, including flaws in Fortinet, Microsoft, and Adobe software. High-profile breaches continue: Booking.com confirmed a customer data breach, ShinyHunters claims a major breach of Rockstar Games (GTA 6 developer) with ransom deadline today, and Amtrak allegedly lost 9.4 million Salesforce records. A critical CVSS 10.0 supply chain vulnerability in the Axios JavaScript library (CVE-2026-33634) has been patched after enabling full cloud compromise via prototype pollution.",
+    "executive_summary": "CCCS has issued an alert for CVE-2026-35616 affecting Fortinet FortiClientEMS, while CISA has added six vulnerabilities to its Known Exploited Vulnerabilities catalog including critical flaws in Fortinet (CVE-2026-21643), Microsoft, and Adobe products. The ShinyHunters threat actor group leaked 7.54 GB of Rockstar Games data obtained through a third-party vendor breach. Microsoft's April Patch Tuesday addressed two zero-day vulnerabilities (CVE-2025-49706 and CVE-2026-32201), and Google patched an actively exploited Chrome zero-day (CVE-2026-5281). Multiple AI agent platforms including Microsoft Copilot and Salesforce Agentforce were found vulnerable to prompt injection attacks allowing data exfiltration.",
     "vulnerabilities": {
-      "count": 11,
+      "count": 12,
       "items": [
         {
-          "id": "CVE-2026-34621",
-          "description": "Adobe Acrobat/Reader zero-day actively exploited since December 2025",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": true,
-          "software_affected": "Adobe Acrobat and Adobe Reader",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "User interaction (open malicious PDF)",
-          "source_url": "https://infosec.exchange/@solomonneas/116402955412816611"
-        },
-        {
           "id": "CVE-2026-35616",
-          "description": "Vulnerability impacting Fortinet FortiClientEMS",
+          "description": "Vulnerability in Fortinet FortiClientEMS",
           "criticality": "HIGH",
           "actively_exploited": false,
           "zero_day": false,
           "software_affected": "Fortinet FortiClientEMS",
-          "cia_impact": "Unknown pending CCCS advisory details",
-          "access_required": "Unknown",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
           "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-007-vulnerability-impacting-fortinet-forticlientems-cve-2026-35616"
         },
         {
           "id": "CVE-2026-21643",
-          "description": "Known exploited flaw in Fortinet, Microsoft, or Adobe software added to CISA KEV catalog",
-          "criticality": "HIGH",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Fortinet, Microsoft, or Adobe software (specific product not identified)",
-          "cia_impact": "Unknown",
-          "access_required": "Unknown",
-          "source_url": "https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html"
-        },
-        {
-          "id": "CVE-2026-33634",
-          "description": "Axios critical prototype pollution vulnerability enabling full cloud compromise",
+          "description": "Critical SQL Injection vulnerability in Fortinet FortiClient EMS actively exploited in the wild",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Axios JavaScript library (NPM package)",
+          "software_affected": "Fortinet FortiClient EMS",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Authenticated or chained with other vulnerabilities",
-          "source_url": "https://thecyberpost.com/news/hackers/openai-revokes-macos-app-certificate-after-malicious-axios-supply-chain-incident/"
+          "access_required": "Network / Remote",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
         },
         {
-          "id": "CVE-2026-39987",
-          "description": "Marimo pre-authentication RCE under active exploitation",
-          "criticality": "CRITICAL",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Marimo",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://infosec.exchange/@solomonneas/116402955412816611"
-        },
-        {
-          "id": "CVE-2023-21529",
-          "description": "Microsoft vulnerability actively exploited, flagged by CISA",
+          "id": "CVE-2025-49706",
+          "description": "Microsoft zero-day vulnerability patched in April Patch Tuesday",
           "criticality": "HIGH",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Microsoft product (specific product not identified)",
-          "cia_impact": "Unknown",
-          "access_required": "Unknown",
-          "source_url": "https://infosec.exchange/@beyondmachines1/116402006870268860"
+          "actively_exploited": false,
+          "zero_day": true,
+          "software_affected": "Microsoft (product not specified)",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://www.csoonline.com/article/4158706/april-patch-tuesday-roundup-zero-day-vulnerabilities-and-critical-bugs.html"
         },
         {
-          "id": "CVE-2019-1458",
-          "description": "14-year-old Windows privilege escalation flaw still actively exploited",
-          "criticality": "MEDIUM",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Windows (legacy versions)",
-          "cia_impact": "Confidentiality: Low, Integrity: High, Availability: Low",
-          "access_required": "Local / Authenticated",
-          "source_url": "https://social.raytec.co/@techbot/116402376196766550"
+          "id": "CVE-2026-32201",
+          "description": "Microsoft zero-day vulnerability patched in April Patch Tuesday",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": true,
+          "software_affected": "Microsoft (product not specified)",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://www.csoonline.com/article/4158706/april-patch-tuesday-roundup-zero-day-vulnerabilities-and-critical-bugs.html"
         },
         {
-          "id": "CVE-2026-20131",
-          "description": "Cisco FMC zero-day exploited by Interlock ransomware group",
+          "id": "CVE-2026-5281",
+          "description": "Google Chrome zero-day actively exploited in the wild",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": true,
-          "software_affected": "Cisco Firepower Management Center (FMC)",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://social.raytec.co/@techbot/116402376328124724"
+          "software_affected": "Google Chrome",
+          "cia_impact": "Not specified in source",
+          "access_required": "User interaction / Network",
+          "source_url": "https://poliversity.it/@nuke/116408177240402255"
         },
         {
-          "id": "CVE-2026-6264",
-          "description": "Critical RCE in Talend JobServer and Talend Runtime allowing unauthenticated remote code execution",
-          "criticality": "CRITICAL",
-          "actively_exploited": false,
-          "zero_day": false,
-          "software_affected": "Talend JobServer and Talend Runtime",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://mastodon.social/@thehackerwire/116401059706874747"
-        },
-        {
-          "id": "EUVD-2026-22203",
-          "description": "Critical vulnerability in Talend JobServer and Talend Runtime (CVSS 9.8)",
-          "criticality": "CRITICAL",
-          "actively_exploited": false,
-          "zero_day": false,
-          "software_affected": "Talend JobServer, Talend Runtime",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://mastodon.social/@EUVD_Bot/116400827061087797"
-        },
-        {
-          "id": "ShowDoc RCE",
-          "description": "Critical ShowDoc RCE flaw exploited in ongoing attacks",
+          "id": "CVE-2026-34621",
+          "description": "Adobe Acrobat zero-day exploited for four months in targeted espionage via prototype pollution",
           "criticality": "CRITICAL",
           "actively_exploited": true,
+          "zero_day": true,
+          "software_affected": "Adobe Acrobat",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+          "access_required": "User interaction / Open malicious PDF",
+          "source_url": "https://poliversity.it/@nuke/116408219507348023"
+        },
+        {
+          "id": "CVE-2012-1854",
+          "description": "Known exploited flaw added to CISA catalog",
+          "criticality": "MEDIUM",
+          "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "ShowDoc",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://gbhackers.com/hackers-exploit-critical-showdoc-rce-flaw/"
+          "software_affected": "Not specified in source",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
+        },
+        {
+          "id": "CVE-2020-9715",
+          "description": "Known exploited flaw in Adobe software added to CISA catalog",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Adobe",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
+        },
+        {
+          "id": "CVE-2023-21529",
+          "description": "Known exploited flaw added to CISA catalog",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Not specified in source",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
+        },
+        {
+          "id": "CVE-2023-36424",
+          "description": "Known exploited flaw in Microsoft software added to CISA catalog",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Microsoft",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
+        },
+        {
+          "id": "CVE-2025-60710",
+          "description": "Known exploited flaw added to CISA catalog",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Not specified in source",
+          "cia_impact": "Not specified in source",
+          "access_required": "Not specified in source",
+          "source_url": "https://thecyberpost.com/news/hackers/cisa-adds-6-known-exploited-flaws-in-fortinet-microsoft-and-adobe-software/"
         }
       ]
     },
@@ -366,95 +360,79 @@
       "items": [
         {
           "name": "ShinyHunters",
-          "targets": "Rockstar Games (GTA 6 developer), Amtrak (9.4M Salesforce records), Anodot (enterprise tokens)",
-          "ttps": "T1589 - Gather Victim Identity Information, T1586 - Compromise Accounts, T1567 - Exfiltration Over Web Service, T1486 - Data Encrypted for Impact (ransom)",
+          "targets": "Rockstar Games (via third-party Snowflake analytics vendor)",
+          "ttps": "T1199 - Trusted Relationship (third-party vendor compromise), T1567 - Exfiltration Over Web Service, T1486 - Data Encrypted for Impact (extortion)",
           "iocs": [],
-          "source_url": "https://poliversity.it/@nuke/116402046075394747"
+          "source_url": "https://hackread.com/shinyhunters-leak-rockstar-games-data-player-records/"
         },
         {
-          "name": "APT35 (Iranian state-sponsored)",
-          "targets": "Multiple countries targeted in Operation Epic Fury parallel cyber campaign",
-          "ttps": "T1566 - Phishing, T1190 - Exploit Public-Facing Application, T1078 - Valid Accounts, T1105 - Ingress Tool Transfer",
+          "name": "Akira",
+          "targets": "Fletcher Chrysler Products, INDESMALLA",
+          "ttps": "T1486 - Data Encrypted for Impact, T1489 - Service Stop, T1490 - Inhibit System Recovery",
           "iocs": [],
-          "source_url": "https://poliversity.it/@nuke/116402398754752380"
+          "source_url": "https://infosec.exchange/@CTI_FYI/116408617376652345"
         },
         {
-          "name": "Interlock Ransomware Group",
-          "targets": "Organizations using Cisco Firepower Management Center",
-          "ttps": "T1190 - Exploit Public-Facing Application (CVE-2026-20131), T1486 - Data Encrypted for Impact",
+          "name": "Qilin",
+          "targets": "Gruppo Icm Spa",
+          "ttps": "T1486 - Data Encrypted for Impact, T1490 - Inhibit System Recovery, T1561 - Disk Wipe",
           "iocs": [],
-          "source_url": "https://social.raytec.co/@techbot/116402376328124724"
+          "source_url": "https://social.circl.lu/@Ransomlook/116408811739836168"
         },
         {
-          "name": "DarkSword",
-          "targets": "Unknown (mentioned in March 2026 CVE landscape)",
-          "ttps": "Unknown",
-          "iocs": [],
-          "source_url": "https://social.raytec.co/@techbot/116402376328124724"
-        },
-        {
-          "name": "LockBit5 (LockBit successor)",
-          "targets": "douglasstruckbodies.com, fastindustria.com.br",
-          "ttps": "T1486 - Data Encrypted for Impact, T1490 - Inhibit System Recovery, T1491 - Defacement",
-          "iocs": [],
-          "source_url": "https://mastodon.social/@RedPacketSecurity/116402809541125449"
-        },
-        {
-          "name": "Akira Ransomware",
-          "targets": "DeMera DeMera Cameron",
+          "name": "LockBit5",
+          "targets": "Radio Studio Pi\u00f9 S.R.L. (Desenzano del Garda, Italy)",
           "ttps": "T1486 - Data Encrypted for Impact, T1490 - Inhibit System Recovery",
           "iocs": [],
-          "source_url": "https://infosec.exchange/@CTI_FYI/116401300716974587"
+          "source_url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:l4yswaiempj5mwwyj75oygig/post/3mjjftfnoyc23"
         },
         {
-          "name": "Formbook",
-          "targets": "Widespread distribution across 55 C2 servers, 13 new samples (trend rising 69%)",
-          "ttps": "T1056 - Input Capture (keylogging), T1113 - Screen Capture, T1005 - Data from Local System",
+          "name": "MiningDropper (Android malware campaign)",
+          "targets": "Global Android users",
+          "ttps": "T1476 - Deliver Malicious App via Other Means, T1406 - Obfuscated Files or Information, T1582 - Cryptocurrency Mining",
           "iocs": [],
-          "source_url": "https://mastodon.social/@Matchbook3469/116402917500465792"
+          "source_url": "https://cyble.com/blog/miningdropper-global-modular-android-malware/"
         },
         {
-          "name": "Agent Tesla",
-          "targets": "Widespread distribution, 20 new samples (trend rising 119%)",
-          "ttps": "T1056 - Input Capture, T1113 - Screen Capture, T1071 - Application Layer Protocol",
+          "name": "JanaWare operators",
+          "targets": "Turkish targets",
+          "ttps": "T1566 - Phishing, T1059 - Command and Scripting Interpreter (Java RAT), T1486 - Data Encrypted for Impact",
           "iocs": [],
-          "source_url": "https://mastodon.social/@Matchbook3469/116402507869566933"
+          "source_url": "https://swecyb.com/@orlysec/116408668841445773"
         },
         {
-          "name": "TeamPCP",
-          "targets": "OpenAI macOS app via Axios NPM supply chain attack",
-          "ttps": "T1195.002 - Compromise Software Supply Chain, T1059 - Command and Scripting Interpreter",
+          "name": "XWorm phishing campaigns",
+          "targets": "Industrial Control Systems / OT environments",
+          "ttps": "T1566 - Phishing, T1204 - User Execution, T1105 - Ingress Tool Transfer",
           "iocs": [],
-          "source_url": "https://thecyberpost.com/news/hackers/openai-revokes-macos-app-certificate-after-malicious-axios-supply-chain-incident/"
+          "source_url": "https://swecyb.com/@orlysec/116408843708676544"
         },
         {
-          "name": "Stardrop Campaign",
-          "targets": "AI companies, venture capital firms, luxury brands via NPM supply chain",
-          "ttps": "T1195.002 - Compromise Software Supply Chain, T1027 - Obfuscated Files or Information",
+          "name": "Agent Tesla operators",
+          "targets": "Multiple global targets",
+          "ttps": "T1566 - Phishing, T1056 - Input Capture, T1113 - Screen Capture, T1027 - Obfuscated Files",
           "iocs": [],
-          "source_url": "https://swecyb.com/@orlysec/116400518585467654"
+          "source_url": "https://mastodon.social/@Matchbook3469/116408404371145214"
         },
         {
-          "name": "ClickFix Campaign",
-          "targets": "macOS users via Script Editor social engineering",
-          "ttps": "T1204 - User Execution, T1059 - Command and Scripting Interpreter",
+          "name": "Remcos RAT operators",
+          "targets": "Email recipients globally",
+          "ttps": "T1566 - Phishing, T1204 - User Execution, T1608.001 - Stage Capabilities: Upload Malware (Google Cloud Storage abuse)",
           "iocs": [],
-          "source_url": "https://social.tchncs.de/@simsus/116401880472093227"
+          "source_url": "https://gbhackers.com/google-cloud-storage-abused/"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "Canadian Centre for Cyber Security (CCCS) issued Alert AL26-007 on April 7, 2026 regarding CVE-2026-35616 impacting Fortinet FortiClientEMS, requiring immediate attention by Canadian organizations. No direct cyberattacks on Canadian critical infrastructure were reported in this period. Political news dominates Canadian feeds with Prime Minister Mark Carney's Liberal Party securing majority government in special elections.",
-      "retailers": "CBC investigation found Loblaw and Sobeys overcharging customers for underweight meat products (not a cybersecurity incident, but operational/compliance issue). No cybersecurity incidents identified for Canadian Tire, SportChek, or Shoppers Drug Mart.",
+      "summary": "CCCS issued Advisory AL26-007 on April 7 regarding CVE-2026-35616 impacting Fortinet FortiClientEMS. The Canadian threat landscape report for Q4 2025 highlighted phishing campaigns affecting Canada. No specific incidents targeting major Canadian retailers or financial institutions were identified in this reporting period.",
+      "retailers": "None identified",
       "financial": "None identified",
       "source_urls": [
         "https://www.cyber.gc.ca/en/alerts-advisories/al26-007-vulnerability-impacting-fortinet-forticlientems-cve-2026-35616",
-        "https://mastodon.hongkongers.net/@cbcedmonton_mirror/116403060387754480",
-        "https://mastodon.hongkongers.net/@cbcsk_mirror/116402097253314363",
-        "https://mas.to/@dmacphee/116402954613219591"
+        "https://securelist.com/industrial-threat-report-q4-2025/119392/"
       ]
     },
-    "generated_at": "2026-04-14 18:30 ET",
+    "generated_at": "2026-04-15 14:30 ET",
     "ai_enabled": true,
     "window": "2w"
   }
