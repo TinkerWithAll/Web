@@ -1,13 +1,8 @@
 {
   "https://thehackernews.com/feeds/posts/default": {
-    "total_all_time": 5700,
-    "matched_all_time": 1991,
+    "total_all_time": 5750,
+    "matched_all_time": 2010,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 50,
-        "matched": 14
-      },
       {
         "date": "2026-03-23",
         "total": 50,
@@ -452,21 +447,21 @@
         "date": "2026-05-19",
         "total": 50,
         "matched": 20
+      },
+      {
+        "date": "2026-05-19",
+        "total": 50,
+        "matched": 19
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 50,
-    "last_run_matched": 20
+    "last_run_matched": 19
   },
   "https://feeds.feedburner.com/TheHackersNews": {
-    "total_all_time": 5700,
-    "matched_all_time": 1991,
+    "total_all_time": 5750,
+    "matched_all_time": 2010,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 50,
-        "matched": 14
-      },
       {
         "date": "2026-03-23",
         "total": 50,
@@ -911,21 +906,21 @@
         "date": "2026-05-19",
         "total": 50,
         "matched": 20
+      },
+      {
+        "date": "2026-05-19",
+        "total": 50,
+        "matched": 19
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 50,
-    "last_run_matched": 20
+    "last_run_matched": 19
   },
   "https://krebsonsecurity.com/feed/": {
-    "total_all_time": 556,
-    "matched_all_time": 516,
+    "total_all_time": 561,
+    "matched_all_time": 520,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 5,
-        "matched": 4
-      },
       {
         "date": "2026-03-23",
         "total": 5,
@@ -1364,6 +1359,11 @@
       {
         "date": "2026-05-18",
         "total": 4,
+        "matched": 4
+      },
+      {
+        "date": "2026-05-19",
+        "total": 5,
         "matched": 4
       },
       {
@@ -1774,11 +1774,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -2210,6 +2205,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -2487,11 +2487,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -2923,6 +2918,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -2937,14 +2937,9 @@
     "last_run_matched": 0
   },
   "https://helpnetsecurity.com/feed/": {
-    "total_all_time": 910,
-    "matched_all_time": 345,
+    "total_all_time": 920,
+    "matched_all_time": 348,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 2
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -3384,6 +3379,11 @@
         "date": "2026-05-18",
         "total": 10,
         "matched": 4
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 3
       },
       {
         "date": "2026-05-19",
@@ -3396,14 +3396,9 @@
     "last_run_matched": 3
   },
   "https://www.zdnet.com/topic/security/rss.xml": {
-    "total_all_time": 2280,
+    "total_all_time": 2300,
     "matched_all_time": 67,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 20,
-        "matched": 0
-      },
       {
         "date": "2026-03-23",
         "total": 20,
@@ -3848,11 +3843,16 @@
         "date": "2026-05-19",
         "total": 20,
         "matched": 1
+      },
+      {
+        "date": "2026-05-19",
+        "total": 20,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 20,
-    "last_run_matched": 1
+    "last_run_matched": 0
   },
   "https://feeds.feedburner.com/securityaffairs": {
     "total_all_time": 490,
@@ -4118,11 +4118,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -4561,6 +4556,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -4568,14 +4568,9 @@
     "last_run_matched": 0
   },
   "https://www.infosecurity-magazine.com/rss/news/": {
-    "total_all_time": 12090,
-    "matched_all_time": 3506,
+    "total_all_time": 12199,
+    "matched_all_time": 3539,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 100,
-        "matched": 22
-      },
       {
         "date": "2026-03-23",
         "total": 101,
@@ -5020,10 +5015,15 @@
         "date": "2026-05-19",
         "total": 108,
         "matched": 33
+      },
+      {
+        "date": "2026-05-19",
+        "total": 109,
+        "matched": 33
       }
     ],
     "last_run_date": "2026-05-19",
-    "last_run_total": 108,
+    "last_run_total": 109,
     "last_run_matched": 33
   },
   "https://www.scmagazine.com/rss": {
@@ -6297,14 +6297,9 @@
     "last_run_matched": 0
   },
   "https://us-cert.cisa.gov/ncas/alerts.xml": {
-    "total_all_time": 85,
-    "matched_all_time": 85,
+    "total_all_time": 86,
+    "matched_all_time": 86,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
       {
         "date": "2026-03-23",
         "total": 0,
@@ -6742,6 +6737,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 1,
+        "matched": 1
+      },
+      {
+        "date": "2026-05-19",
         "total": 1,
         "matched": 1
       },
@@ -7273,11 +7273,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -7709,6 +7704,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -7986,11 +7986,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -8429,6 +8424,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -8436,14 +8436,9 @@
     "last_run_matched": 0
   },
   "https://securelist.com/feed/": {
-    "total_all_time": 880,
-    "matched_all_time": 716,
+    "total_all_time": 890,
+    "matched_all_time": 724,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 5,
-        "matched": 5
-      },
       {
         "date": "2026-03-23",
         "total": 5,
@@ -8881,6 +8876,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-05-19",
         "total": 10,
         "matched": 8
       },
@@ -9666,11 +9666,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -10102,6 +10097,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -10633,11 +10633,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -11069,6 +11064,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -11600,6 +11600,714 @@
         "matched": 0
       },
       {
+        "date": "2026-03-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-25",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-26",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-28",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-31",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-31",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-02",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-03",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-05",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-11",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-12",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-13",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-19",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-20",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-20",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-21",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-21",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-22",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-22",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-23",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-23",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-25",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-26",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-28",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-02",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-03",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-05",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-11",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-12",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-13",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
+      }
+    ],
+    "last_run_date": "2026-05-19",
+    "last_run_total": 0,
+    "last_run_matched": 0
+  },
+  "https://www.sentinelone.com/feed/": {
+    "total_all_time": 410,
+    "matched_all_time": 357,
+    "runs": [
+      {
+        "date": "2026-03-12",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-13",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-13",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-14",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-14",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-14",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-15",
+        "total": 10,
+        "matched": 8
+      },
+      {
+        "date": "2026-03-16",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-16",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-16",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-17",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-17",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-17",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-18",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-18",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-19",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-20",
+        "total": 9,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-21",
+        "total": 8,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-22",
+        "total": 8,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-23",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-23",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-24",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-24",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-25",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-26",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-27",
+        "total": 8,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-28",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-29",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-30",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-30",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-31",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-31",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-04-01",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-01",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-02",
+        "total": 8,
+        "matched": 8
+      },
+      {
+        "date": "2026-04-03",
+        "total": 10,
+        "matched": 10
+      },
+      {
+        "date": "2026-04-04",
+        "total": 10,
+        "matched": 10
+      },
+      {
+        "date": "2026-04-05",
+        "total": 10,
+        "matched": 10
+      },
+      {
+        "date": "2026-04-06",
+        "total": 9,
+        "matched": 9
+      },
+      {
+        "date": "2026-04-06",
+        "total": 9,
+        "matched": 9
+      },
+      {
+        "date": "2026-04-07",
+        "total": 9,
+        "matched": 9
+      }
+    ],
+    "last_run_date": "2026-04-07",
+    "last_run_total": 9,
+    "last_run_matched": 9
+  },
+  "https://www.elastic.co/blog/category/security/feed": {
+    "total_all_time": 0,
+    "matched_all_time": 0,
+    "runs": [
+      {
         "date": "2026-03-23",
         "total": 0,
         "matched": 0
@@ -12041,714 +12749,6 @@
       },
       {
         "date": "2026-05-19",
-        "total": 0,
-        "matched": 0
-      }
-    ],
-    "last_run_date": "2026-05-19",
-    "last_run_total": 0,
-    "last_run_matched": 0
-  },
-  "https://www.sentinelone.com/feed/": {
-    "total_all_time": 410,
-    "matched_all_time": 357,
-    "runs": [
-      {
-        "date": "2026-03-12",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-13",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-13",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-14",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-14",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-14",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-15",
-        "total": 10,
-        "matched": 8
-      },
-      {
-        "date": "2026-03-16",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-16",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-16",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-17",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-17",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-17",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-18",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-18",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-19",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-20",
-        "total": 9,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-21",
-        "total": 8,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-22",
-        "total": 8,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-23",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-23",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-24",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-24",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-25",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-26",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-27",
-        "total": 8,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-28",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-29",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-30",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-30",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-31",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-31",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-04-01",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-01",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-02",
-        "total": 8,
-        "matched": 8
-      },
-      {
-        "date": "2026-04-03",
-        "total": 10,
-        "matched": 10
-      },
-      {
-        "date": "2026-04-04",
-        "total": 10,
-        "matched": 10
-      },
-      {
-        "date": "2026-04-05",
-        "total": 10,
-        "matched": 10
-      },
-      {
-        "date": "2026-04-06",
-        "total": 9,
-        "matched": 9
-      },
-      {
-        "date": "2026-04-06",
-        "total": 9,
-        "matched": 9
-      },
-      {
-        "date": "2026-04-07",
-        "total": 9,
-        "matched": 9
-      }
-    ],
-    "last_run_date": "2026-04-07",
-    "last_run_total": 9,
-    "last_run_matched": 9
-  },
-  "https://www.elastic.co/blog/category/security/feed": {
-    "total_all_time": 0,
-    "matched_all_time": 0,
-    "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-25",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-26",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-28",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-31",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-31",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-02",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-03",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-05",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-11",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-12",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-13",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-18",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-19",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-20",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-20",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-21",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-21",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-22",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-22",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-25",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-26",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-28",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-02",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-03",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-05",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-11",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-12",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-13",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-18",
         "total": 0,
         "matched": 0
       },
@@ -13280,11 +13280,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -13716,6 +13711,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -15009,11 +15009,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -15445,6 +15440,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -15459,14 +15459,9 @@
     "last_run_matched": 0
   },
   "https://darkreading.com/rss.xml": {
-    "total_all_time": 5650,
-    "matched_all_time": 1362,
+    "total_all_time": 5700,
+    "matched_all_time": 1377,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 50,
-        "matched": 10
-      },
       {
         "date": "2026-03-23",
         "total": 50,
@@ -15911,6 +15906,11 @@
         "date": "2026-05-19",
         "total": 50,
         "matched": 15
+      },
+      {
+        "date": "2026-05-19",
+        "total": 50,
+        "matched": 15
       }
     ],
     "last_run_date": "2026-05-19",
@@ -15918,14 +15918,9 @@
     "last_run_matched": 15
   },
   "https://darkwebinformer.com/rss/": {
-    "total_all_time": 1710,
-    "matched_all_time": 1593,
+    "total_all_time": 1725,
+    "matched_all_time": 1608,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 15,
-        "matched": 14
-      },
       {
         "date": "2026-03-23",
         "total": 15,
@@ -16363,6 +16358,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 15,
+        "matched": 15
+      },
+      {
+        "date": "2026-05-19",
         "total": 15,
         "matched": 15
       },
@@ -16377,14 +16377,9 @@
     "last_run_matched": 15
   },
   "https://news.sophos.com/en-us/feed": {
-    "total_all_time": 1026,
-    "matched_all_time": 256,
+    "total_all_time": 1035,
+    "matched_all_time": 257,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 9,
-        "matched": 3
-      },
       {
         "date": "2026-03-23",
         "total": 9,
@@ -16829,6 +16824,11 @@
         "date": "2026-05-19",
         "total": 9,
         "matched": 1
+      },
+      {
+        "date": "2026-05-19",
+        "total": 9,
+        "matched": 1
       }
     ],
     "last_run_date": "2026-05-19",
@@ -16836,14 +16836,9 @@
     "last_run_matched": 1
   },
   "https://hackread.com/feed": {
-    "total_all_time": 1140,
-    "matched_all_time": 292,
+    "total_all_time": 1150,
+    "matched_all_time": 293,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 0
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -17288,21 +17283,21 @@
         "date": "2026-05-19",
         "total": 10,
         "matched": 2
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 1
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 10,
-    "last_run_matched": 2
+    "last_run_matched": 1
   },
   "https://cyble.com/feed": {
-    "total_all_time": 1100,
-    "matched_all_time": 1017,
+    "total_all_time": 1110,
+    "matched_all_time": 1024,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 10
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -17742,6 +17737,11 @@
         "date": "2026-05-18",
         "total": 10,
         "matched": 8
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 7
       },
       {
         "date": "2026-05-19",
@@ -18017,11 +18017,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -18453,6 +18448,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -18467,14 +18467,9 @@
     "last_run_matched": 0
   },
   "https://csoonline.com/feed": {
-    "total_all_time": 2280,
-    "matched_all_time": 1478,
+    "total_all_time": 2300,
+    "matched_all_time": 1494,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 20,
-        "matched": 9
-      },
       {
         "date": "2026-03-23",
         "total": 20,
@@ -18919,21 +18914,21 @@
         "date": "2026-05-19",
         "total": 20,
         "matched": 15
+      },
+      {
+        "date": "2026-05-19",
+        "total": 20,
+        "matched": 16
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 20,
-    "last_run_matched": 15
+    "last_run_matched": 16
   },
   "https://gbhackers.com/feed": {
-    "total_all_time": 1120,
-    "matched_all_time": 490,
+    "total_all_time": 1130,
+    "matched_all_time": 494,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 2
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -19371,6 +19366,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 10,
+        "matched": 4
+      },
+      {
+        "date": "2026-05-19",
         "total": 10,
         "matched": 4
       },
@@ -20205,11 +20205,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -20641,6 +20636,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -21172,11 +21172,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -21615,6 +21610,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -21622,14 +21622,9 @@
     "last_run_matched": 0
   },
   "https://thecyberpost.com/feed": {
-    "total_all_time": 1130,
-    "matched_all_time": 968,
+    "total_all_time": 1140,
+    "matched_all_time": 977,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 8
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -22067,6 +22062,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 10,
+        "matched": 9
+      },
+      {
+        "date": "2026-05-19",
         "total": 10,
         "matched": 9
       },
@@ -23005,6 +23005,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -23021,11 +23026,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -23457,6 +23457,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -23471,14 +23476,9 @@
     "last_run_matched": 0
   },
   "https://cyberinsider.com/feed": {
-    "total_all_time": 1120,
-    "matched_all_time": 442,
+    "total_all_time": 1130,
+    "matched_all_time": 443,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 1
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -23923,6 +23923,11 @@
         "date": "2026-05-19",
         "total": 10,
         "matched": 1
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 1
       }
     ],
     "last_run_date": "2026-05-19",
@@ -23930,14 +23935,9 @@
     "last_run_matched": 1
   },
   "https://esecurityplanet.com/feed": {
-    "total_all_time": 1140,
-    "matched_all_time": 900,
+    "total_all_time": 1150,
+    "matched_all_time": 909,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 8
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -24375,6 +24375,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 10,
+        "matched": 9
+      },
+      {
+        "date": "2026-05-19",
         "total": 10,
         "matched": 9
       },
@@ -24701,11 +24706,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -25137,6 +25137,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -25414,11 +25419,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -25850,6 +25850,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -25864,14 +25869,9 @@
     "last_run_matched": 0
   },
   "https://nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/spotlight/cybersecurity/rss.xml": {
-    "total_all_time": 1061,
-    "matched_all_time": 295,
+    "total_all_time": 1071,
+    "matched_all_time": 297,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 1
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -26316,6 +26316,11 @@
         "date": "2026-05-19",
         "total": 10,
         "matched": 2
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 2
       }
     ],
     "last_run_date": "2026-05-19",
@@ -26323,14 +26328,9 @@
     "last_run_matched": 2
   },
   "https://techcrunch.com/tag/cybersecurity/feed": {
-    "total_all_time": 2240,
-    "matched_all_time": 607,
+    "total_all_time": 2260,
+    "matched_all_time": 616,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 20,
-        "matched": 4
-      },
       {
         "date": "2026-03-23",
         "total": 20,
@@ -26775,11 +26775,16 @@
         "date": "2026-05-19",
         "total": 20,
         "matched": 10
+      },
+      {
+        "date": "2026-05-19",
+        "total": 20,
+        "matched": 9
       }
     ],
     "last_run_date": "2026-05-19",
     "last_run_total": 20,
-    "last_run_matched": 10
+    "last_run_matched": 9
   },
   "https://news.aliasrobotics.com/rss": {
     "total_all_time": 253,
@@ -27039,11 +27044,6 @@
     "total_all_time": 0,
     "matched_all_time": 0,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
       {
         "date": "2026-03-23",
         "total": 0,
@@ -27481,6 +27481,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -28012,11 +28017,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -28448,6 +28448,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -29233,11 +29238,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -29676,6 +29676,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -29683,14 +29688,9 @@
     "last_run_matched": 0
   },
   "https://welivesecurity.com/en/rss": {
-    "total_all_time": 1228,
-    "matched_all_time": 163,
+    "total_all_time": 1239,
+    "matched_all_time": 165,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 11,
-        "matched": 1
-      },
       {
         "date": "2026-03-23",
         "total": 11,
@@ -30128,6 +30128,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 11,
+        "matched": 2
+      },
+      {
+        "date": "2026-05-19",
         "total": 11,
         "matched": 2
       },
@@ -30405,11 +30410,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -30841,6 +30841,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -33404,11 +33409,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -33847,6 +33847,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -34111,11 +34116,6 @@
     "total_all_time": 29,
     "matched_all_time": 11,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
       {
         "date": "2026-03-23",
         "total": 0,
@@ -34560,6 +34560,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -34567,14 +34572,9 @@
     "last_run_matched": 0
   },
   "https://blog.cloudflare.com/tag/security/rss/": {
-    "total_all_time": 672,
-    "matched_all_time": 557,
+    "total_all_time": 675,
+    "matched_all_time": 560,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 8,
-        "matched": 6
-      },
       {
         "date": "2026-03-23",
         "total": 8,
@@ -35012,6 +35012,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 3,
+        "matched": 3
+      },
+      {
+        "date": "2026-05-19",
         "total": 3,
         "matched": 3
       },
@@ -36051,11 +36056,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -36487,6 +36487,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -39812,11 +39817,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -40248,6 +40248,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -40525,11 +40530,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -40968,6 +40968,11 @@
         "date": "2026-05-19",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
@@ -40978,11 +40983,6 @@
     "total_all_time": 987,
     "matched_all_time": 608,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 7,
-        "matched": 2
-      },
       {
         "date": "2026-03-23",
         "total": 7,
@@ -41427,11 +41427,16 @@
         "date": "2026-05-19",
         "total": 10,
         "matched": 10
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
       }
     ],
     "last_run_date": "2026-05-19",
-    "last_run_total": 10,
-    "last_run_matched": 10
+    "last_run_total": 0,
+    "last_run_matched": 0
   },
   "https://www.kaspersky.com/blog/feed/": {
     "total_all_time": 490,
@@ -43475,11 +43480,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -43911,6 +43911,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -45458,11 +45463,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -45894,6 +45894,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -46171,6 +46176,714 @@
         "matched": 0
       },
       {
+        "date": "2026-03-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-25",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-26",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-28",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-31",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-03-31",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-02",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-03",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-05",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-11",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-12",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-13",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-19",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-20",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-20",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-21",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-21",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-22",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-22",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-23",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-23",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-24",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-25",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-26",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-27",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-28",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-29",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-04-30",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-01",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-02",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-03",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-04",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-05",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-06",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-07",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-08",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-09",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-10",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-11",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-12",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-13",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-14",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-15",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-16",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-17",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
+        "total": 0,
+        "matched": 0
+      }
+    ],
+    "last_run_date": "2026-05-19",
+    "last_run_total": 0,
+    "last_run_matched": 0
+  },
+  "https://flashpoint.io/blog/feed/": {
+    "total_all_time": 302,
+    "matched_all_time": 290,
+    "runs": [
+      {
+        "date": "2026-03-12",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-13",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-13",
+        "total": 7,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-13",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-13",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-13",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-13",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-13",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-14",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-14",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-14",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-15",
+        "total": 6,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-16",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-16",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-16",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-17",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-17",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-17",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-18",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-18",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-19",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-20",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-21",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-22",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-23",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-23",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-24",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-24",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-25",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-26",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-27",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-03-28",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-29",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-30",
+        "total": 5,
+        "matched": 5
+      },
+      {
+        "date": "2026-03-30",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-31",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-03-31",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-04-01",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-04-01",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-04-02",
+        "total": 6,
+        "matched": 6
+      },
+      {
+        "date": "2026-04-03",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-04",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-05",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-06",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-06",
+        "total": 7,
+        "matched": 7
+      },
+      {
+        "date": "2026-04-07",
+        "total": 7,
+        "matched": 7
+      }
+    ],
+    "last_run_date": "2026-04-07",
+    "last_run_total": 7,
+    "last_run_matched": 7
+  },
+  "https://ransomwatch.telemetry.ltd/rss.xml": {
+    "total_all_time": 0,
+    "matched_all_time": 0,
+    "runs": [
+      {
         "date": "2026-03-23",
         "total": 0,
         "matched": 0
@@ -46612,714 +47325,6 @@
       },
       {
         "date": "2026-05-19",
-        "total": 0,
-        "matched": 0
-      }
-    ],
-    "last_run_date": "2026-05-19",
-    "last_run_total": 0,
-    "last_run_matched": 0
-  },
-  "https://flashpoint.io/blog/feed/": {
-    "total_all_time": 302,
-    "matched_all_time": 290,
-    "runs": [
-      {
-        "date": "2026-03-12",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-13",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-13",
-        "total": 7,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-13",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-13",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-13",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-13",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-13",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-14",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-14",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-14",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-15",
-        "total": 6,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-16",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-16",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-16",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-17",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-17",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-17",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-18",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-18",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-19",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-20",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-21",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-22",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-23",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-23",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-24",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-24",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-25",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-26",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-27",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-03-28",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-29",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-30",
-        "total": 5,
-        "matched": 5
-      },
-      {
-        "date": "2026-03-30",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-31",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-03-31",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-04-01",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-04-01",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-04-02",
-        "total": 6,
-        "matched": 6
-      },
-      {
-        "date": "2026-04-03",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-04",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-05",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-06",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-06",
-        "total": 7,
-        "matched": 7
-      },
-      {
-        "date": "2026-04-07",
-        "total": 7,
-        "matched": 7
-      }
-    ],
-    "last_run_date": "2026-04-07",
-    "last_run_total": 7,
-    "last_run_matched": 7
-  },
-  "https://ransomwatch.telemetry.ltd/rss.xml": {
-    "total_all_time": 0,
-    "matched_all_time": 0,
-    "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-25",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-26",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-28",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-31",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-03-31",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-02",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-03",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-05",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-11",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-12",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-13",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-18",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-19",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-20",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-20",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-21",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-21",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-22",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-22",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-25",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-26",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-27",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-28",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-29",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-04-30",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-01",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-02",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-03",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-04",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-05",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-06",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-07",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-08",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-09",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-10",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-11",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-12",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-13",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-14",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-15",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-16",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-17",
-        "total": 0,
-        "matched": 0
-      },
-      {
-        "date": "2026-05-18",
         "total": 0,
         "matched": 0
       },
@@ -49883,11 +49888,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -50319,6 +50319,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -52882,11 +52887,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -53318,6 +53318,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -55627,11 +55632,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-23",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-24",
         "total": 0,
         "matched": 0
@@ -56063,6 +56063,11 @@
       },
       {
         "date": "2026-05-18",
+        "total": 0,
+        "matched": 0
+      },
+      {
+        "date": "2026-05-19",
         "total": 0,
         "matched": 0
       },
@@ -56077,14 +56082,9 @@
     "last_run_matched": 0
   },
   "https://www.greynoise.io/blog/rss.xml": {
-    "total_all_time": 438,
-    "matched_all_time": 87,
+    "total_all_time": 440,
+    "matched_all_time": 88,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 4,
-        "matched": 1
-      },
       {
         "date": "2026-03-23",
         "total": 4,
@@ -56529,6 +56529,11 @@
         "date": "2026-05-19",
         "total": 2,
         "matched": 1
+      },
+      {
+        "date": "2026-05-19",
+        "total": 2,
+        "matched": 1
       }
     ],
     "last_run_date": "2026-05-19",
@@ -56536,14 +56541,9 @@
     "last_run_matched": 1
   },
   "https://www.databreaches.net/feed/": {
-    "total_all_time": 1040,
-    "matched_all_time": 519,
+    "total_all_time": 1050,
+    "matched_all_time": 529,
     "runs": [
-      {
-        "date": "2026-03-23",
-        "total": 10,
-        "matched": 1
-      },
       {
         "date": "2026-03-23",
         "total": 10,
@@ -56988,6 +56988,11 @@
         "date": "2026-05-19",
         "total": 10,
         "matched": 10
+      },
+      {
+        "date": "2026-05-19",
+        "total": 10,
+        "matched": 10
       }
     ],
     "last_run_date": "2026-05-19",
@@ -56995,8 +57000,8 @@
     "last_run_matched": 10
   },
   "https://www.bleepingcomputer.com/feed/": {
-    "total_all_time": 1335,
-    "matched_all_time": 418,
+    "total_all_time": 1350,
+    "matched_all_time": 424,
     "runs": [
       {
         "date": "2026-03-23",
@@ -57437,6 +57442,11 @@
         "date": "2026-05-18",
         "total": 15,
         "matched": 4
+      },
+      {
+        "date": "2026-05-19",
+        "total": 15,
+        "matched": 6
       },
       {
         "date": "2026-05-19",
