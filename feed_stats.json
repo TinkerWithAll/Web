@@ -1,13 +1,8 @@
 {
   "https://thehackernews.com/feeds/posts/default": {
-    "total_all_time": 5800,
-    "matched_all_time": 2028,
+    "total_all_time": 5850,
+    "matched_all_time": 2048,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 50,
-        "matched": 13
-      },
       {
         "date": "2026-03-24",
         "total": 50,
@@ -452,21 +447,21 @@
         "date": "2026-05-20",
         "total": 50,
         "matched": 18
+      },
+      {
+        "date": "2026-05-21",
+        "total": 50,
+        "matched": 20
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 50,
-    "last_run_matched": 18
+    "last_run_matched": 20
   },
   "https://feeds.feedburner.com/TheHackersNews": {
-    "total_all_time": 5800,
-    "matched_all_time": 2028,
+    "total_all_time": 5850,
+    "matched_all_time": 2048,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 50,
-        "matched": 13
-      },
       {
         "date": "2026-03-24",
         "total": 50,
@@ -911,21 +906,21 @@
         "date": "2026-05-20",
         "total": 50,
         "matched": 18
+      },
+      {
+        "date": "2026-05-21",
+        "total": 50,
+        "matched": 20
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 50,
-    "last_run_matched": 18
+    "last_run_matched": 20
   },
   "https://krebsonsecurity.com/feed/": {
-    "total_all_time": 566,
-    "matched_all_time": 524,
+    "total_all_time": 571,
+    "matched_all_time": 528,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 6,
-        "matched": 5
-      },
       {
         "date": "2026-03-24",
         "total": 6,
@@ -1370,9 +1365,14 @@
         "date": "2026-05-20",
         "total": 5,
         "matched": 4
+      },
+      {
+        "date": "2026-05-21",
+        "total": 5,
+        "matched": 4
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 5,
     "last_run_matched": 4
   },
@@ -1774,11 +1774,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -2217,9 +2212,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -2487,11 +2487,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -2930,9 +2925,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -2943,11 +2943,6 @@
       {
         "date": "2026-03-24",
         "total": 10,
-        "matched": 2
-      },
-      {
-        "date": "2026-03-24",
-        "total": 10,
         "matched": 1
       },
       {
@@ -3389,15 +3384,20 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 2
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
-    "last_run_total": 10,
-    "last_run_matched": 2
+    "last_run_date": "2026-05-21",
+    "last_run_total": 0,
+    "last_run_matched": 0
   },
   "https://www.zdnet.com/topic/security/rss.xml": {
-    "total_all_time": 2320,
-    "matched_all_time": 70,
+    "total_all_time": 2340,
+    "matched_all_time": 72,
     "runs": [
       {
         "date": "2026-03-24",
@@ -3405,11 +3405,6 @@
         "matched": 1
       },
       {
-        "date": "2026-03-24",
-        "total": 20,
-        "matched": 1
-      },
-      {
         "date": "2026-03-25",
         "total": 20,
         "matched": 0
@@ -3848,11 +3843,16 @@
         "date": "2026-05-20",
         "total": 20,
         "matched": 3
+      },
+      {
+        "date": "2026-05-21",
+        "total": 20,
+        "matched": 2
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 20,
-    "last_run_matched": 3
+    "last_run_matched": 2
   },
   "https://feeds.feedburner.com/securityaffairs": {
     "total_all_time": 490,
@@ -4118,11 +4118,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -4561,21 +4556,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://www.infosecurity-magazine.com/rss/news/": {
-    "total_all_time": 12309,
-    "matched_all_time": 3575,
+    "total_all_time": 12419,
+    "matched_all_time": 3610,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 106,
-        "matched": 24
-      },
       {
         "date": "2026-03-24",
         "total": 108,
@@ -5020,11 +5015,16 @@
         "date": "2026-05-20",
         "total": 110,
         "matched": 36
+      },
+      {
+        "date": "2026-05-21",
+        "total": 110,
+        "matched": 35
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 110,
-    "last_run_matched": 36
+    "last_run_matched": 35
   },
   "https://www.scmagazine.com/rss": {
     "total_all_time": 480,
@@ -6297,14 +6297,9 @@
     "last_run_matched": 0
   },
   "https://us-cert.cisa.gov/ncas/alerts.xml": {
-    "total_all_time": 87,
-    "matched_all_time": 87,
+    "total_all_time": 88,
+    "matched_all_time": 88,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
       {
         "date": "2026-03-24",
         "total": 0,
@@ -6749,9 +6744,14 @@
         "date": "2026-05-20",
         "total": 1,
         "matched": 1
+      },
+      {
+        "date": "2026-05-21",
+        "total": 1,
+        "matched": 1
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 1,
     "last_run_matched": 1
   },
@@ -7273,11 +7273,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -7716,9 +7711,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -7986,11 +7986,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -8429,21 +8424,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://securelist.com/feed/": {
-    "total_all_time": 900,
-    "matched_all_time": 732,
+    "total_all_time": 910,
+    "matched_all_time": 740,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 5,
-        "matched": 5
-      },
       {
         "date": "2026-03-24",
         "total": 5,
@@ -8888,9 +8883,14 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 8
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 8
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
     "last_run_matched": 8
   },
@@ -9666,11 +9666,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -10109,9 +10104,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -10633,11 +10633,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -11076,9 +11071,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -11600,11 +11600,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -12043,9 +12038,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -12313,11 +12313,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -12756,9 +12751,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -13280,11 +13280,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -13723,9 +13718,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -15009,11 +15009,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -15452,21 +15447,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://darkreading.com/rss.xml": {
-    "total_all_time": 5750,
-    "matched_all_time": 1392,
+    "total_all_time": 5800,
+    "matched_all_time": 1407,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 50,
-        "matched": 11
-      },
       {
         "date": "2026-03-24",
         "total": 50,
@@ -15911,21 +15906,21 @@
         "date": "2026-05-20",
         "total": 50,
         "matched": 15
+      },
+      {
+        "date": "2026-05-21",
+        "total": 50,
+        "matched": 15
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 50,
     "last_run_matched": 15
   },
   "https://darkwebinformer.com/rss/": {
-    "total_all_time": 1740,
-    "matched_all_time": 1623,
+    "total_all_time": 1755,
+    "matched_all_time": 1638,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 15,
-        "matched": 15
-      },
       {
         "date": "2026-03-24",
         "total": 15,
@@ -16370,21 +16365,21 @@
         "date": "2026-05-20",
         "total": 15,
         "matched": 15
+      },
+      {
+        "date": "2026-05-21",
+        "total": 15,
+        "matched": 15
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 15,
     "last_run_matched": 15
   },
   "https://news.sophos.com/en-us/feed": {
-    "total_all_time": 1044,
-    "matched_all_time": 258,
+    "total_all_time": 1053,
+    "matched_all_time": 259,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 9,
-        "matched": 2
-      },
       {
         "date": "2026-03-24",
         "total": 9,
@@ -16829,21 +16824,21 @@
         "date": "2026-05-20",
         "total": 9,
         "matched": 1
+      },
+      {
+        "date": "2026-05-21",
+        "total": 9,
+        "matched": 1
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 9,
     "last_run_matched": 1
   },
   "https://hackread.com/feed": {
-    "total_all_time": 1160,
-    "matched_all_time": 296,
+    "total_all_time": 1170,
+    "matched_all_time": 299,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 0
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -17288,9 +17283,14 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 3
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 3
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
     "last_run_matched": 3
   },
@@ -17304,11 +17304,6 @@
         "matched": 9
       },
       {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 9
-      },
-      {
         "date": "2026-03-25",
         "total": 10,
         "matched": 9
@@ -17747,11 +17742,16 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 7
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
-    "last_run_total": 10,
-    "last_run_matched": 7
+    "last_run_date": "2026-05-21",
+    "last_run_total": 0,
+    "last_run_matched": 0
   },
   "https://itsecurityguru.org/feed": {
     "total_all_time": 490,
@@ -18017,11 +18017,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -18460,21 +18455,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://csoonline.com/feed": {
-    "total_all_time": 2320,
-    "matched_all_time": 1511,
+    "total_all_time": 2340,
+    "matched_all_time": 1526,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 20,
-        "matched": 10
-      },
       {
         "date": "2026-03-24",
         "total": 20,
@@ -18919,21 +18914,21 @@
         "date": "2026-05-20",
         "total": 20,
         "matched": 17
+      },
+      {
+        "date": "2026-05-21",
+        "total": 20,
+        "matched": 15
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 20,
-    "last_run_matched": 17
+    "last_run_matched": 15
   },
   "https://gbhackers.com/feed": {
-    "total_all_time": 1140,
-    "matched_all_time": 497,
+    "total_all_time": 1150,
+    "matched_all_time": 501,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 3
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -19378,11 +19373,16 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 3
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 4
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
-    "last_run_matched": 3
+    "last_run_matched": 4
   },
   "https://krebsonsecurity.com/feed": {
     "total_all_time": 43,
@@ -20205,11 +20205,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -20648,9 +20643,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -21172,11 +21172,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -21615,15 +21610,20 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://thecyberpost.com/feed": {
-    "total_all_time": 1150,
-    "matched_all_time": 986,
+    "total_all_time": 1160,
+    "matched_all_time": 995,
     "runs": [
       {
         "date": "2026-03-24",
@@ -21631,11 +21631,6 @@
         "matched": 8
       },
       {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 8
-      },
-      {
         "date": "2026-03-25",
         "total": 10,
         "matched": 9
@@ -22074,9 +22069,14 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 9
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 9
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
     "last_run_matched": 9
   },
@@ -23015,9 +23015,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -23031,11 +23036,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -23474,21 +23474,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://cyberinsider.com/feed": {
-    "total_all_time": 1140,
-    "matched_all_time": 445,
+    "total_all_time": 1150,
+    "matched_all_time": 446,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 3
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -23933,21 +23933,21 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 2
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 1
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
-    "last_run_matched": 2
+    "last_run_matched": 1
   },
   "https://esecurityplanet.com/feed": {
-    "total_all_time": 1160,
-    "matched_all_time": 918,
+    "total_all_time": 1170,
+    "matched_all_time": 926,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 8
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -24392,11 +24392,16 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 9
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 8
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
-    "last_run_matched": 9
+    "last_run_matched": 8
   },
   "https://helpnetsecurity.com/feed": {
     "total_all_time": 80,
@@ -24711,11 +24716,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -25154,9 +25154,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -25424,11 +25429,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -25867,21 +25867,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/spotlight/cybersecurity/rss.xml": {
-    "total_all_time": 1081,
-    "matched_all_time": 299,
+    "total_all_time": 1091,
+    "matched_all_time": 301,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 1
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -26326,21 +26326,21 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 2
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 2
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
     "last_run_matched": 2
   },
   "https://techcrunch.com/tag/cybersecurity/feed": {
-    "total_all_time": 2280,
-    "matched_all_time": 623,
+    "total_all_time": 2300,
+    "matched_all_time": 630,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 20,
-        "matched": 5
-      },
       {
         "date": "2026-03-24",
         "total": 20,
@@ -26785,9 +26785,14 @@
         "date": "2026-05-20",
         "total": 20,
         "matched": 7
+      },
+      {
+        "date": "2026-05-21",
+        "total": 20,
+        "matched": 7
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 20,
     "last_run_matched": 7
   },
@@ -27049,11 +27054,6 @@
     "total_all_time": 0,
     "matched_all_time": 0,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
       {
         "date": "2026-03-24",
         "total": 0,
@@ -27498,9 +27498,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -28022,11 +28027,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -28465,9 +28465,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -29243,11 +29248,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -29686,15 +29686,20 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://welivesecurity.com/en/rss": {
-    "total_all_time": 1250,
-    "matched_all_time": 167,
+    "total_all_time": 1261,
+    "matched_all_time": 169,
     "runs": [
       {
         "date": "2026-03-24",
@@ -29702,11 +29707,6 @@
         "matched": 1
       },
       {
-        "date": "2026-03-24",
-        "total": 11,
-        "matched": 1
-      },
-      {
         "date": "2026-03-25",
         "total": 11,
         "matched": 1
@@ -30145,9 +30145,14 @@
         "date": "2026-05-20",
         "total": 11,
         "matched": 2
+      },
+      {
+        "date": "2026-05-21",
+        "total": 11,
+        "matched": 2
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 11,
     "last_run_matched": 2
   },
@@ -30415,11 +30420,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -30858,9 +30858,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -33414,11 +33419,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -33857,9 +33857,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -34127,11 +34132,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -34570,21 +34570,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://blog.cloudflare.com/tag/security/rss/": {
-    "total_all_time": 678,
-    "matched_all_time": 563,
+    "total_all_time": 681,
+    "matched_all_time": 566,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 8,
-        "matched": 6
-      },
       {
         "date": "2026-03-24",
         "total": 8,
@@ -35029,9 +35029,14 @@
         "date": "2026-05-20",
         "total": 3,
         "matched": 3
+      },
+      {
+        "date": "2026-05-21",
+        "total": 3,
+        "matched": 3
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 3,
     "last_run_matched": 3
   },
@@ -36061,11 +36066,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -36504,9 +36504,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -39822,11 +39827,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -40265,9 +40265,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -40535,11 +40540,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -40978,21 +40978,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://www.paloaltonetworks.com/blog/rss": {
-    "total_all_time": 987,
-    "matched_all_time": 608,
+    "total_all_time": 997,
+    "matched_all_time": 618,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 7,
-        "matched": 2
-      },
       {
         "date": "2026-03-24",
         "total": 7,
@@ -41437,11 +41437,16 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 10
       }
     ],
-    "last_run_date": "2026-05-20",
-    "last_run_total": 0,
-    "last_run_matched": 0
+    "last_run_date": "2026-05-21",
+    "last_run_total": 10,
+    "last_run_matched": 10
   },
   "https://www.kaspersky.com/blog/feed/": {
     "total_all_time": 490,
@@ -43485,11 +43490,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -43928,9 +43928,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -45468,11 +45473,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -45911,9 +45911,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -46181,11 +46186,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -46624,9 +46624,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -46894,11 +46899,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -47337,9 +47337,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -49893,11 +49898,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -50336,9 +50336,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -52892,11 +52897,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -53335,9 +53335,14 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
@@ -55637,11 +55642,6 @@
         "matched": 0
       },
       {
-        "date": "2026-03-24",
-        "total": 0,
-        "matched": 0
-      },
-      {
         "date": "2026-03-25",
         "total": 0,
         "matched": 0
@@ -56080,21 +56080,21 @@
         "date": "2026-05-20",
         "total": 0,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 0,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 0,
     "last_run_matched": 0
   },
   "https://www.greynoise.io/blog/rss.xml": {
-    "total_all_time": 441,
+    "total_all_time": 442,
     "matched_all_time": 88,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 4,
-        "matched": 1
-      },
       {
         "date": "2026-03-24",
         "total": 4,
@@ -56539,21 +56539,21 @@
         "date": "2026-05-20",
         "total": 1,
         "matched": 0
+      },
+      {
+        "date": "2026-05-21",
+        "total": 1,
+        "matched": 0
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 1,
     "last_run_matched": 0
   },
   "https://www.databreaches.net/feed/": {
-    "total_all_time": 1060,
-    "matched_all_time": 539,
+    "total_all_time": 1070,
+    "matched_all_time": 549,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 10,
-        "matched": 0
-      },
       {
         "date": "2026-03-24",
         "total": 10,
@@ -56998,21 +56998,21 @@
         "date": "2026-05-20",
         "total": 10,
         "matched": 10
+      },
+      {
+        "date": "2026-05-21",
+        "total": 10,
+        "matched": 10
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 10,
     "last_run_matched": 10
   },
   "https://www.bleepingcomputer.com/feed/": {
-    "total_all_time": 1365,
-    "matched_all_time": 428,
+    "total_all_time": 1380,
+    "matched_all_time": 433,
     "runs": [
-      {
-        "date": "2026-03-24",
-        "total": 15,
-        "matched": 4
-      },
       {
         "date": "2026-03-24",
         "total": 15,
@@ -57457,10 +57457,15 @@
         "date": "2026-05-20",
         "total": 15,
         "matched": 4
+      },
+      {
+        "date": "2026-05-21",
+        "total": 15,
+        "matched": 5
       }
     ],
-    "last_run_date": "2026-05-20",
+    "last_run_date": "2026-05-21",
     "last_run_total": 15,
-    "last_run_matched": 4
+    "last_run_matched": 5
   }
 }
