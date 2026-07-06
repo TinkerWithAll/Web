@@ -1,323 +1,396 @@
 {
-  "executive_summary": "The Intercept's Signal tip line was breached by an unknown actor who has been impersonating the outlet and soliciting whistleblowers since at least February 2026. Multiple critical vulnerabilities are actively exploited: a Linux kernel race condition (CVE-2026-45659) allows privilege escalation from within Chrome's sandbox, and India's .bank.in domain registrar exposed its entire database. Threat actor ShinyHunters claims a 40GB breach of the University of Nottingham, while North Korea-linked actors are hiding malware in npm packages targeting developers. Qilin ransomware group published 539GB of NOI Hotels data, and the ARToken phishing-as-a-service platform is actively targeting Microsoft 365 credentials.",
+  "executive_summary": "A critical Adobe ColdFusion vulnerability (CVE-2026-48282) is being actively exploited in the wild with a dramatically shrinking patch window. A China-nexus threat actor is using fake Indian tax filing utilities to deploy DcRAT malware via phishing campaigns. Canadian intelligence (CSE) publicly disclosed it hacked drug traffickers, extremists, and a ransomware gang in 2025. Multiple large-scale breaches reported: Medtronic exposed 3.8 million patient records (ShinyHunters-linked), Alberta election data breach affecting millions of voters is now under lawsuit, and Jaguar Land Rover suffered a $2.5B breach attributed to Russian hackers. New ransomware groups 'Genesis' and 'Avalon/CrownX' are actively targeting healthcare, real estate, and tech sectors.",
   "vulnerabilities": {
-    "count": 3,
+    "count": 4,
     "items": [
       {
-        "id": "CVE-2026-45659",
-        "description": "Linux kernel race condition allowing local privilege escalation to root, escapes Chrome sandbox",
+        "id": "CVE-2026-48282",
+        "description": "Critical Adobe ColdFusion vulnerability actively exploited with shrinking patch window",
         "criticality": "CRITICAL",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Linux kernel",
+        "software_affected": "Adobe ColdFusion",
         "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Local user access / Low privilege",
-        "source_url": "https://nerdculture.de/@youranonnewsirc/116866802295686902"
+        "access_required": "Network / Remote",
+        "source_url": "https://social.thepixelspulse.com/@danielmarsh/116873511282609362"
       },
       {
         "id": "CVE-2025-3248",
-        "description": "Langflow vulnerability exploited by JADEPUFFER agentic ransomware",
+        "description": "Vulnerability exploited by autonomous AI agent in network penetration testing",
         "criticality": "HIGH",
         "actively_exploited": true,
         "zero_day": false,
-        "software_affected": "Langflow",
-        "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-        "access_required": "Network / Authentication required",
-        "source_url": "https://mastodon.social/@threadlinqs/116867033981481276"
+        "software_affected": "Unknown",
+        "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+        "access_required": "Network",
+        "source_url": "https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html"
       },
       {
-        "id": "CVE-2021-41773",
-        "description": "Apache path traversal vulnerability being actively scanned",
+        "id": "CVE-2026-12569",
+        "description": "Vulnerability impacting PTC Windchill and FlexPLM product lifecycle management systems",
         "criticality": "HIGH",
-        "actively_exploited": true,
+        "actively_exploited": false,
         "zero_day": false,
-        "software_affected": "Apache HTTP Server",
+        "software_affected": "PTC Windchill, PTC FlexPLM",
         "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
-        "access_required": "Network / No authentication required",
-        "source_url": "https://mastobot.ping.moi/@Bobe_bot/116865840411016123"
+        "access_required": "Network",
+        "source_url": "https://mastodon.social/@hookprobe/116873879849675731"
+      },
+      {
+        "id": "CVE-2026-41815",
+        "description": "Vulnerability in create-react-app package affecting React applications",
+        "criticality": "MEDIUM",
+        "actively_exploited": false,
+        "zero_day": false,
+        "software_affected": "create-react-app (React)",
+        "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Low",
+        "access_required": "Local",
+        "source_url": "https://mastodon.social/@EUVD_Bot/116872211450899278"
       }
     ]
   },
   "threat_actors": {
     "items": [
       {
+        "name": "China-Nexus APT (Unknown designation)",
+        "targets": "Indian taxpayers via fake tax filing utilities",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1204.002 (Malicious File), T1059 (Command and Scripting Interpreter) - deploying DcRAT remote access trojan",
+        "iocs": [],
+        "source_url": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html"
+      },
+      {
+        "name": "Iran-Nexus APT (New group)",
+        "targets": "Israeli government and IT sectors",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1566 (Phishing)",
+        "iocs": [],
+        "source_url": "https://www.infosecurity-magazine.com/news/new-iran-hacking-group-targets/"
+      },
+      {
         "name": "ShinyHunters",
-        "targets": "University of Nottingham (nottingham.ac.uk)",
-        "ttps": "T1530 Data from Cloud Storage, T1567 Exfiltration Over Web Service - Claims 40GB data breach including email addresses, phone numbers, and physical addresses",
+        "targets": "Medtronic (3.8M patient records), Moody Bible Institute (2.3M accounts), Fluke Corporation",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1530 (Data from Cloud Storage), T1567 (Exfiltration Over Web Service)",
         "iocs": [],
-        "source_url": "https://infosec.exchange/@Matchbook3469/116867164230207433"
+        "source_url": "https://infosec.exchange/@beyondmachines1/116873865924699812"
       },
       {
-        "name": "North Korea-linked APT (DPRK)",
-        "targets": "Software developers via open-source supply chain",
-        "ttps": "T1195.002 Compromise Software Supply Chain, T1059.007 JavaScript - Deployed malicious npm, Go, and Packagist packages with stealers pulling C2 from blockchain",
+        "name": "Genesis Ransomware Group",
+        "targets": "Healthcare, real estate, and tech firms",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567.002 (Exfiltration to Cloud Storage)",
         "iocs": [],
-        "source_url": "https://mastodon.social/@threadlinqs/116867708189030506"
+        "source_url": "https://mastodon.social/@netsecio/116873758793827840"
       },
       {
-        "name": "Qilin (ransomware group)",
-        "targets": "NOI Hotels",
-        "ttps": "T1486 Data Encrypted for Impact, T1567 Exfiltration Over Web Service - Published 539GB of guest, employee, and supplier data on dark web",
+        "name": "Qilin Ransomware",
+        "targets": "Answer Precision Tool, Keystone Homes",
+        "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1567.002 (Exfiltration to Cloud Storage)",
         "iocs": [],
-        "source_url": "https://infosec.exchange/@chum1ng0/116864740202466188"
+        "source_url": "https://infosec.exchange/@CTI_FYI/116873580775948582"
       },
       {
-        "name": "Akira (ransomware group)",
-        "targets": "Swiss defense contractor",
-        "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery - Extorted ransom payment rather than face data loss",
+        "name": "Akira Ransomware",
+        "targets": "Swiss defense contractor (extortion successful)",
+        "ttps": "T1486 (Data Encrypted for Impact), T1567.002 (Exfiltration to Cloud Storage), T1657 (Financial Theft)",
         "iocs": [],
-        "source_url": "https://mastodon.social/@aktionfsa/116866337152618045"
+        "source_url": "https://mastodon.social/@aktionfsa/116871736637126640"
       },
       {
-        "name": "Oorca",
-        "targets": "Superintendencia Nacional de los Registros P\u00fablicos (Peru's national public registry)",
-        "ttps": "T1530 Data from Cloud Storage, T1567 Exfiltration Over Web Service - Data breach claim tracked",
+        "name": "Scattered Spider",
+        "targets": "Multiple retail and corporate entities",
+        "ttps": "T1078 (Valid Accounts), T1566 (Phishing), tracked via Microsoft GDID telemetry leading to FBI arrest of 19-year-old member",
         "iocs": [],
-        "source_url": "https://infosec.exchange/@darkwebsonar/116866403778669687"
+        "source_url": "https://infosec.exchange/@DailyCyberSecurity/116873132417039709"
       },
       {
-        "name": "Termite",
-        "targets": "CalFresh (California)",
-        "ttps": "T1530 Data from Cloud Storage - Unverified breach claim of undisclosed data volume",
+        "name": "Armored Likho APT",
+        "targets": "Unknown (BusySnake Stealer campaign)",
+        "ttps": "T1566.001 (Spearphishing Attachment), T1056.001 (Keylogging), T1005 (Data from Local System)",
         "iocs": [],
-        "source_url": "https://mastodon.social/@Matchbook3469/116866719063798912"
+        "source_url": "https://social.raytec.co/@techbot/116872337046321239"
       },
       {
-        "name": "Armored Likho (APT group)",
-        "targets": "Multiple targets via Windows LNK exploit",
-        "ttps": "T1203 Exploitation for Client Execution, T1566.001 Phishing: Spearphishing Attachment - BusySnake malware hidden in Windows LNK zero-day with AI-written loader",
+        "name": "PolinRider (North Korean APT)",
+        "targets": "Software developers via supply chain attack",
+        "ttps": "T1195.002 (Compromise Software Supply Chain), T1071.001 (Web Protocols), targeting NPM ecosystem",
         "iocs": [],
-        "source_url": "https://mastodon.social/@threadlinqs/116865769649119848"
+        "source_url": "https://mastodon.social/@netsecio/116873760249387114"
+      },
+      {
+        "name": "Russian APT (Unknown designation)",
+        "targets": "Jaguar Land Rover ($2.5B breach)",
+        "ttps": "T1190 (Exploit Public-Facing Application), T1567 (Exfiltration Over Web Service)",
+        "iocs": [],
+        "source_url": "https://mastodon.social/@gtbarry/116873162411513376"
+      },
+      {
+        "name": "FortiBleed Campaign (Unknown actor)",
+        "targets": "UK Government credentials via Fortinet exploitation",
+        "ttps": "T1078.004 (Cloud Accounts), T1133 (External Remote Services), credential theft and reuse",
+        "iocs": [],
+        "source_url": "https://infosec.exchange/@beyondmachines1/116872450415216843"
       }
     ]
   },
   "canada_landscape": {
-    "summary": "No critical Canadian infrastructure incidents or CCCS advisories were identified in this 48-hour period. General discussion about Canadian politics, World Cup hosting, and Swedish PM joking about Canada joining the EU appeared, but no cybersecurity incidents affecting Canadian retailers, financial institutions, or critical infrastructure were reported.",
+    "summary": "Canadian Communications Security Establishment (CSE) publicly disclosed offensive cyber operations in 2025, confirming it hacked drug traffickers, extremists, and a ransomware gang. Alberta's Centurion Project faces lawsuit over a data breach affecting millions of voters in provincial election databases. KDDI reported a major email service breach exposing 12.23 million email addresses and 7.61 million passwords, though impact to Canadian users unclear.",
     "retailers": "None identified",
     "financial": "None identified",
-    "source_urls": []
+    "source_urls": [
+      "https://techcrunch.com/2026/07/06/canadian-spy-agency-says-it-hacked-drug-traffickers-extremists-and-a-ransomware-gang-last-year/",
+      "https://databreaches.net/2026/07/06/alberta-centurion-project-sued-over-alleged-data-breach-that-affected-millions-of-voters/?pk_campaign=feed&pk_kwd=alberta-centurion-project-sued-over-alleged-data-breach-that-affected-millions-of-voters",
+      "https://hackread.com/insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-for-regulatory-risk/"
+    ]
   },
-  "generated_at": "2026-07-05 14:30 ET",
+  "generated_at": "2026-07-06 09:30 ET",
   "ai_enabled": true,
   "window": "48h",
   "report_2w": {
-    "executive_summary": "Microsoft SharePoint Server is under active attack via CVE-2026-45659, a critical remote code execution flaw now added to CISA's Known Exploited Vulnerabilities catalog. The Canadian Centre for Cyber Security (CCCS) has issued two alerts today covering this SharePoint RCE and a Citrix NetScaler vulnerability (CVE-2026-8451). Scattered Spider, the notorious ransomware gang behind $100M+ in extortion, has seen a 19-year-old member extradited to the U.S. to face charges. Medtronic confirmed a ShinyHunters breach affecting 9 million customer records, and ClickFix social engineering attacks are spreading rapidly, prompting Opera to deploy clipboard protection. Ransomware groups are now exploiting Citrix Bleed 2 (CVE-2025-5777) and an AI agent has executed the first fully autonomous ransomware attack from breach to extortion.",
+    "executive_summary": "DHS confirmed a breach of its HSIN emergency information-sharing platform via exploitation of a Microsoft SharePoint zero-day (CVE-2026-45659), which CISA added to its Known Exploited Vulnerabilities catalog on July 3rd. Canada's CCCS issued two critical advisories: one for a Citrix NetScaler flaw (CVE-2026-8451) dubbed 'CitrixBleed 2' being actively exploited by ransomware groups within 24 hours of disclosure, and another for the SharePoint zero-day. Ransomware operations are consolidating through partnerships\u2014Qilin leads the market while groups like INC and Lynx leverage FortiBleed credential theft, and a new industrial model sees ransomware gangs partnering with credential-stealing operations like TeamPCP. Multiple major data breaches were disclosed including Medtronic (3.8M records via ShinyHunters), Singapore Land Authority (70K records), and Malaysia's tax portal (10M taxpayer records).",
     "vulnerabilities": {
-      "count": 8,
+      "count": 11,
       "items": [
         {
           "id": "CVE-2026-45659",
-          "description": "Microsoft SharePoint Server remote code execution vulnerability allowing authenticated Site Member to execute code as SYSTEM",
+          "description": "Remote Code Execution vulnerability in Microsoft SharePoint Server",
           "criticality": "CRITICAL",
           "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Microsoft SharePoint Server (version unspecified)",
+          "zero_day": true,
+          "software_affected": "Microsoft SharePoint Server",
           "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Low-privileged authenticated user (Site Member)",
+          "access_required": "Network / Authentication required",
           "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-015-critical-vulnerability-impacting-microsoft-sharepoint-server-cve-2026-45659"
         },
         {
           "id": "CVE-2026-8451",
-          "description": "Citrix NetScaler vulnerability requiring immediate patching per CCCS advisory",
-          "criticality": "HIGH",
-          "actively_exploited": false,
+          "description": "CitrixBleed 2 - Memory leak vulnerability in Citrix NetScaler SAML authentication",
+          "criticality": "CRITICAL",
+          "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Citrix NetScaler (version unspecified)",
-          "cia_impact": "Unknown - CCCS advisory issued",
-          "access_required": "Unknown",
+          "software_affected": "Citrix NetScaler",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+          "access_required": "Network / No authentication required (pre-auth)",
           "source_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-016-vulnerability-impacting-citrix-netscaler-cve-2026-8451"
         },
         {
-          "id": "CVE-2026-35273",
-          "description": "Oracle PeopleSoft zero-day RCE exploited by ShinyHunters/UNC6240 affecting 100+ victims including U.S. insurance regulator",
+          "id": "CVE-2026-3055",
+          "description": "CitrixBleed-like NetScaler flaw with exploit attempts in the wild",
+          "criticality": "HIGH",
+          "actively_exploited": true,
+          "zero_day": false,
+          "software_affected": "Citrix NetScaler",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html"
+        },
+        {
+          "id": "CVE-2026-35616",
+          "description": "FortiBleed - Credential theft vulnerability in FortiGate firewalls",
           "criticality": "CRITICAL",
           "actively_exploited": true,
-          "zero_day": true,
-          "software_affected": "Oracle PeopleSoft (version unspecified)",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Unauthenticated",
-          "source_url": "https://insicurezzadigitale.com/shinyhunters-e-lo-zero-day-peoplesoft-il-regolatore-assicurativo-usa-tra-le-100-vittime-di-unc6240/"
+          "zero_day": false,
+          "software_affected": "Fortinet FortiGate (430K+ devices affected)",
+          "cia_impact": "Confidentiality: Critical, Integrity: High, Availability: Medium",
+          "access_required": "Network / No authentication required",
+          "source_url": "https://thecyberpost.com/news/hackers/fortibleed-credential-theft-linked-to-inc-and-lynx-ransomware-operations/"
         },
         {
           "id": "CVE-2025-5777",
-          "description": "Citrix Bleed 2 vulnerability allowing session hijacking and MFA bypass via NetScaler memory leak, exploited by ransomware groups",
+          "description": "Citrix Bleed 2 vulnerability actively exploited by Anubis ransomware for network access",
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Citrix NetScaler (version unspecified)",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Low",
+          "software_affected": "Citrix NetScaler",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
           "access_required": "Network / No authentication required",
-          "source_url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html"
+          "source_url": "https://thecyberpost.com/news/hackers/ransomware-groups-turn-to-citrix-bleed-2-byovd-and-supply-chain-credentials/"
         },
         {
           "id": "CVE-2025-3248",
-          "description": "Langflow flaw exploited by AI agent to automate full ransomware attack chain end-to-end",
-          "criticality": "HIGH",
-          "actively_exploited": true,
-          "zero_day": false,
-          "software_affected": "Langflow (version unspecified)",
-          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
-          "access_required": "Network / Authentication status unknown",
-          "source_url": "https://mastodon.social/@Analyst207/116849730321436482"
-        },
-        {
-          "id": "CVE-2023-4863",
-          "description": "Referenced in context of AI-generated browser ransomware targeting Chromium API on Windows and Android",
-          "criticality": "MEDIUM",
-          "actively_exploited": false,
-          "zero_day": false,
-          "software_affected": "Chromium-based browsers",
-          "cia_impact": "Confidentiality: Medium, Integrity: Medium, Availability: Medium",
-          "access_required": "User interaction required",
-          "source_url": "https://thecyberpost.com/news/hackers/ai-generated-browser-ransomware-abuses-chromium-api-on-windows-and-android/"
-        },
-        {
-          "id": "Oracle EBS Payments CVSS 9.8",
-          "description": "Unauthenticated vulnerability in Oracle E-Business Suite Payments allowing attackers to read /etc/passwd, exploited before public PoC release",
+          "description": "Remote Code Execution vulnerability in Langflow exploited by AI agent for automated database ransomware attacks",
           "criticality": "CRITICAL",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Oracle E-Business Suite Payments (version unspecified)",
-          "cia_impact": "Confidentiality: High, Integrity: Unknown, Availability: Unknown",
-          "access_required": "Network / No authentication required",
-          "source_url": "https://mastodon.social/@threadlinqs/116850910788803522"
+          "software_affected": "Langflow",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / Authentication bypass possible",
+          "source_url": "https://thecyberpost.com/news/hackers/ai-agent-exploits-langflow-rce-to-automate-database-ransomware-attack/"
         },
         {
-          "id": "Cisco Catalyst Center file read",
-          "description": "Cisco Catalyst Center flaw allowing unauthenticated attacker to read any file on the system without login",
+          "id": "CVE-2026-33825",
+          "description": "Apple email vulnerability exposing users' real email addresses, undermining Hide My Email privacy",
+          "criticality": "CRITICAL",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Apple iCloud+ / Hide My Email",
+          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+          "access_required": "Network / User interaction",
+          "source_url": "https://thecyberpost.com/news/hackers/threatsday-ai-compute-hijacking-apple-email-flaw-bluehammer-ransomware-14-stories/"
+        },
+        {
+          "id": "CVE-2025-11371",
+          "description": "Related vulnerability referenced in SharePoint exploitation context",
           "criticality": "HIGH",
           "actively_exploited": true,
           "zero_day": false,
-          "software_affected": "Cisco Catalyst Center (version unspecified)",
-          "cia_impact": "Confidentiality: High, Integrity: Low, Availability: Low",
+          "software_affected": "Microsoft SharePoint Server",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: Medium",
+          "access_required": "Network / Authentication required",
+          "source_url": "https://thecyberpost.com/news/hackers/sharepoint-rce-cve-2026-45659-added-to-cisa-kev-after-active-exploitation/"
+        },
+        {
+          "id": "CVE-2026-41443",
+          "description": "Server-side request forgery (SSRF) in Azure OpenAI allowing privilege escalation",
+          "criticality": "CRITICAL",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Microsoft Azure OpenAI",
+          "cia_impact": "Confidentiality: High, Integrity: High, Availability: High",
+          "access_required": "Network / Authenticated user",
+          "source_url": "https://mastodon.social/@EUVD_Bot/116853100387266696"
+        },
+        {
+          "id": "CVE-2025-41241",
+          "description": "Denial of service vulnerability in VMware vCenter",
+          "criticality": "MEDIUM",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "VMware vCenter (Broadcom)",
+          "cia_impact": "Confidentiality: None, Integrity: None, Availability: High",
+          "access_required": "Network / Authentication status unclear",
+          "source_url": "https://mas.to/@nolabnoparty/116856262235238722"
+        },
+        {
+          "id": "CVE-2023-4966",
+          "description": "Original CitrixBleed vulnerability referenced for comparison with new NetScaler flaw",
+          "criticality": "HIGH",
+          "actively_exploited": false,
+          "zero_day": false,
+          "software_affected": "Citrix NetScaler (historical reference)",
+          "cia_impact": "Confidentiality: High, Integrity: Medium, Availability: Low",
           "access_required": "Network / No authentication required",
-          "source_url": "https://mastodon.social/@threadlinqs/116850669321172992"
+          "source_url": "https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html"
         }
       ]
     },
     "threat_actors": {
       "items": [
         {
+          "name": "Qilin Ransomware",
+          "targets": "Multiple sectors - leading ransomware market consolidation",
+          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), market dominance through consolidation",
+          "iocs": [],
+          "source_url": "https://www.infosecurity-magazine.com/news/qilin-dominates-ransomware-market/"
+        },
+        {
+          "name": "TeamPCP",
+          "targets": "Supply chain attacks for credential theft, partnering with ransomware operations",
+          "ttps": "T1199 (Trusted Relationship), T1078 (Valid Accounts), T1212 (Exploitation for Credential Access), supply chain compromise",
+          "iocs": [],
+          "source_url": "https://www.infosecurity-magazine.com/news/industrialized-cyberattacks/"
+        },
+        {
+          "name": "INC Ransomware / Lynx Ransomware",
+          "targets": "Organizations with FortiGate firewalls - 430K+ devices compromised for credential harvesting",
+          "ttps": "T1078 (Valid Accounts), T1556 (Modify Authentication Process), FortiBleed CVE-2026-35616 exploitation, 110M credentials stolen",
+          "iocs": [],
+          "source_url": "https://thecyberpost.com/news/hackers/fortibleed-credential-theft-linked-to-inc-and-lynx-ransomware-operations/"
+        },
+        {
+          "name": "Anubis Ransomware",
+          "targets": "Organizations using Citrix NetScaler - exploiting Citrix Bleed 2",
+          "ttps": "T1190 (Exploit Public-Facing Application), CVE-2025-5777 exploitation, T1486 (Data Encrypted for Impact), BYOVD tactics",
+          "iocs": [],
+          "source_url": "https://thecyberpost.com/news/hackers/ransomware-groups-turn-to-citrix-bleed-2-byovd-and-supply-chain-credentials/"
+        },
+        {
+          "name": "Armored Likho (APT)",
+          "targets": "Covert campaign deploying BusySnake Stealer",
+          "ttps": "T1566 (Phishing), T1555 (Credentials from Password Stores), custom stealer malware deployment",
+          "iocs": [],
+          "source_url": "https://securelist.com/tr/armored-likho-apt-with-busysnake-stealer/120292/"
+        },
+        {
+          "name": "ShinyHunters",
+          "targets": "Medtronic (3.8M records), Oracle PeopleSoft exploits, multiple healthcare and enterprise breaches",
+          "ttps": "T1190 (Exploit Public-Facing Application), T1567 (Exfiltration Over Web Service), pre-auth RCE exploitation, data exfiltration and sale",
+          "iocs": [],
+          "source_url": "https://mastodon.social/@netsecio/116856452677353291"
+        },
+        {
+          "name": "DragonForce",
+          "targets": "Referenced in SharePoint exploitation context",
+          "ttps": "T1190 (Exploit Public-Facing Application), CVE-2026-45659 exploitation",
+          "iocs": [],
+          "source_url": "https://thecyberpost.com/news/hackers/sharepoint-rce-cve-2026-45659-added-to-cisa-kev-after-active-exploitation/"
+        },
+        {
+          "name": "JadePuffer",
+          "targets": "Database systems - first AI agent to autonomously execute ransomware attacks",
+          "ttps": "T1059 (Command and Scripting Interpreter), T1486 (Data Encrypted for Impact), Langflow CVE-2025-3248 exploitation, autonomous AI-driven attack execution",
+          "iocs": [],
+          "source_url": "https://thecyberpost.com/news/hackers/ai-agent-exploits-langflow-rce-to-automate-database-ransomware-attack/"
+        },
+        {
+          "name": "EvilTokens / ARToken PhaaS",
+          "targets": "Microsoft 365 users via phishing-as-a-service toolkit",
+          "ttps": "T1566 (Phishing), T1539 (Steal Web Session Cookie), T1528 (Steal Application Access Token), AiTM phishing",
+          "iocs": [],
+          "source_url": "https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/"
+        },
+        {
           "name": "Scattered Spider",
-          "targets": "Retail, hospitality, and technology sectors; $100M+ in extortion schemes; multiple casino and corporate victims",
-          "ttps": "T1566 Phishing, T1078 Valid Accounts, T1486 Data Encrypted for Impact, T1565 Data Manipulation; SIM-swapping, social engineering, ransomware deployment",
+          "targets": "Referenced in security digest",
+          "ttps": "T1566 (Phishing), T1078 (Valid Accounts), social engineering",
           "iocs": [],
-          "source_url": "https://www.bleepingcomputer.com/news/security/alleged-scattered-spider-hacker-extradited-to-the-united-states/"
+          "source_url": "https://infosec.exchange/@securityfeed/116855588945649503"
         },
         {
-          "name": "ShinyHunters (UNC6240)",
-          "targets": "Medtronic (9 million records), University of Nottingham (40GB), Oracle PeopleSoft deployments (100+ victims including U.S. insurance regulator)",
-          "ttps": "T1190 Exploit Public-Facing Application, T1567 Exfiltration Over Web Service; exploitation of zero-day vulnerabilities (CVE-2026-35273), data exfiltration and extortion",
+          "name": "Vect Ransomware",
+          "targets": "Organizations - partnering with TeamPCP for supply chain credential access",
+          "ttps": "T1199 (Trusted Relationship), T1486 (Data Encrypted for Impact), supply chain partnership model",
           "iocs": [],
-          "source_url": "https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/"
+          "source_url": "https://infosec.exchange/@dannyjpalmer/116855991143984367"
         },
         {
-          "name": "TeamPCP / Vect",
-          "targets": "Multiple organizations in partnership ransomware campaigns",
-          "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery; ransomware deployment in partnership model",
+          "name": "Doommageddon Ransomware",
+          "targets": "Francisco Im\u00f3veis",
+          "ttps": "T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery)",
           "iocs": [],
-          "source_url": "https://www.sophos.com/en-us/blog/vect-and-teampcp-partner-for-ransomware-campaigns"
+          "source_url": "https://social.circl.lu/@Ransomlook/116855214029633876"
         },
         {
-          "name": "Qilin",
-          "targets": "Pennant Hills Golf Club",
-          "ttps": "T1486 Data Encrypted for Impact, T1657 Financial Theft; ransomware deployment with data exfiltration and leak site publication",
+          "name": "worldleaks",
+          "targets": "First Federal Savings & Loan - financial records and personal data",
+          "ttps": "T1567 (Exfiltration Over Web Service), data breach and leak",
           "iocs": [],
-          "source_url": "https://social.circl.lu/@Ransomlook/116849798901622724"
+          "source_url": "https://infosec.exchange/@Matchbook3469/116855486727110355"
         },
         {
-          "name": "SPACEBEARS",
-          "targets": "Salters Propane",
-          "ttps": "T1486 Data Encrypted for Impact, T1657 Financial Theft; ransomware deployment",
+          "name": "Russian Secret Services (FSB-linked)",
+          "targets": "Signal, WhatsApp, and Telegram users - phishing campaign",
+          "ttps": "T1566 (Phishing), T1659 (Content Injection), messaging platform targeting",
           "iocs": [],
-          "source_url": "https://mastodon.social/@RedPacketSecurity/116849133520517075"
+          "source_url": "https://mastodon.world/@G4Media/116856124986163112"
         },
         {
-          "name": "ANUBIS",
-          "targets": "Northeast Pediatrics & Adolescent Medicine",
-          "ttps": "T1486 Data Encrypted for Impact, T1657 Financial Theft; ransomware targeting healthcare sector",
+          "name": "Iran-nexus actor",
+          "targets": "Surveillance operations distributing MarkiRAT",
+          "ttps": "T1566 (Phishing), T1055 (Process Injection), surveillance malware deployment",
           "iocs": [],
-          "source_url": "https://mastodon.social/@RedPacketSecurity/116848660560760970"
-        },
-        {
-          "name": "ToddyCat (Umbrij toolset)",
-          "targets": "Gmail users via hidden Chrome instances for OAuth token theft",
-          "ttps": "T1539 Steal Web Session Cookie, T1185 Browser Session Hijacking, T1528 Steal Application Access Token; automated Chrome manipulation to mint OAuth tokens bypassing password and MFA",
-          "iocs": [
-            "27 IOCs available"
-          ],
-          "source_url": "https://mastodon.social/@threadlinqs/116850793251992541"
-        },
-        {
-          "name": "TAG-182 (Iran-nexus)",
-          "targets": "Iranian dissidents and opposition groups",
-          "ttps": "T1566 Phishing, T1204 User Execution; MarkiRAT surveillance tool distribution via social engineering",
-          "iocs": [],
-          "source_url": "https://social.raytec.co/@techbot/116849100690350117"
-        },
-        {
-          "name": "JADEPUFFER",
-          "targets": "Organizations with vulnerable Langflow instances",
-          "ttps": "T1190 Exploit Public-Facing Application, T1486 Data Encrypted for Impact, T1657 Financial Theft; first documented fully autonomous AI-driven ransomware attack (breach, pivot, encrypt, extort)",
-          "iocs": [],
-          "source_url": "https://mastodon.social/@AIntelligenceHub/116853077598983679"
-        },
-        {
-          "name": "Fake Interpol ransomware campaign",
-          "targets": "Small businesses globally",
-          "ttps": "T1566.001 Spearphishing Attachment, T1204.002 Malicious File, T1486 Data Encrypted for Impact; phishing emails impersonating Interpol cybercrime investigations, Proton Drive password-protected payloads",
-          "iocs": [
-            "15 IOCs available"
-          ],
-          "source_url": "https://mastodon.social/@threadlinqs/116851921879681195"
-        },
-        {
-          "name": "LockBit, Akira, and other ransomware groups",
-          "targets": "Multiple sectors with activity surge on July 1st, 2026",
-          "ttps": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1567 Exfiltration Over Web Service; coordinated ransomware campaigns across sectors",
-          "iocs": [],
-          "source_url": "https://mastodon.social/@netsecio/116851619580166342"
-        },
-        {
-          "name": "Ousaban operators",
-          "targets": "Banking users in Spain and Portugal (Iberian Peninsula)",
-          "ttps": "T1566.001 Spearphishing Attachment, T1056.001 Keylogging, T1539 Steal Web Session Cookie; geofenced webpages, banking trojan deployment",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/ousaban-banking-trojan/"
-        },
-        {
-          "name": "EvilTokens / ARToken operators",
-          "targets": "Microsoft 365 users globally",
-          "ttps": "T1566.002 Spearphishing Link, T1528 Steal Application Access Token, T1539 Steal Web Session Cookie; phishing-as-a-service panel exposing 80+ APIs for token theft",
-          "iocs": [],
-          "source_url": "https://gbhackers.com/eviltokens-linked-artoken-panel/"
-        },
-        {
-          "name": "TONResolver operators",
-          "targets": "Booking.com hotel partners in Japan",
-          "ttps": "T1071.001 Web Protocols, T1568.003 DNS Calculation; malware hiding C2 infrastructure in TON blockchain smart contracts",
-          "iocs": [],
-          "source_url": "https://infosec.exchange/@DailyCyberSecurity/116848499274756066"
-        },
-        {
-          "name": "UNC5792 and UNC4221 (Russian intelligence)",
-          "targets": "Signal and WhatsApp users; high-value targets",
-          "ttps": "T1566 Phishing, T1056 Input Capture, T1539 Steal Web Session Cookie; mobile messaging app exploitation, U.S. State Department offering $10M reward",
-          "iocs": [],
-          "source_url": "https://insicurezzadigitale.com/lintelligence-russa-punta-a-signal-e-whatsapp-usa-offre-10-milioni-per-i-gruppi-unc5792-e-unc4221/"
+          "source_url": "https://social.raytec.co/@techbot/116854181968518493"
         }
       ]
     },
     "canada_landscape": {
-      "summary": "The Canadian Centre for Cyber Security (CCCS) issued two critical alerts today: AL26-015 for actively exploited Microsoft SharePoint Server CVE-2026-45659, and AL26-016 for Citrix NetScaler CVE-2026-8451. Both vulnerabilities require immediate patching by Canadian organizations. No specific incidents targeting Canadian retailers (Loblaws, Canadian Tire, Shoppers Drug Mart) or financial institutions (RBC, TD, CIBC, Scotiabank, BMO) were identified in this reporting period, though the global threat landscape affects Canadian entities using SharePoint, Citrix, and Oracle systems.",
+      "summary": "Canada's CCCS issued two critical alerts on July 2nd: AL26-016 for Citrix NetScaler CVE-2026-8451 (CitrixBleed 2) being actively exploited by ransomware groups, and AL26-015 for Microsoft SharePoint CVE-2026-45659 zero-day. Canada's financial regulator CIRO issued an alert on cybersecurity risks from advanced AI. No direct breaches of major Canadian retailers or financial institutions were reported in this period.",
       "retailers": "None identified",
-      "financial": "None identified",
+      "financial": "Canada's financial regulator CIRO issued alert on cybersecurity risks from advanced AI - advisory/preventative measure, no breach reported",
       "source_urls": [
         "https://www.cyber.gc.ca/en/alerts-advisories/al26-016-vulnerability-impacting-citrix-netscaler-cve-2026-8451",
-        "https://www.cyber.gc.ca/en/alerts-advisories/al26-015-critical-vulnerability-impacting-microsoft-sharepoint-server-cve-2026-45659"
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-015-critical-vulnerability-impacting-microsoft-sharepoint-server-cve-2026-45659",
+        "https://mastodon.social/@netsecio/116856453689642078"
       ]
     },
-    "generated_at": "2026-07-02 18:45 ET",
+    "generated_at": "2026-07-03 14:30 ET",
     "ai_enabled": true,
     "window": "2w"
   }
